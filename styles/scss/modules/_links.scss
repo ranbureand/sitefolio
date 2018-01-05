@@ -1,0 +1,99 @@
+/* Copyright (c) 2017 Andrea Buran [www.andreaburan.com]. All rights reserved */
+
+/*
+** Links
+*/
+
+.link {
+  width: 100/4*1%;
+  margin-bottom: em($m-small-line*2 - strip($m-gut/2)/10);
+  padding-right: em($m-gut/2);
+  padding-left: em($m-gut/2);
+
+  .entity {
+    font-weight: $bold;
+
+    display: block;
+
+    text-decoration: none;
+    &:hover {
+      .icon {
+        box-shadow: rgba($black, 0.1) 0 em($m-gut/4) em($m-gut*2);
+        transform: translate(0, em(-$m-gut));
+      }
+      .title {
+        color: $color;
+      }
+    }
+    &:active {
+      .icon {
+        box-shadow: rgba($black, 0.0) 0 em($m-gut/4) em($m-gut*2);
+        transform: translate(0, em($m-gut/2));
+        transition-duration: 0.0s;
+      }
+      .title {
+        transition-duration: 0.0s;
+        color: $color;
+      }
+    }
+    .icon {
+      transition-property: box-shadow, transform;
+      transition-duration: 0.2s, 0.2s;
+      transition-timing-function: ease-in-out, ease-in-out;
+      transform: translate(0, 0);
+      display: block;
+
+      width: 100%;
+      margin-bottom: em($m-small-line/2);
+      padding-bottom: 100%;
+
+      background-color: $picture-background-color;
+      background-image: url("../../media/skills/placeholder_00.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 80%;
+    }
+    .title {
+      font-weight: $bold;
+
+      color: $strong-type-color;
+
+      transition-property: color;
+      transition-duration: 0.2s;
+      transition-timing-function: ease-in-out;
+      @include font-size($m-small-size, $m-small-line);
+    }
+  }
+  @include min-screen(col(8)) {
+    width: 100/4*1%;
+    margin-bottom: em($d-small-line*2 - strip($d-gut/2)/10);
+    padding-right: em($d-gut/2);
+    padding-left: em($d-gut/2);
+    .entity {
+      .icon {
+        margin-bottom: em($d-small-line/2, $d-small-size);
+      }
+      .title {
+        @include font-size($d-small-size, $d-small-line);
+      }
+      &:hover {
+        .icon {
+          transform: translate(0, em(-$d-gut));
+          box-shadow: rgba($black, 0.1) 0 em($d-gut/4) em($d-gut*2);
+        }
+      }
+      &:active {
+        .icon {
+          box-shadow: rgba($black, 0.0) 0 em($m-gut/4) em($m-gut*2);
+          transform: translate(0, em($d-gut/2));
+        }
+      }
+    }
+  }
+  @include min-screen(col(12)) {
+    width: 100/6*1%;
+  }
+  @include min-screen(col(16)) {
+    width: 100/8*1%;
+  }
+}

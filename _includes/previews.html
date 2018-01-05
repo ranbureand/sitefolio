@@ -1,0 +1,21 @@
+    {% assign projectList = site.projects | sort: 'order' | where: 'publish', 'yes' %}
+
+    {% for project in projectList %}
+       {% capture projectCount %} {{ projectCount | plus: 1 }} {% endcapture %}
+    {% endfor %}
+
+      <div class="column-2d-l">
+        <ul class="layout-1d-rtl">
+          {% for project in projectList reversed %}
+          <li class="preview element-1d">
+            <a href="{{ project.url | prepend: site.baseurl }}">
+              <div class="preview-image">
+                <img src="{{ site.baseurl }}/media/projects/{{ project.title | slugify: 'latin' }}/preview-images/{{project.preview_image}}" alt="“{{project.title}}” preview image." title="{{ project.title }}"/>
+              </div>
+              <div class="preview-title">{{ project.title }}</div>
+              <div class="preview-tags">{% for tag in project.tags %}{% if forloop.last == true %}{{tag}}{% else %}{{tag}}, {% endif %}{% endfor %}</div>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>

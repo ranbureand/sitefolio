@@ -1,0 +1,30 @@
+      {% comment %} Extract and sort all the categories from the projects. {% endcomment %}
+      {% assign raw-categories = "" %}
+      {% for project in site.projects %}
+        {% assign ccategories = project.categories | join: '|' | append: '|' %}
+        {% assign raw-categories = raw-categories | append: ccategories %}
+      {% endfor %}
+      {% assign raw-categories = raw-categories | split: '|' | sort %}
+
+      {% comment %} Remove the duplicated and/or invalid categories. {% endcomment %}
+      {% assign categories = "" %}
+      {% for category in raw-categories %}
+        {% if category != "" %}
+          {% if categories == "" %}
+            {% assign categories = category | split: '|' %}
+          {% endif %}
+          {% unless categories contains category %}
+            {% assign categories = categories | join: '|' | append: '|' | append: category | split: '|' %}
+          {% endunless %}
+        {% endif %}
+      {% endfor %}
+
+      <nav class="column-2d-l">
+        <ul class="filters layout-1d-rtl">
+          {% for category in categories %}
+          <li class="filter element-1d">
+            <a href="#{{ category | slugify }}">{{ category }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>

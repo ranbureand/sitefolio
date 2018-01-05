@@ -1,0 +1,51 @@
+/* Copyright (c) 2017 Andrea Buran [www.andreaburan.com]. All rights reserved */
+
+/*
+** Colors
+** 0 1 | 2 3 | 4 5 | 6 7 | 8 9 | a b | c d | e f
+*/
+
+$black: #000;
+//$color: #ff6600;
+$color: #FF0055;
+$background: #fafafa;
+
+/*
+** Typography
+*/
+
+$strong-type-color: rgba($black, 0.88);
+$type-color: rgba($black, 0.88);
+$light-type-color: rgba($black, 0.88);
+$selected-type-color: rgba($black, 0.88);
+$placeholder-type-color: rgba($black, 0.88);
+
+/*
+** Backgrounds
+*/
+
+$background-color: $background;
+$strong-background-color: darken($background, 4%);
+$code-background-color: darken($background, 4%);
+$selected-background-color: darken($background, 4%);
+$field-background-color: $background;
+$picture-background-color: darken($background, 4%);
+
+$video-background-color: rgba($black, 0.88);
+
+/*
+** Shadows
+*/
+
+$background-shadow-color: darken($background, 16%);
+$picture-shadow-color: darken($background, 12%);
+$shadow-color: rgba($black, 0.04);
+
+/*
+** Borders
+*/
+
+$strong-field-border-color: rgba($black, 0.88);
+$border-color: rgba($black, 0.88);
+$light-border-color: rgba($black, 0.05);
+$field-border-color: rgba($black, 0.2);

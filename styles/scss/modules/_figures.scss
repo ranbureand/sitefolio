@@ -1,0 +1,179 @@
+/* Copyright (c) 2017 Andrea Buran [www.andreaburan.com]. All rights reserved */
+
+/*
+** Figures
+*/
+
+.figures {
+  display: flex;
+
+  margin-top: em($m-large-line);
+  margin-right: em(-$m-gut/2);
+  margin-left: em(-$m-gut/2);
+
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-content: flex-start;
+  @include min-screen(col(8)) {
+    width: col(8);
+    margin-top: rhythm($d-large-line);
+    margin-right: em(-$d-gut/2);
+    margin-left: em(-$d-gut/2);
+  }
+  @include min-screen(col(12)) {
+    width: col(12);
+    margin-left: em(-$column-width*4-$d-gut);
+  }
+  @include min-screen(col(16)) {
+    width: col(16);
+    margin-left: em(-$column-width*8-$d-gut);
+  }
+}
+
+div {
+  + .figures {
+    margin-top: 0;
+  }
+}
+
+.figure {
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+
+[class^="image"], [class^="video"] {
+  margin: 0 0 em($m-medium-line*3/2) 0;
+
+  counter-increment: images;
+
+  @extend %column-gut;
+  figcaption {
+    width: 100%;
+    margin-top: em($m-small-line/2);
+    > p:first-child:before {
+      font-style: italic;
+
+      float: left;
+
+      padding: 0 0.75em 0 0;
+
+      content: "fig. " counter(images);
+    }
+  }
+  img {
+    margin-bottom: 0;
+  }
+  @include min-screen(col(8)) {
+    margin: 0 0 em($d-medium-line*3/2) 0;
+    figcaption {
+      margin-top: em($d-small-line/2);
+    }
+  }
+}
+
+[class^="video"] {
+  a {
+    position: relative;
+
+    display: block;
+    .watch {
+      font-weight: $bold;
+
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      display: block;
+
+      width: 50%;
+      height: em($m-small-line*2, $m-small-size);
+      margin: auto;
+      padding: em($m-small-line/2, $m-small-size) em($m-gut, $m-small-size);
+
+      text-align: center;
+
+      color: $background-color;
+      background-color: $video-background-color;
+
+      transition-property: color;
+      transition-duration: 0.2s;
+      transition-timing-function: ease-in-out;
+      border-radius: 4px, 4px;
+      @include font-size($m-small-size, $m-small-line);
+    }
+    &:hover, &:active {
+      .watch {
+        color: $color;
+      }
+    }
+  }
+  @include min-screen(col(8)) {
+    a {
+      .watch {
+        width: col(2.5, $d-small-size);
+        height: em($d-small-line*2, $d-small-size);
+        padding: em($d-small-line/2, $d-small-size) em($d-gut, $d-small-size);
+
+        @include font-size($d-small-size, $d-small-line);
+      }
+    }
+  }
+}
+.image-xl, .video-xl {
+  width: 100%;
+
+  @include min-screen(col(12)) {
+    figcaption {
+      width: col(8);
+    }
+  }
+}
+.image-l, .video-l {
+  width: 100%;
+
+  @include min-screen(col(12)) {
+    width: col(12);
+    figcaption {
+      width: col(8);
+    }
+  }
+}
+.image-m, .video-m {
+  width: 100%;
+
+  @include min-screen(col(12)) {
+    width: col(8);
+  }
+}
+.image-sm, .video-sm {
+  width: 100%;
+  @include min-screen(480/16*1em) {
+    width: 100%*2/4;
+  }
+  @include min-screen(col(12)) {
+    width: col(6);
+  }
+}
+.image-s, .video-s {
+  width: 100%;
+
+  @include min-screen(col(6)) {
+    width: 100%*2/4;
+  }
+  @include min-screen(col(8)) {
+    width: col(4);
+  }
+}
+.image-xs, .video-xs {
+  width: 100%*2/4;
+
+  @include min-screen(480/16*1em) {
+    width: 100%*1/4;
+  }
+  @include min-screen(col(8)) {
+    width: col(2);
+  }
+}

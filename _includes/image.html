@@ -1,0 +1,27 @@
+{% if include.size == "xl" %}
+  {% assign image_size = 'image-xl' %}
+{% elsif include.size == "l" %}
+  {% assign image_size = 'image-l' %}
+{% elsif include.size == "s" %}
+  {% assign image_size = 'image-s' %}
+{% elsif include.size == "xs" %}
+  {% assign image_size = 'image-xs' %}
+{% elsif include.size == "xxs" %}
+  {% assign image_size = 'image-xxs' %}
+{% else %}
+  {% assign image_size = 'image-m' %}
+{% endif %}
+
+<figure class="{{ image_size }}">
+
+  <img 
+  src="../media/projects/{{ page.title | slugify }}/images/{{ include.src }}" 
+  alt="{% if include.alt %}{{ include.alt }}{% else %}{{ page.title }}{% endif %}"
+  />
+  {% if include.caption%}
+  <figcaption class="typo-s">
+    {{ include.caption | markdownify }}
+  </figcaption>
+  {% endif %}
+
+</figure>
