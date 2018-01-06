@@ -23,7 +23,7 @@
         <ul class="filters layout-1d-rtl">
           {% for category in categories %}
           <li class="filter element-1d">
-            <a href="#{{ category | slugify }}">{{ category }}</a>
+            <a href="#{{ category | slugify: 'latin' }}">{{ category }}</a>
           </li>
           {% endfor %}
         </ul>
