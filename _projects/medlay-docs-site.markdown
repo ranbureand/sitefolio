@@ -25,7 +25,7 @@ publish: 'yes'
 </div>
 
 tags
-: {% include get-tags.html %}
+: {% include tags.html %}
 
 role
 : creator, writer, visual/interaction designer
