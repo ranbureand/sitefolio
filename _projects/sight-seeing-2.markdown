@@ -6,7 +6,7 @@ layout: project
 title: 'Sight-_Seeing 2'
 author: 'Andrea Buran'
 
-time: ''
+time: '0000'
 
 categories: [All, Commercial, Key, Print]
 tags: [landscape photography, photobook, print]

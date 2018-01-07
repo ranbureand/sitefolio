@@ -6,7 +6,7 @@ layout: project
 title: 'Medlay, Docs Site'
 author: 'Andrea Buran'
 
-time: '2010–Present'
+time: '2015–Present'
 
 categories: [All, Digital, Dynamic Image, Key, Non-Commercial, Research]
 tags: [cinema, comics, infinite canvas, loop, new media form, responsive, sequential art, site]
