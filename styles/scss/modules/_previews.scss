@@ -37,19 +37,7 @@
   text-decoration: none;
 
   background-color: $background-color;
-  &:hover {
-    .preview-image {
-      transform: translate(0, em(-$m-gut, $m-tiny-size));
-      &:before {
-        transform: translate(0, em($m-gut, $m-tiny-size)) scale(0.88);
 
-        background-color: $shadow-color;
-      }
-    }
-    .preview-title {
-      color: $color;
-    }
-  }
   &:active {
     .preview-image {
       transition-duration: 0.0s;
@@ -97,8 +85,7 @@
   .preview-title {
     font-weight: $bold;
 
-    padding-top: em($m-medium-line/4*3, $m-medium-size);
-    padding-bottom: em($m-medium-line/4*1, $m-medium-size);
+    margin-top: em($m-medium-line/4*3, $m-medium-size);
 
     transition-timing-function: ease-in-out;
     transition-duration: 0.2s;
@@ -109,8 +96,18 @@
     adjust-font-size-to: $m-small-size, $m-small-line;
   }
   .preview-tags {
+    margin-top: em($m-small-line/2, $m-small-size);
+
     color: $type-color;
 
+    @include font-size($m-small-size, $m-small-line);
+  }
+  .preview-time {
+    margin-top: em($m-small-line/2, $m-small-size);
+
+    color: $type-color;
+
+    @include face(mono);
     @include font-size($m-small-size, $m-small-line);
   }
   @include min-screen(col(8)) {
@@ -140,19 +137,39 @@
       @include font-size($d-tiny-size, $d-tiny-line);
     }
     .preview-title {
-      padding-top: em($d-medium-line/4*3, $d-medium-size);
-      padding-bottom: em($d-medium-line/4*1, $d-medium-size);
+      margin-top: em($d-medium-line/4*3, $d-medium-size);
 
       @include font-size($d-medium-size, $d-medium-line);
     }
     .preview-tags {
+      margin-top: em($d-small-line/2, $d-small-size);
+
       @include font-size($d-small-size, $d-small-line);
+    }
+    .preview-time {
+      margin-top: em($d-small-line/2, $d-small-size);
+
+      @include font-size($d-small-size, $d-small-line);
+    }
+  }
+  &:hover {
+    .preview-image {
+      transform: translate(0, em(-$m-gut, $m-tiny-size));
+      &:before {
+        transform: translate(0, em($m-gut, $m-tiny-size)) scale(0.88);
+
+        background-color: $shadow-color;
+      }
+    }
+    .preview-title {
+      color: $color;
     }
   }
 }
 
 .preview.current {
   cursor: default;
+
   .preview-image {
     transform: translate(0, em(-$m-gut, $m-tiny-size));
   }
