@@ -73,8 +73,8 @@ This is a <var>variable element</var>, such as <var>x</var> = <var>y</var>.
 + This is a list item in an unordered list
 + An unordered list is a list in which the sequence of items is not important. Sometimes, an unordered list is a bulleted list. And this is a long list item in an unordered list that can wrap onto a new line.
 + Lists can be nested inside of each other
-  + This is a nested list item
-  + This is another nested list item in an unordered list
+    + This is a nested list item
+    + This is another nested list item in an unordered list
 + This is the last list item
 
 1. This is a list item in an ordered list
@@ -87,8 +87,36 @@ This is a <var>variable element</var>, such as <var>x</var> = <var>y</var>.
 This is a code block:
 
     tell application "Foo"
-        beep
+      beep
     end tell
+
+<div class="figures">
+    {% include image.html size="xl" src="placeholder_00.png" alt="This is a placeholder image." caption="This is a caption." %}
+    {% include image.html size="l"  src="placeholder_00.png" alt="This is a placeholder image." %}
+</div>
+
+<div class="figures">
+    {% include image.html size="m"  src="placeholder_00.png" alt="This is a placeholder image." caption="This is a caption." %}
+    {% include image.html size="m"  src="placeholder_00.png" alt="This is a placeholder image." caption="This is a caption." %}
+</div>
+
+<div class="figures">
+    {% include image.html size="s"  src="placeholder_00.png" alt="This is a placeholder image." caption="This is a caption." %}
+    {% include image.html size="s"  src="placeholder_00.png" alt="This is a placeholder image." caption="This is a caption." %}
+    {% include image.html size="s"  src="placeholder_00.png" alt="This is a placeholder image." caption="This is a caption." %}
+    {% include image.html size="s"  src="placeholder_00.png" alt="This is a placeholder image." caption="This is a caption." %}
+</div>
+
+<div class="figures">
+    {% include image.html size="xs" src="placeholder_00.png" alt="This is a placeholder image." %}
+    {% include image.html size="xs" src="placeholder_00.png" alt="This is a placeholder image." %}
+    {% include image.html size="xs" src="placeholder_00.png" alt="This is a placeholder image." %}
+    {% include image.html size="xs" src="placeholder_00.png" alt="This is a placeholder image." %}
+    {% include image.html size="xs" src="placeholder_00.png" alt="This is a placeholder image." %}
+    {% include image.html size="xs" src="placeholder_00.png" alt="This is a placeholder image." %}
+    {% include image.html size="xs" src="placeholder_00.png" alt="This is a placeholder image." %}
+    {% include image.html size="xs" src="placeholder_00.png" alt="This is a placeholder image." %}
+</div>
 
 Definition List
 : A number of connected items or names written or printed consecutively, typically one below the other.
@@ -100,7 +128,51 @@ This is another term.
 : And it gets a definition too, which is this line.
 
 This is term that shares a definition with the term below.
-: And it gets a definition too, which is this line. 
+: And it gets a definition too, which is this line.
+
+<div class="form">
+    <div class="field">
+        <label for="name">Name</label>
+        <input id="name" name="field[name]" placeholder="Alias" type="text"/>
+    </div>
+    <div class="field error">
+        <label for="name">Name</label>
+        <input id="name" name="field[name]" placeholder="Alias" type="text"/>
+        <i>Mmm. Are you the “<a href="http://en.wikipedia.org/wiki/Man_with_No_Name" target="_blank" title="Man with No Name on Wikipedia">Man with No Name</a>”?</i>
+    </div>
+    <div class="field">
+        <label for="email">E-Mail</label>
+        <input id="email" name="field[email]" placeholder="you@email.ext" type="text"/>
+    </div>
+    <div class="field error">
+        <label for="email">E-Mail</label>
+        <input id="email" name="field[email]" placeholder="you@email.ext" type="text"/>
+        <i>Uh-oh. I need your <strong>e-mail</strong> to write you back.</i>
+    </div>
+    <div class="field">
+        <label for="subject">Subject</label>
+        <input id="subject" name="field[subject]" placeholder="Matter" type="text"/>
+    </div>
+    <div class="field error">
+        <label for="subject">Subject</label>
+        <input id="subject" name="field[subject]" placeholder="Matter" type="text"/>
+        <i>Erm. What’s it all <strong>about</strong>?</i>
+    </div>
+    <div class="field">
+        <label for="body">Body</label>
+        <textarea id="field[body]" name="body" placeholder="Hello…" cols="10" rows="8"></textarea>
+    </div>
+    <div class="field error">
+        <label for="body">Body</label>
+        <textarea id="field[body]" name="body" placeholder="Hello…" cols="10" rows="8"></textarea>
+        <i>Doh. <strong>Writer’s block</strong>?</i>
+    </div>
+
+    <div class="button">
+        <input class="send" name="action[message]" type="submit" value="Send"/>
+    </div>
+</div>
+
 
 [^footnote]: And that’s the footnote.
 
