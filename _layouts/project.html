@@ -9,13 +9,17 @@ layout: base
 
       <div class="column-2d-l separator"></div>
 
-      <div class="column-2d-s typo-l">
-        {% if page.time %}{{ page.time | markdownify }}{% endif %}
+      {% if page.time %}
+      <div class="column-2d-s typo-l project-time">
+        {{ page.time | markdownify }}
       </div>
+      {% endif %}
 
+      {% if page.exordium %}
       <div class="column-2d-m typo-l">
-        {% if page.exordium %}{{ page.exordium | markdownify }}{% endif %}
+        {{ page.exordium | markdownify }}
       </div>
+      {% endif %}
 
       <div class="column-2d-m typo-m">
         {{ content }}
