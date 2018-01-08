@@ -123,6 +123,8 @@ $button-border-width: 2px;
 @mixin face($status: sans) {
   @if $status == "sans" {
     font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  } @else if $status == "serif" {
+    font-family: "Spectral", serif;
   } @else if $status == "mono" {
     font-family: "Roboto Mono", "Andale Mono", "Monaco", monospace;
   }

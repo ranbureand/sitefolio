@@ -1,20 +1,20 @@
 /* Copyright (c) 2017 Andrea Buran [www.andreaburan.com]. All rights reserved */
 
 ::-webkit-input-placeholder {
-	opacity: 1.0;
-	color: $placeholder-type-color;
+  opacity: 1.0;
+  color: $placeholder-type-color;
 }
 :-moz-placeholder {
-	opacity: 1.0; /* Firefox 18- */
-	color: $placeholder-type-color;
+  opacity: 1.0; /* Firefox 18- */
+  color: $placeholder-type-color;
 }
 ::-moz-placeholder {
-	opacity: 1.0;  /* Firefox 19+ */
-	color: $placeholder-type-color;
+  opacity: 1.0;  /* Firefox 19+ */
+  color: $placeholder-type-color;
 }
 :-ms-input-placeholder {
-	opacity: 1.0;
-	color: $placeholder-type-color;
+  opacity: 1.0;
+  color: $placeholder-type-color;
 }
 
 /*
@@ -22,85 +22,85 @@
 */
 
 button, input, optgroup, select, textarea {
-	font: inherit; // normalize.css
+  font: inherit; // normalize.css
 
-	margin: 0; // normalize.css
+  margin: 0; // normalize.css
 
-	color: inherit; // normalize.css
-	&:focus {
-		outline: none;
-	}
+  color: inherit; // normalize.css
+  &:focus {
+    outline: none;
+  }
 }
 
 button {
-	overflow: visible; // normalize.css
+  overflow: visible; // normalize.css
 }
 
 button, select {
-	text-transform: none; // normalize.css
+  text-transform: none; // normalize.css
 }
 
 button, html input[type="button"], input[type="reset"], input[type="submit"] {
-	cursor: pointer; // normalize.css
+  cursor: pointer; // normalize.css
 
-	-webkit-appearance: button; // normalize.css
+  -webkit-appearance: button; // normalize.css
 }
 
 button[disabled], html input[disabled] {
-	cursor: default; // normalize.css
+  cursor: default; // normalize.css
 }
 
 button::-moz-focus-inner, input::-moz-focus-inner {
-	padding: 0; // normalize.css
+  padding: 0; // normalize.css
 
-	border: 0; // normalize.css
+  border: 0; // normalize.css
 }
 
 input {
-	line-height: normal; // normalize.css
+  line-height: normal; // normalize.css
 }
 
 input[type="checkbox"], input[type="radio"] {
-	padding: 0; // normalize.css
+  padding: 0; // normalize.css
 }
 
 input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
-	height: auto; // normalize.css
+  height: auto; // normalize.css
 }
 
 input[type="search"] {
-	-webkit-appearance: textfield; // normalize.css
+  -webkit-appearance: textfield; // normalize.css
 }
 
 input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
-	-webkit-appearance: none; // normalize.css
+  -webkit-appearance: none; // normalize.css
 }
 
 fieldset {
-	margin: 0; // normalize.css
-	padding: 0; // normalize.css
+  margin: 0; // normalize.css
+  padding: 0; // normalize.css
 
-	border: 0; // normalize.css
+  border: 0; // normalize.css
 }
 
 form {
-	margin: 0;
+  margin: 0;
 }
 
 legend {
-	padding: 0; // normalize.css
+  padding: 0; // normalize.css
 
-	border: 0; // normalize.css
+  border: 0; // normalize.css
 }
 
 textarea {
-	overflow: auto; // normalize.css
+  overflow: auto; // normalize.css
 
-	resize: vertical;
+  resize: vertical;
 }
 
 optgroup {
-	font-weight: $bold; // normalize.css
+  font-weight: $bold; // normalize.css
 }
 
 /*
@@ -109,139 +109,136 @@ optgroup {
 
 //[class^="form"]
 .form {
-	input[type = "text"], textarea, input[type = "submit"] {
-		display: block;
+  clear: both;
+  input[type = "text"], textarea, input[type = "submit"] {
+    display: block;
 
-		@include face(sans);
-		transition-property: color, border-color;
-		transition-duration: 0.2s, 0.2s;
-		transition-timing-function: ease-in-out, ease-in-out;
-		//@include transition-delay(0s, 0s);
-	}
-	label {
-		font-weight: $normal;
+    @include face(sans);
+    transition-property: color, border-color;
+    transition-duration: 0.2s, 0.2s;
+    transition-timing-function: ease-in-out, ease-in-out;
+    //@include transition-delay(0s, 0s);
+  }
+  label {
+    font-weight: $normal;
 
-		display: block;
+    display: block;
 
-		margin-bottom: em($m-medium-line/4, $m-medium-size);
-		margin-left: em($m-gut/2, $m-medium-size);
+    margin-bottom: em($m-medium-line/4, $m-medium-size);
 
-		@include font-size($m-medium-size, $m-medium-line);
-	}
-	input[type = "text"], textarea {
-		width: 100%;
-		padding: em($m-medium-line/4 + strip(-$field-border-width/10), $m-medium-size) em($m-gut/2, $m-medium-size) em($m-medium-line/4 + strip(-$field-border-width/10), $m-medium-size) em($m-gut/2, $m-medium-size);
+    @include font-size($m-medium-size, $m-medium-line);
+  }
+  input[type = "text"], textarea {
+    width: 100%;
+    padding: em($m-medium-line/4 + strip(-$field-border-width/10), $m-medium-size) em($m-gut/2, $m-medium-size) em($m-medium-line/4 + strip(-$field-border-width/10), $m-medium-size) em($m-gut/2, $m-medium-size);
 
-		color: $type-color;
-		border: $field-border-width solid $field-border-color;
-		background-color: $field-background-color;
+    color: $type-color;
+    border: $field-border-width solid $field-border-color;
+    background-color: $field-background-color;
 
-		@include font-size($m-medium-size, $m-medium-line);
-		&:focus, &:hover {
-			color: $strong-type-color;
-		}
-		&:hover {
-			border-color: $strong-field-border-color;
-		}
-		&:focus, &:focus:hover {
-			border-color: $strong-field-border-color;
-		}
-	}
-	input[type = "text"] {
-		height: em($m-medium-line*1.5, $m-medium-size);
-	}
-	i {
-		font-style: normal;
+    @include font-size($m-medium-size, $m-medium-line);
+    &:focus, &:hover {
+      color: $strong-type-color;
+    }
+    &:hover {
+      border-color: $strong-field-border-color;
+    }
+    &:focus, &:focus:hover {
+      border-color: $strong-field-border-color;
+    }
+  }
+  input[type = "text"] {
+    height: em($m-medium-line*1.5, $m-medium-size);
+  }
+  i {
+    font-style: normal;
 
-		display: block;
+    display: block;
 
-		margin-top: em($m-small-line/4, $m-small-size);
+    margin-top: em($m-small-line/4, $m-small-size);
 
-		text-align: right;
+    @include font-size($m-small-size, $m-small-line);
+    a {
+      text-decoration: underline;
+    }
+  }
+  input[type = "submit"] {
+    font-weight: $normal;
 
-		@include font-size($m-small-size, $m-small-line);
-		a {
-			text-decoration: underline;
-		}
-	}
-	input[type = "submit"] {
-		font-weight: $normal;
+    display: inline-block;
 
-		display: inline-block;
+    height: em($m-medium-line*1.5, $m-medium-size);
+    padding: em($m-medium-line/4 + strip(-$button-border-width/10), $m-medium-size) em($m-gut*3, $m-medium-size) em($m-medium-line/4 + strip(-$button-border-width/10), $m-medium-size) em($m-gut*3, $m-medium-size);
 
-		height: em($m-medium-line*1.5, $m-medium-size);
-		padding: em($m-medium-line/4 + strip(-$button-border-width/10), $m-medium-size) em($m-gut*3, $m-medium-size) em($m-medium-line/4 + strip(-$button-border-width/10), $m-medium-size) em($m-gut*3, $m-medium-size);
+    color: $strong-type-color;
+    border: $button-border-width solid $strong-field-border-color;
+    background-color: $field-background-color;
 
-		color: $strong-type-color;
-		border: $button-border-width solid $strong-field-border-color;
-		background-color: $field-background-color;
+    border-radius: 4px, 4px;
+    @include font-size($m-medium-size, $m-medium-line);
+    &:hover, &:active {
+      color: $color;
+      border-color: $color;
+    }
+    &:active {
+      transition-duration: 0s, 0s;
+    }
+  }
+  .field, .button {
+    margin-bottom: em($m-medium-line);
+  }
+  .button {
+    width: 100%;
 
-		border-radius: 4px, 4px;
-		@include font-size($m-medium-size, $m-medium-line);
-		&:hover, &:active {
-			color: $color;
-			border-color: $color;
-		}
-		&:active {
-			transition-duration: 0s, 0s;
-		}
-	}
-	.field, .button {
-		margin-bottom: em($m-medium-line);
-	}
-	.button {
-		width: 100%;
+    text-align: center;
+  }
+  .error {
+    input[type = "text"], textarea {
+      border-color: $color;
+    }
+  }
+  @include min-screen(col(8)) {
+    label {
+      margin-bottom: em($d-medium-line/4, $d-medium-size);
 
-		text-align: center;
-	}
-	.error {
-		input[type = "text"], textarea {
-			border-color: $color;
-		}
-	}
-	@include min-screen(col(8)) {
-		label {
-			margin-bottom: em($d-medium-line/4, $d-medium-size);
-			margin-left: em($d-gut/2, $d-medium-size);
+      @include font-size($d-medium-size, $d-medium-line);
+    }
+    input[type = "text"], textarea {
+      padding: em($d-medium-line/4 + strip(-$field-border-width/10), $d-medium-size) em($d-gut/2, $d-medium-size) em($d-medium-line/4 + strip(-$field-border-width/10), $d-medium-size) em($d-gut/2, $d-medium-size);
 
-			@include font-size($d-medium-size, $d-medium-line);
-		}
-		input[type = "text"], textarea {
-			padding: em($d-medium-line/4 + strip(-$field-border-width/10), $d-medium-size) em($d-gut/2, $d-medium-size) em($d-medium-line/4 + strip(-$field-border-width/10), $d-medium-size) em($d-gut/2, $d-medium-size);
+      @include font-size($d-medium-size, $d-medium-line);
+    }
+    input[type = "text"] {
+      height: em($d-medium-line*1.5, $d-medium-size);
+    }
+    i {
+      margin-top: em($d-small-line/4, $d-small-size);
 
-			@include font-size($d-medium-size, $d-medium-line);
-		}
-		input[type = "text"] {
-			height: em($d-medium-line*1.5, $d-medium-size);
-		}
-		i {
-			margin-top: em($d-small-line/4, $d-small-size);
+      @include font-size($d-small-size, $d-small-line);
+    }
+    input[type = "submit"] {
+      height: em($d-medium-line*1.5, $d-medium-size);
+      padding: em($d-medium-line/4 + strip(-$button-border-width/10), $d-medium-size) em($d-gut*3, $d-medium-size) em($d-medium-line/4 + strip(-$button-border-width/10), $d-medium-size) em($d-gut*3, $d-medium-size);
 
-			@include font-size($d-small-size, $d-small-line);
-		}
-		input[type = "submit"] {
-			height: em($d-medium-line*1.5, $d-medium-size);
-			padding: em($d-medium-line/4 + strip(-$button-border-width/10), $d-medium-size) em($d-gut*3, $d-medium-size) em($d-medium-line/4 + strip(-$button-border-width/10), $d-medium-size) em($d-gut*3, $d-medium-size);
+      @include font-size($d-medium-size, $d-medium-line);
+    }
+    .field, .button {
+      margin-bottom: em($d-medium-line);
+    }
+  }
+  @include min-screen(col(12)) {
+    label {
+      float: left;
+      clear: left;
 
-			@include font-size($d-medium-size, $d-medium-line);
-		}
-		.field, .button {
-			margin-bottom: em($d-medium-line);
-		}
-	}
-	@include min-screen(col(12)) {
-		label {
-			float: left;
-			clear: left;
+      width: col(4, $d-medium-size);
+      margin-top: em($d-medium-line/4, $d-medium-size);
+      margin-left: em(-$column-width*4 -$d-gut, $d-medium-size);
 
-			width: col(4, $d-medium-size);
-			margin-top: em($d-medium-line/4, $d-medium-size);
-			margin-left: em(-$column-width*4 -$d-gut, $d-medium-size);
-
-			text-align: right;
-		}
-		.button {
-			text-align: left;
-		}
-	}
+      text-align: right;
+    }
+    .button {
+      text-align: left;
+    }
+  }
 }
