@@ -13,8 +13,15 @@ tags: [tag-1, tag-2]
 
 preview_image: 'hello_world_00.png'
 
+excerpt: 'This is an excerpt.'
+exordium: 'This is an exordium.'
+
 publish: 'yes'
 ---
+
+<div class="figures">
+    {% include image.html size="xl" src="placeholder_00.png" alt="This is a placeholder image." %}
+</div>
 
 # Heading Level #1
 

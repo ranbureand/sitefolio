@@ -23,11 +23,11 @@
   }
   @include min-screen(col(12)) {
     width: col(12);
-    margin-left: em(-$column-width*4-$d-gut);
+    margin-left: em(-$column-width*4-$d-gut/2);
   }
   @include min-screen(col(16)) {
     width: col(16);
-    margin-left: em(-$column-width*8-$d-gut);
+    margin-left: em(-$column-width*8-$d-gut/2);
   }
 }
 
