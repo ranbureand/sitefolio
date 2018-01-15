@@ -8,7 +8,7 @@
   position: relative;
 
   blockquote {
-    padding-left: em($m-gut);
+    padding-left: em($m-gut*2-$border-width);
 
     border-left: $border-width solid $border-color;
   }
@@ -52,7 +52,7 @@
   }
   @include min-screen(col(8)) {
     blockquote {
-      padding-left: em($d-gut/2*3);
+      padding-left: em($d-gut/2*3-$border-width);
     }
   }
   @include min-screen(col(12)) {
@@ -93,23 +93,22 @@
     margin-bottom: em($m-small-line/2);
   }
   ul, ol {
-    padding-left: em($m-gut/2*3, $m-medium-size);
+    padding-left: em($m-gut*2, $m-medium-size);
   }
   li,
   dt {
     @include font-size($m-medium-size, $m-medium-line);
   }
-  li:before,
   dt {
     padding-right: em($m-gut/2, $m-medium-size);
   }
   li:before {
-    width: em($m-gut/2*3, $m-medium-size);
-    margin-left: em(-$m-gut/2*3, $m-medium-size);
+    width: em($m-gut*2, $m-medium-size);
+    margin-left: em(-$m-gut*2, $m-medium-size);
   }
   ul ul,
   ol ol {
-    padding-left: em($m-gut, $m-medium-size);
+    padding-left: em($m-gut*2, $m-medium-size);
   }
   li li {
     font-size: 1em;
@@ -118,9 +117,9 @@
     margin-top: em($m-medium-line/2, $m-medium-size);
     margin-bottom: em($m-medium-line/2, $m-medium-size);
     padding-top: em($m-medium-line/2, $m-medium-size);
-    padding-right: em($m-gut/2, $m-medium-size);
+    padding-right: em($m-gut*2, $m-medium-size);
     padding-bottom: em($m-medium-line/2, $m-medium-size);
-    padding-left: em($m-gut/2, $m-medium-size);
+    padding-left: em($m-gut*2, $m-medium-size);
 
     @include font-size($m-medium-size, $m-medium-line);
   }
@@ -160,7 +159,7 @@
       margin-bottom: em($d-small-line/2);
     }
     ul, ol {
-      padding-left: em($d-gut/2*3, $d-medium-size);
+      padding-left: em($d-gut/2*3);
     }
     li,
     dt {

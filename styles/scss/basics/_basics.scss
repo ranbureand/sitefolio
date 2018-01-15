@@ -64,6 +64,8 @@ html {
 }
 
 body {
+  padding-right: $m-gut;
+  padding-left: $m-gut;
   font-weight: $normal;
 
   height: 100%;
@@ -72,6 +74,10 @@ body {
   counter-reset: footnotes images ordered-list;
 
   background-color: $background-color;
+  @include min-screen(col(8)) {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 /*
