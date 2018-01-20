@@ -20,7 +20,7 @@ publish: 'yes'
 ---
 
 <div class="figures">
-    {% include image.html size="l" src="sempiternity_16_blueberry_nei_videogiochi_1280_00.png" alt="A screenshot of Sempiternity, a site/collection of witty short stories." caption="A piece, a.k.a. a witty/absurd short story." color="#D9D9F2" %}
+    {% include image.html size="xl" src="sempiternity_16_blueberry_nei_videogiochi_1280_00.png" alt="A screenshot of Sempiternity, a site/collection of witty short stories." caption="A piece, a.k.a. a witty/absurd short story." color="#D9D9F2" %}
 </div>
 
 tags
@@ -64,7 +64,7 @@ Such circular existence within time is reiterated by the **background color** of
 </div>
 
 <div class="figures">
-    {% include image.html size="l" src="sempiternity_12_indice_1280_00.png" alt="A screenshot of Sempiternity, a site/collection of witty short stories." caption="The index of the pieces." color="#D9F2F2" %}
+    {% include image.html size="xl" src="sempiternity_12_indice_1280_00.png" alt="A screenshot of Sempiternity, a site/collection of witty short stories." caption="The index of the pieces." color="#D9F2F2" %}
 </div>
 
 Pieces in Sempiternity often share a common **motif**, which is identifiable thanks to the **pixel art icon** opening the short story.
