@@ -3,7 +3,7 @@ order: 34
 
 layout: project
 
-title: "Fortune Cookie Site"
+title: "Fortune Cookie, Site"
 author: "Andrea Buran"
 
 categories: [All, Digital, Key, Non-Commercial, Research, Static Image]

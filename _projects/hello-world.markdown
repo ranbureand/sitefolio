@@ -19,12 +19,12 @@ exordium: 'This is an exordium.'
 publish: 'yes'
 ---
 
-tags
-: {% include tags.html %}
-
 <div class="figures">
     {% include image.html size="xl" src="placeholder_00.png" alt="This is a placeholder image." %}
 </div>
+
+tags
+: {% include tags.html %}
 
 # Heading Level #1
 

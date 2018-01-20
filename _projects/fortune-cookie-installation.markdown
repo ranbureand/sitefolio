@@ -3,7 +3,7 @@ order: 35
 
 layout: project
 
-title: "Fortune Cookie Installation"
+title: "Fortune Cookie, Installation"
 author: "Andrea Buran"
 
 time: ''
