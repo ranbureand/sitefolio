@@ -16,6 +16,17 @@
   @include face(mono);
 }
 
+.footer {
+  padding-right: $m-gut;
+  padding-left: $m-gut;
+  padding-top: em($m-large-line*6);
+  @include min-screen(col(8)) {
+    padding-top: em($d-large-line*6);
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
 .header-title,
 .header-motto,
 .footer-copyright,
@@ -33,14 +44,14 @@
 }
 
 .header-title {
-  grid-column: 1 / 3;
+  grid-column: 1 / 2;
   @include min-screen(col(8)) {
     grid-column: 1 / 2;
   }
 }
 
 .header-motto {
-  display: none;
+  //display: none;
 
   text-align: right;
 
