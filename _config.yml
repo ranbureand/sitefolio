@@ -13,6 +13,8 @@ encoding: utf-8
 collections:
   projects:
     output: true
+  categories:
+    output: true
 
 # Build settings
 markdown: kramdown
