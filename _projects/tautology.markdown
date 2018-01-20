@@ -11,7 +11,7 @@ time: ''
 categories: [All, Katachresis, Non-Commercial, Print, Research]
 tags: []
 
-preview_image: "tautology_00.png"
+preview_image: 'tautology_00.png'
 
 excerpt: ''
 exordium: ''
@@ -19,4 +19,5 @@ exordium: ''
 publish: 'no'
 ---
 
-Hello World!
+tags
+: {% include tags.html %}

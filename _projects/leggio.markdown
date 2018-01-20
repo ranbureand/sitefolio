@@ -11,12 +11,25 @@ time: ''
 categories: [All, Non-Commercial, Sundries]
 tags: [folding, portable, reading desk, recycled cardboard]
 
-preview_image: "leggio_00.png"
+preview_image: 'leggio_00.png'
 
 excerpt: 'A portable folding reading desk made from recycled cardboard.'
-exordium: ''
+exordium: 'A portable folding reading desk made from recycled cardboard.'
 
 publish: 'yes'
 ---
 
-Hello World!
+tags
+: {% include tags.html %}
+
+role
+: product designer
+
+responsibilities
+: design concept, product design, mockup prototyping
+
+team
+: Andrea Buran, Riccardo Cendron, Laura Cervellin
+
+prizes
+: among the winning projects of the competition *Paper Shopping IUAV*

@@ -11,7 +11,7 @@ time: '0000'
 categories: [All, Commercial, Key, Print]
 tags: [landscape photography, photobook, print]
 
-preview_image: "sight_seeing_2_00.png"
+preview_image: 'sight_seeing_2_00.png'
 
 excerpt: 'A heterogeneous set of collectively taken pictures of Tyrolean winter landscapes—halfway between tourism’s advertising images and contemporary photos—is spatially arranged in the photobook Sight-_Seeing 2.'
 exordium: ''
@@ -19,4 +19,5 @@ exordium: ''
 publish: 'yes'
 ---
 
-Hello World!
+tags
+: {% include tags.html %}

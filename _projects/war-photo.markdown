@@ -11,7 +11,7 @@ time: ''
 categories: [All, Katachresis, Non-Commercial, Research, Static Image]
 tags: [embedded journalism, photography, war]
 
-preview_image: "war_photo_00.png"
+preview_image: 'war_photo_00.png'
 
 excerpt: 'War photo taken by an embedded journalist.'
 exordium: ''
@@ -19,4 +19,5 @@ exordium: ''
 publish: 'yes'
 ---
 
-Hello World!
+tags
+: {% include tags.html %}

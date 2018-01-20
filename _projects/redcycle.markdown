@@ -11,7 +11,7 @@ time: ''
 categories: [Non-Commercial]
 tags: []
 
-preview_image: "redcycle_00.png"
+preview_image: 'redcycle_00.png'
 
 excerpt: ''
 exordium: ''
@@ -19,4 +19,5 @@ exordium: ''
 publish: 'no'
 ---
 
-Hello World!
+tags
+: {% include tags.html %}

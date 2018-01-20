@@ -11,7 +11,7 @@ time: ''
 categories: [All, Katachresis, Non-Commercial, Research, Static Image]
 tags: [omnipresence, photography, redundancy]
 
-preview_image: "garbage_ad_00.png"
+preview_image: 'garbage_ad_00.png'
 
 excerpt: 'This series of pictures is a reflection on the redundancy and omnipresence of the image in our society.'
 exordium: ''
@@ -19,4 +19,5 @@ exordium: ''
 publish: 'yes'
 ---
 
-Hello World!
+tags
+: {% include tags.html %}

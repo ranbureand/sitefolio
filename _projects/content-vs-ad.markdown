@@ -11,7 +11,7 @@ time: ''
 categories: [All, Katachresis, Non-Commercial, Research]
 tags: []
 
-preview_image: "content_v_ad_00.png"
+preview_image: 'content_v_ad_00.png'
 
 excerpt: ''
 exordium: ''
@@ -19,4 +19,5 @@ exordium: ''
 publish: 'no'
 ---
 
-Hello World!
+tags
+: {% include tags.html %}

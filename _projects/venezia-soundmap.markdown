@@ -11,7 +11,7 @@ time: ''
 categories: [All, Digital, Commercial, Non-Commercial]
 tags: [Venice, map, repository, sounds]
 
-preview_image: "venezia_soundmap_00.png"
+preview_image: 'venezia_soundmap_00.png'
 
 excerpt: 'This collaborative repository aims at preserving the heritage sound of the lagoon of Venice.'
 exordium: ''
@@ -19,4 +19,5 @@ exordium: ''
 publish: 'yes'
 ---
 
-Hello World!
+tags
+: {% include tags.html %}

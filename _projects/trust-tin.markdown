@@ -11,7 +11,7 @@ time: ''
 categories: [All, Katachresis, Non-Commercial, Research, Static Image]
 tags: [captions, contradiction, images, photography]
 
-preview_image: "trust_tin_00.png"
+preview_image: 'trust_tin_00.png'
 
 excerpt: 'A picture of two tins which images and captions are in contradiction to each other.'
 exordium: ''
@@ -19,4 +19,5 @@ exordium: ''
 publish: 'yes'
 ---
 
-Hello World!
+tags
+: {% include tags.html %}

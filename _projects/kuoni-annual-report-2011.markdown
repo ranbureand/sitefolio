@@ -11,7 +11,7 @@ time: ''
 categories: [All, Commercial, Key, Print]
 tags: [annual report, print]
 
-preview_image: "kuoni_annual_report_2011_00.png"
+preview_image: 'kuoni_annual_report_2011_00.png'
 
 excerpt: 'The annual report of Kuoni is made up of five core modules/main chapters: Market Report, Financial Report, People Report, Brand Report and Future Report.'
 exordium: ''
@@ -19,4 +19,5 @@ exordium: ''
 publish: 'yes'
 ---
 
-Hello World!
+tags
+: {% include tags.html %}

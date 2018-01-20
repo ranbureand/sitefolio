@@ -11,7 +11,7 @@ time: ''
 categories: [All, Non-Commercial, Research, Static Image, We Have IUAV]
 tags: [image, photography, power, reality, reconstruction]
 
-preview_image: "broken_cat_00.png"
+preview_image: 'broken_cat_00.png'
 
 excerpt: 'The couple of antithetical pictures is none other than a reflection on the power of reconstructing reality intrinsic of photographic images.'
 exordium: ''
@@ -19,4 +19,5 @@ exordium: ''
 publish: 'yes'
 ---
 
-Hello World!
+tags
+: {% include tags.html %}

@@ -11,7 +11,7 @@ time: ''
 categories: [All, Katachresis, Non-Commercial, Research, Static Image]
 tags: [flatness, photography, reality]
 
-preview_image: "the_image_act_00.png"
+preview_image: 'the_image_act_00.png'
 
 excerpt: 'Pictures conceived to debunk the common assumption which sees each photographic image as an objective, neutral window on reality, rather than as a subjective, conscious composition resulting from an image act.'
 exordium: ''
@@ -19,4 +19,5 @@ exordium: ''
 publish: 'yes'
 ---
 
-Hello World!
+tags
+: {% include tags.html %}

@@ -11,7 +11,7 @@ time: ''
 categories: [All, Katachresis, Non-Commercial, Research, Static Image]
 tags: [images, money, reality, value]
 
-preview_image: "misrepresentation_00.png"
+preview_image: 'misrepresentation_00.png'
 
 excerpt: 'Oppositely to what happens with other kinds of photos, a picture of money is perceived immediately as a mere object and not as a window on reality.'
 exordium: ''
@@ -19,4 +19,5 @@ exordium: ''
 publish: 'yes'
 ---
 
-Hello World!
+tags
+: {% include tags.html %}

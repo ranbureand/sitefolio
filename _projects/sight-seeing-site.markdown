@@ -11,7 +11,7 @@ time: ''
 categories: [All, Commercial, Digital]
 tags: [infinite canvas, single page layout, site]
 
-preview_image: "sight_seeing_site_00.png"
+preview_image: 'sight_seeing_site_00.png'
 
 excerpt: 'The website presents the photobook Sight-_Seeing and the exhibitions of the same name held in Innsbruck and Berlin.'
 exordium: ''
@@ -19,4 +19,5 @@ exordium: ''
 publish: 'yes'
 ---
 
-Hello World!
+tags
+: {% include tags.html %}

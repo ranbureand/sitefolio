@@ -6,10 +6,10 @@ layout: project
 title: 'Hello World!'
 author: 'Andrea Buran'
 
-time: '2017'
+time: '2018'
 
 categories: [All, Non-Commercial]
-tags: [tag-1, tag-2]
+tags: [Markdown, stress test, styles, typography]
 
 preview_image: 'hello_world_00.png'
 
@@ -18,6 +18,9 @@ exordium: 'This is an exordium.'
 
 publish: 'yes'
 ---
+
+tags
+: {% include tags.html %}
 
 <div class="figures">
     {% include image.html size="xl" src="placeholder_00.png" alt="This is a placeholder image." %}

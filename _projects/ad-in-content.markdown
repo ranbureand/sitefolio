@@ -11,7 +11,7 @@ time: ''
 categories: [All, Katachresis, Non-Commercial, Research, Static Image]
 tags: [advertising, audience, content, subordination]
 
-preview_image: "ad_in_content_00.png"
+preview_image: 'ad_in_content_00.png'
 
 excerpt: 'A photomontage synthesizes the relation of subordination of editorial and news contents to advertising.'
 exordium: ''
@@ -19,4 +19,5 @@ exordium: ''
 publish: 'yes'
 ---
 
-Hello World!
+tags
+: {% include tags.html %}
