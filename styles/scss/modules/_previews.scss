@@ -176,17 +176,29 @@
 .preview.current {
   cursor: default;
 
-  @include min-screen(col(8)) {
-    .preview-image {
-      transform: translate(0, em(-$d-gut, $d-tiny-size));
-    }
-  }
   .preview-image {
     transform: translate(0, em(-$m-gut, $m-tiny-size));
+    &:before {
+      transform: translate(0, em($m-gut, $m-tiny-size));
+
+      background-color: rgba($canvas, 1.0);
+
+      @include adjustWidth($m-gut, $m-tiny-size);
+    }
   }
   .preview-title {
     text-decoration: line-through;
 
     color: $strong-type-color;
+  }
+  @include min-screen(col(8)) {
+    .preview-image {
+      transform: translate(0, em(-$d-gut, $d-tiny-size));
+      &:before {
+        transform: translate(0, em($d-gut, $d-tiny-size));
+
+        @include adjustWidth($d-gut, $d-tiny-size);
+      }
+    }
   }
 }

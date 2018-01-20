@@ -8,7 +8,7 @@
           <ul class="previews layout-1d-rtl">
             {% for project in projectList reversed %}
             <li class="element-1d">
-              <a class="preview" href="{{ project.url | prepend: site.baseurl }}">
+              <a class="preview{% if project.title == page.title %} current{% endif %}" href="{{ project.url | prepend: site.baseurl }}">
                 <div class="preview-image">
                   <img src="{{ site.baseurl }}/media/projects/{{ project.title | slugify: 'latin' }}/preview-images/{{project.preview_image}}" alt="“{{project.title}}” preview image." title="{{ project.title }}"/>
                 </div>
