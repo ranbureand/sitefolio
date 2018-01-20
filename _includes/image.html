@@ -16,6 +16,7 @@
   <img 
   src="../media/projects/{{ page.title | slugify }}/project-images/{{ include.src }}" 
   alt="{% if include.alt %}{{ include.alt }}{% else %}{{ page.title }}{% endif %}"
+  {% if include.color %} style="background-color: {{ include.color }}" {% endif %}
   />
   {% if include.caption%}
   <figcaption class="typo-s">
