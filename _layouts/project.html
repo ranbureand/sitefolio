@@ -1,28 +1,28 @@
 ---
 layout: base
 ---
-    <article class="project layout-2d">
+      <article class="project layout-2d">
 
-      <header class="column-2d-m typo-sl">
-        <h1>{{ page.title }}</h1>
-      </header>
+        <header class="project-head column-2d-m typo-sl">
+          <h1>{{ page.title }}</h1>
+        </header>
 
-      <div class="column-2d-l separator"></div>
+        <div class="column-2d-l separator"></div>
 
-      {% if page.time %}
-      <div class="column-2d-s typo-l project-time">
-        {{ page.time | markdownify }}
-      </div>
-      {% endif %}
+        {% if page.time %}
+        <div class="project-time column-2d-s typo-l">
+          {{ page.time | markdownify }}
+        </div>
+        {% endif %}
 
-      {% if page.exordium %}
-      <div class="column-2d-m typo-l">
-        {{ page.exordium | markdownify }}
-      </div>
-      {% endif %}
+        {% if page.exordium %}
+        <div class="project-exordium column-2d-m typo-l">
+          {{ page.exordium | markdownify }}
+        </div>
+        {% endif %}
 
-      <div class="column-2d-m typo-m">
-        {{ content }}
-      </div>
+        <div class="project-body column-2d-m typo-m">
+          {{ content }}
+        </div>
 
-    </article>
+      </article>

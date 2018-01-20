@@ -13,7 +13,6 @@
 {% endif %}
 
 <figure class="{{ image_size }}">
-
   <img 
   src="../media/projects/{{ page.title | slugify }}/project-images/{{ include.src }}" 
   alt="{% if include.alt %}{{ include.alt }}{% else %}{{ page.title }}{% endif %}"
@@ -23,5 +22,4 @@
     {{ include.caption | markdownify }}
   </figcaption>
   {% endif %}
-
 </figure>

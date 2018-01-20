@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body id="outer-space">
+  <body>
 
-    {% include header.html %}
+    <div id="outer-space">
 
-    {{ content }}
+{% include header.html %}
 
-    {% include projects.html %}
+{{ content }}
 
-    {% include about.html %}
+{% include projects.html %}
 
-    {% include contacts.html %}
+{% include details.html %}
 
-    {% include footer.html %}
+{% include contacts.html %}
+
+    </div>
+
+{% include footer.html %}
+
+{% include scripts.html %}
 
   </body>
 
