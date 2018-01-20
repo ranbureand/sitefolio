@@ -139,3 +139,11 @@ $button-border-width: 2px;
     line-height: em($lines, $to-size);
   }
 }
+
+/*
+** Adjust the width of an element (to accomodate for CSS Comb)
+*/
+
+@mixin adjustWidth($to-gut, $from-size: $base-font-size) {
+  width: calc(100% - #{em($to-gut*2, $from-size)});
+}

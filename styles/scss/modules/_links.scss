@@ -4,96 +4,159 @@
 ** Links
 */
 
+.links {
+  li {
+    width: 100/4*1%;
+    margin-bottom: em($m-large-line*2);
+    padding-right: em($m-gut/2);
+    padding-left: em($m-gut/2);
+  }
+  @include min-screen(col(8)) {
+    li {
+      width: 100/4*1%;
+      margin-bottom: em($d-large-line*2);
+      padding-right: em($d-gut/2);
+      padding-left: em($d-gut/2);
+    }
+  }
+  @include min-screen(col(12)) {
+    li {
+      width: 100/6*1%;
+    }
+  }
+  @include min-screen(col(16)) {
+    li {
+      width: 100/8*1%;
+    }
+  }
+}
+
 .link {
-  width: 100/4*1%;
-  margin-bottom: em($m-small-line*2 - strip($m-gut/2)/10);
-  padding-right: em($m-gut/2);
-  padding-left: em($m-gut/2);
+  display: block;
 
-  .entity {
-    font-weight: $bold;
+  text-decoration: none;
 
-    display: block;
+  .link-icon {
+    width: 100%;
+    margin-bottom: em($m-small-line/2);
 
-    text-decoration: none;
-    &:hover {
-      .icon {
-        box-shadow: rgba($black, 0.1) 0 em($m-gut/4) em($m-gut*2);
-        transform: translate(0, em(-$m-gut));
-      }
-      .title {
-        color: $color;
-      }
-    }
-    &:active {
-      .icon {
-        box-shadow: rgba($black, 0.0) 0 em($m-gut/4) em($m-gut*2);
-        transform: translate(0, em($m-gut/2));
-        transition-duration: 0.0s;
-      }
-      .title {
-        transition-duration: 0.0s;
-        color: $color;
-      }
-    }
-    .icon {
-      transition-property: box-shadow, transform;
-      transition-duration: 0.2s, 0.2s;
-      transition-timing-function: ease-in-out, ease-in-out;
-      transform: translate(0, 0);
-      display: block;
+    transition-timing-function: ease-out;
+    transition-duration: 0.2s;
+    transition-property: transform;
+    transform: translate(0, 0);
 
+    @include font-size($m-tiny-size, $m-tiny-line);
+    div {
       width: 100%;
-      margin-bottom: em($m-small-line/2);
       padding-bottom: 100%;
 
       background-color: $picture-background-color;
-      background-image: url("../../media/skills/placeholder_00.png");
+      background-image: url('../../media/skills/placeholder_00.png');
       background-repeat: no-repeat;
       background-position: center;
       background-size: 80%;
     }
-    .title {
-      font-weight: $bold;
+    &:before {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      left: 0;
 
-      color: $strong-type-color;
+      display: block;
 
-      transition-property: color;
-      transition-duration: 0.2s;
-      transition-timing-function: ease-in-out;
-      @include font-size($m-small-size, $m-small-line);
+      width: 100%;
+      height: 100%;
+      margin-right: auto;
+      margin-left: auto;
+
+      content: '';
+      transition-timing-function: ease-out, ease-out, ease-out;
+      transition-duration: 0.2s, 0.2s, 0.2s;
+      transition-property: background-color, transform, width;
+      transform: translate(0, 0); // scale(1.00)
+      transform-origin: 50% 100%;
+
+      background-color: rgba($canvas, 0.0);
+    }
+  }
+  .link-title {
+    font-weight: $bold;
+
+    margin-top: em($m-medium-line/4*3, $m-medium-size);
+
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+    transition-property: color;
+
+    color: $strong-type-color;
+
+    @include font-size($m-small-size, $m-small-line);
+  }
+  &:hover {
+    .link-icon {
+      transform: translate(0, em(-$m-gut, $m-tiny-size));
+      &:before {
+        transform: translate(0, em($m-gut, $m-tiny-size));
+
+        background-color: rgba($canvas, 1.0);
+
+        @include adjustWidth($m-gut, $m-tiny-size);
+      }
+    }
+    .link-title {
+      color: $color;
+    }
+  }
+  &:active {
+    .link-icon {
+      transition-duration: 0.0s;
+      transform: translate(0, em($m-gut/2, $m-tiny-size));
+      &:before {
+        width: 100%;
+
+        transition-duration: 0.0s, 0.0s;
+        transform: translate(0, 0);
+
+        background-color: rgba($black, 0.0);
+      }
+    }
+    .link-title {
+      transition-duration: 0.0s;
+
+      color: $color;
     }
   }
   @include min-screen(col(8)) {
-    width: 100/4*1%;
-    margin-bottom: em($d-small-line*2 - strip($d-gut/2)/10);
-    padding-right: em($d-gut/2);
-    padding-left: em($d-gut/2);
-    .entity {
-      .icon {
-        margin-bottom: em($d-small-line/2, $d-small-size);
-      }
-      .title {
-        @include font-size($d-small-size, $d-small-line);
-      }
-      &:hover {
-        .icon {
-          transform: translate(0, em(-$d-gut));
-          box-shadow: rgba($black, 0.1) 0 em($d-gut/4) em($d-gut*2);
-        }
-      }
-      &:active {
-        .icon {
-          box-shadow: rgba($black, 0.0) 0 em($m-gut/4) em($m-gut*2);
-          transform: translate(0, em($d-gut/2));
+    .link-icon {
+      @include font-size($d-tiny-size, $d-tiny-line);
+    }
+    .link-title {
+      margin-top: em($d-small-line/2, $d-small-size);
+
+      @include font-size($d-small-size, $d-small-line);
+    }
+    &:hover {
+      .link-icon {
+        transform: translate(0, em(-$d-gut, $d-tiny-size));
+        &:before {
+          transform: translate(0, em($d-gut, $d-tiny-size));
+
+          @include adjustWidth($d-gut, $d-tiny-size);
         }
       }
     }
-  }
-  @include min-screen(col(12)) {
-    width: 100/6*1%;
-  }
-  @include min-screen(col(16)) {
-    width: 100/8*1%;
+    &:active {
+      .link-icon {
+        transition-duration: 0.0s;
+        transform: translate(0, em($d-gut/2, $d-tiny-size));
+        &:before {
+          width: 100%;
+
+          transition-duration: 0.0s, 0.0s;
+          transform: translate(0, 0);
+        }
+      }
+    }
   }
 }
