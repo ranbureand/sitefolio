@@ -1,24 +1,148 @@
-{% if include.size == "xl" %}
-  {% assign image_size = 'image-xl' %}
-{% elsif include.size == "l" %}
-  {% assign image_size = 'image-l' %}
-{% elsif include.size == "s" %}
-  {% assign image_size = 'image-s' %}
-{% elsif include.size == "xs" %}
-  {% assign image_size = 'image-xs' %}
-{% elsif include.size == "xxs" %}
-  {% assign image_size = 'image-xxs' %}
-{% else %}
-  {% assign image_size = 'image-m' %}
-{% endif %}
+{%- if include.size == "xl" -%}
+  {%- assign image_size = 'image-xl' -%}
+{%- elsif include.size == "l" -%}
+  {%- assign image_size = 'image-l' -%}
+{%- elsif include.size == "sm" -%}
+  {%- assign image_size = 'image-sm' -%}
+{%- elsif include.size == "s" -%}
+  {%- assign image_size = 'image-s' -%}
+{%- elsif include.size == "xs" -%}
+  {%- assign image_size = 'image-xs' -%}
+{%- else -%}
+  {%- assign image_size = 'image-m' -%}
+{%- endif -%}
+
+{%- assign column = 72 -%}
 
 <figure class="{{ image_size }}">
+  {% if include.size == "xl" %}
   <img 
-  src="../media/projects/{{ page.title | slugify }}/project-images/{{ include.src }}" 
-  alt="{% if include.alt %}{{ include.alt }}{% else %}{{ page.title }}{% endif %}"
-  {% if include.color %} style="background-color: {{ include.color }}" {% endif %}
+    src="
+    ../media/projects/{{ page.title | slugify }}/images/1440/{{ include.src }}
+    " 
+    srcset="
+    ../media/projects/{{ page.title | slugify }}/images/2880/{{ include.src }} {{ column | times: 16 }}w,
+    ../media/projects/{{ page.title | slugify }}/images/1440/{{ include.src }} {{ column | times: 16 }}w,
+    ../media/projects/{{ page.title | slugify }}/images/2160/{{ include.src }} {{ column | times: 12 }}w,
+    ../media/projects/{{ page.title | slugify }}/images/1080/{{ include.src }} {{ column | times: 12 }}w,
+    ../media/projects/{{ page.title | slugify }}/images/1440/{{ include.src }} {{ column | times: 8 }}w,
+    ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} {{ column | times: 8 }}w,
+    ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} 360w,
+    ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }} 360w,
+    " 
+    sizes="
+    (min-width: 72em) {{ column | times: 16 | divided_by: 16 }}em, 
+    (min-width: 54em) {{ column | times: 12 | divided_by: 16 }}em, 
+    (min-width: 30em) {{ column | times: 8 | divided_by: 16 }}em, 
+    (min-width: 0) {{ 360 | divided_by: 16 }}em
+    " 
+    alt="
+    {% if include.alt %}{{ include.alt }}{% else %}{{ page.title }}{% endif %}
+    " 
   />
-  {% if include.caption%}
+  {%- elsif include.size == "l" -%}
+  <img 
+    src="
+    ../media/projects/{{ page.title | slugify }}/images/1080/{{ include.src }}
+    " 
+    srcset="
+    ../media/projects/{{ page.title | slugify }}/images/2160/{{ include.src }} {{ column | times: 12 }}w,
+    ../media/projects/{{ page.title | slugify }}/images/1080/{{ include.src }} {{ column | times: 12 }}w,
+    ../media/projects/{{ page.title | slugify }}/images/1440/{{ include.src }} {{ column | times: 8 }}w,
+    ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} {{ column | times: 8 }}w,
+    ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} 360w,
+    ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }} 360w,
+    " 
+    sizes="
+    (min-width: 54em) {{ column | times: 12 | divided_by: 16 }}em, 
+    (min-width: 30em) {{ column | times: 8 | divided_by: 16 }}em, 
+    (min-width: 0) {{ 360 | divided_by: 16 }}em
+    " 
+    alt="
+    {% if include.alt %}{{ include.alt }}{% else %}{{ page.title }}{% endif %}
+    " 
+  />
+  {%- elsif include.size == "sm" -%}
+  <img 
+    src="
+    ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }}
+    " 
+    srcset="
+    ../media/projects/{{ page.title | slugify }}/images/1440/{{ include.src }} {{ column | times: 6 }}w, 
+    ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} {{ column | times: 6 }}w, 
+    ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} {{ column | times: 4 }}w, 
+    ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }} {{ column | times: 4 }}w, 
+    ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} 360w, 
+    ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }} 360w,
+    " 
+    sizes="
+    (min-width: 54em) {{ column | times: 6 | divided_by: 16 }}em, 
+    (min-width: 30em) {{ column | times: 4 | divided_by: 16 }}em, 
+    (min-width: 0) {{ 360 | divided_by: 16 }}em
+    " 
+    alt="
+    {% if include.alt %}{{ include.alt }}{% else %}{{ page.title }}{% endif %}
+    " 
+  />
+  {%- elsif include.size == "s" -%}
+  <img 
+    src="
+    ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }}
+    " 
+    srcset="
+    ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} {{ column | times: 4 }}w, 
+    ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }} {{ column | times: 4 }}w, 
+    ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} 360w, 
+    ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }} 360w,
+    " 
+    sizes="
+    (min-width: 30em) {{ column | times: 4 | divided_by: 16 }}em, 
+    (min-width: 0) {{ 360 | divided_by: 16 }}em
+    " 
+    alt="
+    {% if include.alt %}{{ include.alt }}{% else %}{{ page.title }}{% endif %}
+    " 
+  />
+  {%- elsif include.size == "xs" -%}
+  <img 
+    src="
+    ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }}
+    " 
+    srcset="
+    ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} {{ column | times: 2 }}w, 
+    ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }} {{ column | times: 2 }}w, 
+    ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} 240w, 
+    ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }} 240w,
+    " 
+    sizes="
+    (min-width: 30em) {{ column | times: 2 | divided_by: 16 }}em, 
+    (min-width: 0) {{ 240 | divided_by: 16 }}em
+    " 
+    alt="
+    {% if include.alt %}{{ include.alt }}{% else %}{{ page.title }}{% endif %}
+    " 
+  />
+  {%- else -%}
+  <img 
+    src="
+    ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }}
+    " 
+    srcset="
+    ../media/projects/{{ page.title | slugify }}/images/1440/{{ include.src }} {{ column | times: 8 }}w,
+    ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} {{ column | times: 8 }}w,
+    ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} 360w,
+    ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }} 360w,
+    " 
+    sizes="
+    (min-width: 30em) {{ column | times: 8 | divided_by: 16 }}em, 
+    (min-width: 0) {{ 360 | divided_by: 16 }}em
+    " 
+    alt="
+    {% if include.alt %}{{ include.alt }}{% else %}{{ page.title }}{% endif %}
+    " 
+  />
+  {%- endif -%}
+  {%- if include.caption -%}
   <figcaption class="typo-s">
     {{ include.caption | markdownify }}
   </figcaption>
