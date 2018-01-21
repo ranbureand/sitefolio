@@ -98,15 +98,18 @@ div {
       color: $button-type-color;
       background-color: $button-background-color;
 
-      transition-property: color, background-color;
-      transition-duration: 0.2s, 0.2s;
-      transition-timing-function: ease-in-out, ease-in-out;
+      transition-property: background-color;
+      transition-duration: 0.2s;
+      transition-timing-function: ease-in-out;
       @include font-size($m-small-size, $m-small-line);
     }
     &:hover, &:active {
       .watch {
         background-color: $color;
       }
+    }
+    &:active {
+      transition-duration: 0.0s;
     }
   }
   @include min-screen(col(8)) {
