@@ -114,10 +114,9 @@ optgroup {
     display: block;
 
     @include face(sans);
-    transition-property: color, border-color;
-    transition-duration: 0.2s, 0.2s;
-    transition-timing-function: ease-in-out, ease-in-out;
-    //@include transition-delay(0s, 0s);
+    transition-property: color, background-color, border-color;
+    transition-duration: 0.2s, 0.2s, 0.2s;
+    transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
   }
   label {
     font-weight: $normal;
@@ -170,15 +169,14 @@ optgroup {
     height: em($m-medium-line*1.5, $m-medium-size);
     padding: em($m-medium-line/4 + strip(-$button-border-width/10), $m-medium-size) em($m-gut*3, $m-medium-size) em($m-medium-line/4 + strip(-$button-border-width/10), $m-medium-size) em($m-gut*3, $m-medium-size);
 
-    color: $strong-type-color;
-    border: $button-border-width solid $strong-field-border-color;
-    background-color: $field-background-color;
+    color: $button-type-color;
+    border: $button-border-width solid $button-background-color;
+    background-color: $button-background-color;
 
-    border-radius: 4px, 4px;
     @include font-size($m-medium-size, $m-medium-line);
     &:hover, &:active {
-      color: $color;
       border-color: $color;
+      background-color: $color;
     }
     &:active {
       transition-duration: 0s, 0s;

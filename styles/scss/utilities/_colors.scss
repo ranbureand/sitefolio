@@ -9,7 +9,7 @@ $black: #000;
 //$color: #ff6600;
 $color: #ff0055;
 $background: #fafafa;
-$canvas: #f2f2f2;
+$canvas: darken($background, 2%);
 
 /*
 ** Typography
@@ -21,6 +21,8 @@ $light-type-color: rgba($black, 0.88);
 $selected-type-color: rgba($black, 0.88);
 $placeholder-type-color: rgba($black, 0.38);
 
+$button-type-color: $background;
+
 /*
 ** Backgrounds
 */
@@ -30,9 +32,10 @@ $strong-background-color: darken($background, 4%);
 $code-background-color: darken($background, 4%);
 $selected-background-color: darken($background, 4%);
 $field-background-color: $background;
+
 $picture-background-color: darken($background, 4%);
 
-$video-background-color: rgba($black, 0.88);
+$button-background-color: $strong-type-color;
 
 /*
 ** Shadows

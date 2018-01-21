@@ -7,7 +7,7 @@
 .figures {
   display: flex;
 
-  margin-top: em($m-large-line);
+  margin-top: em($m-medium-line*3/2);
   margin-right: em(-$m-gut/2);
   margin-left: em(-$m-gut/2);
 
@@ -17,7 +17,7 @@
   align-content: flex-start;
   @include min-screen(col(8)) {
     width: col(8);
-    margin-top: rhythm($d-large-line);
+    margin-top: em($d-medium-line*3/2);
     margin-right: em(-$d-gut/2);
     margin-left: em(-$d-gut/2);
   }
@@ -95,18 +95,17 @@ div {
 
       text-align: center;
 
-      color: $background-color;
-      background-color: $video-background-color;
+      color: $button-type-color;
+      background-color: $button-background-color;
 
-      transition-property: color;
-      transition-duration: 0.2s;
-      transition-timing-function: ease-in-out;
-      border-radius: 4px, 4px;
+      transition-property: color, background-color;
+      transition-duration: 0.2s, 0.2s;
+      transition-timing-function: ease-in-out, ease-in-out;
       @include font-size($m-small-size, $m-small-line);
     }
     &:hover, &:active {
       .watch {
-        color: $color;
+        background-color: $color;
       }
     }
   }
@@ -146,16 +145,19 @@ div {
   width: 100%;
 
   @include min-screen(col(12)) {
-    width: col(8);
+    width: 100%*16/24;
+  }
+  @include min-screen(col(16)) {
+    width: 100%*12/24;
   }
 }
 .image-sm, .video-sm {
   width: 100%;
   @include min-screen(480/16*1em) {
-    width: 100%*2/4;
+    width: 100%*12/24;
   }
   @include min-screen(col(12)) {
-    width: col(6);
+    width: 100%*8/24;
   }
 }
 .image-s, .video-s {
