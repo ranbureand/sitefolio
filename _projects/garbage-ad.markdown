@@ -16,7 +16,7 @@ preview_image: 'garbage_ad_00.png'
 excerpt: 'This series of pictures is a reflection on the redundancy and omnipresence of the image in our society.'
 exordium: ''
 
-publish: 'yes'
+publish: 'no'
 ---
 
 tags

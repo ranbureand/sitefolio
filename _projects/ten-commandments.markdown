@@ -16,7 +16,7 @@ preview_image: 'ten_commandments_00.png'
 excerpt: 'Ten commandments to never miss the photo opportunity of a pseudo-event.'
 exordium: ''
 
-publish: 'yes'
+publish: 'no'
 ---
 
 tags

@@ -16,7 +16,7 @@ preview_image: 'no_smoking_sign_00.png'
 excerpt: 'A sign designed for the collection of alternatives to usual “No Smoking” signs promoted by Daniel Eatock.'
 exordium: ''
 
-publish: 'yes'
+publish: 'no'
 ---
 
 tags

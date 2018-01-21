@@ -16,7 +16,7 @@ preview_image: 'actual_size_postcards_00.png'
 excerpt: 'Actual size postcards of Venice. The city is represented as a pattern of various texture.'
 exordium: ''
 
-publish: 'yes'
+publish: 'no'
 ---
 
 tags

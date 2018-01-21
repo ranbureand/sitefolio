@@ -6,7 +6,7 @@ layout: project
 title: 'Medlay, Docs Site'
 author: 'Andrea Buran'
 
-time: '2015–Present'
+time: '2015–2016'
 
 categories: [All, Digital, Dynamic Image, Key, Non-Commercial, Research]
 tags: [cinema, comics, infinite canvas, loop, new media form, responsive, sequential art, site]
@@ -20,8 +20,7 @@ publish: 'yes'
 ---
 
 <div class="figures">
-  {% include image.html src="medlay_site_the_last_dispatch_1280_00_1.png" alt="A screenshot of the site introducing the principles Medlay, a new concept for crafting multimedia artefacts on the Web." caption="This is a caption." size="l" %}
-  {% include image.html src="medlay_site_the_last_dispatch_1280_00_1.png" size="m" %}
+  {% include image.html size="m" src="medlay_site_research_1280_00.png" alt="A screenshot of the site introducing the principles Medlay, a new concept for crafting multimedia artefacts on the Web." caption="This is a caption." %}
 </div>
 
 tags
@@ -36,7 +35,10 @@ responsibilities
 link
 : [Medlay](http://ranbureand.github.io/medlay/ "Medlay")
 
-![img](401)
+<div class="figures">
+  {% include image.html size="sm" src="medlay_site_pieces_360_00.png" alt="A screenshot of the site introducing the principles Medlay, a new concept for crafting multimedia artefacts on the Web." color="" %}
+  {% include image.html size="sm" src="medlay_site_pieces_360_00.png" alt="A screenshot of the site introducing the principles Medlay, a new concept for crafting multimedia artefacts on the Web." color="" %}
+</div>
 
 The notes introduce and formalize a new **concept** for crafting multimedia artefacts on the Web—Medlay—in hopes of providing some interesting **food for thought** and pushing the boundaries of the practice further.
 

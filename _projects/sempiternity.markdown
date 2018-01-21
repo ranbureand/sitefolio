@@ -39,7 +39,7 @@ link
 : [Sempiternity](http://www.sempiternity.net/ "Sempiternity")
 
 <div class="figures">
-    {% include image.html size="m" src="sempiternity_16_blueberry_nei_videogiochi_768_00.png" alt="A screenshot of Sempiternity, a site/collection of witty short stories." color="#D9D9F2" %}
+    {% include image.html size="l" src="sempiternity_16_blueberry_nei_videogiochi_768_00.png" alt="A screenshot of Sempiternity, a site/collection of witty short stories." color="#D9D9F2" %}
 </div>
 
 The interface of the site is extremely **simple** on purpose, so that the user can fully **focus on the content** of the pieces without being distracted by any unneeded graphical interference.
@@ -55,12 +55,12 @@ For what concerns the **logo**/**favicon** of the site, what better way to repre
 Such circular existence within time is reiterated by the **background color** of the page, which hue is cyclically rotated over time according to the hour of the day.
 
 <div class="figures">
-    {% include image.html size="s" src="sempiternity_4_il_nuovo_re_00.png" alt="A screenshot of Sempiternity, a site/collection of witty short stories." caption="2:00–2:59 UTC." color="#F2F2D9" %}
-    {% include image.html size="s" src="sempiternity_8_sull_imbarazzo_sociale_00.png" alt="A screenshot of Sempiternity, a site/collection of witty short stories." caption="06:00–06:59 UTC." color="#DAF2DA" %}
-    {% include image.html size="s" src="sempiternity_12_cinquantamila_al_doppio_drago_00.png" alt="A screenshot of Sempiternity, a site/collection of witty short stories." caption="10:00–10:59 UTC." color="#D9F2F2" %}
-    {% include image.html size="s" src="sempiternity_16_blueberry_nei_videogiochi_360_00.png" alt="A screenshot of Sempiternity, a site/collection of witty short stories." caption="14:00–14:59 UTC." color="#D9D9F2" %}
-    {% include image.html size="s" src="sempiternity_20_alla_dogana_00.png" alt="A screenshot of Sempiternity, a site/collection of witty short stories." caption="18:00–18:59 UTC." color="#F2D9F2" %}
-    {% include image.html size="s" src="sempiternity_1_drink_cameriere_e_pappagalli_00.png" alt="A screenshot of Sempiternity, a site/collection of witty short stories." caption="22:00–22:59 UTC." color="#F2DFD9" %}
+    {% include image.html size="sm" src="sempiternity_4_il_nuovo_re_00.png" alt="A screenshot of Sempiternity, a site/collection of witty short stories." caption="2:00–2:59 UTC." color="#F2F2D9" %}
+    {% include image.html size="sm" src="sempiternity_8_sull_imbarazzo_sociale_00.png" alt="A screenshot of Sempiternity, a site/collection of witty short stories." caption="06:00–06:59 UTC." color="#DAF2DA" %}
+    {% include image.html size="sm" src="sempiternity_12_cinquantamila_al_doppio_drago_00.png" alt="A screenshot of Sempiternity, a site/collection of witty short stories." caption="10:00–10:59 UTC." color="#D9F2F2" %}
+    {% include image.html size="sm" src="sempiternity_16_blueberry_nei_videogiochi_360_00.png" alt="A screenshot of Sempiternity, a site/collection of witty short stories." caption="14:00–14:59 UTC." color="#D9D9F2" %}
+    {% include image.html size="sm" src="sempiternity_20_alla_dogana_00.png" alt="A screenshot of Sempiternity, a site/collection of witty short stories." caption="18:00–18:59 UTC." color="#F2D9F2" %}
+    {% include image.html size="sm" src="sempiternity_1_drink_cameriere_e_pappagalli_00.png" alt="A screenshot of Sempiternity, a site/collection of witty short stories." caption="22:00–22:59 UTC." color="#F2DFD9" %}
 </div>
 
 <div class="figures">

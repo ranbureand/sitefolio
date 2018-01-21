@@ -16,7 +16,7 @@ preview_image: 'trust_tin_00.png'
 excerpt: 'A picture of two tins which images and captions are in contradiction to each other.'
 exordium: ''
 
-publish: 'yes'
+publish: 'no'
 ---
 
 tags
