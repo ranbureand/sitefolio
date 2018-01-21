@@ -9,7 +9,7 @@ author: 'Andrea Buran'
 time: '2010'
 
 categories: [All, Commercial, Key, Print, Research]
-tags: [16-pages signature, landscape photography, photobook, print, spatial montage]
+tags: [landscape photography, photobook, print, spatial montage]
 
 preview_image: 'sight_seeing_00.jpg'
 
