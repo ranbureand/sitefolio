@@ -1,0 +1,15 @@
+---
+layout: project
+
+title: '404 Error: Page Not Found'
+author: 'Andrea Buran'
+
+excerpt: 'The photobook Sight-_Seeing 2 spatially arranges a heterogeneous set of collectively taken pictures of Tyrolean winter landscapes—halfway between tourism’s advertising images and contemporary photos.'
+
+---
+
+<div class="figures">
+  {% include image.html size="xl" src="outer_space_00.png" alt="A blank traffic signal placed in the middle of nowhere." %}
+</div>
+
+I’m really sorry, but I guess you are lost in the outer space. This conversation can serve no purpose anymore. Goodbye. 
