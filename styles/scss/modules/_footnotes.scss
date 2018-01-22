@@ -8,19 +8,19 @@
   margin-top: em($m-large-line);
   padding-top: em($m-large-line);
 
-  border-top: $border-width dotted $border-color;
+  border-top: $border-width solid $border-color;
 
   li p {
     font-size: 1em;
   }
   ol {
     margin-bottom: 0;
+
     counter-reset: footnotes;
     li {
       counter-increment: footnotes;
       &:before {
         //font-style: italic;
-
         //content: 'fn. ' counter(footnotes);
         content: counter(footnotes);
       }
@@ -32,12 +32,6 @@
     }
     > *:last-child {
       margin-bottom: 0;
-    }
-  }
-  .reversefootnote {
-    content: 'banana';
-    &:after {
-      content: 'Jump Back';
     }
   }
   @include min-screen(col(8)) {

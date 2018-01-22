@@ -19,7 +19,7 @@
 .footer {
   padding-right: $m-gut;
   padding-left: $m-gut;
-  padding-top: em($m-large-line*6);
+  padding-top: em($m-large-line*3);
   @include min-screen(col(8)) {
     padding-top: em($d-large-line*6);
     padding-right: 0;
