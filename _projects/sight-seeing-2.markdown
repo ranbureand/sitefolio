@@ -9,7 +9,7 @@ author: 'Andrea Buran'
 time: '2012'
 
 categories: [All, Commercial, Key, Print]
-tags: [landscape photography, photobook, print]
+tags: [landscape photography, photobook, print, spatial montage]
 
 preview_image: 'sight_seeing_2_00.jpg'
 
@@ -39,8 +39,8 @@ team
 : Andrea Buran, Jörg Koopmann, Wolfgang Scheppe
 
 <div class="figures">
-  {% include image.html size="m" src="sight_seeing_2_1396.jpg" alt="A double page spread of the book Sight-_Seeing." %}
-  {% include image.html size="m" src="sight_seeing_2_1399.jpg" alt="A double page spread of the book Sight-_Seeing." caption="The ubiquity of the observer." %}
+  {% include image.html size="l" src="sight_seeing_2_1396.jpg" alt="A double page spread of the book Sight-_Seeing." %}
+  {% include image.html size="l" src="sight_seeing_2_1399.jpg" alt="A double page spread of the book Sight-_Seeing." caption="The ubiquity of the observer." %}
 </div>
 
 Also in this second edition the beginnings of the project was an incredibly large image archive, made up by pictures taken by the photographers Hans Herbig, Verena Kathrein, Jörg Koopmann, Regina Recht, Sebastian Schels, [Alexander Ziegler](http://alexanderziegler.com/ "Alexander Ziegler’s website") and Richard Walch.

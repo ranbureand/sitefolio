@@ -56,8 +56,8 @@ How could the correlations between the pictures of such an heterogenous[^heterog
 The source of inspiration for the innovative layout solution of *Sight-_Seeing* came from a couple of misprinted photographic books, which pictures—due to a wrong [imposition](http://printwiki.org/Imposition "imposition on PrintWiki") of pages on press sheets—were slightly crossing the fold. Such a printing error was taken as a starting point for conceiving the layout of the book.
 
 <div class="figures">
-  {% include image.html size="m" src="sight_seeing_6383.jpg" alt="A double page spread of the book Sight-_Seeing." %}
-  {% include image.html size="m" src="sight_seeing_6388.jpg" alt="A double page spread of the book Sight-_Seeing." %}
+  {% include image.html size="l" src="sight_seeing_6383.jpg" alt="A double page spread of the book Sight-_Seeing." %}
+  {% include image.html size="l" src="sight_seeing_6388.jpg" alt="A double page spread of the book Sight-_Seeing." %}
 </div>
 
 Firstly, after a keen collaborative selection, the pictures were reduced in number and divided into twelve thematic groups, and a [16-pages](http://printwiki.org/Octavo "16-pages / octavo on PrintWiki") [signature](http://printwiki.org/Signature "signature on PrintWiki") was reserved to each of them.

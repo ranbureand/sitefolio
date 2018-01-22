@@ -67,7 +67,7 @@ Visually the mind map appears as the wireframe of a tridimensional landscape, wh
 A global motion pattern is associated to each of the fifty profiles described in the chapter *People Report*. It represents all the locations reached by the interviewed person during his/her life by means of magenta arcs projected on a tridimensional world map.
 
 <div class="figures">
-  {% include image.html size="m" src="kuoni_annual_report_2011_7142.jpg" alt="A double page spread of the Kuoni Annual Report 2011." %}
+  {% include image.html size="xl" src="kuoni_annual_report_2011_7142.jpg" alt="A double page spread of the Kuoni Annual Report 2011." %}
   {% include image.html size="m" src="kuoni_annual_report_2011_7155.jpg" alt="A double page spread of the Kuoni Annual Report 2011." %}
   {% include image.html size="m" src="kuoni_annual_report_2011_7156.jpg" alt="A double page spread of the Kuoni Annual Report 2011." %}
 </div>
