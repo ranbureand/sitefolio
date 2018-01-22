@@ -6,7 +6,7 @@ author: 'Andrea Buran'
 
 preview_image: 'outer_space_00.png'
 
-excerpt: 'I’m really sorry, but I guess you are lost in the outer space.'
+excerpt: 'I am really sorry, but it appears you are lost in the outer space.'
 
 ---
 
