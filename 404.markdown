@@ -14,4 +14,4 @@ excerpt: 'I’m really sorry, but I guess you are lost in the outer space.'
   {% include image.html size="xl" src="outer_space_00.png" alt="A blank traffic signal placed in the middle of nowhere." %}
 </div>
 
-I’m really sorry, but it appears you are lost in the outer space. This conversation can serve no purpose anymore. Goodbye. 
+I am really sorry, but it appears you are lost in the outer space. This conversation can serve no purpose anymore. Goodbye. 
