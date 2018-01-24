@@ -22,8 +22,8 @@
   padding-top: em($m-large-line*3);
   @include min-screen(col(8)) {
     padding-top: em($d-large-line*6);
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: em($d-gut/2);
+    padding-left: em($d-gut/2);
   }
 }
 

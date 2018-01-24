@@ -13,8 +13,10 @@
 {%- endif -%}
 
 {%- assign column = 72 -%}
+{%- assign w_float = include.w | times: 1.0 -%}
 
 <figure class="{{ image_size }}" id="{{ include.src }}">
+  {% if include.h and include.w %}<div class="ratio" style="padding-bottom: {{ include.h | divided_by: w_float | times: 100 }}%;">{% endif %}
   {% if include.size == "xl" %}
   <img 
     src="
@@ -39,6 +41,8 @@
     alt="
     {% if include.alt %}{{ include.alt }}{% else %}{{ page.title }}{% endif %}
     " 
+    height="{{include.height}}" 
+    width="{{include.width}}" 
   />
   {%- elsif include.size == "l" -%}
   <img 
@@ -142,6 +146,7 @@
     " 
   />
   {%- endif -%}
+  {%- if include.h and include.w %}</div>{% endif -%}
   {%- if include.caption -%}
   <figcaption class="typo-s">
     {{ include.caption | markdownify }}

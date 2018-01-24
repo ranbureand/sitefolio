@@ -38,6 +38,10 @@
   dt {
     float: left;
   }
+  dt:after {
+    content: " : ";
+    font-style: normal;
+  }
   a {
     text-decoration: underline;
   }
@@ -62,6 +66,9 @@
     li:before,
     dt {
       text-align: right;
+    }
+    dt:after {
+      content: none;
     }
   }
 }
