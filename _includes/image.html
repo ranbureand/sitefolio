@@ -16,140 +16,120 @@
 {%- assign w_float = include.w | times: 1.0 -%}
 
 <figure class="{{ image_size }}" id="{{ include.src }}">
-  {% if include.h and include.w %}<div class="ratio" style="padding-bottom: {{ include.h | divided_by: w_float | times: 100 }}%;">{% endif %}
-  {% if include.size == "xl" %}
-  <img 
-    src="
-    ../media/projects/{{ page.title | slugify }}/images/1440/{{ include.src }}
-    " 
-    srcset="
-    ../media/projects/{{ page.title | slugify }}/images/2880/{{ include.src }} {{ column | times: 16 }}w,
-    ../media/projects/{{ page.title | slugify }}/images/1440/{{ include.src }} {{ column | times: 16 }}w,
-    ../media/projects/{{ page.title | slugify }}/images/2160/{{ include.src }} {{ column | times: 12 }}w,
-    ../media/projects/{{ page.title | slugify }}/images/1080/{{ include.src }} {{ column | times: 12 }}w,
-    ../media/projects/{{ page.title | slugify }}/images/1440/{{ include.src }} {{ column | times: 8 }}w,
-    ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} {{ column | times: 8 }}w,
-    ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} 360w,
-    ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }} 360w,
-    " 
-    sizes="
-    (min-width: 72em) {{ column | times: 16 | divided_by: 16 }}em, 
-    (min-width: 54em) {{ column | times: 12 | divided_by: 16 }}em, 
-    (min-width: 30em) {{ column | times: 8 | divided_by: 16 }}em, 
-    (min-width: 0) {{ 360 | divided_by: 16 }}em
-    " 
-    alt="
-    {% if include.alt %}{{ include.alt }}{% else %}{{ page.title }}{% endif %}
-    " 
-    height="{{include.height}}" 
-    width="{{include.width}}" 
-  />
-  {%- elsif include.size == "l" -%}
-  <img 
-    src="
-    ../media/projects/{{ page.title | slugify }}/images/1080/{{ include.src }}
-    " 
-    srcset="
-    ../media/projects/{{ page.title | slugify }}/images/2160/{{ include.src }} {{ column | times: 12 }}w,
-    ../media/projects/{{ page.title | slugify }}/images/1080/{{ include.src }} {{ column | times: 12 }}w,
-    ../media/projects/{{ page.title | slugify }}/images/1440/{{ include.src }} {{ column | times: 8 }}w,
-    ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} {{ column | times: 8 }}w,
-    ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} 360w,
-    ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }} 360w,
-    " 
-    sizes="
-    (min-width: 54em) {{ column | times: 12 | divided_by: 16 }}em, 
-    (min-width: 30em) {{ column | times: 8 | divided_by: 16 }}em, 
-    (min-width: 0) {{ 360 | divided_by: 16 }}em
-    " 
-    alt="
-    {% if include.alt %}{{ include.alt }}{% else %}{{ page.title }}{% endif %}
-    " 
-  />
-  {%- elsif include.size == "sm" -%}
-  <img 
-    src="
-    ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }}
-    " 
-    srcset="
-    ../media/projects/{{ page.title | slugify }}/images/1440/{{ include.src }} {{ column | times: 6 }}w, 
-    ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} {{ column | times: 6 }}w, 
-    ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} {{ column | times: 4 }}w, 
-    ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }} {{ column | times: 4 }}w, 
-    ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} 360w, 
-    ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }} 360w,
-    " 
-    sizes="
-    (min-width: 54em) {{ column | times: 6 | divided_by: 16 }}em, 
-    (min-width: 30em) {{ column | times: 4 | divided_by: 16 }}em, 
-    (min-width: 0) {{ 360 | divided_by: 16 }}em
-    " 
-    alt="
-    {% if include.alt %}{{ include.alt }}{% else %}{{ page.title }}{% endif %}
-    " 
-  />
-  {%- elsif include.size == "s" -%}
-  <img 
-    src="
-    ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }}
-    " 
-    srcset="
-    ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} {{ column | times: 4 }}w, 
-    ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }} {{ column | times: 4 }}w, 
-    ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} 360w, 
-    ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }} 360w,
-    " 
-    sizes="
-    (min-width: 30em) {{ column | times: 4 | divided_by: 16 }}em, 
-    (min-width: 0) {{ 360 | divided_by: 16 }}em
-    " 
-    alt="
-    {% if include.alt %}{{ include.alt }}{% else %}{{ page.title }}{% endif %}
-    " 
-  />
-  {%- elsif include.size == "xs" -%}
-  <img 
-    src="
-    ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }}
-    " 
-    srcset="
-    ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} {{ column | times: 2 }}w, 
-    ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }} {{ column | times: 2 }}w, 
-    ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} 240w, 
-    ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }} 240w,
-    " 
-    sizes="
-    (min-width: 30em) {{ column | times: 2 | divided_by: 16 }}em, 
-    (min-width: 0) {{ 240 | divided_by: 16 }}em
-    " 
-    alt="
-    {% if include.alt %}{{ include.alt }}{% else %}{{ page.title }}{% endif %}
-    " 
-  />
-  {%- else -%}
-  <img 
-    src="
-    ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }}
-    " 
-    srcset="
-    ../media/projects/{{ page.title | slugify }}/images/1440/{{ include.src }} {{ column | times: 8 }}w,
-    ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} {{ column | times: 8 }}w,
-    ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} 360w,
-    ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }} 360w,
-    " 
-    sizes="
-    (min-width: 30em) {{ column | times: 8 | divided_by: 16 }}em, 
-    (min-width: 0) {{ 360 | divided_by: 16 }}em
-    " 
-    alt="
-    {% if include.alt %}{{ include.alt }}{% else %}{{ page.title }}{% endif %}
-    " 
-  />
-  {%- endif -%}
-  {%- if include.h and include.w %}</div>{% endif -%}
-  {%- if include.caption -%}
-  <figcaption class="typo-s">
-    {{ include.caption | markdownify }}
-  </figcaption>
+  {% if include.h and include.w%}
+  <div class="ratio" style="padding-bottom: {{ include.h | divided_by: w_float | times: 100 }}%;">
   {% endif %}
+    <img 
+      {% if include.size == "xl" %}
+      src="
+      ../media/projects/{{ page.title | slugify }}/images/1440/{{ include.src }}
+      " 
+      srcset="
+      ../media/projects/{{ page.title | slugify }}/images/2880/{{ include.src }} {{ column | times: 16 }}w,
+      ../media/projects/{{ page.title | slugify }}/images/1440/{{ include.src }} {{ column | times: 16 }}w,
+      ../media/projects/{{ page.title | slugify }}/images/2160/{{ include.src }} {{ column | times: 12 }}w,
+      ../media/projects/{{ page.title | slugify }}/images/1080/{{ include.src }} {{ column | times: 12 }}w,
+      ../media/projects/{{ page.title | slugify }}/images/1440/{{ include.src }} {{ column | times: 8 }}w,
+      ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} {{ column | times: 8 }}w,
+      ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} 360w,
+      ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }} 360w,
+      " 
+      sizes="
+      (min-width: 72em) {{ column | times: 16 | divided_by: 16 }}em, 
+      (min-width: 54em) {{ column | times: 12 | divided_by: 16 }}em, 
+      (min-width: 30em) {{ column | times: 8 | divided_by: 16 }}em, 
+      (min-width: 0) {{ 360 | divided_by: 16 }}em
+      " 
+      {% elsif include.size == "l" %}
+      src="
+      ../media/projects/{{ page.title | slugify }}/images/1080/{{ include.src }}
+      " 
+      srcset="
+      ../media/projects/{{ page.title | slugify }}/images/2160/{{ include.src }} {{ column | times: 12 }}w,
+      ../media/projects/{{ page.title | slugify }}/images/1080/{{ include.src }} {{ column | times: 12 }}w,
+      ../media/projects/{{ page.title | slugify }}/images/1440/{{ include.src }} {{ column | times: 8 }}w,
+      ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} {{ column | times: 8 }}w,
+      ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} 360w,
+      ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }} 360w,
+      " 
+      sizes="
+      (min-width: 54em) {{ column | times: 12 | divided_by: 16 }}em, 
+      (min-width: 30em) {{ column | times: 8 | divided_by: 16 }}em, 
+      (min-width: 0) {{ 360 | divided_by: 16 }}em
+      " 
+      {% elsif include.size == "sm" %}
+      src="
+      ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }}
+      " 
+      srcset="
+      ../media/projects/{{ page.title | slugify }}/images/1440/{{ include.src }} {{ column | times: 6 }}w, 
+      ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} {{ column | times: 6 }}w, 
+      ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} {{ column | times: 4 }}w, 
+      ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }} {{ column | times: 4 }}w, 
+      ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} 360w, 
+      ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }} 360w,
+      " 
+      sizes="
+      (min-width: 54em) {{ column | times: 6 | divided_by: 16 }}em, 
+      (min-width: 30em) {{ column | times: 4 | divided_by: 16 }}em, 
+      (min-width: 0) {{ 360 | divided_by: 16 }}em
+      " 
+      {% elsif include.size == "s" %}
+      src="
+      ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }}
+      " 
+      srcset="
+      ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} {{ column | times: 4 }}w, 
+      ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }} {{ column | times: 4 }}w, 
+      ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} 360w, 
+      ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }} 360w,
+      " 
+      sizes="
+      (min-width: 30em) {{ column | times: 4 | divided_by: 16 }}em, 
+      (min-width: 0) {{ 360 | divided_by: 16 }}em
+      "
+      {% elsif include.size == "xs" %}
+      src="
+      ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }}
+      " 
+      srcset="
+      ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} {{ column | times: 2 }}w, 
+      ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }} {{ column | times: 2 }}w, 
+      ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} 240w, 
+      ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }} 240w,
+      " 
+      sizes="
+      (min-width: 30em) {{ column | times: 2 | divided_by: 16 }}em, 
+      (min-width: 0) {{ 240 | divided_by: 16 }}em
+      " 
+      {% else %}
+      src="
+      ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }}
+      " 
+      srcset="
+      ../media/projects/{{ page.title | slugify }}/images/1440/{{ include.src }} {{ column | times: 8 }}w,
+      ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} {{ column | times: 8 }}w,
+      ../media/projects/{{ page.title | slugify }}/images/720/{{ include.src }} 360w,
+      ../media/projects/{{ page.title | slugify }}/images/360/{{ include.src }} 360w,
+      " 
+      sizes="
+      (min-width: 30em) {{ column | times: 8 | divided_by: 16 }}em, 
+      (min-width: 0) {{ 360 | divided_by: 16 }}em
+      " 
+      {% endif %}
+      {% if include.color -%}
+        style="background-color: {{ include.color }};"
+      {% endif %}
+      alt="
+      {% if include.alt %}{{ include.alt }}{% else %}{{ page.title }}{% endif %}
+      " 
+    />
+  {% if include.h and include.w %}
+  </div>
+  {% endif %}
+    {%- if include.caption -%}
+    <figcaption class="typo-s">
+      {{ include.caption | markdownify }}
+    </figcaption>
+    {% endif %}
 </figure>
