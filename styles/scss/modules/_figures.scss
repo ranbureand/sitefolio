@@ -12,7 +12,7 @@
   margin-left: em(-$m-gut/2);
 
   flex-flow: row wrap;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: flex-start;
   align-content: flex-start;
   @include min-screen(col(8)) {
@@ -24,6 +24,8 @@
   @include min-screen(col(12)) {
     width: col(12);
     margin-left: em(-$column-width*4-$d-gut/2);
+
+    justify-content: flex-end;
   }
   @include min-screen(col(16)) {
     width: col(16);
