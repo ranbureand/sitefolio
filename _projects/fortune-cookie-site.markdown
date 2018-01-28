@@ -69,7 +69,7 @@ For the sake of simplicity and consistency such **replication** is kept on a **s
     {% include image.html 
         size="m" 
         h="1" w="1" 
-        src="fortune_cookie_archive_360_01.jpg" 
+        src="fortune_cookie_call_360_00.jpg" 
         alt="A screenshot of the website Fortune Cookie." 
         color="#6362E0" 
     %}
@@ -84,13 +84,6 @@ The **query word** ***dream*** was chosen because it is an **abstract** term and
         size="xl" 
         h="3845" w="2880" 
         src="fortune_cookie_call_1280_00.jpg" 
-        alt="A screenshot of the website Fortune Cookie." 
-        color="#6362E0" 
-    %}
-    {% include image.html 
-        size="m" 
-        h="1" w="1" 
-        src="fortune_cookie_call_360_00.jpg" 
         alt="A screenshot of the website Fortune Cookie." 
         color="#6362E0" 
     %}
@@ -112,6 +105,13 @@ The **query word** ***dream*** was chosen because it is an **abstract** term and
         size="m" 
         h="1" w="1" 
         src="fortune_cookie_form_360_02.jpg" 
+        alt="A screenshot of the website Fortune Cookie." 
+        color="#6362E0" 
+    %}
+    {% include image.html 
+        size="m" 
+        h="1" w="1" 
+        src="fortune_cookie_archive_360_01.jpg" 
         alt="A screenshot of the website Fortune Cookie." 
         color="#6362E0" 
     %}
@@ -147,5 +147,7 @@ The image archive was physically correlated in the installation of the same name
 [^process]: The goal here is subverting the **top-down process** typical of standard search engines, transforming it into a **bottom-up** one.
 
 [^retrieval]: > “**Image retrieval** for abstract concepts is the search for image content that is not directly present in the image, but needs to be **inferred** from **background knowledge and experience**.”
+
+    —Ron Besseling in *Designing an Image Retrieval Interface for Abstract Concepts Within the Domain of Journalism*.
 
 [^laws]: It is a **jungle**, so watch out for the tigers!

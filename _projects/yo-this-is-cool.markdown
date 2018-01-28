@@ -6,18 +6,143 @@ layout: project
 title: "Yo, This is Cool"
 author: "Andrea Buran"
 
-time: ''
+time: '2015–2016'
 
 categories: [All, Digital, Key, Non-Commercial]
 tags: [GitHub, love, open source, responsive, site, thanks]
 
-preview_image: 'yo_this_is_cool_00.png'
+preview_image: 'yo_this_is_cool_00.jpg'
 
-excerpt: 'Yo, This is Cool is a space where you can show love to the amazing people behind your favorite open source projects on GitHub.'
-exordium: ''
+excerpt: 'The site let developers and designers show love and thank the people behind their favorite open source projects on GitHub.'
+exordium: 'The site let developers and designers show love and thank the people behind their favorite open source projects on GitHub.'
 
 publish: 'yes'
 ---
 
+<div class="figures">
+    {% include image.html 
+        size="xl" 
+        w="2880" h="4367" 
+        src="yo_this_is_cool_home_1280_00.jpg" 
+        alt="A screenshot of the site Yo, This is Cool." 
+        color="#6ED9C0" 
+    %}
+</div>
+
 tags
 : {% include tags.html %}
+
+role
+: co-creator
+
+team
+: Andrea Buran, Marco Sampellegrini
+
+responsibilities
+: concept, information architecture, information + interaction + visual design, front end development, copywriting
+
+<div class="figures">
+    {% include image.html 
+        size="m" 
+        w="1" h="1" 
+        src="yo_this_is_cool_home_360_00.jpg" 
+        alt="A screenshot of the site Yo, This is Cool." 
+        color="#6ED9C0" 
+    %}
+    {% include image.html 
+        size="m" 
+        w="1" h="1" 
+        src="yo_this_is_cool_home_360_01.jpg" 
+        alt="A screenshot of the site Yo, This is Cool." 
+        color="#6ED9C0" 
+    %}
+    {% include image.html 
+        size="m" 
+        w="1" h="1" 
+        src="yo_this_is_cool_home_360_02.jpg" 
+        alt="A screenshot of the site Yo, This is Cool." 
+        color="#6ED9C0" 
+    %}
+    {% include image.html 
+        size="m" 
+        w="1" h="1" 
+        src="yo_this_is_cool_home_360_03.jpg" 
+        alt="A screenshot of the site Yo, This is Cool." 
+        color="#6ED9C0" 
+    %}
+</div>
+
+**Open source** authors and contributors need much **more love** from the community. Those who initiate and share their projects, as well as those who participate and collaborate to constantly improve them, merit a **big thank-you**.
+
+The intent behind *Yo, This is Cool* is having a space where you can thank the amazing people behind your favorite open source projects on GitHub.
+
+<div class="figures">
+    {% include image.html 
+        size="xl" 
+        w="2880" h="3883" 
+        src="yo_this_is_cool_index_1280_00.jpg" 
+        alt="A screenshot of the site Yo, This is Cool." 
+        color="#6ED9C0" 
+    %}
+    {% include image.html 
+        size="m" 
+        w="1" h="1" 
+        src="yo_this_is_cool_index_360_00.jpg" 
+        alt="A screenshot of the site Yo, This is Cool." 
+        color="#6ED9C0" 
+    %}
+    {% include image.html 
+        size="m" 
+        w="3" h="4" 
+        src="yo_this_is_cool_index_768_00.jpg" 
+        alt="A screenshot of the site Yo, This is Cool." 
+        color="#6ED9C0" 
+    %}
+</div>
+
+<div class="figures">
+    {% include image.html 
+        size="m" 
+        w="2" h="1" 
+        src="yo_this_is_cool_mandragora_00.jpg" 
+        alt="The mascotte Meri The Mandragora." 
+        color="#6ED9C0" 
+    %}
+</div>
+
+The site has a [mandrake root](https://en.wikipedia.org/wiki/Mandrake "Mandrake on Wikipedia")—**Meri The Mandragora**—as a **mascot**. Whenever you add a cool open source project to appreciate, she pops out and encourages you to scream your thank-you out loud.
+
+
+
+Each letter of the *Index* page is associated to an interesting **term** as **food for thought**, which short definition introduces the related letter subpage.
+
+<div class="figures">
+    {% include image.html 
+        size="m" 
+        w="1" h="1" 
+        src="yo_this_is_cool_project_360_00.jpg" 
+        alt="A screenshot of the site Yo, This is Cool." 
+        color="#6ED9C0" 
+    %}
+    {% include image.html 
+        size="m" 
+        w="1" h="1" 
+        src="yo_this_is_cool_project_360_01.jpg" 
+        alt="A screenshot of the site Yo, This is Cool." 
+        color="#6ED9C0" 
+    %}
+</div>
+
+The site is designed and developed in the browser in the mighty [Ember.js](http://emberjs.com/ "Ember.js") + [Loopback](http://loopback.io/ "Loopback") and vigorous [SCSS](http://sass-lang.com/ "SASS") + [Compass](http://compass-style.org/ "Compass") tandems, with the help of [HTML5 Boilerplate](https://html5boilerplate.com/ "HTML5 Boilerplate") and [Packery](http://packery.metafizzy.co/ "Packery").
+
+The font is [Roboto](https://www.google.com/fonts/specimen/Roboto) by Google while the emoji are [Twit Emoji](http://twitter.github.io/twemoji/ "Twit Emoji") by Twitter.
+
+<div class="figures">
+    {% include image.html 
+        size="xl" 
+        w="2880" h=4464 
+        src="yo_this_is_cool_colophon_1280_00.jpg" 
+        alt="A screenshot of the site Yo, This is Cool." 
+        color="#6ED9C0" 
+    %}
+</div>

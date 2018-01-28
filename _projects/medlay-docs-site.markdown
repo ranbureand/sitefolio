@@ -11,7 +11,7 @@ time: '2015–2016'
 categories: [All, Digital, Dynamic Image, Key, Non-Commercial, Research]
 tags: [cinema, comics, infinite canvas, loop, new media form, responsive, sequential art, site]
 
-preview_image: 'medlay_docs_site_00.png'
+preview_image: 'medlay_docs_site_00.jpg'
 
 excerpt: 'The documentation site introduces and formalizes Medlay, a new concept for crafting multimedia artefacts on the Web.'
 exordium: 'The documentation site introduces and formalizes Medlay, a new concept for crafting multimedia artefacts on the Web.'
