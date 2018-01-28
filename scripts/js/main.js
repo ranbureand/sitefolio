@@ -18,4 +18,6 @@ var eEnvelope = document.getElementById('envelope');
     eEnvelope.prepend(eLink);
 
 var footnote = document.getElementsByClassName('reversefootnote');
-    footnote[0].textContent = 'Back to Number';
+    for (i = 0; i < footnote.length; i++) { 
+        footnote[i].textContent = 'Back to Number';
+    }
