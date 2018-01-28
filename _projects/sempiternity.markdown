@@ -14,8 +14,8 @@ tags: [blog, responsive, short stories, site]
 preview_image: 'sempiternity_00.jpg'
 background_color: '#E7E7F1'
 
-excerpt: 'Sempiternity is a site/collection of witty/absurd short stories.'
-exordium: 'The website collects witty/absurd short stories.'
+excerpt: 'The site collects witty and/or absurd short stories.'
+exordium: 'The site collects witty and/or absurd short stories.'
 
 publish: 'yes'
 ---
