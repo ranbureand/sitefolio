@@ -16,7 +16,7 @@ preview_image: 'medlay_the_last_dispatch_00.jpg'
 excerpt: 'The very first substantial prototype designed following the principles of Medlay. It narrates an original short story.'
 exordium: ''
 
-publish: 'yes'
+publish: 'no'
 ---
 
 tags

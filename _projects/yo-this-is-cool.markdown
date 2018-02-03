@@ -9,7 +9,7 @@ author: "Andrea Buran"
 time: '2015–2016'
 
 categories: [All, Digital, Key, Non-Commercial]
-tags: [GitHub, love, open source, responsive, site, thanks]
+tags: [GitHub, gratitude, love, open source, responsive, site, thankfullness]
 
 preview_image: 'yo_this_is_cool_00.jpg'
 

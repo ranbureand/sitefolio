@@ -9,7 +9,7 @@ author: 'Andrea Buran'
 time: '2012'
 
 categories: [All, Commercial, Key, Print]
-tags: [landscape photography, photobook, print, spatial montage]
+tags: [landscape photography, photobook, print, spatial montage, Tirol]
 
 preview_image: 'sight_seeing_2_00.jpg'
 

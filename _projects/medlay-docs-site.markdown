@@ -9,7 +9,7 @@ author: 'Andrea Buran'
 time: '2015–2016'
 
 categories: [All, Digital, Dynamic Image, Key, Non-Commercial, Research]
-tags: [cinema, comics, infinite canvas, loop, new media form, responsive, sequential art, site]
+tags: [cinema, comics, docs, loop, new media form, responsive, sequential art, site]
 
 preview_image: 'medlay_docs_site_00.jpg'
 

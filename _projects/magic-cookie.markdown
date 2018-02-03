@@ -16,7 +16,7 @@ preview_image: 'magic_cookie_00.jpg'
 excerpt: 'Magic Cookie investigates the relationships among different personalized Google search results of a sample of ten volunteers coming from various cultures and based all over the world.'
 exordium: '*Magic Cookie* investigates the relationships among different personalized Google search results of a sample of ten volunteers coming from various cultures and based all over the world.'
 
-publish: 'yes'
+publish: 'no'
 ---
 
 tags

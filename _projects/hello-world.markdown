@@ -9,7 +9,7 @@ author: 'Andrea Buran'
 time: '2018'
 
 categories: [All, Non-Commercial]
-tags: [Markdown, stress test, styles, typography]
+tags: [CSS, HTML, Markdown, stress test, styles, typographic elements]
 
 preview_image: 'hello_world_00.png'
 
