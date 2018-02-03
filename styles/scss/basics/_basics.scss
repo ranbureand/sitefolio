@@ -145,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 h1, h3, h5 {
-  font-weight: $bold;
+  font-weight: $medium;
 }
 h2, h4, h6 {
   font-weight: $normal;
@@ -181,7 +181,7 @@ abbr[title] {
 }
 
 strong {
-  font-weight: $bold; // normalize.css
+  font-weight: $medium; // normalize.css
 
   color: $strong-type-color;
 }

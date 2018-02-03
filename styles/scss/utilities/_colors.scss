@@ -9,17 +9,17 @@ $black: #000;
 //$color: #ff6600;
 $color: #ff0055;
 $background: #fafafa;
-$canvas: darken($background, 2%);
+$canvas: #fafafa;
 
 /*
 ** Typography
 */
 
-$strong-type-color: rgba($black, 0.88);
-$type-color: rgba($black, 0.88);
-$light-type-color: rgba($black, 0.88);
-$selected-type-color: rgba($black, 0.88);
-$placeholder-type-color: rgba($black, 0.38);
+$strong-type-color: rgba($black, 1.00);
+$type-color: rgba($black, 1.00);
+$light-type-color: rgba($black, 1.00);
+$selected-type-color: rgba($black, 1.00);
+$placeholder-type-color: rgba($black, 0.25);
 
 $button-type-color: $background;
 

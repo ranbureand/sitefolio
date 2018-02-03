@@ -5,19 +5,14 @@
 */
 
 .pitch {
-  width: 100%;
-  margin-top: em($m-medium-line*3/2);
-  margin-right: em(-$m-gut/2);
-  margin-bottom: em($m-large-line*3 - $m-small-line);
-  margin-left: em(-$m-gut/2);
-
   p {
     font-weight: $bold;
-
-    margin-bottom: em($m-super-large-line/4, $m-super-large-size);
+    hyphens: auto;
+    margin-top: em($m-super-large-line, $m-super-large-size);
+    margin-bottom: em($m-small-line + $m-super-large-line, $m-super-large-size);
 
     @include font-size($m-super-large-size, $m-super-large-line);
-    span {
+    .asterisk {
       &:after {
         margin-left: 0.1em;
 
@@ -27,31 +22,21 @@
       }
     }
   }
-  .notation {
-    margin-bottom: em($m-small-line/4, $m-small-size);
+  @include min-screen(col(8)) {
+    p {
+      hyphens: manual;
+      margin-top: em($t-super-large-line/2*3, $t-super-large-size);
+      margin-bottom: em($d-small-line + $t-super-large-line/2*3, $t-super-large-size);
 
-    @include font-size($m-small-size, $m-small-line);
-    &:before {
-      padding-right: 1em;
-
-      content: "*";
-
-      color: $color;
+      @include font-size($t-super-large-size, $t-super-large-line);
     }
   }
-  @include min-screen(col(8)) {
-    margin-top: em($d-medium-line*3/2);
-    margin-bottom: em($d-large-line*3 - $d-small-line);
+  @include min-screen(col(12)) {
     p {
-      font-weight: $bold;
-      margin-bottom: em($d-super-large-line/4, $d-super-large-size);
+      margin-top: em($d-super-large-line/2*3, $d-super-large-size);
+      margin-bottom: em($d-small-line + $d-super-large-line/2*3, $d-super-large-size);
 
       @include font-size($d-super-large-size, $d-super-large-line);
-    }
-    .notation {
-      margin-bottom: em($d-small-line/4, $d-small-size);
-
-      @include font-size($d-small-size, $d-small-line);
     }
   }
 }

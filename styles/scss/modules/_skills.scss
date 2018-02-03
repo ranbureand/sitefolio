@@ -10,7 +10,7 @@
 
 	@extend %column-gut;
 	.title {
-		font-weight: $bold;
+		font-weight: $medium;
 	}
 	.subtitle {
 		margin-bottom: em($m-tiny-line/4, $m-tiny-size);

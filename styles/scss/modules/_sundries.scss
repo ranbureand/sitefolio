@@ -4,6 +4,10 @@
 ** Project
 */
 
+.color {
+  color: $color;
+}
+
 #outer-space {
   background: $background;
   margin-left: auto;
@@ -13,13 +17,13 @@
   @include min-screen(col(8)) {
     padding-right: 0;
     padding-left: 0;
-    max-width: col(10);
+    max-width: col(11);
   }
   @include min-screen(col(12)) {
-    max-width: col(14);
+    max-width: col(15);
   }
   @include min-screen(col(16)) {
-    max-width: col(18);
+    max-width: col(19);
   }
 }
 
@@ -37,6 +41,7 @@
   @include face(mono);
 }
 
+.splash,
 .projects,
 .details,
 .contacts {
