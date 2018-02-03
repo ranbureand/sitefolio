@@ -11,7 +11,7 @@
     margin-top: em($m-super-large-line, $m-super-large-size);
     margin-bottom: em($m-small-line + $m-super-large-line, $m-super-large-size);
 
-    hyphens: auto;
+    //hyphens: auto;
 
     @include font-size($m-super-large-size, $m-super-large-line);
     .asterisk {
@@ -29,7 +29,7 @@
       margin-top: em($t-super-large-line/2*3, $t-super-large-size);
       margin-bottom: em($d-small-line + $t-super-large-line/2*3, $t-super-large-size);
 
-      hyphens: manual;
+      //hyphens: manual;
 
       @include font-size($t-super-large-size, $t-super-large-line);
     }
