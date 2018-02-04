@@ -8,6 +8,10 @@
   color: $color;
 }
 
+.envelope {
+  word-break: break-all;
+}
+
 #outer-space {
   background: $background;
   margin-left: auto;
