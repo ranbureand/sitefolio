@@ -11,8 +11,11 @@ $waistline: 1440;
 */
 
 $browser-default-font-size: 16px;
-$base-font-size: 16px;
-$base-line: 4px;
+$base-font-size:            16px;
+$base-line:                 4px;
+
+$m-base-rhythm:             $base-line*6;
+$d-base-rhythm:             $base-line*8;
 
 /*
 ** Font sizes and line heights
@@ -21,52 +24,57 @@ $base-line: 4px;
 ** d : desktop
 */
 
-$m-super-large-size: 32px;
-$m-super-large-line: $base-line*11; //44px
+$m-super-large-size:    24px;
+$m-super-large-line:    $base-line*9; //36px
 
-$t-super-large-size: 40px;
-$t-super-large-line: $base-line*13; //52px
+$t-super-large-size:    40px;
+$t-super-large-line:    $base-line*13; //52px
 
-$d-super-large-size: 48px;
-$d-super-large-line: $base-line*15; //60px
+$d-super-large-size:    48px;
+$d-super-large-line:    $base-line*15; //60px
 
-$m-extra-large-size: 22px;
-$m-extra-large-line: $base-line*7;  //28px
 
-$d-extra-large-size: 26px;
-$d-extra-large-line: $base-line*10; //40px
+$m-extra-large-size:    22px;
+$m-extra-large-line:    $base-line*8;  //28px
 
-$m-large-size:       18px;
-$m-large-line:       $base-line*7;  //28px
+$d-extra-large-size:    26px;
+$d-extra-large-line:    $base-line*10; //40px
 
-$d-large-size:       22px;
-$d-large-line:       $base-line*8;  //32px
 
-$m-medium-size:      16px;
-$m-medium-line:      $base-line*6;  //24px
+$m-large-size:          18px;
+$m-large-line:          $base-line*7;  //28px
 
-$d-medium-size:      18px;
-$d-medium-line:      $base-line*7;  //28px
+$d-large-size:          22px;
+$d-large-line:          $base-line*8;  //32px
 
-$m-small-size:       14px;
-$m-small-line:       $base-line*6;  //24px
 
-$d-small-size:       14px;
-$d-small-line:       $base-line*6;  //24px
+$m-medium-size:         16px;
+$m-medium-line:         $base-line*6;  //24px
 
-$m-tiny-size:        13px;
-$m-tiny-line:        $base-line*5;  //20px
+$d-medium-size:         18px;
+$d-medium-line:         $base-line*7;  //28px
 
-$d-tiny-size:        13px;
-$d-tiny-line:        $base-line*5;  //20px
+
+$m-small-size:          14px;
+$m-small-line:          $base-line*6;  //24px
+
+$d-small-size:          14px;
+$d-small-line:          $base-line*6;  //24px
+
+
+$m-tiny-size:           13px;
+$m-tiny-line:           $base-line*5;  //20px
+
+$d-tiny-size:           13px;
+$d-tiny-line:           $base-line*5;  //20px
 
 /*
 ** Font weights
 */
 
-$bold: 600;
-$medium: 500;
-$normal: 400;
+$bold:      700;
+$medium:    500;
+$normal:    400;
 
 /*
 ** Grid
@@ -79,7 +87,6 @@ $column-width: 72px;
 */
 
 $m-gut: 8px; // mobile gut
-
 $d-gut: 16px; // desktop gut
 
 /*
