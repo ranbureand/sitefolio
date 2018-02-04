@@ -13,8 +13,8 @@ tags: [dream, image search results, installation, postcards, print, search engin
 
 preview_image: 'fortune_cookie_installation_00.jpg'
 
-excerpt: 'The project aims at investigating the dynamics between users, images and search engines in the current panorama of the Web.'
-exordium: 'The project aims at investigating the dynamics between **users**, **images** and **search engines** in the current panorama of the Web.'
+excerpt: 'The project investigates the dynamics between users, images and image search engines in the current panorama of the Web.'
+exordium: 'The project investigates the dynamics between users, images and image search engines in the current panorama of the Web.'
 
 publish: 'yes'
 ---

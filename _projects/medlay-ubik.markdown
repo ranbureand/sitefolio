@@ -13,8 +13,8 @@ tags: [cinema, comics, loop, new media form, sequential art, spatial montage]
 
 preview_image: 'medlay_ubik_00.jpg'
 
-excerpt: 'The second substantial prototype designed following the principles of Medlay. It is based on the slogan opening the 6th chapter of “Ubik”, a science fiction novel by Philp K. Dick.'
-exordium: 'The second substantial prototype designed following the principles of [Medlay](http://ranbureand.github.io/medlay/ "Medlay on GitHub"). It is based on the slogan opening the 6<sup>th</sup> chapter of *Ubik*, a science fiction novel by Philp K. Dick.'
+excerpt: 'The proof of concept prototype illustrates the principles of Medlay. It is based on the slogan opening the 6th chapter of “Ubik”, a science fiction novel by Philp K. Dick.'
+exordium: 'The proof of concept prototype illustrates the principles of [Medlay](http://ranbureand.github.io/medlay/ "Medlay on GitHub"). It is based on the slogan opening the 6<sup>th</sup> chapter of *Ubik*, a science fiction novel by Philp K. Dick.'
 
 publish: 'yes'
 ---

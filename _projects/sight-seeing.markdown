@@ -13,8 +13,8 @@ tags: [landscape photography, photobook, print, spatial montage, Tirol]
 
 preview_image: 'sight_seeing_00.jpg'
 
-excerpt: 'A heterogeneous set of pictures of Tyrolean summer landscapes—halfway between tourism’s advertising images and contemporary photos—is spatially arranged in the photobook Sight-_Seeing.'
-exordium: 'A heterogeneous set of pictures of Tyrolean summer landscapes—halfway between tourism’s advertising images and contemporary photos—is spatially arranged in the photobook *Sight-_Seeing*.'
+excerpt: 'The photobook Sight-_Seeing spatially arranges a heterogeneous set of collectively taken pictures of Tyrolean summer landscapes—halfway between tourism’s advertising images and contemporary photos.'
+exordium: 'The photobook *Sight-_Seeing* spatially arranges a heterogeneous set of collectively taken pictures of Tyrolean summer landscapes—halfway between tourism’s advertising images and contemporary photos.'
 
 publish: 'yes'
 ---

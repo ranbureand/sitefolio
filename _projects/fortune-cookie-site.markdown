@@ -13,8 +13,8 @@ tags: [dream, image search results, responsive, search engines, site]
 
 preview_image: 'fortune_cookie_site_00.jpg'
 
-excerpt: 'An experimental ongoing web image archive aiming at replicating the way a human image search engine might work.'
-exordium: 'The experimental web image archive aims at replicating—on a small scale—the way a human image search engine might work.'
+excerpt: 'The experimental web image archive aims at replicating on a small scale the way a human image search engine might work.'
+exordium: 'The experimental web image archive aims at replicating on a small scale the way a human image search engine might work.'
 
 publish: 'yes'
 ---

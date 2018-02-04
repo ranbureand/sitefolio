@@ -13,8 +13,8 @@ tags: [cinema, comics, docs, loop, new media form, responsive, sequential art, s
 
 preview_image: 'medlay_docs_site_00.jpg'
 
-excerpt: 'The documentation site introduces and formalizes Medlay, a new concept for crafting multimedia artefacts on the Web.'
-exordium: 'The documentation site introduces and formalizes Medlay, a new concept for crafting multimedia artefacts on the Web.'
+excerpt: 'The documentation site introduces and formalizes Medlay, a new hybrid media form concept for crafting multimedia artefacts on the Web.'
+exordium: 'The documentation site introduces and formalizes Medlay, a new hybrid media form concept for crafting multimedia artefacts on the Web.'
 
 publish: 'yes'
 ---
@@ -51,7 +51,7 @@ link
     %}
 </div>
 
-The notes introduce and formalize a new **concept** for crafting multimedia artefacts on the Web—Medlay—in hopes of providing some interesting **food for thought** and pushing the boundaries of the practice further.
+The notes introduce and formalize a new **concept** for crafting hybrid multimedia artefacts on the Web, in hopes of providing some good quality **food for thought**, and pushing the boundaries of the practice further.
 
 <div class="figures">
     {% include image.html 

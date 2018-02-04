@@ -3,7 +3,7 @@ order: 1
 
 layout: project
 
-title: 'Hello World!'
+title: 'Hello Outer Space!'
 author: 'Andrea Buran'
 
 time: '2018'
@@ -11,20 +11,23 @@ time: '2018'
 categories: [All, Non-Commercial]
 tags: [CSS, HTML, Markdown, stress test, styles, typographic elements]
 
-preview_image: 'hello_world_00.png'
+preview_image: 'hello_outer_space_00.png'
 
-excerpt: 'This is an excerpt.'
-exordium: 'This is an exordium.'
+excerpt: 'The following article is used as a testing ground for all the styles that shapes the body text prose and code of the Sitefolio.'
+exordium: 'The following article is used as a testing ground for all the styles that shapes the body text prose, code and form of this very site.'
 
 publish: 'yes'
 ---
 
 <div class="figures">
-    {% include image.html size="xl" src="placeholder_00.png" alt="This is a placeholder image." %}
+    {% include image.html 
+        size="xl" 
+        h="1" w="2" 
+        src="hello_outer_space_01.png" 
+        alt="A pure black placeholder image used to stress test the img style of this very site." 
+        color="#000" 
+    %}
 </div>
-
-tags
-: {% include tags.html %}
 
 # Heading Level #1
 
@@ -46,7 +49,9 @@ A paragraph consists of one or more sentences. Though not required by the syntax
 > 
 > — <cite>[Video](http://www.youtube.com/watch?v=6r7E-69MIOU "Matt Cutts on YouTube"), Matt Cutts.</cite>
 
-This text[^footnote] has a footnote.
+This text[^first-footnote] has a first footnote.
+
+This text[^second-footnote] has a second footnote.
 
 [This text](http://www.andreaburan.com/ "Andrea Buran’s Sitefolio") is a hyperlink.
 
@@ -101,31 +106,130 @@ This is a code block:
     end tell
 
 <div class="figures">
-    {% include image.html size="xl" src="placeholder_00.png" alt="This is a placeholder image." caption="This is a caption." %}
-    {% include image.html size="l"  src="placeholder_00.png" alt="This is a placeholder image." %}
+    {% include image.html 
+        size="xl" 
+        h="1" w="2" 
+        src="hello_outer_space_01.png" 
+        alt="A pure black placeholder image used to stress test the img style of this very site." 
+        color="#000" 
+    %}
 </div>
 
 <div class="figures">
-    {% include image.html size="m"  src="placeholder_00.png" alt="This is a placeholder image." caption="This is a caption." %}
-    {% include image.html size="m"  src="placeholder_00.png" alt="This is a placeholder image." caption="This is a caption." %}
+    {% include image.html 
+        size="l" 
+        h="1" w="2" 
+        src="hello_outer_space_01.png" 
+        alt="A pure black placeholder image used to stress test the img style of this very site." 
+        color="#000" 
+    %}
 </div>
 
 <div class="figures">
-    {% include image.html size="s"  src="placeholder_00.png" alt="This is a placeholder image." caption="This is a caption." %}
-    {% include image.html size="s"  src="placeholder_00.png" alt="This is a placeholder image." caption="This is a caption." %}
-    {% include image.html size="s"  src="placeholder_00.png" alt="This is a placeholder image." caption="This is a caption." %}
-    {% include image.html size="s"  src="placeholder_00.png" alt="This is a placeholder image." caption="This is a caption." %}
+    {% include image.html 
+        size="m" 
+        h="1" w="2" 
+        src="hello_outer_space_01.png" 
+        alt="A pure black placeholder image used to stress test the img style of this very site." 
+        color="#000" 
+    %}
+    {% include image.html 
+        size="m" 
+        h="1" w="2" 
+        src="hello_outer_space_01.png" 
+        alt="A pure black placeholder image used to stress test the img style of this very site." 
+        color="#000" 
+    %}
 </div>
 
 <div class="figures">
-    {% include image.html size="xs" src="placeholder_00.png" alt="This is a placeholder image." %}
-    {% include image.html size="xs" src="placeholder_00.png" alt="This is a placeholder image." %}
-    {% include image.html size="xs" src="placeholder_00.png" alt="This is a placeholder image." %}
-    {% include image.html size="xs" src="placeholder_00.png" alt="This is a placeholder image." %}
-    {% include image.html size="xs" src="placeholder_00.png" alt="This is a placeholder image." %}
-    {% include image.html size="xs" src="placeholder_00.png" alt="This is a placeholder image." %}
-    {% include image.html size="xs" src="placeholder_00.png" alt="This is a placeholder image." %}
-    {% include image.html size="xs" src="placeholder_00.png" alt="This is a placeholder image." %}
+    {% include image.html 
+        size="s" 
+        h="1" w="2" 
+        src="hello_outer_space_01.png" 
+        alt="A pure black placeholder image used to stress test the img style of this very site." 
+        color="#000" 
+    %}
+    {% include image.html 
+        size="s" 
+        h="1" w="2" 
+        src="hello_outer_space_01.png" 
+        alt="A pure black placeholder image used to stress test the img style of this very site." 
+        color="#000" 
+    %}
+    {% include image.html 
+        size="s" 
+        h="1" w="2" 
+        src="hello_outer_space_01.png" 
+        alt="A pure black placeholder image used to stress test the img style of this very site." 
+        color="#000" 
+    %}
+    {% include image.html 
+        size="s" 
+        h="1" w="2" 
+        src="hello_outer_space_01.png" 
+        alt="A pure black placeholder image used to stress test the img style of this very site." 
+        color="#000" 
+    %}
+</div>
+
+<div class="figures">
+    {% include image.html 
+        size="xs" 
+        h="1" w="2" 
+        src="hello_outer_space_01.png" 
+        alt="A pure black placeholder image used to stress test the img style of this very site." 
+        color="#000" 
+    %}
+    {% include image.html 
+        size="xs" 
+        h="1" w="2" 
+        src="hello_outer_space_01.png" 
+        alt="A pure black placeholder image used to stress test the img style of this very site." 
+        color="#000" 
+    %}
+    {% include image.html 
+        size="xs" 
+        h="1" w="2" 
+        src="hello_outer_space_01.png" 
+        alt="A pure black placeholder image used to stress test the img style of this very site." 
+        color="#000" 
+    %}
+    {% include image.html 
+        size="xs" 
+        h="1" w="2" 
+        src="hello_outer_space_01.png" 
+        alt="A pure black placeholder image used to stress test the img style of this very site." 
+        color="#000" 
+    %}
+    {% include image.html 
+        size="xs" 
+        h="1" w="2" 
+        src="hello_outer_space_01.png" 
+        alt="A pure black placeholder image used to stress test the img style of this very site." 
+        color="#000" 
+    %}
+    {% include image.html 
+        size="xs" 
+        h="1" w="2" 
+        src="hello_outer_space_01.png" 
+        alt="A pure black placeholder image used to stress test the img style of this very site." 
+        color="#000" 
+    %}
+    {% include image.html 
+        size="xs" 
+        h="1" w="2" 
+        src="hello_outer_space_01.png" 
+        alt="A pure black placeholder image used to stress test the img style of this very site." 
+        color="#000" 
+    %}
+    {% include image.html 
+        size="xs" 
+        h="1" w="2" 
+        src="hello_outer_space_01.png" 
+        alt="A pure black placeholder image used to stress test the img style of this very site." 
+        color="#000" 
+    %}
 </div>
 
 Definition List
@@ -184,6 +288,8 @@ This is term that shares a definition with the term below.
 </div>
 
 
-[^footnote]: And that’s the footnote.
+[^first-footnote]: This is the first footnote.
 
-    That’s the second paragraph.
+    This is a second paragraph of the first footnote.
+
+[^second-footnote]: This is the second footnote.
