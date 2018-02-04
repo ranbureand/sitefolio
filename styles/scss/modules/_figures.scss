@@ -7,7 +7,7 @@
 .figures {
   display: flex;
 
-  margin-top: em($m-medium-line*3/2);
+  margin-top: em($m-base-rhythm);
   margin-right: em(-$m-gut/2);
   margin-left: em(-$m-gut/2);
 
@@ -17,7 +17,7 @@
   align-content: flex-start;
   @include min-screen(col(8)) {
     width: col(8);
-    margin-top: em($d-medium-line*3/2);
+    margin-top: em($d-base-rhythm);
     margin-right: em(-$d-gut/2);
     margin-left: em(-$d-gut/2);
   }
@@ -39,13 +39,20 @@ div {
   }
 }
 
+.figures:last-child {
+  margin-bottom: em(-$m-base-rhythm);
+  @include min-screen(col(16)) {
+    margin-bottom: em(-$d-base-rhythm);
+  }
+}
+
 .figure {
   flex-grow: 0;
   flex-shrink: 1;
 }
 
 [class^="image"], [class^="video"] {
-  margin: 0 0 em($m-medium-line*3/2) 0;
+  margin: 0 0 em($m-base-rhythm) 0;
 
   counter-increment: images;
 
@@ -67,7 +74,7 @@ div {
     margin-bottom: 0;
   }
   @include min-screen(col(8)) {
-    margin: 0 0 em($d-medium-line*3/2) 0;
+    margin: 0 0 em($d-base-rhythm) 0;
     figcaption {
       margin-top: em($d-small-line/2);
     }

@@ -37,10 +37,10 @@
 
 [class*='column-2d'] {
   width: 100%;
-  margin-top: em($m-large-line);
+  margin-top: em($m-base-rhythm);
 
   @include min-screen(col(8)) {
-    margin-top: em($d-large-line);
+    margin-top: em($d-base-rhythm);
   }
 }
 

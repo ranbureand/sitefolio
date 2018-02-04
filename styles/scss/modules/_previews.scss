@@ -7,14 +7,14 @@
 .previews {
   li {
     width: 100/2*1%;
-    margin-bottom: em($m-large-line/2*3);
+    margin-bottom: em($m-base-rhythm*2);
     padding-right: em($m-gut/2);
     padding-left: em($m-gut/2);
   }
   @include min-screen(col(8)) {
     li {
       width: 100/2*1%;
-      margin-bottom: em($d-large-line/2*3);
+      margin-bottom: em($d-base-rhythm*2);
       padding-right: em($d-gut/2);
       padding-left: em($d-gut/2);
     }
