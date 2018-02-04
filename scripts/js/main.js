@@ -8,14 +8,17 @@ var eMailbox = 'hello',
 
 //console.log(eAddress);
 
-var eLink = document.createElement('a');
-    eLink.setAttribute('href', 'mailto:' + eAddress);
-    eLink.textContent = eAddress;
+var eLink;
 
 //console.log(eLink);
 
-var eEnvelope = document.getElementById('envelope');
-    eEnvelope.prepend(eLink);
+var eEnvelope = document.getElementsByClassName('envelope');
+    for (i = 0; i < eEnvelope.length; i++) { 
+        eLink = document.createElement('a');
+        eLink.setAttribute('href', 'mailto:' + eAddress);
+        eLink.textContent = eAddress;
+        eEnvelope[i].prepend(eLink);
+    }
 
 var footnote = document.getElementsByClassName('reversefootnote');
     for (i = 0; i < footnote.length; i++) { 
