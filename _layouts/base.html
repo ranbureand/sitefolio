@@ -13,7 +13,9 @@
 
 {% include projects.html %}
 
-{% include details.html %}
+{% if page.layout != 'base' %}
+  {% include details.html %}
+{% endif %}
 
 {% include contacts.html %}
 
