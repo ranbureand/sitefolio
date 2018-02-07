@@ -133,6 +133,16 @@ $button-border-width: 2px;
 ** Typefaces
 */
 
+@mixin font-face($type-name, $file-name, $weight, $style) {
+  @font-face {
+    font-family: "#{$type-name}";
+    src: url("../fonts/#{$file-name}.woff2") format("woff2"),
+         url("../fonts/#{$file-name}.woff") format("woff");
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
 @mixin face($status: sans) {
   @if $status == "sans" {
     font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
