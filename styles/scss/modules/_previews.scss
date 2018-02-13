@@ -5,18 +5,58 @@
 */
 
 .previews {
+  margin-top: em($m-base-rhythm);
   li {
+    position: relative;
+
     width: 100/2*1%;
-    margin-bottom: em($m-base-rhythm*2);
+    margin-bottom: em($m-base-rhythm);
     padding-right: em($m-gut/2);
     padding-left: em($m-gut/2);
+    &:before {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      height: 50%;
+      margin-right: auto;
+      margin-left: auto;
+
+      opacity: 0.0;
+
+      content: '';
+      transition-timing-function: ease-out, ease-out, ease-out, ease-out;
+      transition-duration: $duration, $duration, $duration, $duration;
+      transition-property: height, opacity, transform, width;
+      transform-origin: 50% 0 ;
+
+      border-radius: 0 0 $radius $radius;
+      background-color: $card-shadow;
+      @include adjustWidth($m-gut/2 + 3px);
+    }
+    &:hover {
+      &:before {
+        opacity: 1.0;
+        @include adjustWidth($m-gut*2);
+      }
+    }
   }
   @include min-screen(col(8)) {
+    margin-top: em($d-base-rhythm);
     li {
       width: 100/2*1%;
-      margin-bottom: em($d-base-rhythm*2);
+      margin-bottom: em($d-base-rhythm);
       padding-right: em($d-gut/2);
       padding-left: em($d-gut/2);
+      &:before {
+        @include adjustWidth($d-gut/2 + 3px);
+      }
+      &:hover {
+        &:before {
+          @include adjustWidth($d-gut/2*3);
+        }
+      }
     }
   }
   @include min-screen(col(12)) {
@@ -32,45 +72,58 @@
 }
 
 .preview {
+  position: relative;
+
   display: block;
 
+  padding-bottom: em($m-base-rhythm);
+
+  transition-timing-function: ease-out;
+  transition-duration: $duration;
+  transition-property: transform;
+  transform: translate(0, 0);
   text-decoration: none;
 
+  border-radius: $radius;
+  background-color: $card-background-color;
+  //box-shadow: inset -1px 0 0 0 rgba(255,255,255,1.00), inset 1px 0 0 0 rgba(255,255,255,1.00), inset 0 -1px 0 0 rgba(255,255,255,1.00);
+
   .preview-image {
-    transition-timing-function: ease-out;
-    transition-duration: 0.2s;
-    transition-property: transform;
-    transform: translate(0, 0);
+    position: relative;
+
+    padding-bottom: 100/4*3%;
+
+    background-color: $picture-background-color;
 
     @include font-size($m-tiny-size, $m-tiny-line);
+    border-radius: $radius $radius 0 0;
     &:before {
       position: absolute;
-      z-index: -1;
+      z-index: 2;
       top: 0;
       right: 0;
+      bottom: 0;
       left: 0;
 
-      display: block;
-
-      width: 100%;
-      height: 100%;
-      margin-right: auto;
-      margin-left: auto;
-
       content: '';
-      transition-timing-function: ease-out, ease-out, ease-out;
-      transition-duration: 0.2s, 0.2s, 0.2s;
-      transition-property: background-color, transform, width;
-      transform: translate(0, 0); // scale(1.00)
-      transform-origin: 50% 100%;
 
-      background-color: rgba($picture-background-color, 0.0);
+      border-radius: $radius $radius 0 0;
+      box-shadow: inset 0 -1px 0 0 rgba(0,0,0,0.04);
+      //box-shadow: inset -1px 0 0 0 rgba(255,255,255,0.15), inset 1px 0 0 0 rgba(255,255,255,0.15), inset 0 1px 0 0 rgba(255,255,255,0.15);
+    }
+    img {
+      position: absolute;
+      z-index: 1;
+
+      border-radius: $radius $radius 0 0;
     }
   }
   .preview-title {
     font-weight: $medium;
 
-    margin-top: em($m-medium-line/4*3, $m-medium-size);
+    margin-top: em($m-base-rhythm, $m-small-size);
+    margin-right: em($m-gut/2*3, $m-small-size);
+    margin-left: em($m-gut/2*3, $m-small-size);
 
     transition-timing-function: ease-in-out;
     transition-duration: 0.2s;
@@ -78,17 +131,21 @@
 
     color: $strong-type-color;
 
-    @include font-size($m-medium-size, $m-medium-line);
+    @include font-size($m-small-size, $m-small-line);
   }
   .preview-tags {
-    margin-top: em($m-small-line/2, $m-small-size);
+    margin-top: em($m-small-line/2, $m-tiny-size);
+    margin-right: em($m-gut/2*3, $m-tiny-size);
+    margin-left: em($m-gut/2*3, $m-tiny-size);
 
     color: $type-color;
 
-    @include font-size($m-small-size, $m-small-line);
+    @include font-size($m-tiny-size, $m-tiny-line);
   }
   .preview-time {
     margin-top: em($m-small-line/2, $m-small-size);
+    margin-right: em($m-gut/2*3, $m-small-size);
+    margin-left: em($m-gut/2*3, $m-small-size);
 
     color: $type-color;
 
@@ -96,33 +153,14 @@
     @include font-size($m-small-size, $m-small-line);
   }
   &:hover {
-    .preview-image {
-      transform: translate(0, em(-$m-gut, $m-tiny-size));
-      &:before {
-        transform: translate(0, em($m-gut, $m-tiny-size));
-
-        background-color: rgba($picture-background-color, 1.0);
-
-        @include adjustWidth($m-gut, $m-tiny-size);
-      }
-    }
+    transform: translate(0, em(-$m-gut/2*3));
     .preview-title {
       color: $color;
     }
   }
   &:active {
-    .preview-image {
-      transition-duration: 0.0s;
-      transform: translate(0, em($m-gut/2, $m-tiny-size));
-      &:before {
-        width: 100%;
-
-        transition-duration: 0.0s, 0.0s;
-        transform: translate(0, 0);
-
-        background-color: rgba($picture-background-color, 0.0);
-      }
-    }
+    transition-duration: 0.0s;
+    transform: translate(0, em($m-gut/2));
     .preview-title {
       transition-duration: 0.0s;
 
@@ -130,74 +168,62 @@
     }
   }
   @include min-screen(col(8)) {
+    padding-bottom: em($d-medium-line);
     .preview-image {
       @include font-size($d-tiny-size, $d-tiny-line);
     }
     .preview-title {
       margin-top: em($d-medium-line/4*3, $d-medium-size);
+      margin-right: em($d-gut, $d-medium-size);
+      margin-left: em($d-gut, $d-medium-size);
 
       @include font-size($d-medium-size, $d-medium-line);
     }
     .preview-tags {
-      margin-top: em($d-small-line/2, $d-small-size);
+      margin-top: em($d-small-line/2, $d-tiny-size);
+      margin-right: em($d-gut, $d-tiny-size);
+      margin-left: em($d-gut, $d-tiny-size);
 
-      @include font-size($d-small-size, $d-small-line);
+      @include font-size($d-tiny-size, $d-tiny-line);
+      min-height: em($d-tiny-line*3, $d-tiny-size);
     }
     .preview-time {
       margin-top: em($d-small-line/2, $d-small-size);
+      margin-right: em($d-gut, $d-small-size);
+      margin-left: em($d-gut, $d-small-size);
 
       @include font-size($d-small-size, $d-small-line);
     }
     &:hover {
-      .preview-image {
-        transform: translate(0, em(-$d-gut, $d-tiny-size));
-        &:before {
-          transform: translate(0, em($d-gut, $d-tiny-size));
-
-          @include adjustWidth($d-gut, $d-tiny-size);
-        }
-      }
+      transform: translate(0, em(-$d-gut));
     }
     &:active {
-      .preview-image {
-        transition-duration: 0.0s;
-        transform: translate(0, em($d-gut/2, $d-tiny-size));
-        &:before {
-          width: 100%;
-
-          transition-duration: 0.0s, 0.0s;
-          transform: translate(0, 0);
-        }
-      }
+      transition-duration: 0.0s;
+      transform: translate(0, em($d-gut));
     }
   }
 }
 
-.preview.current {
-  cursor: default;
-
-  .preview-image {
-    transform: translate(0, em(-$m-gut, $m-tiny-size));
+.previews {
+  .current {
     &:before {
-      transform: translate(0, em($m-gut, $m-tiny-size));
-
-      background-color: rgba($picture-background-color, 1.0);
-
-      @include adjustWidth($m-gut, $m-tiny-size);
+      @include adjustWidth($m-gut*2);
+      opacity: 1.0;
     }
-  }
-  .preview-title {
-    text-decoration: line-through;
+    .preview {
+      cursor: default;
+      transform: translate(0, em(-$m-gut/2*3));
 
-    color: $strong-type-color;
-  }
-  @include min-screen(col(8)) {
-    .preview-image {
-      transform: translate(0, em(-$d-gut, $d-tiny-size));
+      .preview-title {
+        color: $color;
+      }
+    }
+    @include min-screen(col(8)) {
       &:before {
-        transform: translate(0, em($d-gut, $d-tiny-size));
-
-        @include adjustWidth($d-gut, $d-tiny-size);
+        @include adjustWidth($d-gut/2*3);
+      }
+      .preview {
+        transform: translate(0, em(-$d-gut));
       }
     }
   }

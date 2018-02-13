@@ -6,6 +6,7 @@
 
 .pitch {
   p {
+    color: $strong-type-color;
     font-weight: $medium;
 
     margin-top: em($m-base-rhythm*3, $m-super-large-size);

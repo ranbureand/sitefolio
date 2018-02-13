@@ -12,6 +12,7 @@ categories: [All, Digital, Key, Non-Commercial, Research, Static Image]
 tags: [dream, image search results, responsive, search engines, site]
 
 preview_image: 'fortune_cookie_site_00.jpg'
+preview_color: '#6362E0'
 
 excerpt: 'The experimental web image archive aims at replicating on a small scale the way a human image search engine might work.'
 exordium: 'The experimental web image archive aims at replicating on a small scale the way a human image search engine might work.'

@@ -12,6 +12,7 @@ categories: [All, Digital, Key, Non-Commercial]
 tags: [GitHub, gratitude, love, open source, responsive, site, thankfullness]
 
 preview_image: 'yo_this_is_cool_00.jpg'
+preview_color: '#6ED9C0'
 
 excerpt: 'The site let developers and designers show love and thank the people behind their favorite open source projects on GitHub.'
 exordium: 'The site let developers and designers show love and thank the people behind their favorite open source projects on GitHub.'

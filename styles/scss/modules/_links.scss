@@ -99,7 +99,7 @@
       &:before {
         transform: translate(0, em($m-gut, $m-tiny-size));
 
-        background-color: rgba($picture-background-color, 1.0);
+        background-color: rgba($picture-background-color, 0.1);
 
         @include adjustWidth($m-gut, $m-tiny-size);
       }

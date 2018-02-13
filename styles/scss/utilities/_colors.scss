@@ -8,18 +8,21 @@
 $black:                         #000;
 $white:                         #fff;
 $color:                         #f54159; // HSB(340,100,100) HSBlu(8,88,56)
-$background:                    #fafafa; // HSB(0,0,98)
-$canvas:                        $background;
+$background:                    #FAFAF9; // HSB(0,0,98)
+$canvas:                        rgba($black, 0.72);
+
+$card-background-color: #F0F0ED;
+$card-shadow: #E6E5E1;
 
 /*
 ** Typography
 */
 
-$strong-type-color:             rgba($black, 1.00);
-$type-color:                    rgba($black, 1.00);
-$light-type-color:              rgba($black, 1.00);
+$strong-type-color:             rgba($black, 0.88);
+$type-color:                    rgba($black, 0.88);
+$light-type-color:              rgba($black, 0.88);
 
-$selected-type-color:           rgba($black, 1.00);
+$selected-type-color:           rgba($black, 0.88);
 
 $placeholder-type-color:        rgba($black, 0.25);
 
@@ -39,13 +42,13 @@ $field-background-color:        $background;
 
 $button-background-color:       $strong-type-color;
 
-$picture-background-color:      #ebebeb; // HSB(0,0,92)
+$picture-background-color:      rgba($black, 0.05); // HSB(0,0,92)
 
 /*
 ** Borders
 */
 
-$border-color:                  rgba($black, 1.00);
+$border-color:                  rgba($black, 0.88);
 
-$strong-field-border-color:     rgba($black, 1.00);
+$strong-field-border-color:     rgba($black, 0.88);
 $field-border-color:            rgba($black, 0.25);

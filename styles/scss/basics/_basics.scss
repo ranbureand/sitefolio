@@ -71,7 +71,7 @@ body {
 
   counter-reset: footnotes images ordered-list;
 
-  background-color: $canvas;
+  background-color: $background;
 }
 
 /*
@@ -108,8 +108,8 @@ a {
   background-color: transparent; // normalize.css
 
   transition-property: color;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
+  transition-duration: $duration;
+  transition-timing-function: ease-out;
   //@include transition-delay(0s);
   color: inherit;
   &:hover {

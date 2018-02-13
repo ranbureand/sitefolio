@@ -12,7 +12,7 @@
   word-break: break-all;
 }
 
-#outer-space {
+/*#outer-space {
   background: $background;
   margin-left: auto;
   margin-right: auto;
@@ -29,11 +29,33 @@
   @include min-screen(col(16)) {
     max-width: col(19);
   }
+}*/
+
+[class^="canvas"] {
+  padding-right: $m-gut;
+  padding-left: $m-gut;
+  @include min-screen(col(8)) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.canvas-projects {
+  //background-color: $card-background-color;
+}
+
+.projects {
+  padding-top: em($m-base-rhythm);
+  padding-bottom: em($m-base-rhythm*2);
+  @include min-screen(col(8)) {
+    padding-top: em($d-base-rhythm);
+    padding-bottom: em($d-base-rhythm*2);
+  }
 }
 
 .project {
-  padding-top: em($m-large-line*2);
-  padding-bottom: em($m-large-line*4);
+  padding-top: em($m-base-rhythm*2);
+  padding-bottom: em($m-base-rhythm*4);
 
   @include min-screen(col(8)) {
     padding-top: em($d-base-rhythm*3);
