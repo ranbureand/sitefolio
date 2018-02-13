@@ -8,11 +8,11 @@
 $black:                         #000;
 $white:                         #fff;
 $color:                         #f54159; // HSB(340,100,100) HSBlu(8,88,56)
-$background:                    #FAFAF9; // HSB(0,0,98)
-$canvas:                        rgba($black, 0.72);
+$background:                    #FCFCFC; // HSB(0,0,98)
+$canvas:                        #F0F0F0;
 
-$card-background-color: #F0F0ED;
-$card-shadow: #E6E5E1;
+$card-background-color: #F2F2F2;
+$card-shadow: #E8E8E8;
 
 /*
 ** Typography
@@ -42,7 +42,7 @@ $field-background-color:        $background;
 
 $button-background-color:       $strong-type-color;
 
-$picture-background-color:      rgba($black, 0.05); // HSB(0,0,92)
+$picture-background-color:      rgba($black, 0.06); // HSB(0,0,92)
 
 /*
 ** Borders
