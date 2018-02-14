@@ -162,7 +162,7 @@
       @include font-size($d-medium-size, $d-medium-line);
     }
     .preview-tags {
-      margin-top: em($d-tiny-line/2, $d-tiny-size);
+      margin-top: em($d-tiny-line/5*4, $d-tiny-size);
 
       @include font-size($d-tiny-size, $d-tiny-line);
     }

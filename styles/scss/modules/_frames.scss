@@ -6,18 +6,12 @@
 
 .header,
 .footer {
-  /*padding-top: em($m-small-line);
-  padding-bottom: em($m-small-line);
-
-  @include min-screen(col(8)) {
-    padding-top: em($d-small-line);
-    padding-bottom: em($d-small-line);
-  }*/
   @include face(mono);
 }
 
 .header {
   padding-top: em($m-base-rhythm*1);
+
   @include min-screen(col(8)) {
     padding-top: em($d-base-rhythm*1);
   }
@@ -27,15 +21,12 @@
 }
 
 .footer {
-  padding-right: $m-gut;
-  padding-left: $m-gut;
+  padding-top: em($m-base-rhythm*1);
   padding-bottom: em($m-base-rhythm*1);
-  padding-top: em($m-base-rhythm*4);
+
   @include min-screen(col(8)) {
+    padding-top: em($d-base-rhythm*2);
     padding-bottom: em($d-base-rhythm);
-    padding-top: em($d-base-rhythm*4);
-    padding-right: em($d-gut/2);
-    padding-left: em($d-gut/2);
   }
   @include min-screen(col(12)) {
     padding-bottom: em($d-base-rhythm*2);
@@ -66,8 +57,6 @@
 }
 
 .header-motto {
-  //display: none;
-
   text-align: right;
 
   grid-column: 2 / 3;
