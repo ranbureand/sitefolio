@@ -6,8 +6,6 @@
 
 .previews {
   li {
-    position: relative;
-
     width: 100/2*1%;
     margin-bottom: em($m-base-rhythm);
     padding-right: em($m-gut/2);
@@ -61,7 +59,7 @@
     transition-property: height, opacity, transform, width;
     transform-origin: 50% 0 ;
 
-    opacity: 1.0;
+    opacity: 0.0;
     background-color: $picture-background-color;
   }
   .preview-image {
@@ -74,7 +72,6 @@
     transition-property: transform;
     transform: translate(0, 0);
 
-    border-radius: $radius $radius 0 0;
     background-color: $picture-background-color;
 
     @include font-size($m-tiny-size, $m-tiny-line);
@@ -96,7 +93,6 @@
       position: absolute;
       z-index: 1;
 
-      border-radius: $radius $radius 0 0;
     }
   }
   .preview-title {

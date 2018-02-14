@@ -32,9 +32,32 @@
 }
 
 .link {
+  position: relative;
   display: block;
+  padding-bottom: em($m-base-rhythm);
 
   text-decoration: none;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    width: 100%;
+    padding-bottom: 100%;
+    margin-right: auto;
+    margin-left: auto;
+
+    content: '';
+    transition-timing-function: ease-out, ease-out, ease-out, ease-out;
+    transition-duration: $duration, $duration, $duration, $duration;
+    transition-property: height, opacity, transform, width;
+    transform-origin: 50% 0 ;
+
+    opacity: 0.0;
+    background-color: $picture-background-color;
+  }
 
   .link-icon {
     width: 100%;
@@ -56,29 +79,7 @@
       background-position: center;
       background-size: 50%;
     }
-    &:before {
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      right: 0;
-      left: 0;
-
-      display: block;
-
-      width: 100%;
-      height: 100%;
-      margin-right: auto;
-      margin-left: auto;
-
-      content: '';
-      transition-timing-function: ease-out, ease-out, ease-out;
-      transition-duration: 0.2s, 0.2s, 0.2s;
-      transition-property: background-color, transform, width;
-      transform: translate(0, 0); // scale(1.00)
-      transform-origin: 50% 100%;
-
-      background-color: rgba($picture-background-color, 0.0);
-    }
+    
   }
   .link-title {
     font-weight: $medium;
@@ -94,38 +95,28 @@
     @include font-size($m-small-size, $m-small-line);
   }
   &:hover {
+    &:before {
+      opacity: 1.0;
+
+      @include adjustWidth($m-gut/2*3);
+    }
     .link-icon {
-      transform: translate(0, em(-$m-gut, $m-tiny-size));
-      &:before {
-        transform: translate(0, em($m-gut, $m-tiny-size));
-
-        background-color: rgba($picture-background-color, 0.1);
-
-        @include adjustWidth($m-gut, $m-tiny-size);
-      }
+      transform: translate(0, em(-$m-gut/2*3, $m-tiny-size));
     }
     .link-title {
       color: $color;
     }
   }
   &:active {
-    .link-icon {
-      transition-duration: 0.0s;
-      transform: translate(0, em($m-gut/2, $m-tiny-size));
-      &:before {
-        width: 100%;
+   .link-icon {
+     transition-duration: 0.0s;
+     transform: translate(0, 0);
+   }
+   .link-title {
+     transition-duration: 0.0s;
 
-        transition-duration: 0.0s, 0.0s;
-        transform: translate(0, 0);
-
-        background-color: rgba($picture-background-color, 0.0);
-      }
-    }
-    .link-title {
-      transition-duration: 0.0s;
-
-      color: $color;
-    }
+     color: $color;
+   }
   }
   @include min-screen(col(8)) {
     .link-icon {
@@ -137,25 +128,17 @@
       @include font-size($d-small-size, $d-small-line);
     }
     &:hover {
+      &:before {
+        @include adjustWidth($d-gut);
+      }
       .link-icon {
         transform: translate(0, em(-$d-gut, $d-tiny-size));
-        &:before {
-          transform: translate(0, em($d-gut, $d-tiny-size));
-
-          @include adjustWidth($d-gut, $d-tiny-size);
-        }
       }
     }
     &:active {
       .link-icon {
         transition-duration: 0.0s;
-        transform: translate(0, em($d-gut/2, $d-tiny-size));
-        &:before {
-          width: 100%;
-
-          transition-duration: 0.0s, 0.0s;
-          transform: translate(0, 0);
-        }
+        transform: translate(0, 0);
       }
     }
   }
