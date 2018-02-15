@@ -40,8 +40,6 @@
 
   text-decoration: none;
 
-  border-radius: $radius;
-
   &:before {
     position: absolute;
     top: 0;
@@ -158,9 +156,9 @@
       @include font-size($d-medium-size, $d-medium-line);
     }
     .preview-tags {
-      margin-top: em($d-tiny-line/5*4, $d-tiny-size);
+      margin-top: em($d-small-line/2, $d-small-size);
 
-      @include font-size($d-tiny-size, $d-tiny-line);
+      @include font-size($d-small-size, $d-small-line);
     }
     .preview-time {
       margin-top: em($d-small-line/2, $d-small-size);
