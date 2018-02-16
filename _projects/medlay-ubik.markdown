@@ -12,6 +12,7 @@ categories: [All, Digital, Dynamic Image, Key, Non-Commercial, Research]
 tags: [cinema, comics, loop, new media form, sequential art, spatial montage]
 
 preview_image: 'medlay_ubik_00.jpg'
+preview_color: '#666'
 
 excerpt: 'The proof of concept prototype illustrates the principles of Medlay. It is based on the slogan opening the 6th chapter of “Ubik”, a science fiction novel by Philp K. Dick.'
 exordium: 'The proof of concept prototype illustrates the principles of [Medlay](http://ranbureand.github.io/medlay/ "Medlay on GitHub"). It is based on the slogan opening the 6<sup>th</sup> chapter of *Ubik*, a science fiction novel by Philp K. Dick.'
@@ -20,7 +21,13 @@ publish: 'yes'
 ---
 
 <div class="figures">
-  {% include image.html size="xl" src="medlay_ubik_6344.jpg" alt="A screenshot of Ubik / Chap. 6." %}
+    {% include image.html 
+        size="xl" 
+        w="3" h="2" 
+        src="medlay_ubik_6344.jpg" 
+        alt="A screenshot of Ubik / Chap. 6." 
+        color="#222" 
+    %}
 </div>
 
 tags
@@ -39,9 +46,27 @@ prototype
 : [Ubik, Chap. 6 Prototype](http://ranbureand.github.io/ubik-chap-6/ "Ubik, Chap. 6 on GitHub")
 
 <div class="figures">
-  {% include image.html size="xl" src="medlay_ubik_6346.jpg" alt="A screenshot of Ubik / Chap. 6." %}
-  {% include image.html size="l" src="medlay_ubik_6353.jpg" alt="A screenshot of Ubik / Chap. 6." %}
-  {% include image.html size="l" src="medlay_ubik_6347.jpg" alt="A screenshot of Ubik / Chap. 6." %}
+    {% include image.html 
+        size="xl" 
+        w="3" h="2" 
+        src="medlay_ubik_6346.jpg" 
+        alt="A screenshot of Ubik / Chap. 6." 
+        color="#222" 
+    %}
+    {% include image.html 
+        size="l" 
+        w="3" h="2" 
+        src="medlay_ubik_6353.jpg" 
+        alt="A screenshot of Ubik / Chap. 6." 
+        color="#222" 
+    %}
+    {% include image.html 
+        size="l" 
+        w="3" h="2" 
+        src="medlay_ubik_6347.jpg" 
+        alt="A screenshot of Ubik / Chap. 6." 
+        color="#222" 
+    %}
 </div>
 
 The slogan opening the 6<sup>th</sup> chapter of *Ubik* says:
@@ -51,6 +76,18 @@ The slogan opening the 6<sup>th</sup> chapter of *Ubik* says:
 >Warning: use only as directed. And with caution.
 
 <div class="figures">
-  {% include image.html size="xl" src="medlay_ubik_6348.jpg" alt="A screenshot of Ubik / Chap. 6." %}
-  {% include image.html size="l" src="medlay_ubik_6349.jpg" alt="A screenshot of Ubik / Chap. 6." %}
+    {% include image.html 
+        size="xl" 
+        w="3" h="2" 
+        src="medlay_ubik_6348.jpg" 
+        alt="A screenshot of Ubik / Chap. 6." 
+        color="#222" 
+    %}
+    {% include image.html 
+        size="l" 
+        w="3" h="2" 
+        src="medlay_ubik_6349.jpg" 
+        alt="A screenshot of Ubik / Chap. 6." 
+        color="#222" 
+    %}
 </div>
