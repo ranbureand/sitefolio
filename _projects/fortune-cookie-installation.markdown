@@ -12,6 +12,7 @@ categories: [All, Digital, Key, Non-Commercial, Print, Research, Static Image, S
 tags: [dream, image search results, installation, postcards, print, search engines]
 
 preview_image: 'fortune_cookie_installation_00.jpg'
+preview_color: '#FDE6AF'
 
 excerpt: 'The project investigates the dynamics between users, images and image search engines in the current panorama of the Web.'
 exordium: 'The project investigates the dynamics between users, images and image search engines in the current panorama of the Web.'
@@ -25,7 +26,7 @@ publish: 'yes'
         h="2" w="3" 
         src="fortune_cookie_01.jpg" 
         alt="A picture of the installation Fortune Cookie." 
-        color="#CCC" 
+        color="#E3E4DF" 
     %}
 </div>
 
@@ -55,7 +56,7 @@ The installation correlates two different but comparable **web image archives**:
         h="2" w="3" 
         src="fortune_cookie_64.jpg" 
         alt="A picture of the installation Fortune Cookie." 
-        color="#CCC" 
+        color="#E3E4DF" 
     %}
 </div>
 
@@ -67,7 +68,7 @@ In **the first** archive the links to the images submitted by the participants a
         h="2" w="3" 
         src="fortune_cookie_16.jpg" 
         alt="A picture of the installation Fortune Cookie." 
-        color="#CCC" 
+        color="#E3E4DF" 
     %}
 </div>
 
@@ -85,7 +86,7 @@ Starting from the unusual **assumption** that every search engine has indeed its
         h="2" w="3" 
         src="fortune_cookie_05.jpg" 
         alt="A picture of the installation Fortune Cookie." 
-        color="#CCC" 
+        color="#E3E4DF" 
     %}
 </div>
 

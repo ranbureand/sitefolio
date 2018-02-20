@@ -12,9 +12,10 @@ categories: [All, Commercial, Key, Print, Research]
 tags: [landscape photography, photobook, print, spatial montage, Tirol]
 
 preview_image: 'sight_seeing_00.jpg'
+preview_color: '#BEAEA1'
 
-excerpt: 'The photobook Sight-_Seeing spatially arranges a heterogeneous set of collectively taken pictures of Tyrolean summer landscapes—halfway between tourism’s advertising images and contemporary photos.'
-exordium: 'The photobook *Sight-_Seeing* spatially arranges a heterogeneous set of collectively taken pictures of Tyrolean summer landscapes—halfway between tourism’s advertising images and contemporary photos.'
+excerpt: 'The photobook spatially arranges a heterogeneous set of collectively taken pictures of Tyrolean summer landscapes—halfway between tourism’s advertising images and contemporary photos.'
+exordium: 'The photobook spatially arranges a heterogeneous set of collectively taken pictures of Tyrolean summer landscapes—halfway between tourism’s advertising images and contemporary photos.'
 
 publish: 'yes'
 ---
@@ -25,7 +26,7 @@ publish: 'yes'
         h="2" w="3" 
         src="sight_seeing_6406.jpg" 
         alt="The cover of the book Sight-_Seeing." 
-        color="#CCC" 
+        color="#BEAEA1" 
     %}
 </div>
 
@@ -53,7 +54,7 @@ prizes
         h="2" w="3" 
         src="sight_seeing_6397.jpg" 
         alt="A double page spread of the book Sight-_Seeing." 
-        color="#CCC" 
+        color="#BEAEA1" 
     %}
 </div>
 
@@ -67,7 +68,7 @@ How could the correlations between the pictures of such an heterogenous[^heterog
         h="2" w="3" 
         src="sight_seeing_6393.jpg" 
         alt="A double page spread of the book Sight-_Seeing." 
-        color="#CCC" 
+        color="#BEAEA1" 
     %}
 </div>
 
@@ -79,14 +80,14 @@ The source of inspiration for the innovative layout solution of *Sight-_Seeing* 
         h="2" w="3" 
         src="sight_seeing_6383.jpg" 
         alt="A double page spread of the book Sight-_Seeing." 
-        color="#CCC" 
+        color="#BEAEA1" 
     %}
     {% include image.html 
         size="l" 
         h="2" w="3" 
         src="sight_seeing_6388.jpg" 
         alt="A double page spread of the book Sight-_Seeing." 
-        color="#CCC" 
+        color="#BEAEA1" 
     %}
 </div>
 
@@ -100,7 +101,7 @@ Secondly, the layout of the pictures was designed taking into account not only t
         h="2" w="3" 
         src="sight_seeing_explanation_00.jpg" 
         alt="Making of the photobook Sight-_Seeing." 
-        color="#CCC" 
+        color="#BEAEA1" 
     %}
 </div>
 
@@ -112,14 +113,14 @@ The adopted strategy allowed the creation of multiple and otherwise physically i
         h="2" w="3" 
         src="sight_seeing_6372.jpg" 
         alt="A double page spread of the book Sight-_Seeing." 
-        color="#CCC" 
+        color="#BEAEA1" 
     %}
     {% include image.html 
         size="xl" 
         h="2" w="3" 
         src="sight_seeing_6373.jpg" 
         alt="A double page spread of the book Sight-_Seeing." 
-        color="#CCC" 
+        color="#BEAEA1" 
     %}
 </div>
 
@@ -131,21 +132,21 @@ By peeking out from the fold, the main picture of p. _09_11 is set in a relation
         h="2" w="3" 
         src="sight_seeing_6374.jpg" 
         alt="A double page spread of the book Sight-_Seeing." 
-        color="#CCC" 
+        color="#BEAEA1" 
     %}
     {% include image.html 
         size="xl" 
         h="2" w="3" 
         src="sight_seeing_6368.jpg" 
         alt="A double page spread of the book Sight-_Seeing." 
-        color="#CCC" 
+        color="#BEAEA1" 
     %}
     {% include image.html 
         size="l" 
         h="2" w="3" 
         src="sight_seeing_6398.jpg" 
         alt="A double page spread of the book Sight-_Seeing." 
-        color="#CCC" 
+        color="#BEAEA1" 
     %}
 </div>
 
@@ -157,7 +158,7 @@ One of various 16-pages signature mock-ups used during the designing of the book
         h="2" w="3" 
         src="sight_seeing_6607.jpg" 
         alt="A picture of one of the various 16-pages signature mock-ups used during the designing of the book Sight-_Seeing." 
-        color="#CCC" 
+        color="#BEAEA1" 
     %}
 </div>
 
