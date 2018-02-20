@@ -261,6 +261,8 @@
 
 .typo-sl {
   h1 {
+    font-weight: $normal;
+
     margin-bottom: em($m-super-large-line/2, $m-super-large-size);
 
     @include font-size($m-super-large-size, $m-super-large-line);
@@ -273,6 +275,7 @@
     }
   }
 }
+
 
 .typo-s,
 .footnotes > ol > li {

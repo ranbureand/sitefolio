@@ -21,7 +21,11 @@
 ** Basics
 */
 
-button, input, optgroup, select, textarea {
+button,
+input,
+optgroup,
+select,
+textarea {
   font: inherit; // normalize.css
 
   margin: 0; // normalize.css
@@ -36,21 +40,27 @@ button {
   overflow: visible; // normalize.css
 }
 
-button, select {
+button,
+select {
   text-transform: none; // normalize.css
 }
 
-button, html input[type="button"], input[type="reset"], input[type="submit"] {
+button,
+html input[type='button'],
+input[type='reset'],
+input[type='submit'] {
   cursor: pointer; // normalize.css
 
   -webkit-appearance: button; // normalize.css
 }
 
-button[disabled], html input[disabled] {
+button[disabled],
+html input[disabled] {
   cursor: default; // normalize.css
 }
 
-button::-moz-focus-inner, input::-moz-focus-inner {
+button::-moz-focus-inner,
+input::-moz-focus-inner {
   padding: 0; // normalize.css
 
   border: 0; // normalize.css
@@ -60,19 +70,22 @@ input {
   line-height: normal; // normalize.css
 }
 
-input[type="checkbox"], input[type="radio"] {
+input[type='checkbox'],
+input[type='radio'] {
   padding: 0; // normalize.css
 }
 
-input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
   height: auto; // normalize.css
 }
 
-input[type="search"] {
+input[type='search'] {
   -webkit-appearance: textfield; // normalize.css
 }
 
-input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration {
   -webkit-appearance: none; // normalize.css
 }
 
@@ -110,13 +123,17 @@ optgroup {
 //[class^="form"]
 .form {
   clear: both;
-  input[type = "text"], textarea, input[type = "submit"] {
+
+  input[type = 'text'],
+  textarea,
+  input[type = 'submit'] {
     display: block;
 
-    @include face(sans);
-    transition-property: color, background-color, border-color;
-    transition-duration: 0.2s, 0.2s, 0.2s;
     transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+    transition-duration: 0.2s, 0.2s, 0.2s;
+    transition-property: color, background-color, border-color;
+
+    @include face(sans);
   }
   label {
     font-weight: $normal;
@@ -127,7 +144,8 @@ optgroup {
 
     @include font-size($m-medium-size, $m-medium-line);
   }
-  input[type = "text"], textarea {
+  input[type = 'text'],
+  textarea {
     width: 100%;
     padding: em($m-medium-line/4 + strip(-$field-border-width/10), $m-medium-size) em($m-gut/2, $m-medium-size) em($m-medium-line/4 + strip(-$field-border-width/10), $m-medium-size) em($m-gut/2, $m-medium-size);
 
@@ -136,17 +154,19 @@ optgroup {
     background-color: $field-background-color;
 
     @include font-size($m-medium-size, $m-medium-line);
-    &:focus, &:hover {
+    &:focus,
+    &:hover {
       color: $strong-type-color;
     }
     &:hover {
       border-color: $strong-field-border-color;
     }
-    &:focus, &:focus:hover {
+    &:focus,
+    &:focus:hover {
       border-color: $strong-field-border-color;
     }
   }
-  input[type = "text"] {
+  input[type = 'text'] {
     height: em($m-medium-line*1.5, $m-medium-size);
   }
   i {
@@ -161,7 +181,7 @@ optgroup {
       text-decoration: underline;
     }
   }
-  input[type = "submit"] {
+  input[type = 'submit'] {
     font-weight: $normal;
 
     display: inline-block;
@@ -174,7 +194,8 @@ optgroup {
     background-color: $button-background-color;
 
     @include font-size($m-medium-size, $m-medium-line);
-    &:hover, &:active {
+    &:hover,
+    &:active {
       border-color: $color;
       background-color: $color;
     }
@@ -182,7 +203,8 @@ optgroup {
       transition-duration: 0s, 0s;
     }
   }
-  .field, .button {
+  .field,
+  .button {
     margin-bottom: em($m-medium-line);
   }
   .button {
@@ -191,7 +213,8 @@ optgroup {
     text-align: center;
   }
   .error {
-    input[type = "text"], textarea {
+    input[type = 'text'],
+    textarea {
       border-color: $color;
     }
   }
@@ -201,12 +224,13 @@ optgroup {
 
       @include font-size($d-medium-size, $d-medium-line);
     }
-    input[type = "text"], textarea {
+    input[type = 'text'],
+    textarea {
       padding: em($d-medium-line/4 + strip(-$field-border-width/10), $d-medium-size) em($d-gut/2, $d-medium-size) em($d-medium-line/4 + strip(-$field-border-width/10), $d-medium-size) em($d-gut/2, $d-medium-size);
 
       @include font-size($d-medium-size, $d-medium-line);
     }
-    input[type = "text"] {
+    input[type = 'text'] {
       height: em($d-medium-line*1.5, $d-medium-size);
     }
     i {
@@ -214,13 +238,14 @@ optgroup {
 
       @include font-size($d-small-size, $d-small-line);
     }
-    input[type = "submit"] {
+    input[type = 'submit'] {
       height: em($d-medium-line*1.5, $d-medium-size);
       padding: em($d-medium-line/4 + strip(-$button-border-width/10), $d-medium-size) em($d-gut*3, $d-medium-size) em($d-medium-line/4 + strip(-$button-border-width/10), $d-medium-size) em($d-gut*3, $d-medium-size);
 
       @include font-size($d-medium-size, $d-medium-line);
     }
-    .field, .button {
+    .field,
+    .button {
       margin-bottom: em($d-medium-line);
     }
   }

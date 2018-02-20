@@ -15,7 +15,7 @@ $base-font-size:            16px;
 $base-line:                 4px;
 
 $m-base-rhythm:             $base-line*6;
-$d-base-rhythm:             $base-line*8;
+$d-base-rhythm:             $base-line*10;
 
 /*
 ** Font sizes and line heights
@@ -27,11 +27,14 @@ $d-base-rhythm:             $base-line*8;
 $m-super-large-size:    24px;
 $m-super-large-line:    $base-line*9; //36px
 
-$t-super-large-size:    40px;
-$t-super-large-line:    $base-line*13; //52px
+$t-super-large-size:    42px;
+$t-super-large-line:    $base-line*14; //52px
 
 $d-super-large-size:    48px;
 $d-super-large-line:    $base-line*15; //60px
+
+$d-super-large-size:    64px;
+$d-super-large-line:    $base-line*20; //60px
 
 $m-extra-large-size:    22px;
 $m-extra-large-line:    $base-line*8;  //28px

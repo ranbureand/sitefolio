@@ -6,7 +6,7 @@
 
 .links {
   li {
-    width: 100/4*1%;
+    width: 100/3*1%;
     margin-bottom: em($m-base-rhythm);
     padding-right: em($m-gut/2);
     padding-left: em($m-gut/2);
@@ -33,8 +33,8 @@
 
 .link {
   position: relative;
+
   display: block;
-  padding-bottom: em($m-base-rhythm);
 
   text-decoration: none;
 
@@ -45,9 +45,9 @@
     left: 0;
 
     width: 100%;
-    padding-bottom: 100%;
     margin-right: auto;
     margin-left: auto;
+    padding-bottom: 100%;
 
     content: '';
     transition-timing-function: ease-out, ease-out, ease-out, ease-out;
@@ -58,7 +58,6 @@
     opacity: 0.0;
     background-color: $picture-background-color;
   }
-
   .link-icon {
     width: 100%;
     margin-bottom: em($m-small-line/2);
@@ -79,7 +78,6 @@
       background-position: center;
       background-size: 45%;
     }
-    
   }
   .link-title {
     font-weight: $medium;
@@ -108,15 +106,15 @@
     }
   }
   &:active {
-   .link-icon {
-     transition-duration: 0.0s;
-     transform: translate(0, 0);
-   }
-   .link-title {
-     transition-duration: 0.0s;
+    .link-icon {
+      transition-duration: 0.0s;
+      transform: translate(0, 0);
+    }
+    .link-title {
+      transition-duration: 0.0s;
 
-     color: $color;
-   }
+      color: $color;
+    }
   }
   @include min-screen(col(8)) {
     .link-icon {

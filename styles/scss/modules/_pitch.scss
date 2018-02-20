@@ -5,16 +5,21 @@
 */
 
 .pitch {
+  margin-top: em($m-base-rhythm*3);
+  margin-bottom: em($m-base-rhythm*3);
+
   p {
+    font-weight: $normal;
+
+    //hyphens: manual;
+    hyphens: none;
+
     color: $strong-type-color;
-    font-weight: $medium;
-
-    margin-top: em($m-base-rhythm*3, $m-super-large-size);
-    margin-bottom: em($m-base-rhythm*3, $m-super-large-size);
-
-    hyphens: manual;
 
     @include font-size($m-super-large-size, $m-super-large-line);
+    & + p {
+      margin-top: em($m-super-large-line, $m-super-large-size);
+    }
     .asterisk {
       &:after {
         margin-left: 0.1em;
@@ -26,19 +31,25 @@
     }
   }
   @include min-screen(col(8)) {
+    margin-top: em($d-base-rhythm*2);
+    margin-bottom: em($d-base-rhythm*2);
     p {
-      margin-top: em($d-base-rhythm*2, $t-super-large-size);
-      margin-bottom: em($d-base-rhythm*3, $t-super-large-size);
-
       @include font-size($t-super-large-size, $t-super-large-line);
+      & + p {
+        margin-top: em($t-super-large-line, $t-super-large-size);
+      }
     }
   }
   @include min-screen(col(12)) {
+    margin-top: em($d-base-rhythm*4);
+    margin-bottom: em($d-base-rhythm*4);
     p {
-      margin-top: em($d-base-rhythm*3, $d-super-large-size);
-      margin-bottom: em($d-base-rhythm*4, $d-super-large-size);
+      //hyphens: none;
 
       @include font-size($d-super-large-size, $d-super-large-line);
+      & + p {
+        margin-top: em($d-super-large-line, $d-super-large-size);
+      }
     }
   }
 }
