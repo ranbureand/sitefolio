@@ -5,6 +5,8 @@
 */
 
 .previews {
+  padding-top: em($m-base-rhythm);
+
   li {
     width: 100/2*1%;
     margin-bottom: em($m-base-rhythm);
@@ -12,6 +14,7 @@
     padding-left: em($m-gut/2);
   }
   @include min-screen(col(8)) {
+    padding-top: em($d-base-rhythm);
     li {
       width: 100/2*1%;
       margin-bottom: em($d-base-rhythm);
@@ -124,7 +127,7 @@
     &:before {
       opacity: 1.0;
 
-      @include adjustWidth($m-gut/2*3);
+      @include adjust-dimension(width, $m-gut/2*3);
     }
     .preview-image {
       transform: translate(0, em(-$m-gut/2*3, $m-tiny-size));
@@ -166,7 +169,7 @@
     }
     &:hover {
       &:before {
-        @include adjustWidth($d-gut);
+        @include adjust-dimension(width, $d-gut);
       }
       .preview-image {
         transform: translate(0, em(-$d-gut, $d-tiny-size));
@@ -187,7 +190,7 @@
   &:before {
     opacity: 1.0;
 
-    @include adjustWidth($m-gut/2*3);
+    @include adjust-dimension(width, $m-gut/2*3);
   }
   .preview-image {
     transform: translate(0, em(-$m-gut/2*3, $m-tiny-size));
@@ -197,7 +200,7 @@
   }
   @include min-screen(col(8)) {
     &:before {
-      @include adjustWidth($d-gut);
+      @include adjust-dimension(width, $d-gut);
     }
     .preview-image {
       transform: translate(0, em(-$d-gut, $d-tiny-size));

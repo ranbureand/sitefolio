@@ -173,8 +173,8 @@ $button-border-width: 2px;
 ** Adjust the width of an element (to accomodate for CSS Comb)
 */
 
-@mixin adjustWidth($to-gut, $from-size: $base-font-size) {
-  width: calc(100% - #{em($to-gut*2, $from-size)});
+@mixin adjust-dimension($dimension, $to-gut, $from-size: $base-font-size) {
+  #{$dimension}: calc(100% - #{em($to-gut*2, $from-size)});
 }
 
 /*

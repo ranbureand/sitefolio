@@ -5,6 +5,8 @@
 */
 
 .links {
+  padding-top: em($m-base-rhythm);
+
   li {
     width: 100/3*1%;
     margin-bottom: em($m-base-rhythm);
@@ -12,6 +14,7 @@
     padding-left: em($m-gut/2);
   }
   @include min-screen(col(8)) {
+    padding-top: em($d-base-rhythm);
     li {
       width: 100/4*1%;
       margin-bottom: em($d-base-rhythm);
@@ -50,12 +53,14 @@
     padding-bottom: 100%;
 
     content: '';
-    transition-timing-function: ease-out, ease-out, ease-out, ease-out;
-    transition-duration: $duration, $duration, $duration, $duration;
-    transition-property: height, opacity, transform, width;
-    transform-origin: 50% 0 ;
+    transition-timing-function: ease-out, ease-out, ease-out, ease-out, ease-out;
+    transition-duration: $duration, $duration, $duration, $duration, $duration;
+    transition-property: height, opacity, padding-bottom, transform, width;
+    transform: translate(0, 0);
+    transform-origin: 50% 100% ;
 
     opacity: 0.0;
+    border-radius: 50%;
     background-color: $picture-background-color;
   }
   .link-icon {
@@ -72,11 +77,12 @@
       width: 100%;
       padding-bottom: 100%;
 
+      border-radius: 50%;
       background-color: $picture-background-color;
       background-image: url('../../media/skills/placeholder_00.png');
       background-repeat: no-repeat;
       background-position: center;
-      background-size: 45%;
+      background-size: 36%;
     }
   }
   .link-title {
@@ -87,6 +93,7 @@
     transition-timing-function: ease-in-out;
     transition-duration: 0.2s;
     transition-property: color;
+    text-align: center;
 
     color: $strong-type-color;
 
@@ -94,9 +101,12 @@
   }
   &:hover {
     &:before {
+      transform: translate(0, em($m-gut/2*3*2));
+
       opacity: 1.0;
 
-      @include adjustWidth($m-gut/2*3);
+      @include adjust-dimension(width, $m-gut/2*3);
+      @include adjust-dimension(padding-bottom, $m-gut/2*3);
     }
     .link-icon {
       transform: translate(0, em(-$m-gut/2*3, $m-tiny-size));
@@ -127,7 +137,10 @@
     }
     &:hover {
       &:before {
-        @include adjustWidth($d-gut);
+        transform: translate(0, em($d-gut*2));
+
+        @include adjust-dimension(width, $d-gut);
+        @include adjust-dimension(padding-bottom, $d-gut);
       }
       .link-icon {
         transform: translate(0, em(-$d-gut, $d-tiny-size));
