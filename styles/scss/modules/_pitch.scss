@@ -18,7 +18,7 @@
 
     @include font-size($m-super-large-size, $m-super-large-line);
     & + p {
-      margin-top: em($m-super-large-line, $m-super-large-size);
+      margin-top: em($m-super-large-line/2, $m-super-large-size);
     }
     .asterisk {
       &:after {
@@ -36,7 +36,7 @@
     p {
       @include font-size($t-super-large-size, $t-super-large-line);
       & + p {
-        margin-top: em($t-super-large-line, $t-super-large-size);
+        margin-top: em($t-super-large-line/2, $t-super-large-size);
       }
     }
   }

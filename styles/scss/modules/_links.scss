@@ -14,7 +14,7 @@
     padding-left: em($m-gut/2);
   }
   @include min-screen(col(8)) {
-    padding-top: em($d-base-rhythm);
+    padding-top: em($d-base-rhythm/2);
     li {
       width: 100/4*1%;
       margin-bottom: em($d-base-rhythm);
