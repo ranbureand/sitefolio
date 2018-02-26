@@ -313,7 +313,7 @@ img {
 
   -ms-interpolation-mode: bicubic;
   color: $light-type-color;
-  border: 0; // normalize.css
+  border-style: none; // normalize.css
 
   image-rendering: optimizeQuality;
 }
