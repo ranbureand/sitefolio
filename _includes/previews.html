@@ -1,4 +1,4 @@
-      {%- assign projectList = site.projects | sort: 'order' | where: 'publish', 'yes' -%}
+      {%- assign projectList = site.projects | sort: 'order' | where: 'publish', 'yes' | where: 'categories', include.category -%}
 
       {% for project in projectList %}
          {% capture projectCount %} {{ projectCount | plus: 1 }} {% endcapture %}

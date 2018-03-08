@@ -4,16 +4,29 @@
           <div class="column-2d-l separator"></div>
 
           <div class="column-2d-s typo-l">
-            <h3>My Projects</h3>
+            {% if page.layout == "categories" %}
+              <h3>{{ page.title }}</h3>
+            {% else %}
+              <h3>Key Projects</h3>
+            {% endif %}
           </div>
 
           <div class="column-2d-m typo-l">
-            <p>Here follow few of my commercial and non-commercial projects. A&nbsp;full, up-to-date portfolio is available upon request.</p>
+            {% if page.layout == "categories" %}
+              {{ page.content }}
+            {% else %}
+              <p>Here are few of my key, favorite commercial and non-commercial projects<sup class="color">&dagger;</sup>.</p>
+              <p class="notation"><span class="color">&dagger;</span> Drop me a line for a look at my service and product design portfolio.</p>
+            {% endif %}
           </div>
 
-          {% include previews.html %}
+          {% if page.layout == "categories" %}
+            {% include previews.html category=page.title %}
+          {% else %}
+            {% include previews.html category="Key" %}
+          {% endif %}
 
-          <!--{% include filters.html %}-->
+          {% include filters.html %}
 
         </section>
       </div>
