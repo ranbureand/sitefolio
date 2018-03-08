@@ -5,9 +5,9 @@
 */
 
 .filters {
-  @include min-screen(col(16)) {
-    margin-top: em(-$d-small-line/2);
-    margin-bottom: em(-$d-small-line/2);
+  margin-bottom: em($m-base-rhythm*2);
+  @include min-screen(col(8)) {
+    margin-bottom: em($d-base-rhythm*2);
   }
 }
 
@@ -46,12 +46,6 @@
 
       border-left: $border-width solid $border-color;
     }
-  }
-  a.current {
-    cursor: default;
-    text-decoration: line-through;
-
-    color: $strong-type-color;
   }
   @include min-screen(col(8)) {
     width: 100/2*1%;
@@ -110,5 +104,13 @@
         }
       }
     }
+  }
+}
+
+.filter.current {
+  a {
+    cursor: default;
+
+    color: $color;
   }
 }

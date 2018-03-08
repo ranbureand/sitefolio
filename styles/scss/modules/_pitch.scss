@@ -5,8 +5,8 @@
 */
 
 .pitch {
-  margin-top: em($m-base-rhythm*3);
-  margin-bottom: em($m-base-rhythm*3);
+  margin-top: em($m-base-rhythm*2);
+  margin-bottom: em($m-base-rhythm*2);
 
   p {
     font-weight: $normal;
@@ -41,8 +41,8 @@
     }
   }
   @include min-screen(col(12)) {
-    margin-top: em($d-base-rhythm*4);
-    margin-bottom: em($d-base-rhythm*4);
+    margin-top: em($d-base-rhythm*2);
+    margin-bottom: em($d-base-rhythm*3);
     p {
       //hyphens: none;
 
