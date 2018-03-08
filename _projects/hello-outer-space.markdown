@@ -8,7 +8,7 @@ author: 'Andrea Buran'
 
 time: '2018'
 
-categories: [All, Non-Commercial]
+categories: [All, Key, Non-Commercial]
 tags: [CSS, HTML, Markdown, stress test, styles, typographic elements]
 
 preview_image: 'hello_outer_space_00.png'

@@ -56,9 +56,9 @@ link
     %}
 </div>
 
-The interface of the site is extremely **simple** on purpose, so that the user can fully **focus on the content** of the pieces without being distracted by any unneeded graphical interference.
+The **simple-on-purpose** site interface let users fully **focus on the content** of the pieces, without the risk of being distracted by any unneeded graphical interference.
 
-In addition, content readability is always at the best thanks to a robust **responsive adaptive layout** and a flexible **responsive typography**.
+The content readability is always at its best thanks to a robust **responsive adaptive layout** and a flexible **responsive typography**.
 
 <div class="figures">
     {% include image.html 
@@ -71,9 +71,9 @@ In addition, content readability is always at the best thanks to a robust **resp
     %}
 </div>
 
-For what concerns the **logo**/**favicon** of the site, what better way to represent the concept of sempiternity—existence within time but infinitely into the future—than a circular, indeterminate progress indicator?
+The **logo**/**favicon** of the site resembles a circular, indeterminate **progress indicator**: what better way to represent the concept of sempiternity, that is none other than existence within time but infinitely into the future?
 
-Such circular existence within time is reiterated by the **background color** of the page, which hue is cyclically rotated over time according to the hour of the day.
+The same concept is reinforced through the **background color** of the page, which hue is cyclically rotated over time according to the hour of the day.
 
 <div class="figures">
     {% include image.html 
@@ -137,7 +137,7 @@ Such circular existence within time is reiterated by the **background color** of
     %}
 </div>
 
-Pieces in Sempiternity often share a common **motif**, which is identifiable thanks to the **pixel art icon** opening the short story.
+Pieces in Sempiternity often share a common **motif**, which is identifiable thanks to a **pixel art icon** opening the short story.
 
 <div class="figures">
     {% include image.html 

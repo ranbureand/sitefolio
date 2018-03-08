@@ -14,8 +14,8 @@ tags: [dream, image search results, installation, postcards, print, search engin
 preview_image: 'fortune_cookie_installation_00.jpg'
 preview_color: '#FDE6AF'
 
-excerpt: 'The project investigates the dynamics between users, images and image search engines in the current panorama of the Web.'
-exordium: 'The project investigates the dynamics between users, images and image search engines in the current panorama of the Web.'
+excerpt: 'The installation investigates the dynamics between users, images and image search engines in the current panorama of the Web.'
+exordium: 'The installation investigates the dynamics between users, images and image search engines in the current panorama of the Web.'
 
 publish: 'yes'
 ---
@@ -48,7 +48,7 @@ link
 pictures of the installation by
 : [Christo Crocker](http://christocrocker.blogspot.com.tr/ "Christo Crocker’s site")
 
-The installation correlates two different but comparable **web image archives**: **the first**, potentially infinite, one is being continuously powered by users through the site [Fortune Cookie](http://whatsthewaythecookiecrumbles.org/ "Fortune Cookie site"), while **the second**, actually finite, one consists of images retrieved from a sample of ten image search engines.
+The installation correlates two different but comparable **web image archives**: **the first**—potentially infinite—one is being continuously powered by users through the site [Fortune Cookie](http://whatsthewaythecookiecrumbles.org/ "Fortune Cookie site"), while **the second**—actually finite—one consists of images retrieved from a sample of ten image search engines.
 
 <div class="figures">
     {% include image.html 
@@ -60,7 +60,7 @@ The installation correlates two different but comparable **web image archives**:
     %}
 </div>
 
-In **the first** archive the links to the images submitted by the participants and collected through the site are aggregated together in a single cluster and printed on-the-fly by means of a digital printer installed on the spot.
+In **the first** archive the links to the images submitted by the participants and collected through the site are aggregated together in a single cluster, and printed on-the-fly by means of a digital printer installed on the spot.
 
 <div class="figures">
     {% include image.html 
@@ -72,13 +72,13 @@ In **the first** archive the links to the images submitted by the participants a
     %}
 </div>
 
-In **the second** archive is populated with the first fifty results returned in response to the query *dream* from a **sample** of ten different **image search engines**[^search-engines].
+**The second** archive is populated with the first fifty results returned in response to the query *dream*, retrieved from a **sample** of ten different **image search engines**[^search-engines].
 
 > “People who think that search engines are completely objective ignore the fact that every search engine has its own philosophy, every search engine has its own set of **algorithms** and those algorithms encode the **ranking philosophy** of that search engine, […] every search engine is going to have **different ideas** of what the ideal set of search results is […].”
 >
 > —<cite>[Video](http://www.youtube.com/watch?v=6r7E-69MIOU "Matt Cutts on YouTube"), Matt Cutts.</cite>
 
-Starting from the unusual **assumption** that every search engine has indeed its own **subjectivity** and thus a clear, univocal **idea** of what *dream* should be, all clusters of images are treated as collected by an out-and-out **test subject**, and introduced accordingly.
+Starting from the unusual **assumption** that every search engine has indeed its own **subjectivity** and thus a clear, univocal **idea** of what *dream* should be, all clusters of images are treated and introduced as if they were collected by an out-and-out **test subject**.
 
 <div class="figures">
     {% include image.html 

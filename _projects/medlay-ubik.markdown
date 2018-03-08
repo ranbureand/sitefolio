@@ -53,6 +53,15 @@ prototype
         alt="A screenshot of Ubik / Chap. 6." 
         color="#222" 
     %}
+</div>
+
+The slogan opening the 6<sup>th</sup> chapter of *Ubik* says:
+
+>We wanted to give you a shave like no other you ever had. We said, it’s about time a man’s face got a little loving! We said, with Ubik’s self-winding Swiss chromium never-ending blade, the days of scrape-scrape are over! So try Ubik! And be loved!
+>
+>Warning: use only as directed. And with caution.
+
+<div class="figures">
     {% include image.html 
         size="l" 
         w="3" h="2" 
@@ -69,11 +78,7 @@ prototype
     %}
 </div>
 
-The slogan opening the 6<sup>th</sup> chapter of *Ubik* says:
-
->We wanted to give you a shave like no other you ever had. We said, it’s about time a man’s face got a little loving! We said, with Ubik’s self-winding Swiss chromium never-ending blade, the days of scrape-scrape are over! So try Ubik! And be loved!
->
->Warning: use only as directed. And with caution.
+The proof of concept prototype is structured using <samp>HTML5</samp>, <samp>JavaScript</samp>, <samp>jQuery</samp> and <samp>CSS</samp>, while the source of its dynamic images is the [Prelinger archives](http://www.archive.org/browse.php?field=subject&mediatype=movies&collection=prelinger "Prelinger archives on Internet Archive").
 
 <div class="figures">
     {% include image.html 

@@ -63,7 +63,7 @@ team
     %}
 </div>
 
-Also in this second edition the beginnings of the project was an incredibly large image archive, made up by pictures taken by the photographers Hans Herbig, Verena Kathrein, Jörg Koopmann, Regina Recht, Sebastian Schels, [Alexander Ziegler](http://alexanderziegler.com/ "Alexander Ziegler’s website") and Richard Walch.
+Also in this second edition the project started from an incredibly large image archive made up by pictures taken by the photographers Hans Herbig, Verena Kathrein, Jörg Koopmann, Regina Recht, Sebastian Schels, [Alexander Ziegler](http://alexanderziegler.com/ "Alexander Ziegler’s website") and Richard Walch.
 
 <div class="figures">
     {% include image.html 
@@ -75,7 +75,7 @@ Also in this second edition the beginnings of the project was an incredibly larg
     %}
 </div>
 
-Unlike the previous set of pictures—which images had been characterized by strong visual contrasts that facilitated their combinations—the photos of this round were somehow visually levelled to varying degrees by the omnipresence of the snow.
+Unlike the previous set of pictures—which images had been characterized by stronger visual contrasts that facilitated their combinations—the photos of this round were somehow visually levelled to varying degrees by the omnipresence of the snow.
 
 Such a potential disadvantage was turned into a winning factor by voiding the margins between images, thus taking advantage of the inevitable differences between the various gradations of whiteness to subtly reveal the inner quality of each picture.
 
@@ -106,7 +106,7 @@ Such a potential disadvantage was turned into a winning factor by voiding the ma
     %}
 </div>
 
-The map of Tirol shows the paths followed by the photographers and the approximate locations of all shots included in the photobook.
+The map of Tirol shows the paths followed by the photographers and the approximate locations of all the shots included in the photobook.
 
 <div class="figures">
     {% include image.html 

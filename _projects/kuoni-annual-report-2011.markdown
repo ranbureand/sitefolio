@@ -55,7 +55,7 @@ team
     %}
 </div>
 
-The **table of content** of the annual report is spatially visualized through a **mind map** placed in a huge centrefold in the very first signature of the volume. The structure of the various chapters and subchapters is developed into sets of **nodes** arranged in growing concentric circles.
+The **table of content** of the annual report is spatially visualized through a **mind map** placed in a huge centrefold of the very first signature of the volume. The structure of the various chapters and subchapters is developed into sets of **nodes** arranged in growing concentric circles.
 
 Readers can immediately grasp and navigate the overall organization of the content by following the **connections** between nodes.
 

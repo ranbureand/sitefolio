@@ -58,7 +58,7 @@ prizes
     %}
 </div>
 
-The beginnings of the project was an incredibly large image archive, made up by around a thousand raw pictures taken by the photographers Michael Danner, Dominik Gigler, Monika Höfler, Jörg Koopmann, Verena Kathrein, Andrew Phelps and Matthias Ziegler.
+The project started from an incredibly large image archive, made up by around a thousand raw pictures taken by the photographers Michael Danner, Dominik Gigler, Monika Höfler, Jörg Koopmann, Verena Kathrein, Andrew Phelps and Matthias Ziegler.
 
 How could the correlations between the pictures of such an heterogenous[^heterogenity] set be maximized within the “constraints” of the book form?
 
@@ -93,7 +93,7 @@ The source of inspiration for the innovative layout solution of *Sight-_Seeing* 
 
 Firstly, after a keen collaborative selection, the pictures were reduced in number and divided into twelve thematic groups, and a [16-pages](http://printwiki.org/Octavo "16-pages / octavo on PrintWiki") [signature](http://printwiki.org/Signature "signature on PrintWiki") was reserved to each of them.
 
-Secondly, the layout of the pictures was designed taking into account not only the two pages of a single spread, but also all other ones belonging to the same 16-pages signature, so that images are related not only with those of the adjacent page, but also with those of the following ones by means of the crossing of the fold, whereupon the usual, consecutive flow of reading can be abandoned in favor of this very new one.
+Secondly, the layout of the pictures was designed taking into account not only the two pages of a single spread, but also all others belonging to the same 16-pages signature, so that images are related not only with those of the adjacent page, but also with those of the following ones by means of the crossing of the fold, whereupon a new multi-directional flow or reading is added to the usual, one-directional one.
 
 <div class="figures">
     {% include image.html 
