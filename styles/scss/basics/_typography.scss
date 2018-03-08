@@ -236,6 +236,11 @@
 
     @include font-size($m-medium-size, $m-medium-line);
   }
+  .notation {
+    margin-bottom: em($m-small-line/2, $m-small-size);
+
+    @include font-size($m-small-size, $m-small-line);
+  }
   @include min-screen(col(8)) {
     h1,
     h2 {
@@ -256,6 +261,11 @@
 
       @include font-size($d-medium-size, $d-medium-line);
     }
+    .notation {
+      margin-bottom: em($d-small-line/2, $d-small-size);
+
+      @include font-size($d-small-size, $d-small-line);
+    }
   }
 }
 
@@ -269,13 +279,19 @@
   }
   @include min-screen(col(8)) {
     h1 {
+      margin-bottom: em($t-super-large-line/2, $t-super-large-size);
+
+      @include font-size($t-super-large-size, $t-super-large-line);
+    }
+  }
+  @include min-screen(col(12)) {
+    h1 {
       margin-bottom: em($d-super-large-line/2, $d-super-large-size);
 
       @include font-size($d-super-large-size, $d-super-large-line);
     }
   }
 }
-
 
 .typo-s,
 .footnotes > ol > li {
