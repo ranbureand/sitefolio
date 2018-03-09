@@ -75,9 +75,9 @@ Also in this second edition the project started from an incredibly large image a
     %}
 </div>
 
-Unlike the previous set of pictures—which images had been characterized by stronger visual contrasts that facilitated their combinations—the photos of this round were somehow visually levelled to varying degrees by the omnipresence of the snow.
+The images of this second edition were visually levelled to varying degrees by the omnipresence of the whiteness of the snow, a shared feature that made visually matching them way more problematic than with the previous set of pictures, due to their lack of strong contrasts.
 
-Such a potential disadvantage was turned into a winning factor by voiding the margins between images, thus taking advantage of the inevitable differences between the various gradations of whiteness to subtly reveal the inner quality of each picture.
+The drawback was overcome by voiding the margins between images, thus taking advantage of the differences between the various gradations of whiteness to subtly reveal the inner visual quality of each picture.
 
 <div class="figures">
     {% include image.html 

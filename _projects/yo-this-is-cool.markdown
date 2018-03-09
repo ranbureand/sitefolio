@@ -46,20 +46,6 @@ responsibilities
     {% include image.html 
         size="m" 
         w="1" h="1" 
-        src="yo_this_is_cool_home_360_00.jpg" 
-        alt="A screenshot of the site Yo, This is Cool." 
-        color="#6ED9C0" 
-    %}
-    {% include image.html 
-        size="m" 
-        w="1" h="1" 
-        src="yo_this_is_cool_home_360_01.jpg" 
-        alt="A screenshot of the site Yo, This is Cool." 
-        color="#6ED9C0" 
-    %}
-    {% include image.html 
-        size="m" 
-        w="1" h="1" 
         src="yo_this_is_cool_home_360_02.jpg" 
         alt="A screenshot of the site Yo, This is Cool." 
         color="#6ED9C0" 
@@ -73,7 +59,7 @@ responsibilities
     %}
 </div>
 
-**Open source** authors and contributors need much **more love** from the community. Those who initiate and share their projects, as well as those who participate and collaborate to constantly improve them, merit a **big thank-you**.
+**Open source** authors and contributors need much **more love** from the community: those who initiate and share their projects, as well as those who participate and collaborate to constantly improve them, merit a **big thank-you**.
 
 The intent behind *Yo, This is Cool* is having a space where you can thank the amazing people behind your favorite open source projects on GitHub.
 
@@ -85,6 +71,11 @@ The intent behind *Yo, This is Cool* is having a space where you can thank the a
         alt="A screenshot of the site Yo, This is Cool." 
         color="#6ED9C0" 
     %}
+</div>
+
+Each letter of the *Index* page is associated to an interesting **term** as **food for thought**, which short definition introduces the related letter subpage.
+
+<div class="figures">
     {% include image.html 
         size="m" 
         w="1" h="1" 
@@ -111,13 +102,23 @@ The intent behind *Yo, This is Cool* is having a space where you can thank the a
     %}
 </div>
 
-The site has a [mandrake root](https://en.wikipedia.org/wiki/Mandrake "Mandrake on Wikipedia")—**Meri The Mandragora**—as a **mascot**. Whenever you add a cool open source project to appreciate, she pops out and encourages you to scream your thank-you out loud.
-
-
-
-Each letter of the *Index* page is associated to an interesting **term** as **food for thought**, which short definition introduces the related letter subpage.
+A **[mandrake root](https://en.wikipedia.org/wiki/Mandrake "Mandrake on Wikipedia")** as a **mascot** introduces the site: whenever you add a cool open source project to appreciate, she pops out and encourages you to scream your thank-you out loud.
 
 <div class="figures">
+    {% include image.html 
+        size="m" 
+        w="1" h="1" 
+        src="yo_this_is_cool_home_360_00.jpg" 
+        alt="A screenshot of the site Yo, This is Cool." 
+        color="#6ED9C0" 
+    %}
+    {% include image.html 
+        size="m" 
+        w="1" h="1" 
+        src="yo_this_is_cool_home_360_01.jpg" 
+        alt="A screenshot of the site Yo, This is Cool." 
+        color="#6ED9C0" 
+    %}
     {% include image.html 
         size="m" 
         w="1" h="1" 
@@ -134,9 +135,9 @@ Each letter of the *Index* page is associated to an interesting **term** as **fo
     %}
 </div>
 
-The site is designed and developed in the browser in the mighty [Ember.js](http://emberjs.com/ "Ember.js") + [Loopback](http://loopback.io/ "Loopback") and vigorous [SCSS](http://sass-lang.com/ "SASS") + [Compass](http://compass-style.org/ "Compass") tandems, with the help of [HTML5 Boilerplate](https://html5boilerplate.com/ "HTML5 Boilerplate") and [Packery](http://packery.metafizzy.co/ "Packery").
+The site is designed and developed in the browser in the vigorous [SCSS](http://sass-lang.com/ "SASS") + [Compass](http://compass-style.org/ "Compass") tandem, with the help of [HTML5 Boilerplate](https://html5boilerplate.com/ "HTML5 Boilerplate") and [Packery](http://packery.metafizzy.co/ "Packery"). Its backbone is structured in the mighty [Ember.js](http://emberjs.com/ "Ember.js") + [Loopback](http://loopback.io/ "Loopback").
 
-The font is [Roboto](https://www.google.com/fonts/specimen/Roboto) by Google while the emoji are [Twit Emoji](http://twitter.github.io/twemoji/ "Twit Emoji") by Twitter.
+The font is [Roboto](https://www.google.com/fonts/specimen/Roboto) by Google, while the emoji are [Twit Emoji](http://twitter.github.io/twemoji/ "Twit Emoji") by Twitter.
 
 <div class="figures">
     {% include image.html 
