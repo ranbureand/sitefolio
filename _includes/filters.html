@@ -4,7 +4,7 @@
           <ul class="filters layout-1d-rtl">
             {% for category in categories %}
             <li class="filter element-1d{% if category.title == page.title %} current{% endif %}">
-              <a href="{{ category.url | prepend: site.baseurl }}">{{ category.title }}</a>
+              <a href="{{ category.url | prepend: site.baseurl }}">{{ category.category }}</a>
             </li>
             {% endfor %}
           </ul>
