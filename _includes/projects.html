@@ -3,27 +3,35 @@
 
           <div class="column-2d-l separator"></div>
 
+          {% assign categories = site.categories | where: 'category', 'Key' %}
+
           <div class="column-2d-s typo-l">
             {% if page.layout == "categories" %}
-              <h3>{{ page.title }}</h3>
+              <h3>{{ page.title }}<span><sup class="color">&dagger;</sup></span></h3>
             {% else %}
-              <h3>Key Projects</h3>
+              {% for category in categories %}
+                <h3>{{ category.title }}<span><sup class="color">&dagger;</sup></span></h3>
+              {% endfor %}
             {% endif %}
           </div>
 
           <div class="column-2d-m typo-l">
-            {% if page.layout == "categories" %}
+            {% if page.layout == 'categories' %}
               {{ page.content }}
             {% else %}
-              <p>Here are few of my key, favorite commercial and non-commercial projects<sup class="color">&dagger;</sup>.</p>
-              <p class="notation"><span class="color">&dagger;</span> Drop me a line for a look at my service and product design portfolio.</p>
+              {% for category in categories %}
+                {{ category.content | markdownify }}
+              {% endfor %}
             {% endif %}
+            <div class="typo-s">
+              <p><span class="color">&dagger;</span> Drop me a line for a look at my service and product design portfolio.</p>
+            </div>
           </div>
 
-          {% if page.layout == "categories" %}
-            {% include previews.html category=page.title %}
+          {% if page.layout == 'categories' %}
+            {% include previews.html category = page.category %}
           {% else %}
-            {% include previews.html category="Key" %}
+            {% include previews.html category = 'Key' %}
           {% endif %}
 
           {% include filters.html %}
