@@ -236,11 +236,6 @@
 
     @include font-size($m-medium-size, $m-medium-line);
   }
-  .notation {
-    margin-bottom: em($m-small-line/2, $m-small-size);
-
-    @include font-size($m-small-size, $m-small-line);
-  }
   @include min-screen(col(8)) {
     h1,
     h2 {
@@ -260,11 +255,6 @@
       margin-bottom: em($d-medium-line/2, $d-medium-size);
 
       @include font-size($d-medium-size, $d-medium-line);
-    }
-    .notation {
-      margin-bottom: em($d-small-line/2, $d-small-size);
-
-      @include font-size($d-small-size, $d-small-line);
     }
   }
 }

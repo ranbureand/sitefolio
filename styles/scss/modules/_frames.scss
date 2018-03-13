@@ -45,6 +45,9 @@
   span {
     display: none;
   }
+  sup {
+    color: $color;
+  }
   @include min-screen(col(8)) {
     @include font-size($d-small-size, $d-small-line);
     span {
