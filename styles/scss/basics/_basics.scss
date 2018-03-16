@@ -138,17 +138,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1em; // normalize.css
 
   margin: 0;
-
-  color: $strong-type-color;
-  span {
-    font-weight: $normal;
-  }
-}
-h1, h3, h5 {
-  font-weight: $medium;
-}
-h2, h4, h6 {
   font-weight: $normal;
+  color: $strong-type-color;
 }
 
 ul, ol {

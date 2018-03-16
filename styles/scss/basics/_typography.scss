@@ -4,9 +4,24 @@
 ** Typography
 */
 
+.light-typ {
+  color: $l-strong-type-color;
+  //font-weight: $light;
+  h1, h2, h3, h4, h5, h6 {
+    color: $l-strong-type-color;
+    //font-weight: $normal;
+  }
+}
+
 [class*='typo'] {
   position: relative;
 
+  h1, h3, h5 {
+    font-weight: $medium;
+  }
+  h2, h4, h6 {
+    font-weight: $normal;
+  }
   blockquote {
     padding-left: em($m-gut*2-$border-width);
 

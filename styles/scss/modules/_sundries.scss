@@ -12,25 +12,6 @@
   word-break: break-all;
 }
 
-/*#outer-space {
-  background: $background;
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: $m-gut;
-  padding-left: $m-gut;
-  @include min-screen(col(8)) {
-    padding-right: 0;
-    padding-left: 0;
-    max-width: col(11);
-  }
-  @include min-screen(col(12)) {
-    max-width: col(15);
-  }
-  @include min-screen(col(16)) {
-    max-width: col(19);
-  }
-}*/
-
 [class^='canvas'] {
   padding-right: $m-gut;
   padding-left: $m-gut;
@@ -41,9 +22,43 @@
   }
 }
 
+.canvas-dark {
+  background-color: $background-dark;
+}
+
+.canvas-splash {
+  background-color: $background-dark;
+  background-image: url('../../media/graphics/jupiter_00.jpg');
+  background-repeat: no-repeat;
+  background-position: top em($m-base-rhythm/2) center;
+  background-size: col(8) col(8);
+
+  @include min-screen(col(8)) {
+    background-position: top em($d-base-rhythm/2) center;
+    background-size: col(10) col(10);
+  }
+  @include min-screen(col(12)) {
+    background-position: top center;
+    background-size: col(14) col(14);
+  }
+}
+
 .canvas-projects,
 .canvas-details {
   background-color: $canvas;
+}
+
+
+.splash {
+  padding-bottom: em($m-base-rhythm*3);
+
+  @include min-screen(col(8)) {
+    padding-bottom: em($d-base-rhythm*3);
+  }
+  @include min-screen(col(12)) {
+    padding-top: em($d-base-rhythm*2);
+    padding-bottom: em($d-base-rhythm*4);
+  }
 }
 
 .projects {
@@ -73,16 +88,5 @@
 
   @include min-screen(col(8)) {
     padding-bottom: em($d-base-rhythm*2);
-  }
-}
-
-.splash {
-  padding-bottom: em($m-base-rhythm*2);
-
-  @include min-screen(col(8)) {
-    padding-bottom: em($d-base-rhythm*2);
-  }
-  @include min-screen(col(12)) {
-    padding-bottom: em($d-base-rhythm*4);
   }
 }

@@ -14,8 +14,6 @@
     //hyphens: manual;
     hyphens: none;
 
-    color: $strong-type-color;
-
     @include font-size($m-super-large-size, $m-super-large-line);
     & + p {
       margin-top: em($m-super-large-line/2, $m-super-large-size);
@@ -32,7 +30,7 @@
   }
   @include min-screen(col(8)) {
     margin-top: em($d-base-rhythm*2);
-    margin-bottom: em($d-base-rhythm*2);
+    margin-bottom: em($d-base-rhythm*1);
     p {
       @include font-size($t-super-large-size, $t-super-large-line);
       & + p {
@@ -42,7 +40,7 @@
   }
   @include min-screen(col(12)) {
     margin-top: em($d-base-rhythm*2);
-    margin-bottom: em($d-base-rhythm*3);
+    margin-bottom: em($d-base-rhythm*1);
     p {
       //hyphens: none;
 
@@ -51,5 +49,21 @@
         margin-top: em($d-super-large-line, $d-super-large-size);
       }
     }
+  }
+}
+
+.notation {
+  margin-top: em($m-base-rhythm);
+  margin-bottom: em($m-base-rhythm*2);
+  @include min-screen(col(8)) {
+    margin-top: em($d-base-rhythm);
+    margin-bottom: em($d-base-rhythm*1);
+  }
+  @include min-screen(col(12)) {
+    margin-top: em($d-base-rhythm);
+    margin-bottom: em($d-base-rhythm*3);
+  }
+  @include min-screen(col(16)) {
+    margin-bottom: em($d-base-rhythm*5);
   }
 }
