@@ -3,7 +3,7 @@
 
           <div class="column-2d-l separator"></div>
 
-          {% assign categories = site.categories | where: 'category', 'Key' %}
+          {% assign categories = site.categories | where: 'category', 'Favorite' %}
 
           <div class="column-2d-s typo-l">
             {% if page.layout == "categories" %}
@@ -24,14 +24,14 @@
               {% endfor %}
             {% endif %}
             <div class="typo-s">
-              <p><span class="color">&dagger;</span> Drop me a line for a look at my service and product design portfolio.</p>
+              <p><span class="color">&dagger;</span> Drop me a line for a look at my full service and product design portfolio.</p>
             </div>
           </div>
 
           {% if page.layout == 'categories' %}
             {% include previews.html category = page.category %}
           {% else %}
-            {% include previews.html category = 'Key' %}
+            {% include previews.html category = 'Favorite' %}
           {% endif %}
 
           {% include filters.html %}

@@ -3,11 +3,11 @@ order: 2
 
 layout: categories
 
-title: 'Key Projects'
-category: 'Key'
-category_handle: 'key'
+title: 'Favorite Projects'
+category: 'Favorite'
+category_handle: 'favorite'
 
-excerpt: 'Few of my key, favorite commercial and non-commercial projects.'
+excerpt: 'Some of my favorite commercial and non-commercial projects.'
 ---
 
-Here are few of my key, favorite commercial and non-commercial projects.
+Here are some of my favorite commercial and non-commercial projects.
