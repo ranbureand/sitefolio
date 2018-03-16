@@ -8,7 +8,7 @@ author: 'Andrea Buran'
 
 time: '2012'
 
-categories: [All, Commercial, Key, Print]
+categories: [All, Commercial, Favorite, Print]
 tags: [annual report, brand, financial, future, market, people, print, tourism]
 
 preview_image: 'kuoni_annual_report_2011_00.jpg'

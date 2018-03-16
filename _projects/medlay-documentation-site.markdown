@@ -8,7 +8,7 @@ author: 'Andrea Buran'
 
 time: '2015–2016'
 
-categories: [All, Digital, Dynamic Image, Key, Non-Commercial, Research]
+categories: [All, Digital, Dynamic Image, Favorite, Non-Commercial, Research]
 tags: [cinema, comics, docs, loop, new media form, responsive, sequential art, site]
 
 preview_image: 'medlay_documentation_site_00.jpg'

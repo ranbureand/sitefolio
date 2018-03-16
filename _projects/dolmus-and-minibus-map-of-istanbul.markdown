@@ -8,7 +8,7 @@ author: 'Andrea Buran'
 
 time: '2013'
 
-categories: [All, Non-Commercial, Key, Digital, Commercial, Dynamic Image]
+categories: [All, Favorite, Non-Commercial, Digital, Commercial, Dynamic Image]
 tags: [animation, motion graphics, video, visual storytelling]
 
 preview_image: 'dolmus_and_minibus_map_of_istanbul_00.jpg'

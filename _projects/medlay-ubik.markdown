@@ -8,7 +8,7 @@ author: 'Andrea Buran'
 
 time: '2012'
 
-categories: [All, Digital, Dynamic Image, Key, Non-Commercial, Research]
+categories: [All, Digital, Dynamic Image, Favorite, Non-Commercial, Research]
 tags: [cinema, comics, loop, new media form, sequential art, spatial montage]
 
 preview_image: 'medlay_ubik_00.jpg'
