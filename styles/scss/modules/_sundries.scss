@@ -22,12 +22,12 @@
   }
 }
 
-.canvas-dark {
-  background-color: $background-dark;
+.dark-canvas {
+  background-color: $d-background;
 }
 
 .canvas-splash {
-  background-color: $background-dark;
+  background-color: $d-background;
   background-image: url('../../media/graphics/jupiter_00.jpg');
   background-repeat: no-repeat;
   background-position: top em($m-base-rhythm/2) center;

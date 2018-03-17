@@ -4,11 +4,19 @@
 ** Typography
 */
 
-.light-typ {
-  color: $l-strong-type-color;
+.dark-words {
+  color: $d-strong-type-color;
   //font-weight: $light;
+  ::-moz-selection {
+    color: $d-selected-type-color;
+    background-color: $d-selected-background-color;
+  }
+  ::selection {
+    color: $d-selected-type-color;
+    background-color: $d-selected-background-color;
+  }
   h1, h2, h3, h4, h5, h6 {
-    color: $l-strong-type-color;
+    color: $d-strong-type-color;
     //font-weight: $normal;
   }
 }
@@ -59,6 +67,9 @@
   }
   a {
     text-decoration: underline;
+  }
+  a.footnote {
+    text-decoration: none;
   }
   hr {
     border-top-width: $border-width;

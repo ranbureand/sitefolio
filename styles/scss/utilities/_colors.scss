@@ -10,7 +10,8 @@ $white:                         #fff;
 $color:                         #f54159; // HSB(340,100,100) HSBlu(8,88,56)
 $background:                    #FCFCFC; // HSB(0,0,98)
 $canvas:                        #F0F0F0;
-$background-dark:               #131313;
+$d-background:                  #131313;
+$d-canvas:                      #000;
 
 $card-background-color: #F2F2F2;
 $card-shadow: #E8E8E8;
@@ -23,10 +24,12 @@ $strong-type-color:             rgba($black, 0.92);
 $type-color:                    rgba($black, 0.92);
 $light-type-color:              rgba($black, 0.92);
 
-$l-strong-type-color:           rgba($white, 1.00);
-$l-type-color:                  rgba($white, 1.00);
+$d-strong-type-color:           rgba($white, 1.00);
+$d-type-color:                  rgba($white, 1.00);
+$d-light-type-color:            rgba($white, 1.00);
 
 $selected-type-color:           rgba($black, 0.92);
+$d-selected-type-color:         rgba($white, 1.00);
 
 $placeholder-type-color:        rgba($black, 0.24);
 
@@ -38,9 +41,10 @@ $button-type-color:             $background;
 
 $background-color:              $background;
 
-$code-background-color:         #f0f0f0;
+$code-background-color:         $canvas;
 
-$selected-background-color:     #f0f0f0;
+$selected-background-color:     rgba($black, 0.04);
+$d-selected-background-color:   rgba($white, 0.12);
 
 $field-background-color:        $background;
 

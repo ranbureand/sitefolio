@@ -83,7 +83,7 @@
   .preview-title {
     font-weight: $medium;
 
-    margin-top: em($m-small-line/3*2, $m-small-size);
+    margin-top: em($m-small-line/2, $m-small-size);
 
     transition-timing-function: ease-in-out;
     transition-duration: 0.2s;
@@ -94,14 +94,14 @@
     @include font-size($m-small-size, $m-small-line);
   }
   .preview-tags {
-    margin-top: em($m-tiny-line/2, $m-tiny-size);
+    margin-top: em($m-tiny-line/4, $m-tiny-size);
 
     color: $type-color;
 
     @include font-size($m-tiny-size, $m-tiny-line);
   }
   .preview-time {
-    margin-top: em($m-small-line/2, $m-small-size);
+    margin-top: em($m-small-line/4, $m-small-size);
 
     color: $type-color;
 
@@ -137,17 +137,17 @@
       @include font-size($d-tiny-size, $d-tiny-line);
     }
     .preview-title {
-      margin-top: em($d-medium-line, $d-medium-size);
-
-      @include font-size($d-medium-size, $d-medium-line);
-    }
-    .preview-tags {
       margin-top: em($d-small-line/2, $d-small-size);
 
       @include font-size($d-small-size, $d-small-line);
     }
+    .preview-tags {
+      margin-top: em($d-small-line/4, $d-small-size);
+
+      @include font-size($d-small-size, $d-small-line);
+    }
     .preview-time {
-      margin-top: em($d-small-line/2, $d-small-size);
+      margin-top: em($d-small-line/4, $d-small-size);
 
       @include font-size($d-small-size, $d-small-line);
     }
