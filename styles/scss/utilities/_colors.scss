@@ -24,12 +24,12 @@ $strong-type-color:             rgba($black, 0.92);
 $type-color:                    rgba($black, 0.92);
 $light-type-color:              rgba($black, 0.92);
 
-$d-strong-type-color:           rgba($white, 1.00);
-$d-type-color:                  rgba($white, 1.00);
-$d-light-type-color:            rgba($white, 1.00);
+$d-strong-type-color:           rgba($white, 0.96);
+$d-type-color:                  rgba($white, 0.96);
+$d-light-type-color:            rgba($white, 0.96);
 
 $selected-type-color:           rgba($black, 0.92);
-$d-selected-type-color:         rgba($white, 1.00);
+$d-selected-type-color:         rgba($white, 0.96);
 
 $placeholder-type-color:        rgba($black, 0.24);
 
@@ -44,13 +44,16 @@ $background-color:              $background;
 $code-background-color:         $canvas;
 
 $selected-background-color:     rgba($black, 0.04);
-$d-selected-background-color:   rgba($white, 0.12);
+$d-selected-background-color:   rgba($white, 0.08);
+
+$balloon-background-color:      rgba($black, 0.04);
+$d-balloon-background-color:    rgba($white, 0.08);
 
 $field-background-color:        $background;
 
 $button-background-color:       $strong-type-color;
 
-$picture-background-color:      rgba($black, 0.06); // HSB(0,0,92)
+$picture-background-color:      rgba($black, 0.04); // HSB(0,0,92)
 
 /*
 ** Borders

@@ -4,13 +4,6 @@
 ** Filters
 */
 
-.filters {
-  margin-bottom: em($m-base-rhythm*2);
-  @include min-screen(col(8)) {
-    margin-bottom: em($d-base-rhythm*2);
-  }
-}
-
 .filter {
   width: 100/2*1%;
 

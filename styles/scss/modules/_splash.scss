@@ -1,0 +1,144 @@
+/* Copyright (c) 2017 Andrea Buran [www.andreaburan.com]. All rights reserved */
+
+/*
+** Splash
+*/
+
+.cover,
+.pitch {
+  grid-row: 1;
+}
+
+.cover {
+  z-index: 1;
+
+  margin-top: 0;
+  position: relative;
+  height: em($m-base-rhythm*20);
+
+  div {
+    position: absolute;
+    top: 0;
+    width: em($m-base-rhythm*20);
+    height: em($m-base-rhythm*20);
+    right: -100%;
+    left: -100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    animation-name: rotation;
+    animation-duration: 960s;
+    animation-timing-function: linear;
+
+    border-radius: 50%;
+    background-image: url('../../media/graphics/jupiter_00.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 100%;
+  }
+  @include min-screen(col(8)) {
+    height: em($d-base-rhythm*18);
+    div {
+      width: em($d-base-rhythm*18);
+      height: em($d-base-rhythm*18);
+    }
+  }
+  @include min-screen(col(12)) {
+    height: em($d-base-rhythm*28);
+    div {
+      width: em($d-base-rhythm*26);
+      height: em($d-base-rhythm*26);
+    }
+  }
+  @include min-screen(col(16)) {
+    height: em($d-base-rhythm*24);
+    div {
+      width: em($d-base-rhythm*24);
+      height: em($d-base-rhythm*24);
+    }
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.pitch {
+  z-index: 2;
+
+  margin-top: em($m-base-rhythm*2);
+  margin-bottom: em($m-base-rhythm*2);
+
+  p {
+    font-weight: $normal;
+    //hyphens: manual;
+
+    hyphens: none;
+
+    @include font-size($m-super-large-size, $m-super-large-line);
+    & + p {
+      margin-top: em($m-super-large-line/2, $m-super-large-size);
+    }
+    .asterisk {
+      &:after {
+        margin-left: 0.1em;
+
+        content: '*';
+
+        color: $color;
+      }
+    }
+  }
+  @include min-screen(col(8)) {
+    margin-top: em($d-base-rhythm*2);
+    margin-bottom: em($d-base-rhythm*2);
+    p {
+      @include font-size($t-super-large-size, $t-super-large-line);
+      & + p {
+        margin-top: em($t-super-large-line/2, $t-super-large-size);
+      }
+    }
+  }
+  @include min-screen(col(12)) {
+    p {
+      @include font-size($d-super-large-size, $d-super-large-line);
+      & + p {
+        margin-top: em($d-super-large-line, $d-super-large-size);
+      }
+    }
+  }
+}
+
+.reference {
+  margin-top: em($m-base-rhythm*2);
+  padding-left: em($m-gut*2);
+
+  .mark {
+    float: left;
+
+    width: em($m-gut*2, $m-small-size);
+    margin-left: em(-$m-gut*2, $m-small-size);
+  }
+  @include min-screen(col(8)) {
+    margin-top: em($d-base-rhythm*2);
+    padding-left: em($d-gut/2*3);
+    .mark {
+      width: em($d-gut/2*3, $d-small-size);
+      margin-left: em(-$d-gut/2*3, $d-small-size);
+    }
+  }
+  @include min-screen(col(12)) {
+    width: 100/3*2*1%;
+    margin-left: 100/3*1%;
+    padding-left: $d-gut/2;
+  }
+  @include min-screen(col(16)) {
+    width: 50%;
+    margin-left: 50%;
+  }
+}

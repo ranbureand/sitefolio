@@ -5,10 +5,10 @@
 
           <div class="column-2d-s typo-l">
             {% if page.layout == "categories" %}
-              <h3>{{ page.title }}<span><sup class="color">&dagger;</sup></span></h3>
+              <h3>{{ page.title }}</h3>
             {% else %}
               {% for category in categories %}
-                <h3>{{ category.title }}<span><sup class="color">&dagger;</sup></span></h3>
+                <h3>{{ category.title }}</h3>
               {% endfor %}
             {% endif %}
           </div>
@@ -21,9 +21,11 @@
                 {{ category.content | markdownify }}
               {% endfor %}
             {% endif %}
-            <div class="typo-s">
-              <p><span class="color">&dagger;</span> Drop me a line for a look at my full, up-to-date service and product design portfolio.</p>
-            </div>
+            {% if page.layout != 'base' %}
+              <div class="balloon-light typo-s">
+                {% include disclaimer.html %}
+              </div>
+            {% endif %}
           </div>
 
           {% if page.layout == 'categories' %}
