@@ -1,0 +1,100 @@
+/* Copyright (c) 2017 Andrea Buran [www.andreaburan.com]. All rights reserved */
+
+/*
+** Canvas
+*/
+
+[class^='canvas'] {
+  padding-right: $m-gut;
+  padding-left: $m-gut;
+
+  @include min-screen(col(8)) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.dark-canvas {
+  background-color: $d-background;
+}
+
+/*
+** Splash
+*/
+
+.canvas-splash {
+  overflow: hidden;
+
+  background-color: $d-background;
+}
+
+.splash {
+  padding-bottom: em($m-base-rhythm*4);
+
+  @include min-screen(col(8)) {
+    padding-bottom: em($d-base-rhythm*4);
+  }
+  @include min-screen(col(12)) {
+    padding-bottom: em($d-base-rhythm*4);
+  }
+}
+
+/*
+** Projects
+*/
+
+.canvas-projects {
+  background-color: $canvas;
+}
+
+.projects {
+  padding-top: em($m-base-rhythm*2);
+  padding-bottom: em($m-base-rhythm*2);
+
+  @include min-screen(col(8)) {
+    padding-top: em($d-base-rhythm*2);
+    padding-bottom: em($d-base-rhythm*2);
+  }
+}
+
+/*
+** Details
+*/
+
+.canvas-details {
+  background-color: $canvas;
+}
+
+.details {
+  padding-bottom: em($m-base-rhythm*4);
+
+  @include min-screen(col(8)) {
+    padding-bottom: em($d-base-rhythm*4);
+  }
+}
+
+/*
+** Project
+*/
+
+.canvas-project {
+  background-color: $background;
+}
+
+.project {
+  padding-top: em($m-base-rhythm*1);
+  padding-bottom: em($m-base-rhythm*4);
+
+  @include min-screen(col(8)) {
+    padding-top: em($d-base-rhythm*1);
+    padding-bottom: em($d-base-rhythm*4);
+  }
+}
+
+.project-time {
+  @include face(mono);
+}
+
+.project-body {
+  @include face(serif);
+}
