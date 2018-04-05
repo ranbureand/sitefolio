@@ -19,18 +19,21 @@
   div {
     position: absolute;
     top: 0;
-    width: em($m-base-rhythm*20);
-    height: em($m-base-rhythm*20);
     right: -100%;
     left: -100%;
-    margin-left: auto;
+
+    width: em($m-base-rhythm*20);
+    height: em($m-base-rhythm*20);
     margin-right: auto;
+    margin-left: auto;
 
     animation-name: rotation;
     animation-duration: 960s;
     animation-timing-function: linear;
+    animation-iteration-count: infinite;
 
     border-radius: 50%;
+    background-color: $d-background;
     background-image: url('../../media/graphics/jupiter_00.jpg');
     background-repeat: no-repeat;
     background-position: top center;
