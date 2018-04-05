@@ -5,10 +5,10 @@
 
           <div class="column-2d-s typo-l">
             {% if page.layout == "categories" %}
-              <h3>{{ page.title }}</h3>
+              <h2>{{ page.title }}</h2>
             {% else %}
               {% for category in categories %}
-                <h3>{{ category.title }}</h3>
+                <h2>{{ category.title }}</h2>
               {% endfor %}
             {% endif %}
           </div>
