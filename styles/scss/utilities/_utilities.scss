@@ -78,7 +78,7 @@ $d-tiny-line:           $base-line*5;  //20px
 */
 
 $bold:      700;
-$medium:    500;
+$medium:    600;
 $normal:    400;
 $light:     300;
 
@@ -99,9 +99,9 @@ $d-gut: 16px; // desktop gut
 ** Border widths
 */
 
-$border-width:        2px;
-$field-border-width:  2px;
-$button-border-width: 2px;
+$border-width:        1.5px;
+$field-border-width:  1.5px;
+$button-border-width: 1.5px;
 
 /*
 ** Strip units
@@ -149,13 +149,23 @@ $button-border-width: 2px;
   }
 }
 
-@mixin face($status: sans) {
+/*@mixin face($status: sans) {
   @if $status == "sans" {
     font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
   } @else if $status == "serif" {
     font-family: "Spectral", serif;
   } @else if $status == "mono" {
     font-family: "Roboto Mono", "Andale Mono", "Monaco", monospace;
+  }
+}*/
+
+@mixin face($status: sans) {
+  @if $status == "sans" {
+    font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  } @else if $status == "serif" {
+    font-family: "IBM Plex Serif", serif;
+  } @else if $status == "mono" {
+    font-family: "IBM Plex Mono", "Andale Mono", "Monaco", monospace;
   }
 }
 

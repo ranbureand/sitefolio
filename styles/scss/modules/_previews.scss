@@ -94,6 +94,8 @@
     @include font-size($m-small-size, $m-small-line);
   }
   .preview-tags {
+    @include face(serif);
+    font-style: italic;
     margin-top: em($m-tiny-line/4, $m-tiny-size);
 
     color: $type-color;
