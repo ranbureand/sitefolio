@@ -24,10 +24,10 @@
 [class*='typo'] {
   position: relative;
 
-  h1, h2, h3, h5 {
+  h1, h3, h5 {
     font-weight: $medium;
   }
-  h4, h6 {
+  h2, h4, h6 {
     font-weight: $normal;
   }
   blockquote {
@@ -263,12 +263,12 @@
     @include font-size($m-medium-size, $m-medium-line);
   }
   @include min-screen(col(8)) {
-    h1 {
+    h1,
+    h2, {
       margin-bottom: em($d-extra-large-line/2, $d-extra-large-size);
 
       @include font-size($d-extra-large-size, $d-extra-large-line);
     }
-    h2,
     h3,
     h4,
     p {
