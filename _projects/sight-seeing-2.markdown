@@ -4,6 +4,7 @@ order: 31
 layout: project
 
 title: 'Sight-_Seeing 2'
+title_typeset: 'Sight-_Seeing<sup>2</sup>'
 author: 'Andrea Buran'
 
 time: '2012'
@@ -15,7 +16,7 @@ preview_image: 'sight_seeing_2_00.jpg'
 preview_color: '#D09C63'
 
 excerpt: 'The photobook Sight-_Seeing 2 spatially arranges a heterogeneous set of collectively taken pictures of Tyrolean winter landscapes—halfway between tourism’s advertising images and contemporary photos.'
-exordium: 'The photobook *Sight-_Seeing <sup>2</sup>* spatially arranges a heterogeneous set of collectively taken pictures of Tyrolean winter landscapes—halfway between tourism’s advertising images and contemporary photos.'
+exordium: 'The photobook *Sight-_Seeing<sup>2</sup>* spatially arranges a heterogeneous set of collectively taken pictures of Tyrolean winter landscapes—halfway between tourism’s advertising images and contemporary photos.'
 
 publish: 'yes'
 ---
@@ -93,7 +94,7 @@ The drawback was overcome by voiding the margins between images, thus taking adv
         h="2" w="3" 
         src="sight_seeing_2_1415.jpg" 
         alt="A double page spread of the book Sight-_Seeing 2." 
-        caption="Couples" 
+        caption="Couples." 
         color="#D09C63" 
     %}
     {% include image.html 

@@ -12,7 +12,7 @@
                 <div class="preview-image"{% if project.preview_color %}style="background-color:{{ project.preview_color }};"{% endif %}>
                   <img src="{{ site.baseurl }}/media/previews/{{project.preview_image}}" alt="“{{project.title}}” preview image." title="{{ project.title }}"/>
                 </div>
-                <div class="preview-title">{{ project.title }}</div>
+                <div class="preview-title">{% if project.title_typeset %}{{ project.title_typeset }}{% else %}{{ project.title }}{% endif %}</div>
                 <div class="preview-tags">{% for tag in project.tags %}{% if forloop.last == true %}{{tag}}{% else %}{{tag}}, {% endif %}{% endfor %}</div>
                 <div class="preview-time">{{ project.time }}</div>
               </a>
