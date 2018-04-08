@@ -128,6 +128,7 @@ div {
       color: $button-type-color;
       background-color: $button-background-color;
 
+      @include face(sans);
       @include font-size($m-small-size, $m-small-line);
     }
     &:hover,
