@@ -42,9 +42,7 @@ responsibilities
 : script, storyboard, visual/graphic design, animation, temporal/spatial montage, sound collage/montage
 
 client
-: [Superpool](http://www.superpool.org/ "Superpool")
-
-Some illustrations taken from the preliminary storyboard coupled with the corresponding frames of the final cut.
+: Superpool
 
 <div class="figures">
     {% include image.html 
@@ -61,6 +59,11 @@ Some illustrations taken from the preliminary storyboard coupled with the corres
         alt="A frame from the video Dolmuş & Minibüs Map of Istanbul." 
         color="#FD9900" 
     %}
+</div>
+
+Some illustrations taken from the preliminary storyboard coupled with the corresponding frames of the final cut.
+
+<div class="figures">
     {% include image.html 
         size="m" 
         h="9" w="16" 
