@@ -1,6 +1,19 @@
 /* Copyright (c) 2017 Andrea Buran [www.andreaburan.com]. All rights reserved */
 
 /*
+** Animation
+*/
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*
 ** Splash
 */
 
@@ -15,6 +28,7 @@
   margin-top: 0;
   position: relative;
   height: em($m-base-rhythm*20);
+  background-color: $d-background;
 
   div {
     position: absolute;
@@ -33,7 +47,7 @@
     animation-iteration-count: infinite;
 
     border-radius: 50%;
-    background-color: $d-background;
+    background-color: #0A0A0A;
     background-image: url('../../media/graphics/planet_00.jpg');
     background-repeat: no-repeat;
     background-position: top center;
@@ -59,15 +73,6 @@
       width: em($d-base-rhythm*24);
       height: em($d-base-rhythm*24);
     }
-  }
-}
-
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
 

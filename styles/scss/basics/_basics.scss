@@ -35,8 +35,6 @@ img::selection {
 ** Basics
 */
 
-//@include establish-baseline;
-
 html {
   font-size: 100% * $base-font-size / $browser-default-font-size;
 
@@ -44,16 +42,11 @@ html {
 
   color: $type-color;
 
-  @include font-size($m-medium-size, $m-medium-line);
+  @include font-size($base-font-size, $base-font-line);
       -ms-text-size-adjust: 100%; // normalize.css
   -webkit-text-size-adjust: 100%; // normalize.css
   @include face(sans); // normalize.css
   box-sizing: border-box;
-  /*@include min-screen(col(8)) {
-    font-size: 100% * $base-font-size / $browser-default-font-size;
-
-    @include adjust-leading-to($d-medium-line);
-  }*/
 }
 
 *, *:before, *:after {
@@ -110,7 +103,6 @@ a {
   transition-property: color;
   transition-duration: $duration;
   transition-timing-function: ease-out;
-  //@include transition-delay(0s);
   color: inherit;
   &:hover {
     outline: 0; // normalize.css

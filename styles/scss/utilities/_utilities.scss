@@ -10,12 +10,15 @@ $waistline: 1440;
 ** Variables
 */
 
-$browser-default-font-size: 16px;
-$base-font-size:            16px;
-$base-line:                 4px;
+$base-unit:                 4px;
 
-$m-base-rhythm:             $base-line*6;
-$d-base-rhythm:             $base-line*10;
+$browser-default-font-size: 16px;
+
+$base-font-size:            16px;
+$base-font-line:            $base-unit*6;
+
+$m-base-rhythm:             $base-unit*6;
+$d-base-rhythm:             $base-unit*10;
 
 /*
 ** Font sizes and line heights
@@ -25,53 +28,46 @@ $d-base-rhythm:             $base-line*10;
 */
 
 $m-super-large-size:    24px;
-$m-super-large-line:    $base-line*9; //36px
+$m-super-large-line:    $base-unit*9; //36px
 
 $t-super-large-size:    42px;
-$t-super-large-line:    $base-line*14; //52px
+$t-super-large-line:    $base-unit*14; //52px
 
 $d-super-large-size:    48px;
-$d-super-large-line:    $base-line*15; //60px
+$d-super-large-line:    $base-unit*15; //60px
 
 $d-super-large-size:    64px;
-$d-super-large-line:    $base-line*20; //60px
+$d-super-large-line:    $base-unit*20; //60px
 
 $m-extra-large-size:    22px;
-$m-extra-large-line:    $base-line*8;  //28px
+$m-extra-large-line:    $base-unit*8;  //28px
 
 $d-extra-large-size:    26px;
-$d-extra-large-line:    $base-line*10; //40px
+$d-extra-large-line:    $base-unit*10; //40px
 
 $m-large-size:          18px;
-$m-large-line:          $base-line*7;  //28px
+$m-large-line:          $base-unit*7;  //28px
 
 $d-large-size:          22px;
-$d-large-line:          $base-line*8;  //32px
+$d-large-line:          $base-unit*8;  //32px
 
 $m-medium-size:         16px;
-$m-medium-line:         $base-line*6;  //24px
+$m-medium-line:         $base-unit*6;  //24px
 
 $d-medium-size:         16px;
-$d-medium-line:         $base-line*6;  //28px
-
-$m-: 14px;
-$m-: $base-line*6;
-
-$d-: 16px;
-$d-: $base-line*6;
+$d-medium-line:         $base-unit*6;  //28px
 
 $m-small-size:          14px;
-$m-small-line:          $base-line*6;  //24px
+$m-small-line:          $base-unit*6;  //24px
 
 $d-small-size:          14px;
-$d-small-line:          $base-line*6;  //24px
-
+$d-small-line:          $base-unit*6;  //24px
 
 $m-tiny-size:           13px;
-$m-tiny-line:           $base-line*5;  //20px
+$m-tiny-line:           $base-unit*5;  //20px
 
 $d-tiny-size:           13px;
-$d-tiny-line:           $base-line*5;  //20px
+$d-tiny-line:           $base-unit*5;  //20px
 
 /*
 ** Font weights
@@ -148,16 +144,6 @@ $button-border-width: 2px;
     font-style: $style;
   }
 }
-
-/*@mixin face($status: sans) {
-  @if $status == "sans" {
-    font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
-  } @else if $status == "serif" {
-    font-family: "Spectral", serif;
-  } @else if $status == "mono" {
-    font-family: "Roboto Mono", "Andale Mono", "Monaco", monospace;
-  }
-}*/
 
 @mixin face($status: sans) {
   @if $status == "sans" {
