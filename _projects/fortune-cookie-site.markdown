@@ -43,7 +43,7 @@ team
 : Andrea Buran, Eleonora Sovrani
 
 link
-: [Fortune Cookie](http://whatsthewaythecookiecrumbles.org/ "Fortune Cookie site")
+: [Fortune Cookie](http://fortune-cookie.andreaburan.com/ "Fortune Cookie site")
 
 <div class="figures">
     {% include image.html 

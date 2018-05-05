@@ -43,12 +43,12 @@ team
 : Andrea Buran, Eleonora Sovrani
 
 link
-: [Fortune Cookie](http://whatsthewaythecookiecrumbles.org/ "Fortune Cookie site")
+: [Fortune Cookie](http://fortune-cookie.andreaburan.com/ "Fortune Cookie site")
 
 pictures of the installation by
 : [Christo Crocker](http://christocrocker.blogspot.com.tr/ "Christo Crocker’s site")
 
-The installation correlates two different but comparable **web image archives**: **the first**—potentially infinite—one is being continuously powered by users through the site [Fortune Cookie](http://whatsthewaythecookiecrumbles.org/ "Fortune Cookie site"), while **the second**—actually finite—one consists of images retrieved from a sample of ten image search engines.
+The installation correlates two different but comparable **web image archives**: **the first**—potentially infinite—one is being continuously powered by users through the site [Fortune Cookie](http://fortune-cookie.andreaburan.com/ "Fortune Cookie site"), while **the second**—actually finite—one consists of images retrieved from a sample of ten image search engines.
 
 <div class="figures">
     {% include image.html 
