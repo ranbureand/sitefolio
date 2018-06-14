@@ -61,7 +61,7 @@ client
     %}
 </div>
 
-Some illustrations taken from the preliminary storyboard coupled with the corresponding frames of the final cut.
+Here are some illustrations from the preliminary storyboard coupled with the corresponding frames of the final cut.
 
 <div class="figures">
     {% include image.html 

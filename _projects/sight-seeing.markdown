@@ -58,7 +58,7 @@ prizes
     %}
 </div>
 
-The project started from an incredibly large image archive, made up by around a thousand raw pictures taken by the photographers Michael Danner, Dominik Gigler, Monika Höfler, Jörg Koopmann, Verena Kathrein, Andrew Phelps and Matthias Ziegler.
+The project started from an incredibly large image archive made up by around a thousand raw pictures taken by the photographers Michael Danner, Dominik Gigler, Monika Höfler, Jörg Koopmann, Verena Kathrein, Andrew Phelps and Matthias Ziegler.
 
 How could the correlations between the pictures of such an heterogenous[^heterogenity] set be maximized within the “constraints” of the book form?
 
@@ -91,7 +91,7 @@ The source of inspiration for the innovative layout solution of *Sight-_Seeing* 
     %}
 </div>
 
-Firstly, after a keen collaborative selection, the pictures were reduced in number and divided into twelve thematic groups, and a [16-pages](http://printwiki.org/Octavo "16-pages / octavo on PrintWiki") [signature](http://printwiki.org/Signature "signature on PrintWiki") was reserved to each of them.
+Firstly, after a keen collaborative selection, the pictures were reduced in number and divided into twelve thematic groups, and a [16-pages](http://printwiki.org/Octavo "16-pages / octavo on PrintWiki") [signature](http://printwiki.org/Signature "signature on PrintWiki") was reserved for each of them.
 
 Secondly, the layout of the pictures was designed taking into account not only the two pages of a single spread, but also all others belonging to the same 16-pages signature, so that images are related not only with those of the adjacent page, but also with those of the following ones by means of the crossing of the fold, whereupon a new multi-directional flow or reading is added to the usual, one-directional one.
 
@@ -124,7 +124,7 @@ The adopted strategy allowed the creation of multiple and otherwise physically i
     %}
 </div>
 
-By peeking out from the fold, the main picture of p. _09_11 is set in a relation not only with the photos of its own spread, but also with the ones of [pp. _09_06-_09_07](#sight_seeing_6372.jpg).
+By peeking out from the fold, the main picture of p. _09_11 is set in a relation not only with the photos of its own spread but also with the ones of [pp. _09_06-_09_07](#sight_seeing_6372.jpg).
 
 <div class="figures">
     {% include image.html 
@@ -150,7 +150,7 @@ By peeking out from the fold, the main picture of p. _09_11 is set in a relation
     %}
 </div>
 
-One of various 16-pages signature mock-ups used during the designing of the book: an essential tool for laying out images without becoming crazy.
+One of the various 16-pages signature mock-ups used during the designing of the book: an essential tool for laying out images without becoming crazy.
 
 <div class="figures">
     {% include image.html 
@@ -162,4 +162,4 @@ One of various 16-pages signature mock-ups used during the designing of the book
     %}
 </div>
 
-[^heterogenity]: Heterogeneous due to the different photographers’ approaches.
+[^heterogenity]: heterogeneous due to the different photographers’ approaches.

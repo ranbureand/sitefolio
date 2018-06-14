@@ -60,7 +60,7 @@ The installation correlates two different but comparable **web image archives**:
     %}
 </div>
 
-In **the first** archive the links to the images submitted by the participants and collected through the site are aggregated together in a single cluster, and printed on-the-fly by means of a digital printer installed on the spot.
+In **the first** archive, the links to the images submitted by the participants and collected through the site are aggregated together in a single cluster and printed on-the-fly by means of a digital printer installed on the spot.
 
 <div class="figures">
     {% include image.html 
@@ -90,7 +90,6 @@ Starting from the unusual **assumption** that every search engine has indeed its
     %}
 </div>
 
-[^search-engines]: Ask, Bing, Collarity, Exalead, Google, Picsearch, Quality Images Search, Spezify, Yahoo and Yandex.
-
 The first physical counterpart of ***Fortune Cookie*** has been set up as a postcards installation at [West Space](http://westspace.org.au/ "The West Space gallery site") gallery during the exhibition *[Can we please play the internet?](http://canwepleaseplaytheinter.net/ "Can we please play the internet / Exhibition site")*, curated by Rosemary Willink in occasion of the *[Next Wave](http://nextwave.org.au "The Next Wave festival site")* festival.
 
+[^search-engines]: Ask, Bing, Collarity, Exalead, Google, Picsearch, Quality Images Search, Spezify, Yahoo, and Yandex.

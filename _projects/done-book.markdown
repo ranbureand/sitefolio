@@ -14,8 +14,8 @@ tags: [Gavagnin, notebook, photobook, photography, print, Ruskin, Venice]
 preview_image: 'done_book_00.jpg'
 preview_color: '#DAD0C8'
 
-excerpt: 'The photobook relates two ways of looking at the city of Venice—the Ruskin’s Venetian notebooks and the Gavagnin’s two decade collection of photographs.'
-exordium: 'The photobook relates two ways of looking at the city of Venice—the Ruskin’s Venetian notebooks and the Gavagnin’s two decade collection of photographs.'
+excerpt: 'The photobook relates two ways of looking at the city of Venice—the Ruskin’s Venetian notebooks and the Gavagnin’s two-decade collection of photographs.'
+exordium: 'The photobook relates two ways of looking at the city of Venice—the Ruskin’s Venetian notebooks and the Gavagnin’s two-decade collection of photographs.'
 
 publish: 'yes'
 ---
@@ -58,7 +58,7 @@ occasion
     %}
 </div>
 
-The first edition of the *Done.Book* was printed and presented in occasion of the exhibition of the very same name held in the British Pavilion during the Venice Architecture Biennale 2010.
+The first edition of the *Done.Book* was printed and presented on occasion of the exhibition of the very same name held in the British Pavilion during the Venice Architecture Biennale 2010.
 
 <div class="figures">
     {% include image.html 

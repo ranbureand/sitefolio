@@ -78,7 +78,7 @@ The slogan opening the 6<sup>th</sup> chapter of *Ubik* says:
     %}
 </div>
 
-The proof of concept prototype is structured using HTML5, JavaScript, jQuery and CSS, while the source of its dynamic images is the [Prelinger archives](http://www.archive.org/browse.php?field=subject&mediatype=movies&collection=prelinger "Prelinger archives on Internet Archive").
+The proof of concept prototype is structured using HTML5, JavaScript, jQuery, and CSS, while the source of its dynamic images is the [Prelinger archives](http://www.archive.org/browse.php?field=subject&mediatype=movies&collection=prelinger "Prelinger archives on Internet Archive").
 
 <div class="figures">
     {% include image.html 

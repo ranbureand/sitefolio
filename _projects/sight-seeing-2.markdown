@@ -64,7 +64,7 @@ team
     %}
 </div>
 
-Also in this second edition the project started from an incredibly large image archive made up by pictures taken by the photographers Hans Herbig, Verena Kathrein, Jörg Koopmann, Regina Recht, Sebastian Schels, [Alexander Ziegler](http://alexanderziegler.com/ "Alexander Ziegler’s website") and Richard Walch.
+Also in this second edition, the project started from an incredibly large image archive made up by pictures taken by the photographers Hans Herbig, Verena Kathrein, Jörg Koopmann, Regina Recht, Sebastian Schels, [Alexander Ziegler](http://alexanderziegler.com/ "Alexander Ziegler’s website") and Richard Walch.
 
 <div class="figures">
     {% include image.html 
@@ -76,7 +76,7 @@ Also in this second edition the project started from an incredibly large image a
     %}
 </div>
 
-The images of this second edition were visually levelled to varying degrees by the omnipresence of the whiteness of the snow, a shared feature that made visually matching them way more problematic than with the previous set of pictures, due to their lack of strong contrasts.
+The images of this second edition were visually leveled to varying degrees by the omnipresence of the whiteness of the snow, a shared feature that made visually matching them way more problematic than with the previous set of pictures, due to their lack of strong contrasts.
 
 The drawback was overcome by voiding the margins between images, thus taking advantage of the differences between the various gradations of whiteness to subtly reveal the inner visual quality of each picture.
 

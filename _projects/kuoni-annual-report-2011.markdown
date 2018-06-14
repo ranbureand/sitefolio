@@ -55,11 +55,11 @@ team
     %}
 </div>
 
-The **table of content** of the annual report is spatially visualized through a **mind map** placed in a huge centrefold of the very first signature of the volume. The structure of the various chapters and subchapters is developed into sets of **nodes** arranged in growing concentric circles.
+The **table of content** of the annual report is spatially visualized through a **mind map** placed in a huge centerfold of the very first signature of the volume. The structure of the various chapters and subchapters is developed into sets of **nodes** arranged in growing concentric circles.
 
 Readers can immediately grasp and navigate the overall organization of the content by following the **connections** between nodes.
 
-The mind map evokes the **wireframe** of a **tridimensional landscape**, so that readers can find their way through the content as they are exploring a new territory.
+The mind map evokes the **wireframe** of a **tridimensional landscape** so that readers can find their way through the content as they are exploring a new territory.
 
 <div class="figures">
     {% include image.html 
@@ -169,7 +169,7 @@ The mind map evokes the **wireframe** of a **tridimensional landscape**, so that
     %}
 </div>
 
-A global motion pattern is associated to each of the fifty profiles described in the chapter *People Report*. It represents all the locations reached by the interviewed person during his/her life by means of magenta arcs projected on a tridimensional world map.
+A global motion pattern is associated with each of the fifty profiles described in the chapter *People Report*. It represents all the locations reached by the interviewed person during his/her life by means of magenta arcs projected on a tridimensional world map.
 
 <div class="figures">
   {% include image.html 
