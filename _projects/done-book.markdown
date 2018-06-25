@@ -8,7 +8,7 @@ author: 'Andrea Buran'
 
 time: '2010'
 
-categories: [All, Commercial, Favorite, Print]
+categories: [All, Commercial, Print]
 tags: [Gavagnin, notebook, photobook, photography, print, Ruskin, Venice]
 
 preview_image: 'done_book_00.jpg'
