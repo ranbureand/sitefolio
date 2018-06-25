@@ -124,29 +124,14 @@
 
 .reference {
   margin-top: em($m-base-rhythm*2);
-  padding-left: em($m-gut*2);
 
-  .mark {
-    float: left;
-
-    width: em($m-gut*2, $m-small-size);
-    margin-left: em(-$m-gut*2, $m-small-size);
-  }
   @include min-screen(col(8)) {
     margin-top: em($d-base-rhythm*2);
-    padding-left: em($d-gut/2*3);
-    .mark {
-      width: em($d-gut/2*3, $d-small-size);
-      margin-left: em(-$d-gut/2*3, $d-small-size);
-    }
   }
   @include min-screen(col(12)) {
-    width: 100/3*2*1%;
-    margin-left: 100/3*1%;
-    padding-left: $d-gut/2;
+    padding-left: calc((100% - #{em($d-gut*2)}) / 3 + #{em($d-gut*1)});
   }
   @include min-screen(col(16)) {
-    width: 50%;
-    margin-left: 50%;
+    padding-left: calc((100% - #{em($d-gut*3)}) / 2 + #{em($d-gut*2)});
   }
 }
