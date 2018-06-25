@@ -21,11 +21,9 @@
                 {{ category.content | markdownify }}
               {% endfor %}
             {% endif %}
-            {% if page.layout != 'base' %}
-              <div class="balloon-light typo-s">
-                {% include disclaimer.html %}
-              </div>
-            {% endif %}
+            <div class="balloon-light typo-s">
+              {% include disclaimer.html %}
+            </div>
           </div>
 
           {% if page.layout == 'categories' %}
