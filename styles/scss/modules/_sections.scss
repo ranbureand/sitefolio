@@ -4,7 +4,7 @@
 ** Canvas
 */
 
-[class^='canvas'] {
+[class^="canvas"] {
   padding-right: em($m-gut);
   padding-left: em($m-gut);
 
@@ -24,11 +24,13 @@
 
 .canvas-splash {
   overflow: hidden;
-
   background-color: $d-background;
 }
 
 .splash {
+  animation-duration: $duration*4;
+  animation-name: element-in-up;
+  animation-fill-mode: both;
   padding-bottom: em($m-base-rhythm*4);
 
   @include min-screen(col(8)) {
@@ -48,6 +50,9 @@
 }
 
 .projects {
+  animation-duration: $duration*4;
+  animation-name: element-in-up;
+  animation-fill-mode: both;
   padding-top: em($m-base-rhythm*2);
   padding-bottom: em($m-base-rhythm*2);
 
@@ -66,6 +71,9 @@
 }
 
 .details {
+  animation-duration: $duration*4;
+  animation-name: element-in-up;
+  animation-fill-mode: both;
   padding-bottom: em($m-base-rhythm*4);
 
   @include min-screen(col(8)) {
@@ -82,6 +90,9 @@
 }
 
 .project {
+  animation-duration: $duration*4;
+  animation-name: element-in-up;
+  animation-fill-mode: both;
   padding-top: em($m-base-rhythm*1);
   padding-bottom: em($m-base-rhythm*4);
 

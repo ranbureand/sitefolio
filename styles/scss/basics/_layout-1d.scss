@@ -6,10 +6,8 @@
 
 [class*="layout-1d"] {
   display: flex;
-
   margin-right: em(-$m-gut/2);
   margin-left: em(-$m-gut/2);
-
   flex-flow: row wrap;
   align-items: flex-start;
   align-content: flex-start;
@@ -30,7 +28,7 @@
   }
 }
 
-[class*='element-1d'] {
+[class*="element-1d"] {
   flex-grow: 0;
   flex-shrink: 1;
 }

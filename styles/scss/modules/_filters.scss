@@ -6,19 +6,14 @@
 
 .filter {
   width: 100/2*1%;
-
   text-align: center;
 
   @include font-size($m-large-size, $m-large-line);
   a {
     font-weight: $medium;
-
     position: relative;
-
     display: block;
-
     padding: em($m-large-line/2, $m-large-size) em($m-gut/2, $m-large-size);
-
     color: $strong-type-color;
     &:hover {
       color: $color;
@@ -30,13 +25,9 @@
       position: absolute;
       top: em($m-large-line/2, $m-large-size);
       left: 0;
-
       display: block;
-
       height: em($m-large-line, $m-large-size);
-
-      content: '';
-
+      content: "";
       border-left: $border-width solid $border-color;
     }
   }
@@ -48,7 +39,6 @@
       padding: em($d-large-line/2, $d-large-size) em($d-gut/2, $d-large-size);
       &:after {
         top: em($d-large-line/2, $d-large-size);
-
         height: em($d-large-line, $d-large-size);
       }
     }
@@ -74,7 +64,6 @@
       padding: em($d-small-line/2, $d-small-size) em($d-gut, $d-small-size);
       &:before {
         top: em($d-small-line/2, $d-small-size);
-
         height: em($d-small-line, $d-small-size);
       }
     }
@@ -103,7 +92,6 @@
 .filter.current {
   a {
     cursor: default;
-
     color: $color;
   }
 }

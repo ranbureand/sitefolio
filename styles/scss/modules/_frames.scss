@@ -7,6 +7,9 @@
 .header,
 .footer {
   @include face(mono);
+  animation-duration: $duration*4;
+  animation-name: element-in;
+  animation-fill-mode: both;
 }
 
 .header {
@@ -62,11 +65,9 @@
 
 .header-motto {
   text-align: right;
-
   grid-column: 2 / 3;
   @include min-screen(col(8)) {
     display: block;
-
     grid-column: 2 / 3;
   }
   @include min-screen(col(12)) {
@@ -86,9 +87,7 @@
 
 .footer-scroll {
   font-weight: $medium;
-
   text-align: right;
-
   grid-column: 2 / 3;
   a {
     cursor: n-resize;

@@ -37,9 +37,7 @@
 
 .preview {
   position: relative;
-
   display: block;
-
   text-decoration: none;
 
   &:before {
@@ -47,48 +45,43 @@
     top: 0;
     right: 0;
     left: 0;
-
     width: 100%;
     margin-right: auto;
     margin-left: auto;
     padding-bottom: 100/4*3%;
-
-    content: '';
+    content: "";
     transition-timing-function: ease-out, ease-out, ease-out, ease-out;
     transition-duration: $duration, $duration, $duration, $duration;
     transition-property: height, opacity, transform, width;
     transform-origin: 50% 0 ;
-
     opacity: 0.0;
     background-color: $picture-background-color;
   }
   .preview-image {
     position: relative;
-
     padding-bottom: 100/4*3%;
-
     transition-timing-function: ease-out;
     transition-duration: $duration;
     transition-property: transform;
     transform: translate(0, 0);
-
     background-color: $picture-background-color;
 
     @include font-size($m-tiny-size, $m-tiny-line);
     img {
+      animation-delay: $duration*1;
+      animation-duration: $duration*4;
+      animation-name: element-in;
+      animation-fill-mode: both;
       position: absolute;
       z-index: 1;
     }
   }
   .preview-title {
     font-weight: $medium;
-
     margin-top: em($m-small-line/2, $m-small-size);
-
     transition-timing-function: ease-in-out;
     transition-duration: 0.2s;
     transition-property: color;
-
     color: $strong-type-color;
 
     @include font-size($m-small-size, $m-small-line);
@@ -97,14 +90,12 @@
     @include face(serif);
     font-style: italic;
     margin-top: em($m-tiny-line/4, $m-tiny-size);
-
     color: $type-color;
 
     @include font-size($m-tiny-size, $m-tiny-line);
   }
   .preview-time {
     margin-top: em($m-small-line/4, $m-small-size);
-
     color: $type-color;
 
     @include face(mono);
@@ -130,7 +121,6 @@
     }
     .preview-title {
       transition-duration: 0.0s;
-
       color: $color;
     }
   }

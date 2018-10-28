@@ -24,7 +24,6 @@
 
 .cover {
   z-index: 1;
-
   margin-top: 0;
   position: relative;
   height: em($m-base-rhythm*20);
@@ -35,20 +34,17 @@
     top: 0;
     right: -100%;
     left: -100%;
-
     width: em($m-base-rhythm*20);
     height: em($m-base-rhythm*20);
     margin-right: auto;
     margin-left: auto;
-
     animation-name: rotation;
     animation-duration: 960s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-
     border-radius: 50%;
-    background-color: #0A0A0A;
-    background-image: url('../../media/graphics/planet_00.jpg');
+    background-color: #0a0a0a;
+    background-image: url("../../media/graphics/planet_00.jpg");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 100% 100%;
@@ -78,7 +74,6 @@
 
 .pitch {
   z-index: 2;
-
   margin-top: em($m-base-rhythm*2);
   margin-bottom: em($m-base-rhythm*2);
 
@@ -95,9 +90,7 @@
     .asterisk {
       &:after {
         margin-left: 0.1em;
-
-        content: '*';
-
+        content: "*";
         color: $color;
       }
     }

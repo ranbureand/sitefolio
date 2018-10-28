@@ -15,7 +15,6 @@
     margin-bottom: em($d-base-rhythm);
     padding-right: em($d-gut/2);
     padding-left: em($d-gut/2);
-
     border-left: $border-width solid $border-color;
   }
   @include screen(col(8), col(12)) {
