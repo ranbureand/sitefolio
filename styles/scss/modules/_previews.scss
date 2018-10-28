@@ -68,10 +68,6 @@
 
     @include font-size($m-tiny-size, $m-tiny-line);
     img {
-      animation-delay: $duration*1;
-      animation-duration: $duration*4;
-      animation-name: element-in;
-      animation-fill-mode: both;
       position: absolute;
       z-index: 1;
     }

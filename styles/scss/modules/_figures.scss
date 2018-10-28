@@ -66,10 +66,6 @@ div {
     }
   }
   img {
-    animation-delay: $duration*1;
-    animation-duration: $duration*2;
-    animation-name: element-in;
-    animation-fill-mode: both;
     margin-bottom: 0;
   }
   @include min-screen(col(8)) {
