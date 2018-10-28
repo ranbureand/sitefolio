@@ -8,6 +8,9 @@
   padding-top: em($m-base-rhythm);
   padding-bottom: em($m-base-rhythm/2);
   li {
+    animation-duration: $duration*4;
+    animation-name: element-in-up;
+    animation-fill-mode: both;
     width: 100/2*1%;
     margin-bottom: em($m-base-rhythm*1.5);
     padding-right: em($m-gut/2);
@@ -32,6 +35,12 @@
     li {
       width: 100/4*1%;
     }
+  }
+}
+
+@for $i from 0 through 24 {
+  .previews li:nth-child(#{$i + 1}n) {
+    animation-delay: #{$i * $duration/8 };
   }
 }
 
