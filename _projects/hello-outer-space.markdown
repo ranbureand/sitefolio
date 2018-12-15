@@ -12,6 +12,7 @@ categories: [All, Non-Commercial]
 tags: [CSS, HTML, Markdown, stress test, styles, typographic elements]
 
 preview_image: 'hello_outer_space_00.png'
+preview_color: '#020202'
 
 excerpt: 'The following article is used as a testing ground for all the styles that shapes the body text prose and code of the Sitefolio.'
 exordium: 'The following article is used as a testing ground for all the styles that shapes the body text prose, code and form of this very site.'
@@ -20,12 +21,12 @@ publish: 'yes'
 ---
 
 <div class="figures">
-    {% include image.html 
-        size="xl" 
-        h="1" w="2" 
-        src="hello_outer_space_01.png" 
-        alt="A pure black placeholder image used to stress test the img style of this very site." 
-        color="#000" 
+    {% include image.html
+        size="xl"
+        h="1" w="2"
+        src="hello_outer_space_01.png"
+        alt="A pure black placeholder image used to stress test the img style of this very site."
+        color="#000"
     %}
 </div>
 
@@ -46,7 +47,7 @@ A paragraph (from the Greek paragraphos, “to write beside” or “written bes
 A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.
 
 > A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation.
-> 
+>
 > — <cite>[Video](http://www.youtube.com/watch?v=6r7E-69MIOU "Matt Cutts on YouTube"), Matt Cutts.</cite>
 
 This text[^first-footnote] has a first footnote.
@@ -106,129 +107,129 @@ This is a code block:
     end tell
 
 <div class="figures">
-    {% include image.html 
-        size="xl" 
-        h="3" w="4" 
-        src="hello_outer_space_00.png" 
-        alt="A pure black placeholder image used to stress test the img style of this very site." 
-        color="#000" 
+    {% include image.html
+        size="xl"
+        h="3" w="4"
+        src="hello_outer_space_00.png"
+        alt="A pure black placeholder image used to stress test the img style of this very site."
+        color="#000"
     %}
 </div>
 
 <div class="figures">
-    {% include image.html 
-        size="l" 
-        h="1" w="2" 
-        src="hello_outer_space_01.png" 
-        alt="A pure black placeholder image used to stress test the img style of this very site." 
-        color="#000" 
+    {% include image.html
+        size="l"
+        h="1" w="2"
+        src="hello_outer_space_01.png"
+        alt="A pure black placeholder image used to stress test the img style of this very site."
+        color="#000"
     %}
 </div>
 
 <div class="figures">
-    {% include image.html 
-        size="m" 
-        h="3" w="4" 
-        src="hello_outer_space_00.png" 
-        alt="A pure black placeholder image used to stress test the img style of this very site." 
-        color="#000" 
+    {% include image.html
+        size="m"
+        h="3" w="4"
+        src="hello_outer_space_00.png"
+        alt="A pure black placeholder image used to stress test the img style of this very site."
+        color="#000"
     %}
-    {% include image.html 
-        size="m" 
-        h="3" w="4" 
-        src="hello_outer_space_00.png" 
-        alt="A pure black placeholder image used to stress test the img style of this very site." 
-        color="#000" 
-    %}
-</div>
-
-<div class="figures">
-    {% include image.html 
-        size="s" 
-        h="1" w="2" 
-        src="hello_outer_space_01.png" 
-        alt="A pure black placeholder image used to stress test the img style of this very site." 
-        color="#000" 
-    %}
-    {% include image.html 
-        size="s" 
-        h="1" w="2" 
-        src="hello_outer_space_01.png" 
-        alt="A pure black placeholder image used to stress test the img style of this very site." 
-        color="#000" 
-    %}
-    {% include image.html 
-        size="s" 
-        h="1" w="2" 
-        src="hello_outer_space_01.png" 
-        alt="A pure black placeholder image used to stress test the img style of this very site." 
-        color="#000" 
-    %}
-    {% include image.html 
-        size="s" 
-        h="1" w="2" 
-        src="hello_outer_space_01.png" 
-        alt="A pure black placeholder image used to stress test the img style of this very site." 
-        color="#000" 
+    {% include image.html
+        size="m"
+        h="3" w="4"
+        src="hello_outer_space_00.png"
+        alt="A pure black placeholder image used to stress test the img style of this very site."
+        color="#000"
     %}
 </div>
 
 <div class="figures">
-    {% include image.html 
-        size="xs" 
-        h="3" w="4" 
-        src="hello_outer_space_00.png" 
-        alt="A pure black placeholder image used to stress test the img style of this very site." 
-        color="#000" 
+    {% include image.html
+        size="s"
+        h="1" w="2"
+        src="hello_outer_space_01.png"
+        alt="A pure black placeholder image used to stress test the img style of this very site."
+        color="#000"
     %}
-    {% include image.html 
-        size="xs" 
-        h="3" w="4" 
-        src="hello_outer_space_00.png" 
-        alt="A pure black placeholder image used to stress test the img style of this very site." 
-        color="#000" 
+    {% include image.html
+        size="s"
+        h="1" w="2"
+        src="hello_outer_space_01.png"
+        alt="A pure black placeholder image used to stress test the img style of this very site."
+        color="#000"
     %}
-    {% include image.html 
-        size="xs" 
-        h="3" w="4" 
-        src="hello_outer_space_00.png" 
-        alt="A pure black placeholder image used to stress test the img style of this very site." 
-        color="#000" 
+    {% include image.html
+        size="s"
+        h="1" w="2"
+        src="hello_outer_space_01.png"
+        alt="A pure black placeholder image used to stress test the img style of this very site."
+        color="#000"
     %}
-    {% include image.html 
-        size="xs" 
-        h="3" w="4" 
-        src="hello_outer_space_00.png" 
-        alt="A pure black placeholder image used to stress test the img style of this very site." 
-        color="#000" 
+    {% include image.html
+        size="s"
+        h="1" w="2"
+        src="hello_outer_space_01.png"
+        alt="A pure black placeholder image used to stress test the img style of this very site."
+        color="#000"
     %}
-    {% include image.html 
-        size="xs" 
-        h="3" w="4" 
-        src="hello_outer_space_00.png" 
-        alt="A pure black placeholder image used to stress test the img style of this very site." 
-        color="#000" 
+</div>
+
+<div class="figures">
+    {% include image.html
+        size="xs"
+        h="3" w="4"
+        src="hello_outer_space_00.png"
+        alt="A pure black placeholder image used to stress test the img style of this very site."
+        color="#000"
     %}
-    {% include image.html 
-        size="xs" 
-        h="3" w="4" 
-        src="hello_outer_space_00.png" 
-        alt="A pure black placeholder image used to stress test the img style of this very site." 
-        color="#000" 
+    {% include image.html
+        size="xs"
+        h="3" w="4"
+        src="hello_outer_space_00.png"
+        alt="A pure black placeholder image used to stress test the img style of this very site."
+        color="#000"
     %}
-    {% include image.html 
-        size="xs" 
-        h="3" w="4" 
-        src="hello_outer_space_00.png" 
-        alt="A pure black placeholder image used to stress test the img style of this very site." 
-        color="#000" 
+    {% include image.html
+        size="xs"
+        h="3" w="4"
+        src="hello_outer_space_00.png"
+        alt="A pure black placeholder image used to stress test the img style of this very site."
+        color="#000"
     %}
-    {% include image.html 
-        size="xs" 
-        h="3" w="4" 
-        src="hello_outer_space_00.png" 
-        alt="A pure black placeholder image used to stress test the img style of this very site." 
-        color="#000" 
+    {% include image.html
+        size="xs"
+        h="3" w="4"
+        src="hello_outer_space_00.png"
+        alt="A pure black placeholder image used to stress test the img style of this very site."
+        color="#000"
+    %}
+    {% include image.html
+        size="xs"
+        h="3" w="4"
+        src="hello_outer_space_00.png"
+        alt="A pure black placeholder image used to stress test the img style of this very site."
+        color="#000"
+    %}
+    {% include image.html
+        size="xs"
+        h="3" w="4"
+        src="hello_outer_space_00.png"
+        alt="A pure black placeholder image used to stress test the img style of this very site."
+        color="#000"
+    %}
+    {% include image.html
+        size="xs"
+        h="3" w="4"
+        src="hello_outer_space_00.png"
+        alt="A pure black placeholder image used to stress test the img style of this very site."
+        color="#000"
+    %}
+    {% include image.html
+        size="xs"
+        h="3" w="4"
+        src="hello_outer_space_00.png"
+        alt="A pure black placeholder image used to stress test the img style of this very site."
+        color="#000"
     %}
 </div>
 

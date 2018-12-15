@@ -1,14 +1,16 @@
       <div class="canvas-projects">
-        <section class="projects layout-2d">
+        <section class="projects layout-2d dark-words">
 
           {% assign categories = site.categories | where: 'category', 'Favorite' %}
 
+          <div class="column-2d-l separator-light"></div>
+
           <div class="column-2d-s typo-l">
             {% if page.layout == "categories" %}
-              <h3>{{ page.title }}</h3>
+              <h4>{{ page.title }}</h4>
             {% else %}
               {% for category in categories %}
-                <h3>{{ category.title }}</h3>
+                <h4>{{ category.title }}</h4>
               {% endfor %}
             {% endif %}
           </div>
@@ -21,7 +23,7 @@
                 {{ category.content | markdownify }}
               {% endfor %}
             {% endif %}
-            <div class="balloon-light typo-s">
+            <div class="balloon-dark typo-s">
               {% include disclaimer.html %}
             </div>
           </div>

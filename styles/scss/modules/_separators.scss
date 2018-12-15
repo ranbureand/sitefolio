@@ -5,9 +5,9 @@
 */
 
 .separator {
-  border-top: $border-width solid $border-color;
+  border-top: $border-width solid $l-border-color;
 }
 
 .separator-light {
-  border-top: $border-width solid $l-border-color;
+  border-top: $border-width solid $d-border-color;
 }

@@ -9,13 +9,17 @@
   padding-left: em($m-gut);
 
   @include min-screen(col(8)) {
+    padding-right: em($d-gut);
+    padding-left: em($d-gut);
+  }
+  @include min-screen(col(12)) {
     padding-right: 0;
     padding-left: 0;
   }
 }
 
 .dark-canvas {
-  background-color: $d-background;
+  background-color: $d-background-color;
 }
 
 /*
@@ -24,20 +28,20 @@
 
 .canvas-splash {
   overflow: hidden;
-  background-color: $d-background;
+  background-color: $d-background-color;
 }
 
 .splash {
   animation-duration: $duration*4;
   animation-name: element-in-up;
   animation-fill-mode: both;
-  padding-bottom: em($m-base-rhythm*4);
+  //padding-bottom: em($m-base-rhythm*4);
 
   @include min-screen(col(8)) {
-    padding-bottom: em($d-base-rhythm*4);
+    //padding-bottom: em($d-base-rhythm*4);
   }
   @include min-screen(col(12)) {
-    padding-bottom: em($d-base-rhythm*4);
+    //padding-bottom: em($d-base-rhythm*4);
   }
 }
 
@@ -46,7 +50,7 @@
 */
 
 .canvas-projects {
-  background-color: $canvas;
+  background-color: $d-background-color;
 }
 
 .projects {
@@ -54,11 +58,11 @@
   animation-name: element-in-up;
   animation-fill-mode: both;
   padding-top: em($m-base-rhythm*2);
-  padding-bottom: em($m-base-rhythm*2);
+  padding-bottom: em($m-base-rhythm*3);
 
   @include min-screen(col(8)) {
     padding-top: em($d-base-rhythm*2);
-    padding-bottom: em($d-base-rhythm*2);
+    padding-bottom: em($d-base-rhythm*3);
   }
 }
 
@@ -67,17 +71,19 @@
 */
 
 .canvas-details {
-  background-color: $canvas;
+  background-color: $l-background-color;
 }
 
 .details {
   animation-duration: $duration*4;
   animation-name: element-in-up;
   animation-fill-mode: both;
-  padding-bottom: em($m-base-rhythm*4);
+  padding-top: em($m-base-rhythm*2);
+  padding-bottom: em($m-base-rhythm*5);
 
   @include min-screen(col(8)) {
-    padding-bottom: em($d-base-rhythm*4);
+    padding-top: em($d-base-rhythm*2);
+    padding-bottom: em($d-base-rhythm*5);
   }
 }
 
@@ -86,7 +92,7 @@
 */
 
 .canvas-project {
-  background-color: $background;
+  background-color: $l-background-color;
 }
 
 .project {

@@ -14,7 +14,7 @@
   align-items: flex-start;
   align-content: flex-start;
   @include min-screen(col(8)) {
-    width: col(8);
+    //width: col(8);
     margin-top: em($d-base-rhythm);
     margin-right: em(-$d-gut/2);
     margin-left: em(-$d-gut/2);
@@ -109,8 +109,8 @@ div {
       transition-duration: 0.2s;
       transition-property: background-color;
       text-align: center;
-      color: $button-type-color;
-      background-color: $button-background-color;
+      color: $l-button-type-color;
+      background-color: $l-button-background-color;
 
       @include face(sans);
       @include font-size($m-small-size, $m-small-line);

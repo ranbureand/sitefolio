@@ -2,19 +2,19 @@
 
 ::-webkit-input-placeholder {
   opacity: 1.0;
-  color: $placeholder-type-color;
+  color: $l-placeholder-type-color;
 }
 :-moz-placeholder {
   opacity: 1.0; /* Firefox 18- */
-  color: $placeholder-type-color;
+  color: $l-placeholder-type-color;
 }
 ::-moz-placeholder {
   opacity: 1.0;  /* Firefox 19+ */
-  color: $placeholder-type-color;
+  color: $l-placeholder-type-color;
 }
 :-ms-input-placeholder {
   opacity: 1.0;
-  color: $placeholder-type-color;
+  color: $l-placeholder-type-color;
 }
 
 /*
@@ -168,21 +168,21 @@ optgroup {
   textarea {
     width: 100%;
     padding: em($m-medium-line/4 + strip(-$field-border-width/10), $m-medium-size) em($m-gut/2, $m-medium-size) em($m-medium-line/4 + strip(-$field-border-width/10), $m-medium-size) em($m-gut/2, $m-medium-size);
-    color: $type-color;
-    border: $field-border-width solid $field-border-color;
-    background-color: $field-background-color;
+    color: $l-type-color;
+    border: $field-border-width solid $l-field-border-color;
+    background-color: $l-field-background-color;
 
     @include font-size($m-medium-size, $m-medium-line);
     &:focus,
     &:hover {
-      color: $strong-type-color;
+      color: $l-strong-type-color;
     }
     &:hover {
-      border-color: $strong-field-border-color;
+      border-color: $l-strong-field-border-color;
     }
     &:focus,
     &:focus:hover {
-      border-color: $strong-field-border-color;
+      border-color: $l-strong-field-border-color;
     }
   }
   input[type = "text"] {
@@ -203,9 +203,9 @@ optgroup {
     display: inline-block;
     height: em($m-medium-line*1.5, $m-medium-size);
     padding: em($m-medium-line/4 + strip(-$button-border-width/10), $m-medium-size) em($m-gut*3, $m-medium-size) em($m-medium-line/4 + strip(-$button-border-width/10), $m-medium-size) em($m-gut*3, $m-medium-size);
-    color: $button-type-color;
-    border: $button-border-width solid $button-background-color;
-    background-color: $button-background-color;
+    color: $l-button-type-color;
+    border: $button-border-width solid $l-button-background-color;
+    background-color: $l-button-background-color;
 
     @include font-size($m-medium-size, $m-medium-line);
     &:hover,

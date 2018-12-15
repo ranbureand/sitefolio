@@ -4,17 +4,30 @@
 ** Filters
 */
 
+.filters {
+  margin-top: em(-$m-large-line/2);
+  margin-bottom: em(-$m-large-line/2);
+  @include min-screen(col(12)) {
+    margin-top: em(-$d-large-line/2);
+    margin-bottom: em(-$d-large-line/2);
+  }
+  @include min-screen(col(12)) {
+    margin-top: em(-$d-small-line/2);
+    margin-bottom: em(-$d-small-line/2);
+  }
+}
+
 .filter {
   width: 100/2*1%;
   text-align: center;
 
   @include font-size($m-large-size, $m-large-line);
   a {
-    font-weight: $medium;
+    font-weight: $normal;
     position: relative;
     display: block;
     padding: em($m-large-line/2, $m-large-size) em($m-gut/2, $m-large-size);
-    color: $strong-type-color;
+    color: $d-strong-type-color;
     &:hover {
       color: $color;
     }
@@ -28,7 +41,7 @@
       display: block;
       height: em($m-large-line, $m-large-size);
       content: "";
-      border-left: $border-width solid $border-color;
+      border-left: $border-width solid $d-border-color;
     }
   }
   @include min-screen(col(8)) {
@@ -37,7 +50,7 @@
     @include font-size($d-large-size, $d-large-line);
     a {
       padding: em($d-large-line/2, $d-large-size) em($d-gut/2, $d-large-size);
-      &:after {
+      &:before {
         top: em($d-large-line/2, $d-large-size);
         height: em($d-large-line, $d-large-size);
       }

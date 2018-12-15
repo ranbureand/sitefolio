@@ -6,34 +6,36 @@
 
 .previews {
   padding-top: em($m-base-rhythm);
-  padding-bottom: em($m-base-rhythm/2);
   li {
     animation-duration: $duration*4;
-    animation-name: element-in-up;
+    animation-name: element-in;
     animation-fill-mode: both;
     width: 100/2*1%;
-    margin-bottom: em($m-base-rhythm*1.5);
+    margin-bottom: em($m-base-rhythm*2);
     padding-right: em($m-gut/2);
     padding-left: em($m-gut/2);
   }
   @include min-screen(col(8)) {
-    padding-top: em($d-base-rhythm/2);
-    padding-bottom: em($d-base-rhythm/2);
+    padding-top: em($d-base-rhythm);
     li {
       width: 100/2*1%;
-      margin-bottom: em($d-base-rhythm*1.5);
+      margin-bottom: em($d-base-rhythm*2);
       padding-right: em($d-gut/2);
       padding-left: em($d-gut/2);
     }
   }
   @include min-screen(col(12)) {
     li {
-      width: 100/3*1%;
+      width: 100/2*1%;
+      padding-right: em($d-gut*4);
+      padding-left: em($d-gut*4);
     }
   }
   @include min-screen(col(16)) {
     li {
-      width: 100/4*1%;
+      width: 100/3*1%;
+      padding-right: em($d-gut*2);
+      padding-left: em($d-gut*2);
     }
   }
 }
@@ -57,23 +59,23 @@
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding-bottom: 100/4*3%;
+    padding-bottom: 100/2*3%;
     content: "";
     transition-timing-function: ease-out, ease-out, ease-out, ease-out;
     transition-duration: $duration, $duration, $duration, $duration;
     transition-property: height, opacity, transform, width;
     transform-origin: 50% 0 ;
     opacity: 0.0;
-    background-color: $picture-background-color;
+    background-color: $d-picture-background-color;
   }
   .preview-image {
     position: relative;
-    padding-bottom: 100/4*3%;
+    padding-bottom: 100/2*3%;
     transition-timing-function: ease-out;
     transition-duration: $duration;
     transition-property: transform;
     transform: translate(0, 0);
-    background-color: $picture-background-color;
+    background-color: $d-picture-background-color;
 
     @include font-size($m-tiny-size, $m-tiny-line);
     img {
@@ -82,26 +84,30 @@
     }
   }
   .preview-title {
-    font-weight: $medium;
+    font-weight: $normal;
     margin-top: em($m-small-line/2, $m-small-size);
     transition-timing-function: ease-in-out;
     transition-duration: 0.2s;
     transition-property: color;
-    color: $strong-type-color;
+    color: $d-strong-type-color;
+    //text-decoration: underline;
 
     @include font-size($m-small-size, $m-small-line);
+    sup {
+      text-decoration: none;
+    }
   }
   .preview-tags {
     @include face(serif);
     font-style: italic;
     margin-top: em($m-tiny-line/4, $m-tiny-size);
-    color: $type-color;
+    color: $d-type-color;
 
     @include font-size($m-tiny-size, $m-tiny-line);
   }
   .preview-time {
     margin-top: em($m-small-line/4, $m-small-size);
-    color: $type-color;
+    color: $d-type-color;
 
     @include face(mono);
     @include font-size($m-small-size, $m-small-line);

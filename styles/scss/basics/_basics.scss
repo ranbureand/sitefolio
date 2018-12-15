@@ -5,13 +5,13 @@
 */
 
 ::-moz-selection {
-  color: $selected-type-color;
-  background-color: $selected-background-color;
+  color: $l-selected-type-color;
+  background-color: $l-selected-background-color;
   text-shadow: none;
 }
 ::selection {
-  color: $selected-type-color;
-  background-color: $selected-background-color;
+  color: $l-selected-type-color;
+  background-color: $l-selected-background-color;
   text-shadow: none;
 }
 
@@ -38,7 +38,7 @@ img::selection {
 html {
   font-size: 100% * $base-font-size / $browser-default-font-size;
   height: 100%;
-  color: $type-color;
+  color: $l-type-color;
 
   @include font-size($base-font-size, $base-font-line);
       -ms-text-size-adjust: 100%; // normalize.css
@@ -61,7 +61,7 @@ body {
   margin: 0; // normalize.css
 
   counter-reset: footnotes images ordered-list;
-  background-color: $background;
+  background-color: $l-background-color;
 }
 
 /*
@@ -147,7 +147,7 @@ h6 {
 
   margin: 0;
   font-weight: $normal;
-  color: $strong-type-color;
+  color: $l-strong-type-color;
 }
 
 ul,
@@ -161,7 +161,7 @@ dl {
   margin: 0;
   dt {
     font-style: italic;
-    color: $strong-type-color;
+    color: $l-strong-type-color;
   }
   dd {
     margin: 0;
@@ -180,12 +180,12 @@ abbr[title] {
 strong {
   font-weight: $medium; // normalize.css
 
-  color: $strong-type-color;
+  color: $l-strong-type-color;
 }
 
 q {
   font-style: italic;
-  color: $strong-type-color;
+  color: $l-strong-type-color;
   &:before {
     content: "“";
   }
@@ -237,7 +237,7 @@ code,
 samp,
 kbd,
 mark {
-  color: $type-color;
+  color: $l-type-color;
 }
 code,
 samp,
@@ -248,7 +248,7 @@ code,
 kbd,
 mark {
   padding: 0.1em 0.2em;
-  background-color: $code-background-color;
+  background-color: $l-code-background-color;
   border-radius: 2px 2px;
 }
 pre {
@@ -256,7 +256,7 @@ pre {
   overflow: auto; // normalize.css
 
   white-space: normal;
-  background-color: $code-background-color;
+  background-color: $l-code-background-color;
   border-radius: 2px 2px;
   code {
     display: block;
@@ -269,7 +269,7 @@ pre {
 blockquote {
   font-style: italic;
   margin: 0;
-  border-color: $border-color;
+  border-color: $l-border-color;
   em {
     font-style: normal;
   }
@@ -287,7 +287,7 @@ hr {
   height: $border-width;
   padding: 0;
   border: 0;
-  border-top: $border-width solid $border-color;
+  border-top: $border-width solid $l-border-color;
 }
 
 /*
@@ -298,14 +298,14 @@ img,
 iframe {
   display: block;
   max-width: 100%;
-  background-color: $picture-background-color;
+  background-color: $l-picture-background-color;
 }
 
 img {
   font-weight: $normal;
   text-align: center;
   -ms-interpolation-mode: bicubic;
-  color: $light-type-color;
+  color: $l-light-type-color;
   border-style: none; // normalize.css
 
   image-rendering: optimizeQuality;

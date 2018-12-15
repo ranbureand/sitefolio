@@ -7,60 +7,66 @@
 
 $black:                         #000;
 $white:                         #fff;
-$color:                         #f54159; // HSB(340,100,100) HSBlu(8,88,56)
-$background:                    #FCFCFC; // HSB(0,0,98)
-$canvas:                        #F0F0F0;
-$d-background:                  #141414;
-$d-canvas:                      #000;
 
-$card-background-color: #F2F2F2;
-$card-shadow: #E8E8E8;
+$color:                         #fc5568; // HSBlu(8,96,60)
+$color-2:                       #8b81fb; // HSBlu(264,96,60)
+
+$l-background:                  #fafafa; // HSBlu(0,0,98)
+$d-background:                  #131313;
 
 /*
 ** Typography
 */
 
-$strong-type-color:             rgba($black, 0.92);
-$type-color:                    rgba($black, 0.92);
-$light-type-color:              rgba($black, 0.92);
+$l-strong-type-color:           rgba($black, 0.92);
+$l-type-color:                  rgba($black, 0.92);
+$l-light-type-color:            rgba($black, 0.92);
+$d-strong-type-color:           rgba($white, 0.88);
+$d-type-color:                  rgba($white, 0.88);
+$d-light-type-color:            rgba($white, 0.88);
 
-$d-strong-type-color:           rgba($white, 0.96);
-$d-type-color:                  rgba($white, 0.96);
-$d-light-type-color:            rgba($white, 0.96);
-
-$selected-type-color:           rgba($black, 0.92);
+$l-selected-type-color:         rgba($black, 0.92);
 $d-selected-type-color:         rgba($white, 0.96);
 
-$placeholder-type-color:        rgba($black, 0.24);
+$l-placeholder-type-color:      rgba($black, 0.24);
+$d-placeholder-type-color:      rgba($black, 0.24); // to be defined
 
-$button-type-color:             $background;
+$l-button-type-color:           rgba($white, 0.96);
+$d-button-type-color:           rgba($black, 0.92);
 
 /*
 ** Backgrounds
 */
 
-$background-color:              $background;
+$l-background-color:            $l-background;
+$d-background-color:            $d-background;
 
-$code-background-color:         $canvas;
+$l-code-background-color:       rgba($black, 0.04);
+$l-code-background-color:       rgba($white, 0.06);
 
-$selected-background-color:     rgba($black, 0.04);
-$d-selected-background-color:   rgba($white, 0.08);
+$l-selected-background-color:   rgba($black, 0.04);
+$d-selected-background-color:   rgba($white, 0.06);
 
-$balloon-background-color:      rgba($black, 0.04);
-$d-balloon-background-color:    rgba($white, 0.08);
+$l-balloon-background-color:    rgba($black, 0.04);
+$d-balloon-background-color:    rgba($white, 0.06);
 
-$field-background-color:        $background;
+$l-field-background-color:      $l-background-color;
+$d-field-background-color:      $d-background-color; // to be defined
 
-$button-background-color:       $strong-type-color;
+$l-button-background-color:     $l-strong-type-color;
+$d-button-background-color:     $d-strong-type-color; // to be defined
 
-$picture-background-color:      rgba($black, 0.04); // HSB(0,0,92)
+$l-picture-background-color:    rgba($black, 0.04);
+$d-picture-background-color:    rgba($white, 0.06);
 
 /*
 ** Borders
 */
 
-$border-color:                  rgba($black, 0.92);
-$l-border-color:                rgba($white, 1.00);
+$l-border-color:                rgba($black, 0.92);
+$d-border-color:                rgba($white, 0.40);
 
-$strong-field-border-color:     rgba($black, 0.92);
-$field-border-color:            rgba($black, 0.24);
+$l-strong-field-border-color:   rgba($black, 0.92);
+$l-field-border-color:          rgba($black, 0.24);
+$d-strong-field-border-color:   rgba($black, 0.92); // to be defined
+$d-field-border-color:          rgba($black, 0.24); // to be defined
