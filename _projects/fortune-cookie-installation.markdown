@@ -12,7 +12,7 @@ categories: [All, Digital, Favorite, Non-Commercial, Print, Research, Static Ima
 tags: [dream, image search results, installation, postcards, print, search engines]
 
 preview_image: 'fortune_cookie_installation_00.jpg'
-preview_color: '#FDE6AF'
+preview_color: '#E3E4DF'
 
 excerpt: 'The installation investigates the dynamics between users, images and image search engines in the current panorama of the Web.'
 exordium: 'The installation investigates the dynamics between users, images and image search engines in the current panorama of the Web.'
@@ -21,12 +21,12 @@ publish: 'yes'
 ---
 
 <div class="figures">
-    {% include image.html 
-        size="xl" 
-        h="2" w="3" 
-        src="fortune_cookie_01.jpg" 
-        alt="A picture of the installation Fortune Cookie." 
-        color="#E3E4DF" 
+    {% include image.html
+        size="xl"
+        h="2" w="3"
+        src="fortune_cookie_01.jpg"
+        alt="A picture of the installation Fortune Cookie."
+        color="#E3E4DF"
     %}
 </div>
 
@@ -51,24 +51,24 @@ pictures of the installation by
 The installation correlates two different but comparable **web image archives**: **the first**—potentially infinite—one is being continuously powered by users through the site [Fortune Cookie](http://fortune-cookie.andreaburan.com/ "Fortune Cookie site"), while **the second**—actually finite—one consists of images retrieved from a sample of ten image search engines.
 
 <div class="figures">
-    {% include image.html 
-        size="l" 
-        h="2" w="3" 
-        src="fortune_cookie_64.jpg" 
-        alt="A picture of the installation Fortune Cookie." 
-        color="#E3E4DF" 
+    {% include image.html
+        size="l"
+        h="2" w="3"
+        src="fortune_cookie_64.jpg"
+        alt="A picture of the installation Fortune Cookie."
+        color="#E3E4DF"
     %}
 </div>
 
 In **the first** archive, the links to the images submitted by the participants and collected through the site are aggregated together in a single cluster and printed on-the-fly by means of a digital printer installed on the spot.
 
 <div class="figures">
-    {% include image.html 
-        size="xl" 
-        h="2" w="3" 
-        src="fortune_cookie_16.jpg" 
-        alt="A picture of the installation Fortune Cookie." 
-        color="#E3E4DF" 
+    {% include image.html
+        size="xl"
+        h="2" w="3"
+        src="fortune_cookie_16.jpg"
+        alt="A picture of the installation Fortune Cookie."
+        color="#E3E4DF"
     %}
 </div>
 
@@ -81,12 +81,12 @@ In **the first** archive, the links to the images submitted by the participants 
 Starting from the unusual **assumption** that every search engine has indeed its own **subjectivity** and thus a clear, univocal **idea** of what *dream* should be, all clusters of images are treated and introduced as if they were collected by an out-and-out **test subject**.
 
 <div class="figures">
-    {% include image.html 
-        size="xl" 
-        h="2" w="3" 
-        src="fortune_cookie_05.jpg" 
-        alt="A picture of the installation Fortune Cookie." 
-        color="#E3E4DF" 
+    {% include image.html
+        size="xl"
+        h="2" w="3"
+        src="fortune_cookie_05.jpg"
+        alt="A picture of the installation Fortune Cookie."
+        color="#E3E4DF"
     %}
 </div>
 

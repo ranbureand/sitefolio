@@ -21,14 +21,14 @@ publish: 'yes'
 ---
 
 <div class="figures">
-    {% include video.html 
-        size="m" 
-        h="9" w="16" 
-        src="dolmus_and_minibus_map_of_istanbul_video_00.jpg" 
-        alt="A frame from the video Dolmuş & Minibüs Map of Istanbul." 
-        link="https://vimeo.com/71029587" 
-        text="Watch on Vimeo" 
-        color="#FD9900" 
+    {% include video.html
+        size="m"
+        h="9" w="16"
+        src="dolmus_and_minibus_map_of_istanbul_video_00.jpg"
+        alt="A frame from the video Dolmuş & Minibüs Map of Istanbul."
+        link="https://vimeo.com/71029587"
+        text="Watch on Vimeo"
+        color="#FD9900"
     %}
 </div>
 
@@ -45,79 +45,79 @@ client
 : Superpool
 
 <div class="figures">
-    {% include image.html 
-        size="m" 
-        h="9" w="16" 
-        src="dolmus_and_minibus_map_of_istanbul_storyboad_05.jpg" 
-        alt="A drawing from the preparatory storyboard done for pre-visualizing the animation Dolmuş & Minibüs Map of Istanbul." 
-        color="#FD9900" 
+    {% include image.html
+        size="m"
+        h="9" w="16"
+        src="dolmus_and_minibus_map_of_istanbul_storyboad_05.jpg"
+        alt="A drawing from the preparatory storyboard done for pre-visualizing the animation Dolmuş & Minibüs Map of Istanbul."
+        color="#FD9900"
     %}
-    {% include image.html 
-        size="m" 
-        h="9" w="16" 
-        src="dolmus_and_minibus_map_of_istanbul_05.jpg" 
-        alt="A frame from the video Dolmuş & Minibüs Map of Istanbul." 
-        color="#FD9900" 
+    {% include image.html
+        size="m"
+        h="9" w="16"
+        src="dolmus_and_minibus_map_of_istanbul_05.jpg"
+        alt="A frame from the video Dolmuş & Minibüs Map of Istanbul."
+        color="#FD9900"
     %}
 </div>
 
 Here are some illustrations from the preliminary storyboard coupled with the corresponding frames of the final cut.
 
 <div class="figures">
-    {% include image.html 
-        size="m" 
-        h="9" w="16" 
-        src="dolmus_and_minibus_map_of_istanbul_storyboad_12.jpg" 
-        alt="A drawing from the preparatory storyboard done for pre-visualizing the animation Dolmuş & Minibüs Map of Istanbul." 
-        color="#FD9900" 
+    {% include image.html
+        size="m"
+        h="9" w="16"
+        src="dolmus_and_minibus_map_of_istanbul_storyboad_12.jpg"
+        alt="A drawing from the preparatory storyboard done for pre-visualizing the animation Dolmuş & Minibüs Map of Istanbul."
+        color="#FD9900"
     %}
-    {% include image.html 
-        size="m" 
-        h="9" w="16" 
-        src="dolmus_and_minibus_map_of_istanbul_12.jpg" 
-        alt="A frame from the video Dolmuş & Minibüs Map of Istanbul." 
-        color="#FD9900" 
+    {% include image.html
+        size="m"
+        h="9" w="16"
+        src="dolmus_and_minibus_map_of_istanbul_12.jpg"
+        alt="A frame from the video Dolmuş & Minibüs Map of Istanbul."
+        color="#FD9900"
     %}
-    {% include image.html 
-        size="m" 
-        h="9" w="16" 
-        src="dolmus_and_minibus_map_of_istanbul_storyboad_13.jpg" 
-        alt="A drawing from the preparatory storyboard done for pre-visualizing the animation Dolmuş & Minibüs Map of Istanbul." 
-        color="#FD9900" 
+    {% include image.html
+        size="m"
+        h="9" w="16"
+        src="dolmus_and_minibus_map_of_istanbul_storyboad_13.jpg"
+        alt="A drawing from the preparatory storyboard done for pre-visualizing the animation Dolmuş & Minibüs Map of Istanbul."
+        color="#FD9900"
     %}
-    {% include image.html 
-        size="m" 
-        h="9" w="16" 
-        src="dolmus_and_minibus_map_of_istanbul_13.jpg" 
-        alt="A frame from the video Dolmuş & Minibüs Map of Istanbul." 
-        color="#FD9900" 
+    {% include image.html
+        size="m"
+        h="9" w="16"
+        src="dolmus_and_minibus_map_of_istanbul_13.jpg"
+        alt="A frame from the video Dolmuş & Minibüs Map of Istanbul."
+        color="#FD9900"
     %}
-    {% include image.html 
-        size="m" 
-        h="9" w="16" 
-        src="dolmus_and_minibus_map_of_istanbul_storyboad_16.jpg" 
-        alt="A drawing from the preparatory storyboard done for pre-visualizing the animation Dolmuş & Minibüs Map of Istanbul." 
-        color="#FD9900" 
+    {% include image.html
+        size="m"
+        h="9" w="16"
+        src="dolmus_and_minibus_map_of_istanbul_storyboad_16.jpg"
+        alt="A drawing from the preparatory storyboard done for pre-visualizing the animation Dolmuş & Minibüs Map of Istanbul."
+        color="#FD9900"
     %}
-    {% include image.html 
-        size="m" 
-        h="9" w="16" 
-        src="dolmus_and_minibus_map_of_istanbul_16.jpg" 
-        alt="A frame from the video Dolmuş & Minibüs Map of Istanbul." 
-        color="#FD9900" 
+    {% include image.html
+        size="m"
+        h="9" w="16"
+        src="dolmus_and_minibus_map_of_istanbul_16.jpg"
+        alt="A frame from the video Dolmuş & Minibüs Map of Istanbul."
+        color="#FD9900"
     %}
-    {% include image.html 
-        size="m" 
-        h="9" w="16" 
-        src="dolmus_and_minibus_map_of_istanbul_storyboad_20.jpg" 
-        alt="A drawing from the preparatory storyboard done for pre-visualizing the animation Dolmuş & Minibüs Map of Istanbul." 
-        color="#FD9900" 
+    {% include image.html
+        size="m"
+        h="9" w="16"
+        src="dolmus_and_minibus_map_of_istanbul_storyboad_20.jpg"
+        alt="A drawing from the preparatory storyboard done for pre-visualizing the animation Dolmuş & Minibüs Map of Istanbul."
+        color="#FD9900"
     %}
-    {% include image.html 
-        size="m" 
-        h="9" w="16" 
-        src="dolmus_and_minibus_map_of_istanbul_20.jpg" 
-        alt="A frame from the video Dolmuş & Minibüs Map of Istanbul." 
-        color="#FD9900" 
+    {% include image.html
+        size="m"
+        h="9" w="16"
+        src="dolmus_and_minibus_map_of_istanbul_20.jpg"
+        alt="A frame from the video Dolmuş & Minibüs Map of Istanbul."
+        color="#FD9900"
     %}
 </div>
