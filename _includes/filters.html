@@ -3,7 +3,7 @@
         <nav class="column-2d-l">
           <ul class="filters layout-1d-rtl">
             {% for category in categories %}
-            <li class="filter element-1d{% if category.title == page.title %} current{% endif %}">
+            <li class="filter element-1d{% if category.title == page.title or category.title == 'Favorite Projects' and page.url == '/' %} current{% endif %}">
               <a href="{{ category.url | prepend: site.baseurl }}">{{ category.category }}</a>
             </li>
             {% endfor %}
