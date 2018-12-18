@@ -23,9 +23,8 @@
                 {{ category.content | markdownify }}
               {% endfor %}
             {% endif %}
-            <div class="balloon-dark typo-s">
-              {% include disclaimer.html %}
-            </div>
+
+            {% include disclaimer.html %}
           </div>
 
           {% if page.layout == 'categories' %}
