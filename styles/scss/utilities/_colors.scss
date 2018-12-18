@@ -42,13 +42,10 @@ $l-background-color:            $l-background;
 $d-background-color:            $d-background;
 
 $l-code-background-color:       rgba($black, 0.04);
-$l-code-background-color:       rgba($white, 0.06);
+$d-code-background-color:       rgba($white, 0.06);
 
 $l-selected-background-color:   rgba($black, 0.04);
 $d-selected-background-color:   rgba($white, 0.06);
-
-$l-balloon-background-color:    rgba($black, 0.04);
-$d-balloon-background-color:    rgba($white, 0.06);
 
 $l-field-background-color:      $l-background-color;
 $d-field-background-color:      $d-background-color; // to be defined
@@ -58,6 +55,9 @@ $d-button-background-color:     $d-strong-type-color; // to be defined
 
 $l-picture-background-color:    rgba($black, 0.04);
 $d-picture-background-color:    rgba($white, 0.06);
+
+$l-balloon-background-color:    rgba($black, 0.04);
+$d-balloon-background-color:    rgba($white, 0.06);
 
 /*
 ** Borders

@@ -95,7 +95,7 @@
     p {
       @include font-size($d-super-large-size, $d-super-large-line);
       & + p {
-        margin-top: em($d-super-large-line, $d-super-large-size);
+        margin-top: em($d-super-large-line/2, $d-super-large-size);
       }
     }
   }
