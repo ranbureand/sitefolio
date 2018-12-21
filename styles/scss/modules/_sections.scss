@@ -52,8 +52,11 @@
 .canvas-planet {
   overflow: hidden;
   background-color: $d-background-color-2;
-  height: em($m-base-rhythm*4);
+  height: em($m-base-rhythm*2);
   position: relative;
+  @include min-screen(col(8)) {
+    height: em($d-base-rhythm*2);
+  }
 }
 
 .planet {
