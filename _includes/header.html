@@ -1,5 +1,5 @@
-      <div class="canvas-header {% if page.layout == 'base' %}dark-canvas{% endif %}">
-        <header class="header {% if page.layout == 'base' %}dark-words{% endif %} layout-2d" id="outer-space">
+      <div class="canvas-header {% if page.layout == 'base' %}canvas-color-2{% elsif page.layout == 'categories' %}canvas-dark{% endif %}">
+        <header class="header {% if page.layout == 'base' or page.layout == 'categories' %}dark-words{% endif %} layout-2d" id="outer-space">
           <h1 class="header-title"><a href="{{ site.baseurl }}/"><span class="hidden">Andrea Buran’s</span> Sitefolio<sup class="color">4</sup></a></h1>
           <div class="header-motto">Hello Outer Space<span class="color">!</span></div>
         </header>

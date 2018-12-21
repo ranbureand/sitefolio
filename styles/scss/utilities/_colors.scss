@@ -9,10 +9,11 @@ $black:                         #000;
 $white:                         #fff;
 
 $color:                         #fc5568; // HSBlu(8,96,60)
-$color-2:                       #8b81fb; // HSBlu(264,96,60)
+$color-2:                       #8f6efa; // HSBlu(272,96,56)
 
 $l-background:                  #fafafa; // HSBlu(0,0,98)
 $d-background:                  #131313;
+$d-background-2:                #4A3982;
 
 /*
 ** Typography
@@ -21,6 +22,7 @@ $d-background:                  #131313;
 $l-strong-type-color:           rgba($black, 0.92);
 $l-type-color:                  rgba($black, 0.92);
 $l-light-type-color:            rgba($black, 0.92);
+
 $d-strong-type-color:           rgba($white, 0.88);
 $d-type-color:                  rgba($white, 0.88);
 $d-light-type-color:            rgba($white, 0.88);
@@ -40,6 +42,7 @@ $d-button-type-color:           rgba($black, 0.92);
 
 $l-background-color:            $l-background;
 $d-background-color:            $d-background;
+$d-background-color-2:          $d-background-2;
 
 $l-code-background-color:       rgba($black, 0.04);
 $d-code-background-color:       rgba($white, 0.06);

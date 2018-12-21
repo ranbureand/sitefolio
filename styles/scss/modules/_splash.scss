@@ -4,64 +4,14 @@
 ** Splash
 */
 
-.cover,
 .pitch {
   grid-row: 1;
-}
-
-.cover {
-  z-index: 1;
-  margin-top: 0;
-  position: relative;
-  height: em($m-base-rhythm*20);
-
-  div {
-    position: absolute;
-    top: 0;
-    right: -100%;
-    left: -100%;
-    width: em($m-base-rhythm*20);
-    height: em($m-base-rhythm*20);
-    margin-right: auto;
-    margin-left: auto;
-    animation-name: rotation;
-    animation-duration: 960s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    border-radius: 50%;
-    background-color: #0a0a0a;
-    background-image: url("../../media/graphics/planet_00.jpg");
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: 100% 100%;
-  }
-  @include min-screen(col(8)) {
-    height: em($d-base-rhythm*18);
-    div {
-      width: em($d-base-rhythm*18);
-      height: em($d-base-rhythm*18);
-    }
-  }
-  @include min-screen(col(12)) {
-    height: em($d-base-rhythm*28);
-    div {
-      width: em($d-base-rhythm*26);
-      height: em($d-base-rhythm*26);
-    }
-  }
-  @include min-screen(col(16)) {
-    height: em($d-base-rhythm*24);
-    div {
-      width: em($d-base-rhythm*24);
-      height: em($d-base-rhythm*24);
-    }
-  }
 }
 
 .pitch {
   z-index: 2;
   margin-top: em($m-base-rhythm*2);
-  margin-bottom: em($m-base-rhythm*2);
+  margin-bottom: em($m-base-rhythm*4);
 
   p {
     font-weight: $normal;
@@ -83,7 +33,7 @@
   }
   @include min-screen(col(8)) {
     margin-top: em($d-base-rhythm*2);
-    margin-bottom: em($d-base-rhythm*2);
+    margin-bottom: em($d-base-rhythm*4);
     p {
       @include font-size($t-super-large-size, $t-super-large-line);
       & + p {
@@ -98,19 +48,5 @@
         margin-top: em($d-super-large-line/2, $d-super-large-size);
       }
     }
-  }
-}
-
-.reference {
-  margin-top: em($m-base-rhythm*2);
-
-  @include min-screen(col(8)) {
-    margin-top: em($d-base-rhythm*2);
-  }
-  @include min-screen(col(12)) {
-    padding-left: calc((100% - #{em($d-gut*2)}) / 3 + #{em($d-gut*1)});
-  }
-  @include min-screen(col(16)) {
-    padding-left: calc((100% - #{em($d-gut*3)}) / 2 + #{em($d-gut*2)});
   }
 }

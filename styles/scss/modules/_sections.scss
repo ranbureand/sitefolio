@@ -18,8 +18,12 @@
   }
 }
 
-.dark-canvas {
+.canvas-dark {
   background-color: $d-background-color;
+}
+
+.canvas-color-2 {
+  background-color: $d-background-color-2;
 }
 
 /*
@@ -28,7 +32,7 @@
 
 .canvas-splash {
   overflow: hidden;
-  background-color: $d-background-color;
+  background-color: $d-background-color-2;
 }
 
 .splash {
@@ -42,6 +46,44 @@
   }
   @include min-screen(col(12)) {
     //padding-bottom: em($d-base-rhythm*4);
+  }
+}
+
+.canvas-planet {
+  overflow: hidden;
+  background-color: $d-background-color-2;
+  height: em($m-base-rhythm*4);
+  position: relative;
+}
+
+.planet {
+  background-color: $d-background-color;
+  width: $planet-diameter;
+  padding-bottom: $planet-diameter;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  //right: 0;
+  transform: translate(-50%, 0);
+}
+
+/*
+** About
+*/
+
+.canvas-about {
+  background-color: $d-background-color;
+}
+
+.about {
+  animation-duration: $duration*4;
+  animation-name: element-in-up;
+  animation-fill-mode: both;
+  padding-top: em($m-base-rhythm*2);
+
+  @include min-screen(col(8)) {
+    padding-top: em($d-base-rhythm*2);
   }
 }
 
