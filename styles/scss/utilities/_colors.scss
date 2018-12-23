@@ -8,12 +8,18 @@
 $black:                         #000;
 $white:                         #fff;
 
-$color:                         #fc5568; // HSBlu(8,96,60)
-$color-2:                       #8f6efa; // HSBlu(272,96,56)
+$l-color-1:                     #fc5568; // HSBlu(8,96,60)
+$d-color-1:                     #fc6c7a; // HSBlu(8,96,64)
+
+$l-color-2:                     #987cfb; // HSBlu(272,96,60)
+$d-color-2:                     #a18afb; // HSBlu(272,96,64)
 
 $l-background:                  #fafafa; // HSBlu(0,0,98)
-$d-background:                  #131313;
-$d-background-2:                #4A3982;
+$d-background:                  #131313; // HSBlu(0,0,6)
+
+$d-background-1:                #813039; // HSBlu(8,56,32)
+
+$d-background-2:                #513c92; // HSBlu(272,56,32)
 
 /*
 ** Typography

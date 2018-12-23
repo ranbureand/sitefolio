@@ -29,10 +29,10 @@
     padding: em($m-large-line/2, $m-large-size) em($m-gut/2, $m-large-size);
     color: $d-strong-type-color;
     &:hover {
-      color: $color;
+      color: $d-color-1;
     }
     &:active {
-      color: $color;
+      color: $d-color-1;
     }
     &:before {
       position: absolute;
@@ -105,6 +105,6 @@
 .filter.current {
   a {
     cursor: default;
-    color: $color;
+    color: $d-color-1;
   }
 }

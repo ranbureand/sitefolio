@@ -118,11 +118,11 @@ a {
   color: inherit;
   &:hover {
     outline: 0; // normalize.css
-    color: $color;
+    color: $l-color-1;
   }
   &:active {
     outline: 0; // normalize.css
-    color: $color;
+    color: $l-color-1;
     transition-duration: 0.0s;
   }
   &:focus {

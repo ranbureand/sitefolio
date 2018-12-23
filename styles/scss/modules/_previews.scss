@@ -90,7 +90,6 @@
     transition-duration: 0.2s;
     transition-property: color;
     color: $d-strong-type-color;
-    //text-decoration: underline;
 
     @include font-size($m-small-size, $m-small-line);
     sup {
@@ -122,7 +121,7 @@
       transform: translate(0, em(-$m-gut/2*3, $m-tiny-size));
     }
     .preview-title {
-      color: $color;
+      color: $d-color-1;
     }
   }
   &:active {
@@ -132,7 +131,7 @@
     }
     .preview-title {
       transition-duration: 0.0s;
-      color: $color;
+      color: $d-color-1;
     }
   }
   @include min-screen(col(8)) {
@@ -183,7 +182,7 @@
     transform: translate(0, em(-$m-gut/2*3, $m-tiny-size));
   }
   .preview-title {
-    color: $color;
+    color: $d-color-1;
   }
   @include min-screen(col(8)) {
     &:before {

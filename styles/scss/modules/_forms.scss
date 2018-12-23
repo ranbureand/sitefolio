@@ -210,8 +210,8 @@ optgroup {
     @include font-size($m-medium-size, $m-medium-line);
     &:hover,
     &:active {
-      border-color: $color;
-      background-color: $color;
+      border-color: $l-color-1;
+      background-color: $l-color-1;
     }
     &:active {
       transition-duration: 0s, 0s;
@@ -228,7 +228,7 @@ optgroup {
   .error {
     input[type = "text"],
     textarea {
-      border-color: $color;
+      border-color: $l-color-1;
     }
   }
   @include min-screen(col(8)) {

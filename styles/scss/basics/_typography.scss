@@ -6,7 +6,6 @@
 
 .dark-words {
   color: $d-strong-type-color;
-  //font-weight: $light;
   ::-moz-selection {
     color: $d-selected-type-color;
     background-color: $d-selected-background-color;
@@ -22,7 +21,15 @@
   h5,
   h6 {
     color: $d-strong-type-color;
-    //font-weight: $normal;
+  }
+  a {
+    &:hover,
+    &:active {
+      color: $d-color-1;
+    }
+  }
+  .color {
+    color: $d-color-1;
   }
 }
 

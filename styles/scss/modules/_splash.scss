@@ -23,13 +23,6 @@
     & + p {
       margin-top: em($m-super-large-line/2, $m-super-large-size);
     }
-    .asterisk {
-      &:after {
-        margin-left: 0.1em;
-        content: "*";
-        color: $color;
-      }
-    }
   }
   @include min-screen(col(8)) {
     margin-top: em($d-base-rhythm*2);
