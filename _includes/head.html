@@ -1,24 +1,24 @@
+  <!--
+
+  Welcome, websurfer.
+
+  This site is:
+
+  + designed and developed in the browser
+  + written in Kramdown
+  + generated through Jekyll
+  + scripted in JavaScript
+  + styled from scratch in SCSS
+  + typesetted in IBM Plex Mono, Sans and Serif
+
+  with love and patience by Andrea Buran.
+
+  -->
+
   <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-
-    <!--
-
-    Welcome, websurfer.
-
-    This site is:
-
-    + designed and developed in the browser
-    + written in Kramdown
-    + generated through Jekyll
-    + scripted in JavaScript
-    + styled from scratch in SCSS
-    + typesetted in IBM Plex Mono, Sans and Serif
-
-    with love and patience by Andrea Buran.
-
-    -->
 
     <title>{% if page.title %}{{ page.title | escape }} · {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines}}{% else %}{{ site.description }}{% endif %}"/>
