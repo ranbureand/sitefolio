@@ -17,7 +17,7 @@ preview_color: '#8F6EFA'
 excerpt: 'Actual size postcards of Venice. The city is represented as a pattern of various texture.'
 exordium: ''
 
-publish: 'yes'
+publish: 'no'
 ---
 
 tags
