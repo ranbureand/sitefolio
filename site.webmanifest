@@ -3,18 +3,17 @@
     "short_name": "Sitefolio",
     "icons": [
         {
-            "src": "/android-chrome-192x192.png?v=BGAeGPMXKQ",
+            "src": "/android-chrome-192x192.png?v=2018-12-26",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/android-chrome-512x512.png?v=BGAeGPMXKQ",
+            "src": "/android-chrome-512x512.png?v=2018-12-26",
             "sizes": "512x512",
             "type": "image/png"
         }
     ],
-    "theme_color": "#141414",
-    "background_color": "#141414",
-    "start_url": "http://www.andreaburan.com/",
+    "theme_color": "#513C92",
+    "background_color": "#513C92",
     "display": "standalone"
 }
