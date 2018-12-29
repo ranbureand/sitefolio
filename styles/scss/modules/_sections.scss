@@ -69,8 +69,7 @@
   width: $planet-diameter;
   padding-bottom: $planet-diameter;
 
-  transform: translate(-50%, 0);
-  animation-name: element-up-planet;
+  animation-name: planet-up;
   animation-duration: $duration*4;
 
   border-radius: 50%;

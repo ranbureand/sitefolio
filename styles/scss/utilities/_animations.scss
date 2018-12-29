@@ -43,3 +43,12 @@
     transform: translateY(0);
   }
 }
+
+@keyframes planet-up {
+  0% {
+    transform: translate(-50%, em($d-base-rhythm/2));
+  }
+  100% {
+    transform: translate(-50%, 0);
+  }
+}
