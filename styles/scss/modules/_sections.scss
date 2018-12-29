@@ -32,44 +32,53 @@
 
 .canvas-splash {
   overflow: hidden;
+
   background-color: $d-background-color-2;
 }
 
 .splash {
-  animation-duration: $duration*4;
   animation-name: element-in-up;
-  animation-fill-mode: both;
-  //padding-bottom: em($m-base-rhythm*4);
+  animation-duration: $duration*4;
 
-  @include min-screen(col(8)) {
-    //padding-bottom: em($d-base-rhythm*4);
-  }
-  @include min-screen(col(12)) {
-    //padding-bottom: em($d-base-rhythm*4);
-  }
+  animation-fill-mode: both;
 }
 
+/*
+** Planet
+*/
+
 .canvas-planet {
-  overflow: hidden;
-  background-color: $d-background-color-2;
-  height: em($m-base-rhythm*2);
   position: relative;
+
+  overflow: hidden;
+
+  height: em($m-base-rhythm*2);
+
+  background-color: $d-background-color-2;
+
   @include min-screen(col(8)) {
     height: em($d-base-rhythm*2);
   }
 }
 
 .planet {
-  background-color: $d-background-color;
-  width: $planet-diameter;
-  padding-bottom: $planet-diameter;
-  border-radius: 50%;
   position: absolute;
   top: 0;
   left: 50%;
-  //right: 0;
-  transform: translate(-50%, 0);
+
+  width: $planet-diameter;
+  padding-bottom: $planet-diameter;
+
+  animation-name: element-up-planet;
+  animation-duration: $duration*4;
+
+  border-radius: 50%;
+  background-color: $d-background-color;
+
+  animation-fill-mode: both;
+  //transform: translate(-50%, 0);
 }
+
 
 /*
 ** About
@@ -80,11 +89,12 @@
 }
 
 .about {
-  animation-duration: $duration*4;
-  animation-name: element-in-up;
-  animation-fill-mode: both;
   padding-top: em($m-base-rhythm*2);
 
+  animation-name: element-in-up;
+  animation-duration: $duration*4;
+
+  animation-fill-mode: both;
   @include min-screen(col(8)) {
     padding-top: em($d-base-rhythm*2);
   }
@@ -99,12 +109,13 @@
 }
 
 .projects {
-  animation-duration: $duration*4;
-  animation-name: element-in-up;
-  animation-fill-mode: both;
   padding-top: em($m-base-rhythm*2);
   padding-bottom: em($m-base-rhythm*3);
 
+  animation-name: element-in-up;
+  animation-duration: $duration*4;
+
+  animation-fill-mode: both;
   @include min-screen(col(8)) {
     padding-top: em($d-base-rhythm*2);
     padding-bottom: em($d-base-rhythm*3);
@@ -120,12 +131,13 @@
 }
 
 .details {
-  animation-duration: $duration*4;
-  animation-name: element-in-up;
-  animation-fill-mode: both;
   padding-top: em($m-base-rhythm*2);
   padding-bottom: em($m-base-rhythm*5);
 
+  animation-name: element-in-up;
+  animation-duration: $duration*4;
+
+  animation-fill-mode: both;
   @include min-screen(col(8)) {
     padding-top: em($d-base-rhythm*2);
     padding-bottom: em($d-base-rhythm*5);
@@ -141,12 +153,13 @@
 }
 
 .project {
-  animation-duration: $duration*4;
-  animation-name: element-in-up;
-  animation-fill-mode: both;
   padding-top: em($m-base-rhythm*1);
   padding-bottom: em($m-base-rhythm*4);
 
+  animation-name: element-in-up;
+  animation-duration: $duration*4;
+
+  animation-fill-mode: both;
   @include min-screen(col(8)) {
     padding-top: em($d-base-rhythm*1);
     padding-bottom: em($d-base-rhythm*4);

@@ -34,3 +34,14 @@
     transform: translate(0, 0);
   }
 }
+
+@keyframes element-up-planet {
+  0% {
+    transform: translate(-50%, em($d-base-rhythm/2));
+  }
+  75% {
+  }
+  100% {
+    transform: translate(-50%, 0);
+  }
+}
