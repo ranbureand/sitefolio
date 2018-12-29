@@ -22,26 +22,24 @@
   }
 }
 
+@keyframes element-up {
+  0% {
+    transform: translateY(em($d-base-rhythm/2));
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 @keyframes element-in-up {
   0% {
-    transform: translate(0, em($d-base-rhythm/2));
+    transform: translateY(em($d-base-rhythm/2));
     opacity: 0;
   }
   75% {
     opacity: 1;
   }
   100% {
-    transform: translate(0, 0);
-  }
-}
-
-@keyframes element-up-planet {
-  0% {
-    transform: translate(-50%, em($d-base-rhythm/2));
-  }
-  75% {
-  }
-  100% {
-    transform: translate(-50%, 0);
+    transform: translateY(0);
   }
 }
