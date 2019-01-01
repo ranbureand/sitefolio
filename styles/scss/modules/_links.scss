@@ -13,6 +13,7 @@
     padding-right: em($m-gut/2*3);
     padding-left: em($m-gut/2*3);
   }
+
   @include min-screen(col(6)) {
     padding-top: em($d-base-rhythm);
     li {
@@ -41,18 +42,48 @@
 
 .link {
   position: relative;
+
   display: block;
+
   text-decoration: none;
 
   .link-icon {
+    position: relative;
+
     width: 100%;
     margin-bottom: em($m-small-line/2);
 
+    border-radius: 50%;
+
     @include font-size($m-tiny-size, $m-tiny-line);
-    div {
+    &:before {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+
+      display: block;
+
       width: 100%;
       padding-bottom: 100%;
+
+      content: "";
+      transition-timing-function: ease-out, ease-out;
+      transition-duration: 0.2s, 0.2s;
+      transition-property: opacity, transform;
+      transform: scale(0);
+
+      opacity: 0;
       border-radius: 50%;
+      background-color: $l-color-1;
+    }
+    div {
+      position: relative;
+      z-index: 10;
+
+      width: 100%;
+      padding-bottom: 100%;
+
       background-image: url("../../media/skills/placeholder_00.png");
       background-repeat: no-repeat;
       background-position: center;
@@ -61,20 +92,25 @@
   }
   .link-title {
     font-weight: $medium;
+
     margin-top: em($m-medium-line/4*3, $m-medium-size);
-    transition-timing-function: ease-in-out;
+
+    transition-timing-function: ease-out;
     transition-duration: 0.2s;
-    text-decoration: underline;
     transition-property: color;
     text-align: center;
+    text-decoration: underline;
+
     color: $l-strong-type-color;
 
     @include font-size($m-small-size, $m-small-line);
   }
   &:hover {
     .link-icon {
-      div {
-        background-color: $l-color-1;
+      &:before {
+        transform: scale(1.0);
+
+        opacity: 1.0;
       }
     }
     .link-title {
@@ -82,8 +118,17 @@
     }
   }
   &:active {
+    .link-icon {
+      &:before {
+        transition-duration: 0.0s;
+        transform: scale(1.0);
+
+        opacity: 1.0;
+      }
+    }
     .link-title {
       transition-duration: 0.0s;
+
       color: $l-color-1;
     }
   }
