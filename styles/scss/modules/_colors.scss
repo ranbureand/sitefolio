@@ -106,6 +106,17 @@
   pre {
     background-color: $l-code-background-color;
   }
+  code,
+  samp,
+  kbd,
+  mark {
+    color: $l-type-color;
+  }
+  pre {
+    code {
+        background-color: transparent;
+    }
+  }
   blockquote {
     border-color: $l-border-color;
   }
@@ -245,6 +256,17 @@
   mark,
   pre {
     background-color: $d-code-background-color;
+  }
+  code,
+  samp,
+  kbd,
+  mark {
+    color: $d-type-color;
+  }
+  pre {
+    code {
+        background-color: transparent;
+    }
   }
   blockquote {
     border-color: $d-border-color;

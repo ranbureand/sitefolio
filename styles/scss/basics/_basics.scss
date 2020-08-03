@@ -231,12 +231,6 @@ samp {
 }
 code,
 samp,
-kbd,
-mark {
-  color: $l-type-color;
-}
-code,
-samp,
 kbd {
   @include face(mono);
 }
@@ -256,7 +250,6 @@ pre {
     display: block;
     padding: 0;
     white-space: pre;
-    background-color: transparent;
   }
 }
 

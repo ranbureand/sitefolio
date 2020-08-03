@@ -2,9 +2,13 @@
 
 console.log('Liftoff!');
 
+/*
+** Emails
+*/
+
 var eMailbox = 'hello',
-    eDomain = 'andreaburan.com',
-    eAddress = (eMailbox + '@' + eDomain);
+  eDomain = 'andreaburan.com',
+  eAddress = (eMailbox + '@' + eDomain);
 
 //console.log(eAddress);
 
@@ -15,18 +19,20 @@ var eLink;
 var eEnvelope = document.getElementsByClassName('envelope');
 
 for (i = 0; i < eEnvelope.length; i++) {
-    eLink = document.createElement('a');
-    eLink.setAttribute('href', 'mailto:' + eAddress);
-    eLink.textContent = eAddress;
-    eEnvelope[i].prepend(eLink);
+  eLink = document.createElement('a');
+  eLink.setAttribute('href', 'mailto:' + eAddress);
+  eLink.textContent = eAddress;
+  eEnvelope[i].prepend(eLink);
 }
 
-var link_email = document.getElementById('link-email');
-
-link_email.setAttribute('href', 'mailto:' + eAddress);
+/*
+** Footnotes
+*/
 
 var footnote = document.getElementsByClassName('reversefootnote');
 
+console.log(footnote);
+
 for (i = 0; i < footnote.length; i++) {
-    footnote[i].textContent = 'Back to Number';
+  footnote[i].textContent = 'Back to Number';
 }

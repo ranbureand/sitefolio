@@ -363,13 +363,6 @@ samp {
 
 code,
 samp,
-kbd,
-mark {
-  color: rgba(0, 0, 0, 0.92);
-}
-
-code,
-samp,
 kbd {
   font-family: "IBM Plex Mono", "Andale Mono", "Monaco", monospace;
 }
@@ -391,7 +384,6 @@ pre code {
   display: block;
   padding: 0;
   white-space: pre;
-  background-color: transparent;
 }
 
 hr {
@@ -827,6 +819,15 @@ video {
 .words-on-light pre {
   background-color: rgba(0, 0, 0, 0.04);
 }
+.words-on-light code,
+.words-on-light samp,
+.words-on-light kbd,
+.words-on-light mark {
+  color: rgba(0, 0, 0, 0.92);
+}
+.words-on-light pre code {
+  background-color: transparent;
+}
 .words-on-light blockquote {
   border-color: rgba(0, 0, 0, 0.92);
 }
@@ -930,6 +931,15 @@ video {
 .words-on-dark mark,
 .words-on-dark pre {
   background-color: rgba(255, 255, 255, 0.06);
+}
+.words-on-dark code,
+.words-on-dark samp,
+.words-on-dark kbd,
+.words-on-dark mark {
+  color: rgba(255, 255, 255, 0.88);
+}
+.words-on-dark pre code {
+  background-color: transparent;
 }
 .words-on-dark blockquote {
   border-color: rgba(255, 255, 255, 0.4);
@@ -1146,7 +1156,7 @@ video {
 
 .projects {
   padding-top: 3em;
-  padding-bottom: 4.5em;
+  padding-bottom: 6em;
   animation-name: element-in-up;
   animation-duration: 0.8s;
   animation-fill-mode: both;
@@ -1154,7 +1164,7 @@ video {
 @media screen and (min-width: 36em) {
   .projects {
     padding-top: 5em;
-    padding-bottom: 7.5em;
+    padding-bottom: 10em;
   }
 }
 
@@ -1192,7 +1202,7 @@ video {
 }
 
 .project {
-  padding-top: 1.5em;
+  padding-top: 3em;
   padding-bottom: 6em;
   animation-name: element-in-up;
   animation-duration: 0.8s;
@@ -1200,7 +1210,7 @@ video {
 }
 @media screen and (min-width: 36em) {
   .project {
-    padding-top: 2.5em;
+    padding-top: 5em;
     padding-bottom: 10em;
   }
 }
@@ -1217,10 +1227,6 @@ video {
 /*
 ** Project
 */
-.color {
-  color: orange;
-}
-
 .envelope {
   word-break: break-all;
 }
