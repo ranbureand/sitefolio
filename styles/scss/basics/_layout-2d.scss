@@ -102,10 +102,6 @@
 ** Small columns
 */
 
-[class*="column-2d-s"] {
-
-}
-
 .column-2d-s-1 {
   grid-column: 1 / 5;
   @include min-screen(col(8)) {
@@ -168,7 +164,7 @@
     grid-column: 1 / 3;
   }
   @include min-screen(col(12)) {
-    grid-column: 1 / 4;
+    grid-column: 1 / 3;
   }
   @include min-screen(col(16)) {
     grid-column: 1 / 3;
@@ -181,7 +177,7 @@
     grid-column: 3 / 5;
   }
   @include min-screen(col(12)) {
-    grid-column: 4 / 7;
+    grid-column: 4 / 6;
   }
   @include min-screen(col(16)) {
     grid-column: 3 / 5;
@@ -194,7 +190,7 @@
     grid-column: 1 / 3;
   }
   @include min-screen(col(12)) {
-    grid-column: 1 / 4;
+    grid-column: 1 / 3;
   }
   @include min-screen(col(16)) {
     grid-column: 5 / 7;
@@ -207,7 +203,7 @@
     grid-column: 3 / 5;
   }
   @include min-screen(col(12)) {
-    grid-column: 4 / 7;
+    grid-column: 4 / 6;
   }
   @include min-screen(col(16)) {
     grid-column: 7 / 9;

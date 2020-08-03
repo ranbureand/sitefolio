@@ -181,6 +181,32 @@
     }
   }
 
+  .preview {
+    &:before {
+      background-color: $d-picture-background-color;
+    }
+    .preview-image {
+      background-color: $d-picture-background-color;
+    }
+    .preview-title {
+      color: $d-strong-type-color;
+    }
+    .preview-tags,
+    .preview-time {
+      color: $d-type-color;
+    }
+    &:hover {
+      .preview-title {
+        color: $d-color-1;
+      }
+    }
+    &:active {
+      .preview-title {
+        color: $d-color-1-darker;
+      }
+    }
+  }
+
   // Links
 
   a {

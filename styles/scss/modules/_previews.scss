@@ -66,7 +66,6 @@
     transition-property: height, opacity, transform, width;
     transform-origin: 50% 0 ;
     opacity: 0.0;
-    background-color: $d-picture-background-color;
   }
   .preview-image {
     position: relative;
@@ -75,7 +74,6 @@
     transition-duration: $duration;
     transition-property: transform;
     transform: translate(0, 0);
-    background-color: $d-picture-background-color;
 
     @include font-size($m-tiny-size, $m-tiny-line);
     img {
@@ -89,7 +87,6 @@
     transition-timing-function: ease-in-out;
     transition-duration: 0.2s;
     transition-property: color;
-    color: $d-strong-type-color;
 
     @include font-size($m-small-size, $m-small-line);
     sup {
@@ -100,13 +97,11 @@
     @include face(serif);
     font-style: italic;
     margin-top: em($m-tiny-line/4, $m-tiny-size);
-    color: $d-type-color;
 
     @include font-size($m-tiny-size, $m-tiny-line);
   }
   .preview-time {
     margin-top: em($m-small-line/4, $m-small-size);
-    color: $d-type-color;
 
     @include face(mono);
     @include font-size($m-small-size, $m-small-line);
@@ -120,9 +115,6 @@
     .preview-image {
       transform: translate(0, em(-$m-gut/2*3, $m-tiny-size));
     }
-    .preview-title {
-      color: $d-color-1;
-    }
   }
   &:active {
     .preview-image {
@@ -131,7 +123,6 @@
     }
     .preview-title {
       transition-duration: 0.0s;
-      color: $d-color-1;
     }
   }
   @include min-screen(col(8)) {
