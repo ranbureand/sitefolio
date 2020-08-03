@@ -14,7 +14,7 @@ var eLink;
 
 var eEnvelope = document.getElementsByClassName('envelope');
 
-for (i = 0; i < eEnvelope.length; i++) { 
+for (i = 0; i < eEnvelope.length; i++) {
     eLink = document.createElement('a');
     eLink.setAttribute('href', 'mailto:' + eAddress);
     eLink.textContent = eAddress;
@@ -27,6 +27,6 @@ link_email.setAttribute('href', 'mailto:' + eAddress);
 
 var footnote = document.getElementsByClassName('reversefootnote');
 
-for (i = 0; i < footnote.length; i++) { 
+for (i = 0; i < footnote.length; i++) {
     footnote[i].textContent = 'Back to Number';
 }
