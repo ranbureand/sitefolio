@@ -790,6 +790,16 @@ video {
 .words-on-light [class*=button] a:hover, .words-on-light [class*=button] a:active {
   color: #fafafa;
 }
+.words-on-light [class*=video] a .watch {
+  color: #fafafa;
+  background-color: rgba(0, 0, 0, 0.92);
+}
+.words-on-light [class*=video] a .watch:before {
+  background-color: #fc5568;
+}
+.words-on-light [class*=video] a:active .watch:before {
+  background-color: #c64453;
+}
 .words-on-light a:hover {
   color: #fc5568;
 }
@@ -1302,13 +1312,13 @@ video {
 }
 
 .button-m a {
-  padding: 0.8571428571em 0.8571428571em 0.8571428571em 0.8571428571em;
+  padding: 0.8571428571em 0.8571428571em;
   font-size: 0.875em;
   line-height: 1.7142857143em;
 }
 @media screen and (min-width: 36em) {
   .button-m a {
-    padding: 0.8571428571em 1.1428571429em 0.8571428571em 1.1428571429em;
+    padding: 0.8571428571em 1.1428571429em;
     font-size: 0.875em;
     line-height: 1.7142857143em;
   }
@@ -1471,40 +1481,59 @@ div + .figures {
   display: block;
 }
 [class^=video] a .watch {
+  border-radius: 1.5em;
   font-weight: 500;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+[class^=video] a .watch:before {
+  position: absolute;
+  z-index: 2;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
   display: block;
-  width: 50%;
-  height: 3.4285714286em;
-  margin: auto;
-  padding: 0.8571428571em 0.5714285714em;
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.2s;
-  transition-property: background-color;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.96);
-  background-color: rgba(0, 0, 0, 0.92);
+  width: 100%;
+  margin-top: calc(-50% + 1.5em);
+  padding-bottom: 100%;
+  content: "";
+  transition-timing-function: ease-in, ease-in;
+  transition-duration: 0.2s, 0.2s;
+  transition-property: opacity, transform;
+  transform: scale(0);
+  opacity: 0;
+  border-radius: 50%;
+}
+[class^=video] a .watch div {
+  padding: 0.8571428571em 0.8571428571em;
+  position: relative;
+  z-index: 10;
   font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 0.875em;
   line-height: 1.7142857143em;
 }
-[class^=video] a:hover .watch, [class^=video] a:active .watch {
-  background-color: #fc5568;
+[class^=video] a:hover .watch:before {
+  transform: scale(1);
+  opacity: 1;
 }
-[class^=video] a:active {
-  transition-duration: 0s;
+[class^=video] a:active .watch:before {
+  transition-duration: 0s, 0s;
+  transform: scale(1);
+  opacity: 1;
 }
 @media screen and (min-width: 36em) {
   [class^=video] a .watch {
-    width: 12.8571428571em;
-    height: 3.4285714286em;
+    border-radius: 1.5em;
+  }
+  [class^=video] a .watch div {
     padding: 0.8571428571em 1.1428571429em;
     font-size: 0.875em;
     line-height: 1.7142857143em;
+  }
+  [class^=video] a .watch:before {
+    margin-top: calc(-50% + 1.5em);
   }
 }
 

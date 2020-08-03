@@ -97,45 +97,74 @@ div {
     position: relative;
     display: block;
     .watch {
+      border-radius: em($m-small-line);
       font-weight: $medium;
       position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      display: block;
-      width: 50%;
-      height: em($m-small-line*2, $m-small-size);
-      margin: auto;
-      padding: em($m-small-line/2, $m-small-size) em($m-gut, $m-small-size);
-      transition-timing-function: ease-in-out;
-      transition-duration: 0.2s;
-      transition-property: background-color;
-      text-align: center;
-      color: $l-button-type-color;
-      background-color: $l-button-background-color;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      overflow: hidden;
+      &:before {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
 
-      @include face(sans);
-      @include font-size($m-small-size, $m-small-line);
+        display: block;
+
+        width: 100%;
+        margin-top: calc(-50% + #{em($m-small-line)});
+        padding-bottom: 100%;
+
+        content: "";
+        transition-timing-function: ease-in, ease-in;
+        transition-duration: $duration, $duration;
+        transition-property: opacity, transform;
+        transform: scale(0);
+        opacity: 0;
+        border-radius: 50%;
+      }
+      div {
+        padding: em($m-small-line/2, $m-small-size) em($m-gut/2*3, $m-small-size);
+        position: relative;
+        z-index: 10;
+        @include face(sans);
+        @include font-size($m-small-size, $m-small-line);
+      }
     }
-    &:hover,
-    &:active {
+    &:hover {
       .watch {
-        background-color: $l-color-1;
+        &:before {
+          transform: scale(1.0);
+
+          opacity: 1.0;
+        }
       }
     }
     &:active {
-      transition-duration: 0.0s;
+      .watch {
+        &:before {
+          transition-duration: 0.0s, 0.0s;
+          transform: scale(1.0);
+
+          opacity: 1.0;
+        }
+      }
     }
   }
   @include min-screen(col(8)) {
     a {
       .watch {
-        width: col(2.5, $d-small-size);
-        height: em($d-small-line*2, $d-small-size);
-        padding: em($d-small-line/2, $d-small-size) em($d-gut, $d-small-size);
+        border-radius: em($d-small-line);
 
-        @include font-size($d-small-size, $d-small-line);
+
+        div {
+          padding: em($d-small-line/2, $d-small-size) em($d-gut, $d-small-size);
+          @include font-size($d-small-size, $d-small-line);
+        }
+        &:before {
+          margin-top: calc(-50% + #{em($d-small-line)});
+        }
       }
     }
   }

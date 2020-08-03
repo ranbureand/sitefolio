@@ -85,13 +85,13 @@
 
 .button-m {
   a {
-    padding: em($m-small-line/2, $m-small-size) em($m-gut/2*3, $m-small-size) em($m-small-line/2, $m-small-size) em($m-gut/2*3, $m-small-size);
+    padding: em($m-small-line/2, $m-small-size) em($m-gut/2*3, $m-small-size);
 
     @include font-size($m-small-size, $m-small-line);
   }
   @include min-screen(col(8)) {
     a {
-      padding: em($d-small-line/2, $d-small-size) em($d-gut, $d-small-size) em($d-small-line/2, $d-small-size) em($d-gut, $d-small-size);
+      padding: em($d-small-line/2, $d-small-size) em($d-gut, $d-small-size);
 
       @include font-size($d-small-size, $d-small-line);
     }

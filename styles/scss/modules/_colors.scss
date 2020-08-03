@@ -67,6 +67,26 @@
     }
   }
 
+  [class*="video"] {
+    a {
+      .watch {
+        color: $l-background-color;
+        background-color: $l-strong-type-color;
+        &:before {
+          background-color: $l-color-1;
+        }
+      }
+      &:active {
+        .watch {
+          &:before {
+            background-color: $l-color-1-darker;
+          }
+        }
+      }
+    }
+
+  }
+
   // Links
 
   a {
