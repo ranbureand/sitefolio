@@ -6,13 +6,15 @@
 
 .figures {
   display: flex;
+  align-content: flex-start;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+
   margin-top: em($m-base-rhythm);
   margin-right: em(-$m-gut/2);
   margin-left: em(-$m-gut/2);
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-content: flex-start;
+
   @include min-screen(col(8)) {
     //width: col(8);
     margin-top: em($d-base-rhythm);
@@ -20,9 +22,10 @@
     margin-left: em(-$d-gut/2);
   }
   @include min-screen(col(12)) {
+    justify-content: flex-end;
+
     width: col(12);
     margin-left: em(-$column-width*4-$d-gut/2);
-    justify-content: flex-end;
   }
   @include min-screen(col(16)) {
     width: col(16);

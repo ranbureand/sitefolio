@@ -1,0 +1,99 @@
+/* Copyright (c) 2017 Andrea Buran [www.andreaburan.com]. All rights reserved */
+
+/*
+** Buttons
+*/
+
+[class*="button"] {
+  font-weight: $medium;
+
+  position: relative;
+
+  display: inline-block;
+  overflow: hidden;
+
+  transition-timing-function: ease-in-out, ease-in-out;
+  transition-duration: 0.2s, 0.2s;
+  transition-property: color, background-color;
+
+  border-radius: em($m-small-line);
+
+  @include face(sans);
+
+  &:before {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    margin-top: calc(-50% + #{em($m-small-line)});
+    padding-bottom: 100%;
+
+    content: "";
+    transition-timing-function: ease-in, ease-in;
+    transition-duration: $duration, $duration;
+    transition-property: opacity, transform;
+    transform: scale(0);
+
+    opacity: 0;
+    border-radius: 50%;
+  }
+
+  a {
+    position: relative;
+    z-index: 10;
+
+    display: block;
+  }
+
+  span {
+    display: none;
+  }
+
+  &:hover {
+    &:before {
+      transform: scale(1.0);
+
+      opacity: 1.0;
+    }
+  }
+
+  &:active {
+    &:before {
+      transition-duration: 0.0s, 0.0s;
+      transform: scale(1.0);
+
+      opacity: 1.0;
+    }
+  }
+
+  @include min-screen(col(8)) {
+    border-radius: em($d-small-line);
+
+    &:before {
+      margin-top: calc(-50% + #{em($d-small-line)});
+    }
+
+    span {
+      display: inline;
+    }
+  }
+}
+
+.button-m {
+  a {
+    padding: em($m-small-line/2, $m-small-size) em($m-gut/2*3, $m-small-size) em($m-small-line/2, $m-small-size) em($m-gut/2*3, $m-small-size);
+
+    @include font-size($m-small-size, $m-small-line);
+  }
+  @include min-screen(col(8)) {
+    a {
+      padding: em($d-small-line/2, $d-small-size) em($d-gut, $d-small-size) em($d-small-line/2, $d-small-size) em($d-gut, $d-small-size);
+
+      @include font-size($d-small-size, $d-small-line);
+    }
+  }
+}

@@ -21,6 +21,26 @@
 ** Basics
 */
 
+/*a.button {
+  font-weight: $normal;
+  display: inline-block;
+  height: em($m-medium-line*1.5, $m-medium-size);
+  padding: em($m-medium-line/4 + strip(-$button-border-width/10), $m-medium-size) em($m-gut*3, $m-medium-size) em($m-medium-line/4 + strip(-$button-border-width/10), $m-medium-size) em($m-gut*3, $m-medium-size);
+  color: $l-button-type-color;
+  border: $button-border-width solid $l-button-background-color;
+  background-color: $l-button-background-color;
+
+  @include font-size($m-medium-size, $m-medium-line);
+  &:hover,
+  &:active {
+    border-color: $l-color-1;
+    background-color: $l-color-1;
+  }
+  &:active {
+    transition-duration: 0s, 0s;
+  }
+}*/
+
 button,
 input,
 optgroup,

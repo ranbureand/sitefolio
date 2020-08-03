@@ -1,11 +1,11 @@
       <div class="canvas-projects">
-        <section class="projects layout-2d dark-words">
+        <section class="projects layout-2d words-on-dark">
 
           {% assign categories = site.categories | where: 'category', 'Favorite' %}
 
-          <div class="column-2d-l separator-light"></div>
+          <div class="column-2d-l separator"></div>
 
-          <div class="column-2d-s typo-l">
+          <div class="column-2d-s-1 typo-l">
             {% if page.layout == "categories" %}
               <h4>{{ page.title }}</h4>
             {% else %}
@@ -15,7 +15,7 @@
             {% endif %}
           </div>
 
-          <div class="column-2d-m typo-l">
+          <div class="column-2d-m-2 typo-l">
             {% if page.layout == 'categories' %}
               {{ page.content }}
             {% else %}
@@ -25,7 +25,7 @@
             {% endif %}
           </div>
 
-          <div class="project-body column-2d-m typo-m">
+          <div class="project-body column-2d-m-2 typo-m">
             {% include disclaimer.html %}
           </div>
 

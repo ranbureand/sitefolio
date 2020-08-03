@@ -4,7 +4,7 @@
 ** Canvas
 */
 
-[class^="canvas"] {
+[class*="canvas"] {
   padding-right: em($m-gut);
   padding-left: em($m-gut);
 
@@ -18,62 +18,17 @@
   }
 }
 
-.canvas-dark {
-  background-color: $d-background-color;
-}
-
-.canvas-color-2 {
-  background-color: $d-background-color-2;
-}
-
 /*
 ** Splash
 */
 
 .canvas-splash {
-  overflow: hidden;
-
-  background-color: $d-background-color-2;
+  background-color: $d-background-color;
 }
 
 .splash {
   animation-name: element-in-up;
   animation-duration: $duration*4;
-
-  animation-fill-mode: both;
-}
-
-/*
-** Planet
-*/
-
-.canvas-planet {
-  position: relative;
-
-  overflow: hidden;
-
-  height: em($m-base-rhythm*2);
-
-  background-color: $d-background-color-2;
-
-  @include min-screen(col(8)) {
-    height: em($d-base-rhythm*2);
-  }
-}
-
-.planet {
-  position: absolute;
-  top: 0;
-  left: 50%;
-
-  width: $planet-diameter;
-  padding-bottom: $planet-diameter;
-
-  animation-name: planet-up;
-  animation-duration: $duration*4;
-
-  border-radius: 50%;
-  background-color: $d-background-color;
 
   animation-fill-mode: both;
 }
@@ -125,20 +80,23 @@
 */
 
 .canvas-details {
-  background-color: $l-background-color;
+  background-color: $d-background-color;
 }
 
 .details {
-  padding-top: em($m-base-rhythm*2);
-  padding-bottom: em($m-base-rhythm*5);
+  padding-top: em($m-base-rhythm*4);
+  padding-bottom: em($m-base-rhythm*2);
 
   animation-name: element-in-up;
   animation-duration: $duration*4;
 
   animation-fill-mode: both;
   @include min-screen(col(8)) {
+    padding-top: em($d-base-rhythm*4);
+    padding-bottom: em($d-base-rhythm*2);
+  }
+  @include min-screen(col(12)) {
     padding-top: em($d-base-rhythm*2);
-    padding-bottom: em($d-base-rhythm*5);
   }
 }
 

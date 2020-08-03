@@ -3,7 +3,7 @@
 
 {% include head.html %}
 
-  <body id="outer-space">
+  <body id="outer-space" class="{% if page.layout == 'base' or page.layout == 'categories' %}on-dark{% else %}on-light{% endif %}">
 
 {% include header.html %}
 
@@ -11,7 +11,7 @@
 
 {% include projects.html %}
 
-{% include details.html %}
+{% include about.html %}
 
 {% include footer.html %}
 

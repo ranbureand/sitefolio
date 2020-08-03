@@ -5,37 +5,17 @@
 */
 
 .links {
-  padding-top: em($m-base-rhythm);
-
-  li {
-    width: 100/3*1%;
-    margin-bottom: em($m-base-rhythm);
-    padding-right: em($m-gut/2*3);
-    padding-left: em($m-gut/2*3);
+  margin-left: 0;
+  padding-left: 0;
+  .link {
+    width: em($m-small-line*2);
+    margin-right: em($m-gut);
   }
 
-  @include min-screen(col(6)) {
-    padding-top: em($d-base-rhythm);
-    li {
-      width: 100/4*1%;
-      margin-bottom: em($d-base-rhythm);
-      padding-right: em($d-gut);
-      padding-left: em($d-gut);
-    }
-  }
-  @include min-screen(col(10)) {
-    li {
-      width: 100/5*1%;
-    }
-  }
-  @include min-screen(col(12)) {
-    li {
-      width: 100/6*1%;
-    }
-  }
-  @include min-screen(col(16)) {
-    li {
-      width: 100/8*1%;
+  @include min-screen(col(8)) {
+    .link {
+      width: em($d-small-line*2);
+      margin-right: em($d-gut);
     }
   }
 }
@@ -45,17 +25,13 @@
 
   display: block;
 
-  text-decoration: none;
-
   .link-icon {
     position: relative;
 
     width: 100%;
-    margin-bottom: em($m-small-line/2);
 
     border-radius: 50%;
 
-    @include font-size($m-tiny-size, $m-tiny-line);
     &:before {
       position: absolute;
       z-index: 2;
@@ -68,14 +44,13 @@
       padding-bottom: 100%;
 
       content: "";
-      transition-timing-function: ease-out, ease-out;
-      transition-duration: 0.2s, 0.2s;
+      transition-timing-function: ease-in, ease-in;
+      transition-duration: $duration, $duration;
       transition-property: opacity, transform;
       transform: scale(0);
 
       opacity: 0;
       border-radius: 50%;
-      background-color: $l-color-1;
     }
     div {
       position: relative;
@@ -87,23 +62,11 @@
       background-image: url("../../media/skills/placeholder_00.png");
       background-repeat: no-repeat;
       background-position: center;
-      background-size: 36%;
+      background-size: 44%;
     }
-  }
-  .link-title {
-    font-weight: $medium;
-
-    margin-top: em($m-medium-line/4*3, $m-medium-size);
-
-    transition-timing-function: ease-out;
-    transition-duration: 0.2s;
-    transition-property: color;
-    text-align: center;
-    text-decoration: underline;
-
-    color: $l-strong-type-color;
-
-    @include font-size($m-small-size, $m-small-line);
+    span {
+      display: none;
+    }
   }
   &:hover {
     .link-icon {
@@ -113,33 +76,15 @@
         opacity: 1.0;
       }
     }
-    .link-title {
-      color: $l-color-1;
-    }
   }
   &:active {
     .link-icon {
       &:before {
-        transition-duration: 0.0s;
+        transition-duration: 0.0s, 0.0s;
         transform: scale(1.0);
 
         opacity: 1.0;
       }
-    }
-    .link-title {
-      transition-duration: 0.0s;
-
-      color: $l-color-1;
-    }
-  }
-  @include min-screen(col(8)) {
-    .link-icon {
-      @include font-size($d-tiny-size, $d-tiny-line);
-    }
-    .link-title {
-      margin-top: em($d-small-line/2, $d-small-size);
-
-      @include font-size($d-small-size, $d-small-line);
     }
   }
 }

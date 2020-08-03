@@ -2,6 +2,18 @@
 
 /*
 ** Grid
+**
+**  4 col grid : col(8)
+**  1  2  3  4  5
+**  |  ¦  |  ¦  |
+**
+**  6 col grid : col(12)
+**  1  2  3  4  5  6  7
+**  |  ¦  |  ¦  |  ¦  |
+**
+**  8 col grid : col(16)
+**  1  2  3  4  5  6  7  8  9
+**  |  ¦  |  ¦  |  ¦  |  ¦  |
 */
 
 .layout-2d {
@@ -12,22 +24,22 @@
   padding-right: em($m-gut/2);
   padding-left: em($m-gut/2);
   grid-column-gap: em($m-gut);
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   @include min-screen(col(8)) {
     //width: col(8);
     padding-right: em($d-gut/2);
     padding-left: em($d-gut/2);
     grid-column-gap: em($d-gut);
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
   @include min-screen(col(12)) {
     width: col(12);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
   @include min-screen(col(16)) {
     width: col(16);
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(8, 1fr);
   }
 }
 
@@ -40,7 +52,61 @@
   }
 }
 
+/*
+** Large columns
+*/
+
 .column-2d-l {
+  grid-column: 1 / 5;
+  @include min-screen(col(8)) {
+    grid-column: 1 / 5;
+  }
+  @include min-screen(col(12)) {
+    grid-column: 1 / 7;
+  }
+  @include min-screen(col(16)) {
+    grid-column: 1 / 9;
+  }
+}
+
+/*
+** Medium columns
+*/
+
+[class*="column-2d-m"] {
+  grid-column: 1 / 5;
+  @include min-screen(col(8)) {
+    grid-column: 1 / 5;
+  }
+}
+
+.column-2d-m-1 {
+  @include min-screen(col(12)) {
+    grid-column: 1 / 3;
+  }
+  @include min-screen(col(16)) {
+    grid-column: 1 / 5;
+  }
+}
+
+.column-2d-m-2 {
+  @include min-screen(col(12)) {
+    grid-column: 3 / 7;
+  }
+  @include min-screen(col(16)) {
+    grid-column: 5 / 9;
+  }
+}
+
+/*
+** Small columns
+*/
+
+[class*="column-2d-s"] {
+
+}
+
+.column-2d-s-1 {
   grid-column: 1 / 3;
   @include min-screen(col(8)) {
     grid-column: 1 / 3;
@@ -49,32 +115,45 @@
     grid-column: 1 / 4;
   }
   @include min-screen(col(16)) {
-    grid-column: 1 / 5;
+    grid-column: 1 / 3;
   }
 }
 
-.column-2d-m {
-  grid-column: 1 / 3;
+.column-2d-s-2 {
+  grid-column: 3 / 5;
   @include min-screen(col(8)) {
-    grid-column: 1 / 3;
+    grid-column: 3 / 5;
   }
   @include min-screen(col(12)) {
-    grid-column: 2 / 4;
+    grid-column: 4 / 7;
   }
   @include min-screen(col(16)) {
     grid-column: 3 / 5;
   }
 }
 
-.column-2d-s {
+.column-2d-s-3 {
   grid-column: 1 / 3;
   @include min-screen(col(8)) {
     grid-column: 1 / 3;
   }
   @include min-screen(col(12)) {
-    grid-column: 1 / 2;
+    grid-column: 1 / 4;
   }
   @include min-screen(col(16)) {
-    grid-column: 1 / 2;
+    grid-column: 5 / 7;
+  }
+}
+
+.column-2d-s-4 {
+  grid-column: 3 / 5;
+  @include min-screen(col(8)) {
+    grid-column: 3 / 5;
+  }
+  @include min-screen(col(12)) {
+    grid-column: 4 / 7;
+  }
+  @include min-screen(col(16)) {
+    grid-column: 7 / 9;
   }
 }
