@@ -702,7 +702,7 @@ video {
   background-color: #fc5568;
 }
 .words-on-light .link-icon:active:before {
-  background-color: #987cfb;
+  background-color: #c64453;
 }
 .words-on-light [class*=button] {
   background-color: rgba(0, 0, 0, 0.92);
@@ -711,7 +711,7 @@ video {
   background-color: #fc5568;
 }
 .words-on-light [class*=button]:active:before {
-  background-color: #987cfb;
+  background-color: #c64453;
 }
 .words-on-light [class*=button] a {
   color: #fafafa;
@@ -723,7 +723,7 @@ video {
   color: #fc5568;
 }
 .words-on-light a:active {
-  color: #987cfb;
+  color: #c64453;
 }
 .words-on-light h1,
 .words-on-light h2,
@@ -787,7 +787,7 @@ video {
   background-color: #fc6c7a;
 }
 .words-on-dark .link-icon:active:before {
-  background-color: #a18afb;
+  background-color: #d74a5a;
 }
 .words-on-dark [class*=button] {
   background-color: rgba(255, 255, 255, 0.88);
@@ -796,7 +796,7 @@ video {
   background-color: #fc6c7a;
 }
 .words-on-dark [class*=button]:active:before {
-  background-color: #a18afb;
+  background-color: #d74a5a;
 }
 .words-on-dark [class*=button] a {
   color: #131313;
@@ -808,7 +808,7 @@ video {
   color: #fc6c7a;
 }
 .words-on-dark a:active {
-  color: #a18afb;
+  color: #d74a5a;
 }
 .words-on-dark h1,
 .words-on-dark h2,
@@ -1220,7 +1220,7 @@ video {
 
 .pitch {
   z-index: 2;
-  margin-top: 3em;
+  margin-top: 6em;
   margin-bottom: 3em;
   font-family: "IBM Plex Serif", serif;
   /*@include min-screen(col(16)) {

@@ -40,7 +40,7 @@
 
     &:active {
       &:before {
-        background-color: $l-color-2;
+        background-color: $l-color-1-darker;
       }
     }
   }
@@ -54,7 +54,7 @@
 
     &:active {
       &:before {
-        background-color: $l-color-2;
+        background-color: $l-color-1-darker;
       }
     }
 
@@ -74,7 +74,7 @@
       color: $l-color-1;
     }
     &:active {
-      color: $l-color-2;
+      color: $l-color-1-darker;
     }
   }
 
@@ -154,7 +154,7 @@
 
     &:active {
       &:before {
-        background-color: $d-color-2;
+        background-color: $d-color-1-darker;
       }
     }
   }
@@ -168,7 +168,7 @@
 
     &:active {
       &:before {
-        background-color: $d-color-2;
+        background-color: $d-color-1-darker;
       }
     }
 
@@ -188,7 +188,7 @@
       color: $d-color-1;
     }
     &:active {
-      color: $d-color-2;
+      color: $d-color-1-darker;
     }
   }
 
