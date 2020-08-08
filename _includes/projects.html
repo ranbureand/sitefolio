@@ -3,15 +3,19 @@
 
           {% assign categories = site.categories | where: 'category', 'Favorite' %}
 
-          {% if page.layout == "categories" %}
           <header class="projects-head column-2d-l typo-sl">
-            <h1>{{ page.title }}</h1>
+            {% if page.layout == "categories" %}
+              <h1>{{ page.title }} <sup class="color-1">&dagger;</sup></h1>
+            {% else %}
+              {% for category in categories %}
+                <h1>{{ category.title }} <sup class="color-1">&dagger;</sup></h1>
+              {% endfor %}
+            {% endif %}
           </header>
-          {% endif %}
 
           <div class="column-2d-l separator"></div>
 
-          <div class="project-subhead column-2d-s-1 typo-l">
+          <!--<div class="projects-subhead column-2d-s-1 typo-l">
             {% if page.layout == "categories" %}
               {%- assign projectList = site.projects | sort: 'order' | where: 'publish', 'yes' | where: 'categories', page.category -%}
 
@@ -24,9 +28,9 @@
                 <h4>{{ category.title }}</h4>
               {% endfor %}
             {% endif %}
-          </div>
+          </div>-->
 
-          <div class="project-exordium column-2d-m-2 typo-l">
+          <div class="projects-exordium column-2d-m-2 typo-l">
             {% if page.layout == 'categories' %}
               {{ page.content }}
             {% else %}
@@ -34,9 +38,7 @@
                 {{ category.content | markdownify }}
               {% endfor %}
             {% endif %}
-          </div>
 
-          <div class="projects-body column-2d-m-2 typo-m">
             {% include disclaimer.html %}
           </div>
 

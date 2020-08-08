@@ -10,6 +10,7 @@
 
 .pitch {
   z-index: 2;
+
   margin-top: em($m-base-rhythm*4);
   margin-bottom: em($m-base-rhythm*2);
 
@@ -22,13 +23,16 @@
     hyphens: none;
 
     @include font-size($ms-super-large-size, $ms-super-large-line);
+
     & + p {
       margin-top: em($ms-super-large-line/2, $ms-super-large-size);
     }
   }
+
   @include min-screen(col(6)) {
     p {
       @include font-size($mm-super-large-size, $mm-super-large-line);
+
       & + p {
         margin-top: em($mm-super-large-line/2, $mm-super-large-size);
       }
@@ -37,8 +41,10 @@
   @include min-screen(col(10)) {
     margin-top: em($d-base-rhythm*2);
     margin-bottom: em($d-base-rhythm*2);
+
     p {
       @include font-size($t-super-large-size, $t-super-large-line);
+
       & + p {
         margin-top: em($t-super-large-line/2, $t-super-large-size);
       }

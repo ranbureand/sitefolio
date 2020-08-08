@@ -55,24 +55,33 @@ div {
 [class^="image"],
 [class^="video"] {
   margin: 0 0 em($m-base-rhythm) 0;
+
   counter-increment: images;
 
   @extend %column-gut;
+
   figcaption {
     width: 100%;
     margin-top: em($m-small-line/2);
+
      > p:first-child:before {
       font-style: italic;
+
       float: left;
+
       padding: 0 0.75em 0 0;
+
       content: "fig. " counter(images);
     }
   }
+
   img {
     margin-bottom: 0;
   }
+
   @include min-screen(col(8)) {
     margin: 0 0 em($d-base-rhythm) 0;
+
     figcaption {
       margin-top: em($d-small-line/2);
     }
@@ -81,12 +90,16 @@ div {
 
 .ratio {
   position: relative;
+
   display: block;
+
   height: 0;
+
   img {
     position: absolute;
     top: 0;
     left: 0;
+
     width: 100%;
     height: 100%;
   }
@@ -95,15 +108,22 @@ div {
 [class^="video"] {
   a {
     position: relative;
+
     display: block;
+
     .watch {
-      border-radius: em($m-small-line);
       font-weight: $medium;
+
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+
       overflow: hidden;
+
+      transform: translate(-50%, -50%);
+
+      border-radius: em($m-small-line);
+
       &:before {
         position: absolute;
         z-index: 2;
@@ -121,17 +141,22 @@ div {
         transition-duration: $duration, $duration;
         transition-property: opacity, transform;
         transform: scale(0);
+
         opacity: 0;
         border-radius: 50%;
       }
+
       div {
-        padding: em($m-small-line/2, $m-small-size) em($m-gut/2*3, $m-small-size);
         position: relative;
         z-index: 10;
-        @include face(sans);
+
+        padding: em($m-small-line/2, $m-small-size) em($m-gut/2*3, $m-small-size);
+
         @include font-size($m-small-size, $m-small-line);
+        @include face(sans);
       }
     }
+
     &:hover {
       .watch {
         &:before {
@@ -141,6 +166,7 @@ div {
         }
       }
     }
+
     &:active {
       .watch {
         &:before {
@@ -157,11 +183,12 @@ div {
       .watch {
         border-radius: em($d-small-line);
 
-
         div {
           padding: em($d-small-line/2, $d-small-size) em($d-gut, $d-small-size);
+
           @include font-size($d-small-size, $d-small-line);
         }
+
         &:before {
           margin-top: calc(-50% + #{em($d-small-line)});
         }
@@ -187,6 +214,7 @@ div {
 
   @include min-screen(col(12)) {
     width: col(12);
+
     figcaption {
       width: col(8);
     }

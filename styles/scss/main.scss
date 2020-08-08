@@ -20,6 +20,12 @@
 @import "basics/layout-1d.scss";
 
 /*
+** Typography
+*/
+
+@import "basics/typography.scss";
+
+/*
 ** Modules
 */
 
@@ -38,12 +44,6 @@
 @import "modules/pieces.scss";
 @import "modules/links.scss";
 @import "modules/forms.scss";
-
-/*
-** Typography
-*/
-
-@import "basics/typography.scss";
 
 /*
 ** Print

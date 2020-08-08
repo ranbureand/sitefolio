@@ -69,7 +69,6 @@
       opacity: 1.0;
     }
   }
-
   @include min-screen(col(8)) {
     border-radius: em($d-small-line);
 

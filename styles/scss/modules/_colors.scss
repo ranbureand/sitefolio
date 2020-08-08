@@ -19,6 +19,7 @@
     color: $l-selected-type-color;
     background-color: $l-selected-background-color;
   }
+
   ::selection {
     color: $l-selected-type-color;
     background-color: $l-selected-background-color;
@@ -27,6 +28,7 @@
   .color-1 {
     color: $l-color-1;
   }
+
   .color-2 {
     color: $l-color-2;
   }
@@ -61,7 +63,8 @@
     a {
       color: $l-background-color;
 
-      &:hover, &:active {
+      &:hover,
+      &:active {
         color: $l-background-color;
       }
     }
@@ -72,10 +75,12 @@
       .watch {
         color: $l-background-color;
         background-color: $l-strong-type-color;
+
         &:before {
           background-color: $l-color-1;
         }
       }
+
       &:active {
         .watch {
           &:before {
@@ -84,7 +89,10 @@
         }
       }
     }
+  }
 
+  .footnotes {
+    border-top-color: $l-border-color;
   }
 
   // Links
@@ -93,6 +101,7 @@
     &:hover {
       color: $l-color-1;
     }
+
     &:active {
       color: $l-color-1-darker;
     }
@@ -108,12 +117,15 @@
   h6 {
     color: $l-strong-type-color;
   }
+
   dt {
     color: $l-strong-type-color;
   }
+
   strong {
     color: $l-strong-type-color;
   }
+
   q {
     color: $l-strong-type-color;
   }
@@ -126,23 +138,27 @@
   pre {
     background-color: $l-code-background-color;
   }
+
   code,
   samp,
   kbd,
   mark {
     color: $l-type-color;
   }
+
   pre {
     code {
-        background-color: transparent;
+      background-color: transparent;
     }
   }
+
   blockquote {
     border-color: $l-border-color;
   }
+
   hr,
   .separator {
-    border-top-color:  $l-border-color;
+    border-top-color: $l-border-color;
   }
 
   // Embedded content
@@ -164,6 +180,7 @@
     color: $d-selected-type-color;
     background-color: $d-selected-background-color;
   }
+
   ::selection {
     color: $d-selected-type-color;
     background-color: $d-selected-background-color;
@@ -172,6 +189,7 @@
   .color-1 {
     color: $d-color-1;
   }
+
   .color-2 {
     color: $d-color-2;
   }
@@ -206,7 +224,8 @@
     a {
       color: $d-background-color;
 
-      &:hover, &:active {
+      &:hover,
+      &:active {
         color: $d-background-color;
       }
     }
@@ -216,24 +235,47 @@
     &:before {
       background-color: $d-picture-background-color;
     }
+
     .preview-image {
       background-color: $d-picture-background-color;
     }
+
     .preview-title {
       color: $d-strong-type-color;
     }
+
     .preview-tags,
     .preview-time {
       color: $d-type-color;
     }
+
     &:hover {
       .preview-title {
         color: $d-color-1;
       }
     }
+
     &:active {
       .preview-title {
         color: $d-color-1-darker;
+      }
+    }
+  }
+
+  .footnotes {
+    &:before {
+      border-top-color: $d-border-color;
+    }
+  }
+
+  .projects-exordium {
+    .footnotes {
+       > ol {
+         > li {
+          &:before {
+            color: $d-color-1;
+          }
+        }
       }
     }
   }
@@ -244,6 +286,7 @@
     &:hover {
       color: $d-color-1;
     }
+
     &:active {
       color: $d-color-1-darker;
     }
@@ -259,12 +302,15 @@
   h6 {
     color: $d-strong-type-color;
   }
+
   dt {
     color: $d-strong-type-color;
   }
+
   strong {
     color: $d-strong-type-color;
   }
+
   q {
     color: $d-strong-type-color;
   }
@@ -277,23 +323,27 @@
   pre {
     background-color: $d-code-background-color;
   }
+
   code,
   samp,
   kbd,
   mark {
     color: $d-type-color;
   }
+
   pre {
     code {
-        background-color: transparent;
+      background-color: transparent;
     }
   }
+
   blockquote {
     border-color: $d-border-color;
   }
+
   hr,
   .separator {
-    border-top-color:  $d-border-color;
+    border-top-color: $d-border-color;
   }
 
   // Embedded content
@@ -307,6 +357,7 @@
     color: $d-light-type-color;
   }
 }
+
 
 .forms-on-light {
 

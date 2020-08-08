@@ -42,14 +42,17 @@
 }
 
 .about {
-  padding-top: em($m-base-rhythm);
+  padding-top: em($m-base-rhythm*2);
+  padding-bottom: em($m-base-rhythm*2);
 
   animation-name: element-in-up;
   animation-duration: $duration*4;
 
   animation-fill-mode: both;
+
   @include min-screen(col(8)) {
-    padding-top: em($d-base-rhythm);
+    padding-top: em($d-base-rhythm*1);
+    padding-bottom: em($d-base-rhythm*2);
   }
 }
 
@@ -69,34 +72,38 @@
   animation-duration: $duration*4;
 
   animation-fill-mode: both;
+
   @include min-screen(col(8)) {
-    padding-top: em($d-base-rhythm*2);
+    padding-top: em($d-base-rhythm*1);
     padding-bottom: em($d-base-rhythm*4);
   }
 }
 
-/*
-** Details
-*/
+.projects-head {
+  @include min-screen(col(16)) {
+    // Text-level semantics
 
-.canvas-details {
-  background-color: $d-background-color;
+    h1 {
+      margin-bottom: em($t-super-large-line/2, $t-super-large-size);
+
+      @include font-size($t-super-large-size, $t-super-large-line);
+    }
+  }
 }
 
-.details {
-  padding-top: em($m-base-rhythm*4);
-  padding-bottom: em($m-base-rhythm*2);
+.projects-subhead {
+  @include face(mono);
+}
 
-  animation-name: element-in-up;
-  animation-duration: $duration*4;
-
-  animation-fill-mode: both;
-  @include min-screen(col(8)) {
-    padding-top: em($d-base-rhythm*4);
-    padding-bottom: em($d-base-rhythm*2);
-  }
-  @include min-screen(col(12)) {
-    padding-top: em($d-base-rhythm*2);
+.projects-exordium {
+  .footnotes {
+     > ol {
+       > li {
+        &:before {
+          content: "\002020";
+        }
+      }
+    }
   }
 }
 
@@ -116,8 +123,9 @@
   animation-duration: $duration*4;
 
   animation-fill-mode: both;
+
   @include min-screen(col(8)) {
-    padding-top: em($d-base-rhythm*2);
+    padding-top: em($d-base-rhythm*1);
     padding-bottom: em($d-base-rhythm*4);
   }
 }
