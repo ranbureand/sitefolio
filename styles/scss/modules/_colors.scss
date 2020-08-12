@@ -15,11 +15,6 @@
 .words-on-light {
   color: $l-strong-type-color;
 
-  ::-moz-selection {
-    color: $l-selected-type-color;
-    background-color: $l-selected-background-color;
-  }
-
   ::selection {
     color: $l-selected-type-color;
     background-color: $l-selected-background-color;
@@ -175,11 +170,6 @@
 
 .words-on-dark {
   color: $d-strong-type-color;
-
-  ::-moz-selection {
-    color: $d-selected-type-color;
-    background-color: $d-selected-background-color;
-  }
 
   ::selection {
     color: $d-selected-type-color;

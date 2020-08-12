@@ -1,18 +1,6 @@
 /* Copyright (c) 2017 Andrea Buran [www.andreaburan.com]. All rights reserved */
 
-::-webkit-input-placeholder {
-  opacity: 1.0;
-  color: $l-placeholder-type-color;
-}
-:-moz-placeholder {
-  opacity: 1.0; /* Firefox 18- */
-  color: $l-placeholder-type-color;
-}
-::-moz-placeholder {
-  opacity: 1.0;  /* Firefox 19+ */
-  color: $l-placeholder-type-color;
-}
-:-ms-input-placeholder {
+::placeholder {
   opacity: 1.0;
   color: $l-placeholder-type-color;
 }

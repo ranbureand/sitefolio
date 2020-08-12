@@ -279,7 +279,7 @@ img {
   -ms-interpolation-mode: bicubic;
   border-style: none; // normalize.css
 
-  image-rendering: optimizeQuality;
+  image-rendering: high-quality;
 }
 
 svg:not(:root) {
