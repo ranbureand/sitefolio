@@ -430,7 +430,8 @@
 
   // Text-level semantics
 
-  h1 {
+  h1,
+  h2 {
     font-weight: $normal;
 
     margin-bottom: em($ms-super-large-line/2, $ms-super-large-size);
@@ -441,7 +442,8 @@
   @include min-screen(col(6)) {
     // Text-level semantics
 
-    h1 {
+    h1,
+    h2 {
       margin-bottom: em($mm-super-large-line/2, $mm-super-large-size);
 
       @include font-size($mm-super-large-size, $mm-super-large-line);
@@ -450,7 +452,8 @@
   @include min-screen(col(10)) {
     // Text-level semantics
 
-    h1 {
+    h1,
+    h2 {
       margin-bottom: em($t-super-large-line/2, $t-super-large-size);
 
       @include font-size($t-super-large-size, $t-super-large-line);
@@ -459,7 +462,8 @@
   @include min-screen(col(16)) {
     // Text-level semantics
 
-    h1 {
+    h1,
+    h2 {
       margin-bottom: em($d-super-large-line/2, $d-super-large-size);
 
       @include font-size($d-super-large-size, $d-super-large-line);

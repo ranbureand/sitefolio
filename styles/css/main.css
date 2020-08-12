@@ -1067,28 +1067,32 @@ video {
   }
 }
 
-.typo-sl h1 {
+.typo-sl h1,
+.typo-sl h2 {
   font-weight: 400;
   margin-bottom: 0.75em;
   font-size: 1.5em;
   line-height: 1.5em;
 }
 @media screen and (min-width: 27em) {
-  .typo-sl h1 {
+  .typo-sl h1,
+.typo-sl h2 {
     margin-bottom: 0.75em;
     font-size: 2em;
     line-height: 1.5em;
   }
 }
 @media screen and (min-width: 45em) {
-  .typo-sl h1 {
+  .typo-sl h1,
+.typo-sl h2 {
     margin-bottom: 0.6666666667em;
     font-size: 3em;
     line-height: 1.3333333333em;
   }
 }
 @media screen and (min-width: 72em) {
-  .typo-sl h1 {
+  .typo-sl h1,
+.typo-sl h2 {
     margin-bottom: 0.625em;
     font-size: 4em;
     line-height: 1.25em;
@@ -1724,7 +1728,8 @@ video {
 }
 
 @media screen and (min-width: 72em) {
-  .projects-head h1 {
+  .projects-head h1,
+.projects-head h2 {
     margin-bottom: 0.6666666667em;
     font-size: 3em;
     line-height: 1.3333333333em;

@@ -83,7 +83,8 @@
   @include min-screen(col(16)) {
     // Text-level semantics
 
-    h1 {
+    h1,
+    h2 {
       margin-bottom: em($t-super-large-line/2, $t-super-large-size);
 
       @include font-size($t-super-large-size, $t-super-large-line);

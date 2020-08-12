@@ -5,10 +5,10 @@
 
           <header class="projects-head column-2d-l typo-sl">
             {% if page.layout == "categories" %}
-              <h1>{{ page.title }} <sup class="color-1">&dagger;</sup></h1>
+              <h2>{{ page.title }} <sup class="color-1">&dagger;</sup></h2>
             {% else %}
               {% for category in categories %}
-                <h1>{{ category.title }} <sup class="color-1">&dagger;</sup></h1>
+                <h2>{{ category.title }} <sup class="color-1">&dagger;</sup></h2>
               {% endfor %}
             {% endif %}
           </header>
