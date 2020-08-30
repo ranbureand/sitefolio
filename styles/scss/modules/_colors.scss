@@ -270,6 +270,12 @@
     }
   }
 
+  .filter.current {
+    a {
+      color: $d-color-1;
+    }
+  }
+
   // Links
 
   a {
@@ -347,7 +353,6 @@
     color: $d-light-type-color;
   }
 }
-
 
 .forms-on-light {
 

@@ -8,7 +8,7 @@ author: "Andrea Buran"
 
 time: '2015–2016'
 
-categories: [All, Digital, Favorite, Non-Commercial]
+categories: [All, Digital, Non-Commercial]
 tags: [GitHub, gratitude, love, open source, responsive, site, thankfullness]
 
 preview_image: 'yo_this_is_cool_00.jpg'
