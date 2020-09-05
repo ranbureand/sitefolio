@@ -90,9 +90,53 @@
 
     @include font-size($m-tiny-size, $m-tiny-line);
 
-    img {
+    > img {
       position: absolute;
       z-index: 1;
+    }
+
+    .device {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      display: flex;
+      align-items: center;
+      flex-flow: row nowrap;
+      justify-content: center;
+
+      width: 100%;
+      height: 100%;
+      padding: em($m-gut*5);
+
+      img {
+        background-repeat: no-repeat;
+        background-image:
+          linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+          linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+        max-height: 100%;
+
+        border-radius: em($m-gut);
+        box-shadow:
+          0 2px $m-gut rgba(0, 0, 0, 0.2),
+          0 4px $m-gut*2 rgba(0, 0, 0, 0.2),
+          0 0 0 1px rgba(0, 0, 0, 0.2),
+          0 0 0 2px rgba(255, 255, 255, 0.2);
+      }
+    }
+    @include min-screen(col(8)) {
+      .device {
+        padding: em($d-gut*3);
+
+        img {
+          border-radius: em($d-gut);
+          box-shadow:
+            0 2px $d-gut rgba(0, 0, 0, 0.2),
+            0 4px $d-gut*2 rgba(0, 0, 0, 0.2),
+            0 0 0 1px rgba(0, 0, 0, 0.2),
+            0 0 0 2px rgba(255, 255, 255, 0.2);
+        }
+      }
     }
   }
 
