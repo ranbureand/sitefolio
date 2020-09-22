@@ -98,7 +98,7 @@ Secondly, the layout of the pictures was designed taking into account not only t
 <div class="figures">
     {% include image.html
         size="xl"
-        h="2" w="3"
+        h="5" w="6"
         src="sight_seeing_explanation_00.jpg"
         alt="Making of the photobook Sight-_Seeing."
         color="#BEAEA1"

@@ -8,7 +8,7 @@ author: 'Andrea Buran'
 
 time: '2010'
 
-categories: [All, Digital, Dynamic Image, Favorite, Non-Commercial, Research]
+categories: [All, Digital, Dynamic Image, Non-Commercial, Research]
 tags: [cinema, comics, loop, new media form, sequential art, spatial montage]
 
 preview_image: 'medlay_the_last_dispatch_00.jpg'

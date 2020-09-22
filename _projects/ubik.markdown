@@ -8,7 +8,7 @@ author: 'Andrea Buran'
 
 time: '2012'
 
-categories: [All, Digital, Dynamic Image, Favorite, Non-Commercial, Research]
+categories: [All, Digital, Dynamic Image, Non-Commercial, Research]
 tags: [commercials, documentary films, found footage, Philip K. Dick, science fiction]
 
 preview_image: 'ubik_00.jpg'
