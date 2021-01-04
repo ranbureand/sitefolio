@@ -18,9 +18,6 @@
 
   p {
     font-weight: $normal;
-    //hyphens: manual;
-
-    hyphens: none;
 
     @include font-size($ms-super-large-size, $ms-super-large-line);
 
