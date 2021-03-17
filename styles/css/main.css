@@ -81,16 +81,14 @@
 ** Placeholders
 */
 [class^=image],
-[class^=video],
-[class^=screen] {
+[class^=video] {
   position: relative;
   padding-right: 0.25em;
   padding-left: 0.25em;
 }
 @media screen and (min-width: 36em) {
   [class^=image],
-[class^=video],
-[class^=screen] {
+[class^=video] {
     padding-right: 0.5em;
     padding-left: 0.5em;
   }
@@ -1973,39 +1971,33 @@ div + .figures {
 }
 
 [class^=image],
-[class^=video],
-[class^=screen] {
+[class^=video] {
   margin: 0 0 1.5em 0;
   counter-increment: images;
 }
 [class^=image] figcaption,
-[class^=video] figcaption,
-[class^=screen] figcaption {
+[class^=video] figcaption {
   width: 100%;
   margin-top: 0.75em;
 }
 [class^=image] figcaption > p:first-child:before,
-[class^=video] figcaption > p:first-child:before,
-[class^=screen] figcaption > p:first-child:before {
+[class^=video] figcaption > p:first-child:before {
   font-style: italic;
   float: left;
   padding: 0 0.75em 0 0;
   content: "fig. " counter(images);
 }
 [class^=image] img,
-[class^=video] img,
-[class^=screen] img {
+[class^=video] img {
   margin-bottom: 0;
 }
 @media screen and (min-width: 36em) {
   [class^=image],
-[class^=video],
-[class^=screen] {
+[class^=video] {
     margin: 0 0 2.5em 0;
   }
   [class^=image] figcaption,
-[class^=video] figcaption,
-[class^=screen] figcaption {
+[class^=video] figcaption {
     margin-top: 0.75em;
   }
 }
@@ -2080,142 +2072,96 @@ div + .figures {
   }
 }
 
-[class^=screen] .device {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  flex-flow: row nowrap;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  padding: 2.5em;
-}
-[class^=screen] img {
-  background-repeat: no-repeat;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
-  max-height: 100%;
-  border-radius: 0.5em;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), 0 4px 16px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.2), 0 0 0 2px rgba(255, 255, 255, 0.2);
-}
-@media screen and (min-width: 36em) {
-  [class^=screen] .device {
-    padding: 3em;
-  }
-  [class^=screen] img {
-    border-radius: 1em;
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2), 0 4px 32px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.2), 0 0 0 2px rgba(255, 255, 255, 0.2);
-  }
-}
-
 .image-xl,
-.video-xl,
-.screen-xl {
+.video-xl {
   width: 100%;
 }
 @media screen and (min-width: 54em) {
   .image-xl figcaption,
-.video-xl figcaption,
-.screen-xl figcaption {
+.video-xl figcaption {
     width: 36em;
   }
 }
 
 .image-l,
-.video-l,
-.screen-l {
+.video-l {
   width: 100%;
 }
 @media screen and (min-width: 54em) {
   .image-l,
-.video-l,
-.screen-l {
+.video-l {
     width: 54em;
   }
   .image-l figcaption,
-.video-l figcaption,
-.screen-l figcaption {
+.video-l figcaption {
     width: 36em;
   }
 }
 
 .image-m,
-.video-m,
-.screen-m {
+.video-m {
   width: 100%;
 }
 @media screen and (min-width: 54em) {
   .image-m,
-.video-m,
-.screen-m {
+.video-m {
     width: 66.6666666667%;
   }
 }
 @media screen and (min-width: 72em) {
   .image-m,
-.video-m,
-.screen-m {
+.video-m {
     width: 50%;
   }
 }
 
 .image-sm,
-.video-sm,
-.screen-sm {
+.video-sm {
   width: 100%;
 }
 @media screen and (min-width: 30em) {
   .image-sm,
-.video-sm,
-.screen-sm {
+.video-sm {
     width: 50%;
   }
 }
 @media screen and (min-width: 54em) {
   .image-sm,
-.video-sm,
-.screen-sm {
+.video-sm {
     width: 33.3333333333%;
   }
 }
 
 .image-s,
-.video-s,
-.screen-s {
+.video-s {
   width: 100%;
 }
 @media screen and (min-width: 27em) {
   .image-s,
-.video-s,
-.screen-s {
+.video-s {
     width: 50%;
   }
 }
 @media screen and (min-width: 36em) {
   .image-s,
-.video-s,
-.screen-s {
+.video-s {
     width: 18em;
   }
 }
 
 .image-xs,
-.video-xs,
-.screen-xs {
+.video-xs {
   width: 50%;
 }
 @media screen and (min-width: 30em) {
   .image-xs,
-.video-xs,
-.screen-xs {
+.video-xs {
     width: 25%;
   }
 }
 @media screen and (min-width: 36em) {
   .image-xs,
-.video-xs,
-.screen-xs {
+.video-xs {
     width: 9em;
   }
 }

@@ -13,9 +13,7 @@ categories: [All, Digital, Favorite, Non-Commercial]
 tags: [blog, pixel art, short pieces, responsive, short stories, site, times]
 
 preview_image: 'sempiternity_2_00.jpg'
-preview_color: '#363636'
-preview_type: 'screen'
-
+preview_color: '#EFD2D2'
 
 excerpt: 'The site collects witty and/or absurd short stories.'
 exordium: 'The site collects witty and/or absurd short stories.'
@@ -24,13 +22,13 @@ publish: 'yes'
 ---
 
 <div class="figures">
-    {% include screen.html
+    {% include image.html
         size="xl"
-        h="4792" w="2880"
-        src="sempiternity_12_blueberry_hill_nei_videogiochi_1440_00.jpg"
+        h="2716" w="1760"
+        src="sempiternity_2_12_blueberry_hill_nei_videogiochi_1440_00.jpg"
         alt="A screenshot of Sempiternity, a site/collection of witty short stories."
         caption="A piece, a.k.a. a witty/absurd short story."
-        color="#363636"
+        color="#EFD2D2"
     %}
 </div>
 
@@ -50,12 +48,12 @@ link
 : [Sempiternity](http://www.sempiternity.net/ "Sempiternity")
 
 <div class="figures">
-    {% include screen.html
+    {% include image.html
         size="m"
-        h="1024" w="768"
-        src="sempiternity_12_blueberry_hill_nei_videogiochi_768_00.jpg"
+        h="1200" w="960"
+        src="sempiternity_2_12_blueberry_hill_nei_videogiochi_600_00.jpg"
         alt="A screenshot of Sempiternity, a site/collection of witty short stories."
-        color="#363636"
+        color="#EFD2D2"
     %}
 </div>
 
@@ -67,7 +65,7 @@ The content readability is always at its best thanks to a robust **responsive ad
     {% include image.html
         size="m"
         h="1" w="2"
-        src="sempiternity_logo_00.jpg"
+        src="sempiternity_2_logo_00.jpg"
         alt="The logo/favicon of Sempiternity."
         caption="The logo/favicon of Sempiternity."
         color="#EFD2D2"
@@ -79,64 +77,64 @@ The **logo**/**favicon** of the site resembles a circular, indeterminate **progr
 The same concept is reinforced through the **background color** of the page, which hue is cyclically rotated over time according to the hour of the day.
 
 <div class="figures">
-    {% include screen.html
+    {% include image.html
         size="m"
-        h="1" w="1"
-        src="sempiternity_4_drink_cameriere_e_pappagalli_360_00.jpg"
+        h="988" w="960"
+        src="sempiternity_2_4_drink_cameriere_e_pappagalli_360_00.jpg"
         alt="A screenshot of Sempiternity, a site/collection of witty short stories."
         caption="2:00–2:59 UTC."
-        color="#363636"
+        color="#D2D2EF"
     %}
-    {% include screen.html
+    {% include image.html
         size="m"
-        h="1" w="1"
-        src="sempiternity_8_nella_foresta_360_00.jpg"
+        h="988" w="960"
+        src="sempiternity_2_8_nella_foresta_360_00.jpg"
         alt="A screenshot of Sempiternity, a site/collection of witty short stories."
         caption="06:00–06:59 UTC."
-        color="#363636"
+        color="#EFD2EF"
     %}
-    {% include screen.html
+    {% include image.html
         size="m"
-        h="1" w="1"
-        src="sempiternity_12_blueberry_hill_nei_videogiochi_360_00.jpg"
+        h="988" w="960"
+        src="sempiternity_2_12_blueberry_hill_nei_videogiochi_360_00.jpg"
         alt="A screenshot of Sempiternity, a site/collection of witty short stories."
         caption="10:00–10:59 UTC."
-        color="#363636"
+        color="#EFD2D2"
     %}
-    {% include screen.html
+    {% include image.html
         size="m"
-        h="1" w="1"
-        src="sempiternity_16_il_nuovo_re_360_00.jpg"
+        h="988" w="960"
+        src="sempiternity_2_16_il_nuovo_re_360_00.jpg"
         alt="A screenshot of Sempiternity, a site/collection of witty short stories."
         caption="14:00–14:59 UTC."
-        color="#363636"
+        color="#EFEFD2"
     %}
-    {% include screen.html
+    {% include image.html
         size="m"
-        h="1" w="1"
-        src="sempiternity_20_sull_imbarazzo_sociale_360_00.jpg"
+        h="988" w="960"
+        src="sempiternity_2_20_sull_imbarazzo_sociale_360_00.jpg"
         alt="A screenshot of Sempiternity, a site/collection of witty short stories."
         caption="18:00–18:59 UTC."
-        color="#363636"
+        color="#D2EFD2"
     %}
-    {% include screen.html
+    {% include image.html
         size="m"
-        h="1" w="1"
-        src="sempiternity_24_cinquantamila_al_doppio_drago_360_00.jpg"
+        h="988" w="960"
+        src="sempiternity_2_24_cinquantamila_al_doppio_drago_360_00.jpg"
         alt="A screenshot of Sempiternity, a site/collection of witty short stories."
         caption="22:00–22:59 UTC."
-        color="#363636"
+        color="#D2EFEF"
     %}
 </div>
 
 <div class="figures">
-    {% include screen.html
+    {% include image.html
         size="xl"
-        h="1600" w="1440"
-        src="sempiternity_14_indice_1440_00.jpg"
+        h="1960" w="1760"
+        src="sempiternity_2_14_indice_1440_00.jpg"
         alt="A screenshot of Sempiternity, a site/collection of witty short stories."
         caption="The index of the pieces."
-        color="#363636"
+        color="#EFE0D2"
     %}
 </div>
 
@@ -146,43 +144,43 @@ Pieces in Sempiternity often share a common **motif**, which is identifiable tha
     {% include image.html
         size="xs"
         h="1" w="1"
-        src="sempiternity_icon_4_00.jpg"
+        src="sempiternity_2_icon_4_00.jpg"
         alt="A pixel art icon representing one of the motifs of the witty short stories collected in Sempiternity."
-        color="#D2D2EF"
+        color="#D2D3EF"
     %}
     {% include image.html
         size="xs"
         h="1" w="1"
-        src="sempiternity_icon_8_00.jpg"
+        src="sempiternity_2_icon_8_00.jpg"
         alt="A pixel art icon representing one of the motifs of the witty short stories collected in Sempiternity."
-        color="#EFD2EF"
+        color="#EED3EF"
     %}
     {% include image.html
         size="xs"
         h="1" w="1"
-        src="sempiternity_icon_12_00.jpg"
+        src="sempiternity_2_icon_12_00.jpg"
         alt="A pixel art icon representing one of the motifs of the witty short stories collected in Sempiternity."
-        color="#EFD2D2"
+        color="#EED2D2"
     %}
     {% include image.html
         size="xs"
         h="1" w="1"
-        src="sempiternity_icon_16_00.jpg"
+        src="sempiternity_2_icon_16_00.jpg"
         alt="A pixel art icon representing one of the motifs of the witty short stories collected in Sempiternity."
         color="#EFEFD2"
     %}
     {% include image.html
         size="xs"
         h="1" w="1"
-        src="sempiternity_icon_20_00.jpg"
+        src="sempiternity_2_icon_20_00.jpg"
         alt="A pixel art icon representing one of the motifs of the witty short stories collected in Sempiternity."
-        color="#D2EFD2"
+        color="#D2EFD1"
     %}
     {% include image.html
         size="xs"
         h="1" w="1"
-        src="sempiternity_icon_24_00.jpg"
+        src="sempiternity_2_icon_24_00.jpg"
         alt="A pixel art icon representing one of the motifs of the witty short stories collected in Sempiternity."
-        color="#D2EFEF"
+        color="#D3EFEF"
     %}
 </div>

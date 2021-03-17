@@ -3,7 +3,7 @@ order: 2
 
 layout: categories
 
-title: 'Favorite Projects'
+title: 'Favorite Non-Commercial Projects'
 category: 'Favorite'
 category_handle: 'favorite'
 

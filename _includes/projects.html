@@ -15,21 +15,6 @@
 
           <div class="column-2d-l separator"></div>
 
-          <!--<div class="projects-subhead column-2d-s-1 typo-l">
-            {% if page.layout == "categories" %}
-              {%- assign projectList = site.projects | sort: 'order' | where: 'publish', 'yes' | where: 'categories', page.category -%}
-
-              {% for project in projectList %}
-                 {% capture projectCount %} {{ projectCount | plus: 1 }} {% endcapture %}
-              {% endfor %}
-              <h4>{% if projectList.size == 0 %} No Projects {% elsif projectList.size == 1 %} {{ projectList.size }} Project {% else %} {{ projectList.size }} Projects {% endif %}</h4>
-            {% else %}
-              {% for category in categories %}
-                <h4>{{ category.title }}</h4>
-              {% endfor %}
-            {% endif %}
-          </div>-->
-
           <div class="projects-exordium column-2d-m-2 typo-l">
             {% if page.layout == 'categories' %}
               {{ page.content }}

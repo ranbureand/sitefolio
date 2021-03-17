@@ -12,7 +12,7 @@ categories: [All, Digital, Favorite, Non-Commercial, Research, Static Image]
 tags: [dream, image search results, responsive, search engines, site]
 
 preview_image: 'fortune_cookie_site_00.jpg'
-preview_color: '#6362E0'
+preview_color: '#6362E1'
 
 excerpt: 'The experimental web image archive aims at replicating on a small scale the way a human image search engine might work.'
 exordium: 'The experimental web image archive aims at replicating on a small scale the way a human image search engine might work.'
@@ -23,10 +23,10 @@ publish: 'yes'
 <div class="figures">
     {% include image.html
         size="xl"
-        h="2675" w="2880"
-        src="fortune_cookie_index_1280_00.jpg"
+        h="1492" w="1600"
+        src="fortune_cookie_site_index_1280_00.jpg"
         alt="A screenshot of the website Fortune Cookie."
-        color="#6362E0"
+        color="#6362E1"
     %}
 </div>
 
@@ -48,10 +48,10 @@ link
 <div class="figures">
     {% include image.html
         size="m"
-        h="4" w="3"
-        src="fortune_cookie_index_768_00.jpg"
+        h="1344" w="1088"
+        src="fortune_cookie_site_index_768_00.jpg"
         alt="A screenshot of the website Fortune Cookie."
-        color="#6362E0"
+        color="#6362E1"
     %}
 </div>
 
@@ -64,17 +64,17 @@ For the sake of the experiment’s simplicity and consistency, the **replication
 <div class="figures">
     {% include image.html
         size="m"
-        h="1" w="1"
-        src="fortune_cookie_index_360_00.jpg"
+        h="988" w="960"
+        src="fortune_cookie_site_index_360_00.jpg"
         alt="A screenshot of the website Fortune Cookie."
-        color="#6362E0"
+        color="#6362E1"
     %}
     {% include image.html
         size="m"
-        h="1" w="1"
-        src="fortune_cookie_call_360_00.jpg"
+        h="988" w="960"
+        src="fortune_cookie_site_call_360_00.jpg"
         alt="A screenshot of the website Fortune Cookie."
-        color="#6362E0"
+        color="#6362E1"
     %}
 </div>
 
@@ -85,45 +85,45 @@ The **query word** ***dream*** is chosen because it is an **abstract** term, and
 <div class="figures">
     {% include image.html
         size="xl"
-        h="3845" w="2880"
-        src="fortune_cookie_call_1280_00.jpg"
+        h="2142" w="1600"
+        src="fortune_cookie_site_call_1280_00.jpg"
         alt="A screenshot of the website Fortune Cookie."
-        color="#6362E0"
+        color="#6362E1"
     %}
     {% include image.html
         size="m"
-        h="1" w="1"
-        src="fortune_cookie_form_360_00.jpg"
+        h="988" w="960"
+        src="fortune_cookie_site_form_360_00.jpg"
         alt="A screenshot of the website Fortune Cookie."
-        color="#6362E0"
+        color="#6362E1"
     %}
     {% include image.html
         size="m"
-        h="1" w="1"
-        src="fortune_cookie_form_360_01.jpg"
+        h="988" w="960"
+        src="fortune_cookie_site_form_360_01.jpg"
         alt="A screenshot of the website Fortune Cookie."
-        color="#6362E0"
+        color="#6362E1"
     %}
     {% include image.html
         size="m"
-        h="1" w="1"
-        src="fortune_cookie_form_360_02.jpg"
+        h="988" w="960"
+        src="fortune_cookie_site_form_360_02.jpg"
         alt="A screenshot of the website Fortune Cookie."
-        color="#6362E0"
+        color="#6362E1"
     %}
     {% include image.html
         size="m"
-        h="1" w="1"
-        src="fortune_cookie_archive_360_01.jpg"
+        h="988" w="960"
+        src="fortune_cookie_site_archive_360_00.jpg"
         alt="A screenshot of the website Fortune Cookie."
-        color="#6362E0"
+        color="#6362E1"
     %}
     {% include image.html
         size="xl"
-        h="3397" w="2880"
-        src="fortune_cookie_archive_1280_01.jpg"
+        h="1893" w="1600"
+        src="fortune_cookie_site_archive_1280_00.jpg"
         alt="A screenshot of the website Fortune Cookie."
-        color="#6362E0"
+        color="#6362E1"
     %}
 </div>
 
@@ -136,10 +136,10 @@ For the above reason, all the thumbnails of the images collected in the archive 
 <div class="figures">
     {% include image.html
         size="m"
-        h="4" w="3"
-        src="fortune_cookie_installation_768_00.jpg"
+        h="1344" w="1088"
+        src="fortune_cookie_site_installation_768_00.jpg"
         alt="A screenshot of the website Fortune Cookie."
-        color="#6362E0"
+        color="#6362E1"
     %}
 </div>
 

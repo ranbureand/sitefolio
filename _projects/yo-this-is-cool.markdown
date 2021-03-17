@@ -12,7 +12,7 @@ categories: [All, Digital, Non-Commercial]
 tags: [GitHub, gratitude, love, open source, responsive, site, thankfullness]
 
 preview_image: 'yo_this_is_cool_00.jpg'
-preview_color: '#6ED9C0'
+preview_color: '#6ED8C1'
 
 excerpt: 'The site lets developers and designers show love and thank the people behind their favorite open source projects on GitHub.'
 exordium: 'The site lets developers and designers show love and thank the people behind their favorite open source projects on GitHub.'
@@ -23,10 +23,10 @@ publish: 'yes'
 <div class="figures">
     {% include image.html
         size="xl"
-        w="2880" h="4367"
+        w="1600" h="2432"
         src="yo_this_is_cool_home_1280_00.jpg"
         alt="A screenshot of the site Yo, This is Cool."
-        color="#6ED9C0"
+        color="#6ED8C1"
     %}
 </div>
 
@@ -45,17 +45,17 @@ responsibilities
 <div class="figures">
     {% include image.html
         size="m"
-        w="1" h="1"
+        w="960" h="988"
         src="yo_this_is_cool_home_360_02.jpg"
         alt="A screenshot of the site Yo, This is Cool."
-        color="#6ED9C0"
+        color="#6ED8C1"
     %}
     {% include image.html
         size="m"
-        w="1" h="1"
+        w="960" h="988"
         src="yo_this_is_cool_home_360_03.jpg"
         alt="A screenshot of the site Yo, This is Cool."
-        color="#6ED9C0"
+        color="#6ED8C1"
     %}
 </div>
 
@@ -66,10 +66,10 @@ The intent behind *Yo, This is Cool* is having a space where you can thank the a
 <div class="figures">
     {% include image.html
         size="xl"
-        w="2880" h="3883"
+        w="1600" h="2164"
         src="yo_this_is_cool_index_1280_00.jpg"
         alt="A screenshot of the site Yo, This is Cool."
-        color="#6ED9C0"
+        color="#6ED8C1"
     %}
 </div>
 
@@ -78,17 +78,17 @@ Each letter of the *Index* page is associated to an interesting **term** as **fo
 <div class="figures">
     {% include image.html
         size="m"
-        w="1" h="1"
+        w="960" h="988"
         src="yo_this_is_cool_index_360_00.jpg"
         alt="A screenshot of the site Yo, This is Cool."
-        color="#6ED9C0"
+        color="#6ED8C1"
     %}
     {% include image.html
         size="m"
-        w="3" h="4"
-        src="yo_this_is_cool_index_768_00.jpg"
+        w="960" h="988"
+        src="yo_this_is_cool_index_360_01.jpg"
         alt="A screenshot of the site Yo, This is Cool."
-        color="#6ED9C0"
+        color="#6ED8C1"
     %}
 </div>
 
@@ -98,7 +98,7 @@ Each letter of the *Index* page is associated to an interesting **term** as **fo
         w="2" h="1"
         src="yo_this_is_cool_mandragora_00.jpg"
         alt="The mascotte Meri The Mandragora."
-        color="#6ED9C0"
+        color="#6ED8C1"
     %}
 </div>
 
@@ -107,31 +107,31 @@ A **[mandrake root](https://en.wikipedia.org/wiki/Mandrake "Mandrake on Wikipedi
 <div class="figures">
     {% include image.html
         size="m"
-        w="1" h="1"
+        w="960" h="988"
         src="yo_this_is_cool_home_360_00.jpg"
         alt="A screenshot of the site Yo, This is Cool."
-        color="#6ED9C0"
+        color="#6ED8C1"
     %}
     {% include image.html
         size="m"
-        w="1" h="1"
+        w="960" h="988"
         src="yo_this_is_cool_home_360_01.jpg"
         alt="A screenshot of the site Yo, This is Cool."
-        color="#6ED9C0"
+        color="#6ED8C1"
     %}
     {% include image.html
         size="m"
-        w="1" h="1"
+        w="960" h="988"
         src="yo_this_is_cool_project_360_00.jpg"
         alt="A screenshot of the site Yo, This is Cool."
-        color="#6ED9C0"
+        color="#6ED8C1"
     %}
     {% include image.html
         size="m"
-        w="1" h="1"
+        w="960" h="988"
         src="yo_this_is_cool_project_360_01.jpg"
         alt="A screenshot of the site Yo, This is Cool."
-        color="#6ED9C0"
+        color="#6ED8C1"
     %}
 </div>
 
@@ -142,9 +142,9 @@ The font is [Roboto](https://www.google.com/fonts/specimen/Roboto) by Google, wh
 <div class="figures">
     {% include image.html
         size="xl"
-        w="2880" h=4464
+        w="1600" h="2486"
         src="yo_this_is_cool_colophon_1280_00.jpg"
         alt="A screenshot of the site Yo, This is Cool."
-        color="#6ED9C0"
+        color="#6ED8C1"
     %}
 </div>
