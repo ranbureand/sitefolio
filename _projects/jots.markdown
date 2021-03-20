@@ -20,9 +20,6 @@ exordium: '*Jots* is an ongoing collection of bits from inspiring pieces about d
 publish: 'yes'
 ---
 
-tags
-: {% include tags.html %}
-
 <div class="figures">
   {% include image.html
       size="xl"
@@ -31,6 +28,21 @@ tags
       alt="A screenshot of Sempiternity, a site/collection of bits from inspiring pieces about design and development."
       color="#8F6EFA"
   %}
+</div>
+
+tags
+: {% include tags.html %}
+
+role
+: designer
+
+responsibilities
+: concept, information architecture, information + interaction + visual design, back end + front end development
+
+link
+: [Jots](http://ranbureand.github.io/jots/ "Jots")
+
+<div class="figures">
   {% include image.html
       size="m"
       h="988" w="960"

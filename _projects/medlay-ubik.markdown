@@ -21,12 +21,12 @@ publish: 'yes'
 ---
 
 <div class="figures">
-    {% include image.html 
-        size="xl" 
-        w="3" h="2" 
-        src="medlay_ubik_6344.jpg" 
-        alt="A screenshot of Ubik / Chap. 6." 
-        color="#222" 
+    {% include image.html
+        size="xl"
+        w="3" h="2"
+        src="medlay_ubik_6344.jpg"
+        alt="A screenshot of Ubik / Chap. 6."
+        color="#222"
     %}
 </div>
 
@@ -46,12 +46,12 @@ prototype
 : [Ubik, Chap. 6 Prototype](http://ranbureand.github.io/ubik-chap-6/ "Ubik, Chap. 6 on GitHub")
 
 <div class="figures">
-    {% include image.html 
-        size="xl" 
-        w="3" h="2" 
-        src="medlay_ubik_6346.jpg" 
-        alt="A screenshot of Ubik / Chap. 6." 
-        color="#222" 
+    {% include image.html
+        size="xl"
+        w="3" h="2"
+        src="medlay_ubik_6346.jpg"
+        alt="A screenshot of Ubik / Chap. 6."
+        color="#222"
     %}
 </div>
 
@@ -62,37 +62,37 @@ The slogan opening the 6<sup>th</sup> chapter of *Ubik* says:
 >Warning: use only as directed. And with caution.
 
 <div class="figures">
-    {% include image.html 
-        size="l" 
-        w="3" h="2" 
-        src="medlay_ubik_6353.jpg" 
-        alt="A screenshot of Ubik / Chap. 6." 
-        color="#222" 
+    {% include image.html
+        size="l"
+        w="3" h="2"
+        src="medlay_ubik_6353.jpg"
+        alt="A screenshot of Ubik / Chap. 6."
+        color="#222"
     %}
-    {% include image.html 
-        size="l" 
-        w="3" h="2" 
-        src="medlay_ubik_6347.jpg" 
-        alt="A screenshot of Ubik / Chap. 6." 
-        color="#222" 
+    {% include image.html
+        size="l"
+        w="3" h="2"
+        src="medlay_ubik_6347.jpg"
+        alt="A screenshot of Ubik / Chap. 6."
+        color="#222"
     %}
 </div>
 
 The proof of concept prototype is structured using HTML5, JavaScript, jQuery, and CSS, while the source of its dynamic images is the [Prelinger archives](http://www.archive.org/browse.php?field=subject&mediatype=movies&collection=prelinger "Prelinger archives on Internet Archive").
 
 <div class="figures">
-    {% include image.html 
-        size="xl" 
-        w="3" h="2" 
-        src="medlay_ubik_6348.jpg" 
-        alt="A screenshot of Ubik / Chap. 6." 
-        color="#222" 
+    {% include image.html
+        size="xl"
+        w="3" h="2"
+        src="medlay_ubik_6348.jpg"
+        alt="A screenshot of Ubik / Chap. 6."
+        color="#222"
     %}
-    {% include image.html 
-        size="l" 
-        w="3" h="2" 
-        src="medlay_ubik_6349.jpg" 
-        alt="A screenshot of Ubik / Chap. 6." 
-        color="#222" 
+    {% include image.html
+        size="l"
+        w="3" h="2"
+        src="medlay_ubik_6349.jpg"
+        alt="A screenshot of Ubik / Chap. 6."
+        color="#222"
     %}
 </div>

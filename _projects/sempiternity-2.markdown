@@ -41,8 +41,8 @@ role
 responsibilities
 : concept, information architecture, information + interaction + visual design, back end + front end development
 
-team
-: Andrea Buran, Luca Buran
+written by
+: Luca Buran
 
 link
 : [Sempiternity](http://www.sempiternity.net/ "Sempiternity")
@@ -57,7 +57,7 @@ link
     %}
 </div>
 
-The **simple-on-purpose** site interface lets users fully **focus on the content** of the pieces, without the risk of being distracted by any unneeded graphical interference.
+The simple interface of the site lets readers fully **focus on the content** of the pieces, without the risk of being distracted by any unneeded graphical interference.
 
 The content readability is always at its best thanks to a robust **responsive adaptive layout** and a flexible **responsive typography**.
 
@@ -72,7 +72,7 @@ The content readability is always at its best thanks to a robust **responsive ad
     %}
 </div>
 
-The **logo**/**favicon** of the site resembles a circular, indeterminate **progress indicator**: what better way to represent the concept of sempiternity, that is none other than existence within time but infinitely into the future?
+The **logo**/**favicon** of the site resembles a circular, indeterminate **progress indicator**: what better way to represent the concept of *sempiternity*, that is none other than existence within time but infinitely into the future?
 
 The same concept is reinforced through the **background color** of the page, which hue is cyclically rotated over time according to the hour of the day.
 
@@ -127,6 +127,8 @@ The same concept is reinforced through the **background color** of the page, whi
     %}
 </div>
 
+The site has been designed and developed in the browser, generated through [Jekyll](http://jekyllrb.com/ "Jekyll"), styled from scratch in [SCSS](http://sass-lang.com/ "SASS"), and typesetted in [Spectral](https://fonts.google.com/specimen/Spectral "Spectral on Google Fonts").
+
 <div class="figures">
     {% include image.html
         size="xl"
@@ -138,7 +140,7 @@ The same concept is reinforced through the **background color** of the page, whi
     %}
 </div>
 
-Pieces in Sempiternity often share a common **motif**, which is identifiable thanks to a **pixel art icon** opening the short story.
+Readers can identify pieces sharing common **motifs** thanks to the **pixel art icons** opening the short stories.
 
 <div class="figures">
     {% include image.html
