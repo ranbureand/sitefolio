@@ -65,18 +65,14 @@ link
       color="#1F1F1F"
   %}
 </div>
+
+The site has been designed and developed in the browser, written in Kramdown, generated through [Jekyll](http://jekyllrb.com/ "Jekyll"), styled from scratch in [SCSS](http://sass-lang.com/ "SASS"), and typesetted in [Cooper Hewitt](https://www.cooperhewitt.org/open-source-at-cooper-hewitt/cooper-hewitt-the-typeface-by-chester-jenkins/ "Cooper Hewitt: The Typeface by Chester Jenkins").
+
 <div class="figures">
     {% include image.html
         size="xl"
         h="1760" w="1780"
         src="jots_list_1440_00.jpg"
-        alt="A screenshot of Sempiternity, a site/collection of bits from inspiring pieces about design and development."
-        color="#1F1F1F"
-    %}
-    {% include image.html
-        size="xl"
-        h="1760" w="1780"
-        src="jots_footer_1440_00.jpg"
         alt="A screenshot of Sempiternity, a site/collection of bits from inspiring pieces about design and development."
         color="#1F1F1F"
     %}
@@ -93,5 +89,12 @@ link
         src="jots_list_600_00.jpg"
         alt="A screenshot of Sempiternity, a site/collection of bits from inspiring pieces about design and development."
         color="#8F6EFA"
+    %}
+    {% include image.html
+        size="xl"
+        h="1760" w="1780"
+        src="jots_footer_1440_00.jpg"
+        alt="A screenshot of Sempiternity, a site/collection of bits from inspiring pieces about design and development."
+        color="#1F1F1F"
     %}
 </div>
