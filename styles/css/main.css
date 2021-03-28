@@ -1709,6 +1709,25 @@ video {
 }
 
 /*
+** About
+*/
+.canvas-portrait {
+  background-color: #131313;
+}
+
+.portrait {
+  padding-bottom: 3em;
+  animation-name: element-in-up;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+}
+@media screen and (min-width: 36em) {
+  .portrait {
+    padding-bottom: 5em;
+  }
+}
+
+/*
 ** Projects
 */
 .canvas-projects {

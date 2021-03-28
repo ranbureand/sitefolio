@@ -1,39 +1,33 @@
-      <div class="canvas-projects">
-        <section class="projects layout-2d words-on-dark">
+    <div class="canvas-projects">
+      <section class="projects layout-2d words-on-dark">
 
-          {% assign categories = site.categories | where: 'category', 'Favorite' %}
+        {% assign categories = site.categories | where: 'category', 'Favorite' %}
 
-          <header class="projects-head column-2d-l typo-sl">
-            {% if page.layout == "categories" %}
-              <h2>{{ page.title }} <sup class="color-1">&dagger;</sup></h2>
-            {% else %}
-              {% for category in categories %}
-                <h2>{{ category.title }} <sup class="color-1">&dagger;</sup></h2>
-              {% endfor %}
-            {% endif %}
-          </header>
-
-          <div class="column-2d-l separator"></div>
-
-          <div class="projects-exordium column-2d-m-2 typo-l">
-            {% if page.layout == 'categories' %}
-              {{ page.content }}
-            {% else %}
-              {% for category in categories %}
-                {{ category.content | markdownify }}
-              {% endfor %}
-            {% endif %}
-
-            {% include disclaimer.html %}
-          </div>
-
-          {% if page.layout == 'categories' %}
-            {% include previews.html category = page.category %}
+        <header class="projects-head column-2d-l typo-sl">
+          {% if page.layout == "categories" %}
+            <h2>{{ page.title }}</h2>
           {% else %}
-            {% include previews.html category = 'Favorite' %}
+            {% for category in categories %}
+              <h2>{{ category.title }}</h2>
+            {% endfor %}
           {% endif %}
+        </header>
 
-          {% include filters.html %}
+        <div class="column-2d-l separator"></div>
 
-        </section>
-      </div>
+        {%- if page.layout == 'categories' %}
+        <div class="projects-exordium column-2d-m-2 typo-l">
+          {{ page.content }}
+        </div>
+        {%- endif %}
+
+        {%- if page.layout == 'categories' %}
+          {% include previews.html category = page.category %}
+        {%- else %}
+          {% include previews.html category = 'Favorite' %}
+        {%- endif %}
+
+        {% include filters.html %}
+
+      </section>
+    </div>

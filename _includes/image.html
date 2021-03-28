@@ -15,6 +15,13 @@
 {%- assign column = 72 -%}
 {%- assign w_float = include.w | times: 1.0 -%}
 
+{%- if include.path -%}
+  {%- assign image_path = include.path -%}
+{%- else -%}
+  {%- assign image_project_name = page.title | slugify: 'latin' -%}
+  {%- assign image_path = 'projects-optimized/' | append: image_project_name -%}
+{%- endif -%}
+
 <figure class="{{ image_size }}" id="{{ include.src }}">
   {% if include.h and include.w%}
   <div class="ratio" style="padding-bottom: {{ include.h | divided_by: w_float | times: 100 }}%;{% if include.color -%}background-color: {{ include.color }};{% endif %}">
@@ -22,17 +29,17 @@
     <img
       {% if include.size == "xl" %}
       src="
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/1440/{{ include.src }}
+      ../media/{{ image_path }}/images/1440/{{ include.src }}
       "
       srcset="
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/2880/{{ include.src }} {{ column | times: 16 }}w,
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/1440/{{ include.src }} {{ column | times: 16 }}w,
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/2160/{{ include.src }} {{ column | times: 12 }}w,
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/1080/{{ include.src }} {{ column | times: 12 }}w,
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/1440/{{ include.src }} {{ column | times: 8 }}w,
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/720/{{ include.src }} {{ column | times: 8 }}w,
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/720/{{ include.src }} 360w,
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/360/{{ include.src }} 360w,
+      ../media/{{ image_path }}/images/2880/{{ include.src }} {{ column | times: 16 }}w,
+      ../media/{{ image_path }}/images/1440/{{ include.src }} {{ column | times: 16 }}w,
+      ../media/{{ image_path }}/images/2160/{{ include.src }} {{ column | times: 12 }}w,
+      ../media/{{ image_path }}/images/1080/{{ include.src }} {{ column | times: 12 }}w,
+      ../media/{{ image_path }}/images/1440/{{ include.src }} {{ column | times: 8 }}w,
+      ../media/{{ image_path }}/images/720/{{ include.src }} {{ column | times: 8 }}w,
+      ../media/{{ image_path }}/images/720/{{ include.src }} 360w,
+      ../media/{{ image_path }}/images/360/{{ include.src }} 360w,
       "
       sizes="
       (min-width: 72em) {{ column | times: 16 | divided_by: 16 }}em,
@@ -42,15 +49,15 @@
       "
       {% elsif include.size == "l" %}
       src="
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/1080/{{ include.src }}
+      ../media/media/{{ image_path }}/images/1080/{{ include.src }}
       "
       srcset="
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/2160/{{ include.src }} {{ column | times: 12 }}w,
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/1080/{{ include.src }} {{ column | times: 12 }}w,
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/1440/{{ include.src }} {{ column | times: 8 }}w,
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/720/{{ include.src }} {{ column | times: 8 }}w,
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/720/{{ include.src }} 360w,
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/360/{{ include.src }} 360w,
+      ../media/{{ image_path }}/images/2160/{{ include.src }} {{ column | times: 12 }}w,
+      ../media/{{ image_path }}/images/1080/{{ include.src }} {{ column | times: 12 }}w,
+      ../media/{{ image_path }}/images/1440/{{ include.src }} {{ column | times: 8 }}w,
+      ../media/{{ image_path }}/images/720/{{ include.src }} {{ column | times: 8 }}w,
+      ../media/{{ image_path }}/images/720/{{ include.src }} 360w,
+      ../media/{{ image_path }}/images/360/{{ include.src }} 360w,
       "
       sizes="
       (min-width: 54em) {{ column | times: 12 | divided_by: 16 }}em,
@@ -59,15 +66,15 @@
       "
       {% elsif include.size == "sm" %}
       src="
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/360/{{ include.src }}
+      ../media/{{ image_path }}/images/360/{{ include.src }}
       "
       srcset="
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/1440/{{ include.src }} {{ column | times: 6 }}w,
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/720/{{ include.src }} {{ column | times: 6 }}w,
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/720/{{ include.src }} {{ column | times: 4 }}w,
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/360/{{ include.src }} {{ column | times: 4 }}w,
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/720/{{ include.src }} 360w,
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/360/{{ include.src }} 360w,
+      ../media/{{ image_path }}/images/1440/{{ include.src }} {{ column | times: 6 }}w,
+      ../media/{{ image_path }}/images/720/{{ include.src }} {{ column | times: 6 }}w,
+      ../media/{{ image_path }}/images/720/{{ include.src }} {{ column | times: 4 }}w,
+      ../media/{{ image_path }}/images/360/{{ include.src }} {{ column | times: 4 }}w,
+      ../media/{{ image_path }}/images/720/{{ include.src }} 360w,
+      ../media/{{ image_path }}/images/360/{{ include.src }} 360w,
       "
       sizes="
       (min-width: 54em) {{ column | times: 6 | divided_by: 16 }}em,
@@ -76,13 +83,13 @@
       "
       {% elsif include.size == "s" %}
       src="
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/360/{{ include.src }}
+      ../media/{{ image_path }}/images/360/{{ include.src }}
       "
       srcset="
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/720/{{ include.src }} {{ column | times: 4 }}w,
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/360/{{ include.src }} {{ column | times: 4 }}w,
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/720/{{ include.src }} 360w,
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/360/{{ include.src }} 360w,
+      ../media/{{ image_path }}/images/720/{{ include.src }} {{ column | times: 4 }}w,
+      ../media/{{ image_path }}/images/360/{{ include.src }} {{ column | times: 4 }}w,
+      ../media/{{ image_path }}/images/720/{{ include.src }} 360w,
+      ../media/{{ image_path }}/images/360/{{ include.src }} 360w,
       "
       sizes="
       (min-width: 30em) {{ column | times: 4 | divided_by: 16 }}em,
@@ -90,13 +97,13 @@
       "
       {% elsif include.size == "xs" %}
       src="
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/360/{{ include.src }}
+      ../media/{{ image_path }}/images/360/{{ include.src }}
       "
       srcset="
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/720/{{ include.src }} {{ column | times: 2 }}w,
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/360/{{ include.src }} {{ column | times: 2 }}w,
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/720/{{ include.src }} 240w,
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/360/{{ include.src }} 240w,
+      ../media/{{ image_path }}/images/720/{{ include.src }} {{ column | times: 2 }}w,
+      ../media/{{ image_path }}/images/360/{{ include.src }} {{ column | times: 2 }}w,
+      ../media/{{ image_path }}/images/720/{{ include.src }} 240w,
+      ../media/{{ image_path }}/images/360/{{ include.src }} 240w,
       "
       sizes="
       (min-width: 30em) {{ column | times: 2 | divided_by: 16 }}em,
@@ -104,13 +111,13 @@
       "
       {% else %}
       src="
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/720/{{ include.src }}
+      ../media/{{ image_path }}/images/720/{{ include.src }}
       "
       srcset="
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/1440/{{ include.src }} {{ column | times: 8 }}w,
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/720/{{ include.src }} {{ column | times: 8 }}w,
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/720/{{ include.src }} 360w,
-      ../media/projects-optimized/{{ page.title | slugify: 'latin' }}/images/360/{{ include.src }} 360w,
+      ../media/{{ image_path }}/images/1440/{{ include.src }} {{ column | times: 8 }}w,
+      ../media/{{ image_path }}/images/720/{{ include.src }} {{ column | times: 8 }}w,
+      ../media/{{ image_path }}/images/720/{{ include.src }} 360w,
+      ../media/{{ image_path }}/images/360/{{ include.src }} 360w,
       "
       sizes="
       (min-width: 30em) {{ column | times: 8 | divided_by: 16 }}em,
