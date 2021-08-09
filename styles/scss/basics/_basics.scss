@@ -252,6 +252,22 @@ pre {
     white-space: pre;
   }
 }
+pre,
+code {
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-wrap: normal;
+  word-break: normal;
+  -moz-tab-size: 4;
+    -o-tab-size: 4;
+       tab-size: 4;
+  -webkit-hyphens: none;
+     -moz-hyphens: none;
+          hyphens: none;
+
+      -ms-hyphens: none;
+}
 
 hr {
   display: block;

@@ -3,7 +3,7 @@ title: 'Andrea Buran’s Sitefolio'
 author: Andrea Buran
 email: hello@andreaburan.com
 description: 'Andrea Buran, product manager and designer, at your service. I design and craft digital services and products that put people first.'
-version: '2021-03-17'
+version: '2021-08-09'
 
 baseurl: '' # the subpath of your site, e.g. /blog
 url: http://www.andreaburan.com # the base hostname & protocol for your site
@@ -26,3 +26,6 @@ kramdown:
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 2..3
+  #syntax_highlighter_opts:
+    #block:
+      #line_numbers: true

@@ -1,0 +1,103 @@
+/* Copyright (c) 2017 Andrea Buran [www.andreaburan.com]. All rights reserved */
+
+/*
+** Variables
+*/
+
+$c-type-color:                  rgba($black, 0.76);
+$c-type-color-light:            rgba($black, 0.60);
+$c-type-color-lighter:          rgba($black, 0.44);
+
+$c-red:                         #f41543; // HSBlu(8,96,52)
+$c-orange:                      #be6414; // HSBlu(32,96,52)
+$c-yellow:                      #9f7514; // HSBlu(56,96,52)
+$c-green:                       #458c14; // HSBlu(120,96,52)
+$c-cyan:                        #168b81; // HSBlu(180,96,52)
+$c-blue:                        #1983bc; // HSBlu(240,96,52)
+$c-purple:                      #a34ff9; // HSBlu(280,96,52)
+$c-magenta:                     #e618a4; // HSBlu(336,96,52)
+
+$c-background-color:            rgba($black, 0.04);
+$c-selected-background-color:   rgba($black, 0.04);
+
+/*
+** Colors
+*/
+
+div.highlighter-rouge {
+  pre::-moz-selection,
+  pre ::-moz-selection,
+  code::-moz-selection,
+  code ::-moz-selection {
+    background: $c-selected-background-color;
+  }
+
+  pre::selection,
+  pre ::selection,
+  code::selection,
+  code ::selection {
+    background: $c-selected-background-color;
+  }
+}
+
+.highlight .hll { background-color: #ffffcc }
+.highlight .c   { color: $c-type-color-lighter; font-style: italic } // Comment
+.highlight .err { color: $c-red; background-color: #e3d2d2 } // Error
+.highlight .k   { color: $c-type-color } // Keyword // font-weight: bold
+.highlight .o   { color: $c-type-color } // Operator // font-weight: bold
+.highlight .cm  { color: $c-type-color-lighter; font-style: italic } // Comment.Multiline
+.highlight .cp  { color: $c-type-color-lighter; font-style: italic } // Comment.Preproc // font-weight: bold
+.highlight .c1  { color: $c-type-color-lighter; font-style: italic } // Comment.Single
+.highlight .cs  { color: $c-type-color-lighter; font-style: italic } // Comment.Special // font-weight: bold
+.highlight .gd  { color: $c-type-color; background-color: #ffdddd } // Generic.Deleted
+.highlight .ge  { color: $c-type-color; font-style: italic } // Generic.Emph
+.highlight .gr  { color: $c-red } // Generic.Error
+.highlight .gh  { color: $c-type-color-lighter } // Generic.Heading
+.highlight .gi  { color: $c-type-color; background-color: #ddffdd } // Generic.Inserted
+.highlight .go  { color: $c-type-color-lighter } // Generic.Output
+.highlight .gp  { color: $c-type-color-light } // Generic.Prompt
+.highlight .gs  {  } // Generic.Strong // font-weight: bold
+.highlight .gu  { color: $c-type-color-lighter } // Generic.Subheading
+.highlight .gt  { color: $c-red } // Generic.Traceback
+.highlight .kc  { color: $c-type-color } // Keyword.Constant // font-weight: bold
+.highlight .kd  { color: $c-type-color } // Keyword.Declaration // font-weight: bold
+.highlight .kn  { color: $c-type-color } // Keyword.Namespace // font-weight: bold
+.highlight .kp  { color: $c-type-color } // Keyword.Pseudo // font-weight: bold
+.highlight .kr  { color: $c-type-color } // Keyword.Reserved // font-weight: bold
+.highlight .kt  { color: $c-blue; font-weight: bold } // Keyword.Type
+.highlight .m   { color: $c-cyan } // Literal.Number
+.highlight .s   { color: $c-magenta } // Literal.String
+.highlight .na  { color: $c-cyan } // Name.Attribute
+.highlight .nb  { color: $c-blue } // Name.Builtin
+.highlight .nc  { color: $c-blue } // Name.Class // font-weight: bold
+.highlight .no  { color: $c-cyan } // Name.Constant
+.highlight .nd  { color: #3c5d5d } // Name.Decorator // font-weight: bold
+.highlight .ni  { color: $c-purple } // Name.Entity
+.highlight .ne  { color: $c-red } // Name.Exception // font-weight: bold
+.highlight .nf  { color: $c-red } // Name.Function // font-weight: bold
+.highlight .nl  { color: $c-red } // Name.Label // font-weight: bold
+.highlight .nn  { color: $c-type-color-light } // Name.Namespace
+.highlight .nt  { color: $c-blue } // Name.Tag
+.highlight .nv  { color: $c-cyan } // Name.Variable
+.highlight .ow  { color: $c-type-color } // Operator.Word // font-weight: bold
+.highlight .w   { color: $c-type-color-light } // Text.Whitespace
+.highlight .mf  { color: $c-cyan } // Literal.Number.Float
+.highlight .mh  { color: $c-cyan } // Literal.Number.Hex
+.highlight .mi  { color: $c-cyan } // Literal.Number.Integer
+.highlight .mo  { color: $c-cyan } // Literal.Number.Oct
+.highlight .sb  { color: $c-magenta } // Literal.String.Backtick
+.highlight .sc  { color: $c-magenta } // Literal.String.Char
+.highlight .sd  { color: $c-magenta } // Literal.String.Doc
+.highlight .s2  { color: $c-magenta } // Literal.String.Double
+.highlight .se  { color: $c-magenta } // Literal.String.Escape
+.highlight .sh  { color: $c-magenta } // Literal.String.Heredoc
+.highlight .si  { color: $c-magenta } // Literal.String.Interpol
+.highlight .sx  { color: $c-magenta } // Literal.String.Other
+.highlight .sr  { color: $c-green } // Literal.String.Regex
+.highlight .s1  { color: $c-magenta } // Literal.String.Single
+.highlight .ss  { color: $c-purple } // Literal.String.Symbol
+.highlight .bp  { color: $c-type-color-light } // Name.Builtin.Pseudo
+.highlight .vc  { color: $c-cyan } // Name.Variable.Class
+.highlight .vg  { color: $c-cyan } // Name.Variable.Global
+.highlight .vi  { color: $c-cyan } // Name.Variable.Instance
+.highlight .il  { color: $c-cyan } // Literal.Number.Integer.Long

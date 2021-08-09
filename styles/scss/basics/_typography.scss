@@ -186,8 +186,10 @@
   }
 
   pre {
-    margin-top: em($m-medium-line/2, $m-medium-size);
-    margin-bottom: em($m-medium-line/2, $m-medium-size);
+    margin-top: 0;
+    //margin-top: em($m-medium-line/2, $m-medium-size);
+    margin-bottom: 0;
+    //margin-bottom: em($m-medium-line/2, $m-medium-size);
     padding-top: em($m-medium-line/2, $m-medium-size);
     padding-right: em($m-gut*2, $m-medium-size);
     padding-bottom: em($m-medium-line/2, $m-medium-size);
@@ -271,8 +273,8 @@
     }
 
     pre {
-      margin-top: em($d-medium-line/2, $d-medium-size);
-      margin-bottom: em($d-medium-line/2, $d-medium-size);
+      //margin-top: em($d-medium-line/2, $d-medium-size);
+      //margin-bottom: em($d-medium-line/2, $d-medium-size);
       padding-top: em($d-medium-line/2, $d-medium-size);
       padding-right: em($d-gut, $d-medium-size);
       padding-bottom: em($d-medium-line/2, $d-medium-size);

@@ -15,7 +15,7 @@
 .words-on-light {
   color: $l-strong-type-color;
 
-  ::selection {
+  :not(code *)::selection {
     color: $l-selected-type-color;
     background-color: $l-selected-background-color;
   }
@@ -171,7 +171,7 @@
 .words-on-dark {
   color: $d-strong-type-color;
 
-  ::selection {
+  :not(code *)::selection {
     color: $d-selected-type-color;
     background-color: $d-selected-background-color;
   }

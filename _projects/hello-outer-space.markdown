@@ -102,9 +102,69 @@ This is a <var>variable element</var>, such as <var>x</var> = <var>y</var>.
 
 This is a code block:
 
-    tell application "Foo"
-      beep
-    end tell
+{% raw %}
+``` javascript
+@mixin face($status: sans) {
+  @if $status == "sans" {
+    font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  } @else if $status == "serif" {
+    font-family: "IBM Plex Serif", serif;
+  } @else if $status == "mono" {
+    font-family: "IBM Plex Mono", "Andale Mono", "Monaco", monospace;
+  }
+}
+```
+{: .code-m }
+{% endraw %}
+
+and this is another code block:
+
+{% raw %}
+``` javascript
+
+const fruits = ['Banana', 'Orange', 'Apple', 'Mango'];
+let fLen = fruits.length;
+
+let text = '<ul>';
+for (let i = 0; i < fLen; i++) {
+  text += '<li>' + fruits[i] + '</li>';
+}
+text += '</ul>';
+
+document.getElementById('demo').innerHTML = text;
+
+```
+{: .code-l }
+{% endraw %}
+
+and this is yet another code block:
+
+{% raw %}
+``` liquid
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  {%- assign pages = site.pages | where: 'language_reference', 'sitemap' %}
+
+  {%- for page in pages %}
+    <sitemap>
+      <loc>{{ site.absoluteurl }}{{ page.url | remove: 'index.html' }}</loc>
+
+      {%- if page.sitemap.lastmod %}
+        {%- assign lastmod = page.sitemap.lastmod | date: '%Y-%m-%d' %}
+      {%- elsif page.date %}
+        {%- assign lastmod = page.date | date_to_xmlschema %}
+      {%- else %}
+        {%- assign lastmod = site.time | date_to_xmlschema %}
+      {%- endif %}
+      <lastmod>{{ lastmod }}</lastmod>
+    </sitemap>
+  {%- endfor %}
+
+</sitemapindex>
+```
+{: .code-xl }
+{% endraw %}
 
 <div class="figures">
     {% include image.html
