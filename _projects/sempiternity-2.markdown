@@ -3,8 +3,7 @@ order: 39
 
 layout: project
 
-title: "Sempiternity 2"
-title_typeset: 'Sempiternity<sup>2</sup>'
+title: "Sempiternity <sup>2</sup>"
 author: "Andrea Buran"
 
 time: '2018'
@@ -18,7 +17,7 @@ preview_color: '#EFD2D2'
 excerpt: 'The site collects witty and/or absurd short stories.'
 exordium: 'The site collects witty and/or absurd short stories.'
 
-publish: 'yes'
+published: true
 ---
 
 <div class="figures">

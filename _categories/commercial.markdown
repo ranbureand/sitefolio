@@ -2,10 +2,10 @@
 order: 3
 
 layout: categories
+mode: dark
 
 title: 'Commercial Projects'
 category: 'Commercial'
-category_handle: 'commercial'
 
 excerpt: 'Few of my commercial projects.'
 ---

@@ -17,7 +17,7 @@ preview_color: '#DAD0C8'
 excerpt: 'The photobook relates two ways of looking at the city of Venice—the Ruskin’s Venetian notebooks and the Gavagnin’s two-decade collection of photographs.'
 exordium: 'The photobook relates two ways of looking at the city of Venice—the Ruskin’s Venetian notebooks and the Gavagnin’s two-decade collection of photographs.'
 
-publish: 'yes'
+published: true
 ---
 
 <div class="figures">

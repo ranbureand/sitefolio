@@ -16,7 +16,7 @@ preview_image: 'sight_seeing_site_00.png'
 excerpt: 'The website presents the photobook Sight-_Seeing and the exhibitions of the same name held in Innsbruck and Berlin.'
 exordium: ''
 
-publish: 'no'
+published: false
 ---
 
 tags

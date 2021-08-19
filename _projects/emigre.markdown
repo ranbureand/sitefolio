@@ -16,7 +16,7 @@ preview_image: 'emigre_00.jpg'
 excerpt: 'A written research paper on “Emigre” magazine.'
 exordium: ''
 
-publish: 'no'
+published: false
 ---
 
 tags

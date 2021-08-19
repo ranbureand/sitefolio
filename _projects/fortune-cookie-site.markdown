@@ -17,7 +17,7 @@ preview_color: '#6362E1'
 excerpt: 'The experimental web image archive aims at replicating on a small scale the way a human image search engine might work.'
 exordium: 'The experimental web image archive aims at replicating on a small scale the way a human image search engine might work.'
 
-publish: 'yes'
+published: true
 ---
 
 <div class="figures">

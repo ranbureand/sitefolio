@@ -16,7 +16,7 @@ preview_image: 'the_detourist_100_00.png'
 excerpt: 'The website presents the Kuoni Annual Report 2010 and its one hundred quotations.'
 exordium: ''
 
-publish: 'no'
+published: false
 ---
 
 tags

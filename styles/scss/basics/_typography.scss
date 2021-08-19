@@ -25,6 +25,10 @@
     a {
       text-decoration: underline;
     }
+    code {
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+    }
   }
 
   a.footnote {
@@ -32,6 +36,35 @@
   }
 
   // Text-level semantics
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    a {
+      &:before,
+      &:after {
+        transition-timing-function: ease-out;
+        transition-duration: $duration;
+        transition-property: opacity;
+
+        opacity: 0;
+      }
+      &:after {
+        content: " #";
+      }
+    }
+
+    a:hover {
+      &:before,
+      &:after {
+        opacity: 1.0;
+      }
+    }
+  }
+
 
   h1,
   h3,
@@ -113,6 +146,24 @@
   @include min-screen(col(12)) {
     // Text-level semantics
 
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      a {
+        &:before {
+          content: "# ";
+          position: absolute;
+          left: -1em;
+        }
+        &:after {
+          content: "";
+        }
+      }
+    }
+
     li:before,
     dt {
       text-align: right;
@@ -129,25 +180,45 @@
 
   h1,
   h2 {
+    margin-bottom: em($m-extra-large-line/2, $m-extra-large-size);
+
+    @include font-size($m-extra-large-size, $m-extra-large-line);
+  }
+
+  * + h1,
+  * + h2 {
+    margin-top: em($m-extra-large-line, $m-extra-large-size);
+  }
+
+  h3,
+  h4 {
     margin-bottom: em($m-large-line/2, $m-large-size);
 
     @include font-size($m-large-size, $m-large-line);
   }
 
-  h3,
-  h4,
-  p,
-  dd {
+  * + h3,
+  * + h4 {
+    margin-top: em($m-medium-line, $m-medium-size);
+  }
+
+  h5,
+  h6 {
     margin-bottom: em($m-medium-line/2, $m-medium-size);
 
     @include font-size($m-medium-size, $m-medium-line);
   }
 
-  h5,
-  h6 {
-    margin-bottom: em($m-small-line/2, $m-small-size);
+  * + h5,
+  * + h6 {
+    margin-top: em($m-medium-line, $m-medium-size);
+  }
 
-    @include font-size($m-small-size, $m-small-line);
+  p,
+  dd {
+    margin-bottom: em($m-medium-line/2, $m-medium-size);
+
+    @include font-size($m-medium-size, $m-medium-line);
   }
 
   ul,
@@ -179,6 +250,10 @@
     padding-right: em($m-gut/2, $m-medium-size);
   }
 
+  code {
+    @include font-size($m-small-size, $m-medium-line);
+  }
+
   // Grouping content
 
   blockquote {
@@ -194,8 +269,6 @@
     padding-right: em($m-gut*2, $m-medium-size);
     padding-bottom: em($m-medium-line/2, $m-medium-size);
     padding-left: em($m-gut*2, $m-medium-size);
-
-    @include font-size($m-medium-size, $m-medium-line);
   }
 
   hr {
@@ -216,25 +289,45 @@
 
     h1,
     h2 {
+      margin-bottom: em($d-extra-large-line/2, $d-extra-large-size);
+
+      @include font-size($d-extra-large-size, $d-extra-large-line);
+    }
+
+    * + h1,
+    * + h2 {
+      margin-top: em($d-extra-large-line, $d-large-size);
+    }
+
+    h3,
+    h4 {
       margin-bottom: em($d-large-line/2, $d-large-size);
 
       @include font-size($d-large-size, $d-large-line);
     }
 
-    h3,
-    h4,
-    p,
-    dd {
+    * + h3,
+    * + h4 {
+      margin-top: em($d-large-line, $d-large-size);
+    }
+
+    h5,
+    h6 {
       margin-bottom: em($d-medium-line/2, $d-medium-size);
 
       @include font-size($d-medium-size, $d-medium-line);
     }
 
-    h5,
-    h6 {
-      margin-bottom: em($d-small-line/2, $d-small-size);
+    * + h5,
+    * + h6 {
+      margin-top: em($d-medium-line, $d-medium-size);
+    }
 
-      @include font-size($d-small-size, $d-small-line);
+    p,
+    dd {
+      margin-bottom: em($d-medium-line/2, $d-medium-size);
+
+      @include font-size($d-medium-size, $d-medium-line);
     }
 
     ul,
@@ -266,6 +359,10 @@
       padding-right: em($d-gut/2, $d-medium-size);
     }
 
+    code {
+      @include font-size($d-small-size, $d-medium-line);
+    }
+
     // Grouping content
 
     blockquote {
@@ -279,8 +376,6 @@
       padding-right: em($d-gut, $d-medium-size);
       padding-bottom: em($d-medium-line/2, $d-medium-size);
       padding-left: em($d-gut, $d-medium-size);
-
-      @include font-size($d-medium-size, $d-medium-line);
     }
 
     hr {
@@ -303,7 +398,7 @@
     li:before {
       width: col(4, $d-medium-size);
       margin-left: col(-4, $d-medium-size);
-      padding-right: em($d-gut, $d-medium-size);
+      padding-right: em($d-gut/4*3, $d-medium-size);
     }
 
     ul,

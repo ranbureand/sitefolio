@@ -18,14 +18,14 @@
 {%- if include.path -%}
   {%- assign image_path = include.path -%}
 {%- else -%}
-  {%- assign image_project_name = page.title | slugify: 'latin' -%}
+  {%- assign image_project_name = page.title | strip_html | slugify: 'latin' -%}
   {%- assign image_path = 'projects-optimized/' | append: image_project_name -%}
 {%- endif -%}
 
 <figure class="{{ image_size }}" id="{{ include.src }}">
-  {% if include.h and include.w%}
+  {%- if include.h and include.w%}
   <div class="ratio" style="padding-bottom: {{ include.h | divided_by: w_float | times: 100 }}%;{% if include.color -%}background-color: {{ include.color }};{% endif %}">
-  {% endif %}
+  {%- endif %}
     <img
       {% if include.size == "xl" %}
       src="
@@ -128,12 +128,12 @@
       {% if include.alt %}{{ include.alt }}{% else %}{{ page.title }}{% endif %}
       "
     />
-  {% if include.h and include.w %}
+  {%- if include.h and include.w %}
   </div>
-  {% endif %}
-    {%- if include.caption -%}
-    <figcaption class="typo-s">
-      {{ include.caption | markdownify }}
-    </figcaption>
-    {% endif %}
+  {%- endif %}
+  {%- if include.caption -%}
+  <figcaption class="typo-s">
+    {{ include.caption | markdownify }}
+  </figcaption>
+  {%- endif %}
 </figure>

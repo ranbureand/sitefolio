@@ -2,10 +2,10 @@
 order: 5
 
 layout: categories
+mode: dark
 
 title: 'Digital Projects'
 category: 'Digital'
-category_handle: 'digital'
 
 excerpt: 'Projects dealing with and/or falling within the realm of digital-based media.'
 ---

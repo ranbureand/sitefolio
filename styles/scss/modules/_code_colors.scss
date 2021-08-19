@@ -1,30 +1,10 @@
 /* Copyright (c) 2017 Andrea Buran [www.andreaburan.com]. All rights reserved */
 
 /*
-** Variables
+** Code Colors
 */
 
-$c-type-color:                  rgba($black, 0.76);
-$c-type-color-light:            rgba($black, 0.60);
-$c-type-color-lighter:          rgba($black, 0.44);
-
-$c-red:                         #f41543; // HSBlu(8,96,52)
-$c-orange:                      #be6414; // HSBlu(32,96,52)
-$c-yellow:                      #9f7514; // HSBlu(56,96,52)
-$c-green:                       #458c14; // HSBlu(120,96,52)
-$c-cyan:                        #168b81; // HSBlu(180,96,52)
-$c-blue:                        #1983bc; // HSBlu(240,96,52)
-$c-purple:                      #a34ff9; // HSBlu(280,96,52)
-$c-magenta:                     #e618a4; // HSBlu(336,96,52)
-
-$c-background-color:            rgba($black, 0.04);
-$c-selected-background-color:   rgba($black, 0.04);
-
-/*
-** Colors
-*/
-
-div.highlighter-rouge {
+.highlighter-rouge {
   pre::-moz-selection,
   pre ::-moz-selection,
   code::-moz-selection,

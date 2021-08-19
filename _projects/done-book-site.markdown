@@ -16,7 +16,7 @@ preview_image: 'done_book_site_00.png'
 excerpt: 'The website presents the photobook Done.Book and the exhibition of the same name held in the British Pavilion during the Venice Architecture Biennale 2010.'
 exordium: ''
 
-publish: 'no'
+published: false
 ---
 
 tags

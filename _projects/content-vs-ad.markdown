@@ -16,7 +16,7 @@ preview_image: 'content_v_ad_00.png'
 excerpt: ''
 exordium: ''
 
-publish: 'no'
+published: false
 ---
 
 tags

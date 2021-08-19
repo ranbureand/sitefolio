@@ -90,6 +90,15 @@
     border-top-color: $l-border-color;
   }
 
+  .current {
+    a {
+      color: $l-color-1;
+      &:after {
+        color: $l-strong-type-color;
+      }
+    }
+  }
+
   // Links
 
   a {
@@ -111,6 +120,19 @@
   h5,
   h6 {
     color: $l-strong-type-color;
+    a {
+      &:before,
+      &:after {
+        color: $l-color-1;
+      }
+    }
+    a:hover {
+      color: $l-strong-type-color;
+      &:before,
+      &:after {
+        color: $l-color-1;
+      }
+    }
   }
 
   dt {
@@ -221,40 +243,83 @@
     }
   }
 
-  .preview {
-    &:before {
-      background-color: $d-picture-background-color;
-    }
+  .post-preview {
 
-    .preview-image {
-      background-color: $d-picture-background-color;
-    }
-
-    .preview-title {
+    .post-preview-title {
       color: $d-strong-type-color;
     }
 
-    .preview-tags,
-    .preview-time {
+    .post-preview-quotation,
+    .post-preview-tags,
+    .post-preview-date {
       color: $d-type-color;
     }
 
     &:hover {
-      .preview-title {
+      .post-preview-title {
         color: $d-color-1;
       }
     }
 
     &:active {
-      .preview-title {
+      .post-preview-title {
         color: $d-color-1-darker;
       }
+    }
+  }
+
+  .post-preview.current {
+    .post-preview-title {
+      color: $d-color-1;
+    }
+  }
+
+  .project-preview {
+    &:before {
+      background-color: $d-picture-background-color;
+    }
+
+    .project-preview-image {
+      background-color: $d-picture-background-color;
+    }
+
+    .project-preview-title {
+      color: $d-strong-type-color;
+    }
+
+    .project-preview-tags,
+    .project-preview-time {
+      color: $d-type-color;
+    }
+
+    &:hover {
+      .project-preview-title {
+        color: $d-color-1;
+      }
+    }
+
+    &:active {
+      .project-preview-title {
+        color: $d-color-1-darker;
+      }
+    }
+  }
+
+  .project-preview.current {
+    .project-preview-title {
+      color: $d-color-1;
     }
   }
 
   .footnotes {
     &:before {
       border-top-color: $d-border-color;
+    }
+  }
+
+  .header-navigation {
+    .current {
+      color: $l-color-1;
     }
   }
 
@@ -270,9 +335,12 @@
     }
   }
 
-  .filter.current {
+  .current {
     a {
       color: $d-color-1;
+    }
+    &:after {
+      color: $d-strong-type-color;
     }
   }
 

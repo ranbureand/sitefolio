@@ -1,0 +1,110 @@
+/* Copyright (c) 2017 Andrea Buran [www.andreaburan.com]. All rights reserved */
+
+/*
+** Previews
+*/
+
+.post-previews {
+  padding-top: em($m-base-rhythm);
+
+  li {
+    width: 100/1*1%;
+    margin-bottom: em($m-base-rhythm*2);
+    padding-right: em($m-gut/2);
+    padding-left: em($m-gut/2);
+
+    animation-name: element-in;
+    animation-duration: $duration*4;
+
+    animation-fill-mode: both;
+  }
+
+  @include min-screen(col(8)) {
+    padding-top: em($d-base-rhythm);
+
+    li {
+      width: 100/2*1%;
+      margin-bottom: em($d-base-rhythm*2);
+      padding-right: em($d-gut/2);
+      padding-left: em($d-gut/2);
+    }
+  }
+  @include min-screen(col(12)) {
+    li {
+      width: 100/2*1%;
+    }
+  }
+}
+
+@for $i from 0 through 24 {
+  .post-previews li:nth-child(#{$i + 1}n) {
+    animation-delay: #{$i * $duration/8 };
+  }
+}
+
+.post-preview {
+  position: relative;
+
+  display: block;
+
+  text-decoration: none;
+
+  .post-preview-title {
+    font-weight: $normal;
+
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+    transition-property: color;
+
+    @include font-size($m-extra-large-size, $m-extra-large-line);
+
+    sup {
+      text-decoration: none;
+    }
+  }
+
+  .post-preview-tags {
+    font-style: italic;
+
+    margin-top: em($m-tiny-line/4, $m-tiny-size);
+
+    @include font-size($m-tiny-size, $m-tiny-line);
+    @include face(serif);
+  }
+
+  .post-preview-date {
+    margin-top: em($m-small-line/4, $m-small-size);
+
+    @include font-size($m-small-size, $m-small-line);
+    @include face(mono);
+  }
+
+  &:active {
+    .post-preview-title {
+      transition-duration: 0.0s;
+    }
+  }
+
+  @include min-screen(col(8)) {
+
+    .post-preview-title {
+      @include font-size($d-extra-large-size, $d-extra-large-line);
+    }
+
+    .post-preview-tags {
+      margin-top: em($d-small-line/4, $d-small-size);
+
+      @include font-size($d-small-size, $d-small-line);
+    }
+
+    .post-preview-date {
+      margin-top: em($d-small-line/4, $d-small-size);
+
+      @include font-size($d-small-size, $d-small-line);
+    }
+  }
+}
+
+.post-preview.current {
+  cursor: default;
+}

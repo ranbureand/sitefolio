@@ -16,7 +16,7 @@ preview_image: 'war_photo_00.png'
 excerpt: 'War photo taken by an embedded journalist.'
 exordium: ''
 
-publish: 'no'
+published: false
 ---
 
 tags

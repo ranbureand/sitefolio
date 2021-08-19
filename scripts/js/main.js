@@ -34,7 +34,7 @@ var footnote = document.getElementsByClassName('reversefootnote');
 console.log(footnote);
 
 for (i = 0; i < footnote.length; i++) {
-  footnote[i].textContent = 'Back to Number';
+  footnote[i].textContent = 'Go Back';
 }
 
 /*
@@ -64,3 +64,17 @@ const now = new Date();
 const tz = now.getTimezoneOffset();
 
 console.log(tz);
+
+/*
+**
+*/
+
+const article = document.querySelector(".article-body");
+const headings = article.querySelectorAll("h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]");
+
+for (var i = 0; i < headings.length; i++) {
+  headings[i].innerHTML =
+    '<a href="#' + headings[i].id + '">' +
+        headings[i].innerText +
+    '</a>';
+}

@@ -17,7 +17,7 @@ preview_color: '#BEAEA1'
 excerpt: 'The photobook spatially arranges a heterogeneous set of collectively taken pictures of Tyrolean summer landscapes—halfway between tourism’s advertising images and contemporary photos.'
 exordium: 'The photobook spatially arranges a heterogeneous set of collectively taken pictures of Tyrolean summer landscapes—halfway between tourism’s advertising images and contemporary photos.'
 
-publish: 'yes'
+published: true
 ---
 
 <div class="figures">

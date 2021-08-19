@@ -16,7 +16,7 @@ preview_image: 'venezia_soundmap_00.png'
 excerpt: 'This collaborative repository aims at preserving the heritage sound of the lagoon of Venice.'
 exordium: ''
 
-publish: 'no'
+published: false
 ---
 
 tags

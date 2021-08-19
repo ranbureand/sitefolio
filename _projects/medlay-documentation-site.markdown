@@ -17,7 +17,7 @@ preview_color: '#525252'
 excerpt: 'The documentation site introduces and formalizes Medlay, a new hybrid media form concept for crafting multimedia artifacts on the Web.'
 exordium: 'The documentation site introduces and formalizes Medlay, a new hybrid media form concept for crafting multimedia artifacts on the Web.'
 
-publish: 'yes'
+published: true
 ---
 
 <div class="figures">

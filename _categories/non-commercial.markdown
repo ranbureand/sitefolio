@@ -2,10 +2,10 @@
 order: 4
 
 layout: categories
+mode: dark
 
 title: 'Non-Commercial Projects'
 category: 'Non-Commercial'
-category_handle: 'non-commercial'
 
 excerpt: 'My non-commercial/personal projects.'
 ---

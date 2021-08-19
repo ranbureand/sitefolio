@@ -17,7 +17,7 @@ preview_color: '#000'
 excerpt: 'The very first substantial prototype designed following the principles of Medlay. It narrates an original short story.'
 exordium: 'The proof of concept prototype illustrates the principles of [Medlay](http://ranbureand.github.io/medlay/ "Medlay on GitHub"). It narrates an original short story.'
 
-publish: 'yes'
+published: true
 ---
 
 <div class="figures">

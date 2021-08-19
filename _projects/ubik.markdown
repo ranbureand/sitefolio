@@ -17,7 +17,7 @@ preview_color: '#222'
 excerpt: 'In Ubik some of the slogans opening the chapters of the homonymous science fiction novel by Philp K. Dick are recreated using ’50 and ’60 American commercials and documentary films as footage.'
 exordium: 'In *Ubik* some of the slogans opening the chapters of the homonymous science fiction novel by Philp K. Dick are recreated using ’50 and ’60 American commercial and documentary footage.'
 
-publish: 'yes'
+published: true
 ---
 
 tags

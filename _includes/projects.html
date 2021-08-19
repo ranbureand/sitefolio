@@ -1,16 +1,16 @@
     <div class="canvas-projects">
       <section class="projects layout-2d words-on-dark">
 
-        {% assign categories = site.categories | where: 'category', 'Favorite' %}
+        {%- assign categories = site.categories | where: 'category', 'Favorite' %}
 
         <header class="projects-head column-2d-l typo-sl">
-          {% if page.layout == "categories" %}
+          {%- if page.layout == "categories" %}
             <h2>{{ page.title }}</h2>
-          {% else %}
-            {% for category in categories %}
+          {%- else %}
+            {%- for category in categories %}
               <h2>{{ category.title }}</h2>
-            {% endfor %}
-          {% endif %}
+            {%- endfor %}
+          {%- endif %}
         </header>
 
         <div class="column-2d-l separator"></div>

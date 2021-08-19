@@ -16,7 +16,7 @@ preview_image: 'redcycle_00.png'
 excerpt: ''
 exordium: ''
 
-publish: 'no'
+published: false
 ---
 
 tags

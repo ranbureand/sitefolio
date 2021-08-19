@@ -80,6 +80,56 @@
 }
 
 /*
+** Posts
+*/
+
+.canvas-posts {
+  background-color: $d-background-color;
+}
+
+.posts {
+  padding-top: em($m-base-rhythm*2);
+  padding-bottom: em($m-base-rhythm*2);
+
+  animation-name: element-in-up;
+  animation-duration: $duration*4;
+
+  animation-fill-mode: both;
+
+  @include min-screen(col(8)) {
+    padding-top: em($d-base-rhythm*1);
+    padding-bottom: em($d-base-rhythm*2);
+  }
+}
+
+.posts-head {
+  @include min-screen(col(16)) {
+    h1,
+    h2 {
+      margin-bottom: em($t-super-large-line/2, $t-super-large-size);
+
+      @include font-size($t-super-large-size, $t-super-large-line);
+    }
+  }
+}
+
+.posts-subhead {
+  @include face(mono);
+}
+
+.posts-exordium {
+  .footnotes {
+     > ol {
+       > li {
+        &:before {
+          content: "\002020";
+        }
+      }
+    }
+  }
+}
+
+/*
 ** Projects
 */
 
@@ -104,8 +154,6 @@
 
 .projects-head {
   @include min-screen(col(16)) {
-    // Text-level semantics
-
     h1,
     h2 {
       margin-bottom: em($t-super-large-line/2, $t-super-large-size);
@@ -132,14 +180,14 @@
 }
 
 /*
-** Project
+** Article
 */
 
-.canvas-project {
+.canvas-article {
   background-color: $l-background-color;
 }
 
-.project {
+.article {
   padding-top: em($m-base-rhythm*2);
   padding-bottom: em($m-base-rhythm*4);
 
@@ -154,10 +202,11 @@
   }
 }
 
-.project-time {
+.article-time,
+.article-date {
   @include face(mono);
 }
 
-.project-body {
+.article-body {
   @include face(serif);
 }

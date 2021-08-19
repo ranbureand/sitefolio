@@ -4,7 +4,7 @@
 ** Previews
 */
 
-.previews {
+.project-previews {
   padding-top: em($m-base-rhythm);
 
   li {
@@ -46,12 +46,12 @@
 }
 
 @for $i from 0 through 24 {
-  .previews li:nth-child(#{$i + 1}n) {
+  .project-previews li:nth-child(#{$i + 1}n) {
     animation-delay: #{$i * $duration/8 };
   }
 }
 
-.preview {
+.project-preview {
   position: relative;
 
   display: block;
@@ -78,7 +78,7 @@
     opacity: 0.0;
   }
 
-  .preview-image {
+  .project-preview-image {
     position: relative;
 
     padding-bottom: 100/2*3%;
@@ -140,7 +140,7 @@
     }
   }
 
-  .preview-title {
+  .project-preview-title {
     font-weight: $normal;
 
     margin-top: em($m-small-line/2, $m-small-size);
@@ -156,7 +156,7 @@
     }
   }
 
-  .preview-tags {
+  .project-preview-tags {
     font-style: italic;
 
     margin-top: em($m-tiny-line/4, $m-tiny-size);
@@ -165,7 +165,7 @@
     @include face(serif);
   }
 
-  .preview-time {
+  .project-preview-time {
     margin-top: em($m-small-line/4, $m-small-size);
 
     @include font-size($m-small-size, $m-small-line);
@@ -179,40 +179,40 @@
       @include adjust-dimension(width, $m-gut/2*3);
     }
 
-    .preview-image {
+    .project-preview-image {
       transform: translate(0, em(-$m-gut/2*3, $m-tiny-size));
     }
   }
 
   &:active {
-    .preview-image {
+    .project-preview-image {
       transition-duration: 0.0s;
       transform: translate(0, 0);
     }
 
-    .preview-title {
+    .project-preview-title {
       transition-duration: 0.0s;
     }
   }
 
   @include min-screen(col(8)) {
-    .preview-image {
+    .project-preview-image {
       @include font-size($d-tiny-size, $d-tiny-line);
     }
 
-    .preview-title {
+    .project-preview-title {
       margin-top: em($d-small-line/2, $d-small-size);
 
       @include font-size($d-small-size, $d-small-line);
     }
 
-    .preview-tags {
+    .project-preview-tags {
       margin-top: em($d-small-line/4, $d-small-size);
 
       @include font-size($d-small-size, $d-small-line);
     }
 
-    .preview-time {
+    .project-preview-time {
       margin-top: em($d-small-line/4, $d-small-size);
 
       @include font-size($d-small-size, $d-small-line);
@@ -223,13 +223,13 @@
         @include adjust-dimension(width, $d-gut);
       }
 
-      .preview-image {
+      .project-preview-image {
         transform: translate(0, em(-$d-gut, $d-tiny-size));
       }
     }
 
     &:active {
-      .preview-image {
+      .project-preview-image {
         transition-duration: 0.0s;
         transform: translate(0, 0);
       }
@@ -237,7 +237,7 @@
   }
 }
 
-.preview.current {
+.project-preview.current {
   cursor: default;
 
   &:before {
@@ -246,12 +246,8 @@
     @include adjust-dimension(width, $m-gut/2*3);
   }
 
-  .preview-image {
+  .project-preview-image {
     transform: translate(0, em(-$m-gut/2*3, $m-tiny-size));
-  }
-
-  .preview-title {
-    color: $d-color-1;
   }
 
   @include min-screen(col(8)) {
@@ -259,7 +255,7 @@
       @include adjust-dimension(width, $d-gut);
     }
 
-    .preview-image {
+    .project-preview-image {
       transform: translate(0, em(-$d-gut, $d-tiny-size));
     }
   }

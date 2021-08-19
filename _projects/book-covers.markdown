@@ -16,7 +16,7 @@ preview_image: 'book_covers_00.png'
 excerpt: ''
 exordium: ''
 
-publish: 'no'
+published: false
 ---
 
 tags

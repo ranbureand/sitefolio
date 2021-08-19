@@ -17,7 +17,7 @@ preview_color: '#E3E4DF'
 excerpt: 'The installation investigates the dynamics between users, images and image search engines in the current panorama of the Web.'
 exordium: 'The installation investigates the dynamics between users, images and image search engines in the current panorama of the Web.'
 
-publish: 'yes'
+published: true
 ---
 
 <div class="figures">

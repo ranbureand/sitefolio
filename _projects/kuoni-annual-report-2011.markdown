@@ -17,7 +17,7 @@ preview_color: '#EBE8E1'
 excerpt: 'The annual report of Kuoni is made up of five core chapters: the Market Report, the Financial Report, the People Report, the Brand Report and the Future Report.'
 exordium: 'The annual report of Kuoni is made up of five core sections: the *Market Report*, the *Financial Report*, the *People Report*, the *Brand Report* and the *Future Report*.'
 
-publish: 'yes'
+published: true
 ---
 
 <div class="figures">

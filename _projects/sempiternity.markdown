@@ -17,7 +17,7 @@ background_color: '#D9D9F2'
 excerpt: 'The site collects witty and/or absurd short stories.'
 exordium: 'The site collects witty and/or absurd short stories.'
 
-publish: 'yes'
+published: true
 ---
 
 <div class="figures">

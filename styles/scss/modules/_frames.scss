@@ -42,7 +42,7 @@
 }
 
 .header-title,
-.header-motto,
+.header-navigation,
 .footer-copyright,
 .footer-scroll {
   @include font-size($m-small-size, $m-small-line);
@@ -68,15 +68,45 @@
   }
 }
 
-.header-motto {
-  text-align: right;
+.header-navigation {
+  display: flex;
+  align-content: flex-start;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+
+  padding-right: em($m-gut/2, $m-small-size);
+  padding-left: em($m-gut/2, $m-small-size);
 
   grid-column: 3 / 5;
 
+  li {
+    &:after {
+      display: inline;
+
+      padding-right: em($m-gut*2, $m-small-size);
+      padding-left: em($m-gut*2, $m-small-size);
+
+      content: "|";
+    }
+
+    &:last-child {
+      &:after {
+        content: none;
+      }
+    }
+  }
   @include min-screen(col(8)) {
-    display: block;
+    padding-right: em($d-gut/2, $d-small-size);
+    padding-left: em($d-gut/2, $d-small-size);
 
     grid-column: 3 / 5;
+    li {
+      &:after {
+        padding-right: em($d-gut, $d-small-size);
+        padding-left: em($d-gut, $d-small-size);
+      }
+    }
   }
   @include min-screen(col(12)) {
     grid-column: 5 / 7;

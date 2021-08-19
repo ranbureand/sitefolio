@@ -16,7 +16,7 @@ preview_image: 'leggio_00.png'
 excerpt: 'A portable folding reading desk made from recycled cardboard.'
 exordium: 'A portable folding reading desk made from recycled cardboard.'
 
-publish: 'no'
+published: false
 ---
 
 tags

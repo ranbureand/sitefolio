@@ -3,8 +3,7 @@ order: 31
 
 layout: project
 
-title: 'Sight-_Seeing 2'
-title_typeset: 'Sight-_Seeing<sup>2</sup>'
+title: 'Sight-_Seeing <sup>2</sup>'
 author: 'Andrea Buran'
 
 time: '2012'
@@ -18,7 +17,7 @@ preview_color: '#D09C63'
 excerpt: 'The photobook Sight-_Seeing 2 spatially arranges a heterogeneous set of collectively taken pictures of Tyrolean winter landscapes—halfway between tourism’s advertising images and contemporary photos.'
 exordium: 'The photobook *Sight-_Seeing<sup>2</sup>* spatially arranges a heterogeneous set of collectively taken pictures of Tyrolean winter landscapes—halfway between tourism’s advertising images and contemporary photos.'
 
-publish: 'yes'
+published: true
 ---
 
 <div class="figures">

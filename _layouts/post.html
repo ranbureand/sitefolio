@@ -11,9 +11,9 @@ mode: light
 
           <div class="column-2d-l separator"></div>
 
-          {%- if page.time %}
-          <div class="article-time column-2d-s-1 typo-l">
-            {{ page.time | markdownify }}
+          {%- if page.date %}
+          <div class="article-date column-2d-s-1 typo-l">
+            {{ page.date | date_to_long_string | markdownify }}
           </div>
           {%- endif %}
 
@@ -30,4 +30,4 @@ mode: light
         </article>
       </div>
 
-{% include projects.html %}
+{% include posts.html %}

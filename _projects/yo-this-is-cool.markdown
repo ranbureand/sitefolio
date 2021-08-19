@@ -17,7 +17,7 @@ preview_color: '#6ED8C1'
 excerpt: 'The site lets developers and designers show love and thank the people behind their favorite open source projects on GitHub.'
 exordium: 'The site lets developers and designers show love and thank the people behind their favorite open source projects on GitHub.'
 
-publish: 'yes'
+published: true
 ---
 
 <div class="figures">

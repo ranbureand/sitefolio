@@ -17,7 +17,7 @@ preview_color: '#8F6EFA'
 excerpt: 'Jots is an ongoing collection of bits from inspiring pieces about design and development, jotted to recall the food-for-thought later.'
 exordium: '*Jots* is an ongoing collection of bits from inspiring pieces about design and development, jotted to recall the food-for-thought later.'
 
-publish: 'yes'
+published: true
 ---
 
 <div class="figures">

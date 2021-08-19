@@ -16,11 +16,11 @@
 {%- assign w_float = include.w | times: 1.0 -%}
 
 <figure class="{{ video_size }}" id="{{ include.src }}">
-  {% if include.h and include.w%}
+  {%- if include.h and include.w%}
     <a class="ratio" href="{{ include.link }}" style="padding-bottom: {{ include.h | divided_by: w_float | times: 100 }}%;{% if include.color -%}background-color: {{ include.color }};{% endif %}" target="blank">
   {%- else -%}
     <a href="{{ include.link }}" target="blank">
-  {% endif %}
+  {%- endif %}
     <img
       {% if include.size == "xl" %}
       src="
@@ -138,13 +138,13 @@
       "
       {%- endif -%}
     />
-    {% if include.text %}
+    {%- if include.text %}
       <div class="watch"><div>{{ include.text}}</div></div>
-    {% endif %}
+    {%- endif %}
   </a>
   {%- if include.caption -%}
   <figcaption class="typo-s">
     {{ include.caption | markdownify }}
   </figcaption>
-  {% endif %}
+  {%- endif %}
 </figure>

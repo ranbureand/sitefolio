@@ -1,22 +1,22 @@
-      {%- assign projectList = site.projects | sort: 'order' | where: 'publish', 'yes' | where: 'categories', include.category -%}
+      {%- assign projectList = site.projects | sort: 'order' | where: 'published', true | where: 'categories', include.category -%}
 
-      {% for project in projectList %}
-         {% capture projectCount %} {{ projectCount | plus: 1 }} {% endcapture %}
-      {% endfor %}
+      {%- for project in projectList %}
+         {%- capture projectCount %} {{ projectCount | plus: 1 }} {% endcapture %}
+      {%- endfor %}
 
         <div class="column-2d-l">
-          <ul class="previews layout-1d-rtl">
-            {% for project in projectList reversed %}
+          <ul class="project-previews layout-1d-rtl">
+            {%- for project in projectList reversed %}
             <li class="element-1d">
-              <a class="preview{% if project.title == page.title %} current{% endif %}" href="{{ project.url | prepend: site.baseurl }}">
-                <div class="preview-image"{% if project.preview_color %} style="background-color:{{ project.preview_color }};"{% endif %}>
-                  <img src="{{ site.baseurl }}/media/projects-optimized/{{ project.title | slugify: 'latin' }}/thumbnails/1440/{{project.preview_image}}?v={{site.version}}" alt="{{project.title}}" title="{{ project.title }}"/>
+              <a class="project-preview{% if project.title == page.title %} current{% endif %}" href="{{ project.url | prepend: site.baseurl }}">
+                <div class="project-preview-image"{% if project.preview_color %} style="background-color:{{ project.preview_color }};"{% endif %}>
+                  <img src="{{ site.baseurl }}/media/projects-optimized/{{ project.title | strip_html | slugify: 'latin' }}/thumbnails/1440/{{project.preview_image}}?v={{site.version}}" alt="{{project.title}}" title="{{ project.title }}"/>
                 </div>
-                <div class="preview-title">{% if project.title_typeset %}{{ project.title_typeset }}{% else %}{{ project.title }}{% endif %}</div>
-                <div class="preview-tags">{% for tag in project.tags %}{% if forloop.last == true %}{{tag}}{% else %}{{tag}}, {% endif %}{% endfor %}</div>
-                <div class="preview-time">{{ project.time }}</div>
+                <div class="project-preview-title">{{ project.title }}</div>
+                <div class="project-preview-tags">{% for tag in project.tags %}{% if forloop.last == true %}{{tag}}{% else %}{{tag}}, {% endif %}{% endfor %}</div>
+                <div class="project-preview-time">{{ project.time }}</div>
               </a>
             </li>
-            {% endfor %}
+            {%- endfor %}
           </ul>
         </div>

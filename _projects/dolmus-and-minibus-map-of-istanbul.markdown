@@ -17,7 +17,7 @@ preview_color: '#FD9900'
 excerpt: 'The two minutes animated cartoon illustrates the project Dolmuş & Minibüs Map of Istanbul to promote the related crowdfunding campaign.'
 exordium: 'The two minutes animated cartoon illustrates the project *Dolmuş & Minibüs Map of Istanbul* to promote the related crowdfunding campaign.'
 
-publish: 'yes'
+published: true
 ---
 
 <div class="figures">
