@@ -86,6 +86,20 @@
     }
   }
 
+  [class*="table"] {
+    th,
+    td {
+      border-top-color: $l-border-color;
+    }
+    th {
+      border-bottom-color: $l-border-color;
+    }
+
+    tbody + tbody {
+      border-top-color: $l-border-color;
+    }
+  }
+
   .footnotes {
     border-top-color: $l-border-color;
   }

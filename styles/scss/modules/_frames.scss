@@ -82,7 +82,7 @@
 
   li {
     &:after {
-      display: inline;
+      float: right;
 
       padding-right: em($m-gut*2, $m-small-size);
       padding-left: em($m-gut*2, $m-small-size);

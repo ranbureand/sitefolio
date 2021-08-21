@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: Multilingual sites in Jekyll, Part&nbsp;<sup>4</sup>&frasl;<sub>4</sub>
+title: Multilingual sites in Jekyll, Part Four
 author: Andrea Buran
 
 date: 2021-08-15 08:00:00 +0300
@@ -9,24 +9,24 @@ date: 2021-08-15 08:00:00 +0300
 tags: [approach, development, Jekyll, multilingual, site]
 
 excerpt: This series of articles illustrate my approach to create a multilingual site in Jekyll.
-exordium: This series of articles ([Part 1](http://andreaburan.com/post/multilingual-sites-in-jekyll.html), [Part 2](http://andreaburan.com/post/multilingual-sites-in-jekyll-2.html), [Part 3](http://andreaburan.com/post/multilingual-sites-in-jekyll-3.html), [Part 4](http://andreaburan.com/post/multilingual-sites-in-jekyll-4.html)) and this extremely [basic *GitHub Pages* site](https://ranbureand.github.io/multilingual-experiment/) illustrate my approach to create a multilingual site in *[Jekyll](https://jekyllrb.com/ "Jekyll")*.
+exordium: This series of articles ([Part One](http://andreaburan.com/post/multilingual-sites-in-jekyll.html), [Part Two](http://andreaburan.com/post/multilingual-sites-in-jekyll-2.html), [Part Three](http://andreaburan.com/post/multilingual-sites-in-jekyll-3.html), [Part Four](http://andreaburan.com/post/multilingual-sites-in-jekyll-4.html)) and this extremely [basic *GitHub Pages* site](https://ranbureand.github.io/multilingual-experiment/) illustrate my approach to create a multilingual site in *[Jekyll](https://jekyllrb.com/ "Jekyll")*.
 
 published: true
 ---
 
-+ [Multilingual Sitemaps](#multilingual-sitemaps)
-  + [Sitemap Index File](#sitemap-index-file)
-  + [Sitemap Files](#sitemap-files)
-+ [RSS Feed](#rss-feed)
-+ [404 Page Not Found](#404-page-not-found)
++ [Multilingual sitemaps](#multilingual-sitemaps)
+  + [Sitemap index file](#sitemap-index-file)
+  + [Sitemap files](#sitemap-files)
++ [RSS feed](#rss-feed)
++ [404 page not found](#404-page-not-found)
 + [Resources](#resources)
 + [Afterword](#afterword)
 
-# Multilingual Sitemaps
+# Multilingual sitemaps
 
 To serve a multilingual sitemap, we need to create a [Sitemap index](https://www.sitemaps.org/protocol.html#index "Sitemaps XML Format, Sitemap index") file and list a Sitemap file for each language we support.
 
-## Sitemap Index File
+## Sitemap index file
 
 We place the page named `sitemap.html` in the root directory of the site. It points to the other localized sitemaps in the respective language subfolders.
 
@@ -76,7 +76,7 @@ sitemap:
 
 we make sure to exclude it from the list of pages returned in the other Sitemap files.
 
-## Sitemap Files
+## Sitemap files
 
 {% raw %}
 ``` liquid
@@ -180,11 +180,11 @@ sitemap:
 {: .code-m }
 {% endraw %}
 
-## RSS Feed
+## RSS feed
 
 *Coming soon…*
 
-## 404 Page Not Found
+## 404 page not found
 
 *Coming soon…*
 

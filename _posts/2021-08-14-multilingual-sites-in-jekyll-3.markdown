@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: Multilingual sites in Jekyll, Part&nbsp;<sup>3</sup>&frasl;<sub>4</sub>
+title: Multilingual sites in Jekyll, Part Three
 author: Andrea Buran
 
 date: 2021-08-14 08:00:00 +0300
@@ -9,12 +9,10 @@ date: 2021-08-14 08:00:00 +0300
 tags: [approach, development, Jekyll, multilingual, site]
 
 excerpt: This series of articles illustrate my approach to create a multilingual site in Jekyll.
-exordium: This series of articles ([Part 1](http://andreaburan.com/post/multilingual-sites-in-jekyll.html), [Part 2](http://andreaburan.com/post/multilingual-sites-in-jekyll-2.html), [Part 3](http://andreaburan.com/post/multilingual-sites-in-jekyll-3.html), [Part 4](http://andreaburan.com/post/multilingual-sites-in-jekyll-4.html)) and this extremely [basic *GitHub Pages* site](https://ranbureand.github.io/multilingual-experiment/) illustrate my approach to create a multilingual site in *[Jekyll](https://jekyllrb.com/ "Jekyll")*.
+exordium: This series of articles ([Part One](http://andreaburan.com/post/multilingual-sites-in-jekyll.html), [Part Two](http://andreaburan.com/post/multilingual-sites-in-jekyll-2.html), [Part Three](http://andreaburan.com/post/multilingual-sites-in-jekyll-3.html), [Part Four](http://andreaburan.com/post/multilingual-sites-in-jekyll-4.html)) and this extremely [basic *GitHub Pages* site](https://ranbureand.github.io/multilingual-experiment/) illustrate my approach to create a multilingual site in *[Jekyll](https://jekyllrb.com/ "Jekyll")*.
 
 published: true
 ---
-
-# Table of Contents
 
 + [Includes](#includes)
   + [header.html](#headerhtml)
@@ -327,29 +325,27 @@ The second block of code behaves akin to the first, with the only difference tha
 
 The third block of code runs in the remote eventuality in which both the first and second blocks of code are not run, so that we make sure, again, to serve a fallback page to our web surfers.
 
-#### Fallback Page
+#### Fallback page
 
 How can we be sure that the fallback page truly works?
 
 In this basic site, not all the pages and posts are translated into all the supported languages—on purpose.
 
-##### Pages
-
-| English | Italian |
+| English Pages | Italian Pages |
 | - | - |
 | preface.html | prefazione.html |
 | stories.html | storie.html |
 | postface.html| — |
+{: .table }
 
 If you go to [the English page *Postface*](https://ranbureand.github.io/multilingual-experiment/en/postface.html) and press on *Italian* in the language switch, you can see that you are indeed redirected to the Italian page *Storie*.
 
-##### Posts
-
-| English | Italian |
+| English Posts | Italian Posts |
 | - | - |
 | hello-world.markdown | ciao-mondo.markdown |
 | hello-mars.markdown | ciao-marte.markdown |
 | — | ciao-giove.markdown |
+{: .table }
 
 Similarly, if you go to [the Italian post *Ciao Giove*](https://ranbureand.github.io/multilingual-experiment/it/storia/ciao-giove) and press on *English* in the language switch, you can see that you are indeed redirected to the English page *Stories*.
 

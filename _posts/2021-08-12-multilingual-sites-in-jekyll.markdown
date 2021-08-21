@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: Multilingual sites in Jekyll, Part&nbsp;<sup>1</sup>&frasl;<sub>4</sub>
+title: Multilingual sites in Jekyll, Part One
 author: Andrea Buran
 
 date: 2021-08-12 08:00:00 +0300
@@ -9,14 +9,14 @@ date: 2021-08-12 08:00:00 +0300
 tags: [approach, development, Jekyll, multilingual, site]
 
 excerpt: This series of articles illustrate my approach to create a multilingual site in Jekyll.
-exordium: This series of articles ([Part 1](http://andreaburan.com/post/multilingual-sites-in-jekyll.html), [Part 2](http://andreaburan.com/post/multilingual-sites-in-jekyll-2.html), [Part 3](http://andreaburan.com/post/multilingual-sites-in-jekyll-3.html), [Part 4](http://andreaburan.com/post/multilingual-sites-in-jekyll-4.html)) and this extremely [basic *GitHub Pages* site](https://ranbureand.github.io/multilingual-experiment/) illustrate my approach to create a multilingual site in *[Jekyll](https://jekyllrb.com/ "Jekyll")*.
+exordium: This series of articles ([Part One](http://andreaburan.com/post/multilingual-sites-in-jekyll.html), [Part Two](http://andreaburan.com/post/multilingual-sites-in-jekyll-2.html), [Part Three](http://andreaburan.com/post/multilingual-sites-in-jekyll-3.html), [Part Four](http://andreaburan.com/post/multilingual-sites-in-jekyll-4.html)) and this extremely [basic *GitHub Pages* site](https://ranbureand.github.io/multilingual-experiment/) illustrate my approach to create a multilingual site in *[Jekyll](https://jekyllrb.com/ "Jekyll")*.
 
 published: true
 ---
 
 + [Preface](#preface)
 + [Foreword](#foreword)
-+ [Directory Structure](#directory-structure)
++ [Directory structure](#directory-structure)
   + [Pages](#pages)
     + [Exceptions](#exceptions)
   + [Posts](#posts)
@@ -48,7 +48,7 @@ Specifically, [the basic site](https://ranbureand.github.io/multilingual-experim
 + is visually quite crude, since the focus is on illustrating a structural (not visual) approach to building multilingual sites
 + supports English and Italian as example languages
 
-# Directory Structure
+# Directory structure
 
 The directory structure of the basic site looks like this:
 
