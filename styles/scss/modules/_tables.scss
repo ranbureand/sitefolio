@@ -14,20 +14,27 @@ table {
   width: 100%;
   margin-top: em($m-base-rhythm);
   margin-bottom: em($m-base-rhythm);
+  @include face(mono);
 
   th,
   td {
-    padding-top: em($m-medium-line/2, $m-medium-size);
-    padding-right: em($m-gut/2, $m-medium-size);
-    padding-bottom: em($m-medium-line/2, $m-medium-size);
-    padding-left: em($m-gut/2, $m-medium-size);
+    padding-top: em($m-small-line/2, $m-small-size);
+    padding-right: em($m-gut/2, $m-small-size);
+    padding-bottom: em($m-small-line/2, $m-small-size);
+    padding-left: em($m-gut/2, $m-small-size);
 
     text-align: left;
 
     border-top-width: 1px;
     border-top-style: solid;
 
-    @include font-size($m-medium-size, $m-medium-line);
+    @include font-size($m-small-size, $m-small-line);
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
   }
 
   th {
@@ -59,12 +66,18 @@ table {
 
     th,
     td {
-      padding-top: em($d-medium-line/2, $d-medium-size);
+      padding-top: em($d-small-line/2, $d-small-size);
       padding-right: em($d-gut/2, $d-medium-size);
-      padding-bottom: em($d-medium-line/2, $d-medium-size);
+      padding-bottom: em($d-small-line/2, $d-small-size);
       padding-left: em($d-gut/2, $d-medium-size);
 
-      @include font-size($d-medium-size, $d-medium-line);
+      @include font-size($d-small-size, $d-small-line);
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
     }
   }
 }

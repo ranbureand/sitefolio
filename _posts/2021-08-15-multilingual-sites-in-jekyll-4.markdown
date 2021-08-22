@@ -9,7 +9,7 @@ date: 2021-08-15 08:00:00 +0300
 tags: [approach, development, Jekyll, multilingual, site]
 
 excerpt: This series of articles illustrate my approach to create a multilingual site in Jekyll.
-exordium: This series of articles ([Part One](http://andreaburan.com/post/multilingual-sites-in-jekyll.html), [Part Two](http://andreaburan.com/post/multilingual-sites-in-jekyll-2.html), [Part Three](http://andreaburan.com/post/multilingual-sites-in-jekyll-3.html), [Part Four](http://andreaburan.com/post/multilingual-sites-in-jekyll-4.html)) and this extremely [basic *GitHub Pages* site](https://ranbureand.github.io/multilingual-experiment/) illustrate my approach to create a multilingual site in *[Jekyll](https://jekyllrb.com/ "Jekyll")*.
+exordium: This series of articles ([Part One](http://andreaburan.com/post/multilingual-sites-in-jekyll.html), [Part Two](http://andreaburan.com/post/multilingual-sites-in-jekyll-2.html), [Part Three](http://andreaburan.com/post/multilingual-sites-in-jekyll-3.html), [Part Four](http://andreaburan.com/post/multilingual-sites-in-jekyll-4.html)) and this [basic *GitHub Pages* site](https://ranbureand.github.io/multilingual-experiment/) illustrate my approach to create a multilingual site in *[Jekyll](https://jekyllrb.com/ "Jekyll")*.
 
 published: true
 ---
