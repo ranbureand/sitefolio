@@ -6,33 +6,39 @@ console.log('Liftoff!');
 ** Emails
 */
 
-var eMailbox = 'hello',
-  eDomain = 'andreaburan.com',
-  eAddress = (eMailbox + '@' + eDomain);
+// Declare and assign the email address variable
+const eMail = ('hello' + '@' + 'andreaburan.com');
 
 //console.log(eAddress);
 
-var eLink;
+// Declare the email link variable
+var   eLink;
 
 //console.log(eLink);
 
-var eEnvelope = document.getElementsByClassName('envelope');
+// Get the .envelope elements
+const eEnvelope = document.getElementsByClassName('envelope');
 
+// Assign the email link variable and inject it in the HTML DOM
 for (i = 0; i < eEnvelope.length; i++) {
   eLink = document.createElement('a');
-  eLink.setAttribute('href', 'mailto:' + eAddress);
-  eLink.textContent = eAddress;
+  eLink.setAttribute('href', 'mailto:' + eMail);
+  eLink.textContent = eMail;
   eEnvelope[i].prepend(eLink);
+
+  console.log('Email created.');
 }
 
 /*
 ** Footnotes
 */
 
+// Get the .reversefootnote elements
 var footnote = document.getElementsByClassName('reversefootnote');
 
 //console.log(footnote);
 
+// Change the default copy of the footnote links
 for (i = 0; i < footnote.length; i++) {
   footnote[i].textContent = 'Go Back';
 }
@@ -72,8 +78,8 @@ console.log(tz);
 */
 
 // Declare variables
-var article,
-    headings;
+var   article,
+      headings;
 
 // Get the .article-body element
 article = document.querySelector(".article-body");
@@ -100,18 +106,12 @@ if (article !== null) {
 ** Sticky header
 */
 
-// When the window is scrolled, execute the function stickify()
-window.onscroll = function() { stickify() };
-
 // Get the .canvas-header and .header elements
 const canvasHeader = document.querySelector(".canvas-header"),
       header = document.querySelector(".header");
 
 // Get the offset position of the .header element
 var   offset = header.offsetTop;
-
-// When the window is resized, get again the offset position of the .header element
-window.onresize = function(){ offset = header.offsetTop };
 
 // When you reach the position of the .header element, add the class .sticky to the .canvas-header element
 // When you unreach the position of the .header element, remove the class .sticky from the .canvas-header element
@@ -122,3 +122,18 @@ function stickify() {
     canvasHeader.classList.remove('sticky');
   }
 }
+
+stickify();
+
+// When the window is scrolled, execute the function stickify()
+window.onscroll = function() {
+  stickify();
+};
+
+// When the window is resized, get again the offset position of the .header element and execute the function stickify()
+window.onresize = function() {
+  canvasHeader.classList.remove('sticky');
+  offset = header.offsetTop;
+
+  stickify();
+};

@@ -24,9 +24,13 @@
   position: relative;
   z-index: 10;
 
+  @include min-screen(col(8)) {
+    padding-top: em($d-base-rhythm*0.5);
+    padding-bottom: em($d-base-rhythm*0.5);
+  }
   @include min-screen(col(12)) {
-    padding-top: em($d-base-rhythm*1);
-    padding-bottom: em($d-base-rhythm*1);
+    padding-top: em($d-base-rhythm*1.5);
+    padding-bottom: em($d-base-rhythm*1.5);
   }
 }
 
@@ -84,8 +88,8 @@
   padding-bottom: em($m-base-rhythm*1);
 
   @include min-screen(col(8)) {
-    padding-top: em($d-base-rhythm*1);
-    padding-bottom: em($d-base-rhythm*1);
+    padding-top: em($d-base-rhythm*0.5);
+    padding-bottom: em($d-base-rhythm*0.5);
   }
 }
 
