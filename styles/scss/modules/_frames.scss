@@ -1,8 +1,74 @@
 /* Copyright (c) 2017 Andrea Buran [www.andreaburan.com]. All rights reserved */
 
 /*
+** Colors
+*/
+
+.on-light {
+  .buffer-header {
+    background-color: $l-background-color;
+  }
+}
+
+.on-dark {
+  .buffer-header {
+    background-color: $d-background-color;
+  }
+}
+
+/*
 ** Header + Footer
 */
+
+.canvas-header {
+  position: relative;
+  z-index: 10;
+
+  @include min-screen(col(12)) {
+    padding-top: em($d-base-rhythm*1);
+    padding-bottom: em($d-base-rhythm*1);
+  }
+}
+
+
+.buffer-header {
+  width: 100%;
+}
+
+.sticky {
+  padding-top: em($m-base-rhythm*1 + $m-small-line/2);
+  padding-bottom: em($m-base-rhythm*1 + $m-small-line/2);
+
+  .buffer-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: em($m-gut);
+    padding-left: em($m-gut);
+  }
+  @include min-screen(col(8)) {
+    padding-top: em($d-base-rhythm*1 + $d-small-line/2);
+    padding-bottom: em($d-base-rhythm*1 + $d-small-line/2);
+
+    .buffer-header {
+      padding-right: em($d-gut);
+      padding-left: em($d-gut);
+    }
+  }
+  @include min-screen(col(12)) {
+    padding-top: em($d-base-rhythm*2 + $d-small-line/2);
+    padding-bottom: em($d-base-rhythm*2 + $d-small-line/2);
+
+    .buffer-header {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}
 
 .header,
 .footer {
@@ -20,10 +86,6 @@
   @include min-screen(col(8)) {
     padding-top: em($d-base-rhythm*1);
     padding-bottom: em($d-base-rhythm*1);
-  }
-  @include min-screen(col(12)) {
-    padding-top: em($d-base-rhythm*2);
-    padding-bottom: em($d-base-rhythm*2);
   }
 }
 
@@ -75,9 +137,6 @@
   flex-flow: row wrap;
   justify-content: flex-end;
 
-  padding-right: em($m-gut/2, $m-small-size);
-  padding-left: em($m-gut/2, $m-small-size);
-
   grid-column: 3 / 5;
 
   li {
@@ -97,10 +156,8 @@
     }
   }
   @include min-screen(col(8)) {
-    padding-right: em($d-gut/2, $d-small-size);
-    padding-left: em($d-gut/2, $d-small-size);
-
     grid-column: 3 / 5;
+
     li {
       &:after {
         padding-right: em($d-gut, $d-small-size);
