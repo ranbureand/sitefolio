@@ -195,6 +195,6 @@ sitemap:
 
 # Afterword
 
-If you feel like adding something to the subject and/or you have spotted something worth fixing, please feel free to either [drop me a line](andreaburan.com/ "Andrea Buran’s Sitefolio") or [create an issue on GitHub](https://github.com/ranbureand/multilingual-experiment/issues): thoughts, critiques, suggestions are all more than welcomed.
+If you feel like adding something to the subject and/or you have spotted something worth fixing, please feel free to either [drop me a line](andreaburan.com/ "Andrea Buran’s Sitefolio") or [create an issue on GitHub](https://github.com/ranbureand/multilingual-experiment/issues): thoughts, critiques, suggestions are welcomed.
 
 Thank you!

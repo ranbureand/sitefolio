@@ -18,33 +18,17 @@ published: true
   + [Pages](#pages)
   + [Posts](#posts)
 + [Data files](#data-files)
-  + [Snippets](#snippets)
 
 # Front matter
 
+In the front matter of each page or post, but for the usual variables, we set two new custom variables to handle the multilingual logic[^logic] of the site:
+
++ `language` defines the language of the page/post
++ `language_reference` relates different translations of the same page/post
+
+We can use `language` to retrieve only the pages or posts that have the same language, and `language_reference` to retrieve only the pages or posts that return the same content translated in different languages (read the sections [navigation.html]({% post_url 2021-08-14-multilingual-sites-in-jekyll-3 %}#navigationhtml) and [language-switch.html]({% post_url 2021-08-14-multilingual-sites-in-jekyll-3 %}#language-switchhtml) for more details).
+
 ## Pages
-
-Here is how the front matter of a page looks like:
-
-{% raw %}
-``` yaml
----
-layout: page
-
-title: Stories
-description: Stories.
-
-language: en
-language_reference: stories
-
-published: true
----
-```
-{: .code-m }
-{% endraw %}
-
-But for the usual variables, we set two new ones, `language` to define the language of the page, and `language_reference` to relate different translations of the same page. The logic is based on the principle articulated in Sylvain Durand’s *[Making Jekyll Multilingual](https://sylvaindurand.org/making-jekyll-multilingual/#principle "Making Jekyll
-Multilingual")*.
 
 For example, here is the front matter of the English page *Stories*:
 
@@ -84,33 +68,9 @@ published: true
 {: .code-m }
 {% endraw %}
 
-Both pages have the variable `language_reference` set to `stories` so that they can be easily related.
-
-We can use `language` to retrieve only the pages that have the same language, and `language_reference` to retrieve only the pages that return the same content translated in different languages.
+Both pages have the variable `language_reference` set to `stories` so that they can be easily related with each other.
 
 ## Posts
-
-Here is how the front matter of a post looks like:
-
-{% raw %}
-``` yaml
----
-layout: post
-
-title: Hello World
-description: Hello world.
-date: 2021-01-01 00:00:00
-
-language: en
-language_reference: world
-
-published: true
----
-```
-{: .code-m }
-{% endraw %}
-
-Again, but for the usual variables, we set two new ones, `language` to define the language of the post, and `language_reference` to relate different translations of the same post.
 
 For example, here is the front matter of the English post *Hello World*:
 
@@ -152,15 +112,11 @@ published: true
 {: .code-m }
 {% endraw %}
 
-Both posts have the variable `language_reference` set to `world` so that they can be easily related.
-
-Again, we can use `language` to retrieve only the posts that have the same language, and `language_reference` to retrieve only the posts that return the same content translated in different languages.
+Both posts have the variable `language_reference` set to `world` so that they can be easily related with each other.
 
 # Data files
 
-## Snippets
-
-We create a YAML [Data File](https://jekyllrb.com/docs/datafiles/ "Data Files") named `snippets.yml` to store the different translations of the user interface copy as additional data in the `_data` subdirectory.
+We create a YAML [data file](https://jekyllrb.com/docs/datafiles/ "Data Files") named `snippets.yml` to store the different translations of the user interface copy as additional data in the `_data` subdirectory.
 
 We then create a new variable named `snippets` in the `base.html` layout to shorten the code that we need to write to access the data contained in the `snippets.yml` file:
 
@@ -207,3 +163,10 @@ top:
 ```
 {: .code-m }
 {% endraw %}
+
+
+In the eventuality that the user interface copy is quite lengthy, we might consider creating a different data file for each language and place it in a dedicated subdirectory—similarly to what we already do for pages and posts. For the sake of this basic site, we keep things simple and use only one single data file to list the copy in all the different languages.
+
+[^logic]:
+    The logic is based on the principle articulated in Sylvain Durand’s *[Making Jekyll Multilingual](https://sylvaindurand.org/making-jekyll-multilingual/#principle "Making Jekyll
+Multilingual")*.

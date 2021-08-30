@@ -30,15 +30,15 @@ At first, I tried to replicate their approaches directly in the site I was worki
 
 Not giving up, I then opted for creating a basic site from scratch, so that I could just focus on learning how to handle multiple languages in *Jekyll* without any extra complexity in the picture.
 
-That very same basic site is hosted in this repository, which I gladly share with the world as an example project, hoping to be of a help for anybody who is into coding a multilingual site using *Jekyll*.
+That very same basic site is hosted [in this repository](https://github.com/ranbureand/multilingual-experiment/), which I gladly share with the world as an example project, hoping to be of a help for anybody who is into coding a multilingual site using *Jekyll*.
 
 # Foreword
 
 A few words before starting. Sites built with the approach illustrated in this series of articles:
 
 + can support [as many languages as needed](#directory-structure)
-+ can serve pages or posts that do not necessarily need to be translated in all the supported languages
-+ have a [language switch]({% post_url 2021-08-14-multilingual-sites-in-jekyll-3 %}#language-switchhtml) that can either direct web surfers to view the current page or post in the selected language, if available, or can direct them to an alternative [fallback page]({% post_url 2021-08-14-multilingual-sites-in-jekyll-3 %}#fallback-page)
++ can serve pages or posts that may not necessarily need to be translated in all the supported languages
++ have a [language switch]({% post_url 2021-08-14-multilingual-sites-in-jekyll-3 %}#language-switchhtml) that can either direct web surfers to view the current page or post in the selected language, if available, or direct them to an alternative [fallback page]({% post_url 2021-08-14-multilingual-sites-in-jekyll-3 %}#fallback-page)
 + do not need you to install custom plugins
 + leverage the basics of Jekyll and thus should be relatively future-proof (last famous words)
 + can be published as *GitHub Pages* sites
@@ -99,7 +99,7 @@ The directory structure of the basic site looks like this:
 
 ## Pages
 
-We organize the pages into as many subdirectory as the languages that we plan to support, and name them using [ISO language codes](https://www.w3schools.com/tags/ref_language_codes.asp "HTML Language Code Reference in W3Schools"). The basic site has two subdirectories, one named `en` for grouping the English pages, and one named `it` for grouping the Italian pages.
+We organize the pages into as many subdirectories as the languages that we plan to support, and name them using [ISO language codes](https://www.w3schools.com/tags/ref_language_codes.asp "HTML Language Code Reference in W3Schools"). The basic site has two subdirectories, one named `en` for grouping the English pages, and one named `it` for grouping the Italian pages.
 
 {% raw %}
 ```
@@ -129,13 +129,13 @@ After *Jekyll* has built the site, we can reach, for example, the English page `
 
 But, of course, there are exceptions. We place the pages `404.html`, `index.html`, and `sitemap.html` in the root directory of the site. Why?
 
-`404.html` and `index.html` are *unique* pages because Jekyll builds and serves automatically one and only one of them at a time.
+`404.html` and `index.html` are *unique* pages. Jekyll builds and serves automatically one and only one of them at a time.
 
-`sitemap.xml` instead is none other than a [Sitemap index](https://www.sitemaps.org/protocol.html#index "Sitemaps XML Format, Sitemap index") which points to the other localized sitemaps in the respective language subfolders (read the section [Multilingual Sitemap]({% post_url 2021-08-15-multilingual-sites-in-jekyll-4 %}#multilingual-sitemaps) for more details).
+`sitemap.xml` instead is none other than a [Sitemap index](https://www.sitemaps.org/protocol.html#index "Sitemaps XML Format, Sitemap index") which points to the other localized sitemaps in the respective language subfolders (read the section [Multilingual sitemaps]({% post_url 2021-08-15-multilingual-sites-in-jekyll-4 %}#multilingual-sitemaps) for more details).
 
 ## Posts
 
-We organize the posts following a similar logic. This basic site has two subdirectories in the folder named `_posts`, one named `en` for grouping the English posts, and one named `it` for grouping the Italian posts.
+We organize the posts following a similar logic. The basic site has two subdirectories in the folder named `_posts`, one named `en` for grouping the English posts, and one named `it` for grouping the Italian posts.
 
 {% raw %}
 ```
@@ -179,4 +179,4 @@ defaults:
 {: .code-m }
 {% endraw %}
 
-By setting global permalinks for posts, we can reach, for example, the English post named `2021-01-01-hello-world.markdown` and the Italian post named `2021-01-01-ciao-mondo.markdown` at the URLs `www.site.ext/en/hello-world.html` and `www.site.ext/it/ciao-mondo.html`, respectively.
+By setting global permalinks for posts, we can reach, for example, the English post named `2021-01-01-hello-world.markdown` and the Italian post named `2021-01-01-ciao-mondo.markdown` at the URLs `www.site.ext/en/story/hello-world.html` and `www.site.ext/it/storia/ciao-mondo.html`, respectively.

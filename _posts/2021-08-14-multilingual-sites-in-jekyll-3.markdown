@@ -31,7 +31,7 @@ The purpose of most of the includes in the basic site is building the navigation
 
 ## header.html
 
-The include `header.html` generates the header in the HTML page. It, in turn, has three more includes:
+The include `header.html` generates the header in the HTML page. It, in turn, “includes” three more includes:
 
 + `title.html`
 + `navigation.html`
