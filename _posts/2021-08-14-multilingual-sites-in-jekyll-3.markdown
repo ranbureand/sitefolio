@@ -31,7 +31,7 @@ The purpose of most of the includes in the basic site is building the navigation
 
 ## header.html
 
-The include `header.html` generates the header in the HTML page. It, in turn, “includes” three more includes:
+The include `header.html` generates the header in the page. It, in turn, “includes” three more includes:
 
 + `title.html`
 + `navigation.html`
@@ -264,7 +264,7 @@ If the size of the array `navigation_pages` is equal to one, we loop through the
 
 If instead, the size of the array `navigation_pages` is equal to zero (or more than one, which is trouble), we do not have a corresponding page in the current language item of the array `snippets.languages` to switch to.
 
-Thus, we provide a fallback page (`site.fallback_page`) so that web surfers who interact with the language switch and press on a language that does not support the current page are at least redirected to a meaningful page in the language they selected.
+Thus, we provide a fallback page (`site.fallback_page`) so that the web surfers who interact with the language switch and press on a language that does not support the current page are at least redirected to a meaningful page in the language they selected.
 
 We set the `fallback_page` in the `_config.yml` file placed in the site’s root directory:
 
@@ -277,7 +277,7 @@ fallback_page: 'stories'
 
 The fallback pages of the basic site are those whose `language_reference` variable is set to `stories`.
 
-Why `stories`? Because the pages whose `language_reference` variable is set to `stories` work as *home* pages, since they:
+Why `stories`? Because—in the context of the basic site—the pages whose `language_reference` variable is set to `stories` function as *home* pages, since they:
 
 + return a list of all the published posts (they have exactly the same structure as the `index.html` page)
 + have a translated counterpart in all the languages supported on the site
@@ -323,7 +323,7 @@ The second block of code behaves akin to the first, with the only difference tha
 {: .code-l }
 {% endraw %}
 
-The third block of code runs in the remote eventuality in which both the first and second blocks of code are not run, so that we make sure, again, to serve a fallback page to our web surfers.
+The third block of code runs in the remote eventuality in which both the first and second blocks of code do not run, so that we make sure, again, to serve a fallback page to our web surfers.
 
 #### Fallback page
 

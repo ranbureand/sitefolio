@@ -44,6 +44,7 @@ language: en
 language_reference: stories
 
 published: true
+order: 2
 ---
 ```
 {: .code-m }
@@ -63,6 +64,7 @@ language: it
 language_reference: stories
 
 published: true
+order: 2
 ---
 ```
 {: .code-m }
