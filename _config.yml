@@ -23,8 +23,10 @@ defaults:
 collections:
   projects:
     output: true
+    permalink: 'project/:title:output_ext'
   categories:
     output: true
+    permalink: 'projects/:title:output_ext'
 
 # Build settings
 markdown: kramdown

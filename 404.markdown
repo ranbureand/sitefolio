@@ -8,6 +8,8 @@ author: 'Andrea Buran'
 preview_image: 'outer_space_00.png'
 
 excerpt: 'I am really sorry, but it appears you are lost in the outer space.'
+
+published: true
 ---
 
 <div class="figures">

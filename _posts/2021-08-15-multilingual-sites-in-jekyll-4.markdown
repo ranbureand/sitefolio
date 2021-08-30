@@ -190,8 +190,11 @@ sitemap:
 
 # Resources
 
++ [Creating a multilingual blog with Jekyll](https://forestry.io/blog/creating-a-multilingual-blog-with-jekyll/ "Creating a multilingual blog with Jekyll")
 + [Making Jekyll multilingual](https://sylvaindurand.org/making-jekyll-multilingual/ "Making Jekyll multilingual")
 + [Making a multilingual website with Jekyll collections](https://www.kooslooijesteijn.net/blog/multilingual-website-with-jekyll-collections "Making a multilingual website with Jekyll collections")
++ [Multilingual Jekyll: How The Programming Historian does that](https://matthewlincoln.net/2020/03/01/multilingual-jekyll.html "Multilingual Jekyll: How The Programming Historian does that")
++ [Multilingual Jekyll websites](https://www.usecue.com/blog/multilingual-jekyll-websites/ "Multilingual Jekyll websites")
 
 # Afterword
 

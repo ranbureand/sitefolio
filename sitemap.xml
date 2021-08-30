@@ -7,57 +7,132 @@ sitemap:
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  {%- assign projectList = site.projects | sort: 'order' | where: 'publish', 'yes' -%}
+  {%- assign pages = site.pages | where: 'published', true %}
 
-  {%- for project in projectList %}
-     {%- capture projectCount %} {{ projectCount | plus: 1 }} {% endcapture %}
-  {%- endfor %}
-
-  {%- for project in projectList reversed %}
+  {%- for page in pages %}
+    {%- unless page.sitemap.excluded == true %}
     <url>
-      <loc>{{ site.url }}{{ project.url }}</loc>
-      {%- if project.sitemap.lastmod %}
-        <lastmod>{{ project.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
-      {%- elsif project.date %}
-        <lastmod>{{ project.date | date_to_xmlschema }}</lastmod>
-      {%- else %}
-        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-      {%- endif %}
-      {%- if post.sitemap.changefreq %}
-        <changefreq>{{ project.sitemap.changefreq }}</changefreq>
-      {%- else %}
-        <changefreq>monthly</changefreq>
-      {%- endif %}
-      {%- if project.sitemap.priority %}
-        <priority>{{ project.sitemap.priority }}</priority>
-      {%- else %}
-        <priority>0.5</priority>
-      {%- endif %}
-    </url>
-  {%- endfor %}
+      <loc>{{ site.url }}{{ page.url | remove: 'index.html' }}</loc>
 
-  {%- for page in site.pages %}
-    {%- unless page.sitemap.exclude == "yes" or page.name == "feed.xml" %}
-    <url>
-      <loc>{{ site.url }}{{ page.url | remove: "index.html" }}</loc>
       {%- if page.sitemap.lastmod %}
-        <lastmod>{{ page.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
+        {%- assign lastmod = page.sitemap.lastmod | date: '%Y-%m-%d' %}
       {%- elsif page.date %}
-        <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
+        {%- assign lastmod = page.date | date_to_xmlschema %}
       {%- else %}
-        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+        {%- assign lastmod = site.time | date_to_xmlschema %}
       {%- endif %}
+      <lastmod>{{ lastmod }}</lastmod>
+
       {%- if page.sitemap.changefreq %}
-        <changefreq>{{ page.sitemap.changefreq }}</changefreq>
+        {%- assign changefreq = page.sitemap.changefreq %}
       {%- else %}
-        <changefreq>monthly</changefreq>
+        {%- assign changefreq = 'monthly' %}
       {%- endif %}
+      <changefreq>{{ changefreq }}</changefreq>
+
       {%- if page.sitemap.priority %}
-        <priority>{{ page.sitemap.priority }}</priority>
+        {%- assign priority = page.sitemap.priority %}
       {%- else %}
-        <priority>0.3</priority>
+        {%- assign priority = 0.3 %}
       {%- endif %}
+      <priority>{{ priority }}</priority>
     </url>
     {%- endunless %}
   {%- endfor %}
+
+  {%- assign categories = site.categories | sort | where: 'published', true -%}
+
+  {%- for category in categories %}
+    <url>
+      <loc>{{ site.url }}{{ category.url }}</loc>
+
+      {%- if category.sitemap.lastmod %}
+        {%- assign lastmod = category.sitemap.lastmod | date: '%Y-%m-%d' %}
+      {%- elsif category.date %}
+        {%- assign lastmod = category.date | date_to_xmlschema %}
+      {%- else %}
+        {%- assign lastmod = site.time | date_to_xmlschema %}
+      {%- endif %}
+      <lastmod>{{ lastmod }}</lastmod>
+
+      {%- if category.sitemap.changefreq %}
+        {%- assign changefreq = category.sitemap.changefreq %}
+      {%- else %}
+        {%- assign changefreq = 'monthly' %}
+      {%- endif %}
+      <changefreq>{{ changefreq }}</changefreq>
+
+      {%- if category.sitemap.priority %}
+        {%- assign priority = category.sitemap.priority %}
+      {%- else %}
+        {%- assign priority = 0.5 %}
+      {%- endif %}
+      <priority>{{ priority }}</priority>
+    </url>
+  {%- endfor %}
+
+  {%- assign projects = site.projects | sort: 'order' | where: 'published', true -%}
+
+  {%- for project in projects reversed %}
+    <url>
+      <loc>{{ site.url }}{{ project.url }}</loc>
+
+      {%- if project.sitemap.lastmod %}
+        {%- assign lastmod = project.sitemap.lastmod | date: '%Y-%m-%d' %}
+      {%- elsif project.date %}
+        {%- assign lastmod = project.date | date_to_xmlschema %}
+      {%- else %}
+        {%- assign lastmod = site.time | date_to_xmlschema %}
+      {%- endif %}
+      <lastmod>{{ lastmod }}</lastmod>
+
+      {%- if project.sitemap.changefreq %}
+        {%- assign changefreq = project.sitemap.changefreq %}
+      {%- else %}
+        {%- assign changefreq = 'monthly' %}
+      {%- endif %}
+      <changefreq>{{ changefreq }}</changefreq>
+
+      {%- if project.sitemap.priority %}
+        {%- assign priority = project.sitemap.priority %}
+      {%- else %}
+        {%- assign priority = 0.5 %}
+      {%- endif %}
+      <priority>{{ priority }}</priority>
+    </url>
+  {%- endfor %}
+
+  {%- assign posts = site.posts | sort: 'date' | where: 'published', true %}
+
+  {%- for post in posts reversed %}
+    {%- unless post.sitemap.excluded == true %}
+    <url>
+      <loc>{{ site.url }}{{ post.url }}</loc>
+
+      {%- if post.sitemap.lastmod %}
+        {%- assign lastmod = post.sitemap.lastmod | date: '%Y-%m-%d' %}
+      {%- elsif post.date %}
+        {%- assign lastmod = post.date | date_to_xmlschema %}
+      {%- else %}
+        {%- assign lastmod = site.time | date_to_xmlschema %}
+      {%- endif %}
+      <lastmod>{{ lastmod }}</lastmod>
+
+      {%- if post.sitemap.changefreq %}
+        {%- assign changefreq = post.sitemap.changefreq %}
+      {%- else %}
+        {%- assign changefreq = 'monthly' %}
+      {%- endif %}
+      <changefreq>{{ changefreq }}</changefreq>
+
+      {%- if post.sitemap.priority %}
+        {%- assign priority = post.sitemap.priority %}
+      {%- else %}
+        {%- assign priority = 0.5 %}
+      {%- endif %}
+      <priority>{{ priority }}</priority>
+    </url>
+    {%- endunless %}
+  {%- endfor %}
+
 </urlset>
