@@ -24,6 +24,7 @@ published: true
       + [Fallback Page](#fallback-page)
     + [title.html](#titlehtml)
   + [localizations.html](#localizationshtml)
+{: .toc }
 
 # Includes
 

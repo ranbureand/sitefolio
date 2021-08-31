@@ -21,6 +21,7 @@ published: true
 + [404 page not found](#404-page-not-found)
 + [Resources](#resources)
 + [Afterword](#afterword)
+{: .toc }
 
 # Multilingual sitemaps
 
@@ -74,9 +75,11 @@ sitemap:
 {: .code-m }
 {% endraw %}
 
-we make sure to exclude it from the list of pages returned in the other Sitemap files.
+we make sure to exclude it from the list of pages returned in each language Sitemap file.
 
 ## Sitemap files
+
+We then place a dedicated page named `sitemap.xml` in each of the language subdirectories of the site. For example, here is the front matter of the English page `sitemap.xml`:
 
 {% raw %}
 ``` liquid
@@ -166,21 +169,82 @@ sitemap:
 {: .code-l }
 {% endraw %}
 
+Each page contains two *for* loops:
+
++ the first loop goes through the array of posts and returns the ones that do not have the variables `sitemap: excluded: true` set in their front matter
++ the second loop goes through the array of pages and, similarly, returns the ones that do not have the variables `sitemap: excluded: true` set in their front matter
+
+We can override the `lastmod`, `changefreq`, and `priority` default values by setting the following variables in the front matter of the file:
+
 {% raw %}
 ``` yaml
----
-…
-
 sitemap:
-  lastmod: true
-  changefreq: 'monthly'
-  priority: ''
----
+  lastmod: 2021-08-15 08:00:00 +0300
+  changefreq: monthly
+  priority: 0.5
+```
+{: .code-m }
+{% endraw %}
+
+Again, we can exclude a post or page from being returned in a sitemap by setting the following variables in the front matter of the file:
+
+{% raw %}
+``` yaml
+sitemap:
+  excluded: true
 ```
 {: .code-m }
 {% endraw %}
 
 ## RSS feed
+
+{% raw %}
+``` liquid
+---
+layout: none
+
+title: RSS Feed
+
+sitemap:
+  excluded: true
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+>
+  <channel>
+    <title>{{ site.name | xml_escape }}</title>
+    <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
+    <sy:updatePeriod>{{ site.feed_update_period | default: 'daily' | xml_escape }}</sy:updatePeriod>
+    <sy:updateFrequency>{{ site.feed_update_frequency | default: 1 | xml_escape }}</sy:updateFrequency>
+    <link>{{ site.url }}</link>
+    <atom:link href="{{ site.url }}/{{ page.path }}" rel="self" type="application/rss+xml" />
+    <lastBuildDate>{% for post in site.posts limit:1 %}{{ post.date | date_to_rfc822 }}{% endfor %}</lastBuildDate>
+    {%- assign posts = site.posts | where: 'language', 'en' %}
+    {% for post in posts limit: 32 %}
+    <item>
+      <title>{{ post.title | xml_escape }}</title>
+      {% if site.author %}
+      <dc:creator>{{ site.author | xml_escape }}</dc:creator>
+      {% endif %}
+      {% if post.excerpt %}
+      <description>{{ post.excerpt | xml_escape }}</description>
+      {% else %}
+      <description>{{ post.content | xml_escape }}</description>
+      {% endif %}
+      <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+      <link>{{ site.url }}{{ post.url }}</link>
+      <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>
+```
+{: .code-xl }
+{% endraw %}
 
 *Coming soon…*
 

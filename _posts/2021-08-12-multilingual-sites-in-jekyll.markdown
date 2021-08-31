@@ -21,6 +21,7 @@ published: true
     + [Exceptions](#exceptions)
   + [Posts](#posts)
     + [Configuration](#configuration)
+{: .toc }
 
 # Preface
 

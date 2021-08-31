@@ -18,6 +18,7 @@ published: true
   + [Pages](#pages)
   + [Posts](#posts)
 + [Data files](#data-files)
+{: .toc }
 
 # Front matter
 
