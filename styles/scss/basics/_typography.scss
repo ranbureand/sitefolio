@@ -122,7 +122,8 @@
   blockquote {
     padding-left: em($m-gut*2-$border-width);
 
-    border-left: $border-width solid $l-border-color;
+    border-left-width: $border-width;
+    border-left-style: solid;
   }
 
   hr {
@@ -135,6 +136,23 @@
 
    > *:last-child {
     margin-bottom: 0;
+  }
+
+  .toc {
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      top: 0;
+      border-left-width: $border-width;
+      border-left-style: solid;
+    }
+    li {
+      &:before {
+        content: none;
+      }
+    }
   }
 
   @include min-screen(col(8)) {
@@ -225,7 +243,7 @@
   ul,
   ol {
     margin-bottom: em($m-medium-line/2);
-    padding-left: em($m-gut*2, $m-medium-size);
+    padding-left: em($m-gut*2);
   }
 
   li,
@@ -283,6 +301,12 @@
     margin-bottom: em($m-medium-line/2, $m-tiny-size);
 
     @include font-size($m-tiny-size, $m-tiny-line);
+  }
+
+  .toc {
+    &:before {
+      left: 0;
+    }
   }
 
   @include min-screen(col(8)) {
@@ -391,6 +415,12 @@
 
       @include font-size($d-tiny-size, $d-tiny-line);
     }
+
+    .toc {
+      &:before {
+        left: 0;
+      }
+    }
   }
   @include min-screen(col(12)) {
     // Text-level semantics
@@ -405,6 +435,12 @@
     ul,
     ol {
       padding-left: 0;
+    }
+
+    .toc {
+      &:before {
+        left: em(-$d-gut);
+      }
     }
   }
 }

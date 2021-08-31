@@ -100,6 +100,12 @@
     }
   }
 
+  .toc {
+    &:before {
+      border-left-color: $l-border-color;
+    }
+  }
+
   .footnotes {
     border-top-color: $l-border-color;
   }
@@ -184,7 +190,7 @@
   }
 
   blockquote {
-    border-color: $l-border-color;
+    border-left-color: $l-border-color;
   }
 
   hr,
@@ -325,6 +331,12 @@
     }
   }
 
+  .toc {
+    &:before {
+      border-left-color: $d-border-color;
+    }
+  }
+
   .footnotes {
     &:before {
       border-top-color: $d-border-color;
@@ -416,7 +428,7 @@
   }
 
   blockquote {
-    border-color: $d-border-color;
+    border-left-color: $d-border-color;
   }
 
   hr,
