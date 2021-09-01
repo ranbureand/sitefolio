@@ -260,3 +260,85 @@
     }
   }
 }
+
+/*
+** Colors
+*/
+
+.words-on-light {
+  .project-preview {
+    &:before {
+      background-color: $l-picture-background-color;
+    }
+
+    .project-preview-image {
+      background-color: $l-picture-background-color;
+    }
+
+    .project-preview-title {
+      color: $l-strong-type-color;
+    }
+
+    .project-preview-tags,
+    .project-preview-time {
+      color: $l-type-color;
+    }
+
+    &:hover {
+      .project-preview-title {
+        color: $l-color-1;
+      }
+    }
+
+    &:active {
+      .project-preview-title {
+        color: $l-color-1-darker;
+      }
+    }
+  }
+
+  .project-preview.current {
+    .project-preview-title {
+      color: $l-color-1;
+    }
+  }
+}
+
+.words-on-dark {
+  .project-preview {
+    &:before {
+      background-color: $d-picture-background-color;
+    }
+
+    .project-preview-image {
+      background-color: $d-picture-background-color;
+    }
+
+    .project-preview-title {
+      color: $d-strong-type-color;
+    }
+
+    .project-preview-tags,
+    .project-preview-time {
+      color: $d-type-color;
+    }
+
+    &:hover {
+      .project-preview-title {
+        color: $d-color-1;
+      }
+    }
+
+    &:active {
+      .project-preview-title {
+        color: $d-color-1-darker;
+      }
+    }
+  }
+
+  .project-preview.current {
+    .project-preview-title {
+      color: $d-color-1;
+    }
+  }
+}

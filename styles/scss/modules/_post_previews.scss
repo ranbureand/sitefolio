@@ -108,3 +108,73 @@
 .post-preview.current {
   cursor: default;
 }
+
+/*
+** Colors
+*/
+
+.words-on-light {
+  .post-preview {
+
+    .post-preview-title {
+      color: $l-strong-type-color;
+    }
+
+    .post-preview-quotation,
+    .post-preview-tags,
+    .post-preview-date {
+      color: $l-type-color;
+    }
+
+    &:hover {
+      .post-preview-title {
+        color: $l-color-1;
+      }
+    }
+
+    &:active {
+      .post-preview-title {
+        color: $l-color-1-darker;
+      }
+    }
+  }
+
+  .post-preview.current {
+    .post-preview-title {
+      color: $l-color-1;
+    }
+  }
+}
+
+.words-on-dark {
+  .post-preview {
+
+    .post-preview-title {
+      color: $d-strong-type-color;
+    }
+
+    .post-preview-quotation,
+    .post-preview-tags,
+    .post-preview-date {
+      color: $d-type-color;
+    }
+
+    &:hover {
+      .post-preview-title {
+        color: $d-color-1;
+      }
+    }
+
+    &:active {
+      .post-preview-title {
+        color: $d-color-1-darker;
+      }
+    }
+  }
+
+  .post-preview.current {
+    .post-preview-title {
+      color: $d-color-1;
+    }
+  }
+}

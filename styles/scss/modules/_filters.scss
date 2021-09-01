@@ -45,7 +45,8 @@
 
       content: "";
 
-      border-left: $border-width solid $d-border-color;
+      border-left-width: $border-width;
+      border-left-style: solid;
     }
   }
 
@@ -117,5 +118,29 @@
 .filter.current {
   a {
     cursor: default;
+  }
+}
+
+/*
+** Colors
+*/
+
+.words-on-light {
+  .filter {
+    a {
+      &:before {
+        border-left-color: $l-border-color;
+      }
+    }
+  }
+}
+
+.words-on-dark {
+  .filter {
+    a {
+      &:before {
+        border-left-color: $d-border-color;
+      }
+    }
   }
 }

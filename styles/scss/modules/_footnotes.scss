@@ -79,3 +79,19 @@
     }
   }
 }
+
+/*
+** Colors
+*/
+
+.words-on-light {
+  .footnotes {
+    border-top-color: $l-border-color;
+  }
+}
+
+.words-on-dark {
+  .footnotes {
+    border-top-color: $d-border-color;
+  }
+}

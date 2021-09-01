@@ -24,13 +24,12 @@
 */
 
 @import "basics/typography.scss";
+@import "basics/typography_colors.scss";
 
 /*
 ** Modules
 */
 
-@import "modules/colors.scss";
-@import "modules/code_colors.scss";
 @import "modules/frames.scss";
 @import "modules/sections.scss";
 @import "modules/separators.scss";
@@ -38,15 +37,17 @@
 @import "modules/splash.scss";
 //@import "modules/balloons.scss";
 @import "modules/figures.scss";
+@import "modules/codes_colors.scss";
 @import "modules/codes.scss";
 @import "modules/tables.scss";
 @import "modules/footnotes.scss";
 @import "modules/post_previews.scss";
 @import "modules/project_previews.scss";
 @import "modules/filters.scss";
-@import "modules/pieces.scss";
+//@import "modules/pieces.scss";
 @import "modules/links.scss";
 @import "modules/forms.scss";
+@import "modules/forms_colors.scss";
 
 /*
 ** Print

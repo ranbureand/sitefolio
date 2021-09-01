@@ -8,3 +8,19 @@
   border-top-width: $border-width;
   border-top-style: solid;
 }
+
+/*
+**
+*/
+
+.words-on-light {
+  .separator {
+    border-top-color: $l-border-color;
+  }
+}
+
+.words-on-dark {
+  .separator {
+    border-top-color: $d-border-color;
+  }
+}

@@ -82,6 +82,10 @@
   }
 }
 
+/*
+** Buttons => sizes
+*/
+
 .button-m {
   a {
     padding: em($m-small-line/2, $m-small-size) em($m-gut/2*3, $m-small-size);
@@ -93,6 +97,60 @@
       padding: em($d-small-line/2, $d-small-size) em($d-gut, $d-small-size);
 
       @include font-size($d-small-size, $d-small-line);
+    }
+  }
+}
+
+/*
+** Colors
+*/
+
+.words-on-light {
+  [class*="button"] {
+    background-color: $l-strong-type-color;
+
+    &:before {
+      background-color: $l-color-1;
+    }
+
+    &:active {
+      &:before {
+        background-color: $l-color-1-darker;
+      }
+    }
+
+    a {
+      color: $l-background-color;
+
+      &:hover,
+      &:active {
+        color: $l-background-color;
+      }
+    }
+  }
+}
+
+.words-on-dark {
+  [class*="button"] {
+    background-color: $d-strong-type-color;
+
+    &:before {
+      background-color: $d-color-1;
+    }
+
+    &:active {
+      &:before {
+        background-color: $d-color-1-darker;
+      }
+    }
+
+    a {
+      color: $d-background-color;
+
+      &:hover,
+      &:active {
+        color: $d-background-color;
+      }
     }
   }
 }

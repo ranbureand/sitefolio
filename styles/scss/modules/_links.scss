@@ -93,3 +93,39 @@
     }
   }
 }
+
+/*
+** Colors
+*/
+
+.words-on-light {
+  .link-icon {
+    background-color: $l-strong-type-color;
+
+    &:before {
+      background-color: $l-color-1;
+    }
+
+    &:active {
+      &:before {
+        background-color: $l-color-1-darker;
+      }
+    }
+  }
+}
+
+.words-on-dark {
+  .link-icon {
+    background-color: $d-strong-type-color;
+
+    &:before {
+      background-color: $d-color-1;
+    }
+
+    &:active {
+      &:before {
+        background-color: $d-color-1-darker;
+      }
+    }
+  }
+}
