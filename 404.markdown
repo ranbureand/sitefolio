@@ -13,12 +13,17 @@ published: true
 ---
 
 <div class="figures">
-  {% include image.html size="xl" src="outer_space_00.png" alt="Outer space." %}
+  {% include image.html
+      size="xl"
+      h="2880" w="2880"
+      src="outer_space_00.jpg"
+      alt="Outer space."
+      color="#1f1f1f"
+  %}
 </div>
 
-I am really sorry, but it appears you are lost in the outer space.
+I am sorry, but it appears you got lost in outer space.
 
 This conversation can serve no purpose anymore.
 
 Goodbye.
-
