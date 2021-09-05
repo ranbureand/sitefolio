@@ -4,7 +4,7 @@ order: 11
 layout: categories
 mode: dark
 
-title: 'Katachresis Projects'
+title: 'Katachresis projects'
 category: 'Katachresis'
 
 excerpt: 'Projects conceived during Katachresis, an intensive experimental, theoretical and practical workshop on theories of the image led by Wolfgang Scheppe with Valeria Burgio.'

@@ -56,7 +56,7 @@
     transition-duration: 0.2s;
     transition-property: color;
 
-    @include font-size($m-extra-large-size, $m-extra-large-line);
+    @include font-size($m-large-size, $m-large-line);
 
     sup {
       text-decoration: none;
@@ -88,7 +88,7 @@
   @include min-screen(col(8)) {
 
     .post-preview-title {
-      @include font-size($d-extra-large-size, $d-extra-large-line);
+      @include font-size($d-large-size, $d-large-line);
     }
 
     .post-preview-tags {

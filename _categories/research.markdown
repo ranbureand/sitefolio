@@ -4,7 +4,7 @@ order: 7
 layout: categories
 mode: dark
 
-title: 'Research Projects'
+title: 'Research projects'
 category: 'Research'
 
 excerpt: 'Experimental projects pushing the boundaries of the practice of design.'

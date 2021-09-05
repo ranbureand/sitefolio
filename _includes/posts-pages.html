@@ -1,0 +1,31 @@
+      <div class="column-2d-l separator"></div>
+      {%- assign posts = site.posts | where: 'published', true %}
+
+      {%- for post in posts %}
+        {%- if page.url == '/' %}
+          {%- assign currentPostIndex = 1 %}
+        {%- elsif post.title == page.title %}
+          {%- assign currentPostIndex = forloop.index %}
+        {%- endif %}
+      {%- endfor %}
+
+      {%- assign totalPosts = site.posts | size %}
+      {%- assign prevPostIndex = currentPostIndex | plus: 1 %}
+      {%- assign nextPostIndex = currentPostIndex | minus: 1 %}
+
+      {%- if prevPostIndex > totalPosts %}
+{% include posts-pages-next.html nextPostIndex = nextPostIndex %}
+
+        <div class="page-prev column-2d-page-1">
+          <span>—</span>
+        </div>
+      {%- elsif nextPostIndex < 1 %}
+
+        <div class="page-next column-2d-page-2">
+          <span>—</span>
+        </div>
+{% include posts-pages-prev.html prevPostIndex = prevPostIndex %}
+      {%- else %}
+{% include posts-pages-next.html nextPostIndex = nextPostIndex %}
+{% include posts-pages-prev.html prevPostIndex = prevPostIndex %}
+      {%- endif %}

@@ -4,7 +4,7 @@ order: 2
 layout: categories
 mode: dark
 
-title: 'Favorite Non-Commercial Projects'
+title: 'Favorite non-commercial projects'
 category: 'Favorite'
 
 excerpt: 'Some of my favorite non-commercial projects.'

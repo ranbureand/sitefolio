@@ -16,7 +16,7 @@
 **  |  ¦  |  ¦  |  ¦  |  ¦  |
 */
 
-.layout-2d {
+[class*="layout-2d"] {
   display: grid;
 
   width: 100%;
@@ -161,7 +161,7 @@
 }
 
 /*
-** Small columns : exceptions
+** About columns
 */
 
 .column-2d-s-1-about {
@@ -213,5 +213,35 @@
   }
   @include min-screen(col(16)) {
     grid-column: 7 / 9;
+  }
+}
+
+/*
+** Pages columns
+*/
+
+.column-2d-page-1 {
+  grid-column: 1 / 5;
+  @include min-screen(col(8)) {
+    grid-column: 1 / 5;
+  }
+  @include min-screen(col(12)) {
+    grid-column: 3 / 7;
+  }
+  @include min-screen(col(16)) {
+    grid-column: 1 / 4;
+  }
+}
+
+.column-2d-page-2 {
+  grid-column: 1 / 5;
+  @include min-screen(col(8)) {
+    grid-column: 1 / 5;
+  }
+  @include min-screen(col(12)) {
+    grid-column: 3 / 7;
+  }
+  @include min-screen(col(16)) {
+    grid-column: 5 / 9;
   }
 }

@@ -22,9 +22,9 @@
         {%- endif %}
 
         {%- if page.layout == 'categories' %}
-          {% include previews.html category = page.category %}
+{% include projects-previews.html category = page.category %}
         {%- else %}
-          {% include previews.html category = 'Favorite' %}
+{% include projects-previews.html category = 'Favorite' %}
         {%- endif %}
 
         {% include filters.html %}

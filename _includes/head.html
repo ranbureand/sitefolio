@@ -23,20 +23,26 @@
     <title>{% if page.title %}{{ page.title | strip_html | escape }} · {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines}}{% else %}{{ site.description }}{% endif %}"/>
 
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i,500,500i|IBM+Plex+Sans:400,400i,500,500i|IBM+Plex+Serif:400,400i,500,500i&amp;subset=latin-ext" rel="stylesheet"/>
+    <!--<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i,500,500i|IBM+Plex+Sans:400,400i,500,500i|IBM+Plex+Serif:400,400i,500,500i&amp;subset=latin-ext" rel="stylesheet"/>-->
+    <!-- https://fonts.google.com/share?selection.family=IBM%20Plex%20Mono:ital,wght@0,400;0,500;1,400;1,500%7CIBM%20Plex%20Sans:ital,wght@0,400;0,500;1,400;1,500%7CIBM%20Plex%20Serif:ital,wght@0,400;0,500;1,400;1,500 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400;1,500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400;1,500&family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400;1,500&display=swap"/>
+    <!-- Import specific characters ↑ → ↓ ← ⬑ ⬏ -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=IBM+Plex+Serif&text=%E2%86%91|%E2%86%92|%E2%86%93|%E2%86%90|%E2%AC%91|%E2%AC%8F" rel="stylesheet"/>
 
     <link rel="stylesheet" href="{{ "/styles/css/main.css?v=" | append: site.version | prepend: site.baseurl }}"/>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v={{ site.version }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v={{ site.version }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v={{ site.version }}">
-    <link rel="manifest" href="/site.webmanifest?v={{ site.version }}">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg?v={{ site.version }}" color="#fc5568">
-    <link rel="shortcut icon" href="/favicon.ico?v={{ site.version }}">
-    <meta name="apple-mobile-web-app-title" content="Sitefolio">
-    <meta name="application-name" content="Sitefolio">
-    <meta name="msapplication-TileColor" content="#987cfb">
-    <meta name="theme-color" content="{% if page.layout == 'base' %}#513c92{% elsif page.layout == 'categories' %}#131313{% else %}#fafafa{% endif %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v={{ site.version }}"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v={{ site.version }}"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v={{ site.version }}"/>
+    <link rel="manifest" href="/site.webmanifest?v={{ site.version }}"/>
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v={{ site.version }}" color="#fc5568"/>
+    <link rel="shortcut icon" href="/favicon.ico?v={{ site.version }}"/>
+    <meta name="apple-mobile-web-app-title" content="Sitefolio"/>
+    <meta name="application-name" content="Sitefolio"/>
+    <meta name="msapplication-TileColor" content="#987cfb"/>
+    <meta name="theme-color" content="{% if page.layout == 'base' %}#513c92{% elsif page.layout == 'categories' %}#131313{% else %}#fafafa{% endif %}"/>
 
     <meta property="og:title" content="{% if page.title %}{{ page.title | escape }} · {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}"/>
     <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines}}{% else %}{{ site.description }}{% endif %}"/>

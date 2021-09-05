@@ -4,7 +4,7 @@ order: 1
 layout: categories
 mode: dark
 
-title: 'All Projects'
+title: 'All projects'
 category: 'All'
 
 excerpt: 'Here are all projects published in this website.'

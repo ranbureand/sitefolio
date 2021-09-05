@@ -4,7 +4,7 @@ order: 6
 layout: categories
 mode: dark
 
-title: 'Print Projects'
+title: 'Print projects'
 category: 'Print'
 
 excerpt: 'Projects dealing with and/or falling within the realm of print-based media.'

@@ -1,0 +1,69 @@
+/* Copyright (c) 2017 Andrea Buran [www.andreaburan.com]. All rights reserved */
+
+/*
+** Pages
+*/
+
+[class*="page"] {
+  & > * {
+    @include font-size($m-large-size, $m-large-line);
+  }
+  span {
+
+  }
+  @include min-screen(col(8)) {
+    & > * {
+      @include font-size($d-large-size, $d-large-line);
+    }
+  }
+}
+
+.page-prev,
+.page-next {
+
+}
+
+.page-next {
+  a {
+    &:before {
+      content: "↑ ";
+    }
+  }
+  @include min-screen(col(16)) {
+    a {
+      &:before {
+        content: "← ";
+      }
+    }
+  }
+}
+
+.page-prev {
+  a {
+    &:before {
+      content: "↓ ";
+    }
+  }
+  @include min-screen(col(16)) {
+    a {
+      &:before {
+        content: none;
+      }
+      &:after {
+        content: " →";
+      }
+    }
+  }
+}
+
+/*
+** Colors
+*/
+
+.words-on-light {
+
+}
+
+.words-on-dark {
+
+}
