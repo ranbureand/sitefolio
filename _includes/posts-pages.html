@@ -16,12 +16,12 @@
       {%- if prevPostIndex > totalPosts %}
 {% include posts-pages-next.html nextPostIndex = nextPostIndex %}
 
-        <div class="page-prev column-2d-page-1">
+        <div class="page-prev column-2d-page-2">
           <span>—</span>
         </div>
       {%- elsif nextPostIndex < 1 %}
 
-        <div class="page-next column-2d-page-2">
+        <div class="page-next column-2d-page-1">
           <span>—</span>
         </div>
 {% include posts-pages-prev.html prevPostIndex = prevPostIndex %}
