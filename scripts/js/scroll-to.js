@@ -25,6 +25,31 @@ function getElementPosition(element) {
   return object;
 };
 
+
+window.addEventListener('load', function () {
+
+  if (window.location.hash == '') {
+    return false;
+  }
+
+  // Get the targeted anchor
+  let target = document.querySelector(window.location.hash);
+
+  if (target !== null) {
+    // Get the position of the targeted anchor
+    let targetPosition = getElementPosition(target);
+
+    // Scroll to the anchor
+    window.scrollTo({
+        top: targetPosition.y - margin,
+        behavior: 'smooth'
+    });
+
+    console.log('Scrolled to the element ' + window.location.hash + '.');
+  }
+
+}, false);
+
 // Get the anchor links in the document
 const anchors = document.querySelectorAll('a[href^="#"]'),
       margin = 96;
@@ -42,31 +67,33 @@ anchors.forEach(function(anchor) {
     // Get the targeted anchor
     let target = document.querySelector(hash);
 
-    // Get the position of the targeted anchor
-    let targetPosition = getElementPosition(target);
+    if (target !== null) {
+      // Get the position of the targeted anchor
+      let targetPosition = getElementPosition(target);
 
 
-    // Get the URL of the current document
-    let currentURL = new URL(document.URL);
+      // Get the URL of the current document
+      let currentURL = new URL(document.URL);
 
-    // Add the hash of the anchor link to the URL of the current document
-    currentURL.hash = hash;
+      // Add the hash of the anchor link to the URL of the current document
+      currentURL.hash = hash;
 
-    // Create a new URK
-    var newURL = currentURL.href;
+      // Create a new URK
+      var newURL = currentURL.href;
 
-    // Replace the current url with the new URL
-    document.location.href = newURL;
+      // Replace the current url with the new URL
+      document.location.href = newURL;
 
-    console.log('URL changed to ' + newURL);
+      console.log('URL changed to ' + newURL);
 
 
-    // Scroll to the anchor
-    window.scrollTo({
-        top: targetPosition.y - margin,
-        behavior: 'smooth'
-    });
+      // Scroll to the anchor
+      window.scrollTo({
+          top: targetPosition.y - margin,
+          behavior: 'smooth'
+      });
 
-    console.log('Scrolled to the element ' + hash + '.');
+      console.log('Scrolled to the element ' + hash + '.');
+    }
   });
 });
