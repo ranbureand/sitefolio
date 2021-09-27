@@ -4,7 +4,7 @@
 ** Scroll to
 */
 
-// Get the root element of the page
+// Get the root element of the document
 // https://developer.mozilla.org/en-US/docs/Web/API/Document/documentElement
 const rootElement = document.documentElement;
 
@@ -25,11 +25,11 @@ function getElementPosition(element) {
   return object;
 };
 
-// Get the anchor links in the page
+// Get the anchor links in the document
 const anchors = document.querySelectorAll('a[href^="#"]'),
       margin = 96;
 
-// Add click event listeners to all anchor links in the page
+// Add click event listeners to all anchor links in the document
 anchors.forEach(function(anchor) {
   anchor.addEventListener('click', function(e) {
     // Prevent the default action when clicking on an anchor link
@@ -44,6 +44,22 @@ anchors.forEach(function(anchor) {
 
     // Get the position of the targeted anchor
     let targetPosition = getElementPosition(target);
+
+
+    // Get the URL of the current document
+    let currentURL = new URL(document.URL);
+
+    // Add the hash of the anchor link to the URL of the current document
+    currentURL.hash = hash;
+
+    // Create a new URK
+    var newURL = currentURL.href;
+
+    // Replace the current url with the new URL
+    document.location.href = newURL;
+
+    console.log('URL changed to ' + newURL);
+
 
     // Scroll to the anchor
     window.scrollTo({
