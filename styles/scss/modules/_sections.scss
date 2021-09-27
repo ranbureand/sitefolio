@@ -226,3 +226,55 @@
 .article-body {
   @include face(serif);
 }
+
+.words-on-light {
+  .article-body {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $l-strong-type-color;
+      a {
+        &:before,
+        &:after {
+          color: $l-color-1;
+        }
+      }
+      a:hover {
+        color: $l-strong-type-color;
+        &:before,
+        &:after {
+          color: $l-color-1;
+        }
+      }
+    }
+  }
+}
+
+.words-on-dark {
+  .article-body {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $d-strong-type-color;
+      a {
+        &:before,
+        &:after {
+          color: $d-color-1;
+        }
+      }
+      a:hover {
+        color: $d-strong-type-color;
+        &:before,
+        &:after {
+          color: $d-color-1;
+        }
+      }
+    }
+  }
+}

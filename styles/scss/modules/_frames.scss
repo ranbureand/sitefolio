@@ -201,8 +201,28 @@
   }
 }
 
+.words-on-light {
+  .header-navigation {
+    li {
+      &:after {
+        color: $l-color-1;
+      }
+    }
+  }
+}
+
 .on-dark {
   .buffer-header {
     background-color: $d-background-color;
+  }
+}
+
+.words-on-dark {
+  .header-navigation {
+    li {
+      &:after {
+        color: $d-color-1;
+      }
+    }
   }
 }

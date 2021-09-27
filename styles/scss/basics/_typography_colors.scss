@@ -64,19 +64,6 @@
   h5,
   h6 {
     color: $l-strong-type-color;
-    a {
-      &:before,
-      &:after {
-        color: $l-color-1;
-      }
-    }
-    a:hover {
-      color: $l-strong-type-color;
-      &:before,
-      &:after {
-        color: $l-color-1;
-      }
-    }
   }
 
   dt {
