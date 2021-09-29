@@ -18,7 +18,7 @@ published: true
   + [Sitemap index file](#sitemap-index-file)
   + [Sitemap files](#sitemap-files)
 + [RSS feed](#rss-feed)
-+ [404 page not found](#404-page-not-found)
++ [Page not found](#page-not-found)
 + [Resources](#resources)
 + [Afterword](#afterword)
 {: .toc }
@@ -200,7 +200,7 @@ sitemap:
 
 *Coming soon…*
 
-## 404 page not found
+## Page not found
 
 *Coming soon…*
 
