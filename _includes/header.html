@@ -3,7 +3,7 @@
         <header class="header {% if page.mode == 'dark' %}words-on-dark{% else %}words-on-light{% endif %} layout-2d">
           <h1 class="header-title"><a href="{{ site.baseurl }}/"><span class="hidden">Andrea Buran’s</span> Sitefolio<sup class="color-1">5.0</sup></a></h1>
           <ul class="header-navigation">
-            <li{% if page.title == 'Posts' or page.collection == 'posts' %} class="current"{% endif %}>
+            <li{% if page.title == 'All posts' or page.collection == 'posts' %} class="current"{% endif %}>
               <a href="{{ site.baseurl }}/posts.html"><span class="hidden">All</span> Posts</a>
             </li>
             <li{% if page.collection == 'categories' or page.collection == 'projects' %} class="current"{% endif %}>
