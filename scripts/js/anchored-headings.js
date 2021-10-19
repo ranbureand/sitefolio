@@ -18,7 +18,8 @@ if (article !== null) {
   for (var i = 0; i < headings.length; i++) {
     headings[i].innerHTML =
       '<a href="#' + headings[i].id + '">' +
-          headings[i].innerText +
+          //headings[i].innerText +
+          headings[i].innerHTML +
       '</a>';
 
     console.log('Anchored heading ' + headings[i].innerText + ' created.');
