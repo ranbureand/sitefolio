@@ -1,7 +1,7 @@
         {%- for post in posts %}
         {%- if forloop.index == include.nextPostIndex %}
         <div class="page-next column-2d-page-1">
-          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title | markdownify }}</a>
         </div>
         {%- endif %}
         {%- endfor %}
