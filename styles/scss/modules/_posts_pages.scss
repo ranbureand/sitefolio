@@ -8,8 +8,8 @@
   & > * {
     @include font-size($m-large-size, $m-large-line);
   }
-  span {
-
+  p {
+    display: inline;
   }
   @include min-screen(col(8)) {
     & > * {

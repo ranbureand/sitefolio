@@ -210,7 +210,7 @@ div {
 
   @include min-screen(col(12)) {
     figcaption {
-      width: col(8);
+      //width: col(8);
     }
   }
 }
@@ -223,7 +223,7 @@ div {
     width: col(12);
 
     figcaption {
-      width: col(8);
+      //width: col(8);
     }
   }
 }
