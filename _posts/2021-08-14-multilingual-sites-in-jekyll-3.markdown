@@ -26,11 +26,11 @@ published: true
   + [localizations.html](#localizationshtml)
 {: .toc }
 
-# Includes
+## Includes
 
 The purpose of most of the includes in the basic site is building the navigation.
 
-## header.html
+### header.html
 
 The include `header.html` generates the header in the page. It, in turn, “includes” three more includes:
 
@@ -52,7 +52,7 @@ The include `header.html` generates the header in the page. It, in turn, “incl
 {: .code-l }
 {% endraw %}
 
-### navigation.html
+#### navigation.html
 
 The include `navigation.html` generates an unordered list containing all the published pages having the same `language` variable as the current page.
 
@@ -84,7 +84,7 @@ and we order the list according to the `order` variable. We then loop trough the
 
 Whenever the title of the current page in the array (`navigation_page.title`) matches the title of the current page (`page.title`), we add a class named `current` to the corresponding `<li/>` tag.
 
-### language-switch.html
+#### language-switch.html
 
 The include `language-switch.html` generates an unordered list containing all the languages supported in the site. You can use the list to switch to one of the other language translations of the current page/post, if available.
 
@@ -192,7 +192,7 @@ After at least one of the code blocks has been run, we generate the list items o
 
 Whenever the slug of the current language item of the array `snippets.languages` (`language[1].slug`) matches the language of the current page (`page.language`), we add a class named `current` to the corresponding `<li/>` tag.
 
-#### if page.layout == 'page'
+##### if page.layout == 'page'
 
 {% raw %}
 ``` liquid
@@ -283,7 +283,7 @@ Why `stories`? Because—in the context of the basic site—the pages whose `lan
 + return a list of all the published posts (they have exactly the same structure as the `index.html` page)
 + have a translated counterpart in all the languages supported on the site
 
-#### elsif page.layout == 'post'
+##### elsif page.layout == 'post'
 
 {% raw %}
 ``` liquid
@@ -309,7 +309,7 @@ Why `stories`? Because—in the context of the basic site—the pages whose `lan
 
 The second block of code behaves akin to the first, with the only difference that we manipulate an array of posts (`navigation_posts`) rather than one of pages (`navigation_pages`).
 
-#### else
+##### else
 
 {% raw %}
 ``` liquid
@@ -326,7 +326,7 @@ The second block of code behaves akin to the first, with the only difference tha
 
 The third block of code runs in the remote eventuality in which both the first and second blocks of code do not run, so that we make sure, again, to serve a fallback page to our web surfers.
 
-#### Fallback page
+##### Fallback page
 
 How can we be sure that the fallback page truly works?
 
@@ -350,7 +350,7 @@ If you go to [the English page *Postface*](https://ranbureand.github.io/multilin
 
 Similarly, if you go to [the Italian post *Ciao Giove*](https://ranbureand.github.io/multilingual-experiment/it/storia/ciao-giove) and press on *English* in the language switch, you can see that you are indeed redirected to the English page *Stories*.
 
-### title.html
+#### title.html
 
 The include `title.html` generates the title of this basic site.
 
@@ -379,7 +379,7 @@ We run the first code block when the language of the current page (`page.languag
 
 Else, we run the second code block to provide the usual fallback page already discussed above (read the section [language-switch.html](#language-switchhtml) for more details). Web surfers who browse the site in a language different than the default one are directed to the fallback page in their current language when they press on the title.
 
-## localizations.html
+### localizations.html
 
 The include `localizations.html` adds `<link rel="alternate" … />` tags in the `<head/>` tag of a page [to tell search engines](https://developers.google.com/search/docs/advanced/crawling/localized-versions "Tell Google about localized versions of your page") if there are multiple versions of the page for different languages or regions.
 

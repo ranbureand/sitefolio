@@ -23,7 +23,7 @@ published: true
     + [Configuration](#configuration)
 {: .toc }
 
-# Preface
+## Preface
 
 When I found myself coding a multilingual site in *[Jekyll](https://jekyllrb.com/ "Jekyll")*, I stumbled on [a lot of useful resources]({% post_url 2021-08-15-multilingual-sites-in-jekyll-4 %}#resources) while surfing the Web, but I struggled not a little while trying to digest and replicate their approaches because of the lack of a concrete, working example to look at.
 
@@ -33,7 +33,7 @@ Not giving up, I then opted for creating a basic site from scratch, so that I co
 
 That very same basic site is hosted [in this repository](https://github.com/ranbureand/multilingual-experiment/), which I gladly share with the world as an example project, hoping to be of a help for anybody who is into coding a multilingual site using *Jekyll*.
 
-# Foreword
+## Foreword
 
 A few words before starting. Sites built with the approach illustrated in this series of articles:
 
@@ -49,7 +49,7 @@ Specifically, [the basic site](https://ranbureand.github.io/multilingual-experim
 + is visually quite crude, since the focus is on illustrating a structural (not visual) approach to building multilingual sites
 + supports English and Italian as example languages
 
-# Directory structure
+## Directory structure
 
 The directory structure of the basic site looks like this:
 
@@ -98,7 +98,7 @@ The directory structure of the basic site looks like this:
 {: .code-m }
 {% endraw %}
 
-## Pages
+### Pages
 
 We organize the pages into as many subdirectories as the languages that we plan to support, and name them using [ISO language codes](https://www.w3schools.com/tags/ref_language_codes.asp "HTML Language Code Reference in W3Schools"). The basic site has two subdirectories, one named `en` for grouping the English pages, and one named `it` for grouping the Italian pages.
 
@@ -126,7 +126,7 @@ We organize the pages into as many subdirectories as the languages that we plan 
 
 After *Jekyll* has built the site, we can reach, for example, the English page `stories.html` and the Italian page `storie.html` at the URLs `www.site.ext/en/stories.html` and `www.site.ext/it/storie.html`, respectively.
 
-### Exceptions
+#### Exceptions
 
 But, of course, there are exceptions. We place the pages `404.html`, `index.html`, and `sitemap.html` in the root directory of the site. Why?
 
@@ -134,7 +134,7 @@ But, of course, there are exceptions. We place the pages `404.html`, `index.html
 
 `sitemap.xml` instead is none other than a [Sitemap index](https://www.sitemaps.org/protocol.html#index "Sitemaps XML Format, Sitemap index") which points to the other localized sitemaps in the respective language subfolders (read the section [Multilingual sitemaps]({% post_url 2021-08-15-multilingual-sites-in-jekyll-4 %}#multilingual-sitemaps) for more details).
 
-## Posts
+### Posts
 
 We organize the posts following a similar logic. The basic site has two subdirectories in the folder named `_posts`, one named `en` for grouping the English posts, and one named `it` for grouping the Italian posts.
 
@@ -155,7 +155,7 @@ We organize the posts following a similar logic. The basic site has two subdirec
 {: .code-m }
 {% endraw %}
 
-### Configuration
+#### Configuration
 
 We then add the following configuration options in the `_config.yml` file placed in the site’s root directory:
 

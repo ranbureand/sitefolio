@@ -20,7 +20,7 @@ published: true
 + [Data files](#data-files)
 {: .toc }
 
-# Front matter
+## Front matter
 
 In the front matter of each page or post, but for the usual variables, we set two new custom variables to handle the multilingual logic[^logic] of the site:
 
@@ -29,7 +29,7 @@ In the front matter of each page or post, but for the usual variables, we set tw
 
 We can use `language` to retrieve only the pages or posts that have the same language, and `language_reference` to retrieve only the pages or posts that return the same content translated in different languages (read the sections [navigation.html]({% post_url 2021-08-14-multilingual-sites-in-jekyll-3 %}#navigationhtml) and [language-switch.html]({% post_url 2021-08-14-multilingual-sites-in-jekyll-3 %}#language-switchhtml) for more details).
 
-## Pages
+### Pages
 
 For example, here is the front matter of the English page *Stories*:
 
@@ -73,7 +73,7 @@ order: 2
 
 Both pages have the variable `language_reference` set to `stories` so that they can be easily related with each other.
 
-## Posts
+### Posts
 
 For example, here is the front matter of the English post *Hello World*:
 
@@ -117,7 +117,7 @@ published: true
 
 Both posts have the variable `language_reference` set to `world` so that they can be easily related with each other.
 
-# Data files
+## Data files
 
 We create a YAML [data file](https://jekyllrb.com/docs/datafiles/ "Data Files") named `snippets.yml` to store the different translations of the user interface copy as additional data in the `_data` subdirectory.
 

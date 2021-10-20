@@ -23,11 +23,11 @@ published: true
 + [Afterword](#afterword)
 {: .toc }
 
-# Multilingual sitemaps
+## Multilingual sitemaps
 
 To serve a multilingual sitemap, we need to create a [Sitemap index](https://www.sitemaps.org/protocol.html#index "Sitemaps XML Format, Sitemap index") file and list a Sitemap file for each language we support.
 
-## Sitemap index file
+### Sitemap index file
 
 We place the page named `sitemap.html` in the root directory of the site. It points to the other localized sitemaps in the respective language subfolders.
 
@@ -77,7 +77,7 @@ sitemap:
 
 we make sure to exclude it from the list of pages returned in each language Sitemap file.
 
-## Sitemap files
+### Sitemap files
 
 We then place a dedicated page named `sitemap.xml` in each of the language subdirectories of the site. For example, here is the front matter of the English page `sitemap.xml`:
 
@@ -196,15 +196,15 @@ sitemap:
 {: .code-m }
 {% endraw %}
 
-## RSS feed
+### RSS feed
 
 *Coming soon…*
 
-## Page not found
+### Page not found
 
 *Coming soon…*
 
-# Resources
+## Resources
 
 + [Creating a multilingual blog with Jekyll](https://forestry.io/blog/creating-a-multilingual-blog-with-jekyll/ "Creating a multilingual blog with Jekyll")
 + [Making Jekyll multilingual](https://sylvaindurand.org/making-jekyll-multilingual/ "Making Jekyll multilingual")
@@ -212,7 +212,7 @@ sitemap:
 + [Multilingual Jekyll: How The Programming Historian does that](https://matthewlincoln.net/2020/03/01/multilingual-jekyll.html "Multilingual Jekyll: How The Programming Historian does that")
 + [Multilingual Jekyll websites](https://www.usecue.com/blog/multilingual-jekyll-websites/ "Multilingual Jekyll websites")
 
-# Afterword
+## Afterword
 
 If you feel like adding something to the subject and/or you have spotted something worth fixing, please feel free to either [drop me a line](andreaburan.com/ "Andrea Buran’s Sitefolio") or [create an issue on GitHub](https://github.com/ranbureand/multilingual-experiment/issues): thoughts, critiques, suggestions are welcomed.
 

@@ -27,7 +27,7 @@ published: true
 + [The closure](#the-closure)
 {: .toc }
 
-# What is *JoJo’s Bizarre Adventure*?
+## What is *JoJo’s Bizarre Adventure*?
 
 [Hirohiko Araki](https://en.wikipedia.org/wiki/Hirohiko_Araki "Hirohiko Araki from Wikipedia") (7 Jun 1960) is a *mangaka* and author of one of my favorite Japanese *manga*: *[JoJo’s Bizarre Adventure](https://en.wikipedia.org/wiki/JoJo%27s_Bizarre_Adventure "JoJo’s Bizarre Adventure from Wikipedia")*. The *manga* started in 1987 and continues nowadays, spanning 8 series for a total of 131 volumes, and counting.
 
@@ -35,13 +35,13 @@ published: true
 
 The main characters in JoJo can generate spiritual entities, named *Stands*, who help their owners through superhuman abilities of various nature.
 
-# Spoiler alert!
+## Spoiler alert!
 
 While I will try my best to keep spoilers to the minimum, unfortunately, I can not avoid spoiling a major plot event from *JoJo*’s 3<sup>rd</sup> series—*Stardust Crusaders*. As a matter of fact, in this piece, I am interested in analyzing how Araki pushed the language of comics to the limits to represent that very same event.
 
 So, spoiler alert!
 
-# The zenith of the series
+## The zenith of the series
 
 As a teenager, I considered the final showdown between the Joestar family and Dio Brando at the end of the 3<sup>rd</sup> series to be the zenith of the *manga*.
 
@@ -55,7 +55,7 @@ Fascinated by Araki’s skills, I have always asked myself “How was Araki able
 
 This article is my attempt at finding an answer to the latter.
 
-# A few premises on *mangas*
+## A few premises on *mangas*
 
 In this piece, I focus my analysis only on *Dio’s World Part 7*, a chapter that consists of 20 pages in total, laid out two by two, in 10 spreads [^spread].
 
@@ -96,7 +96,7 @@ Similarly, you read panels within a page as well as elements within a panel, fro
   %}
 </div>
 
-# The flow of time in the language of comics
+## The flow of time in the language of comics
 
 Before analyzing how Araki approached conveying the stoppage of time in *Dio’s World Part 7*, we should first brush up on our language of comics.
 
@@ -105,7 +105,7 @@ How does the language of comics express the flow of time? As a rule of thumb, by
 + space = time (space equals time)
 + time ↔ reading (time is related to the reading experience)
 
-## Space = time
+### Space = time
 
 Let us focus on the 1<sup>st</sup> principle: space = time. The language of comics expresses the flow of time by sequencing space. Overall, it sequences space at three different levels. From highest to lowest:
 
@@ -113,7 +113,7 @@ Let us focus on the 1<sup>st</sup> principle: space = time. The language of comi
 + Space (and thus time) is also structured in a sequence of panels, within a single page
 + Space (and thus time) is structured in a sequence of elements within a single panel
 
-## Time ↔ reading
+### Time ↔ reading
 
 Let us now focus on the 2<sup>nd</sup> principle: time ↔ reading. The language of comics expresses the flow of time by speeding up or slowing down the reading experience.
 
@@ -124,7 +124,7 @@ How can we influence the reading experience? Usually, in two ways:
 + The more visually complex a sequence is, the more time we need to digest it, and vice versa
 + The more speech balloons a panel has, the more time we need to read it, and vice versa
 
-# The sequence of pages
+## The sequence of pages
 
 Let us start by having a look at the sequences of pages in *Dio’s World Part 7*. As in any action comic worthy of its name, pages in the sequence are mostly composed of multiple panels of various sizes, shapes, and slants.
 
@@ -188,7 +188,7 @@ But that is not all. He further slows the narrative tempo down by purposely stre
 
 An action that lasts just a couple of seconds is thus represented on three different pages, dilating our perception of time. By comparison, the actions in the pages immediately before (pages 134–137) last at least 20+ seconds in total.
 
-## The cliffhanger
+### The cliffhanger
 
 And just to put the icing on the cake, Araki builds a cliffhanger on pages 136–137—right before the big revelation.
 
@@ -208,7 +208,7 @@ Since page 137 is the last page in the spread, we readers have to turn the page 
 
 The suspense caused by the cliffhanger has indeed the main purpose to motivate us in reaching the next page, but it also contributes incidentally to further dilating our perception of time. Turning that paper page becomes particularly “heavy” to turn since we feel it as an obstacle that slows down our reading experience.
 
-# The sequence of panels and their elements
+## The sequence of panels and their elements
 
 Let us further focus on the sequence of panels and elements in the panels on pages 138–141. As already mentioned, each of these pages coincides with a single, full-page panel.
 
@@ -256,7 +256,7 @@ Disoriented, we glance back and forth between pages 140 and 141, trying to solve
 
 I like to imagine that Araki put these two pages in front of each other on purpose, to let us play spot the differences and further spend time on the spread. And the fraction of time that it takes for Dio to jump from a dome to a tower becomes an eternity in our inner time, while we look at the effects of his sky walk, slowly realize what he has just done, and worry about the potential aftermath.
 
-# The closure
+## The closure
 
 After the peak of the climax, Araki makes everything obvious in the last spread in *Dio’s World Part 7*, where the narrative rhythm is back to the usual, with an average of 4,50 panels per page.
 

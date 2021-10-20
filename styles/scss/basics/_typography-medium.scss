@@ -8,37 +8,42 @@
   // Text-level semantics
 
   h1,
-  h2 {
+  h2,
+  h4,
+  h6
+
+  h1,
+  h2,
+  h3 {
     margin-bottom: em($m-extra-large-line/2, $m-extra-large-size);
 
     @include font-size($m-extra-large-size, $m-extra-large-line);
   }
 
   * + h1,
-  * + h2 {
+  * + h2,
+  * + h3 {
     margin-top: em($m-extra-large-line, $m-extra-large-size);
   }
 
-  h3,
-  h4 {
+  h4,
+  h5 {
     margin-bottom: em($m-large-line/2, $m-large-size);
 
     @include font-size($m-large-size, $m-large-line);
   }
 
-  * + h3,
-  * + h4 {
+  * + h4,
+  * + h5 {
     margin-top: em($m-medium-line, $m-medium-size);
   }
 
-  h5,
   h6 {
     margin-bottom: em($m-medium-line/2, $m-medium-size);
 
     @include font-size($m-medium-size, $m-medium-line);
   }
 
-  * + h5,
   * + h6 {
     margin-top: em($m-medium-line, $m-medium-size);
   }
@@ -123,37 +128,37 @@
     // Text-level semantics
 
     h1,
-    h2 {
+    h2,
+    h3 {
       margin-bottom: em($d-extra-large-line/2, $d-extra-large-size);
 
       @include font-size($d-extra-large-size, $d-extra-large-line);
     }
 
     * + h1,
-    * + h2 {
+    * + h2,
+    * + h3 {
       margin-top: em($d-extra-large-line, $d-large-size);
     }
 
-    h3,
-    h4 {
+    h4,
+    h5 {
       margin-bottom: em($d-large-line/2, $d-large-size);
 
       @include font-size($d-large-size, $d-large-line);
     }
 
-    * + h3,
-    * + h4 {
+    * + h4,
+    * + h5 {
       margin-top: em($d-large-line, $d-large-size);
     }
 
-    h5,
     h6 {
       margin-bottom: em($d-medium-line/2, $d-medium-size);
 
       @include font-size($d-medium-size, $d-medium-line);
     }
 
-    * + h5,
     * + h6 {
       margin-top: em($d-medium-line, $d-medium-size);
     }
