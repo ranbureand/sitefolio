@@ -1,7 +1,7 @@
         {%- for post in posts %}
         {%- if forloop.index == include.prevPostIndex %}
         <div class="page-prev column-2d-page-2">
-          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title | markdownify }}</a>
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title | markdownify | remove: '<p>' | remove: '</p>' }}</a>
         </div>
         {%- endif %}
         {%- endfor %}
