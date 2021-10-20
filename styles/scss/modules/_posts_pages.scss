@@ -8,9 +8,6 @@
   & > * {
     @include font-size($m-large-size, $m-large-line);
   }
-  p {
-    display: inline;
-  }
   @include min-screen(col(8)) {
     & > * {
       @include font-size($d-large-size, $d-large-line);
