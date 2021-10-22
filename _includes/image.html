@@ -39,96 +39,87 @@
       ../media/{{ image_path }}/images/1440/{{ include.src }}
       "
       srcset="
-      ../media/{{ image_path }}/images/2880/{{ include.src }} {{ column | times: 16 }}w,
-      ../media/{{ image_path }}/images/1440/{{ include.src }} {{ column | times: 16 }}w,
-      ../media/{{ image_path }}/images/2160/{{ include.src }} {{ column | times: 12 }}w,
-      ../media/{{ image_path }}/images/1080/{{ include.src }} {{ column | times: 12 }}w,
-      ../media/{{ image_path }}/images/1440/{{ include.src }} {{ column | times: 8 }}w,
-      ../media/{{ image_path }}/images/720/{{ include.src }} {{ column | times: 8 }}w,
-      ../media/{{ image_path }}/images/720/{{ include.src }} 360w,
+      ../media/{{ image_path }}/images/2880/{{ include.src }} 2880w,
+      ../media/{{ image_path }}/images/2160/{{ include.src }} 2160w,
+      ../media/{{ image_path }}/images/1440/{{ include.src }} 1440w,
+      ../media/{{ image_path }}/images/1080/{{ include.src }} 1080w,
+      ../media/{{ image_path }}/images/720/{{ include.src }} 720w,
       ../media/{{ image_path }}/images/360/{{ include.src }} 360w,
       "
       sizes="
       (min-width: 72em) {{ column | times: 16 | divided_by: 16 }}em,
       (min-width: 54em) {{ column | times: 12 | divided_by: 16 }}em,
       (min-width: 30em) {{ column | times: 8 | divided_by: 16 }}em,
-      (min-width: 0) {{ 360 | divided_by: 16 }}em
+      {{ 360 | divided_by: 16 }}em
       "
       {% elsif include.size == "l" %}
       src="
       ../media/media/{{ image_path }}/images/1080/{{ include.src }}
       "
       srcset="
-      ../media/{{ image_path }}/images/2160/{{ include.src }} {{ column | times: 12 }}w,
-      ../media/{{ image_path }}/images/1080/{{ include.src }} {{ column | times: 12 }}w,
-      ../media/{{ image_path }}/images/1440/{{ include.src }} {{ column | times: 8 }}w,
-      ../media/{{ image_path }}/images/720/{{ include.src }} {{ column | times: 8 }}w,
-      ../media/{{ image_path }}/images/720/{{ include.src }} 360w,
+      ../media/{{ image_path }}/images/2160/{{ include.src }} 2160w,
+      ../media/{{ image_path }}/images/1440/{{ include.src }} 1440w,
+      ../media/{{ image_path }}/images/1080/{{ include.src }} 1080w,
+      ../media/{{ image_path }}/images/720/{{ include.src }} 720w,
       ../media/{{ image_path }}/images/360/{{ include.src }} 360w,
       "
       sizes="
       (min-width: 54em) {{ column | times: 12 | divided_by: 16 }}em,
       (min-width: 30em) {{ column | times: 8 | divided_by: 16 }}em,
-      (min-width: 0) {{ 360 | divided_by: 16 }}em
+      {{ 360 | divided_by: 16 }}em
       "
       {% elsif include.size == "sm" %}
       src="
       ../media/{{ image_path }}/images/360/{{ include.src }}
       "
       srcset="
-      ../media/{{ image_path }}/images/1440/{{ include.src }} {{ column | times: 6 }}w,
-      ../media/{{ image_path }}/images/720/{{ include.src }} {{ column | times: 6 }}w,
-      ../media/{{ image_path }}/images/720/{{ include.src }} {{ column | times: 4 }}w,
-      ../media/{{ image_path }}/images/360/{{ include.src }} {{ column | times: 4 }}w,
-      ../media/{{ image_path }}/images/720/{{ include.src }} 360w,
+      ../media/{{ image_path }}/images/1440/{{ include.src }} 1440w,
+      ../media/{{ image_path }}/images/1080/{{ include.src }} 1080w,
+      ../media/{{ image_path }}/images/720/{{ include.src }} 720w,
       ../media/{{ image_path }}/images/360/{{ include.src }} 360w,
       "
       sizes="
       (min-width: 54em) {{ column | times: 6 | divided_by: 16 }}em,
       (min-width: 30em) {{ column | times: 4 | divided_by: 16 }}em,
-      (min-width: 0) {{ 360 | divided_by: 16 }}em
+      {{ 360 | divided_by: 16 }}em
       "
       {% elsif include.size == "s" %}
       src="
       ../media/{{ image_path }}/images/360/{{ include.src }}
       "
       srcset="
-      ../media/{{ image_path }}/images/720/{{ include.src }} {{ column | times: 4 }}w,
-      ../media/{{ image_path }}/images/360/{{ include.src }} {{ column | times: 4 }}w,
-      ../media/{{ image_path }}/images/720/{{ include.src }} 360w,
+      ../media/{{ image_path }}/images/720/{{ include.src }} 720w,
       ../media/{{ image_path }}/images/360/{{ include.src }} 360w,
       "
       sizes="
       (min-width: 30em) {{ column | times: 4 | divided_by: 16 }}em,
-      (min-width: 0) {{ 360 | divided_by: 16 }}em
+      {{ 360 | divided_by: 16 }}em
       "
       {% elsif include.size == "xs" %}
       src="
       ../media/{{ image_path }}/images/360/{{ include.src }}
       "
       srcset="
-      ../media/{{ image_path }}/images/720/{{ include.src }} {{ column | times: 2 }}w,
-      ../media/{{ image_path }}/images/360/{{ include.src }} {{ column | times: 2 }}w,
-      ../media/{{ image_path }}/images/720/{{ include.src }} 240w,
-      ../media/{{ image_path }}/images/360/{{ include.src }} 240w,
+      ../media/{{ image_path }}/images/720/{{ include.src }} 720w,
+      ../media/{{ image_path }}/images/360/{{ include.src }} 360w,
       "
       sizes="
       (min-width: 30em) {{ column | times: 2 | divided_by: 16 }}em,
-      (min-width: 0) {{ 240 | divided_by: 16 }}em
+      {{ 240 | divided_by: 16 }}em
       "
       {% else %}
       src="
       ../media/{{ image_path }}/images/720/{{ include.src }}
       "
       srcset="
-      ../media/{{ image_path }}/images/1440/{{ include.src }} {{ column | times: 8 }}w,
-      ../media/{{ image_path }}/images/720/{{ include.src }} {{ column | times: 8 }}w,
-      ../media/{{ image_path }}/images/720/{{ include.src }} 360w,
+      ../media/{{ image_path }}/images/1440/{{ include.src }} 1440w,
+      ../media/{{ image_path }}/images/1080/{{ include.src }} 1080w,
+      ../media/{{ image_path }}/images/720/{{ include.src }} 720w,
       ../media/{{ image_path }}/images/360/{{ include.src }} 360w,
       "
       sizes="
       (min-width: 30em) {{ column | times: 8 | divided_by: 16 }}em,
-      (min-width: 0) {{ 360 | divided_by: 16 }}em
+      {{ 360 | divided_by: 16 }}em
       "
       {% endif %}
       alt="
@@ -144,3 +135,9 @@
   </figcaption>
   {%- endif %}
 </figure>
+
+{%- comment %}
+  Food for thought:
+
+  https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
+{% endcomment %}
