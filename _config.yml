@@ -1,9 +1,9 @@
 # Site settings
-title: 'Andrea Buran’s Sitefolio'
+title: 'Andrea Buran’s Site'
 author: Andrea Buran
 email: hello@andreaburan.com
-description: 'Andrea Buran, product manager and designer, at your service. I design and craft digital services and products that put people first.'
-version: '2021-10-19'
+description: 'Andrea Buran, product design lead, at your service. I design and craft digital services and products that help people do things better.'
+version: '2021-10-29'
 
 baseurl: '' # the subpath of your site, e.g. /blog
 url: http://www.andreaburan.com # the base hostname & protocol for your site
