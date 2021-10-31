@@ -6,25 +6,25 @@ mode: light
         <article class="article words-on-light layout-2d">
 
           <header class="article-head column-2d-l typo-sl">
-            <h1>{{ page.title | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
+            <h1>{{ page.title | markdownify | remove: '<p>' | remove: '</p>' | strip }}</h1>
           </header>
 
           <div class="column-2d-l separator"></div>
 
           {%- if page.date %}
           <div class="article-date column-2d-s-1 typo-l">
-            {{ page.date | date_to_long_string | markdownify }}
+            {{ page.date | date_to_long_string | markdownify | strip }}
           </div>
           {%- endif %}
 
           {%- if page.exordium %}
           <div class="article-exordium column-2d-m-2 typo-l">
-            {{ page.exordium | markdownify }}
+            {{ page.exordium | markdownify | strip }}
           </div>
           {%- endif %}
 
           <div class="article-body column-2d-m-2 typo-m">
-            {{ content }}
+            {{ content | strip }}
           </div>
 
 {% include posts-pages.html %}
