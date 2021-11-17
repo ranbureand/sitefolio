@@ -280,46 +280,21 @@ div {
 ** Colors
 */
 
-.words-on-light {
-  [class*="video"] {
-    a {
-      .watch {
-        color: $l-background-color;
-        background-color: $l-strong-type-color;
+[class*="video"] {
+  a {
+    .watch {
+      color: var(--background-color);
+      background-color: var(--strong-type-color);
 
-        &:before {
-          background-color: $l-color-1;
-        }
-      }
-
-      &:active {
-        .watch {
-          &:before {
-            background-color: $l-color-1-darker;
-          }
-        }
+      &:before {
+        background-color: var(--color-1);
       }
     }
-  }
-}
 
-.words-on-dark {
-  [class*="video"] {
-    a {
+    &:active {
       .watch {
-        color: $d-background-color;
-        background-color: $d-strong-type-color;
-
         &:before {
-          background-color: $d-color-1;
-        }
-      }
-
-      &:active {
-        .watch {
-          &:before {
-            background-color: $d-color-1-darker;
-          }
+          background-color: var(--color-1-darker);
         }
       }
     }

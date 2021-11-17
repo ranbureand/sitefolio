@@ -52,7 +52,6 @@
     font-weight: $normal;
 
     transition-timing-function: ease-in-out;
-    transition-duration: 0.2s;
     transition-property: color;
 
     @include font-size($m-large-size, $m-large-line);
@@ -76,6 +75,12 @@
 
     @include font-size($m-small-size, $m-small-line);
     @include face(mono);
+  }
+
+  &:hover {
+    .post-preview-title {
+      transition-duration: 0.2s;
+    }
   }
 
   &:active {
@@ -112,68 +117,33 @@
 ** Colors
 */
 
-.words-on-light {
-  .post-preview {
+.post-preview {
 
+  .post-preview-title {
+    color: var(--strong-type-color);
+  }
+
+  .post-preview-quotation,
+  .post-preview-tags,
+  .post-preview-date {
+    color: var(--type-color);
+  }
+
+  &:hover {
     .post-preview-title {
-      color: $l-strong-type-color;
-    }
-
-    .post-preview-quotation,
-    .post-preview-tags,
-    .post-preview-date {
-      color: $l-type-color;
-    }
-
-    &:hover {
-      .post-preview-title {
-        color: $l-color-1;
-      }
-    }
-
-    &:active {
-      .post-preview-title {
-        color: $l-color-1-darker;
-      }
+      color: var(--color-1);
     }
   }
 
-  .post-preview.current {
+  &:active {
     .post-preview-title {
-      color: $l-color-1;
+      color: var(--color-1-darker);
     }
   }
 }
 
-.words-on-dark {
-  .post-preview {
-
-    .post-preview-title {
-      color: $d-strong-type-color;
-    }
-
-    .post-preview-quotation,
-    .post-preview-tags,
-    .post-preview-date {
-      color: $d-type-color;
-    }
-
-    &:hover {
-      .post-preview-title {
-        color: $d-color-1;
-      }
-    }
-
-    &:active {
-      .post-preview-title {
-        color: $d-color-1-darker;
-      }
-    }
-  }
-
-  .post-preview.current {
-    .post-preview-title {
-      color: $d-color-1;
-    }
+.post-preview.current {
+  .post-preview-title {
+    color: var(--color-1);
   }
 }

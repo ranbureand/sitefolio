@@ -4,226 +4,110 @@
 ** Typography => colors
 */
 
-.on-light {
-  background-color: $l-background-color;
+body {
+  color: var(--strong-type-color);
 }
 
-.on-dark {
-  background-color: $d-background-color;
+:not(code *)::selection {
+  color: var(--selected-type-color);
+  background-color: var(--selected-background-color);
 }
 
-.words-on-light {
-  color: $l-strong-type-color;
+.color-1 {
+  color: var(--color-1);
+}
 
-  :not(code *)::selection {
-    color: $l-selected-type-color;
-    background-color: $l-selected-background-color;
+.color-2 {
+  color: var(--color-2);
+}
+
+.toc {
+  &:before {
+    border-left-color: var(--border-color);
+  }
+}
+
+// Links
+
+a {
+  &:hover {
+    color: var(--color-1);
   }
 
-  .color-1 {
-    color: $l-color-1;
+  &:active {
+    color: var(--color-1-darker);
   }
+}
 
-  .color-2 {
-    color: $l-color-2;
-  }
-
-  .toc {
-    &:before {
-      border-left-color: $l-border-color;
-    }
-  }
-
-  // Links
-
+.current {
   a {
-    &:hover {
-      color: $l-color-1;
-    }
-
-    &:active {
-      color: $l-color-1-darker;
-    }
-  }
-
-  .current {
-    a {
-      color: $l-color-1;
-      &:after {
-        color: $l-strong-type-color;
-      }
-    }
-  }
-
-  // Text-level semantics
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: $l-strong-type-color;
-  }
-
-  dt {
-    color: $l-strong-type-color;
-  }
-
-  strong {
-    color: $l-strong-type-color;
-  }
-
-  q {
-    color: $l-strong-type-color;
-  }
-
-  // Grouping content
-
-  code,
-  kbd,
-  mark,
-  pre {
-    background-color: $l-code-background-color;
-  }
-
-  code,
-  samp,
-  kbd,
-  mark {
-    color: $l-type-color;
-  }
-
-  pre {
-    code {
-      background-color: transparent;
-    }
-  }
-
-  blockquote {
-    border-left-color: $l-border-color;
-  }
-
-  hr {
-    border-top-color: $l-border-color;
-  }
-
-  // Embedded content
-
-  img,
-  iframe {
-    background-color: $l-picture-background-color;
-  }
-
-  img {
-    color: $l-light-type-color;
-  }
-}
-
-.words-on-dark {
-  color: $d-strong-type-color;
-
-  :not(code *)::selection {
-    color: $d-selected-type-color;
-    background-color: $d-selected-background-color;
-  }
-
-  .color-1 {
-    color: $d-color-1;
-  }
-
-  .color-2 {
-    color: $d-color-2;
-  }
-
-  .toc {
-    &:before {
-      border-left-color: $d-border-color;
-    }
-  }
-
-  // Links
-
-  a {
-    &:hover {
-      color: $d-color-1;
-    }
-
-    &:active {
-      color: $d-color-1-darker;
-    }
-  }
-
-  .current {
-    a {
-      color: $d-color-1;
-    }
+    color: var(--color-1);
     &:after {
-      color: $d-strong-type-color;
+      color: var(--strong-type-color);
     }
   }
+}
 
-  // Text-level semantics
+// Text-level semantics
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: $d-strong-type-color;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--strong-type-color);
+}
+
+dt {
+  color: var(--strong-type-color);
+}
+
+strong {
+  color: var(--strong-type-color);
+}
+
+q {
+  color: var(--strong-type-color);
+}
+
+// Grouping content
+
+code,
+kbd,
+mark,
+pre {
+  background-color: var(--code-background-color);
+}
+
+code,
+samp,
+kbd,
+mark {
+  color: var(--type-color);
+}
+
+pre {
+  code {
+    background-color: transparent;
   }
+}
 
-  dt {
-    color: $d-strong-type-color;
-  }
+blockquote {
+  border-left-color: var(--border-color);
+}
 
-  strong {
-    color: $d-strong-type-color;
-  }
+hr {
+  border-top-color: var(--border-color);
+}
 
-  q {
-    color: $d-strong-type-color;
-  }
+// Embedded content
 
-  // Grouping content
+img,
+iframe {
+  background-color: var(--picture-background-color);
+}
 
-  code,
-  kbd,
-  mark,
-  pre {
-    background-color: $d-code-background-color;
-  }
-
-  code,
-  samp,
-  kbd,
-  mark {
-    color: $d-type-color;
-  }
-
-  pre {
-    code {
-      background-color: transparent;
-    }
-  }
-
-  blockquote {
-    border-left-color: $d-border-color;
-  }
-
-  hr {
-    border-top-color: $d-border-color;
-  }
-
-  // Embedded content
-
-  img,
-  iframe {
-    background-color: $d-picture-background-color;
-  }
-
-  img {
-    color: $d-light-type-color;
-  }
+img {
+  color: var(--light-type-color);
 }

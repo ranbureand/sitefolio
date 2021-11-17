@@ -61,7 +61,7 @@
       width: 100%;
       padding-bottom: 100%;
 
-      background-image: url("../../media/skills/placeholder_00.png");
+      //background-image: url("../../media/skills/placeholder_00.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: 44%;
@@ -98,34 +98,64 @@
 ** Colors
 */
 
-.words-on-light {
-  .link-icon {
-    background-color: $l-strong-type-color;
-
-    &:before {
-      background-color: $l-color-1;
+.dark {
+  #linkedin {
+    .link-icon {
+      div {
+        background-image: url("../../media/links/dark/linkedin_00.svg");
+      }
     }
-
-    &:active {
-      &:before {
-        background-color: $l-color-1-darker;
+  }
+  #github {
+    .link-icon {
+      div {
+        background-image: url("../../media/links/dark/github_00.svg");
+      }
+    }
+  }
+  #vimeo {
+    .link-icon {
+      div {
+        background-image: url("../../media/links/dark/vimeo_00.svg");
       }
     }
   }
 }
 
-.words-on-dark {
-  .link-icon {
-    background-color: $d-strong-type-color;
-
-    &:before {
-      background-color: $d-color-1;
-    }
-
-    &:active {
-      &:before {
-        background-color: $d-color-1-darker;
+.light {
+  #linkedin {
+    .link-icon {
+      div {
+        background-image: url("../../media/links/light/linkedin_00.svg");
       }
+    }
+  }
+  #github {
+    .link-icon {
+      div {
+        background-image: url("../../media/links/light/github_00.svg");
+      }
+    }
+  }
+  #vimeo {
+    .link-icon {
+      div {
+        background-image: url("../../media/links/light/vimeo_00.svg");
+      }
+    }
+  }
+}
+
+.link-icon {
+  background-color: var(--strong-type-color);
+
+  &:before {
+    background-color: var(--color-1);
+  }
+
+  &:active {
+    &:before {
+      background-color: var(--color-1-darker);
     }
   }
 }

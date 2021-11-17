@@ -125,22 +125,10 @@
 ** Colors
 */
 
-.words-on-light {
-  .filter {
-    a {
-      &:before {
-        border-left-color: $l-border-color;
-      }
-    }
-  }
-}
-
-.words-on-dark {
-  .filter {
-    a {
-      &:before {
-        border-left-color: $d-border-color;
-      }
+.filter {
+  a {
+    &:before {
+      border-left-color: var(--border-color);
     }
   }
 }

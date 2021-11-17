@@ -1,0 +1,50 @@
+/* Copyright (c) 2017 Andrea Buran [www.andreaburan.com]. All rights reserved */
+
+/*
+** Typefaces
+*/
+
+@mixin font-face($type-name, $file-name, $weight, $style) {
+  @font-face {
+    font-family: "#{$type-name}";
+    src: url("../fonts/#{$file-name}.woff2") format("woff2"),
+         url("../fonts/#{$file-name}.woff") format("woff");
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+@mixin face($status: sans) {
+  @if $status == "sans" {
+    font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  } @else if $status == "serif" {
+    font-family: "IBM Plex Serif", serif;
+  } @else if $status == "mono" {
+    font-family: "IBM Plex Mono", "Andale Mono", "Monaco", monospace;
+  }
+}
+
+/*
+** Font size
+*/
+
+@mixin font-size($to-size, $lines: auto, $from-size: $base-font-size) {
+  font-size: em($to-size, $from-size);
+  @if $lines != auto {
+    line-height: em($lines, $to-size);
+  }
+}
+
+/*
+** Adjust the width of an element (to accomodate for CSS Comb)
+*/
+
+@mixin adjust-dimension($dimension, $to-gut, $from-size: $base-font-size) {
+  #{$dimension}: calc(100% - #{em($to-gut*2, $from-size)});
+}
+
+/*
+** Tempo
+*/
+
+$duration: 0.2s;

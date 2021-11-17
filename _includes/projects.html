@@ -1,5 +1,5 @@
-    <div class="canvas-projects on-dark">
-      <section class="projects layout-2d words-on-dark">
+    <div class="canvas-projects background">
+      <section class="projects layout-2d">
 
         {%- assign categories = site.categories | where: 'category', 'Favorite' %}
 
@@ -15,9 +15,9 @@
 
         <div class="column-2d-l separator"></div>
 
-        {%- if page.layout == 'categories' %}
+        {%- if page.exordium %}
         <div class="projects-exordium column-2d-m-2 typo-l">
-          {{ page.content }}
+          {{ page.exordium | markdownify | strip }}
         </div>
         {%- endif %}
 

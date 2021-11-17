@@ -56,24 +56,11 @@
 ** Colors
 */
 
-.words-on-light {
-  [class*="balloon"] {
-    color: $l-light-type-color;
-    background-color: $l-balloon-background-color;
+[class*="balloon"] {
+  color: var(--light-type-color);
+  background-color: var(--balloon-background-color);
 
-    &:after {
-      border-bottom-color: $l-balloon-background-color;
-    }
-  }
-}
-
-.words-on-dark {
-  [class*="balloon"] {
-    color: $d-light-type-color;
-    background-color: $d-balloon-background-color;
-
-    &:after {
-      border-bottom-color: $d-balloon-background-color;
-    }
+  &:after {
+    border-bottom-color: var(--balloon-background-color);
   }
 }

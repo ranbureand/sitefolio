@@ -1,5 +1,11 @@
-    <div class="canvas-about on-dark">
-      <div class="about layout-2d words-on-dark">
+{%- if include.ground -%}
+  {%- assign ground = include.ground -%}
+{%- else -%}
+  {%- assign ground = 'background' -%}
+{%- endif -%}
+
+    <div class="canvas-about {{ ground }}">
+      <div class="about layout-2d">
 
         <div class="column-2d-s-1-about typo-s serif">
           <div class="separator"></div>
@@ -14,22 +20,22 @@
         <div class="column-2d-s-3-about typo-s serif">
           <div class="separator"></div>
           <div class="links layout-1d-ltr">
-            <a class="element-1d link" href="https://www.linkedin.com/in/andreaburan" target="_blank" title="LinkedIn">
+            <a id="linkedin" class="element-1d link" href="https://www.linkedin.com/in/andreaburan" target="_blank" title="LinkedIn">
               <div class="link-icon">
                 <!-- style="background-color:#24292e;" -->
-                <div style="background-image:url('{{ site.baseurl }}/media/links/linkedin_00.svg?v={{site.version}}')"><span>LinkedIn</span></div>
+                <div><span>LinkedIn</span></div>
               </div>
             </a>
-            <a class=" link" href="https://github.com/ranbureand" target="_blank" title="GitHub">
+            <a id="github" class=" link" href="https://github.com/ranbureand" target="_blank" title="GitHub">
               <div class="link-icon">
                 <!-- style="background-color:#24292e;" -->
-                <div style="background-image:url('{{ site.baseurl }}/media/links/github_00.svg?v={{site.version}}')"><span>GitHub</span></div>
+                <div><span>GitHub</span></div>
               </div>
             </a>
-            <a class="element-1d link" href="https://vimeo.com/andreaburan" target="_blank" title="Vimeo">
+            <a id="vimeo" class="element-1d link" href="https://vimeo.com/andreaburan" target="_blank" title="Vimeo">
               <div class="link-icon">
                 <!-- style="background-color:#1AB7EA;" -->
-                <div style="background-image:url('{{ site.baseurl }}/media/links/vimeo_00.svg?v={{site.version}}')"><span>Vimeo</span></div>
+                <div><span>Vimeo</span></div>
               </div>
             </a>
           </div>

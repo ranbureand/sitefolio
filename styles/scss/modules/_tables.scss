@@ -86,34 +86,16 @@ table {
 ** Colors
 */
 
-.words-on-light {
-  [class*="table"] {
-    th,
-    td {
-      border-top-color: $l-border-color;
-    }
-    th {
-      border-bottom-color: $l-border-color;
-    }
-
-    tbody + tbody {
-      border-top-color: $l-border-color;
-    }
+[class*="table"] {
+  th,
+  td {
+    border-top-color: var(--border-color);
   }
-}
+  th {
+    border-bottom-color: var(--border-color);
+  }
 
-.words-on-dark {
-  [class*="table"] {
-    th,
-    td {
-      border-top-color: $d-border-color;
-    }
-    th {
-      border-bottom-color: $d-border-color;
-    }
-
-    tbody + tbody {
-      border-top-color: $d-border-color;
-    }
+  tbody + tbody {
+    border-top-color: var(--border-color);
   }
 }

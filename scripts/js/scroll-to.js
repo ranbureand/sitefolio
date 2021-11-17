@@ -51,7 +51,7 @@ window.addEventListener('load', function () {
 }, false);
 
 // Get the anchor links in the document
-const anchors = document.querySelectorAll('a[href^="#"]'),
+const anchors = document.querySelectorAll('a[href^="#"]:not(#mode-switch)'),
       margin = 96;
 
 // Add click event listeners to all anchor links in the document

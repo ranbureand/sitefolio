@@ -45,14 +45,6 @@
 ** Colors
 */
 
-.words-on-light {
-  .piece {
-    border-left-color: $l-border-color;
-  }
-}
-
-.words-on-dark {
-  .piece {
-    border-left-color: $d-border-color;
-  }
+.piece {
+  border-left-color: var(--border-color);
 }

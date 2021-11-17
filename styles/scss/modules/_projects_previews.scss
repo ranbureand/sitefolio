@@ -143,13 +143,12 @@
   .project-preview-title {
     font-weight: $normal;
 
-    margin-top: em($m-small-line/2, $m-small-size);
+    margin-top: em($m-large-line/2, $m-large-size);
 
     transition-timing-function: ease-in-out;
-    transition-duration: 0.2s;
     transition-property: color;
 
-    @include font-size($m-small-size, $m-small-line);
+    @include font-size($m-large-size, $m-large-line);
 
     sup {
       text-decoration: none;
@@ -182,6 +181,10 @@
     .project-preview-image {
       transform: translate(0, em(-$m-gut/2*3, $m-tiny-size));
     }
+
+    .project-preview-title {
+      transition-duration: 0.2s;
+    }
   }
 
   &:active {
@@ -201,9 +204,9 @@
     }
 
     .project-preview-title {
-      margin-top: em($d-small-line/2, $d-small-size);
+      margin-top: em($d-large-line/2, $d-large-size);
 
-      @include font-size($d-small-size, $d-small-line);
+      @include font-size($d-large-size, $d-large-line);
     }
 
     .project-preview-tags {
@@ -265,80 +268,39 @@
 ** Colors
 */
 
-.words-on-light {
-  .project-preview {
-    &:before {
-      background-color: $l-picture-background-color;
-    }
+.project-preview {
+  &:before {
+    background-color: var(--picture-background-color);
+  }
 
-    .project-preview-image {
-      background-color: $l-picture-background-color;
-    }
+  .project-preview-image {
+    background-color: var(--picture-background-color);
+  }
 
+  .project-preview-title {
+    color: var(--strong-type-color);
+  }
+
+  .project-preview-tags,
+  .project-preview-time {
+    color: var(--type-color);
+  }
+
+  &:hover {
     .project-preview-title {
-      color: $l-strong-type-color;
-    }
-
-    .project-preview-tags,
-    .project-preview-time {
-      color: $l-type-color;
-    }
-
-    &:hover {
-      .project-preview-title {
-        color: $l-color-1;
-      }
-    }
-
-    &:active {
-      .project-preview-title {
-        color: $l-color-1-darker;
-      }
+      color: var(--color-1);
     }
   }
 
-  .project-preview.current {
+  &:active {
     .project-preview-title {
-      color: $l-color-1;
+      color: var(--color-1-darker);
     }
   }
 }
 
-.words-on-dark {
-  .project-preview {
-    &:before {
-      background-color: $d-picture-background-color;
-    }
-
-    .project-preview-image {
-      background-color: $d-picture-background-color;
-    }
-
-    .project-preview-title {
-      color: $d-strong-type-color;
-    }
-
-    .project-preview-tags,
-    .project-preview-time {
-      color: $d-type-color;
-    }
-
-    &:hover {
-      .project-preview-title {
-        color: $d-color-1;
-      }
-    }
-
-    &:active {
-      .project-preview-title {
-        color: $d-color-1-darker;
-      }
-    }
-  }
-
-  .project-preview.current {
-    .project-preview-title {
-      color: $d-color-1;
-    }
+.project-preview.current {
+  .project-preview-title {
+    color: var(--color-1);
   }
 }

@@ -8,8 +8,7 @@ title: 'Static image projects'
 category: 'Static Image'
 
 excerpt: 'Projects dealing with and/or falling within the realm of static image-based media forms.'
+exordium_backup: 'Here are projects dealing with and/or falling within the realm of static image-based media forms.'
 
 published: true
 ---
-
-Here are projects dealing with and/or falling within the realm of static image-based media forms.

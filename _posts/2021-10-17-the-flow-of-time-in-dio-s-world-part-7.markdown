@@ -117,12 +117,12 @@ Let us focus on the 1<sup>st</sup> principle: space = time. The language of comi
 
 Let us now focus on the 2<sup>nd</sup> principle: time ↔ reading. The language of comics expresses the flow of time by speeding up or slowing down the reading experience.
 
-As a rule of thumb, the more time we spend reading a sequence (of pages, panels, elements), the longer we perceive its “duration”.
+As a rule of thumb, the more time we spend reading a sequence of pages, panels, and/or elements, the longer we perceive its “duration”.
 
 How can we influence the reading experience? Usually, in two ways:
 
 + The more visually complex a sequence is, the more time we need to digest it, and vice versa
-+ The more speech balloons a panel has, the more time we need to read it, and vice versa
++ The more speech balloons a sequence has, the more time we need to read it, and vice versa
 
 ## The sequence of pages
 

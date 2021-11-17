@@ -13,7 +13,6 @@
   overflow: hidden;
 
   transition-timing-function: ease-in-out, ease-in-out;
-  transition-duration: 0.2s, 0.2s;
   transition-property: color, background-color;
 
   border-radius: em($m-small-line);
@@ -54,6 +53,7 @@
   }
 
   &:hover {
+    transition-duration: 0.2s, 0.2s;
     &:before {
       transform: scale(1.0);
 
@@ -105,52 +105,25 @@
 ** Colors
 */
 
-.words-on-light {
-  [class*="button"] {
-    background-color: $l-strong-type-color;
+[class*="button"] {
+  background-color: var(--strong-type-color);
 
+  &:before {
+    background-color: var(--color-1);
+  }
+
+  &:active {
     &:before {
-      background-color: $l-color-1;
-    }
-
-    &:active {
-      &:before {
-        background-color: $l-color-1-darker;
-      }
-    }
-
-    a {
-      color: $l-background-color;
-
-      &:hover,
-      &:active {
-        color: $l-background-color;
-      }
+      background-color: var(--color-1-darker);
     }
   }
-}
 
-.words-on-dark {
-  [class*="button"] {
-    background-color: $d-strong-type-color;
+  a {
+    color: var(--background-color);
 
-    &:before {
-      background-color: $d-color-1;
-    }
-
+    &:hover,
     &:active {
-      &:before {
-        background-color: $d-color-1-darker;
-      }
-    }
-
-    a {
-      color: $d-background-color;
-
-      &:hover,
-      &:active {
-        color: $d-background-color;
-      }
+      color: var(--background-color);
     }
   }
 }

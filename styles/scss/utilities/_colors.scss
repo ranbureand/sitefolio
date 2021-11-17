@@ -3,51 +3,48 @@
 /*
 ** Colors
 ** 0 1 | 2 3 | 4 5 | 6 7 | 8 9 | a b | c d | e f
+** https://www.hsluv.org/
 */
 
 $black:                         #000;
 $white:                         #fff;
 
-$l-color-1:                     #fc5568; // HSBlu(8,96,60)
-$l-color-1-darker:              #c64453; // HSBlu(8,64,48)
-$d-color-1:                     #fc6c7a; // HSBlu(8,96,64)
-$d-color-1-darker:              #d74a5a; // HSBlu(8,64,52)
+$l-color-1:                     #fc5568; // HSLuv(8,96,60)
+$d-color-1:                     #fc6c7a; // HSLuv(8,96,64)
 
-//$l-color-1:                     #fc6171; // HSBlu(8,96,62)
-//$d-color-1:                     #fc6171; // HSBlu(8,96,62)
+$l-color-1-darker:              #c64453; // HSLuv(8,64,48)
+$d-color-1-darker:              #d74a5a; // HSLuv(8,64,52)
 
-$l-color-2:                     #987cfb; // HSBlu(272,96,60)
-$l-color-2-darker:              #7861c9; // HSBlu(272,64,48)
-$d-color-2:                     #a18afb; // HSBlu(272,96,64)
-$l-color-2-darker:              #826dce; // HSBlu(272,64,52)
+$l-color-2:                     #987cfb; // HSLuv(272,96,60)
+$d-color-2:                     #a18afb; // HSLuv(272,96,64)
 
-//$l-color-2:                     #987cfb; // HSBlu(272,96,60)
-//$d-color-2:                     #987cfb; // HSBlu(272,96,60)
+$l-color-2-darker:              #7861c9; // HSLuv(272,64,48)
+$d-color-2-darker:              #826dce; // HSLuv(272,64,52)
 
-$l-background:                  #fafafa; // HSBlu(0,0,98)
-$d-background:                  #131313; // HSBlu(0,0,6)
+$l-background-color-1:          #813039; // HSLuv(8,56,32)
+$d-background-color-1:          #813039; // HSLuv(8,56,32)
 
-$d-background-1:                #813039; // HSBlu(8,56,32)
-
-$d-background-2:                #513c92; // HSBlu(272,56,32)
+$l-background-color-2:          #513c92; // HSLuv(272,56,32)
+$d-background-color-2:          #513c92; // HSLuv(272,56,32)
 
 /*
 ** Typography
 */
 
 $l-strong-type-color:           rgba($black, 0.92);
-$l-type-color:                  rgba($black, 0.92);
-$l-light-type-color:            rgba($black, 0.92);
-
 $d-strong-type-color:           rgba($white, 0.88);
+
+$l-type-color:                  rgba($black, 0.92);
 $d-type-color:                  rgba($white, 0.88);
+
+$l-light-type-color:            rgba($black, 0.92);
 $d-light-type-color:            rgba($white, 0.88);
 
 $l-selected-type-color:         rgba($black, 0.92);
 $d-selected-type-color:         rgba($white, 0.96);
 
 $l-placeholder-type-color:      rgba($black, 0.24);
-$d-placeholder-type-color:      rgba($black, 0.24); // to be defined
+$d-placeholder-type-color:      rgba($white, 0.24); // to be defined
 
 $l-button-type-color:           rgba($white, 0.96);
 $d-button-type-color:           rgba($black, 0.92);
@@ -56,23 +53,22 @@ $d-button-type-color:           rgba($black, 0.92);
 ** Backgrounds
 */
 
-$l-background-color:            $l-background;
-$d-background-color:            $d-background;
-$d-background-color-2:          $d-background-2;
+$l-background-color:            #fafafa; // HSLuv(0,0,98)
+$d-background-color:            #1f1f1f; // HSLuv(0,0,6)
 
-$l-code-background-color:       rgba($black, 0.04);
-$d-code-background-color:       rgba($white, 0.06);
+$l-background-color-darker:     darken($l-background-color, 4%);
+$d-background-color-darker:     darken($d-background-color, 4%);
 
 $l-selected-background-color:   rgba($black, 0.04);
 $d-selected-background-color:   rgba($white, 0.06);
 
 $l-field-background-color:      $l-background-color;
-$d-field-background-color:      $d-background-color; // to be defined
+$d-field-background-color:      $d-background-color;
 
 $l-button-background-color:     $l-strong-type-color;
-$d-button-background-color:     $d-strong-type-color; // to be defined
+$d-button-background-color:     $d-strong-type-color;
 
-$l-picture-background-color:    rgba($black, 0.04);
+$l-picture-background-color:    rgba($black, 0.06);
 $d-picture-background-color:    rgba($white, 0.06);
 
 $l-balloon-background-color:    rgba($black, 0.04);
@@ -85,27 +81,51 @@ $d-balloon-background-color:    rgba($white, 0.06);
 $l-border-color:                rgba($black, 0.92);
 $d-border-color:                rgba($white, 0.40);
 
-$l-strong-field-border-color:   rgba($black, 0.92);
 $l-field-border-color:          rgba($black, 0.24);
-$d-strong-field-border-color:   rgba($black, 0.92); // to be defined
 $d-field-border-color:          rgba($black, 0.24); // to be defined
+
+$l-strong-field-border-color:   rgba($black, 0.92);
+$d-strong-field-border-color:   rgba($black, 0.92); // to be defined
 
 /*
 ** Code
 */
 
-$c-type-color:                  rgba($black, 0.76);
-$c-type-color-light:            rgba($black, 0.60);
-$c-type-color-lighter:          rgba($black, 0.44);
+$l-code-type-color:             rgba($black, 0.76);
+$d-code-type-color:             rgba($white, 0.72);
 
-$c-red:                         #f41543; // HSBlu(8,96,52)
-$c-orange:                      #be6414; // HSBlu(32,96,52)
-$c-yellow:                      #9f7514; // HSBlu(56,96,52)
-$c-green:                       #458c14; // HSBlu(120,96,52)
-$c-cyan:                        #168b81; // HSBlu(180,96,52)
-$c-blue:                        #1983bc; // HSBlu(240,96,52)
-$c-purple:                      #a34ff9; // HSBlu(280,96,52)
-$c-magenta:                     #e618a4; // HSBlu(336,96,52)
+$l-code-type-color-light:       rgba($black, 0.60);
+$d-code-type-color-light:       rgba($white, 0.56);
 
-$c-background-color:            rgba($black, 0.08);
-$c-selected-background-color:   rgba($black, 0.04);
+$l-code-type-color-lighter:     rgba($black, 0.44);
+$d-code-type-color-lighter:     rgba($white, 0.40);
+
+$l-code-red:                    #f41543; // HSLuv(8,96,52)
+$d-code-red:                    #fc6c7a; // HSLuv(8,96,64)
+
+$l-code-orange:                 #be6414; // HSLuv(32,96,52)
+$d-code-orange:                 #ec7e1c; // HSLuv(32,96,64)
+
+$l-code-yellow:                 #9f7514; // HSLuv(56,96,52)
+$d-code-yellow:                 #c6931c; // HSLuv(56,96,64)
+
+$l-code-green:                  #458c14; // HSLuv(120,96,52)
+$d-code-green:                  #57af1b; // HSLuv(120,96,64)
+
+$l-code-cyan:                   #168b81; // HSLuv(180,96,52)
+$d-code-cyan:                   #1eada1; // HSLuv(180,96,64)
+
+$l-code-blue:                   #1983bc; // HSLuv(240,96,52)
+$d-code-blue:                   #22a4e9; // HSLuv(240,96,64)
+
+$l-code-purple:                 #a34ff9; // HSLuv(280,96,52)
+$d-code-purple:                 #b682fb; // HSLuv(280,96,64)
+
+$l-code-magenta:                #e618a4; // HSLuv(336,96,52)
+$d-code-magenta:                #fc61be; // HSLuv(336,96,64)
+
+$l-code-background-color:       rgba($black, 0.08);
+$d-code-background-color:       rgba($white, 0.04);
+
+$l-code-selected-background-color:  rgba($black, 0.04);
+$d-code-selected-background-color:  rgba($white, 0.04);

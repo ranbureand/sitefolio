@@ -10,17 +10,9 @@
 }
 
 /*
-**
+** Colors
 */
 
-.words-on-light {
-  .separator {
-    border-top-color: $l-border-color;
-  }
-}
-
-.words-on-dark {
-  .separator {
-    border-top-color: $d-border-color;
-  }
+.separator {
+  border-top-color: var(--border-color);
 }

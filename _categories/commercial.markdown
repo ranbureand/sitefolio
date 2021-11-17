@@ -8,8 +8,7 @@ title: 'Commercial projects'
 category: 'Commercial'
 
 excerpt: 'Few of my commercial projects.'
+exordium_backup: 'Here are few of my commercial projects.'
 
 published: true
 ---
-
-Here are few of my commercial projects.
