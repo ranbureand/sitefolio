@@ -86,7 +86,7 @@
   #mode-switch {
     @include min-screen(col(10)) {
       &:after {
-        content: "Dark"
+        content: "Dark\00a0";
       }
     }
   }
@@ -96,7 +96,7 @@
   #mode-switch {
     @include min-screen(col(10)) {
       &:after {
-        content: "Light"
+        content: "Light";
       }
     }
   }
