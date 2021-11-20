@@ -343,7 +343,7 @@ This is term that shares a definition with the term below.
         <i>Doh. <strong>Writer’s block</strong>?</i>
     </div>
 
-    <div class="button">
+    <div class="field-button">
         <input class="send" name="action[message]" type="submit" value="Send"/>
     </div>
 </div>

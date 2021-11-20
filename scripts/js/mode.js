@@ -22,14 +22,9 @@ function toggleModeDisplay(event) {
 
   // Get the opposite mode (light|dark) to the current selected one
   var oppositeMode = body.className == 'dark' ? 'light' : 'dark';
-  // Get the opposite name of the switch link (Dark|Light) to the current selected one
-      //oppositeName = body.className == 'dark' ? 'Dark' : 'Light';
 
   // Set the mode of the body to the opposite one
   body.className = oppositeMode;
-  // Set the name of the switch link to the opposite one
-  //modeSwitch.textContent = oppositeName;
-  //modeSwitch.append(switcher);
 
   // Save the selected mode in a cookie for 1 year
   var expiryDate = new Date();
@@ -48,8 +43,7 @@ function isDarkModeSelected() {
 // Set the mode based on the mode saved in the cookie
 function setModeFromCookie() {
   body.className = isDarkModeSelected() ? 'dark' : 'light';
-  //modeSwitch.textContent = isDarkModeSelected() ? 'Light' : 'Dark';
-  //modeSwitch.append(switcher);
+
   console.log(document.cookie);
 }
 

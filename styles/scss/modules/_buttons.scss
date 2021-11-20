@@ -4,7 +4,7 @@
 ** Buttons
 */
 
-[class*="button"] {
+[class^="button"] {
   font-weight: $medium;
 
   position: relative;
@@ -105,7 +105,7 @@
 ** Colors
 */
 
-[class*="button"] {
+[class^="button"] {
   background-color: var(--strong-type-color);
 
   &:before {

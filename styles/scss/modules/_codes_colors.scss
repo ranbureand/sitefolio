@@ -51,7 +51,7 @@
 .highlight .nb  { color: var(--code-blue) } // Name.Builtin
 .highlight .nc  { color: var(--code-blue) } // Name.Class // font-weight: bold
 .highlight .no  { color: var(--code-cyan) } // Name.Constant
-.highlight .nd  { color: #3c5d5d } // Name.Decorator // font-weight: bold
+.highlight .nd  { color: var(--code-cyan) } // Name.Decorator // font-weight: bold
 .highlight .ni  { color: var(--code-purple) } // Name.Entity
 .highlight .ne  { color: var(--code-red) } // Name.Exception // font-weight: bold
 .highlight .nf  { color: var(--code-red) } // Name.Function // font-weight: bold
