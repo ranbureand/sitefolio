@@ -15,10 +15,10 @@ $base-unit:                 4px;
 $browser-default-font-size: 16px;
 
 $base-font-size:            16px;
-$base-font-line:            $base-unit*6;
+$base-font-line:            $base-unit*6.5; //24px
 
-$m-base-rhythm:             $base-unit*6;
-$d-base-rhythm:             $base-unit*10;
+$m-base-rhythm:             $base-unit*6; //24px
+$d-base-rhythm:             $base-unit*10; //40px
 
 $planet-diameter:           100%*8;
 
