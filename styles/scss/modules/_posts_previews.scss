@@ -18,7 +18,6 @@
 
     animation-fill-mode: both;
   }
-
   @include min-screen(col(8)) {
     padding-top: em($d-base-rhythm);
 
@@ -31,9 +30,12 @@
   @include min-screen(col(12)) {
     li {
       width: 100/2*1%;
+      padding-right: em($d-gut*2);
+      padding-left: em($d-gut*2);
     }
   }
 }
+
 
 @for $i from 0 through 24 {
   .post-previews li:nth-child(#{$i + 1}n) {
@@ -48,8 +50,20 @@
 
   text-decoration: none;
 
+  .post-preview-excerpt {
+    padding-left: em($m-gut*2-$border-width, $m-large-size);
+
+    border-left-width: $border-width;
+    border-left-style: solid;
+
+    @include font-size($m-large-size, $m-large-line);
+    @include face(serif);
+  }
+
   .post-preview-title {
     font-weight: $normal;
+
+    margin-top: em($m-small-line/2, $m-large-size);
 
     transition-timing-function: ease-in-out;
     transition-property: color;
@@ -66,15 +80,15 @@
 
     margin-top: em($m-tiny-line/4, $m-tiny-size);
 
-    @include font-size($m-tiny-size, $m-tiny-line);
     @include face(serif);
+    @include font-size($m-tiny-size, $m-tiny-line);
   }
 
   .post-preview-date {
     margin-top: em($m-small-line/4, $m-small-size);
 
-    @include font-size($m-small-size, $m-small-line);
     @include face(mono);
+    @include font-size($m-small-size, $m-small-line);
   }
 
   &:hover {
@@ -90,8 +104,15 @@
   }
 
   @include min-screen(col(8)) {
+    .post-preview-excerpt {
+      padding-left: em($d-gut/2*3-$border-width, $d-large-size);
+
+      @include font-size($d-large-size, $d-large-line);
+    }
 
     .post-preview-title {
+      margin-top: em($d-large-line/2, $d-large-size);
+
       @include font-size($d-large-size, $d-large-line);
     }
 
@@ -107,7 +128,14 @@
       @include font-size($d-small-size, $d-small-line);
     }
   }
+  @include min-screen(col(12)) {
+    .post-preview-excerpt {
+      margin-left: em(-$d-gut/2*3, $d-large-size);
+      padding-left: em($d-gut/2*3-$border-width, $d-large-size);
+    }
+  }
 }
+
 
 .post-preview.current {
   cursor: default;
@@ -123,7 +151,7 @@
     color: var(--strong-type-color);
   }
 
-  .post-preview-quotation,
+  .post-preview-excerpt,
   .post-preview-tags,
   .post-preview-date {
     color: var(--type-color);

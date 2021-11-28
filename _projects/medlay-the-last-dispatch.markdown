@@ -14,7 +14,7 @@ tags: [cinema, comics, loop, new media form, sequential art, spatial montage]
 preview_image: 'medlay_the_last_dispatch_00.jpg'
 preview_color: '#000'
 
-excerpt: 'The very first substantial prototype designed following the principles of Medlay. It narrates an original short story.'
+description: 'The very first substantial prototype designed following the principles of Medlay. It narrates an original short story.'
 exordium: 'The proof of concept prototype illustrates the principles of [Medlay](http://ranbureand.github.io/medlay/ "Medlay on GitHub"). It narrates an original short story.'
 
 published: true

@@ -179,8 +179,6 @@
 }
 
 .footer-scroll {
-  font-weight: $medium;
-
   text-align: right;
 
   grid-column: 3 / 5;
@@ -188,7 +186,6 @@
   a {
     cursor: n-resize;
   }
-
   @include min-screen(col(8)) {
     grid-column: 3 / 5;
   }
@@ -199,6 +196,7 @@
     grid-column: 7 / 9;
   }
 }
+
 
 /*
 ** Colors

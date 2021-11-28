@@ -13,7 +13,7 @@ tags: []
 
 preview_image: 'book_covers_00.png'
 
-excerpt: ''
+description: ''
 exordium: ''
 
 published: false

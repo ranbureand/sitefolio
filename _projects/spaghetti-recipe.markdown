@@ -13,7 +13,7 @@ tags: [decontextualization, photography, recontextualization]
 
 preview_image: 'spaghetti_recipe_00.png'
 
-excerpt: 'A photo of a portion of spaghetti is decontextualized and then recontextualized in a recipe book.'
+description: 'A photo of a portion of spaghetti is decontextualized and then recontextualized in a recipe book.'
 exordium: ''
 
 published: false

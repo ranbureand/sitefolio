@@ -13,7 +13,7 @@ tags: []
 
 preview_image: 'content_v_ad_00.png'
 
-excerpt: ''
+description: ''
 exordium: ''
 
 published: false

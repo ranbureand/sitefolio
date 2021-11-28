@@ -14,7 +14,7 @@ tags: [blog, pixel art, short pieces, responsive, short stories, site, times]
 preview_image: 'sempiternity_00.jpg'
 background_color: '#D9D9F2'
 
-excerpt: 'The site collects witty and/or absurd short stories.'
+description: 'The site collects witty and/or absurd short stories.'
 exordium: 'The site collects witty and/or absurd short stories.'
 
 published: true

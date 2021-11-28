@@ -13,7 +13,7 @@ tags: [captions, contradiction, images, photography]
 
 preview_image: 'trust_tin_00.png'
 
-excerpt: 'A picture of two tins which images and captions are in contradiction to each other.'
+description: 'A picture of two tins which images and captions are in contradiction to each other.'
 exordium: ''
 
 published: false

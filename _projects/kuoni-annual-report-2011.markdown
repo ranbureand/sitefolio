@@ -14,7 +14,7 @@ tags: [annual report, brand, financial, future, market, people, print, tourism]
 preview_image: 'kuoni_annual_report_2011_00.jpg'
 preview_color: '#EBE8E1'
 
-excerpt: 'The annual report of Kuoni is made up of five core chapters: the Market Report, the Financial Report, the People Report, the Brand Report and the Future Report.'
+description: 'The annual report of Kuoni is made up of five core chapters: the Market Report, the Financial Report, the People Report, the Brand Report and the Future Report.'
 exordium: 'The annual report of Kuoni is made up of five core sections: the *Market Report*, the *Financial Report*, the *People Report*, the *Brand Report* and the *Future Report*.'
 
 published: true

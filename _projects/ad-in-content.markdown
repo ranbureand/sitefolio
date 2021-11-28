@@ -13,7 +13,7 @@ tags: [advertising, audience, content, subordination]
 
 preview_image: 'ad_in_content_00.png'
 
-excerpt: 'A photomontage synthesizes the relation of subordination of editorial and news contents to advertising.'
+description: 'A photomontage synthesizes the relation of subordination of editorial and news contents to advertising.'
 exordium: ''
 
 published: false

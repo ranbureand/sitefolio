@@ -13,7 +13,7 @@ tags: [Emigre magazine, autorship, design, entrepreneurship, research, writing]
 
 preview_image: 'emigre_00.jpg'
 
-excerpt: 'A written research paper on “Emigre” magazine.'
+description: 'A written research paper on “Emigre” magazine.'
 exordium: ''
 
 published: false

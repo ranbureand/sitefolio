@@ -14,7 +14,7 @@ tags: [landscape photography, photobook, print, spatial montage, Tirol]
 preview_image: 'sight_seeing_2_00.jpg'
 preview_color: '#D09C63'
 
-excerpt: 'The photobook Sight-_Seeing 2 spatially arranges a heterogeneous set of collectively taken pictures of Tyrolean winter landscapes—halfway between tourism’s advertising images and contemporary photos.'
+description: 'The photobook Sight-_Seeing 2 spatially arranges a heterogeneous set of collectively taken pictures of Tyrolean winter landscapes—halfway between tourism’s advertising images and contemporary photos.'
 exordium: 'The photobook *Sight-_Seeing<sup>2</sup>* spatially arranges a heterogeneous set of collectively taken pictures of Tyrolean winter landscapes—halfway between tourism’s advertising images and contemporary photos.'
 
 published: true

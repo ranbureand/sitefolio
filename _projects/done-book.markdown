@@ -14,7 +14,7 @@ tags: [Gavagnin, notebook, photobook, photography, print, Ruskin, Venice]
 preview_image: 'done_book_00.jpg'
 preview_color: '#DAD0C8'
 
-excerpt: 'The photobook relates two ways of looking at the city of Venice—the Ruskin’s Venetian notebooks and the Gavagnin’s two-decade collection of photographs.'
+description: 'The photobook relates two ways of looking at the city of Venice—the Ruskin’s Venetian notebooks and the Gavagnin’s two-decade collection of photographs.'
 exordium: 'The photobook relates two ways of looking at the city of Venice—the Ruskin’s Venetian notebooks and the Gavagnin’s two-decade collection of photographs.'
 
 published: true

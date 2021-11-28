@@ -13,7 +13,7 @@ tags: [image, photography, power, reality, reconstruction]
 
 preview_image: 'broken_cat_00.png'
 
-excerpt: 'The couple of antithetical pictures is none other than a reflection on the power of reconstructing reality intrinsic of photographic images.'
+description: 'The couple of antithetical pictures is none other than a reflection on the power of reconstructing reality intrinsic of photographic images.'
 exordium: ''
 
 published: false

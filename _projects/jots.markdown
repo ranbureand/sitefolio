@@ -14,7 +14,7 @@ tags: [bits, design, development, food for thought, quotations, responsive, site
 preview_image: 'jots_00.jpg'
 preview_color: '#8F6EFA'
 
-excerpt: 'Jots is an ongoing collection of bits from inspiring pieces about design and development, jotted to recall the food-for-thought later.'
+description: 'Jots is an ongoing collection of bits from inspiring pieces about design and development, jotted to recall the food-for-thought later.'
 exordium: '*Jots* is an ongoing collection of bits from inspiring pieces about design and development, jotted to recall the food-for-thought later.'
 
 published: true

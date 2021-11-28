@@ -13,7 +13,7 @@ tags: [omnipresence, photography, redundancy]
 
 preview_image: 'garbage_ad_00.jpg'
 
-excerpt: 'The series of pictures is a reflection on the redundancy and omnipresence of the image in our society.'
+description: 'The series of pictures is a reflection on the redundancy and omnipresence of the image in our society.'
 exordium: 'The series of pictures is a reflection on the redundancy and omnipresence of the image in our society.'
 
 published: true

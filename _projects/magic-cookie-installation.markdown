@@ -14,7 +14,7 @@ tags: [Google Web History, dream, image search results, information bubble, inst
 preview_image: 'magic_cookie_00.jpg'
 preview_color: '#666'
 
-excerpt: 'Magic Cookie investigates the relationships among different personalized Google search results of a sample of ten volunteers coming from various cultures and based all over the world.'
+description: 'Magic Cookie investigates the relationships among different personalized Google search results of a sample of ten volunteers coming from various cultures and based all over the world.'
 exordium: '*Magic Cookie* investigates the relationships among different personalized Google search results of a sample of ten volunteers coming from various cultures and based all over the world.'
 
 published: false

@@ -8,7 +8,8 @@ date: 2021-08-13 08:00:00 +0300
 
 tags: [approach, development, Jekyll, multilingual, site]
 
-excerpt: This series of articles illustrate my approach to create a multilingual site in Jekyll.
+description: This series of articles illustrate my approach to create a multilingual site in Jekyll.
+excerpt: We can use `language` to retrieve only the pages or posts that have the same language, and `language_reference` to retrieve only the pages or posts that return the same content translated in different languages.
 exordium: This series of articles ([Part 1](http://andreaburan.com/post/multilingual-sites-in-jekyll.html), [Part 2](http://andreaburan.com/post/multilingual-sites-in-jekyll-2.html), [Part 3](http://andreaburan.com/post/multilingual-sites-in-jekyll-3.html), [Part 4](http://andreaburan.com/post/multilingual-sites-in-jekyll-4.html)) and this [basic *GitHub Pages* site](https://ranbureand.github.io/multilingual-experiment/) illustrate my approach to create a multilingual site in *[Jekyll](https://jekyllrb.com/ "Jekyll")*.
 
 published: true

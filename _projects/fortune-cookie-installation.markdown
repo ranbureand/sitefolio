@@ -14,7 +14,7 @@ tags: [dream, image search results, installation, postcards, print, search engin
 preview_image: 'fortune_cookie_installation_00.jpg'
 preview_color: '#E3E4DF'
 
-excerpt: 'The installation investigates the dynamics between users, images and image search engines in the current panorama of the Web.'
+description: 'The installation investigates the dynamics between users, images and image search engines in the current panorama of the Web.'
 exordium: 'The installation investigates the dynamics between users, images and image search engines in the current panorama of the Web.'
 
 published: true

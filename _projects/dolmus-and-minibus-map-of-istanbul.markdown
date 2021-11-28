@@ -14,7 +14,7 @@ tags: [animation, motion graphics, video, visual storytelling]
 preview_image: 'dolmus_and_minibus_map_of_istanbul_00.jpg'
 preview_color: '#FD9900'
 
-excerpt: 'The two minutes animated cartoon illustrates the project Dolmuş & Minibüs Map of Istanbul to promote the related crowdfunding campaign.'
+description: 'The two minutes animated cartoon illustrates the project Dolmuş & Minibüs Map of Istanbul to promote the related crowdfunding campaign.'
 exordium: 'The two minutes animated cartoon illustrates the project *Dolmuş & Minibüs Map of Istanbul* to promote the related crowdfunding campaign.'
 
 published: true

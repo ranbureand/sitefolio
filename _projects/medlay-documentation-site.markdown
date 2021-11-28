@@ -14,7 +14,7 @@ tags: [cinema, comics, docs, loop, new media form, responsive, sequential art, s
 preview_image: 'medlay_site_00.jpg'
 preview_color: '#525252'
 
-excerpt: 'The documentation site introduces and formalizes Medlay, a new hybrid media form concept for crafting multimedia artifacts on the Web.'
+description: 'The documentation site introduces and formalizes Medlay, a new hybrid media form concept for crafting multimedia artifacts on the Web.'
 exordium: 'The documentation site introduces and formalizes Medlay, a new hybrid media form concept for crafting multimedia artifacts on the Web.'
 
 published: true

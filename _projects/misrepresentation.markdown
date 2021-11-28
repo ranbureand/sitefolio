@@ -13,7 +13,7 @@ tags: [images, money, reality, value]
 
 preview_image: 'misrepresentation_00.png'
 
-excerpt: 'Oppositely to what happens with other kinds of photos, a picture of money is perceived immediately as a mere object and not as a window on reality.'
+description: 'Oppositely to what happens with other kinds of photos, a picture of money is perceived immediately as a mere object and not as a window on reality.'
 exordium: ''
 
 published: false
