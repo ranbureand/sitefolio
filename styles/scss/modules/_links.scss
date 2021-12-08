@@ -13,6 +13,12 @@
     margin-right: em($m-gut);
   }
 
+  @include max-screen(col(6)) {
+    .link {
+      margin-bottom: em($m-gut);
+    }
+  }
+
   @include min-screen(col(8)) {
     .link {
       width: em($d-small-line*2);
