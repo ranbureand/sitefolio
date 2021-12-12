@@ -13,6 +13,12 @@
 .serif {
   @include face(serif);
 }
+.regular {
+  font-style: normal;
+}
+.italic {
+  font-style: italic;
+}
 
 [class*="typo"] {
   position: relative;
