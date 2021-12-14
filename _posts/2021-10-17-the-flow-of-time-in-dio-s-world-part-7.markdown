@@ -207,7 +207,7 @@ After having a confident Kakyoin delivering a line that seems to anticipate his 
 
 Since page 137 is the last page in the spread, we readers have to turn the page to move the plot forward and learn what Dio will do.
 
-The suspense caused by the cliffhanger has indeed the main purpose to motivate us in reaching the next page, but it also contributes incidentally to further dilating our perception of time. Turning that paper page becomes particularly “heavy” to turn since we feel it as an obstacle that slows down our reading experience.
+The suspense caused by the cliffhanger has indeed the main purpose to motivate us in reaching the next page, but it also contributes incidentally to further dilating our perception of time. Turning that paper page becomes particularly “heavy” since we perceive it as an obstacle that slows down our reading experience.
 
 ## The sequence of panels and their elements
 
