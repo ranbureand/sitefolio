@@ -8,7 +8,5 @@ Here is the repository of the code at the basis of my site, a playground in cons
 cd /Applications/MAMP/htdocs/sitefolio
 bundle exec jekyll serve --baseurl ''
 
-Validate
-
 https://realfavicongenerator.net/
 
