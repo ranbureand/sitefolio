@@ -337,7 +337,7 @@ In this basic site, not all the pages and posts are translated into all the supp
 | - | - |
 | preface.html | prefazione.html |
 | stories.html | storie.html |
-| postface.html| — |
+| postface.html | — |
 {: .table }
 
 If you go to [the English page *Postface*](https://ranbureand.github.io/multilingual-experiment/en/postface.html) and press on *Italian* in the language switch, you can see that you are indeed redirected to the Italian page *Storie*.

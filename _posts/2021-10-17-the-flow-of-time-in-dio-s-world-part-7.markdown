@@ -110,9 +110,9 @@ How does the language of comics express the flow of time? As a rule of thumb, by
 
 Let us focus on the 1<sup>st</sup> principle: space = time. The language of comics expresses the flow of time by sequencing space. Overall, it sequences space at three different levels. From highest to lowest:
 
-+ Space (and thus time) is structured in a sequence of pages
-+ Space (and thus time) is also structured in a sequence of panels, within a single page
-+ Space (and thus time) is structured in a sequence of elements within a single panel
++ space (and thus time) is structured in a sequence of pages
++ space (and thus time) is also structured in a sequence of panels, within a single page
++ space (and thus time) is structured in a sequence of elements within a single panel
 
 ### Time ↔ reading
 
