@@ -1,12 +1,33 @@
 # Andrea Buran’s Site. Fifth Edition.
 
-Here is the repository of the code at the basis of my site, a playground in constant evolution where I experiment and iterate, and here are:
+The code of my personal site, [www.andreaburan.com](http://www.andreaburan.com "Andrea Buran’s Site"), is based on this repository.
 
-+ the latest production site, [www.andreaburan.com](http://www.andreaburan.com "Andrea Buran’s Site")
-+ the latest production site on GitHub, [ranbureand.github.io](http://ranbureand.github.io "Andrea Buran’s Site on GitHub")
+This site is:
 
-cd /Applications/MAMP/htdocs/sitefolio
-bundle exec jekyll serve --baseurl ''
++ designed and developed in the browser
++ written in Kramdown
++ generated through [Jekyll](https://jekyllrb.com/ "Jekyll").
++ scripted in JavaScript
++ styled from scratch in SCSS
++ typesetted in [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono "IBM Plex Mono in Google Fonts"), [Sans](https://fonts.google.com/specimen/IBM+Plex+Sans "IBM Plex Sans in Google Fonts") and [Serif](https://fonts.google.com/specimen/IBM+Plex+Serif "IBM Plex Serif in Google Fonts")
 
-https://realfavicongenerator.net/
+and it is a playground in constant evolution where I try, experiment, and learn.
 
+Its favicon is:
+
++ designed in Figma
++ generated using the [RealFaviconGenerator](https://realfavicongenerator.net/ "RealFaviconGenerator")
+
+## Install
+
+Run the following code snippet in the Terminal:
+
+    cd /Applications/MAMP/htdocs/sitefolio
+    bundle install
+
+## Serve
+
+Run the following code snippet in the Terminal:
+
+    cd /Applications/MAMP/htdocs/sitefolio
+    bundle exec jekyll serve --baseurl ''
