@@ -6,7 +6,7 @@ This site is:
 
 + designed and developed in the browser
 + written in Kramdown
-+ generated through [Jekyll](https://jekyllrb.com/ "Jekyll").
++ generated through [Jekyll](https://jekyllrb.com/ "Jekyll")
 + scripted in JavaScript
 + styled from scratch in SCSS
 + typesetted in [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono "IBM Plex Mono in Google Fonts"), [Sans](https://fonts.google.com/specimen/IBM+Plex+Sans "IBM Plex Sans in Google Fonts") and [Serif](https://fonts.google.com/specimen/IBM+Plex+Serif "IBM Plex Serif in Google Fonts")
