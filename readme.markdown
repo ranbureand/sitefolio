@@ -18,7 +18,7 @@ Its favicon is:
 + designed in Figma
 + generated using the [RealFaviconGenerator](https://realfavicongenerator.net/ "RealFaviconGenerator")
 
-## Install
+## Install
 
 Run the following code snippet in the Terminal:
 
