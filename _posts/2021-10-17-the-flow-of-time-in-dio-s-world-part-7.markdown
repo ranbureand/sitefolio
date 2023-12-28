@@ -103,27 +103,27 @@ Before analyzing how Araki approached conveying the stoppage of time in *Dio’s
 
 How does the language of comics express the flow of time? As a rule of thumb, by combining two basic but core principles:
 
-+ space = time (space equals time)
-+ time ↔ reading (time is related to the reading experience)
++ `space = time` (space equals time)
++ `time ↔ reading` (time is related to the reading experience)
 
 ### Space = time
 
-Let us focus on the 1<sup>st</sup> principle: space = time. The language of comics expresses the flow of time by sequencing space. Overall, it sequences space at three different levels. From highest to lowest:
+Let us focus on the 1<sup>st</sup> principle: `space = time`. The language of comics expresses the flow of time by sequencing space. Overall, it sequences space at three different levels. From highest to lowest:
 
-+ space (and thus time) is structured in a sequence of pages
-+ space (and thus time) is also structured in a sequence of panels, within a single page
-+ space (and thus time) is structured in a sequence of elements within a single panel
+* space/time is structured in a sequence of pages
+* space/time is structured in a sequence of panels within a single page
+* space/time is structured in a sequence of elements within a single panel
 
 ### Time ↔ reading
 
-Let us now focus on the 2<sup>nd</sup> principle: time ↔ reading. The language of comics expresses the flow of time by speeding up or slowing down the reading experience.
+Let us now focus on the 2<sup>nd</sup> principle: `time ↔ reading`. The language of comics expresses the flow of time by speeding up or slowing down the reading experience.
 
 As a rule of thumb, the more time we spend reading a sequence of pages, panels, and/or elements, the longer we perceive its “duration”.
 
 How can we influence the reading experience? Usually, in two ways:
 
-+ The more visually complex a sequence is, the more time we need to digest it, and vice versa
-+ The more speech balloons a sequence has, the more time we need to read it, and vice versa
++ the more visually complex a sequence is, the more time we need to digest it, and vice versa
++ the more speech balloons a sequence has, the more time we need to read it, and vice versa
 
 ## The sequence of pages
 
