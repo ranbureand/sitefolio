@@ -4,7 +4,7 @@ layout: post
 title: The flow of time in the language of comics
 author: Andrea Buran
 
-date: 2019-07-29 08:00:00 +0300
+date: 2023-12-28 21:45:00 +0300
 
 tags: [language of comics, sequential art, space, time]
 
@@ -53,7 +53,7 @@ How is space/time structured in a sequence of pages?
 
 In a sequence of pages, each of the pages (usually) works as a a macro unit of meaning that moves the story and action forward.
 
-Let us look at a sequence of pages taken from the *manga* *Dragon Ball* by Akira Toriyama as an example. In the sequence, Gohan—Goku’s son—prevents Cell from destroying planet Earth by counterattacking the mashed up villain.
+Let us look at a sequence of pages taken from the *manga* *Dragon Ball* by Akira Toriyama as an example. In the sequence, Gohan—Goku’s son—counterattacks to prevent Cell—the mashed up villain—from destroying planet Earth.
 
 <div class="figures">
   {% include image.html
@@ -89,7 +89,7 @@ How is space/time structured in a sequence of panels within a single page?
 
 In a sequence of panels, each of the panels (usually) represents a distinct event in time, and each gutter—the void space between panels—advances the time forward from one panel to next.
 
-The amount of time a gutter covers derives from the events represented in the previous and next panels the very same gutter separates. The further in time these events are, the longer the time the gutter expresses.
+The amount of time a gutter represents is derived from the events in the adjacent panels it separates. The further in time these events are, the longer the time the gutter expresses.
 
 Let us look at a sequence of panels taken from the graphic novel *The Dark Knight Returns* by Frank Miller as an example. In the spread, Bruce Wayne—also known as Batman—has a flashback where he remembers his parents being killed during an armed robbery.
 
