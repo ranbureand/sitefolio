@@ -3006,9 +3006,9 @@ table {
 [class*=table] th,
 [class*=table] td {
   padding-top: 0.8571428571em;
-  padding-right: 0.2857142857em;
+  padding-right: 0.4285714286em;
   padding-bottom: 0.8571428571em;
-  padding-left: 0.2857142857em;
+  padding-left: 0.4285714286em;
   text-align: left;
   border-top-width: 1px;
   border-top-style: solid;

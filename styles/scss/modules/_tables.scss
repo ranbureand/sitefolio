@@ -19,9 +19,9 @@ table {
   th,
   td {
     padding-top: em($m-small-line/2, $m-small-size);
-    padding-right: em($m-gut/2, $m-small-size);
+    padding-right: em($m-gut*3/4, $m-small-size);
     padding-bottom: em($m-small-line/2, $m-small-size);
-    padding-left: em($m-gut/2, $m-small-size);
+    padding-left: em($m-gut*3/4, $m-small-size);
 
     text-align: left;
 
