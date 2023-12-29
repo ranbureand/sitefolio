@@ -7,7 +7,7 @@
       {%- endif %}"/>
     <meta property="og:description" content="
       {%- if page.excerpt %}
-        {{- page.excerpt | strip_html | escape | strip }}
+        {{- page.excerpt | markdownify | strip_html | escape | strip }}
       {%- else %}
         {{- site.description | escape }}
       {%- endif %}"/>
