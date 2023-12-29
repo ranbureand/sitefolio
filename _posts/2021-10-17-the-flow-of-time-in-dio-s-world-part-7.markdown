@@ -36,6 +36,17 @@ published: true
 
 The main characters in JoJo can generate spiritual entities, named *Stands*, who help their owners through superhuman abilities of various nature.
 
+<div class="figures">
+  {% include image.html
+    size="xl"
+    h="1880" w="2880"
+    src="jojo_s_bizzarre_adventures_00.jpg"
+    alt="Volume 41 of the Italian version of the manga JoJo’s Bizarre Adventure, Star Comics edition."
+    caption="Volume 41 of the Italian version of the *manga* *JoJo’s Bizarre Adventure*, *Star Comics* edition."
+    color="#D6D6D6"
+  %}
+</div>
+
 ## Spoiler alert!
 
 While I will try my best to keep spoilers to the minimum, unfortunately, I can not avoid spoiling a major plot event from *JoJo*’s 3<sup>rd</sup> series—*Stardust Crusaders*. As a matter of fact, in this piece, I am interested in analyzing how Araki pushed the language of comics to the limits to represent that very same event.
