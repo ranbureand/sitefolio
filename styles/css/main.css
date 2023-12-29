@@ -3005,9 +3005,9 @@ table {
 }
 [class*=table] th,
 [class*=table] td {
-  padding-top: 0.8571428571em;
+  padding-top: 0.6428571429em;
   padding-right: 0.4285714286em;
-  padding-bottom: 0.8571428571em;
+  padding-bottom: 0.6428571429em;
   padding-left: 0.4285714286em;
   text-align: left;
   border-top-width: 1px;
@@ -3047,9 +3047,9 @@ table {
   }
   [class*=table] th,
   [class*=table] td {
-    padding-top: 0.8571428571em;
+    padding-top: 0.6428571429em;
     padding-right: 0.5em;
-    padding-bottom: 0.8571428571em;
+    padding-bottom: 0.6428571429em;
     padding-left: 0.5em;
     font-size: 0.875em;
     line-height: 1.7142857143em;
