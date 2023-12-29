@@ -75,11 +75,11 @@ div {
      > p:first-child:before {
       font-style: italic;
 
-      float: left;
+      //float: left;
 
-      padding: 0 0.75em 0 0;
+      //padding: 0 0.75em 0 0;
 
-      content: "fig. " counter(images);
+      content: "fig. " counter(images) "\0000a0\0000a0";
     }
   }
 
@@ -92,6 +92,10 @@ div {
 
     figcaption {
       margin-top: em($d-small-line/2);
+
+      > p:first-child:before {
+        content: "fig. " counter(images) "\0000a0\0000a0\0000a0\0000a0";
+      }
     }
   }
 }

@@ -34,8 +34,8 @@
 
     margin-right: auto;
     margin-left: auto;
-    padding-right: em($m-gut);
-    padding-left: em($m-gut);
+    padding-right: em($m-gut + $m-gut/2);
+    padding-left: em($m-gut + $m-gut/2);
   }
   @include min-screen(col(8)) {
     padding-top: em($d-base-rhythm*1 + $d-small-line/2);
@@ -135,8 +135,8 @@
     display: block;
 
     &:after {
-      padding-right: em($m-gut, $m-small-size);
-      padding-left: em($m-gut, $m-small-size);
+      padding-right: em($m-gut/2, $m-small-size);
+      padding-left: em($m-gut/2, $m-small-size);
 
       content: "|";
     }
