@@ -168,7 +168,7 @@ More panels → more actions → faster tempo.
 
 But what happens when we reach page 138? The number of panels/actions per page drop drastically: from an average of 3,25 panels/actions per page on pages 126–137, we get to an average of 1,00 on pages 138–141, to get back again to a higher average of 4,50 on pages 142–143.
 
-What happened on pages 138–141?
+What is the deal with pages 138–141?
 
 <div class="figures">
   {% include image.html

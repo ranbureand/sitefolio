@@ -81,7 +81,7 @@ If we go trough the above sequence and try to time roughly how much time each pa
 
 we can conclude that the entire sequence spans a time of more or less ∼50 seconds.
 
-As mentioned before, we should consider that these ∼50 seconds are not a product of just the sequence of pages in itself, but rather the outcome of mixing the two principles `space = time` (at the level of pages, panels, and elements) and `time ↔ reading` in different quantities.
+As mentioned before, we should always keep in mind that these ∼50 seconds are not a product of just the sequence of pages in itself, but rather the outcome of mixing the two principles `space = time` (at the level of pages, panels, and elements) and `time ↔ reading` in different quantities.
 
 ### Sequence of panels
 
@@ -140,7 +140,7 @@ In the above example, the first panel of page 6 from the comic book *Asterix And
 
 yet, since they are juxtaposed in space one after the other and we read them from left to right, we perceive them as happening one slightly after the other.
 
-Jumping through three different events within the same panel makes the perceived duration much longer than if a panel with the same size and shape were to represent a single event. The panel feels like a cinematographic pan shot [^pan-shot].
+Jumping through three different events within the same panel makes its perceived duration much longer than if another panel with the same size and shape were to represent a single event. The panel from *Asterix And The Banquet* ends up feeling like a cinematographic pan shot [^pan-shot].
 
 ## Time ↔ reading
 
