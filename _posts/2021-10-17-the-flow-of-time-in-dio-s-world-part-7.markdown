@@ -41,8 +41,8 @@ The main characters in JoJo can generate spiritual entities, named *Stands*, who
     size="xl"
     h="1880" w="2880"
     src="jojo_s_bizzarre_adventures_00.jpg"
-    alt="Volume 41 of the Italian version of the manga JoJo’s Bizarre Adventure, Star Comics edition."
-    caption="Volume 41 of the Italian version of the *manga* *JoJo’s Bizarre Adventure*, *Star Comics* edition."
+    alt="Volume 41 of the Italian version of JoJo’s Bizarre Adventure, Star Comics edition."
+    caption="Volume 41 of the Italian version of *JoJo’s Bizarre Adventure*, *Star Comics* edition."
     color="#D6D6D6"
   %}
 </div>
