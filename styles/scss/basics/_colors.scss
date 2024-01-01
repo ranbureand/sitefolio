@@ -14,9 +14,6 @@ body.dark {
   --color-2:                    #{$d-color-2};
   --color-2-darker:             #{$d-color-2-darker};
 
-  --background-color-1:         #{$d-background-color-1};
-  --background-color-2:         #{$d-background-color-2};
-
   // Typography
   --strong-type-color:          #{$d-strong-type-color};
   --type-color:                 #{$d-type-color};
@@ -80,9 +77,6 @@ body.light {
 
   --color-2:                    #{$l-color-2};
   --color-2-darker:             #{$l-color-2-darker};
-
-  --background-color-1:         #{$l-background-color-1};
-  --background-color-2:         #{$l-background-color-2};
 
   // Typography
   --strong-type-color:          #{$l-strong-type-color};

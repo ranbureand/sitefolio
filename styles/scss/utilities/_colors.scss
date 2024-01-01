@@ -9,23 +9,17 @@
 $black:                         #000;
 $white:                         #fff;
 
-$l-color-1:                     #fc5568; // HSLuv(8,96,60)
-$d-color-1:                     #fc6c7a; // HSLuv(8,96,64)
+$l-color-1:                     #e83c5a;
+$d-color-1:                     #f66375;
 
-$l-color-1-darker:              #c64453; // HSLuv(8,64,48)
-$d-color-1-darker:              #d74a5a; // HSLuv(8,64,52)
+$l-color-1-darker:              #ba2342;
+$d-color-1-darker:              #d93251;
 
-$l-color-2:                     #987cfb; // HSLuv(272,96,60)
-$d-color-2:                     #a18afb; // HSLuv(272,96,64)
+$l-color-2:                     #856af5;
+$d-color-2:                     #9888fa;
 
-$l-color-2-darker:              #7861c9; // HSLuv(272,64,48)
-$d-color-2-darker:              #826dce; // HSLuv(272,64,52)
-
-$l-background-color-1:          #813039; // HSLuv(8,56,32)
-$d-background-color-1:          #813039; // HSLuv(8,56,32)
-
-$l-background-color-2:          #513c92; // HSLuv(272,56,32)
-$d-background-color-2:          #513c92; // HSLuv(272,56,32)
+$l-color-2-darker:              #6a3ee0;
+$d-color-2-darker:              #7c5bf1;
 
 /*
 ** Typography
@@ -53,11 +47,11 @@ $d-button-type-color:           rgba($black, 0.92);
 ** Backgrounds
 */
 
-$l-background-color:            #fafafa; // HSLuv(0,0,98)
-$d-background-color:            #1f1f1f; // HSLuv(0,0,6)
+$l-background-color:            #fbfbfb;
+$d-background-color:            #252525;
 
-$l-background-color-darker:     darken($l-background-color, 4%);
-$d-background-color-darker:     darken($d-background-color, 4%);
+$l-background-color-darker:     #efefef;
+$d-background-color-darker:     #1b1b1b;
 
 $l-selected-background-color:   rgba($black, 0.04);
 $d-selected-background-color:   rgba($white, 0.06);
@@ -100,29 +94,29 @@ $d-code-type-color-light:       rgba($white, 0.56);
 $l-code-type-color-lighter:     rgba($black, 0.44);
 $d-code-type-color-lighter:     rgba($white, 0.40);
 
-$l-code-red:                    #f41543; // HSLuv(8,96,52)
-$d-code-red:                    #fc6c7a; // HSLuv(8,96,64)
+$l-code-red:                    #c43a2a;
+$d-code-red:                    #f98f7e;
 
-$l-code-orange:                 #be6414; // HSLuv(32,96,52)
-$d-code-orange:                 #ec7e1c; // HSLuv(32,96,64)
+$l-code-orange:                 #a55e11;
+$d-code-orange:                 #f49842;
 
-$l-code-yellow:                 #9f7514; // HSLuv(56,96,52)
-$d-code-yellow:                 #c6931c; // HSLuv(56,96,64)
+$l-code-yellow:                 #8a6e15;
+$d-code-yellow:                 #d5ac26;
 
-$l-code-green:                  #458c14; // HSLuv(120,96,52)
-$d-code-green:                  #57af1b; // HSLuv(120,96,64)
+$l-code-green:                  #318549;
+$d-code-green:                  #4bce73;
 
-$l-code-cyan:                   #168b81; // HSLuv(180,96,52)
-$d-code-cyan:                   #1eada1; // HSLuv(180,96,64)
+$l-code-cyan:                   #17808f;
+$d-code-cyan:                   #1eada1;
 
-$l-code-blue:                   #1983bc; // HSLuv(240,96,52)
-$d-code-blue:                   #22a4e9; // HSLuv(240,96,64)
+$l-code-blue:                   #097FBA;
+$d-code-blue:                   #5fbbf7;
 
-$l-code-purple:                 #a34ff9; // HSLuv(280,96,52)
-$d-code-purple:                 #b682fb; // HSLuv(280,96,64)
+$l-code-purple:                 #8b3be4;
+$d-code-purple:                 #bf9cfb;
 
-$l-code-magenta:                #e618a4; // HSLuv(336,96,52)
-$d-code-magenta:                #fc61be; // HSLuv(336,96,64)
+$l-code-magenta:                #b620b0;
+$d-code-magenta:                #ec85e4;
 
 $l-code-background-color:       rgba($black, 0.08);
 $d-code-background-color:       rgba($white, 0.04);
