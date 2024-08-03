@@ -6,7 +6,8 @@
 
 .typo-s,
 .footnotes > ol > li {
-  // Text-level semantics
+
+  // Block elements
 
   h1,
   h2,
@@ -77,8 +78,14 @@
   }
 
   .separator {
-    width: calc(50% - #{em($m-gut/2)});
+    width: calc(25% - #{em($m-gut/2)});
     margin-bottom: em($m-small-line);
+  }
+
+  @include min-screen(col(8)) {
+    .separator {
+      width: calc(50% - #{em($m-gut/2)});
+    }
   }
 
   @include min-screen(col(8)) {
@@ -135,7 +142,7 @@
       font-size: 1em;
     }
 
-    // Grouping content
+    // Block group elements
 
     blockquote {
       margin-bottom: em($d-small-line/2);

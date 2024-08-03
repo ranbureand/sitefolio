@@ -100,6 +100,14 @@
   }
 }
 
+#wellfound {
+  .link-icon {
+    div {
+      background-size: 60%;
+    }
+  }
+}
+
 /*
 ** Colors
 */
@@ -112,10 +120,10 @@
       }
     }
   }
-  #angelist {
+  #wellfound {
     .link-icon {
       div {
-        background-image: url("../../media/links/dark/angelist_00.svg");
+        background-image: url("../../media/links/dark/wellfound_00.svg");
       }
     }
   }
@@ -143,10 +151,10 @@
       }
     }
   }
-  #angelist {
+  #wellfound {
     .link-icon {
       div {
-        background-image: url("../../media/links/light/angelist_00.svg");
+        background-image: url("../../media/links/light/wellfound_00.svg");
       }
     }
   }

@@ -23,7 +23,7 @@
 [class*="typo"] {
   position: relative;
 
-  // Links
+  // Inline elements
 
   p,
   li,
@@ -42,7 +42,7 @@
     text-decoration: none;
   }
 
-  // Text-level semantics
+  // Block elements
 
   h1,
   h2,
@@ -123,7 +123,7 @@
     content: " : ";
   }
 
-  // Grouping content
+  // Group elements
 
   blockquote {
     padding-left: em($m-gut*2-$border-width);
@@ -134,14 +134,6 @@
 
   hr {
     border-top-width: $border-width;
-  }
-
-   > *:first-child {
-    margin-top: 0;
-  }
-
-   > *:last-child {
-    margin-bottom: 0;
   }
 
   .toc {
@@ -159,6 +151,14 @@
         content: none;
       }
     }
+  }
+
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
   }
 
   @include min-screen(col(8)) {
