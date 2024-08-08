@@ -7,8 +7,8 @@ mode: dark
 title: 'Sundries projects'
 category: 'Sundries'
 
-excerpt: 'Miscellaneous projects not falling under any of the other categories due to their elusive nature and/or small numbers.'
-exordium_backup: 'Here are miscellaneous projects not falling under any of the other categories due to their elusive nature and/or small numbers.'
+excerpt: 'Miscellaneous projects not fitting other categories due to their elusive nature or small numbers.'
+exordium_backup: 'Miscellaneous projects not fitting other categories due to their elusive nature or small numbers.'
 
 published: true
 ---

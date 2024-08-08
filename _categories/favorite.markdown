@@ -7,8 +7,8 @@ mode: dark
 title: 'Favorite, non-commercial projects'
 category: 'Favorite'
 
-excerpt: 'Some of my favorite, non-commercial projects.'
-exordium_backup: 'Here are some of my favorite non-commercial projects.'
+excerpt: 'Favorite, non-commercial projects.'
+exordium_backup: 'Favorite, non-commercial projects.'
 
 published: true
 ---

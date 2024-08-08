@@ -7,8 +7,8 @@ mode: dark
 title: 'Non-commercial projects'
 category: 'Non-Commercial'
 
-excerpt: 'My non-commercial/personal projects.'
-exordium_backup: 'Here are my non-commercial/personal projects.'
+excerpt: 'Non-commercial and personal projects.'
+exordium_backup: 'Non-commercial and personal projects.'
 
 published: true
 ---
