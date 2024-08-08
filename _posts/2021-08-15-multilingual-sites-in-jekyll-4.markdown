@@ -8,9 +8,9 @@ date: 2021-08-15 08:00:00 +0300
 
 tags: [approach, development, Jekyll, multilingual, site]
 
-description: This series of articles illustrate my approach to create a multilingual site in Jekyll.
+description: This series of articles illustrates my approach to creating a multilingual site in Jekyll.
 excerpt: We then place a dedicated page named `sitemap.xml` in each of the language subdirectories of the site […].
-exordium: This series of articles ([Part 1](http://andreaburan.com/post/multilingual-sites-in-jekyll.html), [Part 2](http://andreaburan.com/post/multilingual-sites-in-jekyll-2.html), [Part 3](http://andreaburan.com/post/multilingual-sites-in-jekyll-3.html), [Part 4](http://andreaburan.com/post/multilingual-sites-in-jekyll-4.html)) and this [basic *GitHub Pages* site](https://ranbureand.github.io/multilingual-experiment/) illustrate my approach to create a multilingual site in *[Jekyll](https://jekyllrb.com/ "Jekyll")*.
+exordium: This series of articles ([Part 1](http://andreaburan.com/post/multilingual-sites-in-jekyll.html), [Part 2](http://andreaburan.com/post/multilingual-sites-in-jekyll-2.html), [Part 3](http://andreaburan.com/post/multilingual-sites-in-jekyll-3.html), [Part 4](http://andreaburan.com/post/multilingual-sites-in-jekyll-4.html)) and this [basic *GitHub Pages* site](https://ranbureand.github.io/multilingual-experiment/) illustrate my approach to creating a multilingual site in *[Jekyll](https://jekyllrb.com/ "Jekyll")*.
 
 published: true
 ---
@@ -80,7 +80,7 @@ we make sure to exclude it from the list of pages returned in each language Site
 
 ### Sitemap files
 
-We then place a dedicated page named `sitemap.xml` in each of the language subdirectories of the site. For example, here is the front matter of the English page `sitemap.xml`:
+We then place a dedicated `sitemap.xml` page in each of the language subdirectories of the site. For example, here is the front matter of the English page `sitemap.xml`:
 
 {% raw %}
 ``` liquid
@@ -172,8 +172,8 @@ sitemap:
 
 Each page contains two *for* loops:
 
-+ the first loop goes through the array of posts and returns the ones that do not have the variables `sitemap: excluded: true` set in their front matter
-+ the second loop goes through the array of pages and, similarly, returns the ones that do not have the variables `sitemap: excluded: true` set in their front matter
++ the first loop goes through the array of posts and returns those that do not have the variables `sitemap: excluded: true` set in their front matter
++ the second loop goes through the array of pages and, similarly, returns those that do not have the variables `sitemap: excluded: true` set in their front matter
 
 We can override the `lastmod`, `changefreq`, and `priority` default values by setting the following variables in the front matter of the file:
 
@@ -215,6 +215,6 @@ sitemap:
 
 ## Afterword
 
-If you feel like adding something to the subject and/or you have spotted something worth fixing, please feel free to either [drop me a line](andreaburan.com/ "Andrea Buran’s Sitefolio") or [create an issue on GitHub](https://github.com/ranbureand/multilingual-experiment/issues): thoughts, critiques, suggestions are welcomed.
+If you have any suggestions or spot something worth fixing, please feel free to either [drop me a line](andreaburan.com/ "Andrea Buran’s Sitefolio") or [create an issue on GitHub](https://github.com/ranbureand/multilingual-experiment/issues). Thoughts, critiques, suggestions are welcomed.
 
 Thank you!
