@@ -8,7 +8,7 @@ date: 2021-09-17 08:00:00 +0300
 
 tags: [JoJo’s Bizarre Adventure, language of comics, manga, time]
 
-description: How did Hirohiko Araki design the flow of time in the chapter Dio’s World Part 7 from the manga JoJo’s Bizarre Adventure?
+description: How did Hirohiko Araki design the flow of time in the chapter “Dio’s World Part 7” from the manga “JoJo’s Bizarre Adventure”?
 excerpt: How did Hirohiko Araki design the flow of time in the chapter *Dio’s World Part 7* from the *manga* *JoJo’s Bizarre Adventure*?
 exordium: How did Hirohiko Araki design the flow of time in the chapter *Dio’s World Part 7* from the *manga* *JoJo’s Bizarre Adventure*?
 
