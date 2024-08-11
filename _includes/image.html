@@ -18,10 +18,10 @@
 {%- if include.path -%}
   {%- assign image_path = include.path -%}
 {%- elsif page.layout == 'project' -%}
-  {%- assign image_project_name = page.title | strip_html | slugify: 'latin' -%}
+  {%- assign image_project_name = page.slug -%}
   {%- assign image_path = 'projects-optimized/' | append: image_project_name -%}
 {%- elsif page.layout == 'post' -%}
-  {%- assign image_post_name = page.title | strip_html | slugify: 'latin' -%}
+  {%- assign image_post_name = page.slug -%}
   {%- assign image_path = 'posts-optimized/' | append: image_post_name -%}
 {%- endif -%}
 

@@ -90,14 +90,16 @@
 ** Placeholders
 */
 [class^=image],
-[class^=video] {
+[class^=video-link],
+[class^=video-embed] {
   position: relative;
   padding-right: 0.25em;
   padding-left: 0.25em;
 }
 @media screen and (min-width: 36em) {
   [class^=image],
-  [class^=video] {
+  [class^=video-link],
+  [class^=video-embed] {
     padding-right: 0.5em;
     padding-left: 0.5em;
   }
@@ -2457,41 +2459,55 @@ div + .figures {
 }
 
 [class^=image],
-[class^=video] {
+[class^=video-link],
+[class^=video-embed] {
   margin: 0 0 1.5em 0;
   counter-increment: images;
 }
 [class^=image] figcaption,
-[class^=video] figcaption {
+[class^=video-link] figcaption,
+[class^=video-embed] figcaption {
   width: 100%;
   margin-top: 0.5625em;
 }
 [class^=image] figcaption > p:first-child:before,
-[class^=video] figcaption > p:first-child:before {
+[class^=video-link] figcaption > p:first-child:before,
+[class^=video-embed] figcaption > p:first-child:before {
   font-style: italic;
   content: "fig. " counter(images) "  ";
 }
 [class^=image] img,
-[class^=video] img {
+[class^=image] video,
+[class^=video-link] img,
+[class^=video-link] video,
+[class^=video-embed] img,
+[class^=video-embed] video {
   margin-bottom: 0;
 }
 @media screen and (min-width: 36em) {
   [class^=image],
-  [class^=video] {
+  [class^=video-link],
+  [class^=video-embed] {
     margin: 0 0 2.5em 0;
   }
   [class^=image] figcaption,
-  [class^=video] figcaption {
+  [class^=video-link] figcaption,
+  [class^=video-embed] figcaption {
     margin-top: 0.75em;
   }
   [class^=image] figcaption > p:first-child:before,
-  [class^=video] figcaption > p:first-child:before {
-    content: "fig. " counter(images) "    ";
+  [class^=video-link] figcaption > p:first-child:before,
+  [class^=video-embed] figcaption > p:first-child:before {
+    content: "fig. " counter(images) "   ";
   }
 }
 
 [class^=image] img,
-[class^=video] img {
+[class^=image] video,
+[class^=video-link] img,
+[class^=video-link] video,
+[class^=video-embed] img,
+[class^=video-embed] video {
   position: absolute;
   top: 0;
   left: 0;
@@ -2499,11 +2515,11 @@ div + .figures {
   height: 100%;
 }
 
-[class^=video] a {
+[class^=video-link] a {
   position: relative;
   display: block;
 }
-[class^=video] a .watch {
+[class^=video-link] a .watch {
   font-weight: 500;
   position: absolute;
   top: 50%;
@@ -2512,7 +2528,7 @@ div + .figures {
   transform: translate(-50%, -50%);
   border-radius: 1.5em;
 }
-[class^=video] a .watch:before {
+[class^=video-link] a .watch:before {
   position: absolute;
   z-index: 2;
   top: 0;
@@ -2529,7 +2545,7 @@ div + .figures {
   opacity: 0;
   border-radius: 50%;
 }
-[class^=video] a .watch div {
+[class^=video-link] a .watch div {
   position: relative;
   z-index: 10;
   padding: 0.8571428571em 0.8571428571em;
@@ -2537,26 +2553,84 @@ div + .figures {
   line-height: 1.7142857143em;
   font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
 }
-[class^=video] a:hover .watch:before {
+[class^=video-link] a:hover .watch:before {
   transform: scale(1);
   opacity: 1;
 }
-[class^=video] a:active .watch:before {
+[class^=video-link] a:active .watch:before {
   transition-duration: 0s, 0s;
   transform: scale(1);
   opacity: 1;
 }
 @media screen and (min-width: 36em) {
-  [class^=video] a .watch {
+  [class^=video-link] a .watch {
     border-radius: 1.5em;
   }
-  [class^=video] a .watch div {
+  [class^=video-link] a .watch div {
     padding: 0.8571428571em 1.1428571429em;
     font-size: 0.875em;
     line-height: 1.7142857143em;
   }
-  [class^=video] a .watch:before {
+  [class^=video-link] a .watch:before {
     margin-top: calc(-50% + 1.5em);
+  }
+}
+
+[class^=video-embed] video {
+  cursor: pointer;
+  outline: 0;
+}
+
+.video-controls div {
+  position: absolute;
+  width: 3em;
+  height: 3em;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 2em;
+  border-radius: 50% 50%;
+  transition-timing-function: ease-in, ease-in;
+  transition-duration: 0.2s, 0.2s;
+  transition-property: opacity, background-color;
+}
+.video-controls .play,
+.video-controls .mute {
+  bottom: 0.8125em;
+}
+.video-controls .play {
+  left: 0.8125em;
+}
+.video-controls .mute {
+  right: 0.8125em;
+}
+.video-controls .played {
+  background-image: url("../../media/icons/ic_pause.svg");
+}
+.video-controls .paused {
+  background-image: url("../../media/icons/ic_play_arrow.svg");
+}
+.video-controls .unmuted {
+  background-image: url("../../media/icons/ic_volume_up.svg");
+}
+.video-controls .muted {
+  background-image: url("../../media/icons/ic_volume_mute.svg");
+}
+@media screen and (min-width: 36em) {
+  .video-controls div {
+    width: 2.625em;
+    height: 2.625em;
+    background-size: 1.75em;
+  }
+  .video-controls .play,
+  .video-controls .mute {
+    bottom: 0.8125em;
+  }
+  .video-controls .play {
+    left: 0.8125em;
+  }
+  .video-controls .mute {
+    right: 0.8125em;
   }
 }
 
@@ -2564,84 +2638,99 @@ div + .figures {
 ** Figures => sizes
 */
 .image-xl,
-.video-xl {
+.video-link-xl,
+.video-embed-xl {
   width: 100%;
 }
 .image-l,
-.video-l {
+.video-link-l,
+.video-embed-l {
   width: 100%;
 }
 @media screen and (min-width: 54em) {
   .image-l,
-  .video-l {
+  .video-link-l,
+  .video-embed-l {
     width: 54em;
   }
 }
 
 .image-m,
-.video-m {
+.video-link-m,
+.video-embed-m {
   width: 100%;
 }
 @media screen and (min-width: 54em) {
   .image-m,
-  .video-m {
+  .video-link-m,
+  .video-embed-m {
     width: 66.6666666667%;
   }
 }
 @media screen and (min-width: 72em) {
   .image-m,
-  .video-m {
+  .video-link-m,
+  .video-embed-m {
     width: 50%;
   }
 }
 
 .image-sm,
-.video-sm {
+.video-link-sm,
+.video-embed-sm {
   width: 100%;
 }
 @media screen and (min-width: 30em) {
   .image-sm,
-  .video-sm {
+  .video-link-sm,
+  .video-embed-sm {
     width: 50%;
   }
 }
 @media screen and (min-width: 54em) {
   .image-sm,
-  .video-sm {
+  .video-link-sm,
+  .video-embed-sm {
     width: 33.3333333333%;
   }
 }
 
 .image-s,
-.video-s {
+.video-link-s,
+.video-embed-s {
   width: 100%;
 }
 @media screen and (min-width: 27em) {
   .image-s,
-  .video-s {
+  .video-link-s,
+  .video-embed-s {
     width: 50%;
   }
 }
 @media screen and (min-width: 36em) {
   .image-s,
-  .video-s {
+  .video-link-s,
+  .video-embed-s {
     width: 18em;
   }
 }
 
 .image-xs,
-.video-xs {
+.video-link-xs,
+.video-embed-xs {
   width: 50%;
 }
 @media screen and (min-width: 30em) {
   .image-xs,
-  .video-xs {
+  .video-link-xs,
+  .video-embed-xs {
     width: 25%;
   }
 }
 @media screen and (min-width: 36em) {
   .image-xs,
-  .video-xs {
+  .video-link-xs,
+  .video-embed-xs {
     width: 9em;
   }
 }
@@ -2649,15 +2738,48 @@ div + .figures {
 /*
 ** Colors
 */
-[class*=video] a .watch {
+[class*=video-link] a .watch {
   color: var(--background-color);
   background-color: var(--strong-type-color);
 }
-[class*=video] a .watch:before {
+[class*=video-link] a .watch:before {
   background-color: var(--color-1);
 }
-[class*=video] a:active .watch:before {
+[class*=video-link] a:active .watch:before {
   background-color: var(--color-1-darker);
+}
+
+.dark .video-controls div {
+  opacity: 0.4;
+  background-color: var(--type-color);
+}
+.dark .video-controls div:hover, .dark .video-controls div:active {
+  opacity: 1;
+}
+.dark .video-controls .paused {
+  opacity: 0.88;
+}
+.dark .video-controls .muted {
+  opacity: 0.88;
+}
+
+[class^=video-embed]:hover .video-controls .played, [class^=video-embed]:hover .video-controls .paused, [class^=video-embed]:active .video-controls .played, [class^=video-embed]:active .video-controls .paused {
+  opacity: 0.88;
+  background-color: var(--color-1);
+}
+
+.video-controls div {
+  opacity: 0.4;
+  background-color: var(--type-color);
+}
+.video-controls div:hover, .video-controls div:active {
+  opacity: 1;
+}
+.video-controls .paused {
+  opacity: 0.88;
+}
+.video-controls .muted {
+  opacity: 0.88;
 }
 
 /* Copyright (c) 2017 Andrea Buran [www.andreaburan.com]. All rights reserved */

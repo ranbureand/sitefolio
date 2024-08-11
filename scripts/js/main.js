@@ -1,5 +1,5 @@
 /* Copyright (c) 2017 Andrea Buran [www.andreaburan.com]. All rights reserved */
 
-// @codekit-prepend 'anchored-headings.js', 'emails.js', 'footnotes.js', 'mode.js', 'scroll-to.js', 'sticky-header.js';
+// @codekit-prepend 'sticky-header.js', 'mode.js', 'anchored-headings.js', 'scroll-to.js', 'emails.js', 'video-embeds.js', 'footnotes.js';
 
 console.log('Liftoff!');

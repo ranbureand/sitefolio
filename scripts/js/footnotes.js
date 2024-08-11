@@ -11,5 +11,5 @@ var footnote = document.getElementsByClassName('reversefootnote');
 
 // Change the default copy of the footnote links
 for (i = 0; i < footnote.length; i++) {
-  footnote[i].textContent = 'Go back ⬏';
+  footnote[i].textContent = 'Go\xa0back\xa0⬏';
 }

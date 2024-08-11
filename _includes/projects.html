@@ -17,7 +17,11 @@
 
         {%- if page.exordium %}
         <div class="projects-exordium column-2d-m-2 typo-l">
+          {%- if page.layout == "project" %}
+          {{ category.exordium | markdownify | strip }}
+          {%- else %}
           {{ page.exordium | markdownify | strip }}
+          {%- endif %}
         </div>
         {%- endif %}
 

@@ -36,7 +36,7 @@ imagery
 : [Prelinger archives](http://www.archive.org/browse.php?field=subject&mediatype=movies&collection=prelinger "Prelinger archives on Internet Archive")
 
 <div class="figures">
-    {% include video.html
+    {% include video-link.html
         size="m"
         w="4" h="3"
         src="ubik_chap_3_00.jpg"
@@ -54,7 +54,7 @@ imagery
 Real commercials are edited and resemanticized in order to create fictional ones.
 
 <div class="figures">
-    {% include video.html
+    {% include video-link.html
         size="m"
         w="4" h="3"
         src="ubik_chap_6_00.jpg"
@@ -70,7 +70,7 @@ Real commercials are edited and resemanticized in order to create fictional ones
 > We wanted to give you a shave like no other you ever had. We said, it’s about time a man’s face got a little loving! We said, with Ubik’s self-winding Swiss chromium never-ending blade, the days of scrape-scrape are over! So try Ubik! And be loved! Warning: use only as directed. And with caution.
 
 <div class="figures">
-    {% include video.html
+    {% include video-link.html
         size="m"
         w="4" h="3"
         src="ubik_chap_9_00.jpg"
@@ -86,7 +86,7 @@ Real commercials are edited and resemanticized in order to create fictional ones
 > My hair is so dry, so unmanageable. What’s a girl to do?!? Simply rub in creamy Ubik hair conditioner. In just five days you’ll discover new body in your hair, new glossiness. And Ubik hairspray, used as directed, is absolutely safe.
 
 <div class="figures">
-    {% include video.html
+    {% include video-link.html
         size="m"
         w="4" h="3"
         src="ubik_chap_11_00.jpg"
@@ -102,7 +102,7 @@ Real commercials are edited and resemanticized in order to create fictional ones
 > Taken as directed, Ubik provides uninterrupted sleep without morning-after grogginess. You awaken fresh, ready to tackle all those little annoying problems facing you. Do not exceed recommended dosage.
 
 <div class="figures">
-    {% include video.html
+    {% include video-link.html
         size="m"
         w="4" h="3"
         src="ubik_chap_17_00.jpg"
