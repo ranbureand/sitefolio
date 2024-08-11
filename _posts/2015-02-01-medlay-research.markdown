@@ -10,7 +10,7 @@ tags: [cinema, comics, media form, Medlay, space, time]
 
 description: 'Is it possible to create a new hybrid media form that remediates the characteristics of cinema and comics that once seemed incompatible?'
 excerpt: 'Is it possible to create a new hybrid media form that remediates the characteristics of cinema and comics that once seemed incompatible?'
-exordium: 'This series of articles ([Part 1](http://andreaburan.com/post/medlay-introduction.html), [Part 2](http://andreaburan.com/post/medlay-pieces.html), [Part 3](http://andreaburan.com/post/medlay-sequences.html), [Part 4]({http://andreaburan.com/post/medlay-research.html)) illustrates *Medlay*, a hybrid media form that combines the strengths of cinema and comics to narrate a story or communicate an idea on the Web.'
+exordium: 'This series of articles ([Part 1](http://andreaburan.com/post/medlay-introduction.html), [Part 2](http://andreaburan.com/post/medlay-pieces.html), [Part 3](http://andreaburan.com/post/medlay-sequences.html), [Part 4](http://andreaburan.com/post/medlay-research.html)) illustrates *Medlay*, a hybrid media form that combines the strengths of cinema and comics to narrate a story or communicate an idea on the Web.'
 
 published: true
 ---

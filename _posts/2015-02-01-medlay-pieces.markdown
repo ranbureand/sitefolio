@@ -10,7 +10,7 @@ tags: [cinema, comics, media form, Medlay, space, time]
 
 description: 'Pieces are the fundamental building blocks of a Medlay artifact and derive from a hybrid between a cinematographic shot and a comic panel.'
 excerpt: 'Pieces are the fundamental building blocks of a *Medlay* artifact and derive from a hybrid between a cinematographic shot and a comic panel.'
-exordium: 'This series of articles ([Part 1](http://andreaburan.com/post/medlay-introduction.html), [Part 2](http://andreaburan.com/post/medlay-pieces.html), [Part 3](http://andreaburan.com/post/medlay-sequences.html), [Part 4]({http://andreaburan.com/post/medlay-research.html)) illustrates *Medlay*, a hybrid media form that combines the strengths of cinema and comics to narrate a story or communicate an idea on the Web.'
+exordium: 'This series of articles ([Part 1](http://andreaburan.com/post/medlay-introduction.html), [Part 2](http://andreaburan.com/post/medlay-pieces.html), [Part 3](http://andreaburan.com/post/medlay-sequences.html), [Part 4](http://andreaburan.com/post/medlay-research.html)) illustrates *Medlay*, a hybrid media form that combines the strengths of cinema and comics to narrate a story or communicate an idea on the Web.'
 
 published: true
 ---
