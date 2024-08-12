@@ -14,8 +14,8 @@ tags: [landscape photography, photobook, print, spatial montage, Tirol]
 preview_image: 'sight_seeing_2_00.jpg'
 preview_color: '#D09C63'
 
-description: 'The photobook Sight-_Seeing 2 spatially arranges a heterogeneous set of collectively taken pictures of Tyrolean winter landscapes—halfway between tourism’s advertising images and contemporary photos.'
-exordium: 'The photobook *Sight-_Seeing<sup>2</sup>* spatially arranges a heterogeneous set of collectively taken pictures of Tyrolean winter landscapes—halfway between tourism’s advertising images and contemporary photos.'
+description: 'The photobook spatially arranges a diverse collection of collectively taken pictures of Tyrolean winter landscapes—situated halfway between tourism’s advertising images and contemporary photography.'
+exordium: 'The photobook spatially arranges a diverse collection of collectively taken pictures of Tyrolean winter landscapes—situated halfway between tourism’s advertising images and contemporary photography.'
 
 published: true
 ---
@@ -63,7 +63,7 @@ team
     %}
 </div>
 
-Also in this second edition, the project started from an incredibly large image archive made up by pictures taken by the photographers Hans Herbig, Verena Kathrein, Jörg Koopmann, Regina Recht, Sebastian Schels, [Alexander Ziegler](http://alexanderziegler.com/ "Alexander Ziegler’s website") and Richard Walch.
+As with the first edition, this project also began with an extensive image archive consisting of pictures taken by photographers Hans Herbig, Verena Kathrein, Jörg Koopmann, Regina Recht, Sebastian Schels, [Alexander Ziegler](http://alexanderziegler.com/ "Alexander Ziegler’s website") , and Richard Walch.
 
 <div class="figures">
     {% include image.html
@@ -75,9 +75,9 @@ Also in this second edition, the project started from an incredibly large image 
     %}
 </div>
 
-The images of this second edition were visually leveled to varying degrees by the omnipresence of the whiteness of the snow, a shared feature that made visually matching them way more problematic than with the previous set of pictures, due to their lack of strong contrasts.
+In this second edition, the images were visually leveled to varying degrees by the omnipresent whiteness of the snow, a shared feature that made visually matching them far more challenging than with the previous set, due to the lack of strong contrasts.
 
-The drawback was overcome by voiding the margins between images, thus taking advantage of the differences between the various gradations of whiteness to subtly reveal the inner visual quality of each picture.
+This drawback was overcome by eliminating the margins between images, thereby leveraging the subtle differences in the gradations of whiteness to reveal the inner visual quality of each picture.
 
 <div class="figures">
     {% include image.html
@@ -106,7 +106,7 @@ The drawback was overcome by voiding the margins between images, thus taking adv
     %}
 </div>
 
-The map of Tirol shows the paths followed by the photographers and the approximate locations of all the shots included in the photobook.
+The map of Tirol shows the photographers’ paths and the approximate locations of all the shots included in the photobook.
 
 <div class="figures">
     {% include image.html

@@ -14,8 +14,8 @@ tags: [commercials, documentary films, found footage, Philip K. Dick, science fi
 preview_image: 'ubik_00.jpg'
 preview_color: '#222'
 
-description: 'In Ubik some of the slogans opening the chapters of the homonymous science fiction novel by Philp K. Dick are recreated using ’50 and ’60 American commercials and documentary films as footage.'
-exordium: 'In *Ubik* some of the slogans opening the chapters of the homonymous science fiction novel by Philp K. Dick are recreated using ’50 and ’60 American commercial and documentary footage.'
+description: 'In Ubik, some of the slogans opening the chapters of the homonymous science fiction novel by Philip K. Dick are recreated using American commercial and documentary footage from the ’50s and ’60s.'
+exordium: 'In *Ubik*, some of the slogans opening the chapters of the homonymous science fiction novel by Philip K. Dick are recreated using American commercial and documentary footage from the ’50s and ’60s.'
 
 published: true
 ---
@@ -51,7 +51,7 @@ imagery
 
 > Instant Ubik, has all the fresh flavor of just-brewed drip coffee. Your husband will say, Christ! Sally! I used to think, your coffee was only so-so, but now, wow! Safe when taken as directed.
 
-Real commercials are edited and resemanticized in order to create fictional ones.
+Real commercials are edited and resemanticized to create fictional ones.
 
 <div class="figures">
     {% include video-link.html

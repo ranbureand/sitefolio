@@ -14,8 +14,8 @@ tags: [landscape photography, photobook, print, spatial montage, Tirol]
 preview_image: 'sight_seeing_00.jpg'
 preview_color: '#BEAEA1'
 
-description: 'The photobook spatially arranges a heterogeneous set of collectively taken pictures of Tyrolean summer landscapes—halfway between tourism’s advertising images and contemporary photos.'
-exordium: 'The photobook spatially arranges a heterogeneous set of collectively taken pictures of Tyrolean summer landscapes—halfway between tourism’s advertising images and contemporary photos.'
+description: 'The photobook spatially arranges a diverse collection of collectively taken pictures of Tyrolean summer landscapes—situated halfway between tourism’s advertising images and contemporary photography.'
+exordium: 'The photobook spatially arranges a diverse collection of collectively taken pictures of Tyrolean summer landscapes—situated halfway between tourism’s advertising images and contemporary photography.'
 
 published: true
 ---
@@ -58,9 +58,9 @@ prizes
     %}
 </div>
 
-The project started from an incredibly large image archive made up by around a thousand raw pictures taken by the photographers Michael Danner, Dominik Gigler, Monika Höfler, Jörg Koopmann, Verena Kathrein, Andrew Phelps and Matthias Ziegler.
+The project started from an extensive image archive consisting of approximately a thousand raw pictures taken by photographers Michael Danner, Dominik Gigler, Monika Höfler, Jörg Koopmann, Verena Kathrein, Andrew Phelps, and Matthias Ziegler.
 
-How could the correlations between the pictures of such an heterogenous[^heterogenity] set be maximized within the “constraints” of the book form?
+How could the correlations between the pictures in such a heterogenous[^heterogenity] set be maximized within the “constraints” of the book form?
 
 <div class="figures">
     {% include image.html
@@ -72,7 +72,7 @@ How could the correlations between the pictures of such an heterogenous[^heterog
     %}
 </div>
 
-The source of inspiration for the innovative layout solution of *Sight-_Seeing* came from a couple of misprinted photographic books, which pictures—due to a wrong [imposition](http://printwiki.org/Imposition "imposition on PrintWiki") of pages on press sheets—were slightly crossing the fold. Such a printing error was taken as a starting point for conceiving the layout of the book.
+The source of inspiration for the innovative layout of *Sight-_Seeing* came from a couple of misprinted photographic books, where the pictures—due to an incorrect [imposition](http://printwiki.org/Imposition "imposition on PrintWiki") of pages on press sheets—slightly crossed the fold. This printing error served as the starting point for the book’s layout design.
 
 <div class="figures">
     {% include image.html
@@ -91,9 +91,9 @@ The source of inspiration for the innovative layout solution of *Sight-_Seeing* 
     %}
 </div>
 
-Firstly, after a keen collaborative selection, the pictures were reduced in number and divided into twelve thematic groups, and a [16-pages](http://printwiki.org/Octavo "16-pages / octavo on PrintWiki") [signature](http://printwiki.org/Signature "signature on PrintWiki") was reserved for each of them.
+Firstly, after a careful collaborative selection, the pictures were reduced in number and divided into twelve thematic groups, with a [16-pages](http://printwiki.org/Octavo "16-pages / octavo on PrintWiki") [signature](http://printwiki.org/Signature "signature on PrintWiki") allocated to each group.
 
-Secondly, the layout of the pictures was designed taking into account not only the two pages of a single spread, but also all others belonging to the same 16-pages signature, so that images are related not only with those of the adjacent page, but also with those of the following ones by means of the crossing of the fold, whereupon a new multi-directional flow or reading is added to the usual, one-directional one.
+Secondly, the layout of the pictures was designed to consider not only the two pages of a single spread but also all others within the same 16-page signature. This approach ensured that the images related not only to those on adjacent pages but also to those on subsequent pages through the crossing of the fold, creating a new multi-directional flow of reading in addition to the usual one-directional sequence.
 
 <div class="figures">
     {% include image.html
@@ -105,7 +105,7 @@ Secondly, the layout of the pictures was designed taking into account not only t
     %}
 </div>
 
-The adopted strategy allowed the creation of multiple and otherwise physically impossible connections between the images of such an heterogeneous set.
+The adopted strategy enabled the creation of multiple, otherwise physically impossible connections between the images in such a heterogeneous set.
 
 <div class="figures">
     {% include image.html
@@ -124,7 +124,7 @@ The adopted strategy allowed the creation of multiple and otherwise physically i
     %}
 </div>
 
-By peeking out from the fold, the main picture of p. _09_11 is set in a relation not only with the photos of its own spread but also with the ones of [pp. _09_06-_09_07](#sight_seeing_6372.jpg).
+By peeking out from the fold, the main picture on p. _09_11 is related not only to the photos on its own spread but also to those on pp. _09_06–_09_07.
 
 <div class="figures">
     {% include image.html
@@ -150,7 +150,7 @@ By peeking out from the fold, the main picture of p. _09_11 is set in a relation
     %}
 </div>
 
-One of the various 16-pages signature mock-ups used during the designing of the book: an essential tool for laying out images without becoming crazy.
+One of the various 16-page signature mock-ups used during the book’s design: an essential tool for laying out images without going crazy.
 
 <div class="figures">
     {% include image.html

@@ -14,8 +14,8 @@ tags: [annual report, brand, financial, future, market, people, print, tourism]
 preview_image: 'kuoni_annual_report_2011_00.jpg'
 preview_color: '#EBE8E1'
 
-description: 'The annual report of Kuoni is made up of five core chapters: the Market Report, the Financial Report, the People Report, the Brand Report and the Future Report.'
-exordium: 'The annual report of Kuoni is made up of five core sections: the *Market Report*, the *Financial Report*, the *People Report*, the *Brand Report* and the *Future Report*.'
+description: 'The annual report of Kuoni consists of five core chapters: the Market Report, the Financial Report, the People Report, the Brand Report, and the Future Report.'
+exordium: 'The annual report of Kuoni consists of five core sections: the *Market Report*, the *Financial Report*, the *People Report*, the *Brand Report*, and the *Future Report*.'
 
 published: true
 ---
@@ -55,11 +55,11 @@ team
     %}
 </div>
 
-The **table of content** of the annual report is spatially visualized through a **mind map** placed in a huge centerfold of the very first signature of the volume. The structure of the various chapters and subchapters is developed into sets of **nodes** arranged in growing concentric circles.
+The **table of content** of the annual report is spatially visualized through a **mind map** placed in a large centerfold within the first signature of the volume. The structure of the various chapters and subchapters is developed into sets of **nodes** arranged in expanding concentric circles.
 
 Readers can immediately grasp and navigate the overall organization of the content by following the **connections** between nodes.
 
-The mind map evokes the **wireframe** of a **tridimensional landscape** so that readers can find their way through the content as they are exploring a new territory.
+The mind map evokes the **wireframe** of a **three-dimensional landscape**, allowing readers to find their way through the content as if they were exploring a new territory.
 
 <div class="figures">
     {% include image.html
@@ -169,7 +169,7 @@ The mind map evokes the **wireframe** of a **tridimensional landscape** so that 
     %}
 </div>
 
-A global motion pattern is associated with each of the fifty profiles described in the chapter *People Report*. It represents all the locations reached by the interviewed person during his/her life by means of magenta arcs projected on a tridimensional world map.
+A global motion pattern is associated with each of the fifty profiles described in the chapter *People Report*. It represents all the locations reached by the interviewed person throughout their life, depicted as magenta arcs projected on a three-dimensional world map.
 
 <div class="figures">
   {% include image.html
