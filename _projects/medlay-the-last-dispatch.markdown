@@ -3,7 +3,7 @@ order: 26
 
 layout: project
 
-title: 'Medlay, The Last Dispatch'
+title: 'The Last Dispatch, *Medlay*'
 author: 'Andrea Buran'
 
 time: '2010'
@@ -14,8 +14,8 @@ tags: [cinema, comics, loop, new media form, sequential art, spatial montage]
 preview_image: 'medlay_the_last_dispatch_00.jpg'
 preview_color: '#000'
 
-description: 'The very first substantial prototype designed following the principles of Medlay. It narrates an original short story.'
-exordium: 'The proof of concept prototype illustrates the principles of [Medlay](http://ranbureand.github.io/medlay/ "Medlay on GitHub"). It narrates an original short story.'
+description: 'The Medlay proof-of-concept prototype illustrates the media form’s core principles by narrating an original short story.'
+exordium: 'The *[Medlay](https://andreaburan.com/post/medlay-introduction.html)* proof-of-concept prototype illustrates the media form’s core principles by narrating an original short story.'
 
 published: true
 ---
@@ -29,6 +29,8 @@ published: true
         color="#181818"
     %}
 </div>
+
+You can read more about Medlay—a hybrid media form that combines the strengths of cinema and comics to narrate a story or communicate an idea on the Web—in this series of articles ([Part 1](http://andreaburan.com/post/medlay-introduction.html), [Part 2](http://andreaburan.com/post/medlay-pieces.html), [Part 3](http://andreaburan.com/post/medlay-sequences.html), [Part 4](http://andreaburan.com/post/medlay-research.html)).
 
 tags
 : {% include tags.html %}
@@ -66,7 +68,7 @@ thanks
     %}
 </div>
 
-The proof of concept prototype is structured using Flash, HTML, JavaScript, and CSS.
+The proof-of-concept prototype is structured using Flash, HTML, JavaScript, and CSS.
 
 <div class="figures">
     {% include image.html
