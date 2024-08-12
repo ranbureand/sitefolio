@@ -56,9 +56,9 @@ link
     %}
 </div>
 
-The simple interface of the site lets readers fully **focus on the content** of the pieces without the risk of being distracted by any unneeded graphical interference.
+The **simple-on-purpose** site interface allows users to fully **focus on the content** of the pieces without being distracted by unnecessary graphical elements.
 
-The content readability is always at its best thanks to a robust **responsive adaptive layout** and flexible **responsive typography**.
+Content readability is always optimized thanks to a robust **responsive adaptive layout** and flexible **responsive typography**.
 
 <div class="figures">
     {% include image.html
@@ -71,9 +71,9 @@ The content readability is always at its best thanks to a robust **responsive ad
     %}
 </div>
 
-The **logo**/**favicon** of the site resembles a circular, indeterminate **progress indicator**: what better way to represent the concept of *sempiternity*, which is none other than existence within time but infinitely into the future?
+The site’s **logo**/**favicon** resembles a circular, indeterminate **progress indicator**—a fitting representation of sempiternity, which signifies existence within time but infinitely into the future.
 
-The same concept is reinforced through the **background color** of the page, which hue is cyclically rotated over time according to the hour of the day.
+The same concept is reinforced by the **background color** of the page, which cyclically changes hue according to the hour of the day.
 
 <div class="figures">
     {% include image.html
@@ -126,7 +126,7 @@ The same concept is reinforced through the **background color** of the page, whi
     %}
 </div>
 
-The site has been designed and developed in the browser, generated through [Jekyll](http://jekyllrb.com/ "Jekyll"), styled from scratch in [SCSS](http://sass-lang.com/ "SASS"), and typeset in [Spectral](https://fonts.google.com/specimen/Spectral "Spectral on Google Fonts").
+The site was designed and developed in the browser, generated through [Jekyll](http://jekyllrb.com/ "Jekyll"), styled from scratch in [SCSS](http://sass-lang.com/ "SASS"), and typeset in [Spectral](https://fonts.google.com/specimen/Spectral "Spectral on Google Fonts").
 
 <div class="figures">
     {% include image.html
@@ -139,7 +139,7 @@ The site has been designed and developed in the browser, generated through [Jeky
     %}
 </div>
 
-Readers can identify pieces sharing common **motifs** thanks to the **pixel art icons** that open the short stories.
+Pieces in Sempiternity often share a common **motif**, identified by a **pixel art icon** that opens each short story.
 
 <div class="figures">
     {% include image.html

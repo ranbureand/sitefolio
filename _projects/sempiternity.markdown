@@ -56,7 +56,7 @@ link
     %}
 </div>
 
-The **simple-on-purpose** site interface allows users to fully **focus on the content** of the pieces without being distracted by unnecessary graphical interference.
+The **simple-on-purpose** site interface allows users to fully **focus on the content** of the pieces without being distracted by unnecessary graphical elements.
 
 Content readability is always optimized thanks to a robust **responsive adaptive layout** and flexible **responsive typography**.
 
