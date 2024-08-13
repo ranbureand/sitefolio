@@ -27,6 +27,7 @@ published: true
         src="done_book_4904.jpg"
         alt="The cover of the Done.Book."
         color="#DAD0C8"
+        loading="eager"
     %}
 </div>
 

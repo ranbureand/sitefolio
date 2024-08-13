@@ -29,6 +29,7 @@ published: true
         link="https://vimeo.com/71029587"
         text="Watch on Vimeo"
         color="#FD9900"
+        loading="eager"
     %}
 </div>
 

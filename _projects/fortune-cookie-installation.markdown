@@ -27,6 +27,7 @@ published: true
         src="fortune_cookie_01.jpg"
         alt="A picture of the installation Fortune Cookie."
         color="#E3E4DF"
+        loading="eager"
     %}
 </div>
 

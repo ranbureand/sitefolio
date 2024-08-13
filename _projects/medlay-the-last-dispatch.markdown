@@ -27,6 +27,7 @@ published: true
         src="the_last_dispatch_4243.jpg"
         alt="A screenshot of The Last Dispatch."
         color="#181818"
+        loading="eager"
     %}
 </div>
 

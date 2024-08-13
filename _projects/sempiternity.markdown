@@ -28,6 +28,7 @@ published: true
         alt="A screenshot of Sempiternity, a site/collection of witty short stories."
         caption="A piece, a.k.a. a witty/absurd short story."
         color="#D9D9F2"
+        loading="eager"
     %}
 </div>
 

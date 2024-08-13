@@ -27,6 +27,7 @@ published: true
         src="medlay_site_pieces_1280_00.jpg"
         alt="A screenshot of the site introducing the principles Medlay, a new concept for crafting multimedia artifacts on the Web."
         color="#525252"
+        loading="eager"
     %}
 </div>
 

@@ -27,6 +27,7 @@ published: true
         src="yo_this_is_cool_home_1280_00.jpg"
         alt="A screenshot of the site Yo, This is Cool!"
         color="#6ED8C1"
+        loading="eager"
     %}
 </div>
 

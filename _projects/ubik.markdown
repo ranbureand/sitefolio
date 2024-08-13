@@ -44,6 +44,7 @@ imagery
         link="http://vimeo.com/andreaburan/ubik-chap-3"
         text="Watch on Vimeo"
         color="#666"
+        loading="eager"
     %}
 </div>
 

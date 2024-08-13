@@ -27,6 +27,7 @@ published: true
         src="kuoni_annual_report_2011_7194.jpg"
         alt="The cover of the Kuoni Annual Report 2011."
         color="#EBE8E2"
+        loading="eager"
     %}
 </div>
 

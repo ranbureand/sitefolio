@@ -27,6 +27,7 @@ published: true
       src="jots_header_1440_00.jpg"
       alt="A screenshot of Jots, a site that collects excerpts from inspiring pieces about design and development."
       color="#8F6EFA"
+      loading="eager"
   %}
 </div>
 

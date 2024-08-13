@@ -30,12 +30,14 @@ The ads, placed near a dust bin, promote discounts on food and goods at a superm
       h="2" w="3"
       src="garbage_ad_00.jpg"
       alt="An ad, placed near a dustbin, promotes discounts on food and goods at a supermarket."
+      loading="eager"
   %}
   {% include image.html
       size="m"
       h="2" w="3"
       src="garbage_ad_01.jpg"
       alt="An ad, placed near a dustbin, promotes discounts on food and goods at a supermarket."
+      loading="eager"
   %}
   {% include image.html
       size="m"

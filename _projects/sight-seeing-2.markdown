@@ -27,6 +27,7 @@ published: true
         src="sight_seeing_2_1430.jpg"
         alt="The cover of the book Sight-_Seeing 2."
         color="#D09C63"
+        loading="eager"
     %}
 </div>
 

@@ -27,6 +27,7 @@ published: true
         src="medlay_ubik_6344.jpg"
         alt="A screenshot of Ubik, Chap. 6."
         color="#222"
+        loading="eager"
     %}
 </div>
 
