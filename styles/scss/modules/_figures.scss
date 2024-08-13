@@ -63,21 +63,21 @@ div {
 [class^="image"],
 [class^="video-link"],
 [class^="video-embed"] {
+  position: relative;
+
   margin: 0 0 em($m-base-rhythm) 0;
+  padding-right: em($m-gut*0.5);
+  padding-left: em($m-gut*0.5);
 
   counter-increment: images;
-
-  @extend %column-gut;
 
   figcaption {
     width: 100%;
     margin-top: em($m-small-line*3/8);
 
-     > p:first-child:before {
+    > p:first-child:before {
       font-style: italic;
-
       //float: left;
-
       //padding: 0 0.75em 0 0;
 
       content: "fig. " counter(images) "\0000a0\0000a0";
@@ -88,9 +88,10 @@ div {
   video {
     margin-bottom: 0;
   }
-
   @include min-screen(col(8)) {
     margin: 0 0 em($d-base-rhythm) 0;
+    padding-right: em($d-gut*0.5);
+    padding-left: em($d-gut*0.5);
 
     figcaption {
       margin-top: em($d-small-line/2);

@@ -1,23 +1,24 @@
 /* Copyright (c) 2017 Andrea Buran [www.andreaburan.com]. All rights reserved */
 
 /*
-** Placeholders
-*/
-
-%column-gut {
-  position: relative;
-  padding-right: em($m-gut*0.5);
-  padding-left: em($m-gut*0.5);
-
-  @include min-screen(col(8)) {
-    padding-right: em($d-gut*0.5);
-    padding-left: em($d-gut*0.5);
-  }
-}
-
-/*
 ** Classes
 */
+
+.screen-reader-only {
+  position: absolute;
+
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  white-space: nowrap;
+
+  border: 0;
+}
 
 .envelope {
   word-break: break-all;
