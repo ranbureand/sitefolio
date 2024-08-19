@@ -21,14 +21,14 @@ published: true
 ---
 
 <div class="figures">
-    {% include image.html
-        size="xl"
-        h="2" w="3"
-        src="fortune_cookie_01.jpg"
-        alt="A picture of the installation Fortune Cookie."
-        color="#E3E4DF"
-        loading="eager"
-    %}
+  {% include image.html
+    size="xl"
+    h="2" w="3"
+    src="fortune_cookie_01.jpg"
+    alt="A picture of the installation Fortune Cookie."
+    color="#E3E4DF"
+    loading="eager"
+  %}
 </div>
 
 tags
