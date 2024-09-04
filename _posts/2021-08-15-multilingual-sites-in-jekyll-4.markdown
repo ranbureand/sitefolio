@@ -15,14 +15,8 @@ exordium: This series of articles ([Part 1](http://andreaburan.com/post/multilin
 published: true
 ---
 
-+ [Multilingual sitemaps](#multilingual-sitemaps)
-  + [Sitemap index file](#sitemap-index-file)
-  + [Sitemap files](#sitemap-files)
-+ [RSS feed](#rss-feed)
-+ [Page not found](#page-not-found)
-+ [Resources](#resources)
-+ [Afterword](#afterword)
-{: .toc }
++ Table of contents
+{:toc .toc}
 
 ## Multilingual sitemaps
 

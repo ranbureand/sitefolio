@@ -15,17 +15,8 @@ exordium: This series of articles ([Part 1](http://andreaburan.com/post/multilin
 published: true
 ---
 
-+ [Includes](#includes)
-  + [header.html](#headerhtml)
-    + [navigation.html](#navigationhtml)
-    + [language-switch.html](#language-switchhtml)
-      + [if page.layout == 'page'](#if-pagelayout--page)
-      + [elsif page.layout == 'post'](#elsif-pagelayout--post)
-      + [else](#else)
-      + [Fallback Page](#fallback-page)
-    + [title.html](#titlehtml)
-  + [localizations.html](#localizationshtml)
-{: .toc }
++ Table of contents
+{:toc .toc}
 
 ## Includes
 

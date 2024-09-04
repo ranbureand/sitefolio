@@ -15,14 +15,8 @@ exordium: This series of articles ([Part 1](http://andreaburan.com/post/multilin
 published: true
 ---
 
-+ [Preface](#preface)
-+ [Foreword](#foreword)
-+ [Directory structure](#directory-structure)
-  + [Pages](#pages)
-    + [Exceptions](#exceptions)
-  + [Posts](#posts)
-    + [Configuration](#configuration)
-{: .toc }
++ Table of contents
+{:toc .toc}
 
 ## Preface
 

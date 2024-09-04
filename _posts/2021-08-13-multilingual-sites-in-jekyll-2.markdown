@@ -15,11 +15,8 @@ exordium: This series of articles ([Part 1](http://andreaburan.com/post/multilin
 published: true
 ---
 
-+ [Front matter](#front-matter)
-  + [Pages](#pages)
-  + [Posts](#posts)
-+ [Data files](#data-files)
-{: .toc }
++ Table of contents
+{:toc .toc}
 
 ## Front matter
 
