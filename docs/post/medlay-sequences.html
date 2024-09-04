@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--
+
+    Welcome, websurfer!
+
+    This site is:
+
+    + designed and developed in the browser
+    + written in Kramdown
+    + generated through Jekyll
+    + scripted in JavaScript
+    + styled from scratch in SCSS
+    + typesetted in IBM Plex Mono, Sans and Serif
+
+    with love and patience by Andrea Buran.
+
+    -->
+
+    <title>Sequences, Medlay, Part 3 · Andrea Buran’s site</title>
+    <meta name="description" content="Sequences are the narrative units of a Medlay artifact and consist of one or more series of pieces sequentially juxtaposed in space."/>
+
+    <!-- https://fonts.google.com/share?selection.family=IBM%20Plex%20Mono:ital,wght@0,400;0,500;1,400;1,500%7CIBM%20Plex%20Sans:ital,wght@0,400;0,500;1,400;1,500%7CIBM%20Plex%20Serif:ital,wght@0,400;0,500;1,400;1,500 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400;1,500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400;1,500&family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400;1,500&display=swap"/>
+    <!-- Import specific characters ↑ → ↓ ← ⬑ ⬏ ↔ in URL-encoded format -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans&family=IBM+Plex+Serif&text=%E2%86%91|%E2%86%92|%E2%86%93|%E2%86%90|%E2%AC%91|%E2%AC%8F|%E2%86%94" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="/styles/css/main.css?v=2024-08-13"/>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#fc5568">
+    <meta name="apple-mobile-web-app-title" content="Andrea Buran&rsquo;s Site">
+    <meta name="application-name" content="Andrea Buran&rsquo;s Site">
+    <meta name="msapplication-TileColor" content="#987cfb">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Open Graph protocol -->
+    <meta property="og:title" content="Sequences, Medlay, Part 3 · Andrea Buran’s site"/>
+    <meta property="og:description" content="Sequences are the narrative units of a Medlay artifact and consist of one or more series of pieces sequentially juxtaposed in space."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://www.andreaburan.com/post/medlay-sequences.html"/>
+    <meta property="og:image" content="https://www.andreaburan.com/media/sundries/cover/cover_00.jpg?v=2024-08-13"/>
+    <meta property="og:image:type" content="image/jpeg"/>
+    <meta property="og:image:alt" content="Sequences are the narrative units of a *Medlay* artifact and consist of one or more series of pieces sequentially juxtaposed in space."/>
+    <meta property="og:image:width" content="640"/>
+    <meta property="og:image:height" content="640"/>
+
+    <link rel="canonical" href="https://www.andreaburan.com/post/medlay-sequences.html"/>
+
+    <meta name="google-site-verification" content="HbQMAhgCEHek1NoKN16QyirigFf9FYd_vdDy4Vybt78" />
+  </head>
+
+
+  <body id="outer-space" class="light">
+
+    <div class="canvas-header foreground">
+      <div class="buffer-header">
+        <header class="header foreground layout-2d">
+          <h1 class="header-title"><a href="/">Andrea Buran<span class="hidden">’s Site</span> <sup class="color-1">5.0</sup></a></h1>
+          <ul class="header-navigation">
+            <li class="current">
+              <a href="/posts/index.html"><span class="hidden">All</span> Posts</a>
+            </li>
+            <li>
+              <a href="/projects/all.html"><span class="hidden">All</span> Proj<span class="hidden">ects</span></a>
+            </li>
+            <li>
+              <a href="#" id="mode-switch" onclick="toggleModeDisplay(event)"><span class="screen-reader-only">Color mode toggle</span></a>
+            </li>
+          </ul>
+        </header>
+      </div>
+    </div>
+
+      <div class="canvas-article foreground">
+        <article class="article layout-2d">
+
+          <header class="article-head column-2d-l typo-sl">
+            <h1>Sequences, <em>Medlay</em>, Part 3</h1>
+          </header>
+
+          <div class="column-2d-l separator"></div>
+          <div class="article-date column-2d-s-1 typo-l">
+            <p>01 February 2015</p>
+          </div>
+          <div class="article-exordium column-2d-m-2 typo-l">
+            <p>This series of articles (<a href="http://andreaburan.com/post/medlay-introduction.html">Part 1</a>, <a href="http://andreaburan.com/post/medlay-pieces.html">Part 2</a>, <a href="http://andreaburan.com/post/medlay-sequences.html">Part 3</a>, <a href="http://andreaburan.com/post/medlay-research.html">Part 4</a>) illustrates <em>Medlay</em>, a hybrid media form that combines the strengths of cinema and comics to narrate a story or communicate an idea on the Web.</p>
+          </div>
+
+          <div class="article-body column-2d-m-2 typo-m">
+            <p>A sequence is the <strong>narrative unit</strong> of a Medlay artefact. Multiple sequences spatially juxtaposed on a canvas constitute a complete narration.</p>
+
+<ul class="toc" id="markdown-toc">
+  <li><a href="#series-of-pieces" id="markdown-toc-series-of-pieces">Series of pieces</a></li>
+  <li><a href="#pace-of-space" id="markdown-toc-pace-of-space">Pace of space</a></li>
+  <li><a href="#viewers-as-motors-of-the-narration" id="markdown-toc-viewers-as-motors-of-the-narration">Viewers as motors of the narration</a></li>
+</ul>
+
+<h3 id="series-of-pieces">Series of pieces</h3>
+
+<p>A sequence consists of one<sup id="fnref:one-piece-sequence" role="doc-noteref"><a href="#fn:one-piece-sequence" class="footnote" rel="footnote">1</a></sup> or more <strong>series of pieces</strong><sup id="fnref:pieces" role="doc-noteref"><a href="#fn:pieces" class="footnote" rel="footnote">2</a></sup> that are sequentially <strong>juxtaposed in space</strong>.</p>
+
+<p>By being arranged in space, different pieces are placed into significant proximity with each other and create narrative meanings.</p>
+
+<h3 id="pace-of-space">Pace of space</h3>
+
+<p>In a <em>Medlay</em> artefact—similarly to what happens in a comic one—space at the level of a sequence indirectly represents time: the <strong>development in time</strong> of a narration is represented through the <strong>configuration of space</strong>.</p>
+
+<p>As American cartoonist and comics theorist Scott McCloud theorized with his <strong>infinite canvas</strong> concept, the pace of a comic’s narration on the Web is no longer influenced or limited by the physical boundaries of a page<sup id="fnref:page" role="doc-noteref"><a href="#fn:page" class="footnote" rel="footnote">3</a></sup>:</p>
+
+<blockquote>
+  <p>The “infinite” canvas is a challenge to think big; a series of design strategies based on treating the <strong>screen as a window</strong> rather than a page.The basic premise is that there’s no reason that long-form comics have to be split into pages when moving online. Pages are an option […].</p>
+
+  <p>Print cartoonists (myself included) make a constant series of compromises in pacing and design to stuff out stories into pages. We add and subtract panels, restrict size variation, break reading flow, and rarely if ever vary the distance between panels for fear of wasting paper. Without such restrictions, though, every one of those choices can be made exclusively on behalf of the needs of the story.</p>
+
+  <p><cite class="source">Scott McCloud, <em><a href="http://scottmccloud.com/4-inventions/canvas/" title="The &quot;Infinite Canvas&quot;">Infinite Canvas</a></em></cite></p>
+</blockquote>
+
+<p>By embracing the concept of the infinite canvas, the narrative pace of a medlay sequence has <strong>no spatial boundaries or restrictions</strong> and is free to extend according to the needs of the story.</p>
+
+<h3 id="viewers-as-motors-of-the-narration">Viewers as motors of the narration</h3>
+
+<p>Since a sequence extends in space rather than time, viewers are entirely <strong>free to interact</strong> with and <strong>explore</strong> it in any order and at their own pace<sup id="fnref:roll" role="doc-noteref"><a href="#fn:roll" class="footnote" rel="footnote">4</a></sup>. Specifically, they can:</p>
+
+<ul>
+  <li>have a glanceable, immediate, synthetic <strong>overview</strong> of the narrative meaning of a particular sequence, or portion thereof;</li>
+  <li>have <strong>random access</strong> to any piece of a sequence and focus their attention on it at any given time, regardless of its location.</li>
+</ul>
+
+<p>The above points become crucial for web-based narration, since Web viewers are in an <strong>active stance</strong> while surfing the net and expect to drive any artefact they interact with<sup id="fnref:progress-bar" role="doc-noteref"><a href="#fn:progress-bar" class="footnote" rel="footnote">5</a></sup>.</p>
+
+<p>In a medlay artefact, viewers actively move the narration forward by exploring the various sequences of pieces and scrolling the canvas: the journey through space becomes the narration.</p>
+
+<hr />
+
+<p>If you have any suggestions or spot anything that needs fixing, please let me know. Your thoughts, critiques, and recommendations are more than welcome.</p>
+
+<p>Thank you!</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:one-piece-sequence" role="doc-endnote">
+      <p>A sequence consisting of one piece is possible but but should be considered an edge case, as a single-panel comic strip. <a href="#fnref:one-piece-sequence" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:pieces" role="doc-endnote">
+      <p>More on pieces can be found in the previous chapters, <em><a href="/chapters/pieces.html">Pieces</a></em>. <a href="#fnref:pieces" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:page" role="doc-endnote">
+      <p>Or at least, it should not be: in reality, comic artifacts on the Web are still often shaped into pages. <a href="#fnref:page" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:roll" role="doc-endnote">
+      <p>The viewing time of a sequence is not dictated by the unavoidable roll of moving images, as it happens in a movie. <a href="#fnref:roll" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:progress-bar" role="doc-endnote">
+      <p>How often do you impatiently jump from one moment to another of a video clip by interacting with its progress bar? <strong>Attention span</strong> on the Web behaves differently than on television or in printed matter. <a href="#fnref:progress-bar" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+          </div>
+
+      <div class="column-2d-l separator"></div>
+
+        <div class="page-next column-2d-page-1">
+          <a href="/post/medlay-research.html">Remediating cinema and comics, <em>Medlay</em>, Part 4</a>
+        </div>
+
+        <div class="page-prev column-2d-page-2">
+          <a href="/post/medlay-pieces.html">Pieces, <em>Medlay</em>, Part 2</a>
+        </div>
+
+        </article>
+      </div>
+
+    <div class="canvas-posts background">
+      <section class="posts layout-2d">
+
+        <header class="posts-head column-2d-l typo-sl">
+            <h2>Last posts</h2>
+        </header>
+
+        <div class="column-2d-l separator"></div>
+<div class="column-2d-l">
+          <ul class="post-previews layout-1d-ltr">
+            <li class="element-1d">
+              <a class="post-preview" href="/post/the-flow-of-time-in-the-language-of-comics.html">
+                <div class="post-preview-excerpt">How does the language of comics express the flow of time through static images?</div>
+                <div class="post-preview-title">The flow of time in the language of comics</div>
+                <div class="post-preview-tags">language of comics, sequential art, space, time</div>
+                <div class="post-preview-date">28 December 2023</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/the-flow-of-time-in-dio-s-world-part-7.html">
+                <div class="post-preview-excerpt">How did Hirohiko Araki design the flow of time in the chapter <em>Dio’s World Part 7</em> from the <em>manga</em> <em>JoJo’s Bizarre Adventure</em>?</div>
+                <div class="post-preview-title">The flow of time in <em>Dio’s World Part 7</em></div>
+                <div class="post-preview-tags">JoJo’s Bizarre Adventure, language of comics, manga, time</div>
+                <div class="post-preview-date">17 September 2021</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/multilingual-sites-in-jekyll-4.html">
+                <div class="post-preview-excerpt">We place a dedicated page named <code class="language-plaintext highlighter-rouge">sitemap.xml</code> in each language subdirectory of the site.</div>
+                <div class="post-preview-title">Multilingual sites in Jekyll, Part 4</div>
+                <div class="post-preview-tags">approach, development, Jekyll, multilingual, site</div>
+                <div class="post-preview-date">15 August 2021</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/multilingual-sites-in-jekyll-3.html">
+                <div class="post-preview-excerpt">We use the <code class="language-plaintext highlighter-rouge">language-switch.html</code> include to generate an unordered list of all languages supported on the site.</div>
+                <div class="post-preview-title">Multilingual sites in Jekyll, Part 3</div>
+                <div class="post-preview-tags">approach, development, Jekyll, multilingual, site</div>
+                <div class="post-preview-date">14 August 2021</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/multilingual-sites-in-jekyll-2.html">
+                <div class="post-preview-excerpt">We use <code class="language-plaintext highlighter-rouge">language</code> to retrieve pages or posts in the same language and <code class="language-plaintext highlighter-rouge">language_reference</code> to retrieve pages or posts with the same content translated into different languages.</div>
+                <div class="post-preview-title">Multilingual sites in Jekyll, Part 2</div>
+                <div class="post-preview-tags">approach, development, Jekyll, multilingual, site</div>
+                <div class="post-preview-date">13 August 2021</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/multilingual-sites-in-jekyll.html">
+                <div class="post-preview-excerpt">We organize the pages into directories named with ISO language codes, with one directory for each supported language.</div>
+                <div class="post-preview-title">Multilingual sites in Jekyll, Part 1</div>
+                <div class="post-preview-tags">approach, development, Jekyll, multilingual, site</div>
+                <div class="post-preview-date">12 August 2021</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/medlay-research.html">
+                <div class="post-preview-excerpt">Is it possible to create a new hybrid media form that remediates the characteristics of cinema and comics that once seemed incompatible?</div>
+                <div class="post-preview-title">Remediating cinema and comics, <em>Medlay</em>, Part 4</div>
+                <div class="post-preview-tags">cinema, comics, media form, Medlay, space, time</div>
+                <div class="post-preview-date">01 February 2015</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview current" href="/post/medlay-sequences.html">
+                <div class="post-preview-excerpt">Sequences are the narrative units of a <em>Medlay</em> artifact and consist of one or more series of pieces sequentially juxtaposed in space.</div>
+                <div class="post-preview-title">Sequences, <em>Medlay</em>, Part 3</div>
+                <div class="post-preview-tags">cinema, comics, media form, Medlay, space, time</div>
+                <div class="post-preview-date">01 February 2015</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <nav class="column-2d-l">
+          <ul class="pagination layout-1d-cnt">
+            <li class="pagination-item element-1d">
+              <span>Prev</span>
+            </li>
+
+            <li class="pagination-item element-1d current">
+              <a href="/posts/index.html">1</a>
+            </li>
+            <li class="pagination-item element-1d">
+              <a href="/posts/2/index.html">2</a>
+            </li>
+
+            <li class="pagination-item element-1d">
+              <a href="/posts/2/index.html">Next </a>
+            </li>
+          </ul>
+        </nav>
+
+      </section>
+    </div>
+
+<div class="canvas-about background">
+      <div class="about layout-2d">
+
+        <div class="column-2d-s-1-about typo-s serif">
+          <div class="separator"></div>
+          <p>I work as a <strong>Senior Product Designer</strong> at&nbsp;<a href="https://www.skippet.com/" target="_blank" title="Skippet’s Site">Skippet</a>, remotely.</p>
+        </div>
+
+        <div class="column-2d-s-2-about typo-s serif">
+          <div class="separator"></div>
+          <p>If you feel like having a&nbsp;chat, write to me at <span class="envelope"><noscript>turn on Javascript to see my e-mail address</noscript></span>.</p>
+        </div>
+
+        <div class="column-2d-s-3-about typo-s serif">
+          <div class="separator"></div>
+          <div class="links layout-1d-ltr">
+            <a id="linkedin" class="element-1d link" href="https://www.linkedin.com/in/andreaburan" target="_blank" title="LinkedIn">
+              <div class="link-icon">
+                <!-- style="background-color:#24292e;" -->
+                <div><span>LinkedIn</span></div>
+              </div>
+            </a>
+            <a id="wellfound" class="element-1d link" href="https://wellfound.com/u/ranbureand" target="_blank" title="Wellfound">
+              <div class="link-icon">
+                <div><span>Wellfound</span></div>
+              </div>
+            </a>
+            <a id="github" class=" link" href="https://github.com/ranbureand" target="_blank" title="GitHub">
+              <div class="link-icon">
+                <!-- style="background-color:#24292e;" -->
+                <div><span>GitHub</span></div>
+              </div>
+            </a>
+            <a id="vimeo" class="element-1d link" href="https://vimeo.com/andreaburan" target="_blank" title="Vimeo">
+              <div class="link-icon">
+                <!-- style="background-color:#1AB7EA;" -->
+                <div><span>Vimeo</span></div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="column-2d-s-4-about typo-s serif">
+          <div class="separator"></div>
+          <div class="button-m">
+            <a href="/media/documents/andrea_buran_resume_00.pdf" target="_blank" title="Andrea Buran’s Résumé">Download Résumé</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="canvas-footer background">
+      <footer class="footer layout-2d">
+        <div class="footer-copyright"><span class="hidden">Copyright</span> <span class="color-1">©</span> 2010 Andrea Buran</div>
+        <div class="footer-scroll"><a href="#outer-space"><span class="hidden">Three—Two—One—Zero—</span>Liftoff<span class="color-1">!</span></a></div>
+      </footer>
+    </div>
+
+    <script src="/scripts/js/main.min.js"></script>
+
+  </body>
+
+</html>

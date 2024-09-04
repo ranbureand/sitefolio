@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--
+
+    Welcome, websurfer!
+
+    This site is:
+
+    + designed and developed in the browser
+    + written in Kramdown
+    + generated through Jekyll
+    + scripted in JavaScript
+    + styled from scratch in SCSS
+    + typesetted in IBM Plex Mono, Sans and Serif
+
+    with love and patience by Andrea Buran.
+
+    -->
+
+    <title>Multilingual sites in Jekyll, Part 4 · Andrea Buran’s site</title>
+    <meta name="description" content="This series of articles illustrates my approach to creating a multilingual site in Jekyll."/>
+
+    <!-- https://fonts.google.com/share?selection.family=IBM%20Plex%20Mono:ital,wght@0,400;0,500;1,400;1,500%7CIBM%20Plex%20Sans:ital,wght@0,400;0,500;1,400;1,500%7CIBM%20Plex%20Serif:ital,wght@0,400;0,500;1,400;1,500 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400;1,500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400;1,500&family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400;1,500&display=swap"/>
+    <!-- Import specific characters ↑ → ↓ ← ⬑ ⬏ ↔ in URL-encoded format -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans&family=IBM+Plex+Serif&text=%E2%86%91|%E2%86%92|%E2%86%93|%E2%86%90|%E2%AC%91|%E2%AC%8F|%E2%86%94" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="/styles/css/main.css?v=2024-08-13"/>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#fc5568">
+    <meta name="apple-mobile-web-app-title" content="Andrea Buran&rsquo;s Site">
+    <meta name="application-name" content="Andrea Buran&rsquo;s Site">
+    <meta name="msapplication-TileColor" content="#987cfb">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Open Graph protocol -->
+    <meta property="og:title" content="Multilingual sites in Jekyll, Part 4 · Andrea Buran’s site"/>
+    <meta property="og:description" content="We place a dedicated page named sitemap.xml in each language subdirectory of the site."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://www.andreaburan.com/post/multilingual-sites-in-jekyll-4.html"/>
+    <meta property="og:image" content="https://www.andreaburan.com/media/sundries/cover/cover_00.jpg?v=2024-08-13"/>
+    <meta property="og:image:type" content="image/jpeg"/>
+    <meta property="og:image:alt" content="We place a dedicated page named `sitemap.xml` in each language subdirectory of the site."/>
+    <meta property="og:image:width" content="640"/>
+    <meta property="og:image:height" content="640"/>
+
+    <link rel="canonical" href="https://www.andreaburan.com/post/multilingual-sites-in-jekyll-4.html"/>
+
+    <meta name="google-site-verification" content="HbQMAhgCEHek1NoKN16QyirigFf9FYd_vdDy4Vybt78" />
+  </head>
+
+
+  <body id="outer-space" class="light">
+
+    <div class="canvas-header foreground">
+      <div class="buffer-header">
+        <header class="header foreground layout-2d">
+          <h1 class="header-title"><a href="/">Andrea Buran<span class="hidden">’s Site</span> <sup class="color-1">5.0</sup></a></h1>
+          <ul class="header-navigation">
+            <li class="current">
+              <a href="/posts/index.html"><span class="hidden">All</span> Posts</a>
+            </li>
+            <li>
+              <a href="/projects/all.html"><span class="hidden">All</span> Proj<span class="hidden">ects</span></a>
+            </li>
+            <li>
+              <a href="#" id="mode-switch" onclick="toggleModeDisplay(event)"><span class="screen-reader-only">Color mode toggle</span></a>
+            </li>
+          </ul>
+        </header>
+      </div>
+    </div>
+
+      <div class="canvas-article foreground">
+        <article class="article layout-2d">
+
+          <header class="article-head column-2d-l typo-sl">
+            <h1>Multilingual sites in Jekyll, Part 4</h1>
+          </header>
+
+          <div class="column-2d-l separator"></div>
+          <div class="article-date column-2d-s-1 typo-l">
+            <p>15 August 2021</p>
+          </div>
+          <div class="article-exordium column-2d-m-2 typo-l">
+            <p>This series of articles (<a href="http://andreaburan.com/post/multilingual-sites-in-jekyll.html">Part 1</a>, <a href="http://andreaburan.com/post/multilingual-sites-in-jekyll-2.html">Part 2</a>, <a href="http://andreaburan.com/post/multilingual-sites-in-jekyll-3.html">Part 3</a>, <a href="http://andreaburan.com/post/multilingual-sites-in-jekyll-4.html">Part 4</a>) and this <a href="https://ranbureand.github.io/multilingual-experiment/">basic <em>GitHub Pages</em> site</a> illustrate my approach to creating a multilingual site in <em><a href="https://jekyllrb.com/" title="Jekyll">Jekyll</a></em>.</p>
+          </div>
+
+          <div class="article-body column-2d-m-2 typo-m">
+            <ul class="toc" id="markdown-toc">
+  <li><a href="#multilingual-sitemaps" id="markdown-toc-multilingual-sitemaps">Multilingual sitemaps</a>    <ul>
+      <li><a href="#sitemap-index-file" id="markdown-toc-sitemap-index-file">Sitemap index file</a></li>
+      <li><a href="#sitemap-files" id="markdown-toc-sitemap-files">Sitemap files</a></li>
+      <li><a href="#rss-feed" id="markdown-toc-rss-feed">RSS feed</a></li>
+      <li><a href="#page-not-found" id="markdown-toc-page-not-found">Page not found</a></li>
+    </ul>
+  </li>
+  <li><a href="#resources" id="markdown-toc-resources">Resources</a></li>
+  <li><a href="#afterword" id="markdown-toc-afterword">Afterword</a></li>
+</ul>
+
+<h2 id="multilingual-sitemaps">Multilingual sitemaps</h2>
+
+<p>To serve a multilingual sitemap, we need to create a <a href="https://www.sitemaps.org/protocol.html#index" title="Sitemaps XML Format, Sitemap index">Sitemap index</a> file and list a Sitemap file for each language we support.</p>
+
+<h3 id="sitemap-index-file">Sitemap index file</h3>
+
+<p>We place the page named <code class="language-plaintext highlighter-rouge">sitemap.html</code> in the root directory of the site. It points to the other localized sitemaps in the respective language subfolders.</p>
+
+<div class="language-liquid code-l highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: none
+
+sitemap:
+  excluded: true
+---
+
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"&gt;
+
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">pages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">pages</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'language_reference'</span><span class="p">,</span><span class="w"> </span><span class="s1">'sitemap'</span><span class="w"> </span><span class="p">%}</span>
+
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">page</span><span class="w"> </span><span class="nt">in</span><span class="w"> </span><span class="nv">pages</span><span class="w"> </span><span class="p">%}</span>
+    &lt;sitemap&gt;
+      &lt;loc&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">absoluteurl</span><span class="w"> </span><span class="p">}}{{</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">remove</span><span class="p">:</span><span class="w"> </span><span class="s1">'index.html'</span><span class="w"> </span><span class="p">}}</span>&lt;/loc&gt;
+
+      <span class="p">{%-</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">sitemap</span><span class="p">.</span><span class="nv">lastmod</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">lastmod</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">sitemap</span><span class="p">.</span><span class="nv">lastmod</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">date</span><span class="p">:</span><span class="w"> </span><span class="s1">'%Y-%m-%d'</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%-</span><span class="w"> </span><span class="kr">elsif</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">date</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">lastmod</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">date</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">date_to_xmlschema</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%-</span><span class="w"> </span><span class="kr">else</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">lastmod</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">time</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">date_to_xmlschema</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%-</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+      &lt;lastmod&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">lastmod</span><span class="w"> </span><span class="p">}}</span>&lt;/lastmod&gt;
+    &lt;/sitemap&gt;
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+
+&lt;/sitemapindex&gt;
+</code></pre></div></div>
+
+<p>By setting the following variables in the front matter of the Sitemap index file:</p>
+
+<div class="language-yaml code-m highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">sitemap</span><span class="pi">:</span>
+  <span class="na">excluded</span><span class="pi">:</span> <span class="no">true</span>
+</code></pre></div></div>
+
+<p>we make sure to exclude it from the list of pages returned in each language Sitemap file.</p>
+
+<h3 id="sitemap-files">Sitemap files</h3>
+
+<p>We then place a dedicated <code class="language-plaintext highlighter-rouge">sitemap.xml</code> page in each of the language subdirectories of the site. For example, here is the front matter of the English page <code class="language-plaintext highlighter-rouge">sitemap.xml</code>:</p>
+
+<div class="language-liquid code-l highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: none
+
+title: English Sitemap
+
+language: en
+language_reference: sitemap
+
+sitemap:
+  excluded: true
+---
+
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"&gt;
+
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">posts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">posts</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">sort</span><span class="p">:</span><span class="w"> </span><span class="s1">'date'</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'language'</span><span class="p">,</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">language</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'published'</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="p">%}</span>
+
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">post</span><span class="w"> </span><span class="nt">in</span><span class="w"> </span><span class="nv">posts</span><span class="w"> </span><span class="na">reversed</span><span class="w"> </span><span class="p">%}</span>
+    <span class="p">{%-</span><span class="w"> </span><span class="kr">unless</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">sitemap</span><span class="p">.</span><span class="nv">excluded</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="p">%}</span>
+    &lt;url&gt;
+      &lt;loc&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">absoluteurl</span><span class="w"> </span><span class="p">}}{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">}}</span>&lt;/loc&gt;
+
+      <span class="p">{%-</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">sitemap</span><span class="p">.</span><span class="nv">lastmod</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">lastmod</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">sitemap</span><span class="p">.</span><span class="nv">lastmod</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">date</span><span class="p">:</span><span class="w"> </span><span class="s1">'%Y-%m-%d'</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%-</span><span class="w"> </span><span class="kr">elsif</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">date</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">lastmod</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">date</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">date_to_xmlschema</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%-</span><span class="w"> </span><span class="kr">else</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">lastmod</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">time</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">date_to_xmlschema</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%-</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+      &lt;lastmod&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">lastmod</span><span class="w"> </span><span class="p">}}</span>&lt;/lastmod&gt;
+
+      <span class="p">{%-</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">sitemap</span><span class="p">.</span><span class="nv">changefreq</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">changefreq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">sitemap</span><span class="p">.</span><span class="nv">changefreq</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%-</span><span class="w"> </span><span class="kr">else</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">changefreq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'monthly'</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%-</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+      &lt;changefreq&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">changefreq</span><span class="w"> </span><span class="p">}}</span>&lt;/changefreq&gt;
+
+      <span class="p">{%-</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">sitemap</span><span class="p">.</span><span class="nv">priority</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">priority</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">sitemap</span><span class="p">.</span><span class="nv">priority</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%-</span><span class="w"> </span><span class="kr">else</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">priority</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.5</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%-</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+      &lt;priority&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">priority</span><span class="w"> </span><span class="p">}}</span>&lt;/priority&gt;
+    &lt;/url&gt;
+    <span class="p">{%-</span><span class="w"> </span><span class="kr">endunless</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">pages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">pages</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'language'</span><span class="p">,</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">language</span><span class="w"> </span><span class="p">%}</span>
+
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">page</span><span class="w"> </span><span class="nt">in</span><span class="w"> </span><span class="nv">pages</span><span class="w"> </span><span class="p">%}</span>
+    <span class="p">{%-</span><span class="w"> </span><span class="kr">unless</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">sitemap</span><span class="p">.</span><span class="nv">excluded</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="p">%}</span>
+    &lt;url&gt;
+      &lt;loc&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">absoluteurl</span><span class="w"> </span><span class="p">}}{{</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">remove</span><span class="p">:</span><span class="w"> </span><span class="s1">'index.html'</span><span class="w"> </span><span class="p">}}</span>&lt;/loc&gt;
+
+      <span class="p">{%-</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">sitemap</span><span class="p">.</span><span class="nv">lastmod</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">lastmod</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">sitemap</span><span class="p">.</span><span class="nv">lastmod</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">date</span><span class="p">:</span><span class="w"> </span><span class="s1">'%Y-%m-%d'</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%-</span><span class="w"> </span><span class="kr">elsif</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">date</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">lastmod</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">date</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">date_to_xmlschema</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%-</span><span class="w"> </span><span class="kr">else</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">lastmod</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">time</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">date_to_xmlschema</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%-</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+      &lt;lastmod&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">lastmod</span><span class="w"> </span><span class="p">}}</span>&lt;/lastmod&gt;
+
+      <span class="p">{%-</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">sitemap</span><span class="p">.</span><span class="nv">changefreq</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">changefreq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">sitemap</span><span class="p">.</span><span class="nv">changefreq</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%-</span><span class="w"> </span><span class="kr">else</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">changefreq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'monthly'</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%-</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+      &lt;changefreq&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">changefreq</span><span class="w"> </span><span class="p">}}</span>&lt;/changefreq&gt;
+
+      <span class="p">{%-</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">sitemap</span><span class="p">.</span><span class="nv">priority</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">priority</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">sitemap</span><span class="p">.</span><span class="nv">priority</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%-</span><span class="w"> </span><span class="kr">else</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">priority</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.3</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%-</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+      &lt;priority&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">priority</span><span class="w"> </span><span class="p">}}</span>&lt;/priority&gt;
+    &lt;/url&gt;
+    <span class="p">{%-</span><span class="w"> </span><span class="kr">endunless</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+
+&lt;/urlset&gt;
+</code></pre></div></div>
+
+<p>Each page contains two <em>for</em> loops:</p>
+
+<ul>
+  <li>the first loop goes through the array of posts and returns those that do not have the variables <code class="language-plaintext highlighter-rouge">sitemap: excluded: true</code> set in their front matter</li>
+  <li>the second loop goes through the array of pages and, similarly, returns those that do not have the variables <code class="language-plaintext highlighter-rouge">sitemap: excluded: true</code> set in their front matter</li>
+</ul>
+
+<p>We can override the <code class="language-plaintext highlighter-rouge">lastmod</code>, <code class="language-plaintext highlighter-rouge">changefreq</code>, and <code class="language-plaintext highlighter-rouge">priority</code> default values by setting the following variables in the front matter of the file:</p>
+
+<div class="language-yaml code-m highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">sitemap</span><span class="pi">:</span>
+  <span class="na">lastmod</span><span class="pi">:</span> <span class="s">2021-08-15 08:00:00 +0300</span>
+  <span class="na">changefreq</span><span class="pi">:</span> <span class="s">monthly</span>
+  <span class="na">priority</span><span class="pi">:</span> <span class="m">0.5</span>
+</code></pre></div></div>
+
+<p>Again, we can exclude a post or page from being returned in a sitemap by setting the following variables in the front matter of the file:</p>
+
+<div class="language-yaml code-m highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">sitemap</span><span class="pi">:</span>
+  <span class="na">excluded</span><span class="pi">:</span> <span class="no">true</span>
+</code></pre></div></div>
+
+<h3 id="rss-feed">RSS feed</h3>
+
+<p><em>Coming soon…</em></p>
+
+<h3 id="page-not-found">Page not found</h3>
+
+<p><em>Coming soon…</em></p>
+
+<h2 id="resources">Resources</h2>
+
+<ul>
+  <li><a href="https://forestry.io/blog/creating-a-multilingual-blog-with-jekyll/" title="Creating a multilingual blog with Jekyll">Creating a multilingual blog with Jekyll</a></li>
+  <li><a href="https://sylvaindurand.org/making-jekyll-multilingual/" title="Making Jekyll multilingual">Making Jekyll multilingual</a></li>
+  <li><a href="https://www.kooslooijesteijn.net/blog/multilingual-website-with-jekyll-collections" title="Making a multilingual website with Jekyll collections">Making a multilingual website with Jekyll collections</a></li>
+  <li><a href="https://matthewlincoln.net/2020/03/01/multilingual-jekyll.html" title="Multilingual Jekyll: How The Programming Historian does that">Multilingual Jekyll: How The Programming Historian does that</a></li>
+  <li><a href="https://www.usecue.com/blog/multilingual-jekyll-websites/" title="Multilingual Jekyll websites">Multilingual Jekyll websites</a></li>
+</ul>
+
+<h2 id="afterword">Afterword</h2>
+
+<p>If you have any suggestions or spot something worth fixing, please feel free to either <a href="andreaburan.com/" title="Andrea Buran’s Sitefolio">drop me a line</a> or <a href="https://github.com/ranbureand/multilingual-experiment/issues">create an issue on GitHub</a>. Thoughts, critiques, suggestions are welcomed.</p>
+
+<p>Thank you!</p>
+          </div>
+
+      <div class="column-2d-l separator"></div>
+
+        <div class="page-next column-2d-page-1">
+          <a href="/post/the-flow-of-time-in-dio-s-world-part-7.html">The flow of time in <em>Dio’s World Part 7</em></a>
+        </div>
+
+        <div class="page-prev column-2d-page-2">
+          <a href="/post/multilingual-sites-in-jekyll-3.html">Multilingual sites in Jekyll, Part 3</a>
+        </div>
+
+        </article>
+      </div>
+
+    <div class="canvas-posts background">
+      <section class="posts layout-2d">
+
+        <header class="posts-head column-2d-l typo-sl">
+            <h2>Last posts</h2>
+        </header>
+
+        <div class="column-2d-l separator"></div>
+<div class="column-2d-l">
+          <ul class="post-previews layout-1d-ltr">
+            <li class="element-1d">
+              <a class="post-preview" href="/post/the-flow-of-time-in-the-language-of-comics.html">
+                <div class="post-preview-excerpt">How does the language of comics express the flow of time through static images?</div>
+                <div class="post-preview-title">The flow of time in the language of comics</div>
+                <div class="post-preview-tags">language of comics, sequential art, space, time</div>
+                <div class="post-preview-date">28 December 2023</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/the-flow-of-time-in-dio-s-world-part-7.html">
+                <div class="post-preview-excerpt">How did Hirohiko Araki design the flow of time in the chapter <em>Dio’s World Part 7</em> from the <em>manga</em> <em>JoJo’s Bizarre Adventure</em>?</div>
+                <div class="post-preview-title">The flow of time in <em>Dio’s World Part 7</em></div>
+                <div class="post-preview-tags">JoJo’s Bizarre Adventure, language of comics, manga, time</div>
+                <div class="post-preview-date">17 September 2021</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview current" href="/post/multilingual-sites-in-jekyll-4.html">
+                <div class="post-preview-excerpt">We place a dedicated page named <code class="language-plaintext highlighter-rouge">sitemap.xml</code> in each language subdirectory of the site.</div>
+                <div class="post-preview-title">Multilingual sites in Jekyll, Part 4</div>
+                <div class="post-preview-tags">approach, development, Jekyll, multilingual, site</div>
+                <div class="post-preview-date">15 August 2021</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/multilingual-sites-in-jekyll-3.html">
+                <div class="post-preview-excerpt">We use the <code class="language-plaintext highlighter-rouge">language-switch.html</code> include to generate an unordered list of all languages supported on the site.</div>
+                <div class="post-preview-title">Multilingual sites in Jekyll, Part 3</div>
+                <div class="post-preview-tags">approach, development, Jekyll, multilingual, site</div>
+                <div class="post-preview-date">14 August 2021</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/multilingual-sites-in-jekyll-2.html">
+                <div class="post-preview-excerpt">We use <code class="language-plaintext highlighter-rouge">language</code> to retrieve pages or posts in the same language and <code class="language-plaintext highlighter-rouge">language_reference</code> to retrieve pages or posts with the same content translated into different languages.</div>
+                <div class="post-preview-title">Multilingual sites in Jekyll, Part 2</div>
+                <div class="post-preview-tags">approach, development, Jekyll, multilingual, site</div>
+                <div class="post-preview-date">13 August 2021</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/multilingual-sites-in-jekyll.html">
+                <div class="post-preview-excerpt">We organize the pages into directories named with ISO language codes, with one directory for each supported language.</div>
+                <div class="post-preview-title">Multilingual sites in Jekyll, Part 1</div>
+                <div class="post-preview-tags">approach, development, Jekyll, multilingual, site</div>
+                <div class="post-preview-date">12 August 2021</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/medlay-research.html">
+                <div class="post-preview-excerpt">Is it possible to create a new hybrid media form that remediates the characteristics of cinema and comics that once seemed incompatible?</div>
+                <div class="post-preview-title">Remediating cinema and comics, <em>Medlay</em>, Part 4</div>
+                <div class="post-preview-tags">cinema, comics, media form, Medlay, space, time</div>
+                <div class="post-preview-date">01 February 2015</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/medlay-sequences.html">
+                <div class="post-preview-excerpt">Sequences are the narrative units of a <em>Medlay</em> artifact and consist of one or more series of pieces sequentially juxtaposed in space.</div>
+                <div class="post-preview-title">Sequences, <em>Medlay</em>, Part 3</div>
+                <div class="post-preview-tags">cinema, comics, media form, Medlay, space, time</div>
+                <div class="post-preview-date">01 February 2015</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <nav class="column-2d-l">
+          <ul class="pagination layout-1d-cnt">
+            <li class="pagination-item element-1d">
+              <span>Prev</span>
+            </li>
+
+            <li class="pagination-item element-1d current">
+              <a href="/posts/index.html">1</a>
+            </li>
+            <li class="pagination-item element-1d">
+              <a href="/posts/2/index.html">2</a>
+            </li>
+
+            <li class="pagination-item element-1d">
+              <a href="/posts/2/index.html">Next </a>
+            </li>
+          </ul>
+        </nav>
+
+      </section>
+    </div>
+
+<div class="canvas-about background">
+      <div class="about layout-2d">
+
+        <div class="column-2d-s-1-about typo-s serif">
+          <div class="separator"></div>
+          <p>I work as a <strong>Senior Product Designer</strong> at&nbsp;<a href="https://www.skippet.com/" target="_blank" title="Skippet’s Site">Skippet</a>, remotely.</p>
+        </div>
+
+        <div class="column-2d-s-2-about typo-s serif">
+          <div class="separator"></div>
+          <p>If you feel like having a&nbsp;chat, write to me at <span class="envelope"><noscript>turn on Javascript to see my e-mail address</noscript></span>.</p>
+        </div>
+
+        <div class="column-2d-s-3-about typo-s serif">
+          <div class="separator"></div>
+          <div class="links layout-1d-ltr">
+            <a id="linkedin" class="element-1d link" href="https://www.linkedin.com/in/andreaburan" target="_blank" title="LinkedIn">
+              <div class="link-icon">
+                <!-- style="background-color:#24292e;" -->
+                <div><span>LinkedIn</span></div>
+              </div>
+            </a>
+            <a id="wellfound" class="element-1d link" href="https://wellfound.com/u/ranbureand" target="_blank" title="Wellfound">
+              <div class="link-icon">
+                <div><span>Wellfound</span></div>
+              </div>
+            </a>
+            <a id="github" class=" link" href="https://github.com/ranbureand" target="_blank" title="GitHub">
+              <div class="link-icon">
+                <!-- style="background-color:#24292e;" -->
+                <div><span>GitHub</span></div>
+              </div>
+            </a>
+            <a id="vimeo" class="element-1d link" href="https://vimeo.com/andreaburan" target="_blank" title="Vimeo">
+              <div class="link-icon">
+                <!-- style="background-color:#1AB7EA;" -->
+                <div><span>Vimeo</span></div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="column-2d-s-4-about typo-s serif">
+          <div class="separator"></div>
+          <div class="button-m">
+            <a href="/media/documents/andrea_buran_resume_00.pdf" target="_blank" title="Andrea Buran’s Résumé">Download Résumé</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="canvas-footer background">
+      <footer class="footer layout-2d">
+        <div class="footer-copyright"><span class="hidden">Copyright</span> <span class="color-1">©</span> 2010 Andrea Buran</div>
+        <div class="footer-scroll"><a href="#outer-space"><span class="hidden">Three—Two—One—Zero—</span>Liftoff<span class="color-1">!</span></a></div>
+      </footer>
+    </div>
+
+    <script src="/scripts/js/main.min.js"></script>
+
+  </body>
+
+</html>

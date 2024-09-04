@@ -1,0 +1,40 @@
+cd /Applications/MAMP/htdocs/imagemagick-experiments/input/
+
+mogrify \
+  -colorspace sRGB \
+  -define filter:support=2 \
+  -filter Lanczos \
+  -format jpg \
+  -interlace JPEG \
+  -resize 360\> \
+  -path ../output/360/ \
+  -quality 88 \
+  -strip \
+  -unsharp 0.5x0.5+0.5+0.1 \
+   *.*
+
+mogrify \
+  -colorspace sRGB \
+  -define filter:support=2 \
+  -filter Lanczos \
+  -format jpg \
+  -interlace JPEG \
+  -resize 720\> \
+  -path ../output/720/ \
+  -quality 88 \
+  -strip \
+  -unsharp 0.5x0.5+0.5+0.1 \
+  *.*
+
+mogrify \
+  -colorspace sRGB \
+  -define filter:support=2 \
+  -filter Lanczos \
+  -format jpg \
+  -interlace JPEG \
+  -resize 2880\> \
+  -path ../output/2880/ \
+  -quality 88 \
+  -strip \
+  -unsharp 0.5x0.5+0.5+0.1 \
+   *.*

@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--
+
+    Welcome, websurfer!
+
+    This site is:
+
+    + designed and developed in the browser
+    + written in Kramdown
+    + generated through Jekyll
+    + scripted in JavaScript
+    + styled from scratch in SCSS
+    + typesetted in IBM Plex Mono, Sans and Serif
+
+    with love and patience by Andrea Buran.
+
+    -->
+
+    <title>Remediating cinema and comics, Medlay, Part 4 · Andrea Buran’s site</title>
+    <meta name="description" content="Is it possible to create a new hybrid media form that remediates the characteristics of cinema and comics that once seemed incompatible?"/>
+
+    <!-- https://fonts.google.com/share?selection.family=IBM%20Plex%20Mono:ital,wght@0,400;0,500;1,400;1,500%7CIBM%20Plex%20Sans:ital,wght@0,400;0,500;1,400;1,500%7CIBM%20Plex%20Serif:ital,wght@0,400;0,500;1,400;1,500 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400;1,500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400;1,500&family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400;1,500&display=swap"/>
+    <!-- Import specific characters ↑ → ↓ ← ⬑ ⬏ ↔ in URL-encoded format -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans&family=IBM+Plex+Serif&text=%E2%86%91|%E2%86%92|%E2%86%93|%E2%86%90|%E2%AC%91|%E2%AC%8F|%E2%86%94" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="/styles/css/main.css?v=2024-08-13"/>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#fc5568">
+    <meta name="apple-mobile-web-app-title" content="Andrea Buran&rsquo;s Site">
+    <meta name="application-name" content="Andrea Buran&rsquo;s Site">
+    <meta name="msapplication-TileColor" content="#987cfb">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Open Graph protocol -->
+    <meta property="og:title" content="Remediating cinema and comics, Medlay, Part 4 · Andrea Buran’s site"/>
+    <meta property="og:description" content="Is it possible to create a new hybrid media form that remediates the characteristics of cinema and comics that once seemed incompatible?"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://www.andreaburan.com/post/medlay-research.html"/>
+    <meta property="og:image" content="https://www.andreaburan.com/media/sundries/cover/cover_00.jpg?v=2024-08-13"/>
+    <meta property="og:image:type" content="image/jpeg"/>
+    <meta property="og:image:alt" content="Is it possible to create a new hybrid media form that remediates the characteristics of cinema and comics that once seemed incompatible?"/>
+    <meta property="og:image:width" content="640"/>
+    <meta property="og:image:height" content="640"/>
+
+    <link rel="canonical" href="https://www.andreaburan.com/post/medlay-research.html"/>
+
+    <meta name="google-site-verification" content="HbQMAhgCEHek1NoKN16QyirigFf9FYd_vdDy4Vybt78" />
+  </head>
+
+
+  <body id="outer-space" class="light">
+
+    <div class="canvas-header foreground">
+      <div class="buffer-header">
+        <header class="header foreground layout-2d">
+          <h1 class="header-title"><a href="/">Andrea Buran<span class="hidden">’s Site</span> <sup class="color-1">5.0</sup></a></h1>
+          <ul class="header-navigation">
+            <li class="current">
+              <a href="/posts/index.html"><span class="hidden">All</span> Posts</a>
+            </li>
+            <li>
+              <a href="/projects/all.html"><span class="hidden">All</span> Proj<span class="hidden">ects</span></a>
+            </li>
+            <li>
+              <a href="#" id="mode-switch" onclick="toggleModeDisplay(event)"><span class="screen-reader-only">Color mode toggle</span></a>
+            </li>
+          </ul>
+        </header>
+      </div>
+    </div>
+
+      <div class="canvas-article foreground">
+        <article class="article layout-2d">
+
+          <header class="article-head column-2d-l typo-sl">
+            <h1>Remediating cinema and comics, <em>Medlay</em>, Part 4</h1>
+          </header>
+
+          <div class="column-2d-l separator"></div>
+          <div class="article-date column-2d-s-1 typo-l">
+            <p>01 February 2015</p>
+          </div>
+          <div class="article-exordium column-2d-m-2 typo-l">
+            <p>This series of articles (<a href="http://andreaburan.com/post/medlay-introduction.html">Part 1</a>, <a href="http://andreaburan.com/post/medlay-pieces.html">Part 2</a>, <a href="http://andreaburan.com/post/medlay-sequences.html">Part 3</a>, <a href="http://andreaburan.com/post/medlay-research.html">Part 4</a>) illustrates <em>Medlay</em>, a hybrid media form that combines the strengths of cinema and comics to narrate a story or communicate an idea on the Web.</p>
+          </div>
+
+          <div class="article-body column-2d-m-2 typo-m">
+            <p>I was able to further refine the concept of Medlay during my graduate thesis<sup id="fnref:thanks" role="doc-noteref"><a href="#fn:thanks" class="footnote" rel="footnote">1</a></sup>, which aimed to compare the <strong>cinema</strong> and <strong>comics media forms</strong> and formulate a new creative way to <strong>crossbreed</strong> them on the Web.</p>
+
+<p>Below is the main reasoning behind my thesis:</p>
+
+<ul class="toc" id="markdown-toc">
+  <li><a href="#remediation" id="markdown-toc-remediation">Remediation</a></li>
+  <li><a href="#digital-revolution" id="markdown-toc-digital-revolution">Digital revolution</a></li>
+  <li><a href="#sequential-art" id="markdown-toc-sequential-art">Sequential art</a></li>
+  <li><a href="#hybrid-media-form" id="markdown-toc-hybrid-media-form">Hybrid media form</a></li>
+</ul>
+
+<h3 id="remediation">Remediation</h3>
+
+<p>The relationship between the two media of cinema and comics is a long story of competition and reciprocal <strong>remediation</strong><sup id="fnref:remediation" role="doc-noteref"><a href="#fn:remediation" class="footnote" rel="footnote">2</a></sup>.</p>
+
+<p>The term remediation does <strong>not</strong> refer to the <strong>transposition of contents</strong><sup id="fnref:transposition" role="doc-noteref"><a href="#fn:transposition" class="footnote" rel="footnote">3</a></sup> between cinema and comics, but rather to the reciprocal borrowing and reshaping of their media forms by both.</p>
+
+<div class="figures">
+  <figure class="video-embed-m" id="batman_00">
+  <div class="ratio" style="padding-bottom: 74.66666666666667%;background-color: #252525;" target="blank">
+    <video class="video-content" controls="controls" loop="loop" poster="../media/posts-optimized/medlay-research/videos/batman_00.jpg">
+      <source src="../media/posts-optimized/medlay-research/videos/batman_00.webm" type="video/webm" />
+      <source src="../media/posts-optimized/medlay-research/videos/batman_00.mp4" type="video/mp4" />
+      <source src="../media/posts-optimized/medlay-research/videos/batman_00.ogv" type="video/ogv" />
+      Your browser cannot play this video because it does not support the HTML5 video tag. Please <a href="../media/posts-optimized/medlay-research/videos/batman_00.mp4" target="_blank">download the video</a> to watch it instead.
+    </video>
+  </div><figcaption class="typo-s">
+    <p>For example, the 1960s TV series <em>Batman</em> transposed the imagery and characters of the comic book of the same name. <em>Batman</em>, 1960s TV series.</p>
+
+  </figcaption>
+</figure>
+</div>
+
+<div class="figures">
+  <figure class="image-m" id="batman_00.jpg">
+  <a class="ratio" href="../media/posts-optimized/medlay-research/images/1440/batman_00.jpg" style="padding-bottom: 150.0%;background-color: #252525;" target="_blank">
+    <img loading="lazy" src="
+      ../media/posts-optimized/medlay-research/images/720/batman_00.jpg
+      " srcset="
+      ../media/posts-optimized/medlay-research/images/1440/batman_00.jpg 1440w,
+      ../media/posts-optimized/medlay-research/images/1080/batman_00.jpg 1080w,
+      ../media/posts-optimized/medlay-research/images/720/batman_00.jpg 720w,
+      ../media/posts-optimized/medlay-research/images/360/batman_00.jpg 360w
+      " sizes="
+      (min-width: 30em) 36em,
+      22em
+      " alt="
+      A cover of Detective Comics featuring Batman and Robin, DC Comics, 1940.
+      " />
+  </a><figcaption class="typo-s">
+    <p>A cover of <em>Detective Comics</em> featuring Batman and Robin, DC Comics, 1940. Roger Sabin, <em>Comics, Comix and Graphic Novels—A History Of Comic Art</em></p>
+  </figcaption>
+</figure>
+
+</div>
+
+<p>A practical example of <strong>remediation</strong> is the way the movie <em>Sin City</em>—a transposition of the graphic novel of the same name—has remediated a typical device of the comics media form: the <strong><em>splash page</em></strong>.</p>
+
+<blockquote>
+  <p>Through “splash pages” […] comics have the distinctive potential to convey in purely graphic terms the importance of a (literally) “big” moment in the story.</p>
+
+  <p><cite class="source">Greg M. Smith, <em>Shaping The Maxx: adapting the comic book frame to television</em></cite></p>
+</blockquote>
+
+<div class="figures">
+  <figure class="image-m" id="sin_city_00.jpg">
+  <a class="ratio" href="../media/posts-optimized/medlay-research/images/1440/sin_city_00.jpg" style="padding-bottom: 150.0%;background-color: #252525;" target="_blank">
+    <img loading="lazy" src="
+      ../media/posts-optimized/medlay-research/images/720/sin_city_00.jpg
+      " srcset="
+      ../media/posts-optimized/medlay-research/images/1440/sin_city_00.jpg 1440w,
+      ../media/posts-optimized/medlay-research/images/1080/sin_city_00.jpg 1080w,
+      ../media/posts-optimized/medlay-research/images/720/sin_city_00.jpg 720w,
+      ../media/posts-optimized/medlay-research/images/360/sin_city_00.jpg 360w
+      " sizes="
+      (min-width: 30em) 36em,
+      22em
+      " alt="
+      A splash page from the graphic novel Sin City.
+      " />
+  </a><figcaption class="typo-s">
+    <p>A splash page from the graphic novel Sin City. Frank Miller, <em>Sin City</em>.</p>
+  </figcaption>
+</figure>
+
+</div>
+
+<p>Restricted by the <quote>film’s seemingly fixed, invisible frame</quote> the movie remediates and reshapes the “splash page” device through camera movement and the artificially frozen pose of the jumping character.</p>
+
+<div class="figures">
+  <figure class="video-embed-m" id="sin_city_00">
+  <div class="ratio" style="padding-bottom: 56.0%;background-color: #252525;" target="blank">
+    <video class="video-content" controls="controls" loop="loop" poster="../media/posts-optimized/medlay-research/videos/sin_city_00.jpg">
+      <source src="../media/posts-optimized/medlay-research/videos/sin_city_00.webm" type="video/webm" />
+      <source src="../media/posts-optimized/medlay-research/videos/sin_city_00.mp4" type="video/mp4" />
+      <source src="../media/posts-optimized/medlay-research/videos/sin_city_00.ogv" type="video/ogv" />
+      Your browser cannot play this video because it does not support the HTML5 video tag. Please <a href="../media/posts-optimized/medlay-research/videos/sin_city_00.mp4" target="_blank">download the video</a> to watch it instead.
+    </video>
+  </div><figcaption class="typo-s">
+    <p>Robert Rodríguez &amp; Frank Miller, <em>Sin City</em>.</p>
+
+  </figcaption>
+</figure>
+</div>
+
+<h3 id="digital-revolution">Digital revolution</h3>
+
+<p><strong>Before</strong> the digital revolution, these reciprocal remediations were always limited by different production, recording, transmission, and reproduction technologies.</p>
+
+<div class="figures">
+  <figure class="video-embed-m" id="cinema_technology_00">
+  <div class="ratio" style="padding-bottom: 74.66666666666667%;background-color: #252525;" target="blank">
+    <video class="video-content" controls="controls" loop="loop" poster="../media/posts-optimized/medlay-research/videos/cinema_technology_00.jpg">
+      <source src="../media/posts-optimized/medlay-research/videos/cinema_technology_00.webm" type="video/webm" />
+      <source src="../media/posts-optimized/medlay-research/videos/cinema_technology_00.mp4" type="video/mp4" />
+      <source src="../media/posts-optimized/medlay-research/videos/cinema_technology_00.ogv" type="video/ogv" />
+      Your browser cannot play this video because it does not support the HTML5 video tag. Please <a href="../media/posts-optimized/medlay-research/videos/cinema_technology_00.mp4" target="_blank">download the video</a> to watch it instead.
+    </video>
+  </div>
+</figure>
+</div>
+
+<div class="figures">
+  <figure class="video-embed-m" id="comics_technology_00">
+  <div class="ratio" style="padding-bottom: 74.66666666666667%;background-color: #252525;" target="blank">
+    <video class="video-content" controls="controls" loop="loop" poster="../media/posts-optimized/medlay-research/videos/comics_technology_00.jpg">
+      <source src="../media/posts-optimized/medlay-research/videos/comics_technology_00.webm" type="video/webm" />
+      <source src="../media/posts-optimized/medlay-research/videos/comics_technology_00.mp4" type="video/mp4" />
+      <source src="../media/posts-optimized/medlay-research/videos/comics_technology_00.ogv" type="video/ogv" />
+      Your browser cannot play this video because it does not support the HTML5 video tag. Please <a href="../media/posts-optimized/medlay-research/videos/comics_technology_00.mp4" target="_blank">download the video</a> to watch it instead.
+    </video>
+  </div>
+</figure>
+</div>
+
+<p><strong>After</strong> the digital revolution, the technological differences between the two cultural forms—absorbed by the World Wide Web—have been reset. However, in most cases, cinema and comics have continued to be considered and remediated separately.</p>
+
+<div class="figures">
+  <figure class="image-m" id="beartato_00.jpg">
+  <a class="ratio" href="../media/posts-optimized/medlay-research/images/1440/beartato_00.jpg" style="padding-bottom: 133.33333333333334%;background-color: #252525;" target="_blank">
+    <img loading="lazy" src="
+      ../media/posts-optimized/medlay-research/images/720/beartato_00.jpg
+      " srcset="
+      ../media/posts-optimized/medlay-research/images/1440/beartato_00.jpg 1440w,
+      ../media/posts-optimized/medlay-research/images/1080/beartato_00.jpg 1080w,
+      ../media/posts-optimized/medlay-research/images/720/beartato_00.jpg 720w,
+      ../media/posts-optimized/medlay-research/images/360/beartato_00.jpg 360w
+      " sizes="
+      (min-width: 30em) 36em,
+      22em
+      " alt="
+      A strip from the web comic NEDROID.
+      " />
+  </a><figcaption class="typo-s">
+    <p>Anthony Clark, <em>NEDROID</em> web comic.</p>
+  </figcaption>
+</figure>
+
+</div>
+
+<p>Is it possible to create a new <strong>hybrid media form</strong> that integrates the characteristics of cinema and comics that once seemed incompatible, now that the two mediums potentially differ only in their respective processes?</p>
+
+<div class="figures">
+  <figure class="image-m" id="motion_comics_00.jpg">
+  <a class="ratio" href="../media/posts-optimized/medlay-research/images/1440/motion_comics_00.jpg" style="padding-bottom: 56.25%;background-color: #252525;" target="_blank">
+    <img loading="lazy" src="
+      ../media/posts-optimized/medlay-research/images/720/motion_comics_00.jpg
+      " srcset="
+      ../media/posts-optimized/medlay-research/images/1440/motion_comics_00.jpg 1440w,
+      ../media/posts-optimized/medlay-research/images/1080/motion_comics_00.jpg 1080w,
+      ../media/posts-optimized/medlay-research/images/720/motion_comics_00.jpg 720w,
+      ../media/posts-optimized/medlay-research/images/360/motion_comics_00.jpg 360w
+      " sizes="
+      (min-width: 30em) 36em,
+      22em
+      " alt="
+      A screenshot taken from a Marvel motion comic.
+      " />
+  </a><figcaption class="typo-s">
+    <p>In my opinion, <em>Marvel Motion Comics</em> are not comics; their media form is, in fact, that of cartoon cinema through and through. Marvel Motion Comics, <em>Spider Woman</em>.</p>
+  </figcaption>
+</figure>
+
+</div>
+
+<div class="figures">
+  <figure class="image-m" id="motion_comics_01.jpg">
+  <a class="ratio" href="../media/posts-optimized/medlay-research/images/1440/motion_comics_01.jpg" style="padding-bottom: 56.25%;background-color: #252525;" target="_blank">
+    <img loading="lazy" src="
+      ../media/posts-optimized/medlay-research/images/720/motion_comics_01.jpg
+      " srcset="
+      ../media/posts-optimized/medlay-research/images/1440/motion_comics_01.jpg 1440w,
+      ../media/posts-optimized/medlay-research/images/1080/motion_comics_01.jpg 1080w,
+      ../media/posts-optimized/medlay-research/images/720/motion_comics_01.jpg 720w,
+      ../media/posts-optimized/medlay-research/images/360/motion_comics_01.jpg 360w
+      " sizes="
+      (min-width: 30em) 36em,
+      22em
+      " alt="
+      A screenshot taken from a Marvel motion comic.
+      " />
+  </a><figcaption class="typo-s">
+    <p>Marvel Motion Comics, <em>Spider Woman</em>.</p>
+  </figcaption>
+</figure>
+
+</div>
+
+<h3 id="sequential-art">Sequential art</h3>
+
+<p>To assess the potential for interbreeding between the two cultural forms, cinema and comics have been subsumed under the broader concept of <strong>sequential art</strong>: <quote>the arrangement of pictures or images and words to narrate a story or dramatize an idea</quote>—a definition created in 1985 by <strong>Will Eisner</strong><sup id="fnref:source-1" role="doc-noteref"><a href="#fn:source-1" class="footnote" rel="footnote">4</a></sup> and expanded in 1994 by <strong>Scott McCloud</strong><sup id="fnref:source-2" role="doc-noteref"><a href="#fn:source-2" class="footnote" rel="footnote">5</a></sup>. This concept has been used to compare cinema and comics, highlighting their affinities and differences.</p>
+
+<div class="figures">
+  <figure class="image-m" id="understanding_comics_00.jpg">
+  <a class="ratio" href="../media/posts-optimized/medlay-research/images/1440/understanding_comics_00.jpg" style="padding-bottom: 198.11320754716982%;background-color: #252525;" target="_blank">
+    <img loading="lazy" src="
+      ../media/posts-optimized/medlay-research/images/720/understanding_comics_00.jpg
+      " srcset="
+      ../media/posts-optimized/medlay-research/images/1440/understanding_comics_00.jpg 1440w,
+      ../media/posts-optimized/medlay-research/images/1080/understanding_comics_00.jpg 1080w,
+      ../media/posts-optimized/medlay-research/images/720/understanding_comics_00.jpg 720w,
+      ../media/posts-optimized/medlay-research/images/360/understanding_comics_00.jpg 360w
+      " sizes="
+      (min-width: 30em) 36em,
+      22em
+      " alt="
+      An excerpt from the non-fiction work Understanding Comics.
+      " />
+  </a><figcaption class="typo-s">
+    <p>Scott McCloud, <em>Understanding Comics</em>.</p>
+  </figcaption>
+</figure>
+
+</div>
+
+<p>The comparison analyzes the following points:</p>
+
+<ul>
+  <li>the respective procedures by which cinema and comics represent <strong>time</strong> and <strong>space</strong>, both at the level of the cinematic shot and the comics panel, as well as at the level of the sequence of shots and panels;</li>
+</ul>
+
+<div class="figures">
+  <figure class="video-embed-m" id="cinema_01">
+  <div class="ratio" style="padding-bottom: 74.66666666666667%;background-color: #252525;" target="blank">
+    <video class="video-content" controls="controls" loop="loop" poster="../media/posts-optimized/medlay-research/videos/cinema_01.jpg">
+      <source src="../media/posts-optimized/medlay-research/videos/cinema_01.webm" type="video/webm" />
+      <source src="../media/posts-optimized/medlay-research/videos/cinema_01.mp4" type="video/mp4" />
+      <source src="../media/posts-optimized/medlay-research/videos/cinema_01.ogv" type="video/ogv" />
+      Your browser cannot play this video because it does not support the HTML5 video tag. Please <a href="../media/posts-optimized/medlay-research/videos/cinema_01.mp4" target="_blank">download the video</a> to watch it instead.
+    </video>
+  </div><figcaption class="typo-s">
+    <p>In the cinematic media form, time is conveyed directly through the passage of time.</p>
+
+  </figcaption>
+</figure>
+</div>
+
+<div class="figures">
+  <figure class="video-embed-m" id="comics_time_space_00">
+  <div class="ratio" style="padding-bottom: 74.66666666666667%;background-color: #252525;" target="blank">
+    <video class="video-content" controls="controls" loop="loop" poster="../media/posts-optimized/medlay-research/videos/comics_time_space_00.jpg">
+      <source src="../media/posts-optimized/medlay-research/videos/comics_time_space_00.webm" type="video/webm" />
+      <source src="../media/posts-optimized/medlay-research/videos/comics_time_space_00.mp4" type="video/mp4" />
+      <source src="../media/posts-optimized/medlay-research/videos/comics_time_space_00.ogv" type="video/ogv" />
+      Your browser cannot play this video because it does not support the HTML5 video tag. Please <a href="../media/posts-optimized/medlay-research/videos/comics_time_space_00.mp4" target="_blank">download the video</a> to watch it instead.
+    </video>
+  </div><figcaption class="typo-s">
+    <p>In the comics media form, time is conveyed indirectly through space. Carlos Trillo &amp; Enrique Breccia, <em>Alvar Mayor</em>.</p>
+
+  </figcaption>
+</figure>
+</div>
+
+<ul>
+  <li>the differences between the cinema <strong>split screen</strong> and the comics <strong>layout</strong>;</li>
+</ul>
+
+<div class="figures">
+  <figure class="image-l" id="conversation_with_other_women_00.jpg">
+  <a class="ratio" href="../media/posts-optimized/medlay-research/images/1440/conversation_with_other_women_00.jpg" style="padding-bottom: 41.25%;background-color: #252525;" target="_blank">
+    <img loading="lazy" src="
+      ../media/media/posts-optimized/medlay-research/images/1080/conversation_with_other_women_00.jpg
+      " srcset="
+      ../media/posts-optimized/medlay-research/images/2160/conversation_with_other_women_00.jpg 2160w,
+      ../media/posts-optimized/medlay-research/images/1440/conversation_with_other_women_00.jpg 1440w,
+      ../media/posts-optimized/medlay-research/images/1080/conversation_with_other_women_00.jpg 1080w,
+      ../media/posts-optimized/medlay-research/images/720/conversation_with_other_women_00.jpg 720w,
+      ../media/posts-optimized/medlay-research/images/360/conversation_with_other_women_00.jpg 360w
+      " sizes="
+      (min-width: 54em) 54em,
+      (min-width: 30em) 36em,
+      22em
+      " alt="
+      A screenshot from Conversation with Other Women.
+      " />
+  </a><figcaption class="typo-s">
+    <p>Hans Canosa, <em>Conversation with Other Women</em>.</p>
+  </figcaption>
+</figure>
+
+</div>
+
+<div class="figures">
+  <figure class="image-xl" id="jojo_00.jpg">
+  <a class="ratio" href="../media/posts-optimized/medlay-research/images/1440/jojo_00.jpg" style="padding-bottom: 79.16666666666666%;" target="_blank">
+    <img loading="lazy" src="
+      ../media/posts-optimized/medlay-research/images/1440/jojo_00.jpg
+      " srcset="
+      ../media/posts-optimized/medlay-research/images/2880/jojo_00.jpg 2880w,
+      ../media/posts-optimized/medlay-research/images/2160/jojo_00.jpg 2160w,
+      ../media/posts-optimized/medlay-research/images/1440/jojo_00.jpg 1440w,
+      ../media/posts-optimized/medlay-research/images/1080/jojo_00.jpg 1080w,
+      ../media/posts-optimized/medlay-research/images/720/jojo_00.jpg 720w,
+      ../media/posts-optimized/medlay-research/images/360/jojo_00.jpg 360w
+      " sizes="
+      (min-width: 72em) 72em,
+      (min-width: 54em) 54em,
+      (min-width: 30em) 36em,
+      22em
+      " alt="
+      A double page from the manga Jojo’s Bizarre Adventure.
+      " />
+  </a><figcaption class="typo-s">
+    <p>Multi-images spatial narration. Hirohiko Araki, <em>Jojo’s Bizarre Adventure</em>.</p>
+  </figcaption>
+</figure>
+
+</div>
+
+<ul>
+  <li>the differences between the <strong>format</strong> of the cinema shot and that of the comics panel;</li>
+</ul>
+
+<div class="figures">
+  <figure class="image-m" id="cinema_format_00.jpg">
+  <a class="ratio" href="../media/posts-optimized/medlay-research/images/1440/cinema_format_00.jpg" style="padding-bottom: 74.66666666666667%;" target="_blank">
+    <img loading="lazy" src="
+      ../media/posts-optimized/medlay-research/images/720/cinema_format_00.jpg
+      " srcset="
+      ../media/posts-optimized/medlay-research/images/1440/cinema_format_00.jpg 1440w,
+      ../media/posts-optimized/medlay-research/images/1080/cinema_format_00.jpg 1080w,
+      ../media/posts-optimized/medlay-research/images/720/cinema_format_00.jpg 720w,
+      ../media/posts-optimized/medlay-research/images/360/cinema_format_00.jpg 360w
+      " sizes="
+      (min-width: 30em) 36em,
+      22em
+      " alt="
+      The format of a cinema shot.
+      " />
+  </a>
+</figure>
+
+</div>
+
+<div class="figures">
+  <figure class="image-m" id="blame_00.jpg">
+  <a class="ratio" href="../media/posts-optimized/medlay-research/images/1440/blame_00.jpg" style="padding-bottom: 150.0%;" target="_blank">
+    <img loading="lazy" src="
+      ../media/posts-optimized/medlay-research/images/720/blame_00.jpg
+      " srcset="
+      ../media/posts-optimized/medlay-research/images/1440/blame_00.jpg 1440w,
+      ../media/posts-optimized/medlay-research/images/1080/blame_00.jpg 1080w,
+      ../media/posts-optimized/medlay-research/images/720/blame_00.jpg 720w,
+      ../media/posts-optimized/medlay-research/images/360/blame_00.jpg 360w
+      " sizes="
+      (min-width: 30em) 36em,
+      22em
+      " alt="
+      A page taken from the manga Blame!
+      " />
+  </a><figcaption class="typo-s">
+    <p>Tsutomu Nihei, <em>Blame!</em>.</p>
+  </figcaption>
+</figure>
+
+</div>
+
+<ul>
+  <li>the respective procedures by which cinema and comics represent <strong>voice</strong>, <strong>noise</strong> and <strong>music</strong>;</li>
+</ul>
+
+<div class="figures">
+  <figure class="video-embed-m" id="cinema_sound_00">
+  <div class="ratio" style="padding-bottom: 74.66666666666667%;background-color: #252525;" target="blank">
+    <video class="video-content" controls="controls" loop="loop" poster="../media/posts-optimized/medlay-research/videos/cinema_sound_00.jpg">
+      <source src="../media/posts-optimized/medlay-research/videos/cinema_sound_00.webm" type="video/webm" />
+      <source src="../media/posts-optimized/medlay-research/videos/cinema_sound_00.mp4" type="video/mp4" />
+      <source src="../media/posts-optimized/medlay-research/videos/cinema_sound_00.ogv" type="video/ogv" />
+      Your browser cannot play this video because it does not support the HTML5 video tag. Please <a href="../media/posts-optimized/medlay-research/videos/cinema_sound_00.mp4" target="_blank">download the video</a> to watch it instead.
+    </video>
+  </div>
+</figure>
+</div>
+
+<div class="figures">
+  <figure class="image-m" id="comics_voice_00.jpg">
+  <a class="ratio" href="../media/posts-optimized/medlay-research/images/1440/comics_voice_00.jpg" style="padding-bottom: 168.75%;" target="_blank">
+    <img loading="lazy" src="
+      ../media/posts-optimized/medlay-research/images/720/comics_voice_00.jpg
+      " srcset="
+      ../media/posts-optimized/medlay-research/images/1440/comics_voice_00.jpg 1440w,
+      ../media/posts-optimized/medlay-research/images/1080/comics_voice_00.jpg 1080w,
+      ../media/posts-optimized/medlay-research/images/720/comics_voice_00.jpg 720w,
+      ../media/posts-optimized/medlay-research/images/360/comics_voice_00.jpg 360w
+      " sizes="
+      (min-width: 30em) 36em,
+      22em
+      " alt="
+      Scott McCloud speaking out loud in Making Comics.
+      " />
+  </a><figcaption class="typo-s">
+    <p>Scott McCloud, <em>Making Comics</em>.</p>
+  </figcaption>
+</figure>
+
+</div>
+
+<ul>
+  <li>the respective procedures of <strong>interpretation</strong>.</li>
+</ul>
+
+<div class="figures">
+  <figure class="image-m" id="viewing_00.jpg">
+  <a class="ratio" href="../media/posts-optimized/medlay-research/images/1440/viewing_00.jpg" style="padding-bottom: 75.0%;" target="_blank">
+    <img loading="lazy" src="
+      ../media/posts-optimized/medlay-research/images/720/viewing_00.jpg
+      " srcset="
+      ../media/posts-optimized/medlay-research/images/1440/viewing_00.jpg 1440w,
+      ../media/posts-optimized/medlay-research/images/1080/viewing_00.jpg 1080w,
+      ../media/posts-optimized/medlay-research/images/720/viewing_00.jpg 720w,
+      ../media/posts-optimized/medlay-research/images/360/viewing_00.jpg 360w
+      " sizes="
+      (min-width: 30em) 36em,
+      22em
+      " alt="
+      Spectators watching a cinema screen in a theatre.
+      " />
+  </a>
+</figure>
+
+</div>
+
+<div class="figures">
+  <figure class="image-m" id="reading_comics_00.jpg">
+  <a class="ratio" href="../media/posts-optimized/medlay-research/images/1440/reading_comics_00.jpg" style="padding-bottom: 133.33333333333334%;" target="_blank">
+    <img loading="lazy" src="
+      ../media/posts-optimized/medlay-research/images/720/reading_comics_00.jpg
+      " srcset="
+      ../media/posts-optimized/medlay-research/images/1440/reading_comics_00.jpg 1440w,
+      ../media/posts-optimized/medlay-research/images/1080/reading_comics_00.jpg 1080w,
+      ../media/posts-optimized/medlay-research/images/720/reading_comics_00.jpg 720w,
+      ../media/posts-optimized/medlay-research/images/360/reading_comics_00.jpg 360w
+      " sizes="
+      (min-width: 30em) 36em,
+      22em
+      " alt="
+      Children reading comics.
+      " />
+  </a><figcaption class="typo-s">
+    <p>Roger Sabin, <em>Comics, Comix &amp; Graphic Novels—A History Of Comic Art</em>.</p>
+  </figcaption>
+</figure>
+
+</div>
+
+<h3 id="hybrid-media-form">Hybrid media form</h3>
+
+<p>The <strong>consequences</strong> of the mid-1980s digital revolution<sup id="fnref:digital-revolution" role="doc-noteref"><a href="#fn:digital-revolution" class="footnote" rel="footnote">6</a></sup>, the emergence of the new digital media and their characteristics, and the new possibilities for producing dynamic images enabled by computers and the Web have been subsequently examined.</p>
+
+<div class="figures">
+  <figure class="image-m" id="sin_city_01.jpg">
+  <a class="ratio" href="../media/posts-optimized/medlay-research/images/1440/sin_city_01.jpg" style="padding-bottom: 51.25%;" target="_blank">
+    <img loading="lazy" src="
+      ../media/posts-optimized/medlay-research/images/720/sin_city_01.jpg
+      " srcset="
+      ../media/posts-optimized/medlay-research/images/1440/sin_city_01.jpg 1440w,
+      ../media/posts-optimized/medlay-research/images/1080/sin_city_01.jpg 1080w,
+      ../media/posts-optimized/medlay-research/images/720/sin_city_01.jpg 720w,
+      ../media/posts-optimized/medlay-research/images/360/sin_city_01.jpg 360w
+      " sizes="
+      (min-width: 30em) 36em,
+      22em
+      " alt="
+      A screenshot from the making of the movie Sin City.
+      " />
+  </a><figcaption class="typo-s">
+    <p>Robert Rodríguez &amp; Frank Miller, <em>Sin City</em> making of.</p>
+  </figcaption>
+</figure>
+
+</div>
+
+<div class="figures">
+  <figure class="image-m" id="sin_city_02.jpg">
+  <a class="ratio" href="../media/posts-optimized/medlay-research/images/1440/sin_city_02.jpg" style="padding-bottom: 51.25%;" target="_blank">
+    <img loading="lazy" src="
+      ../media/posts-optimized/medlay-research/images/720/sin_city_02.jpg
+      " srcset="
+      ../media/posts-optimized/medlay-research/images/1440/sin_city_02.jpg 1440w,
+      ../media/posts-optimized/medlay-research/images/1080/sin_city_02.jpg 1080w,
+      ../media/posts-optimized/medlay-research/images/720/sin_city_02.jpg 720w,
+      ../media/posts-optimized/medlay-research/images/360/sin_city_02.jpg 360w
+      " sizes="
+      (min-width: 30em) 36em,
+      22em
+      " alt="
+      A screenshot from the movie Sin City.
+      " />
+  </a><figcaption class="typo-s">
+    <p>Robert Rodríguez &amp; Frank Miller, <em>Sin City</em>.</p>
+  </figcaption>
+</figure>
+
+</div>
+
+<p>In the end, a new <strong>hybrid media form</strong> that integrated both cinema and comics was proposed and demonstrated: <em>Medlay</em>.</p>
+
+<p>This hybridization was made possible by the mid-1980s digital revolution and the ever-growing, eclectic and inclusive Web environment, which serves as a melting pot for various old media forms and has increasingly become a crucial distribution channel.</p>
+
+<hr />
+
+<p>If you have any suggestions or spot anything that needs fixing, please let me know. Your thoughts, critiques, and recommendations are more than welcome.</p>
+
+<p>Thank you!</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:thanks" role="doc-endnote">
+      <p>A huge thank-you to Massimo Magrì and Nicolò Scibilia for for giving me this opportunity and for their help throughout the process. <a href="#fnref:thanks" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:remediation" role="doc-endnote">
+      <p>Jay David Bolter &amp; Richard Grusin, <em>Remediation</em>. <a href="#fnref:remediation" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:transposition" role="doc-endnote">
+      <p>Referring to imagery, stories, characters, …. <a href="#fnref:transposition" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:source-1" role="doc-endnote">
+      <p>Will Eisner, <em>Comics &amp; Sequential Art</em>. <a href="#fnref:source-1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:source-2" role="doc-endnote">
+      <p>Scott McCloud, <em>Understanding Comics</em>. <a href="#fnref:source-2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:digital-revolution" role="doc-endnote">
+      <p>The main consequences of the mid-1980s digital revolution were the advent of the computer, the digitization of data from analog to digital, and the progressive computerization of culture.</p>
+
+      <p>See Lev Manovich, <em>The Language of New Media</em>. <a href="#fnref:digital-revolution" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+          </div>
+
+      <div class="column-2d-l separator"></div>
+
+        <div class="page-next column-2d-page-1">
+          <a href="/post/multilingual-sites-in-jekyll.html">Multilingual sites in Jekyll, Part 1</a>
+        </div>
+
+        <div class="page-prev column-2d-page-2">
+          <a href="/post/medlay-sequences.html">Sequences, <em>Medlay</em>, Part 3</a>
+        </div>
+
+        </article>
+      </div>
+
+    <div class="canvas-posts background">
+      <section class="posts layout-2d">
+
+        <header class="posts-head column-2d-l typo-sl">
+            <h2>Last posts</h2>
+        </header>
+
+        <div class="column-2d-l separator"></div>
+<div class="column-2d-l">
+          <ul class="post-previews layout-1d-ltr">
+            <li class="element-1d">
+              <a class="post-preview" href="/post/the-flow-of-time-in-the-language-of-comics.html">
+                <div class="post-preview-excerpt">How does the language of comics express the flow of time through static images?</div>
+                <div class="post-preview-title">The flow of time in the language of comics</div>
+                <div class="post-preview-tags">language of comics, sequential art, space, time</div>
+                <div class="post-preview-date">28 December 2023</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/the-flow-of-time-in-dio-s-world-part-7.html">
+                <div class="post-preview-excerpt">How did Hirohiko Araki design the flow of time in the chapter <em>Dio’s World Part 7</em> from the <em>manga</em> <em>JoJo’s Bizarre Adventure</em>?</div>
+                <div class="post-preview-title">The flow of time in <em>Dio’s World Part 7</em></div>
+                <div class="post-preview-tags">JoJo’s Bizarre Adventure, language of comics, manga, time</div>
+                <div class="post-preview-date">17 September 2021</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/multilingual-sites-in-jekyll-4.html">
+                <div class="post-preview-excerpt">We place a dedicated page named <code class="language-plaintext highlighter-rouge">sitemap.xml</code> in each language subdirectory of the site.</div>
+                <div class="post-preview-title">Multilingual sites in Jekyll, Part 4</div>
+                <div class="post-preview-tags">approach, development, Jekyll, multilingual, site</div>
+                <div class="post-preview-date">15 August 2021</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/multilingual-sites-in-jekyll-3.html">
+                <div class="post-preview-excerpt">We use the <code class="language-plaintext highlighter-rouge">language-switch.html</code> include to generate an unordered list of all languages supported on the site.</div>
+                <div class="post-preview-title">Multilingual sites in Jekyll, Part 3</div>
+                <div class="post-preview-tags">approach, development, Jekyll, multilingual, site</div>
+                <div class="post-preview-date">14 August 2021</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/multilingual-sites-in-jekyll-2.html">
+                <div class="post-preview-excerpt">We use <code class="language-plaintext highlighter-rouge">language</code> to retrieve pages or posts in the same language and <code class="language-plaintext highlighter-rouge">language_reference</code> to retrieve pages or posts with the same content translated into different languages.</div>
+                <div class="post-preview-title">Multilingual sites in Jekyll, Part 2</div>
+                <div class="post-preview-tags">approach, development, Jekyll, multilingual, site</div>
+                <div class="post-preview-date">13 August 2021</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/multilingual-sites-in-jekyll.html">
+                <div class="post-preview-excerpt">We organize the pages into directories named with ISO language codes, with one directory for each supported language.</div>
+                <div class="post-preview-title">Multilingual sites in Jekyll, Part 1</div>
+                <div class="post-preview-tags">approach, development, Jekyll, multilingual, site</div>
+                <div class="post-preview-date">12 August 2021</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview current" href="/post/medlay-research.html">
+                <div class="post-preview-excerpt">Is it possible to create a new hybrid media form that remediates the characteristics of cinema and comics that once seemed incompatible?</div>
+                <div class="post-preview-title">Remediating cinema and comics, <em>Medlay</em>, Part 4</div>
+                <div class="post-preview-tags">cinema, comics, media form, Medlay, space, time</div>
+                <div class="post-preview-date">01 February 2015</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/medlay-sequences.html">
+                <div class="post-preview-excerpt">Sequences are the narrative units of a <em>Medlay</em> artifact and consist of one or more series of pieces sequentially juxtaposed in space.</div>
+                <div class="post-preview-title">Sequences, <em>Medlay</em>, Part 3</div>
+                <div class="post-preview-tags">cinema, comics, media form, Medlay, space, time</div>
+                <div class="post-preview-date">01 February 2015</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <nav class="column-2d-l">
+          <ul class="pagination layout-1d-cnt">
+            <li class="pagination-item element-1d">
+              <span>Prev</span>
+            </li>
+
+            <li class="pagination-item element-1d current">
+              <a href="/posts/index.html">1</a>
+            </li>
+            <li class="pagination-item element-1d">
+              <a href="/posts/2/index.html">2</a>
+            </li>
+
+            <li class="pagination-item element-1d">
+              <a href="/posts/2/index.html">Next </a>
+            </li>
+          </ul>
+        </nav>
+
+      </section>
+    </div>
+
+<div class="canvas-about background">
+      <div class="about layout-2d">
+
+        <div class="column-2d-s-1-about typo-s serif">
+          <div class="separator"></div>
+          <p>I work as a <strong>Senior Product Designer</strong> at&nbsp;<a href="https://www.skippet.com/" target="_blank" title="Skippet’s Site">Skippet</a>, remotely.</p>
+        </div>
+
+        <div class="column-2d-s-2-about typo-s serif">
+          <div class="separator"></div>
+          <p>If you feel like having a&nbsp;chat, write to me at <span class="envelope"><noscript>turn on Javascript to see my e-mail address</noscript></span>.</p>
+        </div>
+
+        <div class="column-2d-s-3-about typo-s serif">
+          <div class="separator"></div>
+          <div class="links layout-1d-ltr">
+            <a id="linkedin" class="element-1d link" href="https://www.linkedin.com/in/andreaburan" target="_blank" title="LinkedIn">
+              <div class="link-icon">
+                <!-- style="background-color:#24292e;" -->
+                <div><span>LinkedIn</span></div>
+              </div>
+            </a>
+            <a id="wellfound" class="element-1d link" href="https://wellfound.com/u/ranbureand" target="_blank" title="Wellfound">
+              <div class="link-icon">
+                <div><span>Wellfound</span></div>
+              </div>
+            </a>
+            <a id="github" class=" link" href="https://github.com/ranbureand" target="_blank" title="GitHub">
+              <div class="link-icon">
+                <!-- style="background-color:#24292e;" -->
+                <div><span>GitHub</span></div>
+              </div>
+            </a>
+            <a id="vimeo" class="element-1d link" href="https://vimeo.com/andreaburan" target="_blank" title="Vimeo">
+              <div class="link-icon">
+                <!-- style="background-color:#1AB7EA;" -->
+                <div><span>Vimeo</span></div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="column-2d-s-4-about typo-s serif">
+          <div class="separator"></div>
+          <div class="button-m">
+            <a href="/media/documents/andrea_buran_resume_00.pdf" target="_blank" title="Andrea Buran’s Résumé">Download Résumé</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="canvas-footer background">
+      <footer class="footer layout-2d">
+        <div class="footer-copyright"><span class="hidden">Copyright</span> <span class="color-1">©</span> 2010 Andrea Buran</div>
+        <div class="footer-scroll"><a href="#outer-space"><span class="hidden">Three—Two—One—Zero—</span>Liftoff<span class="color-1">!</span></a></div>
+      </footer>
+    </div>
+
+    <script src="/scripts/js/main.min.js"></script>
+
+  </body>
+
+</html>

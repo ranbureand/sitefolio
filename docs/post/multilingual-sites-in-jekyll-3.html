@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--
+
+    Welcome, websurfer!
+
+    This site is:
+
+    + designed and developed in the browser
+    + written in Kramdown
+    + generated through Jekyll
+    + scripted in JavaScript
+    + styled from scratch in SCSS
+    + typesetted in IBM Plex Mono, Sans and Serif
+
+    with love and patience by Andrea Buran.
+
+    -->
+
+    <title>Multilingual sites in Jekyll, Part 3 · Andrea Buran’s site</title>
+    <meta name="description" content="This series of articles illustrates my approach to creating a multilingual site in Jekyll."/>
+
+    <!-- https://fonts.google.com/share?selection.family=IBM%20Plex%20Mono:ital,wght@0,400;0,500;1,400;1,500%7CIBM%20Plex%20Sans:ital,wght@0,400;0,500;1,400;1,500%7CIBM%20Plex%20Serif:ital,wght@0,400;0,500;1,400;1,500 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400;1,500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400;1,500&family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400;1,500&display=swap"/>
+    <!-- Import specific characters ↑ → ↓ ← ⬑ ⬏ ↔ in URL-encoded format -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans&family=IBM+Plex+Serif&text=%E2%86%91|%E2%86%92|%E2%86%93|%E2%86%90|%E2%AC%91|%E2%AC%8F|%E2%86%94" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="/styles/css/main.css?v=2024-08-13"/>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#fc5568">
+    <meta name="apple-mobile-web-app-title" content="Andrea Buran&rsquo;s Site">
+    <meta name="application-name" content="Andrea Buran&rsquo;s Site">
+    <meta name="msapplication-TileColor" content="#987cfb">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Open Graph protocol -->
+    <meta property="og:title" content="Multilingual sites in Jekyll, Part 3 · Andrea Buran’s site"/>
+    <meta property="og:description" content="We use the language-switch.html include to generate an unordered list of all languages supported on the site."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://www.andreaburan.com/post/multilingual-sites-in-jekyll-3.html"/>
+    <meta property="og:image" content="https://www.andreaburan.com/media/sundries/cover/cover_00.jpg?v=2024-08-13"/>
+    <meta property="og:image:type" content="image/jpeg"/>
+    <meta property="og:image:alt" content="We use the `language-switch.html` include to generate an unordered list of all languages supported on the site."/>
+    <meta property="og:image:width" content="640"/>
+    <meta property="og:image:height" content="640"/>
+
+    <link rel="canonical" href="https://www.andreaburan.com/post/multilingual-sites-in-jekyll-3.html"/>
+
+    <meta name="google-site-verification" content="HbQMAhgCEHek1NoKN16QyirigFf9FYd_vdDy4Vybt78" />
+  </head>
+
+
+  <body id="outer-space" class="light">
+
+    <div class="canvas-header foreground">
+      <div class="buffer-header">
+        <header class="header foreground layout-2d">
+          <h1 class="header-title"><a href="/">Andrea Buran<span class="hidden">’s Site</span> <sup class="color-1">5.0</sup></a></h1>
+          <ul class="header-navigation">
+            <li class="current">
+              <a href="/posts/index.html"><span class="hidden">All</span> Posts</a>
+            </li>
+            <li>
+              <a href="/projects/all.html"><span class="hidden">All</span> Proj<span class="hidden">ects</span></a>
+            </li>
+            <li>
+              <a href="#" id="mode-switch" onclick="toggleModeDisplay(event)"><span class="screen-reader-only">Color mode toggle</span></a>
+            </li>
+          </ul>
+        </header>
+      </div>
+    </div>
+
+      <div class="canvas-article foreground">
+        <article class="article layout-2d">
+
+          <header class="article-head column-2d-l typo-sl">
+            <h1>Multilingual sites in Jekyll, Part 3</h1>
+          </header>
+
+          <div class="column-2d-l separator"></div>
+          <div class="article-date column-2d-s-1 typo-l">
+            <p>14 August 2021</p>
+          </div>
+          <div class="article-exordium column-2d-m-2 typo-l">
+            <p>This series of articles (<a href="http://andreaburan.com/post/multilingual-sites-in-jekyll.html">Part 1</a>, <a href="http://andreaburan.com/post/multilingual-sites-in-jekyll-2.html">Part 2</a>, <a href="http://andreaburan.com/post/multilingual-sites-in-jekyll-3.html">Part 3</a>, <a href="http://andreaburan.com/post/multilingual-sites-in-jekyll-4.html">Part 4</a>) and this <a href="https://ranbureand.github.io/multilingual-experiment/">basic <em>GitHub Pages</em> site</a> illustrate my approach to creating a multilingual site in <em><a href="https://jekyllrb.com/" title="Jekyll">Jekyll</a></em>.</p>
+          </div>
+
+          <div class="article-body column-2d-m-2 typo-m">
+            <ul class="toc" id="markdown-toc">
+  <li><a href="#includes" id="markdown-toc-includes">Includes</a>    <ul>
+      <li><a href="#headerhtml" id="markdown-toc-headerhtml">header.html</a>        <ul>
+          <li><a href="#navigationhtml" id="markdown-toc-navigationhtml">navigation.html</a></li>
+          <li><a href="#language-switchhtml" id="markdown-toc-language-switchhtml">language-switch.html</a>            <ul>
+              <li><a href="#if-pagelayout--page" id="markdown-toc-if-pagelayout--page">if page.layout == ‘page’</a></li>
+              <li><a href="#elsif-pagelayout--post" id="markdown-toc-elsif-pagelayout--post">elsif page.layout == ‘post’</a></li>
+              <li><a href="#else" id="markdown-toc-else">else</a></li>
+              <li><a href="#fallback-page" id="markdown-toc-fallback-page">Fallback page</a></li>
+            </ul>
+          </li>
+          <li><a href="#titlehtml" id="markdown-toc-titlehtml">title.html</a></li>
+        </ul>
+      </li>
+      <li><a href="#localizationshtml" id="markdown-toc-localizationshtml">localizations.html</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="includes">Includes</h2>
+
+<p>The purpose of most of the includes in the basic site is building the navigation.</p>
+
+<h3 id="headerhtml">header.html</h3>
+
+<p>The include <code class="language-plaintext highlighter-rouge">header.html</code> generates the header in the page. It, in turn, “includes” three more includes:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">title.html</code></li>
+  <li><code class="language-plaintext highlighter-rouge">navigation.html</code></li>
+  <li><code class="language-plaintext highlighter-rouge">language-switch.html</code></li>
+</ul>
+
+<div class="language-liquid code-l highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;header&gt;
+  <span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>site-title.html<span class="w"> </span><span class="p">%}</span>
+  &lt;nav&gt;
+    <span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>navigation.html<span class="w"> </span><span class="p">%}</span>
+
+    <span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>language-switch.html<span class="w"> </span><span class="p">%}</span>
+  &lt;/nav&gt;
+&lt;/header&gt;
+</code></pre></div></div>
+
+<h4 id="navigationhtml">navigation.html</h4>
+
+<p>The include <code class="language-plaintext highlighter-rouge">navigation.html</code> generates an unordered list containing all the published pages with the same <code class="language-plaintext highlighter-rouge">language</code> variable as the current page.</p>
+
+<div class="language-liquid code-l highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;ul&gt;
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">navigation_pages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">pages</span><span class="err">
+</span><span class="w">    </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'layout'</span><span class="p">,</span><span class="w"> </span><span class="s1">'page'</span><span class="err">
+</span><span class="w">    </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'language'</span><span class="p">,</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">language</span><span class="err">
+</span><span class="w">    </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'published'</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="err">
+</span><span class="w">    </span><span class="p">|</span><span class="w"> </span><span class="nf">sort</span><span class="p">:</span><span class="w"> </span><span class="s1">'order'</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">navigation_page</span><span class="w"> </span><span class="nt">in</span><span class="w"> </span><span class="nv">navigation_pages</span><span class="w"> </span><span class="p">%}</span>
+  &lt;li<span class="p">{%-</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">navigation_page</span><span class="p">.</span><span class="nv">title</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">title</span><span class="w"> </span><span class="p">%}</span> class="current"<span class="p">{%-</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>&gt;
+    &lt;a href="<span class="p">{{</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">baseurl</span><span class="w"> </span><span class="p">}}{{</span><span class="w"> </span><span class="nv">navigation_page</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">}}</span>"&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">navigation_page</span><span class="p">.</span><span class="nv">title</span><span class="w"> </span><span class="p">}}</span>&lt;/a&gt;
+  &lt;/li&gt;
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+&lt;/ul&gt;
+</code></pre></div></div>
+
+<p>In the code above, we create a new variable named <code class="language-plaintext highlighter-rouge">navigation_pages</code> which returns a list of the pages that, <a href="/post/multilingual-sites-in-jekyll-2.html#front-matter">in their front matter</a>, have:</p>
+
+<ul>
+  <li>the <code class="language-plaintext highlighter-rouge">layout</code> variable set to <code class="language-plaintext highlighter-rouge">page</code></li>
+  <li>the <code class="language-plaintext highlighter-rouge">language</code> variable set to the language of the current page (<code class="language-plaintext highlighter-rouge">page.language</code>)</li>
+  <li>the <code class="language-plaintext highlighter-rouge">published</code> variable set to <code class="language-plaintext highlighter-rouge">true</code></li>
+</ul>
+
+<p>We order the list according to the <code class="language-plaintext highlighter-rouge">order</code> variable, then loop trough the array of pages and generate the list items of the unordered list.</p>
+
+<p>Whenever the title of the current page in the array (<code class="language-plaintext highlighter-rouge">navigation_page.title</code>) matches the title of the current page (<code class="language-plaintext highlighter-rouge">page.title</code>), we add a class named <code class="language-plaintext highlighter-rouge">current</code> to the corresponding <code class="language-plaintext highlighter-rouge">&lt;li/&gt;</code> tag.</p>
+
+<h4 id="language-switchhtml">language-switch.html</h4>
+
+<p>The include <code class="language-plaintext highlighter-rouge">language-switch.html</code> generates an unordered list containing all the languages supported on the site. You can use the list to switch to other language translations of the current page/post, if available.</p>
+
+<div class="language-liquid code-l highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;ul&gt;
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">language</span><span class="w"> </span><span class="nt">in</span><span class="w"> </span><span class="nv">snippets.languages</span><span class="w"> </span><span class="p">%}</span>
+
+    <span class="p">{%-</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">layout</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">'page'</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">navigation_pages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">pages</span><span class="err">
+</span><span class="w">        </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'language_reference'</span><span class="p">,</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">language_reference</span><span class="err">
+</span><span class="w">        </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'language'</span><span class="p">,</span><span class="w"> </span><span class="nv">language</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="nv">slug</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%-</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">navigation_pages</span><span class="p">.</span><span class="nf">size</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%-</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">navigation_page</span><span class="w"> </span><span class="nt">in</span><span class="w"> </span><span class="nv">navigation_pages</span><span class="w"> </span><span class="p">%}</span>
+          <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">baseurl</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">append</span><span class="p">:</span><span class="w"> </span><span class="nv">navigation_page</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%-</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%-</span><span class="w"> </span><span class="kr">else</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">navigation_pages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">pages</span><span class="err">
+</span><span class="w">          </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'language_reference'</span><span class="p">,</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">fallback_page</span><span class="err">
+</span><span class="w">          </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'language'</span><span class="p">,</span><span class="w"> </span><span class="nv">language</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="nv">slug</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%-</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">navigation_page</span><span class="w"> </span><span class="nt">in</span><span class="w"> </span><span class="nv">navigation_pages</span><span class="w"> </span><span class="p">%}</span>
+          <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">baseurl</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">append</span><span class="p">:</span><span class="w"> </span><span class="nv">navigation_page</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%-</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%-</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+
+    <span class="p">{%-</span><span class="w"> </span><span class="kr">elsif</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">layout</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">'post'</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">navigation_posts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">posts</span><span class="err">
+</span><span class="w">        </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'language_reference'</span><span class="p">,</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">language_reference</span><span class="err">
+</span><span class="w">        </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'language'</span><span class="p">,</span><span class="w"> </span><span class="nv">language</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="nv">slug</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%-</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">navigation_posts</span><span class="p">.</span><span class="nf">size</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%-</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">navigation_post</span><span class="w"> </span><span class="nt">in</span><span class="w"> </span><span class="nv">navigation_posts</span><span class="w"> </span><span class="p">%}</span>
+          <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">baseurl</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">append</span><span class="p">:</span><span class="w"> </span><span class="nv">navigation_post</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%-</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%-</span><span class="w"> </span><span class="kr">else</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">navigation_pages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">pages</span><span class="err">
+</span><span class="w">          </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'language_reference'</span><span class="p">,</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">fallback_page</span><span class="err">
+</span><span class="w">          </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'language'</span><span class="p">,</span><span class="w"> </span><span class="nv">language</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="nv">slug</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%-</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">navigation_page</span><span class="w"> </span><span class="nt">in</span><span class="w"> </span><span class="nv">navigation_pages</span><span class="w"> </span><span class="p">%}</span>
+          <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">baseurl</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">append</span><span class="p">:</span><span class="w"> </span><span class="nv">navigation_page</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%-</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%-</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+
+    <span class="p">{%-</span><span class="w"> </span><span class="kr">else</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">navigation_pages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">pages</span><span class="err">
+</span><span class="w">        </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'language_reference'</span><span class="p">,</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">fallback_page</span><span class="err">
+</span><span class="w">        </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'language'</span><span class="p">,</span><span class="w"> </span><span class="nv">language</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="nv">slug</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%-</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">navigation_page</span><span class="w"> </span><span class="nt">in</span><span class="w"> </span><span class="nv">navigation_pages</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">baseurl</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">append</span><span class="p">:</span><span class="w"> </span><span class="nv">navigation_page</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%-</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+
+    <span class="p">{%-</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+    &lt;li<span class="p">{%-</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">language</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="nv">slug</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">language</span><span class="w"> </span><span class="p">%}</span> class="current"<span class="p">{%-</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>&gt;
+      &lt;a href="<span class="p">{{</span><span class="w"> </span><span class="nv">url</span><span class="w"> </span><span class="p">}}</span>"&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">language</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="nv">value</span><span class="w"> </span><span class="p">}}</span>&lt;/a&gt;
+    &lt;/li&gt;
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+&lt;/ul&gt;
+</code></pre></div></div>
+
+<p>In the code above, we loop through the languages defined in the <code class="language-plaintext highlighter-rouge">snippets.yml</code> file (read the section <a href="/post/multilingual-sites-in-jekyll-2.html#snippets">Snippets</a> for more details).</p>
+
+<div class="language-yaml code-m highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">languages</span><span class="pi">:</span>
+  <span class="na">en</span><span class="pi">:</span>
+    <span class="na">value</span><span class="pi">:</span> <span class="s">English</span>
+    <span class="na">slug</span><span class="pi">:</span> <span class="s">en</span>
+  <span class="na">it</span><span class="pi">:</span>
+    <span class="na">value</span><span class="pi">:</span> <span class="s">Italian</span>
+    <span class="na">slug</span><span class="pi">:</span> <span class="s">it</span>
+</code></pre></div></div>
+
+<p>The <em>for</em> loop contains three different code blocks that run only if specific conditions are met. If we look only at its high-level structure:</p>
+
+<div class="language-liquid code-l highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;ul&gt;
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">language</span><span class="w"> </span><span class="nt">in</span><span class="w"> </span><span class="nv">snippets.languages</span><span class="w"> </span><span class="p">%}</span>
+
+    <span class="p">{%-</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">layout</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">'page'</span><span class="w"> </span><span class="p">%}</span>
+      &lt;!-- first code block --&gt;
+
+    <span class="p">{%-</span><span class="w"> </span><span class="kr">elsif</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">layout</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">'post'</span><span class="w"> </span><span class="p">%}</span>
+      &lt;!-- second code block --&gt;
+
+    <span class="p">{%-</span><span class="w"> </span><span class="kr">else</span><span class="w"> </span><span class="p">%}</span>
+      &lt;!-- third code block --&gt;
+
+    <span class="p">{%-</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+    &lt;li <span class="p">{%-</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">language</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="nv">slug</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">language</span><span class="w"> </span><span class="p">%}</span> class="current"<span class="p">{%-</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>&gt;
+      &lt;a href="<span class="p">{{</span><span class="w"> </span><span class="nv">url</span><span class="w"> </span><span class="p">}}</span>"&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">language</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="nv">value</span><span class="w"> </span><span class="p">}}</span>&lt;/a&gt;
+    &lt;/li&gt;
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+&lt;/ul&gt;
+</code></pre></div></div>
+
+<p>We run the first block of code only if the <code class="language-plaintext highlighter-rouge">layout</code> variable of the current page is set to <code class="language-plaintext highlighter-rouge">page</code>, else, if it is set to <code class="language-plaintext highlighter-rouge">post</code>, we run the second block of code, else, if it is set to anything else (or nothing at all), we run the third block of code.</p>
+
+<p>After at least one of the code blocks has been run, we generate the list items of the unordered list.</p>
+
+<p>Whenever the slug of the current language item of the array <code class="language-plaintext highlighter-rouge">snippets.languages</code> (<code class="language-plaintext highlighter-rouge">language[1].slug</code>) matches the language of the current page (<code class="language-plaintext highlighter-rouge">page.language</code>), we add a class named <code class="language-plaintext highlighter-rouge">current</code> to the corresponding <code class="language-plaintext highlighter-rouge">&lt;li/&gt;</code> tag.</p>
+
+<h5 id="if-pagelayout--page">if page.layout == ‘page’</h5>
+
+<div class="language-liquid code-l highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%-</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">layout</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">'page'</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">navigation_pages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">pages</span><span class="err">
+</span><span class="w">    </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'language_reference'</span><span class="p">,</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">language_reference</span><span class="err">
+</span><span class="w">    </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'language'</span><span class="p">,</span><span class="w"> </span><span class="nv">language</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="nv">slug</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%-</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">navigation_pages</span><span class="p">.</span><span class="nf">size</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">%}</span>
+    <span class="p">{%-</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">navigation_page</span><span class="w"> </span><span class="nt">in</span><span class="w"> </span><span class="nv">navigation_pages</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">baseurl</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">append</span><span class="p">:</span><span class="w"> </span><span class="nv">navigation_page</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">%}</span>
+    <span class="p">{%-</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%-</span><span class="w"> </span><span class="kr">else</span><span class="w"> </span><span class="p">%}</span>
+    <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">navigation_pages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">pages</span><span class="err">
+</span><span class="w">      </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'language_reference'</span><span class="p">,</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">fallback_page</span><span class="err">
+</span><span class="w">      </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'language'</span><span class="p">,</span><span class="w"> </span><span class="nv">language</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="nv">slug</span><span class="w"> </span><span class="p">%}</span>
+    <span class="p">{%-</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">navigation_page</span><span class="w"> </span><span class="nt">in</span><span class="w"> </span><span class="nv">navigation_pages</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">baseurl</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">append</span><span class="p">:</span><span class="w"> </span><span class="nv">navigation_page</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">%}</span>
+    <span class="p">{%-</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%-</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+</code></pre></div></div>
+
+<p>What does the first block of code do?</p>
+
+<div class="language-liquid code-l highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">navigation_pages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">pages</span><span class="err">
+</span><span class="w">  </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'language_reference'</span><span class="p">,</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">language_reference</span><span class="err">
+</span><span class="w">  </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'language'</span><span class="p">,</span><span class="w"> </span><span class="nv">language</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="nv">slug</span><span class="w"> </span><span class="p">%}</span>
+</code></pre></div></div>
+
+<p>We create a new variable named <code class="language-plaintext highlighter-rouge">navigation_pages</code> which returns a list of the pages that, <a href="/post/multilingual-sites-in-jekyll-2.html#front-matter">in their front matter</a>, have:</p>
+
+<ul>
+  <li>the <code class="language-plaintext highlighter-rouge">language_reference</code> variable equal to the current page’s <code class="language-plaintext highlighter-rouge">language_reference</code> variable (<code class="language-plaintext highlighter-rouge">page.language_reference</code>)</li>
+  <li>the <code class="language-plaintext highlighter-rouge">language</code> variable equal to the slug of the current language item (<code class="language-plaintext highlighter-rouge">language[1].slug</code>) in the array <code class="language-plaintext highlighter-rouge">snippets.languages</code></li>
+</ul>
+
+<p>If we set the front matter of the pages correctly, the size of the array <code class="language-plaintext highlighter-rouge">navigation_pages</code> should be:</p>
+
+<ul>
+  <li>either equal to one if the current page <strong>has</strong> a corresponding page translated into the current language item of the array <code class="language-plaintext highlighter-rouge">snippets.languages</code></li>
+  <li>or equal to zero if the current page <strong>does not have</strong> a corresponding page translated into the current language item of the array <code class="language-plaintext highlighter-rouge">snippets.languages</code></li>
+</ul>
+
+<div class="language-liquid code-l highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%-</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">navigation_pages</span><span class="p">.</span><span class="nf">size</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">navigation_page</span><span class="w"> </span><span class="nt">in</span><span class="w"> </span><span class="nv">navigation_pages</span><span class="w"> </span><span class="p">%}</span>
+    <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">baseurl</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">append</span><span class="p">:</span><span class="w"> </span><span class="nv">navigation_page</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+</code></pre></div></div>
+
+<p>If the size of the array <code class="language-plaintext highlighter-rouge">navigation_pages</code> is equal to one, we loop through the array <code class="language-plaintext highlighter-rouge">navigation_pages</code> and create a new variable named <code class="language-plaintext highlighter-rouge">url</code> by combining the <code class="language-plaintext highlighter-rouge">site.baseurl</code> (defined in the <code class="language-plaintext highlighter-rouge">_config.yml</code> file) and the URL of the single page (<code class="language-plaintext highlighter-rouge">navigation_page.url</code>) contained in the array <code class="language-plaintext highlighter-rouge">navigation_pages</code>.</p>
+
+<div class="language-liquid code-l highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%-</span><span class="w"> </span><span class="kr">else</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">navigation_pages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">pages</span><span class="err">
+</span><span class="w">    </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'language_reference'</span><span class="p">,</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">fallback_page</span><span class="err">
+</span><span class="w">    </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'language'</span><span class="p">,</span><span class="w"> </span><span class="nv">language</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="nv">slug</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">navigation_page</span><span class="w"> </span><span class="nt">in</span><span class="w"> </span><span class="nv">navigation_pages</span><span class="w"> </span><span class="p">%}</span>
+    <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">baseurl</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">append</span><span class="p">:</span><span class="w"> </span><span class="nv">navigation_page</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%-</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+</code></pre></div></div>
+
+<p>If instead, the size of the array <code class="language-plaintext highlighter-rouge">navigation_pages</code> is equal to zero (or more than one, which is trouble), we do not have a corresponding page in the current language item of the array <code class="language-plaintext highlighter-rouge">snippets.languages</code> to switch to.</p>
+
+<p>Thus, we provide a fallback page (<code class="language-plaintext highlighter-rouge">site.fallback_page</code>) so that the web surfers who interact with the language switch and select a language that does not support the current page are at least redirected to a meaningful page in the language they selected.</p>
+
+<p>We set the <code class="language-plaintext highlighter-rouge">fallback_page</code> in the <code class="language-plaintext highlighter-rouge">_config.yml</code> file located in the site’s root directory:</p>
+
+<div class="language-yaml code-m highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">fallback_page</span><span class="pi">:</span> <span class="s1">'</span><span class="s">stories'</span>
+</code></pre></div></div>
+
+<p>The fallback pages of the basic site are those whose <code class="language-plaintext highlighter-rouge">language_reference</code> variable is set to <code class="language-plaintext highlighter-rouge">stories</code>.</p>
+
+<p>Why <code class="language-plaintext highlighter-rouge">stories</code>? Because—in the context of the basic site—the pages whose <code class="language-plaintext highlighter-rouge">language_reference</code> variable is set to <code class="language-plaintext highlighter-rouge">stories</code> function as <em>home</em> pages, since they:</p>
+
+<ul>
+  <li>return a list of all the published posts (they have the same structure as the <code class="language-plaintext highlighter-rouge">index.html</code> page)</li>
+  <li>have a translated counterpart in all the languages supported on the site</li>
+</ul>
+
+<h5 id="elsif-pagelayout--post">elsif page.layout == ‘post’</h5>
+
+<div class="language-liquid code-l highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%-</span><span class="w"> </span><span class="kr">elsif</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">layout</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">'post'</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">navigation_posts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">posts</span><span class="err">
+</span><span class="w">    </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'language_reference'</span><span class="p">,</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">language_reference</span><span class="err">
+</span><span class="w">    </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'language'</span><span class="p">,</span><span class="w"> </span><span class="nv">language</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="nv">slug</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%-</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">navigation_posts</span><span class="p">.</span><span class="nf">size</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">%}</span>
+    <span class="p">{%-</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">navigation_post</span><span class="w"> </span><span class="nt">in</span><span class="w"> </span><span class="nv">navigation_posts</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">baseurl</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">append</span><span class="p">:</span><span class="w"> </span><span class="nv">navigation_post</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">%}</span>
+    <span class="p">{%-</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%-</span><span class="w"> </span><span class="kr">else</span><span class="w"> </span><span class="p">%}</span>
+    <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">navigation_pages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">pages</span><span class="err">
+</span><span class="w">      </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'language_reference'</span><span class="p">,</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">fallback_page</span><span class="err">
+</span><span class="w">      </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'language'</span><span class="p">,</span><span class="w"> </span><span class="nv">language</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="nv">slug</span><span class="w"> </span><span class="p">%}</span>
+    <span class="p">{%-</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">navigation_page</span><span class="w"> </span><span class="nt">in</span><span class="w"> </span><span class="nv">navigation_pages</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">baseurl</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">append</span><span class="p">:</span><span class="w"> </span><span class="nv">navigation_page</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">%}</span>
+    <span class="p">{%-</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%-</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+</code></pre></div></div>
+
+<p>The second block of code behaves similarly to the first, with the only difference being that we manipulate an array of posts (<code class="language-plaintext highlighter-rouge">navigation_posts</code>) rather than one of pages (<code class="language-plaintext highlighter-rouge">navigation_pages</code>).</p>
+
+<h5 id="else">else</h5>
+
+<div class="language-liquid code-l highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%-</span><span class="w"> </span><span class="kr">else</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">navigation_pages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">pages</span><span class="err">
+</span><span class="w">    </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'language_reference'</span><span class="p">,</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">fallback_page</span><span class="err">
+</span><span class="w">    </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'language'</span><span class="p">,</span><span class="w"> </span><span class="nv">language</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="nv">slug</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">navigation_page</span><span class="w"> </span><span class="nt">in</span><span class="w"> </span><span class="nv">navigation_pages</span><span class="w"> </span><span class="p">%}</span>
+    <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">baseurl</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">append</span><span class="p">:</span><span class="w"> </span><span class="nv">navigation_page</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+</code></pre></div></div>
+
+<p>The third block of code runs in the remote eventuality in which both the first and second blocks of code do not run. so that we make sure, again, to serve a fallback page to our web surfers.</p>
+
+<h5 id="fallback-page">Fallback page</h5>
+
+<p>How can we be sure that the fallback page truly works?</p>
+
+<p>In this basic site, not all the pages and posts are translated into all the supported languages—on purpose.</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>English Pages</th>
+      <th>Italian Pages</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>preface.html</td>
+      <td>prefazione.html</td>
+    </tr>
+    <tr>
+      <td>stories.html</td>
+      <td>storie.html</td>
+    </tr>
+    <tr>
+      <td>postface.html</td>
+      <td>—</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>If you go to <a href="https://ranbureand.github.io/multilingual-experiment/en/postface.html">the English page <em>Postface</em></a> and press on <em>Italian</em> in the language switch, you are indeed redirected to the Italian page <em>Storie</em>.</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>English Posts</th>
+      <th>Italian Posts</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>hello-world.markdown</td>
+      <td>ciao-mondo.markdown</td>
+    </tr>
+    <tr>
+      <td>hello-mars.markdown</td>
+      <td>ciao-marte.markdown</td>
+    </tr>
+    <tr>
+      <td>—</td>
+      <td>ciao-giove.markdown</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Similarly, if you go to <a href="https://ranbureand.github.io/multilingual-experiment/it/storia/ciao-giove">the Italian post <em>Ciao Giove</em></a> and press on <em>English</em> in the language switch, you are indeed redirected to the English page <em>Stories</em>.</p>
+
+<h4 id="titlehtml">title.html</h4>
+
+<p>The include <code class="language-plaintext highlighter-rouge">title.html</code> generates the title of this basic site.</p>
+
+<div class="language-liquid code-l highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%-</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">language</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">default_language</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">baseurl</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">append</span><span class="p">:</span><span class="w"> </span><span class="s1">'/'</span><span class="p">%}</span>
+<span class="p">{%-</span><span class="w"> </span><span class="kr">else</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">navigation_pages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">pages</span><span class="err">
+</span><span class="w">    </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'language_reference'</span><span class="p">,</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">fallback_page</span><span class="err">
+</span><span class="w">    </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'language'</span><span class="p">,</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">language</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">navigation_page</span><span class="w"> </span><span class="nt">in</span><span class="w"> </span><span class="nv">navigation_pages</span><span class="w"> </span><span class="p">%}</span>
+    <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">baseurl</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">append</span><span class="p">:</span><span class="w"> </span><span class="nv">navigation_page</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%-</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+&lt;h1&gt;
+  &lt;a href="<span class="p">{{</span><span class="w"> </span><span class="nv">url</span><span class="w"> </span><span class="p">}}</span>" <span class="p">{%-</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">'/'</span><span class="w"> </span><span class="p">%}</span> class="current"<span class="p">{%-</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">title</span><span class="w"> </span><span class="p">}}</span>&lt;/a&gt;
+&lt;/h1&gt;
+</code></pre></div></div>
+
+<p>Again, we have two different code blocks that run only if specific conditions are met.</p>
+
+<p>We run the first code block when the language of the current page (<code class="language-plaintext highlighter-rouge">page.language</code>) is equal to the default language (<code class="language-plaintext highlighter-rouge">site.default_language</code>) defined in the <code class="language-plaintext highlighter-rouge">_config.yml</code> file. Through it, we create a new variable named <code class="language-plaintext highlighter-rouge">url</code> by combining the <code class="language-plaintext highlighter-rouge">site.baseurl</code> (defined in the <code class="language-plaintext highlighter-rouge">_config.yml</code> file) and <code class="language-plaintext highlighter-rouge">/</code>, which is the domain name of the site. Web surfers who browse the site in the default language are directed to the main page when they press on the title.</p>
+
+<p>Else, we run the second code block to provide the usual fallback page already discussed above (read the section <a href="#language-switchhtml">language-switch.html</a> for more details). Web surfers who browse the site in a language different from the default one are directed to the fallback page in their current language when they press on the title.</p>
+
+<h3 id="localizationshtml">localizations.html</h3>
+
+<p>The include <code class="language-plaintext highlighter-rouge">localizations.html</code> adds <code class="language-plaintext highlighter-rouge">&lt;link rel="alternate" … /&gt;</code> tags in the <code class="language-plaintext highlighter-rouge">&lt;head/&gt;</code> tag of a page <a href="https://developers.google.com/search/docs/advanced/crawling/localized-versions" title="Tell Google about localized versions of your page">to tell search engines</a> if there are multiple versions of the page for different languages or regions.</p>
+
+<div class="language-liquid code-xl highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%-</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">layout</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">'page'</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">localized_pages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">pages</span><span class="err">
+</span><span class="w">    </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'language_reference'</span><span class="p">,</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">language_reference</span><span class="err">
+</span><span class="w">    </span><span class="p">|</span><span class="w"> </span><span class="nf">sort</span><span class="p">:</span><span class="w"> </span><span class="s1">'language'</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">localized_page</span><span class="w"> </span><span class="nt">in</span><span class="w"> </span><span class="nv">localized_pages</span><span class="w"> </span><span class="p">%}</span>
+    &lt;link rel="alternate" hreflang="<span class="p">{{</span><span class="w"> </span><span class="nv">localized_page</span><span class="p">.</span><span class="nv">language</span><span class="w"> </span><span class="p">}}</span>" href="<span class="p">{{</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">baseurl</span><span class="w"> </span><span class="p">}}{{</span><span class="w"> </span><span class="nv">localized_page</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">}}</span>" /&gt;
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+
+<span class="p">{%-</span><span class="w"> </span><span class="kr">elsif</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">layout</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">'post'</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">localized_posts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">posts</span><span class="err">
+</span><span class="w">  </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'language_reference'</span><span class="p">,</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">language_reference</span><span class="err">
+</span><span class="w">  </span><span class="p">|</span><span class="w"> </span><span class="nf">sort</span><span class="p">:</span><span class="w"> </span><span class="s1">'language'</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">localized_post</span><span class="w"> </span><span class="nt">in</span><span class="w"> </span><span class="nv">localized_posts</span><span class="w"> </span><span class="p">%}</span>
+    &lt;link rel="alternate" hreflang="<span class="p">{{</span><span class="w"> </span><span class="nv">localized_post</span><span class="p">.</span><span class="nv">language</span><span class="w"> </span><span class="p">}}</span>" href="<span class="p">{{</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">baseurl</span><span class="w"> </span><span class="p">}}{{</span><span class="w"> </span><span class="nv">localized_post</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">}}</span>" /&gt;
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+
+<span class="p">{%-</span><span class="w"> </span><span class="kr">elsif</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">layout</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">'index'</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">localized_pages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">pages</span><span class="err">
+</span><span class="w">    </span><span class="p">|</span><span class="w"> </span><span class="nf">where</span><span class="p">:</span><span class="w"> </span><span class="s1">'language_reference'</span><span class="p">,</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">fallback_page</span><span class="err">
+</span><span class="w">    </span><span class="p">|</span><span class="w"> </span><span class="nf">sort</span><span class="p">:</span><span class="w"> </span><span class="s1">'language'</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">localized_page</span><span class="w"> </span><span class="nt">in</span><span class="w"> </span><span class="nv">localized_pages</span><span class="w"> </span><span class="p">%}</span>
+    &lt;link rel="alternate" hreflang="<span class="p">{{</span><span class="w"> </span><span class="nv">localized_page</span><span class="p">.</span><span class="nv">language</span><span class="w"> </span><span class="p">}}</span>" href="<span class="p">{{</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">baseurl</span><span class="w"> </span><span class="p">}}{{</span><span class="w"> </span><span class="nv">localized_page</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">}}</span>" /&gt;
+  <span class="p">{%-</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%-</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+</code></pre></div></div>
+
+<p>Again, we have three different code blocks that run only if specific conditions are met (read the section <a href="#language-switchhtml">language-switch.html</a> for more details).</p>
+          </div>
+
+      <div class="column-2d-l separator"></div>
+
+        <div class="page-next column-2d-page-1">
+          <a href="/post/multilingual-sites-in-jekyll-4.html">Multilingual sites in Jekyll, Part 4</a>
+        </div>
+
+        <div class="page-prev column-2d-page-2">
+          <a href="/post/multilingual-sites-in-jekyll-2.html">Multilingual sites in Jekyll, Part 2</a>
+        </div>
+
+        </article>
+      </div>
+
+    <div class="canvas-posts background">
+      <section class="posts layout-2d">
+
+        <header class="posts-head column-2d-l typo-sl">
+            <h2>Last posts</h2>
+        </header>
+
+        <div class="column-2d-l separator"></div>
+<div class="column-2d-l">
+          <ul class="post-previews layout-1d-ltr">
+            <li class="element-1d">
+              <a class="post-preview" href="/post/the-flow-of-time-in-the-language-of-comics.html">
+                <div class="post-preview-excerpt">How does the language of comics express the flow of time through static images?</div>
+                <div class="post-preview-title">The flow of time in the language of comics</div>
+                <div class="post-preview-tags">language of comics, sequential art, space, time</div>
+                <div class="post-preview-date">28 December 2023</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/the-flow-of-time-in-dio-s-world-part-7.html">
+                <div class="post-preview-excerpt">How did Hirohiko Araki design the flow of time in the chapter <em>Dio’s World Part 7</em> from the <em>manga</em> <em>JoJo’s Bizarre Adventure</em>?</div>
+                <div class="post-preview-title">The flow of time in <em>Dio’s World Part 7</em></div>
+                <div class="post-preview-tags">JoJo’s Bizarre Adventure, language of comics, manga, time</div>
+                <div class="post-preview-date">17 September 2021</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/multilingual-sites-in-jekyll-4.html">
+                <div class="post-preview-excerpt">We place a dedicated page named <code class="language-plaintext highlighter-rouge">sitemap.xml</code> in each language subdirectory of the site.</div>
+                <div class="post-preview-title">Multilingual sites in Jekyll, Part 4</div>
+                <div class="post-preview-tags">approach, development, Jekyll, multilingual, site</div>
+                <div class="post-preview-date">15 August 2021</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview current" href="/post/multilingual-sites-in-jekyll-3.html">
+                <div class="post-preview-excerpt">We use the <code class="language-plaintext highlighter-rouge">language-switch.html</code> include to generate an unordered list of all languages supported on the site.</div>
+                <div class="post-preview-title">Multilingual sites in Jekyll, Part 3</div>
+                <div class="post-preview-tags">approach, development, Jekyll, multilingual, site</div>
+                <div class="post-preview-date">14 August 2021</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/multilingual-sites-in-jekyll-2.html">
+                <div class="post-preview-excerpt">We use <code class="language-plaintext highlighter-rouge">language</code> to retrieve pages or posts in the same language and <code class="language-plaintext highlighter-rouge">language_reference</code> to retrieve pages or posts with the same content translated into different languages.</div>
+                <div class="post-preview-title">Multilingual sites in Jekyll, Part 2</div>
+                <div class="post-preview-tags">approach, development, Jekyll, multilingual, site</div>
+                <div class="post-preview-date">13 August 2021</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/multilingual-sites-in-jekyll.html">
+                <div class="post-preview-excerpt">We organize the pages into directories named with ISO language codes, with one directory for each supported language.</div>
+                <div class="post-preview-title">Multilingual sites in Jekyll, Part 1</div>
+                <div class="post-preview-tags">approach, development, Jekyll, multilingual, site</div>
+                <div class="post-preview-date">12 August 2021</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/medlay-research.html">
+                <div class="post-preview-excerpt">Is it possible to create a new hybrid media form that remediates the characteristics of cinema and comics that once seemed incompatible?</div>
+                <div class="post-preview-title">Remediating cinema and comics, <em>Medlay</em>, Part 4</div>
+                <div class="post-preview-tags">cinema, comics, media form, Medlay, space, time</div>
+                <div class="post-preview-date">01 February 2015</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/medlay-sequences.html">
+                <div class="post-preview-excerpt">Sequences are the narrative units of a <em>Medlay</em> artifact and consist of one or more series of pieces sequentially juxtaposed in space.</div>
+                <div class="post-preview-title">Sequences, <em>Medlay</em>, Part 3</div>
+                <div class="post-preview-tags">cinema, comics, media form, Medlay, space, time</div>
+                <div class="post-preview-date">01 February 2015</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <nav class="column-2d-l">
+          <ul class="pagination layout-1d-cnt">
+            <li class="pagination-item element-1d">
+              <span>Prev</span>
+            </li>
+
+            <li class="pagination-item element-1d current">
+              <a href="/posts/index.html">1</a>
+            </li>
+            <li class="pagination-item element-1d">
+              <a href="/posts/2/index.html">2</a>
+            </li>
+
+            <li class="pagination-item element-1d">
+              <a href="/posts/2/index.html">Next </a>
+            </li>
+          </ul>
+        </nav>
+
+      </section>
+    </div>
+
+<div class="canvas-about background">
+      <div class="about layout-2d">
+
+        <div class="column-2d-s-1-about typo-s serif">
+          <div class="separator"></div>
+          <p>I work as a <strong>Senior Product Designer</strong> at&nbsp;<a href="https://www.skippet.com/" target="_blank" title="Skippet’s Site">Skippet</a>, remotely.</p>
+        </div>
+
+        <div class="column-2d-s-2-about typo-s serif">
+          <div class="separator"></div>
+          <p>If you feel like having a&nbsp;chat, write to me at <span class="envelope"><noscript>turn on Javascript to see my e-mail address</noscript></span>.</p>
+        </div>
+
+        <div class="column-2d-s-3-about typo-s serif">
+          <div class="separator"></div>
+          <div class="links layout-1d-ltr">
+            <a id="linkedin" class="element-1d link" href="https://www.linkedin.com/in/andreaburan" target="_blank" title="LinkedIn">
+              <div class="link-icon">
+                <!-- style="background-color:#24292e;" -->
+                <div><span>LinkedIn</span></div>
+              </div>
+            </a>
+            <a id="wellfound" class="element-1d link" href="https://wellfound.com/u/ranbureand" target="_blank" title="Wellfound">
+              <div class="link-icon">
+                <div><span>Wellfound</span></div>
+              </div>
+            </a>
+            <a id="github" class=" link" href="https://github.com/ranbureand" target="_blank" title="GitHub">
+              <div class="link-icon">
+                <!-- style="background-color:#24292e;" -->
+                <div><span>GitHub</span></div>
+              </div>
+            </a>
+            <a id="vimeo" class="element-1d link" href="https://vimeo.com/andreaburan" target="_blank" title="Vimeo">
+              <div class="link-icon">
+                <!-- style="background-color:#1AB7EA;" -->
+                <div><span>Vimeo</span></div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="column-2d-s-4-about typo-s serif">
+          <div class="separator"></div>
+          <div class="button-m">
+            <a href="/media/documents/andrea_buran_resume_00.pdf" target="_blank" title="Andrea Buran’s Résumé">Download Résumé</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="canvas-footer background">
+      <footer class="footer layout-2d">
+        <div class="footer-copyright"><span class="hidden">Copyright</span> <span class="color-1">©</span> 2010 Andrea Buran</div>
+        <div class="footer-scroll"><a href="#outer-space"><span class="hidden">Three—Two—One—Zero—</span>Liftoff<span class="color-1">!</span></a></div>
+      </footer>
+    </div>
+
+    <script src="/scripts/js/main.min.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--
+
+    Welcome, websurfer!
+
+    This site is:
+
+    + designed and developed in the browser
+    + written in Kramdown
+    + generated through Jekyll
+    + scripted in JavaScript
+    + styled from scratch in SCSS
+    + typesetted in IBM Plex Mono, Sans and Serif
+
+    with love and patience by Andrea Buran.
+
+    -->
+
+    <title>The flow of time in the language of comics · Andrea Buran’s site</title>
+    <meta name="description" content="How does the language of comics express the flow of time through static images?"/>
+
+    <!-- https://fonts.google.com/share?selection.family=IBM%20Plex%20Mono:ital,wght@0,400;0,500;1,400;1,500%7CIBM%20Plex%20Sans:ital,wght@0,400;0,500;1,400;1,500%7CIBM%20Plex%20Serif:ital,wght@0,400;0,500;1,400;1,500 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400;1,500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400;1,500&family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400;1,500&display=swap"/>
+    <!-- Import specific characters ↑ → ↓ ← ⬑ ⬏ ↔ in URL-encoded format -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans&family=IBM+Plex+Serif&text=%E2%86%91|%E2%86%92|%E2%86%93|%E2%86%90|%E2%AC%91|%E2%AC%8F|%E2%86%94" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="/styles/css/main.css?v=2024-08-13"/>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#fc5568">
+    <meta name="apple-mobile-web-app-title" content="Andrea Buran&rsquo;s Site">
+    <meta name="application-name" content="Andrea Buran&rsquo;s Site">
+    <meta name="msapplication-TileColor" content="#987cfb">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Open Graph protocol -->
+    <meta property="og:title" content="The flow of time in the language of comics · Andrea Buran’s site"/>
+    <meta property="og:description" content="How does the language of comics express the flow of time through static images?"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://www.andreaburan.com/post/the-flow-of-time-in-the-language-of-comics.html"/>
+    <meta property="og:image" content="https://www.andreaburan.com/media/sundries/cover/cover_00.jpg?v=2024-08-13"/>
+    <meta property="og:image:type" content="image/jpeg"/>
+    <meta property="og:image:alt" content="How does the language of comics express the flow of time through static images?"/>
+    <meta property="og:image:width" content="640"/>
+    <meta property="og:image:height" content="640"/>
+
+    <link rel="canonical" href="https://www.andreaburan.com/post/the-flow-of-time-in-the-language-of-comics.html"/>
+
+    <meta name="google-site-verification" content="HbQMAhgCEHek1NoKN16QyirigFf9FYd_vdDy4Vybt78" />
+  </head>
+
+
+  <body id="outer-space" class="light">
+
+    <div class="canvas-header foreground">
+      <div class="buffer-header">
+        <header class="header foreground layout-2d">
+          <h1 class="header-title"><a href="/">Andrea Buran<span class="hidden">’s Site</span> <sup class="color-1">5.0</sup></a></h1>
+          <ul class="header-navigation">
+            <li class="current">
+              <a href="/posts/index.html"><span class="hidden">All</span> Posts</a>
+            </li>
+            <li>
+              <a href="/projects/all.html"><span class="hidden">All</span> Proj<span class="hidden">ects</span></a>
+            </li>
+            <li>
+              <a href="#" id="mode-switch" onclick="toggleModeDisplay(event)"><span class="screen-reader-only">Color mode toggle</span></a>
+            </li>
+          </ul>
+        </header>
+      </div>
+    </div>
+
+      <div class="canvas-article foreground">
+        <article class="article layout-2d">
+
+          <header class="article-head column-2d-l typo-sl">
+            <h1>The flow of time in the language of comics</h1>
+          </header>
+
+          <div class="column-2d-l separator"></div>
+          <div class="article-date column-2d-s-1 typo-l">
+            <p>28 December 2023</p>
+          </div>
+          <div class="article-exordium column-2d-m-2 typo-l">
+            <p>How does the language of comics express the flow of time through static images?</p>
+          </div>
+
+          <div class="article-body column-2d-m-2 typo-m">
+            <ul class="toc">
+  <li><a href="#introduction">Introduction</a></li>
+  <li><a href="#space--time">Space = time</a>
+    <ul>
+      <li><a href="#sequence-of-pages">Sequence of pages</a></li>
+      <li><a href="#sequence-of-panels">Sequence of panels</a></li>
+      <li><a href="#sequence-of-elements">Sequence of elements</a></li>
+    </ul>
+  </li>
+  <li><a href="#time--reading">Time ↔ reading</a>
+    <ul>
+      <li><a href="#visual-complexity">Visual complexity</a></li>
+      <li><a href="#speech-ballons">Speech ballons</a></li>
+    </ul>
+  </li>
+  <li><a href="#recapitulation">Recapitulation</a></li>
+</ul>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>I have always been fascinated by how the language of comics expresses the flow of time indirectly—through static images.</p>
+
+<p>How?</p>
+
+<p>As a rule of thumb, it combines two basic but core principles:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">space = time</code> (space equals time)</li>
+  <li><code class="language-plaintext highlighter-rouge">time ↔ reading</code> (time is related to the reading experience)</li>
+</ul>
+
+<p>Before detailing these principles, it’s important to note that in any piece of sequential art<sup id="fnref:sequential-art" role="doc-noteref"><a href="#fn:sequential-art" class="footnote" rel="footnote">1</a></sup>, these two principles cannot be clearly separated. Instead, they combine seamlessly, forming a <em>gestalt</em>.</p>
+<h2 id="space--time">Space = time</h2>
+
+<p>Let us focus on the first principle: <code class="language-plaintext highlighter-rouge">space = time</code>. The language of comics expresses the flow of time by sequencing space. It sequences space at three different levels, from highest to lowest:</p>
+
+<ul>
+  <li>space/time is structured in a <a href="#sequence-of-pages">sequence of pages</a></li>
+  <li>space/time is structured in a <a href="#sequence-of-panels">sequence of panels</a> within a single page</li>
+  <li>space/time is structured in a <a href="#sequence-of-elements">sequence of elements</a> within a single panel</li>
+</ul>
+
+<h3 id="sequence-of-pages">Sequence of pages</h3>
+
+<p>How is space/time structured in a sequence of pages?</p>
+
+<p>In a sequence of pages, each of the pages (usually) works as a macro unit of meaning that moves the story and action forward.</p>
+
+<p>Let us look at a sequence of pages from the <em>manga</em> <em>Dragon Ball</em> by Akira Toriyama as an example. In this sequence, Gohan—Goku’s son—counterattacks to prevent Cell—the mashed up villain—from destroying Earth.</p>
+
+<div class="figures">
+  <figure class="image-xl" id="dragon_ball_the_ultimate_kamehameha_sequence_of_pages_00.jpg">
+  <a class="ratio" href="../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1440/dragon_ball_the_ultimate_kamehameha_sequence_of_pages_00.jpg" style="padding-bottom: 124.83552631578947%;background-color: #D6D6D6;" target="_blank">
+    <img loading="lazy" src="
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1440/dragon_ball_the_ultimate_kamehameha_sequence_of_pages_00.jpg
+      " srcset="
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/2880/dragon_ball_the_ultimate_kamehameha_sequence_of_pages_00.jpg 2880w,
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/2160/dragon_ball_the_ultimate_kamehameha_sequence_of_pages_00.jpg 2160w,
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1440/dragon_ball_the_ultimate_kamehameha_sequence_of_pages_00.jpg 1440w,
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1080/dragon_ball_the_ultimate_kamehameha_sequence_of_pages_00.jpg 1080w,
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/720/dragon_ball_the_ultimate_kamehameha_sequence_of_pages_00.jpg 720w,
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/360/dragon_ball_the_ultimate_kamehameha_sequence_of_pages_00.jpg 360w
+      " sizes="
+      (min-width: 72em) 72em,
+      (min-width: 54em) 54em,
+      (min-width: 30em) 36em,
+      22em
+      " alt="
+      Pages 28–37, taken from the chapter 410 The Ultimate Kamehameha from the manga Dragon Ball by Akira Toriyama.
+      " />
+  </a><figcaption class="typo-s">
+    <p>Pages 28–37, taken from the chapter 410 <em>The Ultimate Kamehameha</em> from the <em>manga</em> <em><a href="https://en.wikipedia.org/wiki/Dragon_Ball_(manga)" title="Dragon Ball in Wikipedia">Dragon Ball</a></em> by Akira Toriyama.</p>
+  </figcaption>
+</figure>
+
+</div>
+
+<p>If we go through the above sequence and roughly time how much each page covers:</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Page/s</th>
+      <th>Event/s</th>
+      <th style="text-align: right">Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span style="white-space: nowrap;">28–30</span></td>
+      <td>Uh-oh. Cell is charging a huge <em>Kamehameha</em> <sup id="fnref:kamehameha" role="doc-noteref"><a href="#fn:kamehameha" class="footnote" rel="footnote">2</a></sup>. Things are about to go south.</td>
+      <td style="text-align: right">∼32s</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>Cell launches the wave towards Earth. How foolish of him! If Gohan dodges it, Earth will be nuked.</td>
+      <td style="text-align: right">∼2s</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>Oh my gosh! Cell’s <em>Kamehameha</em> is too powerful. There is no way Gohan can survive the hit. How will he bail us out?</td>
+      <td style="text-align: right">∼1s</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>Hold on. Gohan is charging a <em>Kamehameha</em> as well. Maybe there is some hope.</td>
+      <td style="text-align: right">∼4s</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>Also Gohan launches his wave! <em>suspense</em></td>
+      <td style="text-align: right">∼2s</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>Hurray! Gohan’s <em>Kamehameha</em> overpowers Cell’s!</td>
+      <td style="text-align: right">∼1s</td>
+    </tr>
+    <tr>
+      <td><span style="white-space: nowrap;">36–37</span></td>
+      <td>Take this, Cell! That’s what you get for messing with the wrong folks.</td>
+      <td style="text-align: right">∼8s</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>We can conclude that the entire sequence spans a time of more or less ∼50 seconds.</p>
+
+<p>As mentioned before, we should always keep in mind that these ∼50 seconds are not a product of just the sequence of pages in itself, but rather the outcome of mixing the two principles <code class="language-plaintext highlighter-rouge">space = time</code> (at the level of pages, panels, and elements) and <code class="language-plaintext highlighter-rouge">time ↔ reading</code> in different quantities.</p>
+
+<h3 id="sequence-of-panels">Sequence of panels</h3>
+
+<p>How is space/time structured in a sequence of panels within a single page?</p>
+
+<p>In a sequence of panels, each panel (usually) represents a distinct event in time, and each gutter—the void space between panels—advances time forward from one panel to the next.</p>
+
+<p>The amount of time a gutter represents is derived from the events in the adjacent panels it separates. The further apart these events are in time, the longer the time the gutter expresses.</p>
+
+<p>Let us look at a sequence of panels from the graphic novel <em>The Dark Knight Returns</em> by Frank Miller as an example. In the spread, Bruce Wayne—also known as Batman—has a flashback where he remembers his parents being killed during an armed robbery.</p>
+
+<div class="figures">
+  <figure class="image-xl" id="the_dark_knight_returns_sequence_of_panels_00.jpg">
+  <a class="ratio" href="../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1440/the_dark_knight_returns_sequence_of_panels_00.jpg" style="padding-bottom: 80.68576388888889%;background-color: #D6D6D6;" target="_blank">
+    <img loading="lazy" src="
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1440/the_dark_knight_returns_sequence_of_panels_00.jpg
+      " srcset="
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/2880/the_dark_knight_returns_sequence_of_panels_00.jpg 2880w,
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/2160/the_dark_knight_returns_sequence_of_panels_00.jpg 2160w,
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1440/the_dark_knight_returns_sequence_of_panels_00.jpg 1440w,
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1080/the_dark_knight_returns_sequence_of_panels_00.jpg 1080w,
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/720/the_dark_knight_returns_sequence_of_panels_00.jpg 720w,
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/360/the_dark_knight_returns_sequence_of_panels_00.jpg 360w
+      " sizes="
+      (min-width: 72em) 72em,
+      (min-width: 54em) 54em,
+      (min-width: 30em) 36em,
+      22em
+      " alt="
+      Pages 16–17, taken from The Dark Knight Returns by Frank Miller, Klaus Janson, and Lynn Varley.
+      " />
+  </a><figcaption class="typo-s">
+    <p>Pages 16–17, taken from <em><a href="https://en.wikipedia.org/wiki/The_Dark_Knight_Returns" title="The Dark Knight Returns in Wikipedia">The Dark Knight Returns</a></em> by Frank Miller, Klaus Janson, and Lynn Varley.</p>
+  </figcaption>
+</figure>
+
+</div>
+
+<p>In the above spread from <em>The Dark Knight Returns</em>, the events represented in the panels are quite close to each other in time.</p>
+
+<p>This results in the time expressed by each gutter being rather uniform and condensed, making the entire sequence of panels feel like a cinematographic slow motion <sup id="fnref:slow-motion" role="doc-noteref"><a href="#fn:slow-motion" class="footnote" rel="footnote">3</a></sup>.</p>
+
+<h3 id="sequence-of-elements">Sequence of elements</h3>
+
+<p>How is space/time structured in a sequence of elements within a single panel?</p>
+
+<p>In most cases, a sequence of elements in a panel represents events that happen simultaneously.</p>
+
+<p>However, in particular cases, elements juxtaposed in a panel can represent simultaneous yet distinct events, “stretching” the time expressed within a space that is otherwise perceived as continuous.</p>
+
+<p>Let us look at a panel from the comic book <em>Asterix And The Banquet</em> by René Goscinny and Albert Uderzo as an example.</p>
+
+<div class="figures">
+  <figure class="image-l" id="asterix_asterix_and_the_banquet_00.jpg">
+  <a class="ratio" href="../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1440/asterix_asterix_and_the_banquet_00.jpg" style="padding-bottom: 58.33333333333334%;background-color: #D6D6D6;" target="_blank">
+    <img loading="lazy" src="
+      ../media/media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1080/asterix_asterix_and_the_banquet_00.jpg
+      " srcset="
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/2160/asterix_asterix_and_the_banquet_00.jpg 2160w,
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1440/asterix_asterix_and_the_banquet_00.jpg 1440w,
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1080/asterix_asterix_and_the_banquet_00.jpg 1080w,
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/720/asterix_asterix_and_the_banquet_00.jpg 720w,
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/360/asterix_asterix_and_the_banquet_00.jpg 360w
+      " sizes="
+      (min-width: 54em) 54em,
+      (min-width: 30em) 36em,
+      22em
+      " alt="
+      The first half of page 6, taken from Asterix And The Banquet by René Goscinny and Albert Uderzo.
+      " />
+  </a><figcaption class="typo-s">
+    <p>The first panel of page 6, taken from <em><a href="https://en.wikipedia.org/wiki/Asterix_and_the_Banquet" title="Asterix And The Banquet in Wikipedia">Asterix And The Banquet</a></em> by René Goscinny and Albert Uderzo.</p>
+  </figcaption>
+</figure>
+
+</div>
+
+<p>In the above example, the first panel of page 6 from <em>Asterix And The Banquet</em> depicts three distinct events that, technically <sup id="fnref:panel" role="doc-noteref"><a href="#fn:panel" class="footnote" rel="footnote">4</a></sup>, happen at the same time:</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Position</th>
+      <th>Event/s</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Left</td>
+      <td>Two women are having a conversation.</td>
+    </tr>
+    <tr>
+      <td>Center</td>
+      <td>A man is leading a cart to carry hay.</td>
+    </tr>
+    <tr>
+      <td>Right</td>
+      <td>Obelix talks while Asterix peels a few potatoes.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>However, since they are juxtaposed in space one after the other and we read them from left to right, we perceive them as happening one slightly after the other.</p>
+
+<p>Jumping through three different events within the same panel makes its perceived duration much longer than if another panel of the same size and shape were to represent a single event. The panel from <em>Asterix And The Banquet</em> ends up feeling like a cinematographic pan shot <sup id="fnref:pan-shot" role="doc-noteref"><a href="#fn:pan-shot" class="footnote" rel="footnote">5</a></sup>.</p>
+
+<h2 id="time--reading">Time ↔ reading</h2>
+
+<p>Let us now focus on the second principle: <code class="language-plaintext highlighter-rouge">time ↔ reading</code>. The language of comics expresses the flow of time by speeding up or slowing down the reading experience.</p>
+
+<p>As a rule of thumb, the more time we spend reading a sequence of pages, panels, and/or elements, the longer we perceive its “duration”.</p>
+
+<p>How can we influence the reading experience? Usually, in two ways:</p>
+
+<ul>
+  <li>the more visually complex a sequence is, the more time we need to digest it, and vice versa</li>
+  <li>the more speech balloons a sequence has, the more time we need to read it, and vice versa</li>
+</ul>
+
+<h3 id="visual-complexity">Visual complexity</h3>
+
+<p>How can visual complexity influence the reading experience?</p>
+
+<p>Again, the more visually complex a sequence is, the more time we need to digest it, and vice versa.</p>
+
+<p>Let us look at a spread from the <em>manga</em> <em>Gon</em> by Masashi Tanaka as an example. In volume 2, chapter 8, Gon the dinosaur tries to blend in and live with a colony of penguins.</p>
+
+<div class="figures">
+  <figure class="image-xl" id="gon_gon_lives_with_the_penguins_visual_complexity_00.jpg">
+  <a class="ratio" href="../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1440/gon_gon_lives_with_the_penguins_visual_complexity_00.jpg" style="padding-bottom: 76.38888888888889%;background-color: #D6D6D6;" target="_blank">
+    <img loading="lazy" src="
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1440/gon_gon_lives_with_the_penguins_visual_complexity_00.jpg
+      " srcset="
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/2880/gon_gon_lives_with_the_penguins_visual_complexity_00.jpg 2880w,
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/2160/gon_gon_lives_with_the_penguins_visual_complexity_00.jpg 2160w,
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1440/gon_gon_lives_with_the_penguins_visual_complexity_00.jpg 1440w,
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1080/gon_gon_lives_with_the_penguins_visual_complexity_00.jpg 1080w,
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/720/gon_gon_lives_with_the_penguins_visual_complexity_00.jpg 720w,
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/360/gon_gon_lives_with_the_penguins_visual_complexity_00.jpg 360w
+      " sizes="
+      (min-width: 72em) 72em,
+      (min-width: 54em) 54em,
+      (min-width: 30em) 36em,
+      22em
+      " alt="
+      Pages 7–8 taken from volume 2 chapter 8 Gon Lives with The Penguins from Gon by Masashi Tanaka.
+      " />
+  </a><figcaption class="typo-s">
+    <p>Pages 7–8 taken from volume 2 chapter 8 <em>Gon Lives with The Penguins</em> from <em><a href="https://en.wikipedia.org/wiki/Gon_(manga)" title="Gon in Wikipedia">Gon</a></em> by Masashi Tanaka.</p>
+  </figcaption>
+</figure>
+
+</div>
+
+<p>In the above example from the <em>manga</em> <em>Gon</em>, by the time it takes us to find the main protagonist lost in the waddle of penguins, we end up feeling as though the little dinosaur has been living with the colony for quite a while.</p>
+
+<h3 id="speech-balloons">Speech balloons</h3>
+
+<p>How can speech balloons influence the reading experience?</p>
+
+<p>Again, the more speech balloons a sequence has, the more time we need to read it, and vice versa.</p>
+
+<p>Let us use a panel from <em>Sin City: The Hard Goodbye</em> by Frank Miller as an experiment and play with the speech balloons of Marv, the protagonist, who is about to get wasted.</p>
+
+<div class="figures">
+  <figure class="image-l" id="sin_city_00.jpg">
+  <a class="ratio" href="../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1440/sin_city_00.jpg" style="padding-bottom: 100.0%;background-color: #D6D6D6;" target="_blank">
+    <img loading="lazy" src="
+      ../media/media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1080/sin_city_00.jpg
+      " srcset="
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/2160/sin_city_00.jpg 2160w,
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1440/sin_city_00.jpg 1440w,
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1080/sin_city_00.jpg 1080w,
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/720/sin_city_00.jpg 720w,
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/360/sin_city_00.jpg 360w
+      " sizes="
+      (min-width: 54em) 54em,
+      (min-width: 30em) 36em,
+      22em
+      " alt="
+      The first panel of page 2—modified—taken from Sin City: The Hard Goodbye by Frank Miller.
+      " />
+  </a><figcaption class="typo-s">
+    <p>The first panel of page 2—<strong>modified!</strong>—taken from <em><a href="https://en.wikipedia.org/wiki/The_Hard_Goodbye" title="Sin City: The Hard Goodbye in Wikipedia">Sin City: The Hard Goodbye</a></em> by Frank Miller.</p>
+  </figcaption>
+</figure>
+
+</div>
+
+<p>In the above example, the first panel of the page is <strong>modified</strong>: Marv’s speech balloons have been removed, and the panel does not have any dialogue.</p>
+
+<p>Let us compare its reading experience with the one of the below example, where the same panel is left <strong>unmodified</strong>: Marv’s speech balloons have not been removed, and the panel preserves the original dialogue.</p>
+
+<div class="figures">
+  <figure class="image-l" id="sin_city_01.jpg">
+  <a class="ratio" href="../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1440/sin_city_01.jpg" style="padding-bottom: 100.0%;background-color: #D6D6D6;" target="_blank">
+    <img loading="lazy" src="
+      ../media/media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1080/sin_city_01.jpg
+      " srcset="
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/2160/sin_city_01.jpg 2160w,
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1440/sin_city_01.jpg 1440w,
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1080/sin_city_01.jpg 1080w,
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/720/sin_city_01.jpg 720w,
+      ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/360/sin_city_01.jpg 360w
+      " sizes="
+      (min-width: 54em) 54em,
+      (min-width: 30em) 36em,
+      22em
+      " alt="
+      The first panel of page 2—unmodified—taken from Sin City: The Hard Goodbye by Frank Miller.
+      " />
+  </a><figcaption class="typo-s">
+    <p>The first panel of page 2—<strong>unmodified!</strong>—taken from <em><a href="https://en.wikipedia.org/wiki/The_Hard_Goodbye" title="Sin City: The Hard Goodbye in Wikipedia">Sin City: The Hard Goodbye</a></em> by Frank Miller.</p>
+  </figcaption>
+</figure>
+
+</div>
+
+<p>Reading the balloons in the unmodified panel slows our reading experience: Marv turns from taking a sip from a bottle to getting wildly drunk.</p>
+
+<h2 id="recapitulation">Recapitulation</h2>
+
+<p>As illustrated by the above examples, the language of comics can express the flow of time indirectly—through static images—by combining seamlessly these two core principles:</p>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">space = time</code> (space equals time)</li>
+  <li><code class="language-plaintext highlighter-rouge">time ↔ reading</code> (time is related to the reading experience)</li>
+</ol>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:sequential-art" role="doc-endnote">
+      <p>Comics can be defined as sequential art: <em>the arrangement of pictures or images and words to narrate a story or dramatize an idea</em>—a definition created in 1985 by Will Eisner and expanded in 1994 by Scott McCloud. <a href="#fnref:sequential-art" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:kamehameha" role="doc-endnote">
+      <p>The <em>Kamehameha</em> is the signature energy wave of the <em>Dragon Ball</em> series. <a href="#fnref:kamehameha" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:slow-motion" role="doc-endnote">
+      <p>See <a href="https://en.wikipedia.org/wiki/Slow_motion" title="Slow motion in Wikipedia">slow motion in Wikipedia</a>. <a href="#fnref:slow-motion" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:panel" role="doc-endnote">
+      <p>Technically because they are juxtaposed in the same continuous space enclosed in a panel, without any gutter or page break separating them. <a href="#fnref:panel" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:pan-shot" role="doc-endnote">
+      <p>See <a href="https://en.wikipedia.org/wiki/Panning_(camera)" title="Panning (camera) in Wikipedia">pan shot in Wikipedia</a>. <a href="#fnref:pan-shot" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+          </div>
+
+      <div class="column-2d-l separator"></div>
+
+        <div class="page-next column-2d-page-1">
+          <span>—</span>
+        </div>
+
+        <div class="page-prev column-2d-page-2">
+          <a href="/post/the-flow-of-time-in-dio-s-world-part-7.html">The flow of time in <em>Dio’s World Part 7</em></a>
+        </div>
+
+        </article>
+      </div>
+
+    <div class="canvas-posts background">
+      <section class="posts layout-2d">
+
+        <header class="posts-head column-2d-l typo-sl">
+            <h2>Last posts</h2>
+        </header>
+
+        <div class="column-2d-l separator"></div>
+<div class="column-2d-l">
+          <ul class="post-previews layout-1d-ltr">
+            <li class="element-1d">
+              <a class="post-preview current" href="/post/the-flow-of-time-in-the-language-of-comics.html">
+                <div class="post-preview-excerpt">How does the language of comics express the flow of time through static images?</div>
+                <div class="post-preview-title">The flow of time in the language of comics</div>
+                <div class="post-preview-tags">language of comics, sequential art, space, time</div>
+                <div class="post-preview-date">28 December 2023</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/the-flow-of-time-in-dio-s-world-part-7.html">
+                <div class="post-preview-excerpt">How did Hirohiko Araki design the flow of time in the chapter <em>Dio’s World Part 7</em> from the <em>manga</em> <em>JoJo’s Bizarre Adventure</em>?</div>
+                <div class="post-preview-title">The flow of time in <em>Dio’s World Part 7</em></div>
+                <div class="post-preview-tags">JoJo’s Bizarre Adventure, language of comics, manga, time</div>
+                <div class="post-preview-date">17 September 2021</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/multilingual-sites-in-jekyll-4.html">
+                <div class="post-preview-excerpt">We place a dedicated page named <code class="language-plaintext highlighter-rouge">sitemap.xml</code> in each language subdirectory of the site.</div>
+                <div class="post-preview-title">Multilingual sites in Jekyll, Part 4</div>
+                <div class="post-preview-tags">approach, development, Jekyll, multilingual, site</div>
+                <div class="post-preview-date">15 August 2021</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/multilingual-sites-in-jekyll-3.html">
+                <div class="post-preview-excerpt">We use the <code class="language-plaintext highlighter-rouge">language-switch.html</code> include to generate an unordered list of all languages supported on the site.</div>
+                <div class="post-preview-title">Multilingual sites in Jekyll, Part 3</div>
+                <div class="post-preview-tags">approach, development, Jekyll, multilingual, site</div>
+                <div class="post-preview-date">14 August 2021</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/multilingual-sites-in-jekyll-2.html">
+                <div class="post-preview-excerpt">We use <code class="language-plaintext highlighter-rouge">language</code> to retrieve pages or posts in the same language and <code class="language-plaintext highlighter-rouge">language_reference</code> to retrieve pages or posts with the same content translated into different languages.</div>
+                <div class="post-preview-title">Multilingual sites in Jekyll, Part 2</div>
+                <div class="post-preview-tags">approach, development, Jekyll, multilingual, site</div>
+                <div class="post-preview-date">13 August 2021</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/multilingual-sites-in-jekyll.html">
+                <div class="post-preview-excerpt">We organize the pages into directories named with ISO language codes, with one directory for each supported language.</div>
+                <div class="post-preview-title">Multilingual sites in Jekyll, Part 1</div>
+                <div class="post-preview-tags">approach, development, Jekyll, multilingual, site</div>
+                <div class="post-preview-date">12 August 2021</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/medlay-research.html">
+                <div class="post-preview-excerpt">Is it possible to create a new hybrid media form that remediates the characteristics of cinema and comics that once seemed incompatible?</div>
+                <div class="post-preview-title">Remediating cinema and comics, <em>Medlay</em>, Part 4</div>
+                <div class="post-preview-tags">cinema, comics, media form, Medlay, space, time</div>
+                <div class="post-preview-date">01 February 2015</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/medlay-sequences.html">
+                <div class="post-preview-excerpt">Sequences are the narrative units of a <em>Medlay</em> artifact and consist of one or more series of pieces sequentially juxtaposed in space.</div>
+                <div class="post-preview-title">Sequences, <em>Medlay</em>, Part 3</div>
+                <div class="post-preview-tags">cinema, comics, media form, Medlay, space, time</div>
+                <div class="post-preview-date">01 February 2015</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <nav class="column-2d-l">
+          <ul class="pagination layout-1d-cnt">
+            <li class="pagination-item element-1d">
+              <span>Prev</span>
+            </li>
+
+            <li class="pagination-item element-1d current">
+              <a href="/posts/index.html">1</a>
+            </li>
+            <li class="pagination-item element-1d">
+              <a href="/posts/2/index.html">2</a>
+            </li>
+
+            <li class="pagination-item element-1d">
+              <a href="/posts/2/index.html">Next </a>
+            </li>
+          </ul>
+        </nav>
+
+      </section>
+    </div>
+
+<div class="canvas-about background">
+      <div class="about layout-2d">
+
+        <div class="column-2d-s-1-about typo-s serif">
+          <div class="separator"></div>
+          <p>I work as a <strong>Senior Product Designer</strong> at&nbsp;<a href="https://www.skippet.com/" target="_blank" title="Skippet’s Site">Skippet</a>, remotely.</p>
+        </div>
+
+        <div class="column-2d-s-2-about typo-s serif">
+          <div class="separator"></div>
+          <p>If you feel like having a&nbsp;chat, write to me at <span class="envelope"><noscript>turn on Javascript to see my e-mail address</noscript></span>.</p>
+        </div>
+
+        <div class="column-2d-s-3-about typo-s serif">
+          <div class="separator"></div>
+          <div class="links layout-1d-ltr">
+            <a id="linkedin" class="element-1d link" href="https://www.linkedin.com/in/andreaburan" target="_blank" title="LinkedIn">
+              <div class="link-icon">
+                <!-- style="background-color:#24292e;" -->
+                <div><span>LinkedIn</span></div>
+              </div>
+            </a>
+            <a id="wellfound" class="element-1d link" href="https://wellfound.com/u/ranbureand" target="_blank" title="Wellfound">
+              <div class="link-icon">
+                <div><span>Wellfound</span></div>
+              </div>
+            </a>
+            <a id="github" class=" link" href="https://github.com/ranbureand" target="_blank" title="GitHub">
+              <div class="link-icon">
+                <!-- style="background-color:#24292e;" -->
+                <div><span>GitHub</span></div>
+              </div>
+            </a>
+            <a id="vimeo" class="element-1d link" href="https://vimeo.com/andreaburan" target="_blank" title="Vimeo">
+              <div class="link-icon">
+                <!-- style="background-color:#1AB7EA;" -->
+                <div><span>Vimeo</span></div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="column-2d-s-4-about typo-s serif">
+          <div class="separator"></div>
+          <div class="button-m">
+            <a href="/media/documents/andrea_buran_resume_00.pdf" target="_blank" title="Andrea Buran’s Résumé">Download Résumé</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="canvas-footer background">
+      <footer class="footer layout-2d">
+        <div class="footer-copyright"><span class="hidden">Copyright</span> <span class="color-1">©</span> 2010 Andrea Buran</div>
+        <div class="footer-scroll"><a href="#outer-space"><span class="hidden">Three—Two—One—Zero—</span>Liftoff<span class="color-1">!</span></a></div>
+      </footer>
+    </div>
+
+    <script src="/scripts/js/main.min.js"></script>
+
+  </body>
+
+</html>

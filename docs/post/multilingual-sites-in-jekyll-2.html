@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--
+
+    Welcome, websurfer!
+
+    This site is:
+
+    + designed and developed in the browser
+    + written in Kramdown
+    + generated through Jekyll
+    + scripted in JavaScript
+    + styled from scratch in SCSS
+    + typesetted in IBM Plex Mono, Sans and Serif
+
+    with love and patience by Andrea Buran.
+
+    -->
+
+    <title>Multilingual sites in Jekyll, Part 2 · Andrea Buran’s site</title>
+    <meta name="description" content="This series of articles illustrates my approach to creating a multilingual site in Jekyll."/>
+
+    <!-- https://fonts.google.com/share?selection.family=IBM%20Plex%20Mono:ital,wght@0,400;0,500;1,400;1,500%7CIBM%20Plex%20Sans:ital,wght@0,400;0,500;1,400;1,500%7CIBM%20Plex%20Serif:ital,wght@0,400;0,500;1,400;1,500 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400;1,500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400;1,500&family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400;1,500&display=swap"/>
+    <!-- Import specific characters ↑ → ↓ ← ⬑ ⬏ ↔ in URL-encoded format -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans&family=IBM+Plex+Serif&text=%E2%86%91|%E2%86%92|%E2%86%93|%E2%86%90|%E2%AC%91|%E2%AC%8F|%E2%86%94" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="/styles/css/main.css?v=2024-08-13"/>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#fc5568">
+    <meta name="apple-mobile-web-app-title" content="Andrea Buran&rsquo;s Site">
+    <meta name="application-name" content="Andrea Buran&rsquo;s Site">
+    <meta name="msapplication-TileColor" content="#987cfb">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Open Graph protocol -->
+    <meta property="og:title" content="Multilingual sites in Jekyll, Part 2 · Andrea Buran’s site"/>
+    <meta property="og:description" content="We use language to retrieve pages or posts in the same language and language_reference to retrieve pages or posts with the same content translated into different languages."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://www.andreaburan.com/post/multilingual-sites-in-jekyll-2.html"/>
+    <meta property="og:image" content="https://www.andreaburan.com/media/sundries/cover/cover_00.jpg?v=2024-08-13"/>
+    <meta property="og:image:type" content="image/jpeg"/>
+    <meta property="og:image:alt" content="We use `language` to retrieve pages or posts in the same language and `language_reference` to retrieve pages or posts with the same content translated into different languages."/>
+    <meta property="og:image:width" content="640"/>
+    <meta property="og:image:height" content="640"/>
+
+    <link rel="canonical" href="https://www.andreaburan.com/post/multilingual-sites-in-jekyll-2.html"/>
+
+    <meta name="google-site-verification" content="HbQMAhgCEHek1NoKN16QyirigFf9FYd_vdDy4Vybt78" />
+  </head>
+
+
+  <body id="outer-space" class="light">
+
+    <div class="canvas-header foreground">
+      <div class="buffer-header">
+        <header class="header foreground layout-2d">
+          <h1 class="header-title"><a href="/">Andrea Buran<span class="hidden">’s Site</span> <sup class="color-1">5.0</sup></a></h1>
+          <ul class="header-navigation">
+            <li class="current">
+              <a href="/posts/index.html"><span class="hidden">All</span> Posts</a>
+            </li>
+            <li>
+              <a href="/projects/all.html"><span class="hidden">All</span> Proj<span class="hidden">ects</span></a>
+            </li>
+            <li>
+              <a href="#" id="mode-switch" onclick="toggleModeDisplay(event)"><span class="screen-reader-only">Color mode toggle</span></a>
+            </li>
+          </ul>
+        </header>
+      </div>
+    </div>
+
+      <div class="canvas-article foreground">
+        <article class="article layout-2d">
+
+          <header class="article-head column-2d-l typo-sl">
+            <h1>Multilingual sites in Jekyll, Part 2</h1>
+          </header>
+
+          <div class="column-2d-l separator"></div>
+          <div class="article-date column-2d-s-1 typo-l">
+            <p>13 August 2021</p>
+          </div>
+          <div class="article-exordium column-2d-m-2 typo-l">
+            <p>This series of articles (<a href="http://andreaburan.com/post/multilingual-sites-in-jekyll.html">Part 1</a>, <a href="http://andreaburan.com/post/multilingual-sites-in-jekyll-2.html">Part 2</a>, <a href="http://andreaburan.com/post/multilingual-sites-in-jekyll-3.html">Part 3</a>, <a href="http://andreaburan.com/post/multilingual-sites-in-jekyll-4.html">Part 4</a>) and this <a href="https://ranbureand.github.io/multilingual-experiment/">basic <em>GitHub Pages</em> site</a> illustrate my approach to creating a multilingual site in <em><a href="https://jekyllrb.com/" title="Jekyll">Jekyll</a></em>.</p>
+          </div>
+
+          <div class="article-body column-2d-m-2 typo-m">
+            <ul class="toc" id="markdown-toc">
+  <li><a href="#front-matter" id="markdown-toc-front-matter">Front matter</a>    <ul>
+      <li><a href="#pages" id="markdown-toc-pages">Pages</a></li>
+      <li><a href="#posts" id="markdown-toc-posts">Posts</a></li>
+    </ul>
+  </li>
+  <li><a href="#data-files" id="markdown-toc-data-files">Data files</a></li>
+</ul>
+
+<h2 id="front-matter">Front matter</h2>
+
+<p>In the front matter of each page or post, in addition to the usual variables, we set two new custom variables to handle the multilingual logic<sup id="fnref:logic" role="doc-noteref"><a href="#fn:logic" class="footnote" rel="footnote">1</a></sup> of the site:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">language</code> defines the language of the page/post</li>
+  <li><code class="language-plaintext highlighter-rouge">language_reference</code> relates different translations of the same page/post</li>
+</ul>
+
+<p>We can use <code class="language-plaintext highlighter-rouge">language</code> to retrieve only the pages or posts in the same language, and <code class="language-plaintext highlighter-rouge">language_reference</code> to retrieve only the pages or posts that return the same content translated into different languages (read the sections <a href="/post/multilingual-sites-in-jekyll-3.html#navigationhtml">navigation.html</a> and <a href="/post/multilingual-sites-in-jekyll-3.html#language-switchhtml">language-switch.html</a> for more details).</p>
+
+<h3 id="pages">Pages</h3>
+
+<p>For example, here is the front matter of the English page <em>Stories</em>:</p>
+
+<div class="language-yaml code-m highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">page</span>
+
+<span class="na">title</span><span class="pi">:</span> <span class="s">Stories</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s">Stories.</span>
+
+<span class="na">language</span><span class="pi">:</span> <span class="s">en</span>
+<span class="na">language_reference</span><span class="pi">:</span> <span class="s">stories</span>
+
+<span class="na">published</span><span class="pi">:</span> <span class="no">true</span>
+<span class="na">order</span><span class="pi">:</span> <span class="m">2</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+
+<p>and here is the front matter of its Italian counterpart:</p>
+
+<div class="language-yaml code-m highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">page</span>
+
+<span class="na">title</span><span class="pi">:</span> <span class="s">Storie</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s">Storie.</span>
+
+<span class="na">language</span><span class="pi">:</span> <span class="s">it</span>
+<span class="na">language_reference</span><span class="pi">:</span> <span class="s">stories</span>
+
+<span class="na">published</span><span class="pi">:</span> <span class="no">true</span>
+<span class="na">order</span><span class="pi">:</span> <span class="m">2</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+
+<p>Both pages have the variable <code class="language-plaintext highlighter-rouge">language_reference</code> set to <code class="language-plaintext highlighter-rouge">stories</code> so that they can be easily related with each other.</p>
+
+<h3 id="posts">Posts</h3>
+
+<p>For example, here is the front matter of the English post <em>Hello World</em>:</p>
+
+<div class="language-yaml code-m highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+
+<span class="na">title</span><span class="pi">:</span> <span class="s">Hello World</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s">Hello world.</span>
+<span class="na">date</span><span class="pi">:</span> <span class="s">2021-01-01 00:00:00</span>
+
+<span class="na">language</span><span class="pi">:</span> <span class="s">en</span>
+<span class="na">language_reference</span><span class="pi">:</span> <span class="s">world</span>
+
+<span class="na">published</span><span class="pi">:</span> <span class="no">true</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+
+<p>and here is the front matter of its Italian counterpart:</p>
+
+<div class="language-yaml code-m highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+
+<span class="na">title</span><span class="pi">:</span> <span class="s">Ciao Mondo</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s">Ciao Mondo.</span>
+<span class="na">date</span><span class="pi">:</span> <span class="s">2021-01-01 00:00:00</span>
+
+<span class="na">language</span><span class="pi">:</span> <span class="s">it</span>
+<span class="na">language_reference</span><span class="pi">:</span> <span class="s">world</span>
+
+<span class="na">published</span><span class="pi">:</span> <span class="no">true</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+
+<p>Both posts have the variable <code class="language-plaintext highlighter-rouge">language_reference</code> set to <code class="language-plaintext highlighter-rouge">world</code> so that they can be easily related to each other.</p>
+
+<h2 id="data-files">Data files</h2>
+
+<p>We create a YAML <a href="https://jekyllrb.com/docs/datafiles/" title="Data Files">data file</a> named <code class="language-plaintext highlighter-rouge">snippets.yml</code> to store the different translations of the user interface copy as additional data in the <code class="language-plaintext highlighter-rouge">_data</code> subdirectory.</p>
+
+<p>We then create a new variable named <code class="language-plaintext highlighter-rouge">snippets</code> in the <code class="language-plaintext highlighter-rouge">base.html</code> layout to shorten the code needed to access the data contained in the <code class="language-plaintext highlighter-rouge">snippets.yml</code> file:</p>
+
+<div class="language-liquid code-m highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%-</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">snippets</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">snippets</span><span class="w"> </span><span class="p">%}</span>
+</code></pre></div></div>
+
+<p>Since the <code class="language-plaintext highlighter-rouge">base.html</code> layout is the base for all the other layouts, placing the variable <code class="language-plaintext highlighter-rouge">snippets</code> there allows us access it from any other page.</p>
+
+<p>Through this variable, we can write just <code class="language-plaintext highlighter-rouge">snippets.name_of_the_data_item</code> when accessing a data item rather than the full, longer <code class="language-plaintext highlighter-rouge">site.data.snippets.name_of_the_data_item</code>.</p>
+
+<p>For example, the piece of code that generates the <em>Back to the Top</em> link at the bottom of the page:</p>
+
+<div class="language-liquid code-xl highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a href="#<span class="p">{{</span><span class="w"> </span><span class="nv">snippets</span><span class="p">.</span><span class="nv">top</span><span class="p">[</span><span class="nv">page</span><span class="p">.</span><span class="nv">language</span><span class="p">]</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">slugify</span><span class="p">:</span><span class="w"> </span><span class="s1">'latin'</span><span class="w"> </span><span class="p">}}</span>"&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">snippets</span><span class="p">.</span><span class="nv">back</span><span class="p">[</span><span class="nv">page</span><span class="p">.</span><span class="nv">language</span><span class="p">]</span><span class="w"> </span><span class="p">}}</span>&lt;/a&gt;
+</code></pre></div></div>
+
+<p>uses the following variable:</p>
+
+<div class="language-liquid code-m highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{{</span><span class="w"> </span><span class="nv">snippets</span><span class="p">.</span><span class="nv">back</span><span class="p">[</span><span class="nv">page</span><span class="p">.</span><span class="nv">language</span><span class="p">]</span><span class="w"> </span><span class="p">}}</span>
+</code></pre></div></div>
+
+<p>To retrieve the name of the link in the current selected language from the following lines in the <code class="language-plaintext highlighter-rouge">snippets.yml</code> data file:</p>
+
+<div class="language-yaml code-m highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">back</span><span class="pi">:</span>
+  <span class="na">en</span><span class="pi">:</span> <span class="s">Back to the Top</span>
+  <span class="na">it</span><span class="pi">:</span> <span class="s">Torna in Cima</span>
+
+<span class="na">top</span><span class="pi">:</span>
+  <span class="na">en</span><span class="pi">:</span> <span class="s">Top</span>
+  <span class="na">it</span><span class="pi">:</span> <span class="s">Cima</span>
+</code></pre></div></div>
+
+<p>If the user interface copy is quite lengthy, we might consider creating a different data file for each language and placing it in a dedicated subdirectory—similar to what we already do for pages and posts. For this basic site, we keep things simple and use only one data file to list the copy in all the different languages.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:logic" role="doc-endnote">
+
+      <p>The logic is based on the principle articulated in Sylvain Durand’s <em><a href="https://sylvaindurand.org/making-jekyll-multilingual/#principle" title="Making Jekyll
+Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+          </div>
+
+      <div class="column-2d-l separator"></div>
+
+        <div class="page-next column-2d-page-1">
+          <a href="/post/multilingual-sites-in-jekyll-3.html">Multilingual sites in Jekyll, Part 3</a>
+        </div>
+
+        <div class="page-prev column-2d-page-2">
+          <a href="/post/multilingual-sites-in-jekyll.html">Multilingual sites in Jekyll, Part 1</a>
+        </div>
+
+        </article>
+      </div>
+
+    <div class="canvas-posts background">
+      <section class="posts layout-2d">
+
+        <header class="posts-head column-2d-l typo-sl">
+            <h2>Last posts</h2>
+        </header>
+
+        <div class="column-2d-l separator"></div>
+<div class="column-2d-l">
+          <ul class="post-previews layout-1d-ltr">
+            <li class="element-1d">
+              <a class="post-preview" href="/post/the-flow-of-time-in-the-language-of-comics.html">
+                <div class="post-preview-excerpt">How does the language of comics express the flow of time through static images?</div>
+                <div class="post-preview-title">The flow of time in the language of comics</div>
+                <div class="post-preview-tags">language of comics, sequential art, space, time</div>
+                <div class="post-preview-date">28 December 2023</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/the-flow-of-time-in-dio-s-world-part-7.html">
+                <div class="post-preview-excerpt">How did Hirohiko Araki design the flow of time in the chapter <em>Dio’s World Part 7</em> from the <em>manga</em> <em>JoJo’s Bizarre Adventure</em>?</div>
+                <div class="post-preview-title">The flow of time in <em>Dio’s World Part 7</em></div>
+                <div class="post-preview-tags">JoJo’s Bizarre Adventure, language of comics, manga, time</div>
+                <div class="post-preview-date">17 September 2021</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/multilingual-sites-in-jekyll-4.html">
+                <div class="post-preview-excerpt">We place a dedicated page named <code class="language-plaintext highlighter-rouge">sitemap.xml</code> in each language subdirectory of the site.</div>
+                <div class="post-preview-title">Multilingual sites in Jekyll, Part 4</div>
+                <div class="post-preview-tags">approach, development, Jekyll, multilingual, site</div>
+                <div class="post-preview-date">15 August 2021</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/multilingual-sites-in-jekyll-3.html">
+                <div class="post-preview-excerpt">We use the <code class="language-plaintext highlighter-rouge">language-switch.html</code> include to generate an unordered list of all languages supported on the site.</div>
+                <div class="post-preview-title">Multilingual sites in Jekyll, Part 3</div>
+                <div class="post-preview-tags">approach, development, Jekyll, multilingual, site</div>
+                <div class="post-preview-date">14 August 2021</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview current" href="/post/multilingual-sites-in-jekyll-2.html">
+                <div class="post-preview-excerpt">We use <code class="language-plaintext highlighter-rouge">language</code> to retrieve pages or posts in the same language and <code class="language-plaintext highlighter-rouge">language_reference</code> to retrieve pages or posts with the same content translated into different languages.</div>
+                <div class="post-preview-title">Multilingual sites in Jekyll, Part 2</div>
+                <div class="post-preview-tags">approach, development, Jekyll, multilingual, site</div>
+                <div class="post-preview-date">13 August 2021</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/multilingual-sites-in-jekyll.html">
+                <div class="post-preview-excerpt">We organize the pages into directories named with ISO language codes, with one directory for each supported language.</div>
+                <div class="post-preview-title">Multilingual sites in Jekyll, Part 1</div>
+                <div class="post-preview-tags">approach, development, Jekyll, multilingual, site</div>
+                <div class="post-preview-date">12 August 2021</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/medlay-research.html">
+                <div class="post-preview-excerpt">Is it possible to create a new hybrid media form that remediates the characteristics of cinema and comics that once seemed incompatible?</div>
+                <div class="post-preview-title">Remediating cinema and comics, <em>Medlay</em>, Part 4</div>
+                <div class="post-preview-tags">cinema, comics, media form, Medlay, space, time</div>
+                <div class="post-preview-date">01 February 2015</div>
+              </a>
+            </li>
+            <li class="element-1d">
+              <a class="post-preview" href="/post/medlay-sequences.html">
+                <div class="post-preview-excerpt">Sequences are the narrative units of a <em>Medlay</em> artifact and consist of one or more series of pieces sequentially juxtaposed in space.</div>
+                <div class="post-preview-title">Sequences, <em>Medlay</em>, Part 3</div>
+                <div class="post-preview-tags">cinema, comics, media form, Medlay, space, time</div>
+                <div class="post-preview-date">01 February 2015</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <nav class="column-2d-l">
+          <ul class="pagination layout-1d-cnt">
+            <li class="pagination-item element-1d">
+              <span>Prev</span>
+            </li>
+
+            <li class="pagination-item element-1d current">
+              <a href="/posts/index.html">1</a>
+            </li>
+            <li class="pagination-item element-1d">
+              <a href="/posts/2/index.html">2</a>
+            </li>
+
+            <li class="pagination-item element-1d">
+              <a href="/posts/2/index.html">Next </a>
+            </li>
+          </ul>
+        </nav>
+
+      </section>
+    </div>
+
+<div class="canvas-about background">
+      <div class="about layout-2d">
+
+        <div class="column-2d-s-1-about typo-s serif">
+          <div class="separator"></div>
+          <p>I work as a <strong>Senior Product Designer</strong> at&nbsp;<a href="https://www.skippet.com/" target="_blank" title="Skippet’s Site">Skippet</a>, remotely.</p>
+        </div>
+
+        <div class="column-2d-s-2-about typo-s serif">
+          <div class="separator"></div>
+          <p>If you feel like having a&nbsp;chat, write to me at <span class="envelope"><noscript>turn on Javascript to see my e-mail address</noscript></span>.</p>
+        </div>
+
+        <div class="column-2d-s-3-about typo-s serif">
+          <div class="separator"></div>
+          <div class="links layout-1d-ltr">
+            <a id="linkedin" class="element-1d link" href="https://www.linkedin.com/in/andreaburan" target="_blank" title="LinkedIn">
+              <div class="link-icon">
+                <!-- style="background-color:#24292e;" -->
+                <div><span>LinkedIn</span></div>
+              </div>
+            </a>
+            <a id="wellfound" class="element-1d link" href="https://wellfound.com/u/ranbureand" target="_blank" title="Wellfound">
+              <div class="link-icon">
+                <div><span>Wellfound</span></div>
+              </div>
+            </a>
+            <a id="github" class=" link" href="https://github.com/ranbureand" target="_blank" title="GitHub">
+              <div class="link-icon">
+                <!-- style="background-color:#24292e;" -->
+                <div><span>GitHub</span></div>
+              </div>
+            </a>
+            <a id="vimeo" class="element-1d link" href="https://vimeo.com/andreaburan" target="_blank" title="Vimeo">
+              <div class="link-icon">
+                <!-- style="background-color:#1AB7EA;" -->
+                <div><span>Vimeo</span></div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="column-2d-s-4-about typo-s serif">
+          <div class="separator"></div>
+          <div class="button-m">
+            <a href="/media/documents/andrea_buran_resume_00.pdf" target="_blank" title="Andrea Buran’s Résumé">Download Résumé</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="canvas-footer background">
+      <footer class="footer layout-2d">
+        <div class="footer-copyright"><span class="hidden">Copyright</span> <span class="color-1">©</span> 2010 Andrea Buran</div>
+        <div class="footer-scroll"><a href="#outer-space"><span class="hidden">Three—Two—One—Zero—</span>Liftoff<span class="color-1">!</span></a></div>
+      </footer>
+    </div>
+
+    <script src="/scripts/js/main.min.js"></script>
+
+  </body>
+
+</html>
