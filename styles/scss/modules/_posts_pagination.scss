@@ -1,0 +1,117 @@
+/* Copyright (c) 2017 Andrea Buran [www.andreaburan.com]. All rights reserved */
+
+/*
+** Pagination
+*/
+
+.pagination {
+  margin-top: em(-$m-large-line/2);
+  margin-bottom: em(-$m-large-line/2);
+
+  @include min-screen(col(8)) {
+    margin-top: em(-$d-large-line/2);
+    margin-bottom: em(-$d-large-line/2);
+  }
+  @include min-screen(col(12)) {
+    margin-top: em(-$d-small-line/2);
+    margin-bottom: em(-$d-small-line/2);
+  }
+}
+
+.pagination-item {
+  width: 100/8*1%;
+
+  text-align: center;
+
+  @include font-size($m-large-size, $m-large-line);
+
+  a,
+  span {
+    font-weight: $normal;
+
+    position: relative;
+
+    display: block;
+
+    padding: em($m-large-line/2, $m-large-size) em($m-gut/2, $m-large-size);
+
+    &:before {
+      position: absolute;
+      top: em($m-large-line/2, $m-large-size);
+      left: 0;
+
+      display: block;
+
+      height: em($m-large-line, $m-large-size);
+
+      content: "";
+
+      border-left-width: $border-width;
+      border-left-style: solid;
+    }
+  }
+  &:first-child {
+    a,
+    span {
+      &:before {
+        content: none;
+      }
+    }
+  }
+  @include min-screen(col(8)) {
+    width: 100/8*1%;
+
+    @include font-size($d-large-size, $d-large-line);
+
+    a,
+    span {
+      padding: em($d-large-line/2, $d-large-size) em($d-gut/2, $d-large-size);
+
+      &:before {
+        top: em($d-large-line/2, $d-large-size);
+
+        height: em($d-large-line, $d-large-size);
+      }
+    }
+  }
+  @include min-screen(col(12)) {
+    width: 100/16*1%;
+    padding-right: em($d-gut/2, $d-small-size);
+    padding-right: 0;
+    padding-left: em($d-gut/2, $d-small-size);
+    padding-left: 0;
+
+    @include font-size($d-small-size, $d-small-line);
+
+    a,
+    span {
+      padding: em($d-small-line/2, $d-small-size) em($d-gut, $d-small-size);
+
+      &:before {
+        top: em($d-small-line/2, $d-small-size);
+
+        height: em($d-small-line, $d-small-size);
+      }
+    }
+  }
+}
+
+.pagination-item.current {
+  a,
+  span {
+    cursor: default;
+  }
+}
+
+/*
+** Colors
+*/
+
+.pagination-item {
+  a,
+  span {
+    &:before {
+      border-left-color: var(--border-color);
+    }
+  }
+}

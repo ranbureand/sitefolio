@@ -2,21 +2,19 @@
       <section class="posts layout-2d">
 
         <header class="posts-head column-2d-l typo-sl">
-          {%- if page.name == 'posts.html' %}
+          {%- if page.name == '.html' %}
             <h2>{{ page.title }}</h2>
           {%- else %}
-            <h2>Recent posts</h2>
+            <h2>Last posts</h2>
           {%- endif %}
         </header>
 
         <div class="column-2d-l separator"></div>
 
-        {%- assign postList = site.posts | where: 'published', true -%}
-
-        {%- if page.name == 'posts.html' %}
-{% include posts-previews.html postLimit = 100 %}
+        {%- if page.name == '.html' %}
+{% include posts-pagination-previews.html %}
         {%- else %}
-{% include posts-previews.html postLimit = 6 %}
+{% include posts-previews.html postLimit = 8 %}
         {%- endif %}
 
       </section>

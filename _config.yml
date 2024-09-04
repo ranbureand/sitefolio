@@ -2,7 +2,7 @@
 title: 'Andrea Buran’s site'
 author: Andrea Buran
 email: hello@andreaburan.com
-description: 'Andrea Buran, product design lead, at your service. I design and craft digital services and products that help people do things better.'
+description: 'Andrea Buran, product designer & leader, at your service. I design digital services and products, solving people’s problems and helping organizations reach their goals.'
 version: '2024-08-13'
 
 baseurl: '' # the subpath of your site, e.g. /blog
@@ -12,31 +12,41 @@ timezone: Europe/Rome
 encoding: utf-8
 
 # Defaults
-defaults:
--
-  scope:
-    path: '_posts'
-    type: 'posts'
-  values:
-    permalink: 'post/:title:output_ext'
+defaults: # Defines default settings for content.
+  - scope: # Defines the scope for which the defaults apply.
+      path: '_posts' # Files in the `_posts` directory.
+      type: 'posts' # Files of type `posts`.
+    values: # The default values for files within the specified scope.
+      permalink: 'post/:title:output_ext' # The URL structure for files of type `posts`. `:title` is replaced by the post title, and `:output_ext` by the file extension.
 
-collections:
-  projects:
-    output: true
-    permalink: 'project/:title:output_ext'
-  categories:
-    output: true
-    permalink: 'projects/:title:output_ext'
+collections: # Defines custom collections of content.
+  projects: # A collection named "projects".
+    output: true # When `true` files in this collection are rendered as pages.
+    permalink: 'project/:title:output_ext' # The URL structure for files of type `projects`. `:title` is replaced by the project title, and `:output_ext` by the file extension.
+  categories: # A collection named "categories".
+    output: true # When `true` files in this collection are rendered as pages.
+    permalink: 'projects/:title:output_ext' # The URL structure for files of type `categories`. `:title` is replaced by the category title, and `:output_ext` by the file extension.
 
 # Build settings
-markdown: kramdown
+markdown: kramdown # Define the Markdown processor to use.
 
 # Markdown Processors
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 2..3
-  #syntax_highlighter_opts:
+kramdown: # Defines settings for the `kramdown` Markdown processor.
+  auto_ids: true # Automatically generates IDs for headings.
+  footnote_nr: 1 # Defines the starting number for footnotes.
+  entity_output: as_char # Outputs entities (like &, <, >) as characters rather than entities.
+  toc_levels: 2..6 # Specifies which heading levels to include in a Table of Contents.
+  #syntax_highlighter_opts: # Configures options for the code block syntax highlighter.
     #block:
       #line_numbers: true
+
+#Plugins
+plugins: # Specifies the plugins used in the site.
+  - jekyll-paginate-v2
+
+pagination: # Defines settings for pagination.
+  enabled: true # Enables/disables pagination in the site.
+  debug: false # Enables/disables debugging messages related to pagination.
+
+exclude: # Specifies a list of files or directories to exclude from the build process.
+  - config.codekit3

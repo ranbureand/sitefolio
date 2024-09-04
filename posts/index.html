@@ -1,0 +1,22 @@
+---
+layout: base
+mode: dark
+
+title: All posts
+
+published: true
+
+pagination:
+  collection: posts
+  enabled: true
+  per_page: 8
+  permalink: /:num/
+  sort_field: 'date'
+  sort_reverse: true
+  title: ':title · Page :num'
+  trail:
+    after: 2
+    before: 2
+---
+
+{% include posts.html %}

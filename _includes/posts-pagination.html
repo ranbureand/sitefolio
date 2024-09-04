@@ -1,0 +1,29 @@
+        {%- if paginator.total_pages > 1 %}
+        <nav class="column-2d-l">
+          <ul class="pagination layout-1d-cnt">
+            <li class="pagination-item element-1d">
+              {%- if paginator.previous_page %}
+              <a href="{{ paginator.previous_page_path | prepend: site.baseurl | append: 'index.html' }}">Prev</a>
+              {%- else %}
+              <span>Prev</span>
+              {%- endif %}
+            </li>
+
+            {%- if paginator.page_trail %}
+            {%- for trail in paginator.page_trail %}
+            <li class="pagination-item element-1d{% if page.url == trail.path %} current{% endif %}">
+              <a href="{{ trail.path | prepend: site.baseurl }}">{{ trail.num }}</a>
+            </li>
+            {%- endfor %}
+            {%- endif %}
+
+            <li class="pagination-item element-1d">
+              {%- if paginator.next_page %}
+              <a href="{{ paginator.next_page_path | prepend: site.baseurl | append: 'index.html' }}">Next</a>
+              {%- else %}
+              <span>Next</span>
+              {%- endif %}
+            </li>
+          </ul>
+        </nav>
+        {%- endif %}
