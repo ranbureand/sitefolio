@@ -6,7 +6,7 @@ layout: project
 title: "Actual size postcards"
 author: "Andrea Buran"
 
-time: '2009'
+time: '2008'
 
 categories: [All, Non-Commercial, Print, Research, Static Image, We Have IUAV]
 tags: [actual size, patterns, photography, postcards, textures, Venice]
