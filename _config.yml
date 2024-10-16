@@ -6,7 +6,7 @@ description: 'Andrea Buran, product designer & leader, at your service. I design
 version: '2024-09-04'
 
 baseurl: '' # the subpath of your site, e.g. /blog
-url: https://www.andreaburan.com # The base hostname & protocol for your site.
+url: 'https://www.andreaburan.com' # The base hostname & protocol for your site.
 destination: docs/ # Changes the directory where Jekyll generates files
 
 timezone: Europe/Rome
