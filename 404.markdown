@@ -10,6 +10,9 @@ preview_image: 'outer_space_00.png'
 excerpt: 'I am really sorry, but it appears you are lost in the outer space.'
 
 published: true
+
+sitemap:
+  excluded: true
 ---
 
 <div class="figures">

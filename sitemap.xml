@@ -1,7 +1,7 @@
 ---
 layout: null
 sitemap:
-  exclude: 'yes'
+  excluded: true
 ---
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -74,6 +74,7 @@ sitemap:
   {%- assign projects = site.projects | sort: 'order' | where: 'published', true -%}
 
   {%- for project in projects reversed %}
+    {%- unless project.sitemap.excluded == true %}
     <url>
       <loc>{{ site.url }}{{ project.url }}</loc>
 
@@ -100,6 +101,7 @@ sitemap:
       {%- endif %}
       <priority>{{ priority }}</priority>
     </url>
+    {%- endunless %}
   {%- endfor %}
 
   {%- assign posts = site.posts | sort: 'date' | where: 'published', true %}
