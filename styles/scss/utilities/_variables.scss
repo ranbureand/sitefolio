@@ -29,17 +29,21 @@ $planet-diameter:           100%*8;
 ** d : desktop
 */
 
-$ms-super-large-size:   24px;
-$ms-super-large-line:   $base-unit*9; //36px
+// Splash typography
 
-$mm-super-large-size:   32px;
-$mm-super-large-line:   $base-unit*12; //48px
+$m-splash-medium-size:   24px;
+$m-splash-medium-line:   $base-unit*9; //36px
 
-$t-super-large-size:    48px;
-$t-super-large-line:    $base-unit*16; //64px
+$m-splash-large-size:    32px;
+$m-splash-large-line:    $base-unit*12; //48px
 
-$d-super-large-size:    64px;
-$d-super-large-line:    $base-unit*20; //80px
+$t-splash-large-size:    48px;
+$t-splash-large-line:    $base-unit*16; //64px
+
+$d-splash-large-size:    64px;
+$d-splash-large-line:    $base-unit*20; //80px
+
+// Typography
 
 $m-extra-large-size:    22px;
 $m-extra-large-line:    $base-unit*8;  //28px
@@ -84,7 +88,7 @@ $light:     300;
 ** Grid
 */
 
-$column-width: 72px;
+$column-width: 76px;
 
 /*
 ** Guts and indents

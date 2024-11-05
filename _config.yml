@@ -3,7 +3,7 @@ title: 'Andrea Buran’s site'
 author: Andrea Buran
 email: hello@andreaburan.com
 description: 'Andrea Buran, product designer & leader, at your service. I design digital services and products, solving people’s problems and helping organizations reach their goals.'
-version: '2024-09-04'
+version: '2024-11-05'
 
 baseurl: '' # the subpath of your site, e.g. /blog
 url: 'https://www.andreaburan.com' # The base hostname & protocol for your site.
@@ -27,6 +27,8 @@ collections: # Defines custom collections of content.
   categories: # A collection named "categories".
     output: true # When `true` files in this collection are rendered as pages.
     permalink: 'projects/:title:output_ext' # The URL structure for files of type `categories`. `:title` is replaced by the category title, and `:output_ext` by the file extension.
+  jots: # A collection named "projects".
+    output: false # When `true` files in this collection are rendered as pages.
 
 # Build settings
 markdown: kramdown # Define the Markdown processor to use.
@@ -47,7 +49,7 @@ plugins: # Specifies the plugins used in the site.
 
 pagination: # Defines settings for pagination.
   enabled: true # Enables/disables pagination in the site.
-  debug: false # Enables/disables debugging messages related to pagination.
+  debug: true # Enables/disables debugging messages related to pagination.
 
 exclude: # Specifies a list of files or directories to exclude from the build process.
   - config.codekit3

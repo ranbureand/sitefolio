@@ -19,6 +19,24 @@
 
   @include face(sans);
 
+  &:hover {
+    transition-duration: 0.2s, 0.2s;
+    &:before {
+      transform: scale(1.0);
+
+      opacity: 1.0;
+    }
+  }
+
+  &:active {
+    &:before {
+      transition-duration: 0.0s, 0.0s;
+      transform: scale(1.0);
+
+      opacity: 1.0;
+    }
+  }
+
   &:before {
     position: absolute;
     z-index: 2;
@@ -50,24 +68,6 @@
 
   span {
     display: none;
-  }
-
-  &:hover {
-    transition-duration: 0.2s, 0.2s;
-    &:before {
-      transform: scale(1.0);
-
-      opacity: 1.0;
-    }
-  }
-
-  &:active {
-    &:before {
-      transition-duration: 0.0s, 0.0s;
-      transform: scale(1.0);
-
-      opacity: 1.0;
-    }
   }
   @include min-screen(col(8)) {
     border-radius: em($d-small-line);

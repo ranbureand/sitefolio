@@ -4,13 +4,9 @@
         {%- assign categories = site.categories | where: 'category', 'Favorite' %}
 
         <header class="projects-head column-2d-l typo-sl">
-          {%- if page.layout == "categories" %}
-            <h2>{{ page.title }}</h2>
-          {%- else %}
-            {%- for category in categories %}
-              <h2>{{ category.title }}</h2>
-            {%- endfor %}
-          {%- endif %}
+          {%- for category in categories %}
+          <h2>{{ category.title }}</h2>
+          {%- endfor %}
         </header>
 
         <div class="column-2d-l separator"></div>
@@ -19,19 +15,13 @@
         <div class="projects-exordium column-2d-m-2 typo-l">
           {%- if page.layout == "project" %}
           {{ category.exordium | markdownify | strip }}
-          {%- else %}
-          {{ page.exordium | markdownify | strip }}
           {%- endif %}
         </div>
         {%- endif %}
 
-        {%- if page.layout == 'categories' %}
-{% include projects-previews.html category = page.category %}
-        {%- else %}
-{% include projects-previews.html category = 'Favorite' %}
-        {%- endif %}
+{% include projects-items.html category = 'Favorite' %}
 
-        {% include filters.html %}
+{% include projects-filters.html %}
 
       </section>
     </div>

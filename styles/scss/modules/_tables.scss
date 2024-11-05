@@ -6,14 +6,16 @@
 
 table {
   max-width: 100%;
-  border-collapse: collapse;
+
   border-spacing: 0;
+  border-collapse: collapse;
 }
 
 [class*="table"] {
   width: 100%;
   margin-top: em($m-base-rhythm);
   margin-bottom: em($m-base-rhythm);
+
   @include face(mono);
 
   th,
@@ -59,7 +61,6 @@ table {
     border-top-width: 1px;
     border-top-style: solid;
   }
-
   @include min-screen(col(8)) {
     margin-top: em($d-base-rhythm);
     margin-bottom: em($d-base-rhythm);

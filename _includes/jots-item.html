@@ -1,0 +1,11 @@
+            <li class="jots-item element-1d" id="jot-{{ jot.number }}" data-tag="{{ jot.tag }}">
+              <blockquote class="jots-item-body typo-m serif" {% if jot.address %}cite="{{ jot.address }}"{% endif %}>
+              {{ jot.content }}
+              </blockquote>
+              {%- if jot.site %}
+              <div class="jots-item-reference">{% if jot.authors.first %}{% for author in jot.authors %}{% if forloop.last == true %}<span>{{ author }}</span>{% else %}<span>{{ author }}</span>, {% endif %}{% endfor %}{% else %}<span>{{ jot.authors }}</span>{% endif %}, {% if jot.address %}<a href="{{ jot.address }}" target="_blank" title="{{ jot.title }}"><cite>{{ jot.title }}</cite></a>{% else %}<span><cite>{{ jot.title }}</cite></span>{% endif %}, <span>{{ jot.site }}</span>.</div>
+              {%- else %}
+              <div class="jots-item-reference">{% if jot.authors.first %}{% for author in jot.authors %}{% if forloop.last == true %}<span>{{ author }}</span>{% else %}<span>{{ author }}</span>, {% endif %}{% endfor %}{% else %}<span>{{ jot.authors }}</span>{% endif %}, <span><cite>{{ jot.title }}</cite></span>, {% if jot.pages.first %}pp. {% for page in jot.pages %}{% if forloop.last == true %}<span>{{ page }}</span>{% else %}<span>{{ page }}</span>–{% endif %}{% endfor %}{% else %}p. <span>{{ jot.pages }}</span>{% endif %}, {{ jot.publisher }}, {{ jot.year }}.</div>
+              {%- endif %}
+              <div class="jots-item-date"><a href="#jot-{{ jot.number }}">{{ jot.number }}</a> jotted on {{ jot.date | date: "%e %b %Y, %H:%M" }}.</div>
+            </li>

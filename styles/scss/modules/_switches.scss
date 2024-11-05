@@ -13,6 +13,7 @@
   width: em($base-unit*10, $m-small-size);
   height: em($base-unit*5, $m-small-size);
   margin-top: em($base-unit/2, $m-small-size);
+
   @include min-screen(col(8)) {
     width: em($base-unit*10, $d-small-size);
     height: em($base-unit*5, $d-small-size);
@@ -29,8 +30,8 @@
 
   cursor: pointer;
   transition: $duration;
-  transition-property: background-color;
   transition-timing-function: ease-out;
+  transition-property: background-color;
 
   border-radius: em($m-small-line/2, $m-small-size);
 
@@ -43,10 +44,9 @@
     height: em($base-unit*4, $m-small-size);
 
     content: "";
-
     transition: $duration;
-    transition-property: transform;
     transition-timing-function: ease-out;
+    transition-property: transform;
 
     border-radius: 50%;
   }

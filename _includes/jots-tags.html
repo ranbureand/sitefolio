@@ -1,0 +1,33 @@
+        {%- assign jot_counter = 1 %}
+        {%- assign pagination_counter = paginator.total_pages | minus : 1 %}
+        {%- assign pagination_threshold_top = paginator.total_posts | minus : paginator.per_page %}
+        {%- assign pagination_threshold_bottom = paginator.total_posts | modulo : paginator.per_page | plus : 1 %}
+        <nav class="column-2d-l">
+          {%- comment %}
+          <ul>
+            <li>paginator.per_page : {{ paginator.per_page }}</li>
+            <li>paginator.total_pages : {{ paginator.total_pages }}</li>
+            <li>paginator.total_posts : {{ paginator.total_posts }}</li>
+            <li>pagination_threshold_top : {{ pagination_threshold_top }}</li>
+            <li>pagination_threshold_bottom : {{ pagination_threshold_bottom }}</li>
+          </ul>
+          {%- endcomment %}
+          <ul class="tags layout-1d">
+            {%- for jot in site.jots %}
+              <li class="tag element-1d">
+                {% if jot.number < pagination_threshold_bottom %}
+                <a href="{{ site.baseurl }}/jots/{{ paginator.total_pages }}/index.html#jot-{{ jot.number }}" title="Jot № {{ jot.number }}">{% for tag in jot.tags %}{% if forloop.last == true %}{{ tag }}{% else %}{{ tag }} <span>·</span> {% endif %}{% endfor %}</a>
+                {% elsif jot.number >= pagination_threshold_bottom and jot.number <= pagination_threshold_top %}
+                {%- if jot_counter > paginator.per_page %}
+                  {%- assign pagination_counter = pagination_counter | minus : 1 %}
+                  {%- assign jot_counter = 1 %}
+                {%- endif %}
+                <a href="{{ site.baseurl }}/jots/{{ pagination_counter }}/index.html#jot-{{ jot.number }}" title="Jot № {{ jot.number }}">{% for tag in jot.tags %}{% if forloop.last == true %}{{ tag }}{% else %}{{ tag }} <span>·</span> {% endif %}{% endfor %}</a>
+                {%- assign jot_counter = jot_counter | plus : 1 %}
+                {% elsif jot.number > pagination_threshold_top %}
+                <a href="{{ site.baseurl }}/jots/index.html#jot-{{ jot.number }}" title="Jot № {{ jot.number }}">{% for tag in jot.tags %}{% if forloop.last == true %}{{ tag }}{% else %}{{ tag }} <span>·</span> {% endif %}{% endfor %}</a>
+                {% endif %}
+              </li>
+            {%- endfor %}
+          </div>
+        </nav>

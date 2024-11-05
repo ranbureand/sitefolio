@@ -6,15 +6,15 @@
 
 .figures {
   display: flex;
-  align-content: flex-start;
-  align-items: flex-start;
-  flex-flow: row wrap;
-  justify-content: flex-start;
 
   margin-top: em($m-base-rhythm);
   margin-right: em(-$m-gut/2);
   margin-left: em(-$m-gut/2);
 
+  align-content: flex-start;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  justify-content: flex-start;
   @include min-screen(col(8)) {
     //width: col(8);
     margin-top: em($d-base-rhythm);
@@ -22,10 +22,10 @@
     margin-left: em(-$d-gut/2);
   }
   @include min-screen(col(12)) {
-    justify-content: flex-end;
-
     width: col(12);
     margin-left: em(-$column-width*4-$d-gut/2);
+
+    justify-content: flex-end;
   }
   @include min-screen(col(16)) {
     width: col(16);
@@ -77,8 +77,6 @@ div {
 
     > p:first-child:before {
       font-style: italic;
-      //float: left;
-      //padding: 0 0.75em 0 0;
 
       content: "fig. " counter(images) "\0000a0\0000a0";
     }
@@ -212,6 +210,7 @@ div {
 [class^="video-embed"] {
   video {
     cursor: pointer;
+
     outline: 0;
   }
 }
@@ -224,15 +223,14 @@ div {
     height: em($m-medium-size*3);
 
     cursor: pointer;
-
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: em($m-medium-size*2);
-
-    border-radius: 50% 50%;
     transition-timing-function: ease-in, ease-in;
     transition-duration: $duration, $duration;
     transition-property: opacity, background-color;
+
+    border-radius: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: em($m-medium-size*2);
   }
   .play,
   .mute {
@@ -284,12 +282,6 @@ div {
 .video-link-xl,
 .video-embed-xl {
   width: 100%;
-
-  @include min-screen(col(12)) {
-    figcaption {
-      //width: col(8);
-    }
-  }
 }
 
 .image-l,
@@ -299,10 +291,6 @@ div {
 
   @include min-screen(col(12)) {
     width: col(12);
-
-    figcaption {
-      //width: col(8);
-    }
   }
 }
 
@@ -388,7 +376,8 @@ div {
     div {
       opacity: 0.4;
       background-color: var(--type-color);
-      &:hover, &:active {
+      &:hover,
+      &:active {
         opacity: 1.0;
         //background-color: $st-color;
       }
@@ -403,9 +392,11 @@ div {
 }
 
 [class^="video-embed"] {
-  &:hover, &:active {
+  &:hover,
+  &:active {
     .video-controls {
-      .played, .paused {
+      .played,
+      .paused {
         opacity: 0.88;
         background-color: var(--color-1);
       }
@@ -417,7 +408,8 @@ div {
   div {
     opacity: 0.4;
     background-color: var(--type-color);
-    &:hover, &:active {
+    &:hover,
+    &:active {
       opacity: 1.0;
       //background-color: $st-color;
     }

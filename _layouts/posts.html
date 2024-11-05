@@ -1,0 +1,20 @@
+---
+layout: base
+mode: dark
+---
+
+    <div class="canvas-posts background">
+      <section class="posts layout-2d">
+
+        <header class="posts-head column-2d-l typo-sl">
+          <h2>{{ page.title }}</h2>
+        </header>
+
+        <div class="column-2d-l separator"></div>
+
+{% include posts-items.html %}
+
+{% include posts-pagination.html %}
+
+      </section>
+    </div>

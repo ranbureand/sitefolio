@@ -1,0 +1,7 @@
+        <div class="column-2d-l">
+          <ul class="posts-items layout-1d-ltr">
+            {% for post in paginator.posts %}
+{% include posts-item.html post=post %}
+            {%- endfor %}
+          </ul>
+        </div>

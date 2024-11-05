@@ -2,20 +2,14 @@
       <section class="posts layout-2d">
 
         <header class="posts-head column-2d-l typo-sl">
-          {%- if page.name == '.html' %}
-            <h2>{{ page.title }}</h2>
-          {%- else %}
-            <h2>Last posts</h2>
-          {%- endif %}
+          <h2>Last posts</h2>
         </header>
 
         <div class="column-2d-l separator"></div>
 
-        {%- if page.name == '.html' %}
-{% include posts-pagination-previews.html %}
-        {%- else %}
-{% include posts-previews.html postLimit = 8 %}
-        {%- endif %}
+{% include posts-home-items.html postLimit = 8 %}
+
+{% include posts-home-pagination.html %}
 
       </section>
     </div>

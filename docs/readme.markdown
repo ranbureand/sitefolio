@@ -35,3 +35,21 @@ Run the following commands in the Terminal:
 Run the following commands in the Terminal:
 
     bundle exec jekyll build
+
+## Jekyll variables
+
+```
+<ul>
+  <li>page.title = {{ page.title }}</li>
+  <li>page.url = {{ page.url }}</li>
+  <li>page.id = {{ page.id }}</li>
+  <li>page.collection = {{ page.collection }}</li>
+  <li>page.dir = {{ page.dir }}</li>
+  <li>page.name = {{ page.name }}</li>
+  <li>page.path = {{ page.path }}</li>
+  <li>page.slug = {{ page.slug }}</li>
+  <li>page.ext = {{ page.ext }}</li>
+  <li>page.next = {{ page.next }}</li>
+  <li>page.previous = {{ page.previous }}</li>
+</ul>
+```

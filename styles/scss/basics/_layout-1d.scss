@@ -6,13 +6,13 @@
 
 [class*="layout-1d"] {
   display: flex;
-  align-content: flex-start;
-  align-items: flex-start;
-  flex-flow: row wrap;
 
   margin-right: em(-$m-gut/2);
   margin-left: em(-$m-gut/2);
 
+  align-content: flex-start;
+  align-items: flex-start;
+  flex-flow: row wrap;
   @include min-screen(col(8)) {
     margin-right: em(-$d-gut/2);
     margin-left: em(-$d-gut/2);
@@ -29,7 +29,6 @@
 
 .layout-1d-rtl {
   justify-content: flex-start;
-
   @include min-screen(col(12)) {
     justify-content: flex-end;
   }

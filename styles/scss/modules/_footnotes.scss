@@ -25,12 +25,12 @@
     border-top-style: solid;
   }
 
-   > ol {
+  > ol {
     margin-bottom: 0;
 
     counter-reset: footnotes;
 
-     > li {
+    > li {
       font-size: 1em;
 
       counter-increment: footnotes;
@@ -45,10 +45,9 @@
       }
     }
   }
-
   @include min-screen(col(12)) {
-     > ol {
-       > li {
+    > ol {
+      > li {
         &:before {
           width: col(4, $d-small-size);
           margin-left: col(-4, $d-small-size);
@@ -65,8 +64,8 @@
       width: calc(#{col(2)} - #{em($d-gut)});
     }
 
-     > ol {
-       > li {
+    > ol {
+      > li {
         font-size: 1em;
 
         &:before {

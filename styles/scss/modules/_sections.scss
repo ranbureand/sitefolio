@@ -22,9 +22,6 @@
 ** Splash
 */
 
-.canvas-splash {
-}
-
 .splash {
   animation-name: element-in-up;
   animation-duration: $duration*4;
@@ -36,9 +33,6 @@
 ** About
 */
 
-.canvas-about {
-}
-
 .about {
   padding-top: em($m-base-rhythm*2);
   padding-bottom: em($m-base-rhythm*4);
@@ -47,7 +41,6 @@
   animation-duration: $duration*4;
 
   animation-fill-mode: both;
-
   @include min-screen(col(8)) {
     padding-top: em($d-base-rhythm*1);
     padding-bottom: em($d-base-rhythm*4);
@@ -55,33 +48,8 @@
 }
 
 /*
-** About
-*/
-
-.canvas-portrait{
-}
-
-.portrait {
-  //padding-top: em($m-base-rhythm*2);
-  padding-bottom: em($m-base-rhythm*2);
-
-  animation-name: element-in-up;
-  animation-duration: $duration*4;
-
-  animation-fill-mode: both;
-
-  @include min-screen(col(8)) {
-    //padding-top: em($d-base-rhythm*1);
-    padding-bottom: em($d-base-rhythm*2);
-  }
-}
-
-/*
 ** Posts
 */
-
-.canvas-posts {
-}
 
 .posts {
   padding-top: em($m-base-rhythm*2);
@@ -91,7 +59,6 @@
   animation-duration: $duration*4;
 
   animation-fill-mode: both;
-
   @include min-screen(col(8)) {
     padding-top: em($d-base-rhythm*1);
     padding-bottom: em($d-base-rhythm*2);
@@ -102,9 +69,9 @@
   @include min-screen(col(16)) {
     h1,
     h2 {
-      margin-bottom: em($t-super-large-line/2, $t-super-large-size);
+      margin-bottom: em($t-splash-large-line/2, $t-splash-large-size);
 
-      @include font-size($t-super-large-size, $t-super-large-line);
+      @include font-size($t-splash-large-size, $t-splash-large-line);
     }
   }
 }
@@ -115,8 +82,8 @@
 
 .posts-exordium {
   .footnotes {
-     > ol {
-       > li {
+    > ol {
+      > li {
         &:before {
           content: "\002020";
         }
@@ -126,33 +93,8 @@
 }
 
 /*
-** Posts, pagination
-*/
-
-.canvas-posts-pagination {
-}
-
-.posts-pagination {
-  padding-top: em($m-base-rhythm*2);
-  padding-bottom: em($m-base-rhythm*2);
-
-  animation-name: element-in-up;
-  animation-duration: $duration*4;
-
-  animation-fill-mode: both;
-
-  @include min-screen(col(8)) {
-    padding-top: em($d-base-rhythm*1);
-    padding-bottom: em($d-base-rhythm*2);
-  }
-}
-
-/*
 ** Projects
 */
-
-.canvas-projects {
-}
 
 .projects {
   padding-top: em($m-base-rhythm*2);
@@ -162,10 +104,9 @@
   animation-duration: $duration*4;
 
   animation-fill-mode: both;
-
   @include min-screen(col(8)) {
     padding-top: em($d-base-rhythm*1);
-    padding-bottom: em($d-base-rhythm*4);
+    padding-bottom: em($d-base-rhythm*2);
   }
 }
 
@@ -173,9 +114,9 @@
   @include min-screen(col(16)) {
     h1,
     h2 {
-      margin-bottom: em($t-super-large-line/2, $t-super-large-size);
+      margin-bottom: em($t-splash-large-line/2, $t-splash-large-size);
 
-      @include font-size($t-super-large-size, $t-super-large-line);
+      @include font-size($t-splash-large-size, $t-splash-large-line);
     }
   }
 }
@@ -186,8 +127,8 @@
 
 .projects-exordium {
   .footnotes {
-     > ol {
-       > li {
+    > ol {
+      > li {
         &:before {
           content: "\002020";
         }
@@ -197,11 +138,62 @@
 }
 
 /*
-** Article
+** Jot splash
 */
 
-.canvas-article {
+.jot-splash {
+  animation-name: element-in-up;
+  animation-duration: $duration*4;
+
+  animation-fill-mode: both;
 }
+
+/*
+** Jots
+*/
+
+.jots {
+  padding-top: em($m-base-rhythm*2);
+  padding-bottom: em($m-base-rhythm*4);
+
+  animation-name: element-in-up;
+  animation-duration: $duration*4;
+
+  animation-fill-mode: both;
+  @include min-screen(col(8)) {
+    padding-top: em($d-base-rhythm*1);
+    padding-bottom: em($d-base-rhythm*2);
+  }
+}
+
+.jots-head {
+  @include min-screen(col(16)) {
+    h1,
+    h2 {
+      margin-bottom: em($t-splash-large-line/2, $t-splash-large-size);
+
+      @include font-size($t-splash-large-size, $t-splash-large-line);
+    }
+  }
+}
+
+.jots-tags {
+  padding-top: em($m-base-rhythm*4);
+  padding-bottom: em($m-base-rhythm*2);
+
+  animation-name: element-in-up;
+  animation-duration: $duration*4;
+
+  animation-fill-mode: both;
+  @include min-screen(col(8)) {
+    padding-top: em($d-base-rhythm*2);
+    padding-bottom: em($d-base-rhythm*2);
+  }
+}
+
+/*
+** Article
+*/
 
 .article {
   padding-top: em($m-base-rhythm*2);
@@ -211,7 +203,6 @@
   animation-duration: $duration*4;
 
   animation-fill-mode: both;
-
   @include min-screen(col(8)) {
     padding-top: em($d-base-rhythm*1);
     padding-bottom: em($d-base-rhythm*4);

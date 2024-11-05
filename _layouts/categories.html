@@ -3,4 +3,24 @@ layout: base
 mode: dark
 ---
 
-{% include projects.html %}
+    <div class="canvas-projects background">
+      <section class="projects layout-2d">
+
+        <header class="projects-head column-2d-l typo-sl">
+          <h2>{{ page.title }}</h2>
+        </header>
+
+        <div class="column-2d-l separator"></div>
+
+        {%- if page.exordium %}
+        <div class="projects-exordium column-2d-m-2 typo-l">
+          {{ page.exordium | markdownify | strip }}
+        </div>
+        {%- endif %}
+
+{% include projects-items.html category = page.category %}
+
+{% include projects-filters.html %}
+
+      </section>
+    </div>

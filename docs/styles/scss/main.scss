@@ -37,7 +37,8 @@
 ** Modules
 */
 
-@import "modules/frames.scss";
+@import "modules/header.scss";
+@import "modules/footer.scss";
 @import "modules/switches.scss";
 @import "modules/sections.scss";
 @import "modules/separators.scss";
@@ -49,15 +50,15 @@
 @import "modules/codes.scss";
 @import "modules/tables.scss";
 @import "modules/footnotes.scss";
-@import "modules/posts_previews.scss";
-@import "modules/posts_pagination.scss";
-@import "modules/posts_pages.scss";
-@import "modules/projects_previews.scss";
-@import "modules/filters.scss";
-//@import "modules/pieces.scss";
+@import "modules/controls.scss";
+@import "modules/posts.scss";
+@import "modules/post_pagination.scss";
+@import "modules/projects.scss";
+@import "modules/jot_splash.scss";
+@import "modules/jots.scss";
+@import "modules/jots_tags.scss";
 @import "modules/links.scss";
 @import "modules/forms.scss";
-@import "modules/forms_colors.scss";
 
 /*
 ** Print

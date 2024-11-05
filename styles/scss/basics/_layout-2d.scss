@@ -28,7 +28,6 @@
   grid-column-gap: em($m-gut);
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
-
   @include min-screen(col(8)) {
     //width: col(8);
     padding-right: em($d-gut/2);

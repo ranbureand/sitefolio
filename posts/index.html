@@ -1,13 +1,15 @@
 ---
-layout: base
+layout: posts
 mode: dark
 
 title: All posts
 
 published: true
 
+permalink: /posts
+
 pagination:
-  collection: posts
+  collection: 'posts'
   enabled: true
   per_page: 8
   permalink: /:num/
@@ -18,5 +20,3 @@ pagination:
     after: 2
     before: 2
 ---
-
-{% include posts.html %}

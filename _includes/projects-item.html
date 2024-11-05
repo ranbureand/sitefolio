@@ -1,0 +1,10 @@
+            <li class="element-1d">
+              <a class="projects-item{% if project.title == page.title %} current{% endif %}" href="{{ project.url | prepend: site.baseurl }}">
+                <div class="projects-item-image"{% if project.preview_color %} style="background-color:{{ project.preview_color }};"{% endif %}>
+                  <img loading="lazy" src="{{ site.baseurl }}/media/projects-optimized/{{ project.slug }}/thumbnails/1440/{{ project.preview_image }}?v={{ site.version }}" alt="{{ project.title | strip_html }}" title="{{ project.title | strip_html }}"/>
+                </div>
+                <div class="projects-item-title">{{ project.title | markdownify | remove: '<p>' | remove: '</p>' | strip }}</div>
+                <div class="projects-item-tags">{% for tag in project.tags %}{% if forloop.last == true %}{{tag}}{% else %}{{tag}}, {% endif %}{% endfor %}</div>
+                <div class="projects-item-time">{{ project.time }}</div>
+              </a>
+            </li>
