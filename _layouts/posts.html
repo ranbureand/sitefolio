@@ -3,7 +3,7 @@ layout: base
 mode: dark
 ---
 
-    <div class="canvas-posts background">
+    <div class="canvas-posts background canvas-stalagmite">
       <section class="posts layout-2d">
 
         <header class="posts-head column-2d-l typo-sl">
@@ -12,9 +12,8 @@ mode: dark
 
         <div class="column-2d-l separator"></div>
 
-{% include posts-items.html %}
-
-{% include posts-pagination.html %}
+        {% include posts-items.html %}
+        {% include posts-pagination.html %}
 
       </section>
     </div>

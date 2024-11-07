@@ -3,9 +3,9 @@ layout: base
 mode: dark
 ---
 
-{% if page.url == "/jots/index.html" or page.url == "/jots/1/index.html" %}
-{% include jot-splash.html %}
-{% endif %}
+    {% if page.url == "/jots/index.html" or page.url == "/jots/1/index.html" %}
+    {% include jot-splash.html %}
+    {% endif %}
 
     <div class="canvas-jots foreground">
       <section class="jots layout-2d">
@@ -22,7 +22,7 @@ mode: dark
       </section>
     </div>
 
-    <div class="canvas-jots-tags background">
+    <div class="canvas-jots-tags background canvas-stalagmite">
       <section class="jots-tags layout-2d">
 
 {% include jots-tags.html %}

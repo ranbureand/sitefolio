@@ -1,3 +1,4 @@
+        {%- comment %} whitespace {%- endcomment %}
         <aside class="appendix typo-s">
           <dl>
             {% if page.tags %}<dt>tags</dt><dd>{% for tag in page.tags %}{% if forloop.last == true %}{{ tag }}{% else %}{{ tag }}, {% endif %}{% endfor %}</dd>{% endif %}

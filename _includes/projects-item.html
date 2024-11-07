@@ -1,3 +1,4 @@
+            {%- comment %} whitespace {%- endcomment %}
             <li class="element-1d">
               <a class="projects-item{% if project.title == page.title %} current{% endif %}" href="{{ project.url | prepend: site.baseurl }}">
                 <div class="projects-item-image"{% if project.preview_color %} style="background-color:{{ project.preview_color }};"{% endif %}>

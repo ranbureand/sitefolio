@@ -15,18 +15,18 @@
           <ul class="tags layout-1d">
             {%- for jot in site.jots %}
               <li class="tag element-1d">
-                {% if jot.number < pagination_threshold_bottom %}
+                {%- if jot.number < pagination_threshold_bottom %}
                 <a href="{{ site.baseurl }}/jots/{{ paginator.total_pages }}/index.html#jot-{{ jot.number }}" title="Jot № {{ jot.number }}">{% for tag in jot.tags %}{% if forloop.last == true %}{{ tag }}{% else %}{{ tag }} <span>·</span> {% endif %}{% endfor %}</a>
-                {% elsif jot.number >= pagination_threshold_bottom and jot.number <= pagination_threshold_top %}
+                {%- elsif jot.number >= pagination_threshold_bottom and jot.number <= pagination_threshold_top %}
                 {%- if jot_counter > paginator.per_page %}
                   {%- assign pagination_counter = pagination_counter | minus : 1 %}
                   {%- assign jot_counter = 1 %}
                 {%- endif %}
                 <a href="{{ site.baseurl }}/jots/{{ pagination_counter }}/index.html#jot-{{ jot.number }}" title="Jot № {{ jot.number }}">{% for tag in jot.tags %}{% if forloop.last == true %}{{ tag }}{% else %}{{ tag }} <span>·</span> {% endif %}{% endfor %}</a>
                 {%- assign jot_counter = jot_counter | plus : 1 %}
-                {% elsif jot.number > pagination_threshold_top %}
+                {%- elsif jot.number > pagination_threshold_top %}
                 <a href="{{ site.baseurl }}/jots/index.html#jot-{{ jot.number }}" title="Jot № {{ jot.number }}">{% for tag in jot.tags %}{% if forloop.last == true %}{{ tag }}{% else %}{{ tag }} <span>·</span> {% endif %}{% endfor %}</a>
-                {% endif %}
+                {%- endif %}
               </li>
             {%- endfor %}
           </div>

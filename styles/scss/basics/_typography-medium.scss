@@ -14,12 +14,15 @@
     margin-bottom: em($m-extra-large-line/2, $m-extra-large-size);
 
     @include font-size($m-extra-large-size, $m-extra-large-line);
+    scroll-margin-top: em($m-scroll-offset, $m-extra-large-size);
   }
 
   * + h1,
   * + h2,
   * + h3 {
     margin-top: em($m-extra-large-line, $m-extra-large-size);
+
+    scroll-margin-top: em($m-scroll-offset - $m-extra-large-line, $m-extra-large-size);
   }
 
   h4,
@@ -27,21 +30,27 @@
     margin-bottom: em($m-large-line/2, $m-large-size);
 
     @include font-size($m-large-size, $m-large-line);
+    scroll-margin-top: em($m-scroll-offset, $m-large-size);
   }
 
   * + h4,
   * + h5 {
-    margin-top: em($m-medium-line, $m-medium-size);
+    margin-top: em($m-large-line, $m-large-size);
+
+    scroll-margin-top: em($m-scroll-offset - $m-large-line, $m-large-size);
   }
 
   h6 {
     margin-bottom: em($m-medium-line/2, $m-medium-size);
 
     @include font-size($m-medium-size, $m-medium-line);
+    scroll-margin-top: em($m-scroll-offset, $m-medium-size);
   }
 
   * + h6 {
     margin-top: em($m-medium-line, $m-medium-size);
+
+    scroll-margin-top: em($m-scroll-offset - $m-medium-line, $m-medium-size);
   }
 
   p,
@@ -120,6 +129,14 @@
     }
   }
 
+  [role="doc-noteref"] {
+    scroll-margin-top: $m-scroll-offset*2;
+  }
+
+  [role="doc-endnote"] {
+    scroll-margin-top: em($m-scroll-offset*2, $m-medium-size);
+  }
+
   @include min-screen(col(8)) {
     // Text-level semantics
 
@@ -129,12 +146,15 @@
       margin-bottom: em($d-extra-large-line/2, $d-extra-large-size);
 
       @include font-size($d-extra-large-size, $d-extra-large-line);
+      scroll-margin-top: em($d-scroll-offset, $d-extra-large-size);
     }
 
     * + h1,
     * + h2,
     * + h3 {
       margin-top: em($d-extra-large-line, $d-large-size);
+
+      scroll-margin-top: em($d-scroll-offset - $d-extra-large-line, $d-extra-large-size);
     }
 
     h4,
@@ -142,21 +162,27 @@
       margin-bottom: em($d-large-line/2, $d-large-size);
 
       @include font-size($d-large-size, $d-large-line);
+      scroll-margin-top: em($d-scroll-offset, $d-large-size);
     }
 
     * + h4,
     * + h5 {
       margin-top: em($d-large-line, $d-large-size);
+
+      scroll-margin-top: em($d-scroll-offset - $d-large-line, $d-large-size);
     }
 
     h6 {
       margin-bottom: em($d-medium-line/2, $d-medium-size);
 
       @include font-size($d-medium-size, $d-medium-line);
+      scroll-margin-top: em($d-scroll-offset, $d-medium-size);
     }
 
     * + h6 {
       margin-top: em($d-medium-line, $d-medium-size);
+
+      scroll-margin-top: em($d-scroll-offset - $d-medium-line, $d-medium-size);
     }
 
     p,
@@ -231,6 +257,14 @@
       &:before {
         left: 0;
       }
+    }
+
+    [role="doc-noteref"] {
+      scroll-margin-top: $d-scroll-offset*2;
+    }
+
+    [role="doc-endnote"] {
+      scroll-margin-top: em($d-scroll-offset*2, $d-medium-size);
     }
   }
   @include min-screen(col(12)) {

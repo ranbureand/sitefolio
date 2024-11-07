@@ -1,9 +1,8 @@
-{%- if include.ground -%}
-  {%- assign ground = include.ground -%}
-{%- else -%}
-  {%- assign ground = 'background' -%}
-{%- endif -%}
-
+{%- if include.ground %}
+  {%- assign ground = include.ground %}
+{%- else %}
+  {%- assign ground = 'background' %}
+{%- endif %}
     <div class="canvas-about {{ ground }}">
       <div class="about layout-2d">
 

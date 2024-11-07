@@ -1,3 +1,4 @@
+  {%- comment %} whitespace {%- endcomment %}
   <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -43,7 +44,7 @@
     <meta name="msapplication-TileColor" content="#987cfb">
     <meta name="theme-color" content="#ffffff">
 
-{% include open-graph.html %}
+    {% include open-graph.html %}
 
     <link rel="canonical" href="{{ page.url | replace:'index.html', '' | prepend: site.url }}"/>
 

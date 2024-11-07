@@ -1,3 +1,4 @@
+    {%- comment %} whitespace {%- endcomment %}
     <div class="canvas-jots background">
       <section class="jots layout-2d">
 
@@ -7,9 +8,8 @@
 
         <div class="column-2d-l separator"></div>
 
-{% include jots-home-items.html jotLimit = 12 %}
-
-{% include jots-home-pagination.html %}
+        {% include jots-home-items.html jotLimit = 12 %}
+        {% include jots-home-pagination.html %}
 
       </section>
     </div>

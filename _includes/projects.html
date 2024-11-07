@@ -1,4 +1,5 @@
-    <div class="canvas-projects background">
+    {%- comment %} whitespace {%- endcomment %}
+    <div class="canvas-projects background canvas-stalagmite">
       <section class="projects layout-2d">
 
         {%- assign categories = site.categories | where: 'category', 'Favorite' %}
@@ -19,9 +20,9 @@
         </div>
         {%- endif %}
 
-{% include projects-items.html category = 'Favorite' %}
+        {% include projects-items.html category = 'Favorite' %}
 
-{% include projects-filters.html %}
+        {% include projects-filters.html %}
 
       </section>
     </div>

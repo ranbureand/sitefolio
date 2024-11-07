@@ -1,4 +1,5 @@
-    <div class="canvas-posts background">
+    {%- comment %} whitespace {%- endcomment %}
+    <div class="canvas-posts background canvas-stalagmite">
       <section class="posts layout-2d">
 
         <header class="posts-head column-2d-l typo-sl">
@@ -7,9 +8,9 @@
 
         <div class="column-2d-l separator"></div>
 
-{% include posts-home-items.html postLimit = 8 %}
+        {% include posts-home-items.html postLimit = 8 %}
 
-{% include posts-home-pagination.html %}
+        {% include posts-home-pagination.html %}
 
       </section>
     </div>

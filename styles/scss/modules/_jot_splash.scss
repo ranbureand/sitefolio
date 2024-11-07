@@ -11,9 +11,12 @@
   margin-bottom: em($m-base-rhythm*2);
 
   grid-row: 1;
+  scroll-margin-top: em($m-scroll-offset);
   @include min-screen(col(8)) {
     margin-top: em($d-base-rhythm*2);
     margin-bottom: em($d-base-rhythm*1);
+
+    scroll-margin-top: em($d-scroll-offset);
   }
 }
 

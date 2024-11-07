@@ -1,3 +1,4 @@
+            {%- comment %} whitespace {%- endcomment %}
             <li class="element-1d">
               <a class="posts-item serif{% if post.title == page.title %} current{% endif %}" href="{{ post.url | prepend: site.baseurl }}">
                 <div class="posts-item-excerpt">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' | strip }}</div>

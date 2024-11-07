@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://www.andreaburan.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.andreaburan.com/" rel="alternate" type="text/html" /><updated>2024-11-05T23:26:13+01:00</updated><id>https://www.andreaburan.com/feed.xml</id><title type="html">Andrea Buran’s site</title><subtitle>Andrea Buran, product designer &amp; leader, at your service. I design digital services and products, solving people’s problems and helping organizations reach their goals.</subtitle><author><name>Andrea Buran</name></author><entry><title type="html">The flow of time in the language of comics</title><link href="https://www.andreaburan.com/post/the-flow-of-time-in-the-language-of-comics.html" rel="alternate" type="text/html" title="The flow of time in the language of comics" /><published>2023-12-28T19:45:00+01:00</published><updated>2023-12-28T19:45:00+01:00</updated><id>https://www.andreaburan.com/post/the-flow-of-time-in-the-language-of-comics</id><content type="html" xml:base="https://www.andreaburan.com/post/the-flow-of-time-in-the-language-of-comics.html"><![CDATA[<ul class="toc">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://www.andreaburan.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.andreaburan.com/" rel="alternate" type="text/html" /><updated>2024-11-07T10:01:57+01:00</updated><id>https://www.andreaburan.com/feed.xml</id><title type="html">Andrea Buran’s site</title><subtitle>Andrea Buran, product designer &amp; leader, at your service. I design digital services and products, solving people’s problems and helping organizations reach their goals.</subtitle><author><name>Andrea Buran</name></author><entry><title type="html">The flow of time in the language of comics</title><link href="https://www.andreaburan.com/post/the-flow-of-time-in-the-language-of-comics.html" rel="alternate" type="text/html" title="The flow of time in the language of comics" /><published>2023-12-28T19:45:00+01:00</published><updated>2023-12-28T19:45:00+01:00</updated><id>https://www.andreaburan.com/post/the-flow-of-time-in-the-language-of-comics</id><content type="html" xml:base="https://www.andreaburan.com/post/the-flow-of-time-in-the-language-of-comics.html"><![CDATA[<ul class="toc">
   <li><a href="#introduction">Introduction</a></li>
   <li><a href="#space--time">Space = time</a>
     <ul>
@@ -49,7 +49,9 @@
 <p>Let us look at a sequence of pages from the <em>manga</em> <em>Dragon Ball</em> by Akira Toriyama as an example. In this sequence, Gohan—Goku’s son—counterattacks to prevent Cell—the mashed up villain—from destroying Earth.</p>
 
 <div class="figures">
-  <figure class="image-xl" id="dragon_ball_the_ultimate_kamehameha_sequence_of_pages_00.jpg">
+  
+
+<figure class="image-xl" id="dragon_ball_the_ultimate_kamehameha_sequence_of_pages_00.jpg">
   <a class="ratio" href="../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1440/dragon_ball_the_ultimate_kamehameha_sequence_of_pages_00.jpg" style="padding-bottom: 124.83552631578947%;background-color: #D6D6D6;" target="_blank">
     <img loading="lazy" src="
       ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1440/dragon_ball_the_ultimate_kamehameha_sequence_of_pages_00.jpg
@@ -68,7 +70,8 @@
       " alt="
       Pages 28–37, taken from the chapter 410 The Ultimate Kamehameha from the manga Dragon Ball by Akira Toriyama.
       " />
-  </a><figcaption class="typo-s">
+  </a>
+  <figcaption class="typo-s">
     <p>Pages 28–37, taken from the chapter 410 <em>The Ultimate Kamehameha</em> from the <em>manga</em> <em><a href="https://en.wikipedia.org/wiki/Dragon_Ball_(manga)" title="Dragon Ball in Wikipedia">Dragon Ball</a></em> by Akira Toriyama.</p>
   </figcaption>
 </figure>
@@ -139,7 +142,9 @@
 <p>Let us look at a sequence of panels from the graphic novel <em>The Dark Knight Returns</em> by Frank Miller as an example. In the spread, Bruce Wayne—also known as Batman—has a flashback where he remembers his parents being killed during an armed robbery.</p>
 
 <div class="figures">
-  <figure class="image-xl" id="the_dark_knight_returns_sequence_of_panels_00.jpg">
+  
+
+<figure class="image-xl" id="the_dark_knight_returns_sequence_of_panels_00.jpg">
   <a class="ratio" href="../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1440/the_dark_knight_returns_sequence_of_panels_00.jpg" style="padding-bottom: 80.68576388888889%;background-color: #D6D6D6;" target="_blank">
     <img loading="lazy" src="
       ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1440/the_dark_knight_returns_sequence_of_panels_00.jpg
@@ -158,7 +163,8 @@
       " alt="
       Pages 16–17, taken from The Dark Knight Returns by Frank Miller, Klaus Janson, and Lynn Varley.
       " />
-  </a><figcaption class="typo-s">
+  </a>
+  <figcaption class="typo-s">
     <p>Pages 16–17, taken from <em><a href="https://en.wikipedia.org/wiki/The_Dark_Knight_Returns" title="The Dark Knight Returns in Wikipedia">The Dark Knight Returns</a></em> by Frank Miller, Klaus Janson, and Lynn Varley.</p>
   </figcaption>
 </figure>
@@ -180,7 +186,9 @@
 <p>Let us look at a panel from the comic book <em>Asterix And The Banquet</em> by René Goscinny and Albert Uderzo as an example.</p>
 
 <div class="figures">
-  <figure class="image-l" id="asterix_asterix_and_the_banquet_00.jpg">
+  
+
+<figure class="image-l" id="asterix_asterix_and_the_banquet_00.jpg">
   <a class="ratio" href="../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1440/asterix_asterix_and_the_banquet_00.jpg" style="padding-bottom: 58.33333333333334%;background-color: #D6D6D6;" target="_blank">
     <img loading="lazy" src="
       ../media/media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1080/asterix_asterix_and_the_banquet_00.jpg
@@ -197,7 +205,8 @@
       " alt="
       The first half of page 6, taken from Asterix And The Banquet by René Goscinny and Albert Uderzo.
       " />
-  </a><figcaption class="typo-s">
+  </a>
+  <figcaption class="typo-s">
     <p>The first panel of page 6, taken from <em><a href="https://en.wikipedia.org/wiki/Asterix_and_the_Banquet" title="Asterix And The Banquet in Wikipedia">Asterix And The Banquet</a></em> by René Goscinny and Albert Uderzo.</p>
   </figcaption>
 </figure>
@@ -255,7 +264,9 @@
 <p>Let us look at a spread from the <em>manga</em> <em>Gon</em> by Masashi Tanaka as an example. In volume 2, chapter 8, Gon the dinosaur tries to blend in and live with a colony of penguins.</p>
 
 <div class="figures">
-  <figure class="image-xl" id="gon_gon_lives_with_the_penguins_visual_complexity_00.jpg">
+  
+
+<figure class="image-xl" id="gon_gon_lives_with_the_penguins_visual_complexity_00.jpg">
   <a class="ratio" href="../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1440/gon_gon_lives_with_the_penguins_visual_complexity_00.jpg" style="padding-bottom: 76.38888888888889%;background-color: #D6D6D6;" target="_blank">
     <img loading="lazy" src="
       ../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1440/gon_gon_lives_with_the_penguins_visual_complexity_00.jpg
@@ -274,7 +285,8 @@
       " alt="
       Pages 7–8 taken from volume 2 chapter 8 Gon Lives with The Penguins from Gon by Masashi Tanaka.
       " />
-  </a><figcaption class="typo-s">
+  </a>
+  <figcaption class="typo-s">
     <p>Pages 7–8 taken from volume 2 chapter 8 <em>Gon Lives with The Penguins</em> from <em><a href="https://en.wikipedia.org/wiki/Gon_(manga)" title="Gon in Wikipedia">Gon</a></em> by Masashi Tanaka.</p>
   </figcaption>
 </figure>
@@ -292,7 +304,9 @@
 <p>Let us use a panel from <em>Sin City: The Hard Goodbye</em> by Frank Miller as an experiment and play with the speech balloons of Marv, the protagonist, who is about to get wasted.</p>
 
 <div class="figures">
-  <figure class="image-l" id="sin_city_00.jpg">
+  
+
+<figure class="image-l" id="sin_city_00.jpg">
   <a class="ratio" href="../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1440/sin_city_00.jpg" style="padding-bottom: 100.0%;background-color: #D6D6D6;" target="_blank">
     <img loading="lazy" src="
       ../media/media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1080/sin_city_00.jpg
@@ -309,7 +323,8 @@
       " alt="
       The first panel of page 2—modified—taken from Sin City: The Hard Goodbye by Frank Miller.
       " />
-  </a><figcaption class="typo-s">
+  </a>
+  <figcaption class="typo-s">
     <p>The first panel of page 2—<strong>modified!</strong>—taken from <em><a href="https://en.wikipedia.org/wiki/The_Hard_Goodbye" title="Sin City: The Hard Goodbye in Wikipedia">Sin City: The Hard Goodbye</a></em> by Frank Miller.</p>
   </figcaption>
 </figure>
@@ -321,7 +336,9 @@
 <p>Let us compare its reading experience with the one of the below example, where the same panel is left <strong>unmodified</strong>: Marv’s speech balloons have not been removed, and the panel preserves the original dialogue.</p>
 
 <div class="figures">
-  <figure class="image-l" id="sin_city_01.jpg">
+  
+
+<figure class="image-l" id="sin_city_01.jpg">
   <a class="ratio" href="../media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1440/sin_city_01.jpg" style="padding-bottom: 100.0%;background-color: #D6D6D6;" target="_blank">
     <img loading="lazy" src="
       ../media/media/posts-optimized/the-flow-of-time-in-the-language-of-comics/images/1080/sin_city_01.jpg
@@ -338,7 +355,8 @@
       " alt="
       The first panel of page 2—unmodified—taken from Sin City: The Hard Goodbye by Frank Miller.
       " />
-  </a><figcaption class="typo-s">
+  </a>
+  <figcaption class="typo-s">
     <p>The first panel of page 2—<strong>unmodified!</strong>—taken from <em><a href="https://en.wikipedia.org/wiki/The_Hard_Goodbye" title="Sin City: The Hard Goodbye in Wikipedia">Sin City: The Hard Goodbye</a></em> by Frank Miller.</p>
   </figcaption>
 </figure>
@@ -403,7 +421,9 @@
 <p>The main characters in JoJo can generate spiritual entities, named <em>Stands</em>, which help their owners with various superhuman abilities.</p>
 
 <div class="figures">
-  <figure class="image-xl" id="jojo_s_bizzarre_adventures_00.jpg">
+  
+
+<figure class="image-xl" id="jojo_s_bizzarre_adventures_00.jpg">
   <a class="ratio" href="../media/posts-optimized/the-flow-of-time-in-dio-s-world-part-7/images/1440/jojo_s_bizzarre_adventures_00.jpg" style="padding-bottom: 65.27777777777779%;background-color: #D6D6D6;" target="_blank">
     <img loading="lazy" src="
       ../media/posts-optimized/the-flow-of-time-in-dio-s-world-part-7/images/1440/jojo_s_bizzarre_adventures_00.jpg
@@ -422,7 +442,8 @@
       " alt="
       Volume 41 of the Italian version of JoJo’s Bizarre Adventure, Star Comics edition.
       " />
-  </a><figcaption class="typo-s">
+  </a>
+  <figcaption class="typo-s">
     <p>Volume 41 of the Italian version of <em>JoJo’s Bizarre Adventure</em>, <em>Star Comics</em> edition.</p>
   </figcaption>
 </figure>
@@ -454,7 +475,9 @@
 <p>In this piece, I focus my analysis only on <em>Dio’s World Part 7</em>, a chapter that consists of 20 pages in total, laid out two by two in 10 spreads <sup id="fnref:spread" role="doc-noteref"><a href="#fn:spread" class="footnote" rel="footnote">1</a></sup>.</p>
 
 <div class="figures">
-  <figure class="image-xl" id="dio_s_world_part_7_pages_124-143_00.jpg">
+  
+
+<figure class="image-xl" id="dio_s_world_part_7_pages_124-143_00.jpg">
   <a class="ratio" href="../media/posts-optimized/the-flow-of-time-in-dio-s-world-part-7/images/1440/dio_s_world_part_7_pages_124-143_00.jpg" style="padding-bottom: 35.85738539898132%;background-color: #D6D6D6;" target="_blank">
     <img loading="lazy" src="
       ../media/posts-optimized/the-flow-of-time-in-dio-s-world-part-7/images/1440/dio_s_world_part_7_pages_124-143_00.jpg
@@ -473,7 +496,8 @@
       " alt="
       An overview of the pages in the chapter Dio’s World Part 7 from JoJo’s Bizarre Adventure.
       " />
-  </a><figcaption class="typo-s">
+  </a>
+  <figcaption class="typo-s">
     <p>An overview of the pages in the chapter <em>Dio’s World Part 7</em> from <em>JoJo’s Bizarre Adventure</em>.</p>
   </figcaption>
 </figure>
@@ -483,7 +507,9 @@
 <p>Since <em>JoJo</em> is a <em>manga</em>, its reading direction is reversed compared to Western comics. In a <em>manga</em>, you read pages starting from the right-hand page, corresponding to the end in Western comics, and you leaf through them backward, toward the left-hand page, corresponding to the start in Western comics:</p>
 
 <div class="figures">
-  <figure class="image-xl" id="dio_s_world_part_7_pages_124-143_reading_direction_00.jpg">
+  
+
+<figure class="image-xl" id="dio_s_world_part_7_pages_124-143_reading_direction_00.jpg">
   <a class="ratio" href="../media/posts-optimized/the-flow-of-time-in-dio-s-world-part-7/images/1440/dio_s_world_part_7_pages_124-143_reading_direction_00.jpg" style="padding-bottom: 35.85738539898132%;background-color: #D6D6D6;" target="_blank">
     <img loading="lazy" src="
       ../media/posts-optimized/the-flow-of-time-in-dio-s-world-part-7/images/1440/dio_s_world_part_7_pages_124-143_reading_direction_00.jpg
@@ -502,7 +528,8 @@
       " alt="
       The reading direction of the sequence of pages in the chapter Dio’s World Part 7 from JoJo’s Bizarre Adventure.
       " />
-  </a><figcaption class="typo-s">
+  </a>
+  <figcaption class="typo-s">
     <p>The reading direction of the sequence of pages in <em>Dio’s World Part 7</em>.</p>
   </figcaption>
 </figure>
@@ -512,7 +539,9 @@
 <p>Similarly, you read panels within a page, as well as elements within a panel, from right to left and top to bottom:</p>
 
 <div class="figures">
-  <figure class="image-xl" id="dio_s_world_part_7_pages_128-131_reading_direction_00.jpg">
+  
+
+<figure class="image-xl" id="dio_s_world_part_7_pages_128-131_reading_direction_00.jpg">
   <a class="ratio" href="../media/posts-optimized/the-flow-of-time-in-dio-s-world-part-7/images/1440/dio_s_world_part_7_pages_128-131_reading_direction_00.jpg" style="padding-bottom: 36.155913978494624%;background-color: #D6D6D6;" target="_blank">
     <img loading="lazy" src="
       ../media/posts-optimized/the-flow-of-time-in-dio-s-world-part-7/images/1440/dio_s_world_part_7_pages_128-131_reading_direction_00.jpg
@@ -531,7 +560,8 @@
       " alt="
       The reading direction of a sequence of panels within the pages 128–131 of the chapter Dio’s World Part 7 from JoJo’s Bizarre Adventure.
       " />
-  </a><figcaption class="typo-s">
+  </a>
+  <figcaption class="typo-s">
     <p>The reading direction of a sequence of panels in pages 128–131 from <em>Dio’s World Part 7</em>.</p>
   </figcaption>
 </figure>
@@ -577,7 +607,9 @@
 <p>Let us start by having a look at the sequences of pages in <em>Dio’s World Part 7</em>. As in any action comic worthy of its name, pages in the sequence are mostly composed of multiple panels of various sizes, shapes, and slants.</p>
 
 <div class="figures">
-  <figure class="image-xl" id="dio_s_world_part_7_pages_124-143_00.jpg">
+  
+
+<figure class="image-xl" id="dio_s_world_part_7_pages_124-143_00.jpg">
   <a class="ratio" href="../media/posts-optimized/the-flow-of-time-in-dio-s-world-part-7/images/1440/dio_s_world_part_7_pages_124-143_00.jpg" style="padding-bottom: 35.85738539898132%;background-color: #D6D6D6;" target="_blank">
     <img loading="lazy" src="
       ../media/posts-optimized/the-flow-of-time-in-dio-s-world-part-7/images/1440/dio_s_world_part_7_pages_124-143_00.jpg
@@ -596,7 +628,8 @@
       " alt="
       An overview of the pages in the chapter Dio’s World Part 7 from JoJo’s Bizarre Adventure.
       " />
-  </a><figcaption class="typo-s">
+  </a>
+  <figcaption class="typo-s">
     <p>In <em>JoJo</em>, there is no risk of the action being stalled because of orthogonal page layouts.</p>
   </figcaption>
 </figure>
@@ -608,7 +641,9 @@
 <p>More panels → more actions → faster tempo.</p>
 
 <div class="figures">
-  <figure class="image-xl" id="dio_s_world_part_7_pages_124-143_layout_structure_00.jpg">
+  
+
+<figure class="image-xl" id="dio_s_world_part_7_pages_124-143_layout_structure_00.jpg">
   <a class="ratio" href="../media/posts-optimized/the-flow-of-time-in-dio-s-world-part-7/images/1440/dio_s_world_part_7_pages_124-143_layout_structure_00.jpg" style="padding-bottom: 35.85738539898132%;background-color: #D6D6D6;" target="_blank">
     <img loading="lazy" src="
       ../media/posts-optimized/the-flow-of-time-in-dio-s-world-part-7/images/1440/dio_s_world_part_7_pages_124-143_layout_structure_00.jpg
@@ -627,7 +662,8 @@
       " alt="
       The layout structure of the pages in the chapter Dio’s World Part 7 from JoJo’s Bizarre Adventure.
       " />
-  </a><figcaption class="typo-s">
+  </a>
+  <figcaption class="typo-s">
     <p>The layout structure of the pages in <em>Dio’s World Part 7</em>.</p>
   </figcaption>
 </figure>
@@ -639,7 +675,9 @@
 <p>What is the deal with pages 138–141?</p>
 
 <div class="figures">
-  <figure class="image-xl" id="dio_s_world_part_7_pages_124-143_layout_structure_01.jpg">
+  
+
+<figure class="image-xl" id="dio_s_world_part_7_pages_124-143_layout_structure_01.jpg">
   <a class="ratio" href="../media/posts-optimized/the-flow-of-time-in-dio-s-world-part-7/images/1440/dio_s_world_part_7_pages_124-143_layout_structure_01.jpg" style="padding-bottom: 35.85738539898132%;background-color: #D6D6D6;" target="_blank">
     <img loading="lazy" src="
       ../media/posts-optimized/the-flow-of-time-in-dio-s-world-part-7/images/1440/dio_s_world_part_7_pages_124-143_layout_structure_01.jpg
@@ -670,7 +708,9 @@
 <p>He first hastens the narrative tempo by having a high number of panels per page before the major plot event on pages 126–137, and then he purposely slows it down by abruptly decreasing the number of panels per page so that one and only one panel corresponds to each of the four pages 138–141.</p>
 
 <div class="figures">
-  <figure class="image-xl" id="dio_s_world_part_7_pages_138-141_00.jpg">
+  
+
+<figure class="image-xl" id="dio_s_world_part_7_pages_138-141_00.jpg">
   <a class="ratio" href="../media/posts-optimized/the-flow-of-time-in-dio-s-world-part-7/images/1440/dio_s_world_part_7_pages_138-141_00.jpg" style="padding-bottom: 35.48387096774194%;background-color: #D6D6D6;" target="_blank">
     <img loading="lazy" src="
       ../media/posts-optimized/the-flow-of-time-in-dio-s-world-part-7/images/1440/dio_s_world_part_7_pages_138-141_00.jpg
@@ -703,7 +743,9 @@
 <p>And just to put the icing on the cake, Araki builds a cliffhanger on pages 136–137—right before the big revelation.</p>
 
 <div class="figures">
-  <figure class="image-xl" id="dio_s_world_part_7_pages_136-137_00.jpg">
+  
+
+<figure class="image-xl" id="dio_s_world_part_7_pages_136-137_00.jpg">
   <a class="ratio" href="../media/posts-optimized/the-flow-of-time-in-dio-s-world-part-7/images/1440/dio_s_world_part_7_pages_136-137_00.jpg" style="padding-bottom: 79.16666666666666%;background-color: #D6D6D6;" target="_blank">
     <img loading="lazy" src="
       ../media/posts-optimized/the-flow-of-time-in-dio-s-world-part-7/images/1440/dio_s_world_part_7_pages_136-137_00.jpg
@@ -738,7 +780,9 @@
 <p>Let us further focus on the sequence of panels and elements in the panels on pages 138–141. As already mentioned, each of these pages coincides with a single, full-page panel.</p>
 
 <div class="figures">
-  <figure class="image-xl" id="dio_s_world_part_7_pages_138-139_00.jpg">
+  
+
+<figure class="image-xl" id="dio_s_world_part_7_pages_138-139_00.jpg">
   <a class="ratio" href="../media/posts-optimized/the-flow-of-time-in-dio-s-world-part-7/images/1440/dio_s_world_part_7_pages_138-139_00.jpg" style="padding-bottom: 79.16666666666666%;background-color: #D6D6D6;" target="_blank">
     <img loading="lazy" src="
       ../media/posts-optimized/the-flow-of-time-in-dio-s-world-part-7/images/1440/dio_s_world_part_7_pages_138-139_00.jpg
@@ -781,7 +825,9 @@
 <p>There is no onomatopoeia, so silence is king. Kakyoin’s balance is precarious. A minaret is falling with no dust. Dio is literally out of the panel frame as if he were staring at a static painting. Araki gives us a lot of hints about what is going on, but we do not get it quite yet since, until now, as first-time readers, we have no clue about Dio’s superpower.</p>
 
 <div class="figures">
-  <figure class="image-xl" id="dio_s_world_part_7_pages_140-141_00.jpg">
+  
+
+<figure class="image-xl" id="dio_s_world_part_7_pages_140-141_00.jpg">
   <a class="ratio" href="../media/posts-optimized/the-flow-of-time-in-dio-s-world-part-7/images/1440/dio_s_world_part_7_pages_140-141_00.jpg" style="padding-bottom: 79.16666666666666%;background-color: #D6D6D6;" target="_blank">
     <img loading="lazy" src="
       ../media/posts-optimized/the-flow-of-time-in-dio-s-world-part-7/images/1440/dio_s_world_part_7_pages_140-141_00.jpg
@@ -818,7 +864,9 @@
 <p>After the peak of the climax, Araki makes everything clear in the last spread in <em>Dio’s World Part 7</em>, where the narrative rhythm returns to the usual, with an average of 4,50 panels per page.</p>
 
 <div class="figures">
-  <figure class="image-xl" id="dio_s_world_part_7_pages_142-143_00.jpg">
+  
+
+<figure class="image-xl" id="dio_s_world_part_7_pages_142-143_00.jpg">
   <a class="ratio" href="../media/posts-optimized/the-flow-of-time-in-dio-s-world-part-7/images/1440/dio_s_world_part_7_pages_142-143_00.jpg" style="padding-bottom: 79.16666666666666%;background-color: #D6D6D6;" target="_blank">
     <img loading="lazy" src="
       ../media/posts-optimized/the-flow-of-time-in-dio-s-world-part-7/images/1440/dio_s_world_part_7_pages_142-143_00.jpg
@@ -1754,7 +1802,9 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
 <p>The term remediation does <strong>not</strong> refer to the <strong>transposition of contents</strong><sup id="fnref:transposition" role="doc-noteref"><a href="#fn:transposition" class="footnote" rel="footnote">3</a></sup> between cinema and comics, but rather to the reciprocal borrowing and reshaping of their media forms by both.</p>
 
 <div class="figures">
-  <figure class="video-embed-m" id="batman_00">
+  
+
+<figure class="video-embed-m" id="batman_00">
   <div class="ratio" style="padding-bottom: 74.66666666666667%;background-color: #252525;" target="blank">
     <video class="video-content" controls="controls" loop="loop" poster="../media/posts-optimized/medlay-research/videos/batman_00.jpg">
       <source src="../media/posts-optimized/medlay-research/videos/batman_00.webm" type="video/webm" />
@@ -1762,7 +1812,8 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
       <source src="../media/posts-optimized/medlay-research/videos/batman_00.ogv" type="video/ogv" />
       Your browser cannot play this video because it does not support the HTML5 video tag. Please <a href="../media/posts-optimized/medlay-research/videos/batman_00.mp4" target="_blank">download the video</a> to watch it instead.
     </video>
-  </div><figcaption class="typo-s">
+  </div>
+  <figcaption class="typo-s">
     <p>For example, the 1960s TV series <em>Batman</em> transposed the imagery and characters of the comic book of the same name. <em>Batman</em>, 1960s TV series.</p>
 
   </figcaption>
@@ -1770,7 +1821,9 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
 </div>
 
 <div class="figures">
-  <figure class="image-m" id="batman_00.jpg">
+  
+
+<figure class="image-m" id="batman_00.jpg">
   <a class="ratio" href="../media/posts-optimized/medlay-research/images/1440/batman_00.jpg" style="padding-bottom: 150.0%;background-color: #252525;" target="_blank">
     <img loading="lazy" src="
       ../media/posts-optimized/medlay-research/images/720/batman_00.jpg
@@ -1785,7 +1838,8 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
       " alt="
       A cover of Detective Comics featuring Batman and Robin, DC Comics, 1940.
       " />
-  </a><figcaption class="typo-s">
+  </a>
+  <figcaption class="typo-s">
     <p>A cover of <em>Detective Comics</em> featuring Batman and Robin, DC Comics, 1940. Roger Sabin, <em>Comics, Comix and Graphic Novels—A History Of Comic Art</em></p>
   </figcaption>
 </figure>
@@ -1801,7 +1855,9 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
 </blockquote>
 
 <div class="figures">
-  <figure class="image-m" id="sin_city_00.jpg">
+  
+
+<figure class="image-m" id="sin_city_00.jpg">
   <a class="ratio" href="../media/posts-optimized/medlay-research/images/1440/sin_city_00.jpg" style="padding-bottom: 150.0%;background-color: #252525;" target="_blank">
     <img loading="lazy" src="
       ../media/posts-optimized/medlay-research/images/720/sin_city_00.jpg
@@ -1816,7 +1872,8 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
       " alt="
       A splash page from the graphic novel Sin City.
       " />
-  </a><figcaption class="typo-s">
+  </a>
+  <figcaption class="typo-s">
     <p>A splash page from the graphic novel Sin City. Frank Miller, <em>Sin City</em>.</p>
   </figcaption>
 </figure>
@@ -1826,7 +1883,9 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
 <p>Restricted by the <quote>film’s seemingly fixed, invisible frame</quote> the movie remediates and reshapes the “splash page” device through camera movement and the artificially frozen pose of the jumping character.</p>
 
 <div class="figures">
-  <figure class="video-embed-m" id="sin_city_00">
+  
+
+<figure class="video-embed-m" id="sin_city_00">
   <div class="ratio" style="padding-bottom: 56.0%;background-color: #252525;" target="blank">
     <video class="video-content" controls="controls" loop="loop" poster="../media/posts-optimized/medlay-research/videos/sin_city_00.jpg">
       <source src="../media/posts-optimized/medlay-research/videos/sin_city_00.webm" type="video/webm" />
@@ -1834,7 +1893,8 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
       <source src="../media/posts-optimized/medlay-research/videos/sin_city_00.ogv" type="video/ogv" />
       Your browser cannot play this video because it does not support the HTML5 video tag. Please <a href="../media/posts-optimized/medlay-research/videos/sin_city_00.mp4" target="_blank">download the video</a> to watch it instead.
     </video>
-  </div><figcaption class="typo-s">
+  </div>
+  <figcaption class="typo-s">
     <p>Robert Rodríguez &amp; Frank Miller, <em>Sin City</em>.</p>
 
   </figcaption>
@@ -1846,7 +1906,9 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
 <p><strong>Before</strong> the digital revolution, these reciprocal remediations were always limited by different production, recording, transmission, and reproduction technologies.</p>
 
 <div class="figures">
-  <figure class="video-embed-m" id="cinema_technology_00">
+  
+
+<figure class="video-embed-m" id="cinema_technology_00">
   <div class="ratio" style="padding-bottom: 74.66666666666667%;background-color: #252525;" target="blank">
     <video class="video-content" controls="controls" loop="loop" poster="../media/posts-optimized/medlay-research/videos/cinema_technology_00.jpg">
       <source src="../media/posts-optimized/medlay-research/videos/cinema_technology_00.webm" type="video/webm" />
@@ -1859,7 +1921,9 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
 </div>
 
 <div class="figures">
-  <figure class="video-embed-m" id="comics_technology_00">
+  
+
+<figure class="video-embed-m" id="comics_technology_00">
   <div class="ratio" style="padding-bottom: 74.66666666666667%;background-color: #252525;" target="blank">
     <video class="video-content" controls="controls" loop="loop" poster="../media/posts-optimized/medlay-research/videos/comics_technology_00.jpg">
       <source src="../media/posts-optimized/medlay-research/videos/comics_technology_00.webm" type="video/webm" />
@@ -1874,7 +1938,9 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
 <p><strong>After</strong> the digital revolution, the technological differences between the two cultural forms—absorbed by the World Wide Web—have been reset. However, in most cases, cinema and comics have continued to be considered and remediated separately.</p>
 
 <div class="figures">
-  <figure class="image-m" id="beartato_00.jpg">
+  
+
+<figure class="image-m" id="beartato_00.jpg">
   <a class="ratio" href="../media/posts-optimized/medlay-research/images/1440/beartato_00.jpg" style="padding-bottom: 133.33333333333334%;background-color: #252525;" target="_blank">
     <img loading="lazy" src="
       ../media/posts-optimized/medlay-research/images/720/beartato_00.jpg
@@ -1889,7 +1955,8 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
       " alt="
       A strip from the web comic NEDROID.
       " />
-  </a><figcaption class="typo-s">
+  </a>
+  <figcaption class="typo-s">
     <p>Anthony Clark, <em>NEDROID</em> web comic.</p>
   </figcaption>
 </figure>
@@ -1899,7 +1966,9 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
 <p>Is it possible to create a new <strong>hybrid media form</strong> that integrates the characteristics of cinema and comics that once seemed incompatible, now that the two mediums potentially differ only in their respective processes?</p>
 
 <div class="figures">
-  <figure class="image-m" id="motion_comics_00.jpg">
+  
+
+<figure class="image-m" id="motion_comics_00.jpg">
   <a class="ratio" href="../media/posts-optimized/medlay-research/images/1440/motion_comics_00.jpg" style="padding-bottom: 56.25%;background-color: #252525;" target="_blank">
     <img loading="lazy" src="
       ../media/posts-optimized/medlay-research/images/720/motion_comics_00.jpg
@@ -1914,7 +1983,8 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
       " alt="
       A screenshot taken from a Marvel motion comic.
       " />
-  </a><figcaption class="typo-s">
+  </a>
+  <figcaption class="typo-s">
     <p>In my opinion, <em>Marvel Motion Comics</em> are not comics; their media form is, in fact, that of cartoon cinema through and through. Marvel Motion Comics, <em>Spider Woman</em>.</p>
   </figcaption>
 </figure>
@@ -1922,7 +1992,9 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
 </div>
 
 <div class="figures">
-  <figure class="image-m" id="motion_comics_01.jpg">
+  
+
+<figure class="image-m" id="motion_comics_01.jpg">
   <a class="ratio" href="../media/posts-optimized/medlay-research/images/1440/motion_comics_01.jpg" style="padding-bottom: 56.25%;background-color: #252525;" target="_blank">
     <img loading="lazy" src="
       ../media/posts-optimized/medlay-research/images/720/motion_comics_01.jpg
@@ -1937,7 +2009,8 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
       " alt="
       A screenshot taken from a Marvel motion comic.
       " />
-  </a><figcaption class="typo-s">
+  </a>
+  <figcaption class="typo-s">
     <p>Marvel Motion Comics, <em>Spider Woman</em>.</p>
   </figcaption>
 </figure>
@@ -1949,7 +2022,9 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
 <p>To assess the potential for interbreeding between the two cultural forms, cinema and comics have been subsumed under the broader concept of <strong>sequential art</strong>: <quote>the arrangement of pictures or images and words to narrate a story or dramatize an idea</quote>—a definition created in 1985 by <strong>Will Eisner</strong><sup id="fnref:source-1" role="doc-noteref"><a href="#fn:source-1" class="footnote" rel="footnote">4</a></sup> and expanded in 1994 by <strong>Scott McCloud</strong><sup id="fnref:source-2" role="doc-noteref"><a href="#fn:source-2" class="footnote" rel="footnote">5</a></sup>. This concept has been used to compare cinema and comics, highlighting their affinities and differences.</p>
 
 <div class="figures">
-  <figure class="image-m" id="understanding_comics_00.jpg">
+  
+
+<figure class="image-m" id="understanding_comics_00.jpg">
   <a class="ratio" href="../media/posts-optimized/medlay-research/images/1440/understanding_comics_00.jpg" style="padding-bottom: 198.11320754716982%;background-color: #252525;" target="_blank">
     <img loading="lazy" src="
       ../media/posts-optimized/medlay-research/images/720/understanding_comics_00.jpg
@@ -1964,7 +2039,8 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
       " alt="
       An excerpt from the non-fiction work Understanding Comics.
       " />
-  </a><figcaption class="typo-s">
+  </a>
+  <figcaption class="typo-s">
     <p>Scott McCloud, <em>Understanding Comics</em>.</p>
   </figcaption>
 </figure>
@@ -1978,7 +2054,9 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
 </ul>
 
 <div class="figures">
-  <figure class="video-embed-m" id="cinema_01">
+  
+
+<figure class="video-embed-m" id="cinema_01">
   <div class="ratio" style="padding-bottom: 74.66666666666667%;background-color: #252525;" target="blank">
     <video class="video-content" controls="controls" loop="loop" poster="../media/posts-optimized/medlay-research/videos/cinema_01.jpg">
       <source src="../media/posts-optimized/medlay-research/videos/cinema_01.webm" type="video/webm" />
@@ -1986,7 +2064,8 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
       <source src="../media/posts-optimized/medlay-research/videos/cinema_01.ogv" type="video/ogv" />
       Your browser cannot play this video because it does not support the HTML5 video tag. Please <a href="../media/posts-optimized/medlay-research/videos/cinema_01.mp4" target="_blank">download the video</a> to watch it instead.
     </video>
-  </div><figcaption class="typo-s">
+  </div>
+  <figcaption class="typo-s">
     <p>In the cinematic media form, time is conveyed directly through the passage of time.</p>
 
   </figcaption>
@@ -1994,7 +2073,9 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
 </div>
 
 <div class="figures">
-  <figure class="video-embed-m" id="comics_time_space_00">
+  
+
+<figure class="video-embed-m" id="comics_time_space_00">
   <div class="ratio" style="padding-bottom: 74.66666666666667%;background-color: #252525;" target="blank">
     <video class="video-content" controls="controls" loop="loop" poster="../media/posts-optimized/medlay-research/videos/comics_time_space_00.jpg">
       <source src="../media/posts-optimized/medlay-research/videos/comics_time_space_00.webm" type="video/webm" />
@@ -2002,7 +2083,8 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
       <source src="../media/posts-optimized/medlay-research/videos/comics_time_space_00.ogv" type="video/ogv" />
       Your browser cannot play this video because it does not support the HTML5 video tag. Please <a href="../media/posts-optimized/medlay-research/videos/comics_time_space_00.mp4" target="_blank">download the video</a> to watch it instead.
     </video>
-  </div><figcaption class="typo-s">
+  </div>
+  <figcaption class="typo-s">
     <p>In the comics media form, time is conveyed indirectly through space. Carlos Trillo &amp; Enrique Breccia, <em>Alvar Mayor</em>.</p>
 
   </figcaption>
@@ -2014,7 +2096,9 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
 </ul>
 
 <div class="figures">
-  <figure class="image-l" id="conversation_with_other_women_00.jpg">
+  
+
+<figure class="image-l" id="conversation_with_other_women_00.jpg">
   <a class="ratio" href="../media/posts-optimized/medlay-research/images/1440/conversation_with_other_women_00.jpg" style="padding-bottom: 41.25%;background-color: #252525;" target="_blank">
     <img loading="lazy" src="
       ../media/media/posts-optimized/medlay-research/images/1080/conversation_with_other_women_00.jpg
@@ -2031,7 +2115,8 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
       " alt="
       A screenshot from Conversation with Other Women.
       " />
-  </a><figcaption class="typo-s">
+  </a>
+  <figcaption class="typo-s">
     <p>Hans Canosa, <em>Conversation with Other Women</em>.</p>
   </figcaption>
 </figure>
@@ -2039,7 +2124,9 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
 </div>
 
 <div class="figures">
-  <figure class="image-xl" id="jojo_00.jpg">
+  
+
+<figure class="image-xl" id="jojo_00.jpg">
   <a class="ratio" href="../media/posts-optimized/medlay-research/images/1440/jojo_00.jpg" style="padding-bottom: 79.16666666666666%;" target="_blank">
     <img loading="lazy" src="
       ../media/posts-optimized/medlay-research/images/1440/jojo_00.jpg
@@ -2058,7 +2145,8 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
       " alt="
       A double page from the manga Jojo’s Bizarre Adventure.
       " />
-  </a><figcaption class="typo-s">
+  </a>
+  <figcaption class="typo-s">
     <p>Multi-images spatial narration. Hirohiko Araki, <em>Jojo’s Bizarre Adventure</em>.</p>
   </figcaption>
 </figure>
@@ -2070,7 +2158,9 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
 </ul>
 
 <div class="figures">
-  <figure class="image-m" id="cinema_format_00.jpg">
+  
+
+<figure class="image-m" id="cinema_format_00.jpg">
   <a class="ratio" href="../media/posts-optimized/medlay-research/images/1440/cinema_format_00.jpg" style="padding-bottom: 74.66666666666667%;" target="_blank">
     <img loading="lazy" src="
       ../media/posts-optimized/medlay-research/images/720/cinema_format_00.jpg
@@ -2091,7 +2181,9 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
 </div>
 
 <div class="figures">
-  <figure class="image-m" id="blame_00.jpg">
+  
+
+<figure class="image-m" id="blame_00.jpg">
   <a class="ratio" href="../media/posts-optimized/medlay-research/images/1440/blame_00.jpg" style="padding-bottom: 150.0%;" target="_blank">
     <img loading="lazy" src="
       ../media/posts-optimized/medlay-research/images/720/blame_00.jpg
@@ -2106,7 +2198,8 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
       " alt="
       A page taken from the manga Blame!
       " />
-  </a><figcaption class="typo-s">
+  </a>
+  <figcaption class="typo-s">
     <p>Tsutomu Nihei, <em>Blame!</em>.</p>
   </figcaption>
 </figure>
@@ -2118,7 +2211,9 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
 </ul>
 
 <div class="figures">
-  <figure class="video-embed-m" id="cinema_sound_00">
+  
+
+<figure class="video-embed-m" id="cinema_sound_00">
   <div class="ratio" style="padding-bottom: 74.66666666666667%;background-color: #252525;" target="blank">
     <video class="video-content" controls="controls" loop="loop" poster="../media/posts-optimized/medlay-research/videos/cinema_sound_00.jpg">
       <source src="../media/posts-optimized/medlay-research/videos/cinema_sound_00.webm" type="video/webm" />
@@ -2131,7 +2226,9 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
 </div>
 
 <div class="figures">
-  <figure class="image-m" id="comics_voice_00.jpg">
+  
+
+<figure class="image-m" id="comics_voice_00.jpg">
   <a class="ratio" href="../media/posts-optimized/medlay-research/images/1440/comics_voice_00.jpg" style="padding-bottom: 168.75%;" target="_blank">
     <img loading="lazy" src="
       ../media/posts-optimized/medlay-research/images/720/comics_voice_00.jpg
@@ -2146,7 +2243,8 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
       " alt="
       Scott McCloud speaking out loud in Making Comics.
       " />
-  </a><figcaption class="typo-s">
+  </a>
+  <figcaption class="typo-s">
     <p>Scott McCloud, <em>Making Comics</em>.</p>
   </figcaption>
 </figure>
@@ -2158,7 +2256,9 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
 </ul>
 
 <div class="figures">
-  <figure class="image-m" id="viewing_00.jpg">
+  
+
+<figure class="image-m" id="viewing_00.jpg">
   <a class="ratio" href="../media/posts-optimized/medlay-research/images/1440/viewing_00.jpg" style="padding-bottom: 75.0%;" target="_blank">
     <img loading="lazy" src="
       ../media/posts-optimized/medlay-research/images/720/viewing_00.jpg
@@ -2179,7 +2279,9 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
 </div>
 
 <div class="figures">
-  <figure class="image-m" id="reading_comics_00.jpg">
+  
+
+<figure class="image-m" id="reading_comics_00.jpg">
   <a class="ratio" href="../media/posts-optimized/medlay-research/images/1440/reading_comics_00.jpg" style="padding-bottom: 133.33333333333334%;" target="_blank">
     <img loading="lazy" src="
       ../media/posts-optimized/medlay-research/images/720/reading_comics_00.jpg
@@ -2194,7 +2296,8 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
       " alt="
       Children reading comics.
       " />
-  </a><figcaption class="typo-s">
+  </a>
+  <figcaption class="typo-s">
     <p>Roger Sabin, <em>Comics, Comix &amp; Graphic Novels—A History Of Comic Art</em>.</p>
   </figcaption>
 </figure>
@@ -2206,7 +2309,9 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
 <p>The <strong>consequences</strong> of the mid-1980s digital revolution<sup id="fnref:digital-revolution" role="doc-noteref"><a href="#fn:digital-revolution" class="footnote" rel="footnote">6</a></sup>, the emergence of the new digital media and their characteristics, and the new possibilities for producing dynamic images enabled by computers and the Web have been subsequently examined.</p>
 
 <div class="figures">
-  <figure class="image-m" id="sin_city_01.jpg">
+  
+
+<figure class="image-m" id="sin_city_01.jpg">
   <a class="ratio" href="../media/posts-optimized/medlay-research/images/1440/sin_city_01.jpg" style="padding-bottom: 51.25%;" target="_blank">
     <img loading="lazy" src="
       ../media/posts-optimized/medlay-research/images/720/sin_city_01.jpg
@@ -2221,7 +2326,8 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
       " alt="
       A screenshot from the making of the movie Sin City.
       " />
-  </a><figcaption class="typo-s">
+  </a>
+  <figcaption class="typo-s">
     <p>Robert Rodríguez &amp; Frank Miller, <em>Sin City</em> making of.</p>
   </figcaption>
 </figure>
@@ -2229,7 +2335,9 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
 </div>
 
 <div class="figures">
-  <figure class="image-m" id="sin_city_02.jpg">
+  
+
+<figure class="image-m" id="sin_city_02.jpg">
   <a class="ratio" href="../media/posts-optimized/medlay-research/images/1440/sin_city_02.jpg" style="padding-bottom: 51.25%;" target="_blank">
     <img loading="lazy" src="
       ../media/posts-optimized/medlay-research/images/720/sin_city_02.jpg
@@ -2244,7 +2352,8 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
       " alt="
       A screenshot from the movie Sin City.
       " />
-  </a><figcaption class="typo-s">
+  </a>
+  <figcaption class="typo-s">
     <p>Robert Rodríguez &amp; Frank Miller, <em>Sin City</em>.</p>
   </figcaption>
 </figure>
@@ -2370,7 +2479,9 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
 <p>Each piece is <strong>structured as a loop</strong>, allowing the content to be repeated over and over in time and always accessible to viewers.</p>
 
 <div class="figures">
-  <figure class="video-embed-m" id="piece_00">
+  
+
+<figure class="video-embed-m" id="piece_00">
   <div class="ratio" style="padding-bottom: 56.25%;background-color: #252525;" target="blank">
     <video class="video-content" controls="controls" loop="loop" poster="../media/posts-optimized/medlay-pieces/videos/piece_00.jpg">
       <source src="../media/posts-optimized/medlay-pieces/videos/piece_00.webm" type="video/webm" />
@@ -2378,7 +2489,8 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
       <source src="../media/posts-optimized/medlay-pieces/videos/piece_00.ogv" type="video/ogv" />
       Your browser cannot play this video because it does not support the HTML5 video tag. Please <a href="../media/posts-optimized/medlay-pieces/videos/piece_00.mp4" target="_blank">download the video</a> to watch it instead.
     </video>
-  </div><figcaption class="typo-s">
+  </div>
+  <figcaption class="typo-s">
     <p>A piece formed into a loop.</p>
 
   </figcaption>
@@ -2392,7 +2504,9 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
 <p>The <strong>splicing</strong> can be either continuous<sup id="fnref:continuity-editing" role="doc-noteref"><a href="#fn:continuity-editing" class="footnote" rel="footnote">3</a></sup>, achieved through a smooth <a href="https://en.wikipedia.org/wiki/Film_transition" title="Film Transition in Wikipedia">transition</a> of time and space, or discontinuous, marked by the absence of such a transition.</p>
 
 <div class="figures">
-  <figure class="video-embed-m" id="piece_discontinuous_series_00">
+  
+
+<figure class="video-embed-m" id="piece_discontinuous_series_00">
   <div class="ratio" style="padding-bottom: 56.25%;background-color: #252525;" target="blank">
     <video class="video-content" controls="controls" loop="loop" poster="../media/posts-optimized/medlay-pieces/videos/piece_discontinuous_series_00.jpg">
       <source src="../media/posts-optimized/medlay-pieces/videos/piece_discontinuous_series_00.webm" type="video/webm" />
@@ -2400,14 +2514,17 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
       <source src="../media/posts-optimized/medlay-pieces/videos/piece_discontinuous_series_00.ogv" type="video/ogv" />
       Your browser cannot play this video because it does not support the HTML5 video tag. Please <a href="../media/posts-optimized/medlay-pieces/videos/piece_discontinuous_series_00.mp4" target="_blank">download the video</a> to watch it instead.
     </video>
-  </div><figcaption class="typo-s">
+  </div>
+  <figcaption class="typo-s">
     <p>A piece consisting of a <strong>single discontinuous series</strong>. The splicing is immediately perceivable.</p>
 
   </figcaption>
 </figure>
 </div>
 <div class="figures">
-  <figure class="video-embed-m" id="piece_continuous_series_00">
+  
+
+<figure class="video-embed-m" id="piece_continuous_series_00">
   <div class="ratio" style="padding-bottom: 56.25%;background-color: #252525;" target="blank">
     <video class="video-content" controls="controls" loop="loop" poster="../media/posts-optimized/medlay-pieces/videos/piece_continuous_series_00.jpg">
       <source src="../media/posts-optimized/medlay-pieces/videos/piece_continuous_series_00.webm" type="video/webm" />
@@ -2415,7 +2532,8 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
       <source src="../media/posts-optimized/medlay-pieces/videos/piece_continuous_series_00.ogv" type="video/ogv" />
       Your browser cannot play this video because it does not support the HTML5 video tag. Please <a href="../media/posts-optimized/medlay-pieces/videos/piece_continuous_series_00.mp4" target="_blank">download the video</a> to watch it instead.
     </video>
-  </div><figcaption class="typo-s">
+  </div>
+  <figcaption class="typo-s">
     <p>A piece consisting of a <strong>single continuous series</strong>. The splicing is not immediately perceivable.</p>
 
   </figcaption>
@@ -2425,7 +2543,9 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
 <p>When a piece consists of a sequence from a <strong>single series</strong>, the last and first images of the series are spliced together at the end of the piece, meaning the series<sup id="fnref:coincidence" role="doc-noteref"><a href="#fn:coincidence" class="footnote" rel="footnote">4</a></sup> is juxtaposed in time with itself.</p>
 
 <div class="figures">
-  <figure class="video-embed-m" id="piece_single_series_00">
+  
+
+<figure class="video-embed-m" id="piece_single_series_00">
   <div class="ratio" style="padding-bottom: 56.25%;background-color: #252525;" target="blank">
     <video class="video-content" controls="controls" loop="loop" poster="../media/posts-optimized/medlay-pieces/videos/piece_single_series_00.jpg">
       <source src="../media/posts-optimized/medlay-pieces/videos/piece_single_series_00.webm" type="video/webm" />
@@ -2433,7 +2553,8 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
       <source src="../media/posts-optimized/medlay-pieces/videos/piece_single_series_00.ogv" type="video/ogv" />
       Your browser cannot play this video because it does not support the HTML5 video tag. Please <a href="../media/posts-optimized/medlay-pieces/videos/piece_single_series_00.mp4" target="_blank">download the video</a> to watch it instead.
     </video>
-  </div><figcaption class="typo-s">
+  </div>
+  <figcaption class="typo-s">
     <p>A piece consisting of a <strong>single series</strong>.</p>
 
   </figcaption>
@@ -2443,7 +2564,9 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
 <p>When a piece consists of a sequence of <strong>multiple series</strong>, the last image of the last series and the first image of the first series are spliced together at the end of the piece, meaning the last series is juxtaposed in time with the first.</p>
 
 <div class="figures">
-  <figure class="video-embed-m" id="piece_multiple_series_00">
+  
+
+<figure class="video-embed-m" id="piece_multiple_series_00">
   <div class="ratio" style="padding-bottom: 56.25%;background-color: #252525;" target="blank">
     <video class="video-content" controls="controls" loop="loop" poster="../media/posts-optimized/medlay-pieces/videos/piece_multiple_series_00.jpg">
       <source src="../media/posts-optimized/medlay-pieces/videos/piece_multiple_series_00.webm" type="video/webm" />
@@ -2451,7 +2574,8 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
       <source src="../media/posts-optimized/medlay-pieces/videos/piece_multiple_series_00.ogv" type="video/ogv" />
       Your browser cannot play this video because it does not support the HTML5 video tag. Please <a href="../media/posts-optimized/medlay-pieces/videos/piece_multiple_series_00.mp4" target="_blank">download the video</a> to watch it instead.
     </video>
-  </div><figcaption class="typo-s">
+  </div>
+  <figcaption class="typo-s">
     <p>A piece consisting of a <strong>multiple series</strong> <strong>1–2</strong>.</p>
 
   </figcaption>
@@ -2461,7 +2585,9 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
 <p>A <strong>particular case</strong> of a multiple-series piece occurs when it consists of a sequence of two series of images where the second series is simply the first one, time-reversed and played back.</p>
 
 <div class="figures">
-  <figure class="video-embed-m" id="piece_multiple_series_01">
+  
+
+<figure class="video-embed-m" id="piece_multiple_series_01">
   <div class="ratio" style="padding-bottom: 56.25%;background-color: #252525;" target="blank">
     <video class="video-content" controls="controls" loop="loop" poster="../media/posts-optimized/medlay-pieces/videos/piece_multiple_series_01.jpg">
       <source src="../media/posts-optimized/medlay-pieces/videos/piece_multiple_series_01.webm" type="video/webm" />
@@ -2469,7 +2595,8 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
       <source src="../media/posts-optimized/medlay-pieces/videos/piece_multiple_series_01.ogv" type="video/ogv" />
       Your browser cannot play this video because it does not support the HTML5 video tag. Please <a href="../media/posts-optimized/medlay-pieces/videos/piece_multiple_series_01.mp4" target="_blank">download the video</a> to watch it instead.
     </video>
-  </div><figcaption class="typo-s">
+  </div>
+  <figcaption class="typo-s">
     <p>A piece consisting of a <strong>multiple series</strong> <strong>1–1</strong> <strong>back and forth</strong>.</p>
 
   </figcaption>
@@ -2489,7 +2616,9 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
 <p>For example, a piece consisting of a single series may change state and transition<sup id="fnref:transition" role="doc-noteref"><a href="#fn:transition" class="footnote" rel="footnote">6</a></sup> to a different series in response to viewers tapping the piece or scrolling the canvas to a specific area of focus.</p>
 
 <div class="figures">
-  <figure class="video-embed-m" id="piece_multiple_series_02">
+  
+
+<figure class="video-embed-m" id="piece_multiple_series_02">
   <div class="ratio" style="padding-bottom: 56.25%;background-color: #252525;" target="blank">
     <video class="video-content" controls="controls" loop="loop" poster="../media/posts-optimized/medlay-pieces/videos/piece_multiple_series_02.jpg">
       <source src="../media/posts-optimized/medlay-pieces/videos/piece_multiple_series_02.webm" type="video/webm" />
@@ -2497,14 +2626,17 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
       <source src="../media/posts-optimized/medlay-pieces/videos/piece_multiple_series_02.ogv" type="video/ogv" />
       Your browser cannot play this video because it does not support the HTML5 video tag. Please <a href="../media/posts-optimized/medlay-pieces/videos/piece_multiple_series_02.mp4" target="_blank">download the video</a> to watch it instead.
     </video>
-  </div><figcaption class="typo-s">
+  </div>
+  <figcaption class="typo-s">
     <p>A piece consisting of <strong>multiple interactive series</strong> <strong>1–2–1</strong>. The 1<sup>st</sup> series cuts to the 2<sup>nd</sup> one in response to the viewer’s tap. As soon as the 2<sup>nd</sup> series ends, the piece resets to its initial state.</p>
 
   </figcaption>
 </figure>
 </div>
 <div class="figures">
-  <figure class="video-embed-m" id="piece_multiple_series_03">
+  
+
+<figure class="video-embed-m" id="piece_multiple_series_03">
   <div class="ratio" style="padding-bottom: 56.25%;background-color: #252525;" target="blank">
     <video class="video-content" controls="controls" loop="loop" poster="../media/posts-optimized/medlay-pieces/videos/piece_multiple_series_03.jpg">
       <source src="../media/posts-optimized/medlay-pieces/videos/piece_multiple_series_03.webm" type="video/webm" />
@@ -2512,7 +2644,8 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
       <source src="../media/posts-optimized/medlay-pieces/videos/piece_multiple_series_03.ogv" type="video/ogv" />
       Your browser cannot play this video because it does not support the HTML5 video tag. Please <a href="../media/posts-optimized/medlay-pieces/videos/piece_multiple_series_03.mp4" target="_blank">download the video</a> to watch it instead.
     </video>
-  </div><figcaption class="typo-s">
+  </div>
+  <figcaption class="typo-s">
     <p>A piece consisting of <strong>multiple interactive series</strong> <strong>1–2–3</strong>. The 1<sup>st</sup> series cuts to the 2<sup>nd</sup> transitional series in response to the viewer’s tap. Once the 2<sup>nd</sup> transitional series ends, the piece transitions to its final state, where the 3<sup>rd</sup> series is played.</p>
 
   </figcaption>
@@ -2524,7 +2657,9 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
 <p>Since a piece is spatially juxtaposed on a canvas, its frame is directly visible<sup id="fnref:cinematographic-frame" role="doc-noteref"><a href="#fn:cinematographic-frame" class="footnote" rel="footnote">7</a></sup> to viewers. The frame’s <strong>size</strong>, <strong>shape</strong> and <strong>borders</strong> become <strong>significant</strong> elements that can be shaped to express or reinforce the meaning of the piece.</p>
 
 <div class="figures">
-  <figure class="video-embed-m" id="piece_shapes_00">
+  
+
+<figure class="video-embed-m" id="piece_shapes_00">
   <div class="ratio" style="padding-bottom: 56.25%;background-color: #252525;" target="blank">
     <video class="video-content" controls="controls" loop="loop" poster="../media/posts-optimized/medlay-pieces/videos/piece_shapes_00.jpg">
       <source src="../media/posts-optimized/medlay-pieces/videos/piece_shapes_00.webm" type="video/webm" />
@@ -2532,14 +2667,17 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
       <source src="../media/posts-optimized/medlay-pieces/videos/piece_shapes_00.ogv" type="video/ogv" />
       Your browser cannot play this video because it does not support the HTML5 video tag. Please <a href="../media/posts-optimized/medlay-pieces/videos/piece_shapes_00.mp4" target="_blank">download the video</a> to watch it instead.
     </video>
-  </div><figcaption class="typo-s">
+  </div>
+  <figcaption class="typo-s">
     <p>A vertical or horizontal shape can better emphasize the content of a piece.</p>
 
   </figcaption>
 </figure>
 </div>
 <div class="figures">
-  <figure class="video-embed-m" id="piece_sizes_00">
+  
+
+<figure class="video-embed-m" id="piece_sizes_00">
   <div class="ratio" style="padding-bottom: 56.25%;background-color: #252525;" target="blank">
     <video class="video-content" controls="controls" loop="loop" poster="../media/posts-optimized/medlay-pieces/videos/piece_sizes_00.jpg">
       <source src="../media/posts-optimized/medlay-pieces/videos/piece_sizes_00.webm" type="video/webm" />
@@ -2547,14 +2685,17 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
       <source src="../media/posts-optimized/medlay-pieces/videos/piece_sizes_00.ogv" type="video/ogv" />
       Your browser cannot play this video because it does not support the HTML5 video tag. Please <a href="../media/posts-optimized/medlay-pieces/videos/piece_sizes_00.mp4" target="_blank">download the video</a> to watch it instead.
     </video>
-  </div><figcaption class="typo-s">
+  </div>
+  <figcaption class="typo-s">
     <p>Significant size.</p>
 
   </figcaption>
 </figure>
 </div>
 <div class="figures">
-  <figure class="video-embed-m" id="piece_borders_00">
+  
+
+<figure class="video-embed-m" id="piece_borders_00">
   <div class="ratio" style="padding-bottom: 56.25%;background-color: #252525;" target="blank">
     <video class="video-content" controls="controls" loop="loop" poster="../media/posts-optimized/medlay-pieces/videos/piece_borders_00.jpg">
       <source src="../media/posts-optimized/medlay-pieces/videos/piece_borders_00.webm" type="video/webm" />
@@ -2562,7 +2703,8 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
       <source src="../media/posts-optimized/medlay-pieces/videos/piece_borders_00.ogv" type="video/ogv" />
       Your browser cannot play this video because it does not support the HTML5 video tag. Please <a href="../media/posts-optimized/medlay-pieces/videos/piece_borders_00.mp4" target="_blank">download the video</a> to watch it instead.
     </video>
-  </div><figcaption class="typo-s">
+  </div>
+  <figcaption class="typo-s">
     <p>Significant border.</p>
 
   </figcaption>
@@ -2606,7 +2748,9 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
 <p>A <strong>media form</strong> is to a <strong>media artifact</strong> as comics is to a particular comic book or as cinema is to a particular movie: the latter is a specific application of the former.</p>
 
 <div class="figures">
-  <figure class="image-m" id="the_last_dispatch_6671.jpg">
+  
+
+<figure class="image-m" id="the_last_dispatch_6671.jpg">
   <a class="ratio" href="../media/posts-optimized/medlay-introduction/images/1440/the_last_dispatch_6671.jpg" style="padding-bottom: 144.0%;background-color: #252525;" target="_blank">
     <img loading="lazy" src="
       ../media/posts-optimized/medlay-introduction/images/720/the_last_dispatch_6671.jpg
@@ -2621,7 +2765,8 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
       " alt="
       A screenshot from the proof of concept The Last Dispatch.
       " />
-  </a><figcaption class="typo-s">
+  </a>
+  <figcaption class="typo-s">
     <p>A screenshot from the proof of concept <em>The Last Dispatch</em>.</p>
   </figcaption>
 </figure>
@@ -2633,7 +2778,9 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
 <p>Specifically, it fuses the one-image-at-a-time <strong>temporal narration</strong> typical of cinema with the multi-images <strong>spatial narration</strong> characteristic of comics.</p>
 
 <div class="figures">
-  <figure class="video-embed-m" id="cinema_00">
+  
+
+<figure class="video-embed-m" id="cinema_00">
   <div class="ratio" style="padding-bottom: 75.0%;background-color: #252525;" target="blank">
     <video class="video-content" controls="controls" loop="loop" poster="../media/posts-optimized/medlay-introduction/videos/cinema_00.jpg">
       <source src="../media/posts-optimized/medlay-introduction/videos/cinema_00.webm" type="video/webm" />
@@ -2641,7 +2788,8 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
       <source src="../media/posts-optimized/medlay-introduction/videos/cinema_00.ogv" type="video/ogv" />
       Your browser cannot play this video because it does not support the HTML5 video tag. Please <a href="../media/posts-optimized/medlay-introduction/videos/cinema_00.mp4" target="_blank">download the video</a> to watch it instead.
     </video>
-  </div><figcaption class="typo-s">
+  </div>
+  <figcaption class="typo-s">
     <p>One-image-at-a-time temporal narration.</p>
 
   </figcaption>
@@ -2649,7 +2797,9 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
 </div>
 
 <div class="figures">
-  <figure class="image-xl" id="jojo_00.jpg">
+  
+
+<figure class="image-xl" id="jojo_00.jpg">
   <a class="ratio" href="../media/posts-optimized/medlay-introduction/images/1440/jojo_00.jpg" style="padding-bottom: 79.16666666666666%;" target="_blank">
     <img loading="lazy" src="
       ../media/posts-optimized/medlay-introduction/images/1440/jojo_00.jpg
@@ -2668,7 +2818,8 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
       " alt="
       A double page from the manga Jojo’s Bizarre Adventure.
       " />
-  </a><figcaption class="typo-s">
+  </a>
+  <figcaption class="typo-s">
     <p>Multi-images spatial narration. Hirohiko Araki, <em>Jojo’s Bizarre Adventure</em>.</p>
   </figcaption>
 </figure>
@@ -2678,7 +2829,9 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
 <p>Two proof-of-concept prototypes have been created to demonstrate the potential uses of Medlay: <em><a href="/project/medlay-the-last-dispatch.html">The Last Dispatch</a></em> and <em><a href="/project/medlay-ubik.html">Ubik Chap. 6</a></em>. Both narrate a short story.</p>
 
 <div class="figures">
-  <figure class="image-m" id="ubik_6696.jpg">
+  
+
+<figure class="image-m" id="ubik_6696.jpg">
   <a class="ratio" href="../media/posts-optimized/medlay-introduction/images/1440/ubik_6696.jpg" style="padding-bottom: 119.0%;background-color: #252525;" target="_blank">
     <img loading="lazy" src="
       ../media/posts-optimized/medlay-introduction/images/720/ubik_6696.jpg
@@ -2693,7 +2846,8 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
       " alt="
       A screenshot from the proof of concept Ubik Chap. 6.
       " />
-  </a><figcaption class="typo-s">
+  </a>
+  <figcaption class="typo-s">
     <p>A screenshot from the proof of concept <em>Ubik Chap. 6</em>.</p>
   </figcaption>
 </figure>
@@ -2705,7 +2859,9 @@ Multilingual">Making Jekyll Multilingual</a></em>. <a href="#fnref:logic" class
 <p>The <strong>watching time</strong> of a <em>Medlay</em> artifact is not dictated by the roll of moving images as it is in a movie, allowing viewers to interact with the narrative sequence in an <strong>order</strong> and <strong>pace</strong> of their own choosing.</p>
 
 <div class="figures">
-  <figure class="video-embed-m" id="viewing_00">
+  
+
+<figure class="video-embed-m" id="viewing_00">
   <div class="ratio" style="padding-bottom: 75.0%;background-color: #252525;" target="blank">
     <video class="video-content" controls="controls" loop="loop" poster="../media/posts-optimized/medlay-introduction/videos/viewing_00.jpg">
       <source src="../media/posts-optimized/medlay-introduction/videos/viewing_00.webm" type="video/webm" />

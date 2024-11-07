@@ -1,8 +1,8 @@
-        {%- assign jotList = site.jots | reverse -%}
+        {%- assign jotList = site.jots | reverse %}
         <div class="column-2d-l">
           <ul class="jots-items layout-1d-ltr">
             {%- for jot in jotList limit: include.jotLimit %}
-{% include jots-item.html jot=jot %}
+            {% include jots-item.html jot=jot %}
             {%- endfor %}
           </ul>
         </div>

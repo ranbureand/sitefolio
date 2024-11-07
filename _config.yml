@@ -49,7 +49,7 @@ plugins: # Specifies the plugins used in the site.
 
 pagination: # Defines settings for pagination.
   enabled: true # Enables/disables pagination in the site.
-  debug: true # Enables/disables debugging messages related to pagination.
+  debug: false # Enables/disables debugging messages related to pagination.
 
 exclude: # Specifies a list of files or directories to exclude from the build process.
   - config.codekit3

@@ -50,6 +50,11 @@
   position: relative;
 
   display: block;
+
+  scroll-margin-top: em($m-scroll-offset);
+  @include min-screen(col(8)) {
+    scroll-margin-top: em($d-scroll-offset);
+  }
 }
 
 .jots-item-body {

@@ -40,7 +40,7 @@ sitemap:
     {%- endunless %}
   {%- endfor %}
 
-  {%- assign categories = site.categories | sort | where: 'published', true -%}
+  {%- assign categories = site.categories | sort | where: 'published', true %}
 
   {%- for category in categories %}
     <url>
@@ -71,7 +71,7 @@ sitemap:
     </url>
   {%- endfor %}
 
-  {%- assign projects = site.projects | sort: 'order' | where: 'published', true -%}
+  {%- assign projects = site.projects | sort: 'order' | where: 'published', true %}
 
   {%- for project in projects reversed %}
     {%- unless project.sitemap.excluded == true %}
