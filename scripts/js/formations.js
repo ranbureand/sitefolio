@@ -5,8 +5,8 @@
 */
 
 // Retrieve HTML elements
-const stalactite = document.querySelector('.canvas-stalactite');
-const stalagmite = document.querySelector('.canvas-stalagmite');
+const stalactite = document.querySelector('.base-stalactite');
+const stalagmite = document.querySelector('.base-stalagmite');
 
 console.log(stalactite);
 console.log(stalagmite);
