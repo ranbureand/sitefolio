@@ -43,6 +43,9 @@ kramdown: # Defines settings for the `kramdown` Markdown processor.
     #block:
       #line_numbers: true
 
+# Force HTML5 rendering
+output: html5
+
 #Plugins
 plugins: # Specifies the plugins used in the site.
   - jekyll-paginate-v2
