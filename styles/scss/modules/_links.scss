@@ -98,7 +98,7 @@
   }
 }
 
-#wellfound {
+.wellfound {
   .link-icon {
     div {
       background-size: 60%;
@@ -111,28 +111,28 @@
 */
 
 .dark {
-  #linkedin {
+  .linkedin {
     .link-icon {
       div {
         background-image: url("../../media/links/dark/linkedin_00.svg");
       }
     }
   }
-  #wellfound {
+  .wellfound {
     .link-icon {
       div {
         background-image: url("../../media/links/dark/wellfound_00.svg");
       }
     }
   }
-  #github {
+  .github {
     .link-icon {
       div {
         background-image: url("../../media/links/dark/github_00.svg");
       }
     }
   }
-  #vimeo {
+  .vimeo {
     .link-icon {
       div {
         background-image: url("../../media/links/dark/vimeo_00.svg");
@@ -142,28 +142,28 @@
 }
 
 .light {
-  #linkedin {
+  .linkedin {
     .link-icon {
       div {
         background-image: url("../../media/links/light/linkedin_00.svg");
       }
     }
   }
-  #wellfound {
+  .wellfound {
     .link-icon {
       div {
         background-image: url("../../media/links/light/wellfound_00.svg");
       }
     }
   }
-  #github {
+  .github {
     .link-icon {
       div {
         background-image: url("../../media/links/light/github_00.svg");
       }
     }
   }
-  #vimeo {
+  .vimeo {
     .link-icon {
       div {
         background-image: url("../../media/links/light/vimeo_00.svg");
