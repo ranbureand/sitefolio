@@ -5,12 +5,12 @@
 */
 
 .footer {
-  animation-name: element-in;
-  animation-duration: $duration*4;
+  opacity: 1;
 
-  animation-fill-mode: both;
+  @include animation(element-in);
   @include face(mono);
 }
+
 
 .footer {
   padding-top: em($m-base-rhythm*6);

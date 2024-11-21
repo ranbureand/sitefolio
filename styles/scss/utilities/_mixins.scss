@@ -36,15 +36,22 @@
 }
 
 /*
+** Animations
+*/
+
+@mixin animation($name) {
+  animation-name: $name;
+  animation-duration: $duration*2;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+
+  animation-fill-mode: both;
+}
+
+/*
 ** Adjust the width of an element (to accomodate for CSS Comb)
 */
 
 @mixin adjust-dimension($dimension, $to-gut, $from-size: $base-font-size) {
   #{$dimension}: calc(100% - #{em($to-gut*2, $from-size)});
 }
-
-/*
-** Tempo
-*/
-
-$duration: 0.2s;

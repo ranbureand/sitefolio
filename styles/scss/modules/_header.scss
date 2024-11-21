@@ -61,10 +61,9 @@
   padding-top: em($m-base-rhythm/6*5);
   padding-bottom: em($m-base-rhythm/6*5);
 
-  animation-name: element-in;
-  animation-duration: $duration*4;
+  opacity: 1;
 
-  animation-fill-mode: both;
+  @include animation(element-in);
   @include face(mono);
   @include min-screen(col(8)) {
     padding-top: em($d-base-rhythm*0.5);

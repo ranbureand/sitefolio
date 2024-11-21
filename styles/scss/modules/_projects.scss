@@ -13,10 +13,9 @@
     padding-right: em($m-gut/2);
     padding-left: em($m-gut/2);
 
-    animation-name: element-in;
-    animation-duration: $duration*4;
+    opacity: 1;
 
-    animation-fill-mode: both;
+    @include animation(element-in);
   }
   @include min-screen(col(8)) {
     padding-top: em($d-base-rhythm);

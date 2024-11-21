@@ -12,7 +12,7 @@
   display: inline-block;
   overflow: hidden;
 
-  transition-timing-function: ease-in-out, ease-in-out;
+  transition-timing-function: ease-out, ease-out;
   transition-property: color, background-color;
 
   border-radius: em($m-small-line);
@@ -50,7 +50,7 @@
     padding-bottom: 100%;
 
     content: "";
-    transition-timing-function: ease-in, ease-in;
+    transition-timing-function: ease-out, ease-out;
     transition-duration: $duration, $duration;
     transition-property: opacity, transform;
     transform: scale(0);

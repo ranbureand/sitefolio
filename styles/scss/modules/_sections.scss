@@ -23,11 +23,11 @@
 */
 
 .splash {
-  animation-name: element-in-up;
-  animation-duration: $duration*4;
+  opacity: 1;
 
-  animation-fill-mode: both;
+  @include animation(element-in-up);
 }
+
 
 /*
 ** About
@@ -37,10 +37,9 @@
   padding-top: em($m-base-rhythm*2);
   padding-bottom: em($m-base-rhythm*4);
 
-  animation-name: element-in-up;
-  animation-duration: $duration*4;
+  opacity: 1;
 
-  animation-fill-mode: both;
+  @include animation(element-in-up);
   @include min-screen(col(8)) {
     padding-top: em($d-base-rhythm*1);
     padding-bottom: em($d-base-rhythm*4);
@@ -55,10 +54,9 @@
   padding-top: em($m-base-rhythm*2);
   padding-bottom: em($m-base-rhythm*2);
 
-  animation-name: element-in-up;
-  animation-duration: $duration*4;
+  opacity: 1;
 
-  animation-fill-mode: both;
+  @include animation(element-in-up);
   @include min-screen(col(8)) {
     padding-top: em($d-base-rhythm*1);
     padding-bottom: em($d-base-rhythm*2);
@@ -100,10 +98,9 @@
   padding-top: em($m-base-rhythm*2);
   padding-bottom: em($m-base-rhythm*4);
 
-  animation-name: element-in-up;
-  animation-duration: $duration*4;
+  opacity: 1;
 
-  animation-fill-mode: both;
+  @include animation(element-in-up);
   @include min-screen(col(8)) {
     padding-top: em($d-base-rhythm*1);
     padding-bottom: em($d-base-rhythm*2);
@@ -142,10 +139,9 @@
 */
 
 .jot-splash {
-  animation-name: element-in-up;
-  animation-duration: $duration*4;
+  opacity: 1;
 
-  animation-fill-mode: both;
+  @include animation(element-in-up);
 }
 
 /*
@@ -156,10 +152,9 @@
   padding-top: em($m-base-rhythm*2);
   padding-bottom: em($m-base-rhythm*4);
 
-  animation-name: element-in-up;
-  animation-duration: $duration*4;
+  opacity: 1;
 
-  animation-fill-mode: both;
+  @include animation(element-in-up);
   @include min-screen(col(8)) {
     padding-top: em($d-base-rhythm*1);
     padding-bottom: em($d-base-rhythm*2);
@@ -181,10 +176,9 @@
   padding-top: em($m-base-rhythm*4);
   padding-bottom: em($m-base-rhythm*2);
 
-  animation-name: element-in-up;
-  animation-duration: $duration*4;
+  opacity: 1;
 
-  animation-fill-mode: both;
+  @include animation(element-in-up);
   @include min-screen(col(8)) {
     padding-top: em($d-base-rhythm*2);
     padding-bottom: em($d-base-rhythm*2);
@@ -199,10 +193,9 @@
   padding-top: em($m-base-rhythm*2);
   padding-bottom: em($m-base-rhythm*4);
 
-  animation-name: element-in-up;
-  animation-duration: $duration*4;
+  opacity: 1;
 
-  animation-fill-mode: both;
+  @include animation(element-in-up);
   @include min-screen(col(8)) {
     padding-top: em($d-base-rhythm*1);
     padding-bottom: em($d-base-rhythm*4);
