@@ -53,8 +53,8 @@ $d-background-color:            #252525;
 $l-background-color-darker:     #efefef;
 $d-background-color-darker:     #1b1b1b;
 
-$l-selected-background-color:   rgba($black, 0.04);
-$d-selected-background-color:   rgba($white, 0.06);
+$l-selected-background-color:   rgba($black, 0.06);
+$d-selected-background-color:   rgba($white, 0.08);
 
 $l-field-background-color:      $l-background-color;
 $d-field-background-color:      $d-background-color;
@@ -80,6 +80,28 @@ $d-field-border-color:          rgba($white, 0.32);
 
 $l-strong-field-border-color:   rgba($black, 0.92);
 $d-strong-field-border-color:   rgba($white, 0.92);
+
+$l-focused-border-color:        $l-color-2;
+$d-focused-border-color:        $d-color-2;
+
+/*
+** Buttons
+*/
+
+$l-button-type-color:                   $l-background-color;
+$d-button-type-color:                   $d-background-color;
+
+$l-button-border-color:                 $l-strong-type-color;
+$d-button-border-color:                 $d-strong-type-color;
+
+$l-button-background-color:             $l-strong-type-color;
+$d-button-background-color:             $d-strong-type-color;
+
+$l-button-background-color-hovered:     $l-color-1;
+$d-button-background-color-hovered:     $d-color-1;
+
+$l-button-background-color-activated:   $l-color-1-darker;
+$d-button-background-color-activated:   $d-color-1-darker;
 
 /*
 ** Code

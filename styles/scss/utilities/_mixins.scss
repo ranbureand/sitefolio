@@ -55,3 +55,23 @@
 @mixin adjust-dimension($dimension, $to-gut, $from-size: $base-font-size) {
   #{$dimension}: calc(100% - #{em($to-gut*2, $from-size)});
 }
+
+/*
+** Focus
+*/
+
+@mixin focus {
+  z-index: 1000;
+
+  border-radius: $base-unit/4*3;
+  outline-width: $base-unit/4*3;
+  outline-style: solid;
+  outline-color: var(--focused-border-color);
+  outline-offset: $base-unit;
+}
+
+@mixin no-focus {
+  outline-width: 0;
+  outline-style: none;
+  outline-color: transparent;
+}

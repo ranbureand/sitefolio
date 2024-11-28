@@ -16,8 +16,11 @@ img::selection {
 */
 
 ::focus {
-  outline-style: none;
-  outline-color: transparent;
+  @include no-focus;
+}
+
+:focus-visible {
+  @include focus;
 }
 
 /*
@@ -118,6 +121,9 @@ a {
   }
   &:focus {
     outline: 0;
+  }
+  &:focus-visible {
+    @include focus;
   }
 }
 /*a[href^="mailto"] {

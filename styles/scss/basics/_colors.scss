@@ -45,6 +45,18 @@ body.dark {
   --field-border-color:         #{$d-field-border-color};
   --strong-field-border-color:  #{$d-strong-field-border-color};
 
+  --focused-border-color:       #{$d-focused-border-color};
+
+  // Buttons
+
+  --button-type-color: #{$d-button-type-color};
+
+  --button-border-color: #{$d-button-border-color};
+
+  --button-background-color: #{$d-button-background-color};
+  --button-background-color-hovered: #{$d-button-background-color-hovered};
+  --button-background-color-activated: #{$d-button-background-color-activated};
+
   // Code
   --code-type-color: #{$d-code-type-color};
   --code-type-color-light: #{$d-code-type-color-light};
@@ -108,6 +120,18 @@ body.light {
 
   --field-border-color:         #{$l-field-border-color};
   --strong-field-border-color:  #{$l-strong-field-border-color};
+
+  --focused-border-color:       #{$l-focused-border-color};
+
+  // Buttons
+
+  --button-type-color: #{$l-button-type-color};
+
+  --button-border-color: #{$l-button-border-color};
+
+  --button-background-color: #{$l-button-background-color};
+  --button-background-color-hovered: #{$l-button-background-color-hovered};
+  --button-background-color-activated: #{$l-button-background-color-activated};
 
   // Code
   --code-type-color: #{$l-code-type-color};

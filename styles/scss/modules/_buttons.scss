@@ -4,7 +4,7 @@
 ** Buttons
 */
 
-[class^="button"] {
+[class*="button"] {
   font-weight: $medium;
 
   position: relative;
@@ -14,8 +14,6 @@
 
   transition-timing-function: ease-out, ease-out;
   transition-property: color, background-color;
-
-  border-radius: em($m-small-line);
 
   @include face(sans);
 
@@ -46,7 +44,6 @@
     display: block;
 
     width: 100%;
-    margin-top: calc(-50% + #{em($m-small-line)});
     padding-bottom: 100%;
 
     content: "";
@@ -59,23 +56,20 @@
     border-radius: 50%;
   }
 
-  a {
+  div {
     position: relative;
     z-index: 10;
+  }
 
+  svg {
     display: block;
   }
 
   span {
     display: none;
   }
+
   @include min-screen(col(8)) {
-    border-radius: em($d-small-line);
-
-    &:before {
-      margin-top: calc(-50% + #{em($d-small-line)});
-    }
-
     span {
       display: inline;
     }
@@ -86,14 +80,37 @@
 ** Buttons => sizes
 */
 
-.button-m {
-  a {
+// Medium button
+
+[class*="button-m"] {
+  border-radius: em($m-small-line);
+
+  &:focus-visible {
+    border-radius: em($m-small-line);
+  }
+  &:before {
+    margin-top: calc(-50% + #{em($m-small-line)});
+  }
+
+  @include min-screen(col(8)) {
+    border-radius: em($d-small-line);
+    &:focus-visible {
+      border-radius: em($d-small-line);
+    }
+    &:before {
+      margin-top: calc(-50% + #{em($d-small-line)});
+    }
+  }
+}
+
+[class*="button-m-text"] {
+  div {
     padding: em($m-small-line/2, $m-small-size) em($m-gut/2*3, $m-small-size);
 
     @include font-size($m-small-size, $m-small-line);
   }
   @include min-screen(col(8)) {
-    a {
+    div {
       padding: em($d-small-line/2, $d-small-size) em($d-gut, $d-small-size);
 
       @include font-size($d-small-size, $d-small-line);
@@ -101,29 +118,123 @@
   }
 }
 
+[class*="button-m-text-icon"] {
+  svg {
+    display: inline-block;
+
+    width: em($m-small-line, $m-small-size);
+    height: em($m-small-line, $m-small-size);
+  }
+  @include min-screen(col(8)) {
+    svg {
+      width: em($d-small-line, $d-small-size);
+      height: em($d-small-line, $d-small-size);
+    }
+  }
+}
+
+.button-m-text-icon-l {
+  svg {
+    float: left;
+
+    margin-right: em($m-gut/2, $m-small-size);
+  }
+  @include min-screen(col(8)) {
+    svg {
+      margin-right: em($d-gut/2, $d-small-size);
+    }
+  }
+}
+
+.button-m-text-icon-r {
+  svg {
+    float: left;
+
+    margin-left: em($m-gut/2, $m-small-size);
+  }
+  @include min-screen(col(8)) {
+    svg {
+      margin-left: em($d-gut/2, $d-small-size);
+    }
+  }
+}
+
+[class*="button-m-icon"] {
+  width: em($m-small-line*2);
+  height: em($m-small-line*2);
+
+  div {
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+
+    align-items: center;
+    justify-content: center;
+  }
+  svg {
+    display: block;
+  }
+  span {
+    display: none;
+  }
+  @include min-screen(col(8)) {
+    width: em($d-small-line*2);
+    height: em($d-small-line*2);
+  }
+}
+
+.button-m-icon-s {
+  svg {
+    transform: scale(0.9);
+  }
+}
+
+.button-m-icon-m {
+  svg {
+    transform: scale(1);
+  }
+}
+
+.button-m-icon-l {
+  svg {
+    transform: scale(1.1);
+  }
+}
+
+.button-m-icon-xl {
+  svg {
+    transform: scale(1.2);
+  }
+}
+
 /*
 ** Colors
 */
 
-[class^="button"] {
-  background-color: var(--strong-type-color);
+[class*="button"] {
+  color: var(--button-type-color);
+  background-color: var(--button-background-color);
 
-  &:before {
-    background-color: var(--color-1);
-  }
-
-  &:active {
-    &:before {
-      background-color: var(--color-1-darker);
+  svg {
+    fill: var(--button-type-color);
+    path {
+      fill: var(--button-type-color);
     }
   }
 
-  a {
-    color: var(--background-color);
+  &:before {
+    background-color: var(--button-background-color-hovered);
+  }
 
-    &:hover,
-    &:active {
-      color: var(--background-color);
+  &:hover {
+    color: var(--button-type-color);
+  }
+
+  &:active {
+    color: var(--button-type-color);
+    &:before {
+      background-color: var(--button-background-color-activated);
     }
   }
 }
