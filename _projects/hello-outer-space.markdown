@@ -17,7 +17,7 @@ preview_color: '#020202'
 description: 'The following article is used as a testing ground for all the styles that shapes the body text prose and code of the Sitefolio.'
 exordium: 'The following article is used as a testing ground for all the styles that shapes the body text prose, code and form of this very site.'
 
-published: true
+published: false
 ---
 
 <div class="figures">

@@ -64,16 +64,6 @@
   svg {
     display: block;
   }
-
-  span {
-    display: none;
-  }
-
-  @include min-screen(col(8)) {
-    span {
-      display: inline;
-    }
-  }
 }
 
 /*
@@ -109,52 +99,36 @@
 
     @include font-size($m-small-size, $m-small-line);
   }
+  svg {
+    display: inline-block;
+
+    width: em($m-small-line, $m-small-size);
+    height: em($m-small-line, $m-small-size);
+
+    &:first-child {
+      float: left;
+      margin-right: em($m-gut/2, $m-small-size);
+    }
+    &:last-child {
+      float: right;
+      margin-left: em($m-gut/2, $m-small-size);
+    }
+  }
   @include min-screen(col(8)) {
     div {
       padding: em($d-small-line/2, $d-small-size) em($d-gut, $d-small-size);
 
       @include font-size($d-small-size, $d-small-line);
     }
-  }
-}
-
-[class*="button-m-text-icon"] {
-  svg {
-    display: inline-block;
-
-    width: em($m-small-line, $m-small-size);
-    height: em($m-small-line, $m-small-size);
-  }
-  @include min-screen(col(8)) {
     svg {
       width: em($d-small-line, $d-small-size);
       height: em($d-small-line, $d-small-size);
-    }
-  }
-}
-
-.button-m-text-icon-l {
-  svg {
-    float: left;
-
-    margin-right: em($m-gut/2, $m-small-size);
-  }
-  @include min-screen(col(8)) {
-    svg {
-      margin-right: em($d-gut/2, $d-small-size);
-    }
-  }
-}
-
-.button-m-text-icon-r {
-  svg {
-    float: left;
-
-    margin-left: em($m-gut/2, $m-small-size);
-  }
-  @include min-screen(col(8)) {
-    svg {
-      margin-left: em($d-gut/2, $d-small-size);
+      &:first-child {
+        margin-right: em($d-gut/2, $d-small-size);
+      }
+      &:last-child {
+        margin-left: em($d-gut/2, $d-small-size);
+      }
     }
   }
 }

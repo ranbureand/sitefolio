@@ -74,6 +74,12 @@
   }
 }
 
+.base-stalagmite header[class*="column-2d-l"] {
+  @include min-screen(col(8)) {
+    margin-top: em($d-base-rhythm/2*4);
+  }
+}
+
 /*
 ** Medium columns
 */
@@ -162,6 +168,25 @@
 /*
 ** About columns
 */
+
+.about .separator {
+  grid-column: 1 / 5;
+  @include min-screen(col(6)) {
+    grid-column: 1 / 5;
+  }
+  @include min-screen(col(12)) {
+    grid-column: 1 / 7;
+  }
+  @include min-screen(col(16)) {
+    grid-column: 1 / 9;
+  }
+}
+
+[class*="column-2d-s"] {
+  @include min-screen(col(8)) {
+    margin-top: em($d-base-rhythm/2);
+  }
+}
 
 .column-2d-s-1-about {
   grid-column: 1 / 5;

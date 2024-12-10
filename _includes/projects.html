@@ -4,10 +4,11 @@
 
         {%- assign categories = site.categories | where: 'category', 'Favorite' %}
 
-        <header class="projects-head column-2d-l typo-sl">
+        <header class="projects-head column-2d-l typo-sl serif">
           {%- for category in categories %}
-          <h2>{{ category.title }}</h2>
+          <h2><span class="color-1 sans">{{ category.title }}</span></h2>
           {%- endfor %}
+          <p>As a <em>discreet</em> designer, I am happy to walk you through my most recent commercial projects upon request.</p>
         </header>
 
         <div class="column-2d-l separator"></div>

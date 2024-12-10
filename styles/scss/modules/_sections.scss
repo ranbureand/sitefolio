@@ -64,11 +64,21 @@
 }
 
 .posts-head {
+  h1,
+  h2,
+  p {
+    margin-bottom: 0;
+    display: inline;
+  }
+  h2 {
+    &:after {
+      content: ".\00a0";
+    }
+  }
   @include min-screen(col(16)) {
     h1,
-    h2 {
-      margin-bottom: em($t-splash-large-line/2, $t-splash-large-size);
-
+    h2,
+    p {
       @include font-size($t-splash-large-size, $t-splash-large-line);
     }
   }
@@ -108,11 +118,21 @@
 }
 
 .projects-head {
+  h1,
+  h2,
+  p {
+    margin-bottom: 0;
+    display: inline;
+  }
+  h2 {
+    &:after {
+      content: ".\00a0";
+    }
+  }
   @include min-screen(col(16)) {
     h1,
-    h2 {
-      margin-bottom: em($t-splash-large-line/2, $t-splash-large-size);
-
+    h2,
+    p {
       @include font-size($t-splash-large-size, $t-splash-large-line);
     }
   }
@@ -162,11 +182,21 @@
 }
 
 .jots-head {
+  h1,
+  h2,
+  p {
+    margin-bottom: 0;
+    display: inline;
+  }
+  h2 {
+    &:after {
+      content: ".\00a0";
+    }
+  }
   @include min-screen(col(16)) {
     h1,
-    h2 {
-      margin-bottom: em($t-splash-large-line/2, $t-splash-large-size);
-
+    h2,
+    p {
       @include font-size($t-splash-large-size, $t-splash-large-line);
     }
   }

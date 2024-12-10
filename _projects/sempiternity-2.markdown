@@ -8,7 +8,7 @@ author: "Andrea Buran"
 
 time: '2018'
 
-categories: [All, Digital, Favorite, Non-Commercial]
+categories: [All, Digital, Non-Commercial]
 tags: [blog, pixel art, short pieces, responsive, short stories, site, times]
 
 preview_image: 'sempiternity_2_00.jpg'

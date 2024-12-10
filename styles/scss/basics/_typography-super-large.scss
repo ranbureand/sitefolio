@@ -9,7 +9,8 @@
   // Text-level semantics
 
   h1,
-  h2 {
+  h2,
+  p {
     font-weight: $normal;
 
     margin-bottom: em($m-splash-medium-line/2, $m-splash-medium-size);
@@ -21,7 +22,8 @@
     // Text-level semantics
 
     h1,
-    h2 {
+    h2,
+    p {
       margin-bottom: em($m-splash-large-line/2, $m-splash-large-size);
 
       @include font-size($m-splash-large-size, $m-splash-large-line);
@@ -31,7 +33,8 @@
     // Text-level semantics
 
     h1,
-    h2 {
+    h2,
+    p {
       margin-bottom: em($t-splash-large-line/2, $t-splash-large-size);
 
       @include font-size($t-splash-large-size, $t-splash-large-line);
@@ -41,7 +44,8 @@
     // Text-level semantics
 
     h1,
-    h2 {
+    h2,
+    p {
       margin-bottom: em($d-splash-large-line/2, $d-splash-large-size);
 
       @include font-size($d-splash-large-size, $d-splash-large-line);
