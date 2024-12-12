@@ -1,10 +1,9 @@
     {%- comment %} whitespace {%- endcomment %}
-    <div class="canvas-jot-splash foreground">
-      <div class="jot-splash layout-2d">
+      <div class="jot-splash column-2d-l">
       {%- for jot in site.jots reversed %}
         {%- assign reference = site.jots.size | minus: 1 %}
         {%- if forloop.first %}
-        <div class="jot column-2d-l" id="jot-{{ jot.number }}" data-tag="{{ jot.tag }}">
+        <div class="jot" id="jot-{{ jot.number }}" data-tag="{{ jot.tag }}">
           <blockquote class="jot-body serif" {% if jot.address %}cite="{{ jot.address }}"{% endif %}>
           {{ jot.content }}
           </blockquote>
@@ -18,4 +17,3 @@
         {%- endif %}
       {%- endfor %}
       </div>
-    </div>
