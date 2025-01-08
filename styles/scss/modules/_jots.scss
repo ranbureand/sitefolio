@@ -75,6 +75,7 @@
   @include font-size($m-small-size, $m-small-line);
   a {
     text-decoration: underline;
+    text-decoration-thickness: from-font;
   }
   @include min-screen(col(8)) {
     margin-top: em($d-small-line, $d-small-size);

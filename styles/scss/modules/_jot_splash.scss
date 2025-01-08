@@ -49,8 +49,6 @@
     margin-left: -$border-width/2;
     // Exception: better typography
     padding-left: em($d-gut*2 - $border-width);
-
-    border-left-width: $border-width;
     p {
       @include font-size($t-splash-large-size, $t-splash-large-line);
 
@@ -58,12 +56,6 @@
         margin-top: em($t-splash-large-line/2, $t-splash-large-size);
       }
     }
-  }
-  @include min-screen(col(10)) {
-    margin-left: -$border-width*2/2;
-    padding-left: em($d-gut*2 - $border-width*2);
-
-    border-left-width: $border-width*2;
   }
 }
 
