@@ -5,8 +5,8 @@
 */
 
 [class*="canvas"] {
-  padding-right: em($m-gut + $m-gut/2);
-  padding-left: em($m-gut + $m-gut/2);
+  padding-right: em($m-gut/2*3);
+  padding-left: em($m-gut/2*3);
 
   @include min-screen(col(8)) {
     padding-right: em($d-gut);
