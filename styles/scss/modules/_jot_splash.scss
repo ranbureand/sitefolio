@@ -21,12 +21,23 @@
 }
 
 .jot-body {
+  font-style: normal;
+
   margin-left: -$border-width/2;
   padding-left: em($m-gut*2 - $border-width);
 
   border-left-width: $border-width;
   border-left-style: solid;
 
+  em {
+    font-style: italic;
+  }
+  cite {
+    font-style: italic;
+    em {
+      font-style: normal;
+    }
+  }
   p {
     font-weight: $normal;
 
@@ -50,7 +61,7 @@
     // Exception: better typography
     padding-left: em($d-gut*2 - $border-width);
     p {
-      @include font-size($t-splash-large-size, $t-splash-large-line);
+      @include font-size($d-extra-extra-large-size, $d-extra-extra-large-line);
 
       & + p {
         margin-top: em($t-splash-large-line/2, $t-splash-large-size);

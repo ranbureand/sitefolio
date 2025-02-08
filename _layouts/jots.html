@@ -13,9 +13,6 @@ mode: dark
 
         <div class="column-2d-l separator"></div>
 
-        {%- if page.url == "/jots/index.html" or page.url == "/jots/1/index.html" %}
-        {% include jot-splash.html %}
-        {%- endif %}
         {% include jots-items.html %}
         {% include jots-pagination.html %}
 
