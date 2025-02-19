@@ -19,10 +19,14 @@
   {%- assign video_path = include.path %}
 {%- elsif page.layout == 'project' %}
   {%- assign video_project_name = page.slug %}
-  {%- assign video_path = 'projects-optimized/' | append: video_project_name %}
+  {%- assign video_path = 'projects-optimized/'
+    | append: video_project_name
+  %}
 {%- elsif page.layout == 'post' %}
   {%- assign video_post_name = page.slug %}
-  {%- assign video_path = 'posts-optimized/' | append: video_post_name %}
+  {%- assign video_path = 'posts-optimized/'
+    | append: video_post_name
+  %}
 {%- endif %}
 
 <figure class="{{ video_size }}" id="{{ include.src }}">

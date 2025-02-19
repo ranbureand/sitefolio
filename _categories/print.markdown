@@ -8,7 +8,6 @@ title: 'Print projects'
 category: 'Print'
 
 excerpt: 'Projects focused on print-based media.'
-exordium_backup: 'Projects focused on print-based media.'
 
 published: true
 ---

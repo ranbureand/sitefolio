@@ -10,9 +10,15 @@
         {%- endif %}
       {%- endfor %}
 
-      {%- assign totalPosts = site.posts | size %}
-      {%- assign prevPostIndex = currentPostIndex | plus: 1 %}
-      {%- assign nextPostIndex = currentPostIndex | minus: 1 %}
+      {%- assign totalPosts = site.posts
+        | size
+      %}
+      {%- assign prevPostIndex = currentPostIndex
+        | plus: 1
+      %}
+      {%- assign nextPostIndex = currentPostIndex
+        | minus:
+      1 %}
 
       {%- if prevPostIndex > totalPosts %}
 {% include post-pagination-next.html nextPostIndex = nextPostIndex %}

@@ -1,7 +1,14 @@
         {%- assign jot_counter = 1 %}
-        {%- assign pagination_counter = paginator.total_pages | minus : 1 %}
-        {%- assign pagination_threshold_top = paginator.total_posts | minus : paginator.per_page %}
-        {%- assign pagination_threshold_bottom = paginator.total_posts | modulo : paginator.per_page | plus : 1 %}
+        {%- assign pagination_counter = paginator.total_pages
+          | minus : 1
+        %}
+        {%- assign pagination_threshold_top = paginator.total_posts
+          | minus : paginator.per_page
+        %}
+        {%- assign pagination_threshold_bottom = paginator.total_posts
+          | modulo : paginator.per_page
+          | plus : 1
+        %}
         <nav class="column-2d-l">
           {%- comment %}
           <ul>

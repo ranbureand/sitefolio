@@ -8,7 +8,6 @@ title: 'Non-commercial projects'
 category: 'Non-Commercial'
 
 excerpt: 'Non-commercial and personal projects.'
-exordium_backup: 'Non-commercial and personal projects.'
 
 published: true
 ---

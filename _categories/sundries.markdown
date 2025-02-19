@@ -8,7 +8,6 @@ title: 'Sundries projects'
 category: 'Sundries'
 
 excerpt: 'Miscellaneous projects not fitting other categories due to their elusive nature or small numbers.'
-exordium_backup: 'Miscellaneous projects not fitting other categories due to their elusive nature or small numbers.'
 
 published: true
 ---

@@ -8,7 +8,6 @@ title: 'Digital projects'
 category: 'Digital'
 
 excerpt: 'Projects focused on digital-based media.'
-exordium_backup: 'Projects focused on digital-based media.'
 
 published: true
 ---

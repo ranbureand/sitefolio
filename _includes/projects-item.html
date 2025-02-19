@@ -1,5 +1,6 @@
             {%- comment %} whitespace {%- endcomment %}
-            <li class="element-1d">
+            <li class="element-1d ">
+              {% if project.layout == "project" %}
               <a class="projects-item{% if project.title == page.title %} current{% endif %}" href="{{ project.url | prepend: site.baseurl }}">
                 <div class="projects-item-image"{% if project.preview_color %} style="background-color:{{ project.preview_color }};"{% endif %}>
                   <img loading="lazy" src="{{ site.baseurl }}/media/projects-optimized/{{ project.slug }}/thumbnails/1440/{{ project.preview_image }}?v={{ site.version }}" alt="{{ project.title | strip_html }}" title="{{ project.title | strip_html }}">
@@ -8,4 +9,44 @@
                 <div class="projects-item-tags">{% for tag in project.tags %}{% if forloop.last == true %}{{tag}}{% else %}{{tag}}, {% endif %}{% endfor %}</div>
                 <div class="projects-item-time">{{ project.time }}</div>
               </a>
+              {% else %}
+              <div class="projects-item-slides">
+                <div class="slides"{% if project.preview_color %} style="background-color:{{ project.preview_color }};"{% endif %}>
+                  {%- for preview_image in project.preview_images %}
+                  <img 
+                    {%- if forloop.first %}
+                    class="slide current"
+                    loading="eager"
+                    {%- else %}
+                    class="slide"
+                    loading="lazy"
+                    {%- endif %}
+                    src="
+                    {{ site.baseurl }}/media/projects-optimized/{{ project.slug }}/slides/1440/{{ preview_image }}
+                    "
+                    srcset="
+                    {{ site.baseurl }}/media/projects-optimized/{{ project.slug }}/slides/2880/{{ preview_image }} 2880w,
+                    {{ site.baseurl }}/media/projects-optimized/{{ project.slug }}/slides/2160/{{ preview_image }} 2160w,
+                    {{ site.baseurl }}/media/projects-optimized/{{ project.slug }}/slides/1440/{{ preview_image }} 1440w,
+                    {{ site.baseurl }}/media/projects-optimized/{{ project.slug }}/slides/1080/{{ preview_image }} 1080w,
+                    {{ site.baseurl }}/media/projects-optimized/{{ project.slug }}/slides/720/{{ preview_image }} 720w,
+                    {{ site.baseurl }}/media/projects-optimized/{{ project.slug }}/slides/360/{{ preview_image }} 360w
+                    "
+                    sizes="
+                    (min-width: 72em) {{ column | times: 16 | divided_by: 16 }}em,
+                    (min-width: 54em) {{ column | times: 12 | divided_by: 16 }}em,
+                    (min-width: 30em) {{ column | times: 8 | divided_by: 16 }}em,
+                    {{ 360 | divided_by: 16 }}em
+                    "
+                    alt="
+                    {% if project.description %}{{ project.description | strip_html }}{% else %}{{ project.title | strip_html }}{% endif %}
+                    "
+                  >
+                  {%- endfor %}
+                </div>
+                <div class="projects-item-title">{{ project.title | markdownify | remove: '<p>' | remove: '</p>' | strip }} <span>reach out for details</span></div>
+                <div class="projects-item-tags">{% for tag in project.tags %}{% if forloop.last == true %}{{tag}}{% else %}{{tag}}, {% endif %}{% endfor %}</div>
+                <div class="projects-item-time">{{ project.time }}</div>
+              </div>
+              {% endif %}
             </li>
