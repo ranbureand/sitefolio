@@ -1,6 +1,8 @@
 ---
 order: 42
 
+layout: null
+
 title: 'Skippet'
 author: 'Andrea Buran'
 
@@ -15,4 +17,6 @@ preview_color: '#E36351'
 description: 'Skippet was a no-code workspace where non-technical users could generate no‑code applications to manage business data and workflows using Skippet AI.'
 
 published: true
+sitemap:
+  excluded: true
 ---

@@ -1,6 +1,8 @@
 ---
 order: 41
 
+layout: null
+
 title: 'Kolay IK'
 author: 'Andrea Buran'
 
@@ -15,4 +17,6 @@ preview_color: '#234471'
 description: 'Kolay is an ecosystem of HR solutions, including modules for Employee, Expense, Leave, Performance, and Shift Management, available on both web and mobile applications.'
 
 published: true
+sitemap:
+  excluded: true
 ---
