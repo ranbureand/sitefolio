@@ -16,4 +16,4 @@ address: "https://thebullshitmachines.com/lesson-16-the-first-step-fallacy/index
 
 Imagine that you take the first page of *The Hobbit* and xerox it. Then copy the copy. Copy the copy of the copy. And so on. Do this a hundred times or so, and you’ll end up with something that looks like television static.
 
-Something similar happens when you iteratively train an AI on the output of previous AIs. After a few iterations, the output degrades markedly as the later models no longer have an accurate representation of the original training data. This phenomenon is known as model collapse. 
+Something similar happens when you iteratively train an AI on the output of previous AIs. After a few iterations, the output degrades markedly as the later models no longer have an accurate representation of the original training data. This phenomenon is known as model collapse.
